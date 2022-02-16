@@ -1,0 +1,738 @@
+
+foreign_politics = {
+
+	GRI_intergrate_BRZ = {
+		icon = generic_form_nation
+
+		targets = { BRZ }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+				original_tag = GRI
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_unite_nobles
+					has_completed_focus = GRI_reward_loyalty
+				}
+			}
+
+			BRZ = {
+				OR = {
+					is_subject_of = GRI
+					is_in_faction_with = GRI
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_BRZ target: [From.GetName]"
+
+			BRZ = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = BRZ
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = BRZ transfer_troops = yes }
+		}
+	}
+	GRI_intergrate_ROU = {
+		icon = generic_form_nation
+
+		targets = { ROU }
+		targets_dynamic = yes
+
+		target_trigger = {
+			ROU = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+				original_tag = GRI
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_unite_nobles
+					has_completed_focus = GRI_reward_loyalty
+				}
+			}
+
+			ROU = {
+				OR = {
+					is_subject_of = GRI
+					is_in_faction_with = GRI
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_ROU target: [From.GetName]"
+
+			ROU = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = ROU
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = ROU transfer_troops = yes }
+		}
+	}
+	GRI_intergrate_YAL = {
+		icon = generic_form_nation
+
+		targets = { YAL }
+		targets_dynamic = yes
+
+		target_trigger = {
+			YAL = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+				original_tag = GRI
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_unite_nobles
+					has_completed_focus = GRI_reward_loyalty
+				}
+			}
+
+			YAL = {
+				OR = {
+					is_subject_of = GRI
+					is_in_faction_with = GRI
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_YAL target: [From.GetName]"
+
+			YAL = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = YAL
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = YAL transfer_troops = yes }
+		}
+	}
+		GRI_intergrate_HLQ = {
+		icon = generic_form_nation
+
+		targets = { HLQ }
+		targets_dynamic = yes
+
+		target_trigger = {
+			HLQ = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+				original_tag = GRI
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_unite_nobles
+					has_completed_focus = GRI_reward_loyalty
+				}
+			}
+
+			HLQ = {
+				OR = {
+					is_subject_of = GRI
+					is_in_faction_with = GRI
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_HLQ target: [From.GetName]"
+
+			HLQ = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = HLQ
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = HLQ transfer_troops = yes }
+		}
+	}
+		
+		
+		
+	GRF_intergrate_PNG = {
+		icon = generic_form_nation
+
+		targets = { PNG }
+		targets_dynamic = yes
+
+		target_trigger = {
+			PNG = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = GRF
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRF
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [PNG.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = PNG
+				}
+				add_core_of = GRF
+			}
+			annex_country = { target = PNG }
+		}
+	}
+	
+	GRF_intergrate_PLB = {
+		icon = generic_form_nation
+
+		targets = { PLB }
+		targets_dynamic = yes
+
+		target_trigger = {
+			PLB = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = GRF
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRF
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [PLB.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = PLB
+				}
+				add_core_of = GRF
+			}
+			annex_country = { target = PLB }
+		}
+	}
+	EQS_intergrate_BUF = {
+		icon = generic_form_nation
+
+		targets = { BUF }
+		targets_dynamic = yes
+
+		target_trigger = {
+			BUF = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = EQS
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = EQS
+				}
+				has_completed_focus = CTL_center_of_research
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [BUF.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = BUF
+				}
+				add_core_of = EQS
+			}
+			annex_country = { target = BUF }
+		}
+	}
+	EQS_intergrate_DRG = {
+		icon = generic_form_nation
+
+		targets = { DRG }
+		targets_dynamic = yes
+
+		target_trigger = {
+			DRG = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = EQS
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = EQS
+				}
+				has_completed_focus = Ministry_of_defense
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DRG.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = DRG
+				}
+				add_core_of = EQS
+			}
+			annex_country = { target = DRG }
+		}
+	}
+	
+	CHN_takeover_OLE_fleet = {
+		icon = generic_naval
+		allowed = {
+			tag = CHN
+		}
+		targets = { OLE }
+		target_trigger = {
+			FROM = {
+				tag = OLE
+			}
+		}
+		visible = {
+			FROM = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_takeover_TRD_fleet target: [From.GetName]"
+			load_oob = "OLE_1007_naval"
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	GRI_takeover_FEA_fleet = {
+		icon = generic_naval
+		allowed = {
+			always = yes
+		}
+		targets = { FEA }
+		target_trigger = {
+			FROM = {
+				tag = FEA
+				}
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_takeover_TRD_fleet target: [From.GetName]"
+			FROM = { transfer_navy = { target = ROOT } }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	
+	
+	RCT_intergrate_LCT = {
+		icon = generic_form_nation
+
+		targets = { LCT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			LCT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = RCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = RCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [LCT.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = LCT
+				}
+				add_core_of = RCT
+			}
+			annex_country = { target = LCT transfer_troops = yes }
+		}
+	}
+	
+	RCT_intergrate_DMT = {
+		icon = generic_form_nation
+
+		targets = { DMT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			DMT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = RCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = RCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = DMT
+				}
+				add_core_of = RCT
+			}
+			annex_country = { target = DMT transfer_troops = yes }
+		}
+	}
+	
+	RCT_intergrate_BAK = {
+		icon = generic_form_nation
+
+		targets = { BAK }
+		targets_dynamic = yes
+
+		target_trigger = {
+			BAK = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = RCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = RCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [BAK.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = BAK
+				}
+				add_core_of = RCT
+			}
+			annex_country = { target = BAK transfer_troops = yes }
+		}
+	}
+	
+	RCT_intergrate_NIM = {
+		icon = generic_form_nation
+
+		targets = { NIM }
+		targets_dynamic = yes
+
+		target_trigger = {
+			NIM = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = RCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = RCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [NIM.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = NIM
+				}
+				add_core_of = RCT
+			}
+			annex_country = { target = NIM transfer_troops = yes }
+		}
+	}
+	
+	RCT_intergrate_WIT = {
+		icon = generic_form_nation
+
+		targets = { WIT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			WIT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = RCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = RCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [WIT.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = WIT
+				}
+				add_core_of = RCT
+			}
+			annex_country = { target = WIT transfer_troops = yes }
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+}
