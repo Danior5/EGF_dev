@@ -392,7 +392,6 @@ foreign_politics = {
 				limit = {
 					original_tag = EQS
 				}
-				has_completed_focus = CTL_center_of_research
 			}
 		}
 
@@ -436,7 +435,6 @@ foreign_politics = {
 				limit = {
 					original_tag = EQS
 				}
-				has_completed_focus = Ministry_of_defense
 			}
 		}
 
@@ -592,6 +590,50 @@ foreign_politics = {
 					is_core_of = DMT
 				}
 				add_core_of = RCT
+			}
+			annex_country = { target = DMT transfer_troops = yes }
+		}
+	}
+	
+	LCT_intergrate_DMT = {
+		icon = generic_form_nation
+
+		targets = { DMT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			DMT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			original_tag = LCT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = LCT
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
+			every_state = {
+				limit = {
+					is_core_of = DMT
+				}
+				add_core_of = LCT
 			}
 			annex_country = { target = DMT transfer_troops = yes }
 		}

@@ -996,7 +996,7 @@
 						target = HEL 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = HEL 
 				}
@@ -1018,7 +1018,7 @@
 						target = AET 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = AET 
 				}
@@ -1040,7 +1040,7 @@
 						target = FEZ 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = FEZ 
 				}
@@ -1071,7 +1071,7 @@
 						target = POM 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = POM 
 				}
@@ -1093,7 +1093,7 @@
 						target = FLO 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = FLO 
 				}
@@ -1139,7 +1139,7 @@
 						target = AVI 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = AVI 
 				}
@@ -1161,7 +1161,7 @@
 						target = ERI 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = ERI 
 				}
@@ -3815,7 +3815,7 @@
 						target = HEL 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = HEL 
 				}
@@ -3837,7 +3837,7 @@
 						target = AET 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = AET 
 				}
@@ -3859,7 +3859,7 @@
 						target = FEZ 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = FEZ 
 				}
@@ -3890,7 +3890,7 @@
 						target = POM 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = POM 
 				}
@@ -3912,7 +3912,7 @@
 						target = FLO 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = FLO 
 				}
@@ -4776,14 +4776,6 @@
 			factor = 15
 		}
 		available = {
-			FEZ = {
-			    OR = {
-				    exists = no
-					is_guaranteed_by = ROOT
-					is_in_faction_with = ROOT
-				    is_subject_of = ROOT
-			    }
-		    }
 			AET = {
 			    OR = {
 				    exists = no
@@ -5610,8 +5602,6 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_the_tarrin_question"
-			custom_effect_tooltip = JER_tarrin_decision_unlocked
-			JES = { add_to_ROOT_potential_cores = yes }
 		}
 	}
 	
@@ -5659,7 +5649,7 @@
 						target = AVI 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = AVI 
 				} 
@@ -5681,7 +5671,7 @@
 						target = ERI 
 					}
 				}
-				declare_war_on = { 
+				create_wargoal = { 
 					type = annex_everything 
 					target = ERI 
 				}

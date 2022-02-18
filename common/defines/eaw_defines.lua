@@ -5,7 +5,6 @@ NDefines.NGame.HANDS_OFF_START_TAG = "DRG"
 
 
 NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "1007.1.1.12"
-NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 10
 NDefines.NDiplomacy.MAX_OPINION_VALUE = 200							-- Max opinion value cap.
 NDefines.NDiplomacy.MIN_OPINION_VALUE = -200						-- Min opinion value cap.
 
@@ -110,3 +109,5 @@ NDefines.NProduction.BASE_LICENSE_IC_COST = 0							-- Base IC cost for lended l
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
 
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3}		-- Experience needed to progress to the next level
+
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 -- Divs required to send volunteers
