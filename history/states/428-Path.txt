@@ -21,10 +21,10 @@ state={
 		}
 	}
 	resources = {
-		chromium = 15
+		chromium = 19
 		oil = 3
-		tungsten=16
-		steel = 12
+		tungsten=24
+		steel = 32
 		aluminium = 12
 	}
 }
