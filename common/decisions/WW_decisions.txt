@@ -17,7 +17,7 @@ foreign_politics = {
 				original_tag = GRI
 		}
 
-		cost = 50
+		
 
 		ai_will_do = {
 			factor = 0
@@ -84,7 +84,7 @@ foreign_politics = {
 				original_tag = GRI
 		}
 
-		cost = 50
+
 
 		ai_will_do = {
 			factor = 0
@@ -151,7 +151,7 @@ foreign_politics = {
 				original_tag = GRI
 		}
 
-		cost = 50
+
 
 		ai_will_do = {
 			factor = 0
@@ -218,7 +218,7 @@ foreign_politics = {
 				original_tag = GRI
 		}
 
-		cost = 50
+
 
 		ai_will_do = {
 			factor = 0
@@ -288,8 +288,6 @@ foreign_politics = {
 			original_tag = GRF
 		}
 
-		cost = 25
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -334,7 +332,6 @@ foreign_politics = {
 			original_tag = GRF
 		}
 
-		cost = 25
 
 		ai_will_do = {
 			factor = 0
