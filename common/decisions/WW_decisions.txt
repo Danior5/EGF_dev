@@ -767,11 +767,59 @@ foreign_politics = {
 			annex_country = { target = WIT transfer_troops = yes }
 		}
 	}
+### Funni Timer ###
+	WW_timer_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				original_tag = JER
+				original_tag = FAT
+				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = HLQ
+				original_tag = TRD
+				original_tag = CHN
+				original_tag = FAW
+				original_tag = GRF
+				original_tag = OLE
+				original_tag = PNG
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				original_tag = WNG
+				original_tag = GRY
+				original_tag = MIT
+				original_tag = RCT
+				original_tag = LCT
+				original_tag = DMT
+				original_tag = WIT
+				original_tag = BAK
+				original_tag = NIM
+			}
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		activation = {
+			date > 1006.11.1
+		}
+		is_good = no
+		days_mission_timeout = 1764
+		fire_only_once = yes
+		timeout_effect = {
+
+		}
+		complete_effect = {
+
+		}
+	}
 	
 	
 	
 	
 	
+}	
 	
-	
-}
