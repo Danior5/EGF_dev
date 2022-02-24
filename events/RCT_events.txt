@@ -366,7 +366,7 @@ country_event = {#Response to the Harmonist attempt at
 		}
 		else = {
 			add_stability = -0.05
-			add_popularity = { ideology = communism popularity = 0.05}
+			add_popularity = { ideology = democratic popularity = 0.03}
 		}
 	}
 }
@@ -392,7 +392,7 @@ country_event = {#Response to the Socialist attempt to block
 		}
 		else = {
 			add_stability = -0.05
-			add_popularity = { ideology = communism popularity = -0.04}
+			add_popularity = { ideology = democratic popularity = -0.04}
 		}
 	}
 }
@@ -511,7 +511,7 @@ country_event = {#Rural investment results
 		}
 		else = {
 			add_political_power = -50
-			add_popularity = { ideology = communism popularity = 0.06}
+			add_popularity = { ideology = democratic popularity = 0.04}
 		}
 	}
 
@@ -537,7 +537,7 @@ country_event = {#Mixed investment results
 		}
 		else = {
 			add_political_power = -50
-			add_popularity = { ideology = democratic popularity = 0.04}
+			add_popularity = { ideology = communism popularity = 0.05}
 		}
 	}
 }
@@ -656,7 +656,7 @@ country_event = {#Hector's negotiations
 		else = {
 			add_political_power = -50
 			add_stability = -0.05
-			add_popularity = { ideology = democratic popularity = -0.05}
+			add_popularity = { ideology = democratic popularity = 0.04}
 		}
 	}
 }
@@ -682,7 +682,7 @@ country_event = {#Nova Whirl's attempt
 		else = {
 			add_political_power = -50
 			add_stability = -0.05
-			add_popularity = { ideology = communism popularity = -0.05}
+			add_popularity = { ideology = communism popularity = 0.05}
 		}
 	}
 }

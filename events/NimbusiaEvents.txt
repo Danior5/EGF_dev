@@ -1471,6 +1471,10 @@ country_event = {
 				}
 			}
 		}
+		random_list = {
+			50 = { set_variable = { NIM_debate = 1 } }
+			50 = { set_variable = { NIM_debate = 2 } }
+			      }
 		hidden_effect = {
 			country_event = { id = nimbusia.23 days = 1 }
 		}
@@ -1546,26 +1550,6 @@ country_event = {
 	option = {
 		name = nimbusia.24.a
 		hidden_effect = {
-			if = {
-				limit = { check_variable = { NIM_debate = 1 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 2 } }
-				}
-			}
-			else_if = {
-				limit = { check_variable = { NIM_debate = 2 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 1 } }
-				}
-			}
-			else = {
-				random_list = {
-					50 = { set_variable = { NIM_debate = 1 } }
-					50 = { set_variable = { NIM_debate = 2 } }
-				}
-			}
 			country_event = { id = nimbusia.25 days = 1 }
 		}
 	}
@@ -1670,6 +1654,10 @@ country_event = {
 				}
 			}
 		}
+		random_list = {
+			50 = { set_variable = { NIM_debate = 2 } }
+			50 = { set_variable = { NIM_debate = 3 } }
+			      }
 		hidden_effect = {
 			country_event = { id = nimbusia.27 days = 1 }
 		}
@@ -1745,26 +1733,6 @@ country_event = {
 	option = {
 		name = nimbusia.28.a
 		hidden_effect = {
-			if = {
-				limit = { check_variable = { NIM_debate = 2 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 3 } }
-				}
-			}
-			else_if = {
-				limit = { check_variable = { NIM_debate = 3 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 2 } }
-				}
-			}
-			else = {
-				random_list = {
-					50 = { set_variable = { NIM_debate = 2 } }
-					50 = { set_variable = { NIM_debate = 3 } }
-				}
-			}
 			country_event = { id = nimbusia.29 days = 1 }
 		}
 	}
@@ -1899,6 +1867,10 @@ country_event = {
 				}
 			}
 		}
+		random_list = {
+			50 = { set_variable = { NIM_debate = 1 } }
+			50 = { set_variable = { NIM_debate = 3 } }
+			}
 		hidden_effect = {
 			country_event = { id = nimbusia.31 days = 1 }
 		}
@@ -1974,26 +1946,6 @@ country_event = {
 	option = {
 		name = nimbusia.32.a
 		hidden_effect = {
-			if = {
-				limit = { check_variable = { NIM_debate = 1 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 3 } }
-				}
-			}
-			else_if = {
-				limit = { check_variable = { NIM_debate = 3 } }
-				random_list = {
-					80 = { }
-					20 = { set_variable = { NIM_debate = 1 } }
-				}
-			}
-			else = {
-				random_list = {
-					50 = { set_variable = { NIM_debate = 1 } }
-					50 = { set_variable = { NIM_debate = 3 } }
-				}
-			}
 			country_event = { id = nimbusia.33 days = 1 }
 		}
 	}
