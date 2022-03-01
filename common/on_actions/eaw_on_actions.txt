@@ -285,8 +285,8 @@ on_actions = {
 					add_claim_by = HLR
 				}
 			}
-			FIR = {
-				country_event = { id = ww.5 days = 1703 }
+			HLR = {
+				country_event = { id = ww.5 days = 1611 }
 				country_event = { id = ww.6 days = 1764 }
 			}
 			CHN = {

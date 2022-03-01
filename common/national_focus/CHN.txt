@@ -1605,7 +1605,7 @@ focus_tree = {
 			focus = prepare_for_war
 		}
 		available = {
-			has_government = fascism
+			has_government = communism
 		}
 		select_effect = {
 			hidden_effect = {
@@ -1615,7 +1615,7 @@ focus_tree = {
 		x = 21
 		y = 9
 		ai_will_do = {
-			factor = 5000
+			factor = 0
 		}
 		bypass = {
 			OR = {
