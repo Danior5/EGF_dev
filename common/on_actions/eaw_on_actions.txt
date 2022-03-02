@@ -232,8 +232,8 @@ on_actions = {
 				country_event = { id = stalliongrad.13 days = 20 }
 				country_event = { id = stalliongrad.24 days = 45 }
 				country_event = { id = stalliongrad.2 days = 60 }
-				country_event = { id = stalliongrad.115 days = 545 random = 960 }#days to hours applied
-				country_event = { id = stalliongrad.139 days = 1095 random = 7200 }#days to hours applied
+				country_event = { id = stalliongrad.115 days = 565 }#days to hours applied
+				country_event = { id = stalliongrad.139 days = 1245 }#days to hours applied
 				if = {
 					limit = { is_ai = yes }
 					random_list = {
