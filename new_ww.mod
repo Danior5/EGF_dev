@@ -1,4 +1,4 @@
-version="0.10"
+version="0.11"
 tags={
 	"National Focuses"
 	"Gameplay"
@@ -9,6 +9,6 @@ dependencies={
 	"Equestria at War"
 }
 name="Equus and Griffonia on Fire"
-supported_version="1.11.6"
+supported_version="1.11.8"
 path="D:/Program Files/Steam/steamapps/workshop/content/394360/2694179069"
 remote_file_id="2694179069"

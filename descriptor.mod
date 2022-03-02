@@ -1,4 +1,4 @@
-version="0.10"
+version="0.11"
 tags={
 	"Balance"
 	"Events"
@@ -10,5 +10,5 @@ dependencies={
 }
 name="Equus and Griffonia on Fire"
 picture="thumbnail.png"
-supported_version="1.11.6"
+supported_version="1.11.8"
 remote_file_id="2694179069"
