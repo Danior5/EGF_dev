@@ -22,9 +22,9 @@ state={
 	}
 	resources = {
 		chromium = 19
-		oil = 3
+		oil = 21
 		tungsten=24
-		steel = 32
+		steel = 42
 		aluminium = 12
 	}
 }
