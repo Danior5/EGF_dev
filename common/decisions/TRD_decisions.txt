@@ -923,6 +923,13 @@ foreign_politics = {
 				original_tag = HAU
 				original_tag = MAN
 				original_tag = ELF
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = CRY
+				original_tag = WNG
+				original_tag = MIT
+				original_tag = GRY
+				original_tag = STG
 			}
 		}
 		visible = {
