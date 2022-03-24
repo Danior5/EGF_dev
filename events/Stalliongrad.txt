@@ -2427,25 +2427,11 @@ country_event = { ## Griffon Intervention
 	picture = GFX_event_stg_pairlament2
 
 	is_triggered_only = yes #moved to griffons.1
-	option = {
-		name = stalliongrad.96.a
-		set_country_flag = griffon_intervention
-		ai_chance = {
-			base = 70
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-	}
+
 	option = {
 		name = stalliongrad.96.b
 		ai_chance = {
 			base = 30
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 	}
 }
