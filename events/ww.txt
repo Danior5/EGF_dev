@@ -11,51 +11,65 @@ country_event = { #factions
 	name = ww.5.a
 		RCT = { add_to_faction = STG }
 		RCT = { add_to_faction = EQC }
-		RCT = { add_to_faction = EQS }
-		RCT = { add_to_faction = CRY }
+		RCT = { add_to_faction = NLR }
+		#RCT = { add_to_faction = CRY }
 		RCT = { add_to_faction = MIT }
 		RCT = { add_to_faction = GRY }
 		RCT = { add_to_faction = WNG }
+		RCT = { add_to_faction = NLR }
+		RCT = { add_to_faction = SCS }
+		RCT = { add_to_faction = NMS }
+		RCT = { add_to_faction = ZES }
 		
 		BAK = { add_to_faction = STG }
 		BAK = { add_to_faction = EQC }
-		BAK = { add_to_faction = EQS }
-		BAK = { add_to_faction = CRY }
+		BAK = { add_to_faction = NLR }
+		#BAK = { add_to_faction = CRY }
 		BAK = { add_to_faction = MIT }
 		BAK = { add_to_faction = GRY }
 		BAK = { add_to_faction = WNG }
+		BAK = { add_to_faction = NLR }
+		BAK = { add_to_faction = SCS }
+		BAK = { add_to_faction = NMS }
+		BAK = { add_to_faction = ZES }
 		
 		LCT = { add_to_faction = STG }
 		LCT = { add_to_faction = EQC }
-		LCT = { add_to_faction = EQS }
-		LCT = { add_to_faction = CRY }
+		LCT = { add_to_faction = NLR }
+		#LCT = { add_to_faction = CRY }
 		LCT = { add_to_faction = MIT }
 		LCT = { add_to_faction = GRY }
 		LCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = NLR }
+		LCT = { add_to_faction = SCS }
+		LCT = { add_to_faction = NMS }
+		LCT = { add_to_faction = ZES }
 		
 		WIT = { add_to_faction = STG }
 		WIT = { add_to_faction = EQC }
-		WIT = { add_to_faction = EQS }
-		WIT = { add_to_faction = CRY }
+		WIT = { add_to_faction = NLR }
+		#WIT = { add_to_faction = CRY }
 		WIT = { add_to_faction = MIT }
 		WIT = { add_to_faction = GRY }
 		WIT = { add_to_faction = WNG }
+		WIT = { add_to_faction = NLR }
+		WIT = { add_to_faction = SCS }
+		WIT = { add_to_faction = NMS }
+		WIT = { add_to_faction = ZES }
 		
 		NIM = { add_to_faction = STG }
 		NIM = { add_to_faction = EQC }
-		NIM = { add_to_faction = EQS }
-		NIM = { add_to_faction = CRY }
+		NIM = { add_to_faction = NLR }
+		#NIM = { add_to_faction = CRY }
 		NIM = { add_to_faction = MIT }
 		NIM = { add_to_faction = GRY }
 		NIM = { add_to_faction = WNG }
+		NIM = { add_to_faction = NLR }
+		NIM = { add_to_faction = SCS }
+		NIM = { add_to_faction = NMS }
+		NIM = { add_to_faction = ZES }
 		
-		DMT = { add_to_faction = STG }
-		DMT = { add_to_faction = EQC }
-		DMT = { add_to_faction = EQS }
-		DMT = { add_to_faction = CRY }
-		DMT = { add_to_faction = MIT }
-		DMT = { add_to_faction = GRY }
-		DMT = { add_to_faction = WNG }
+
 		
 		if = {
 			limit = {
@@ -64,14 +78,16 @@ country_event = { #factions
 			}
 			GRI = { add_to_faction = OLE }
 		}
+		GRI = { add_to_faction = CRY }
 		GRI = { add_to_faction = GRF }
 		GRI = { add_to_faction = FAT }
 		GRI = { add_to_faction = FAW }
 		GRI = { add_to_faction = TRD }
 		GRI = { add_to_faction = JER }
-		GRI = { add_to_faction = PNG }
+		#GRI = { add_to_faction = PNG }
 		GRI = { add_to_faction = CHN }
 		GRI	= { add_to_faction = HLQ }
+		GRI	= { add_to_faction = HAU }
 	}
 }
 
@@ -88,11 +104,11 @@ country_event = { #war
 		CHN = {
 			create_wargoal = { 
 				type = annex_everything 
-				target = EQS 
+				target = NLR 
 			}
 		declare_war_on = { 
 		    type = annex_everything 
-			target = EQS 
+			target = NLR 
 		}
 	}
 	}

@@ -312,7 +312,7 @@ foreign_politics = {
 				}
 				add_core_of = GRF
 			}
-			annex_country = { target = PNG }
+			#annex_country = { target = PNG }
 		}
 	}
 	
@@ -357,95 +357,11 @@ foreign_politics = {
 				}
 				add_core_of = GRF
 			}
-			annex_country = { target = PLB }
+			#annex_country = { target = PLB }
 		}
 	}
-	EQS_intergrate_BUF = {
-		icon = generic_form_nation
 
-		targets = { BUF }
-		targets_dynamic = yes
 
-		target_trigger = {
-			BUF = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = EQS
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = EQS
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [BUF.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = BUF
-				}
-				add_core_of = EQS
-			}
-			annex_country = { target = BUF }
-		}
-	}
-	EQS_intergrate_DRG = {
-		icon = generic_form_nation
-
-		targets = { DRG }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DRG = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = EQS
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = EQS
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DRG.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DRG
-				}
-				add_core_of = EQS
-			}
-			annex_country = { target = DRG }
-		}
-	}
 	
 	CHN_takeover_OLE_fleet = {
 		icon = generic_naval
@@ -548,93 +464,9 @@ foreign_politics = {
 		}
 	}
 	
-	RCT_intergrate_DMT = {
-		icon = generic_form_nation
 
-		targets = { DMT }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DMT = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = RCT
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = RCT
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DMT
-				}
-				add_core_of = RCT
-			}
-			annex_country = { target = DMT transfer_troops = yes }
-		}
-	}
 	
-	LCT_intergrate_DMT = {
-		icon = generic_form_nation
 
-		targets = { DMT }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DMT = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = LCT
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = LCT
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DMT
-				}
-				add_core_of = LCT
-			}
-			annex_country = { target = DMT transfer_troops = yes }
-		}
-	}
 	
 	RCT_intergrate_BAK = {
 		icon = generic_form_nation
@@ -798,6 +630,11 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAK
 				original_tag = NIM
+				original_tag = NLR
+				original_tag = HAU
+				original_tag = ZES
+				original_tag = SCS
+				original_tag = NMS
 			}
 		}
 		available = {
@@ -847,6 +684,11 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAK
 				original_tag = NIM
+				original_tag = NLR
+				original_tag = HAU
+				original_tag = ZES
+				original_tag = SCS
+				original_tag = NMS
 			}
 		}
 		available = {
