@@ -98,20 +98,9 @@ on_actions = {
 			add_to_array = { global.ww_friendship_is_magic = STG }
 			add_to_array = { global.ww_friendship_is_magic = ZES }
 			add_to_array = { global.ww_friendship_is_magic = NLR }
-			if = {
-				limit = {
-					tag = NMS
-					is_ai = no
-				}
-				add_to_array = { global.ww_friendship_is_magic = NMS }
-			}
-			if = {
-				limit = {
-					tag = SCS
-					is_ai = no
-				}
-				add_to_array = { global.ww_friendship_is_magic = SCS }
-			}
+			add_to_array = { global.ww_friendship_is_magic = NMS }
+			add_to_array = { global.ww_friendship_is_magic = SCS }
+
 			
 			for_each_scope_loop = {
 			array = global.ww_grandpa_eros_wild_ride

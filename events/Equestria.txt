@@ -527,9 +527,16 @@ country_event = { #### Stalliongrad invites traders ###  asks for help
 		hidden_effect = {
 			STG = {
 				retire_country_leader = yes
-				promote_character = {
+				add_country_leader_role = {
 					character = STG_dark_wing
-					ideology = socialism
+					promote_leader = yes
+
+					country_leader = {
+						desc = "DARKWING_EQS_DESC"
+						expire = "1965.1.1"
+						ideology = socialism
+						traits = { }
+					}
 				}
 				set_country_flag = darwking_puppet
 				set_country_flag = { flag = darkwing_not_ready_to_be_annexed value = 1 days = 750 }
@@ -1505,7 +1512,7 @@ country_event = { #### Cadence Returned
 		set_country_flag = royal_family_returned
 		clr_global_flag = continue_imprisonment
 		event_target:CRY_Shining_Armor = { set_nationality = ROOT }
-				event_target:CRY_princess_mi_amore_cadenza_target = { set_nationality = ROOT }
+		event_target:CRY_princess_mi_amore_cadenza_target = { set_nationality = ROOT }
 	}
 }
 country_event = { #### Cosmetic tag for the war
@@ -2171,6 +2178,44 @@ country_event = { #### A Referendum. A Dark Horse Candidate. And the Hopes and D
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
 	}
+
+	option = { ## Support Luna
+		name = equestria.200.a
+	    ai_chance = { factor = 85
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_NORMAL 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_NORMAL
+					}
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+					has_country_flag = EQS_AI_SOLAR_AND_LUNAR
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = SOLAR_AND_LUNAR
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				var = lunar_reforms
+				value = 0
+			}
+			#days to hours applied
+			country_event = {
+				id = equestria.214
+				days = 20
+			}
+		}
+		custom_effect_tooltip =  luna_reforms_support
+	}
 	option = { ## Let Luna Do it
 		name = equestria.200.b
 		ai_chance = { factor = 15
@@ -2404,7 +2449,56 @@ country_event = { #### NLR cults
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
 	}
-	
+	option = { ## radical
+		name = equestria.204.a
+		ai_chance = { factor = 34 
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = NLR_cult_radical_tt
+		hidden_effect = {
+			
+			add_to_variable = {
+				var = NMM_weaponstealers
+				value = 3
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 2
+			}
+			set_country_flag = NLR_cult_radical
+			country_event = {
+				id = equestria.205
+			}
+		}
+	}
+	option = { ## moderate
+		name = equestria.204.b
+		ai_chance = { factor = 33 }
+		custom_effect_tooltip = NLR_cult_moderate_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_weaponstealers
+				value = 2
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 1
+			}
+			set_country_flag = NLR_cult_moderate
+			country_event = {
+				id = equestria.205
+			}
+		}
+	}
 	option = { ## careful
 		name = equestria.204.c
 		ai_chance = { factor = 33 
@@ -2476,7 +2570,67 @@ country_event = { #### NLR sympathizers
 	trigger = {
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
-	}	
+	}
+	option = { ## radical
+		name = equestria.206.a
+		ai_chance = { factor = 34 
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = NLR_sympathizers_radical_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_workers
+				value = 3
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 2
+			}
+			set_country_flag = NLR_sympathizers_radical
+			country_event = {
+				id = equestria.207
+			}
+		}
+	}
+	option = { ## moderate
+		name = equestria.206.b
+		ai_chance = { factor = 33 
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = NLR_sympathizers_moderate_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_workers
+				value = 2
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 1
+			}
+			set_country_flag = NLR_sympathizers_moderate
+			country_event = {
+				id = equestria.207
+			}
+		}
+	}
 	option = { ## careful
 		name = equestria.206.c
 		ai_chance = { factor = 33 }
@@ -2534,7 +2688,56 @@ country_event = { #### NLR batpony family
 	trigger = {
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
-	}	
+	}
+	option = { ## radical
+		name = equestria.208.a
+		ai_chance = { factor = 34 }
+		custom_effect_tooltip = NLR_batpony_family_radical_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_bats
+				value = 3
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 2
+			}
+			set_country_flag = NLR_batpony_family_radical
+			country_event = {
+				id = equestria.209
+			}
+		}
+	}
+	option = { ## moderate
+		name = equestria.208.b
+		ai_chance = { factor = 33 
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = NLR_batpony_family_moderate_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_bats
+				value = 2
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 1
+			}
+			set_country_flag = NLR_batpony_family_moderate
+			country_event = {
+				id = equestria.209
+			}
+		}
+	}
 	option = { ## careful
 		name = equestria.208.c
 		ai_chance = { factor = 33 
@@ -2625,6 +2828,121 @@ country_event = { #### NLR partisans
 	trigger = {
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
+	}
+	option = { ## radical
+		name = equestria.231.a
+		ai_chance = { factor = 34 }
+		custom_effect_tooltip = NLR_partisans_radical_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_partisans
+				value = 3
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 2
+			}
+			set_country_flag = NLR_partisans_radical
+			if = {
+				limit = {
+					check_variable = {
+						var = NMM_aggressive
+						value = 6
+						compare = greater_than_or_equals
+					}
+				}
+				set_variable = {
+					var = NMM_weaponstealers
+					value = 0
+				}
+				set_variable = {
+					var = NMM_workers
+					value = 0
+				}
+				set_variable = {
+					var = NMM_bats
+					value = 0
+				}
+				set_variable = {
+					var = NMM_partisans
+					value = 0
+				}
+				#days to hours applied
+				country_event = {
+					id = equestria.232
+					days = 10
+				}
+				else = {
+					country_event = {
+						id = equestria.221
+						days = 10
+					}
+				}
+			}
+		}
+	}
+	option = { ## moderate
+		name = equestria.231.b
+		ai_chance = { factor = 33 
+			modifier = {
+				factor = 0		
+				OR = {
+					has_country_flag = EQS_AI_LUNAR_CIVIL_WAR_MAX 
+					has_game_rule = {
+						rule = EQS_ai_behavior
+						option = LUNAR_CIVIL_WAR_MAX
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = NLR_partisans_moderate_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = NMM_partisans
+				value = 2
+			}
+			add_to_variable = {
+				var = NMM_aggressive
+				value = 1
+			}
+			set_country_flag = NLR_partisans_moderate		
+			if = {
+				limit = {
+					check_variable = {
+						var = NMM_aggressive
+						value = 6
+						compare = greater_than_or_equals
+					}
+				}
+				set_variable = {
+					var = NMM_weaponstealers
+					value = 0
+				}
+				set_variable = {
+					var = NMM_workers
+					value = 0
+				}
+				set_variable = {
+					var = NMM_bats
+					value = 0
+				}
+				set_variable = {
+					var = NMM_partisans
+					value = 0
+				}
+				#days to hours applied
+				country_event = {
+					id = equestria.232
+					days = 10
+				}
+				else = {
+					country_event = {
+						id = equestria.221
+						days = 10
+					}
+				}
+			}
+		}
 	}
 	option = { ## careful
 		name = equestria.231.c
@@ -2725,13 +3043,29 @@ country_event = { #### Assasination Attempt
 		has_government = democratic
 		has_country_leader = { character = EQS_princess_celestia ruling_only = yes }
 	}
-	option = { ## try for peace
-		name = equestria.210.a
-		ai_chance = { factor = 20 }
+
+	option = { ## be agressive
+		name = equestria.210.b
+		ai_chance = { factor = 80 }
+		custom_effect_tooltip = NLR_luna_speech_aggro_tt 
+		
 		hidden_effect = {
-			set_global_flag = luna_peace_save_alone
-			country_event = {
-				id = equestria.212
+			if = {
+				limit = {
+					has_global_flag = luna_nlr_friend
+				}
+					
+					set_global_flag = luna_nlr_speech_full_aggro
+					country_event = {
+						id = equestria.211
+					}
+					
+				else = {
+					set_global_flag = luna_nlr_speech_full_aggro_alone
+					country_event = {
+						id = equestria.211
+					}
+				}
 			}
 		}
 	}
@@ -2856,13 +3190,14 @@ country_event = { ##Happy Ending
 		hidden_effect = {
 			EQS_princess_celestia = {
 				set_character_name = EQS_fused_sisters
-					set_portraits = {
+				set_portraits = {
 					civilian = {
 						large = "GFX_CelestiaLuna"
 					}
 				}
 				add_country_leader_role = {
 					promote_leader = yes
+
 					country_leader = {
 						expire = "1965.1.1"
 						#picture = "GFX_CelestiaLuna"
@@ -2886,8 +3221,8 @@ country_event = { ##Happy Ending
 				custom_effect_tooltip = selenite_stats_tp
 				set_global_flag = EQS_Selenite_created
 				hidden_effect = {
-					random_army_leader = {
-						limit = { has_id = 790 }
+					random_character = {
+						limit = { is_character = EQS_NLR_celenite }
 						save_global_event_target_as = EQS_Selenite
 					}
 				}
@@ -2900,8 +3235,8 @@ country_event = { ##Happy Ending
 				custom_effect_tooltip = tempest_wind_stats_tp
 				set_global_flag = EQS_Tempest_Wind_created
 				hidden_effect = {
-					random_army_leader = {
-						limit = { has_id = 202 }
+					random_character = {
+						limit = { is_character = EQS_NLR_tempest_wind }
 						save_global_event_target_as = EQS_Tempest_Wind
 					}
 				}
@@ -2914,8 +3249,8 @@ country_event = { ##Happy Ending
 				custom_effect_tooltip = bipen_stats_tp
 				set_global_flag = EQS_Bipen_created
 				hidden_effect = {
-					random_army_leader = {
-						limit = { has_id = 789 }
+					random_character = {
+						limit = { is_character = EQS_NLR_bipen }
 						save_global_event_target_as = EQS_Bipen
 					}
 				}
@@ -2929,8 +3264,8 @@ country_event = { ##Happy Ending
 				custom_effect_tooltip = midnight_oil_stats_tp
 				set_global_flag = EQS_Midnight_Oil_created
 				hidden_effect = {
-					random_army_leader = {
-						limit = { has_id = 205 }
+					random_character = {
+						limit = { is_character = EQS_NLR_midnight_oil }
 						save_global_event_target_as = EQS_Midnight_Oil
 					}
 				}
@@ -2943,8 +3278,8 @@ country_event = { ##Happy Ending
 				custom_effect_tooltip = oli_equites_stats_tp
 				set_global_flag = EQS_Oligarch_created
 				hidden_effect = {
-					random_army_leader = {
-						limit = { has_id = 206 }
+					random_character = {
+						limit = { is_character = EQS_oli_equites }
 						save_global_event_target_as = EQS_Oli_Equites
 					}
 				}
@@ -3746,39 +4081,39 @@ country_event = { #### Rarity Captured
 		trigger = {
 			tag = NLR
 		}
-		EQS = {
-			EQS_rarity = { 
-				set_nationality = NLR 
-				set_portraits = {
-					civilian = {
-						small = "GFX_idea_rarity_night"
-					}
+		event_target:EQS_rarity_target = {
+			set_nationality = NLR
+		}
+		EQS_rarity = {
+			set_portraits = {
+				civilian = {
+					small = "GFX_idea_rarity_night"
 				}
-				set_character_name = NLR_rarity_night
-				remove_advisor_role = { slot = political_advisor }
-				add_advisor_role = {
-					advisor = {
-						slot = political_advisor
-						idea_token = NLR_rarity_night
-						
-						allowed = {
-							original_tag = NLR
+			}
+			set_character_name = NLR_rarity_night
+			remove_advisor_role = { slot = high_command }
+			add_advisor_role = {
+				advisor = {
+					slot = political_advisor
+					idea_token = NLR_rarity_night
+
+					allowed = {
+						original_tag = NLR
+					}
+					available = {
+						has_global_flag = rarity_captured
+					}
+					visible = {
+						has_completed_focus = NLR_pardon_the_elements
+						NOT = {
+							has_global_flag = NLR_rarity_governor
 						}
-						available = {
-							has_global_flag = rarity_captured
-						}
-						visible = {
-							has_completed_focus = NLR_pardon_the_elements
-							NOT = {
-								has_global_flag = NLR_rarity_governor
-							}
-						}
-						traits = {
-							popular_figurehead 
-						}
-						on_add = { 
-							country_event = lunas.55 
-						}
+					}
+					traits = {
+						popular_figurehead 
+					}
+					on_add = { 
+						country_event = lunas.55 
 					}
 				}
 			}
@@ -4259,7 +4594,7 @@ country_event = {
 			}
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
 		}
-		create_wargoal = { target = JUN type = annex_everything }
+		create_wargoal = { target = JUN type = civil_war }
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -4287,7 +4622,7 @@ country_event = {
 
 	option = {
 		name = equestria.113.a
-		create_wargoal = { target = JUN type = annex_everything }
+		create_wargoal = { target = JUN type = civil_war }
 	}
 }
 
@@ -4359,7 +4694,7 @@ country_event = { ## SCS question
 			}
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
 		}
-		create_wargoal = { target = SCS type = annex_everything }
+		create_wargoal = { target = SCS type = civil_war }
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -4396,7 +4731,7 @@ country_event = { ## LSP question
 			}
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
 		}
-		create_wargoal = { target = LSP type = annex_everything }
+		create_wargoal = { target = LSP type = civil_war }
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -4433,7 +4768,7 @@ country_event = { ## VAN question
 			}
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
 		}
-		create_wargoal = { target = VAN type = annex_everything }
+		create_wargoal = { target = VAN type = civil_war }
 		ai_chance = {
 			modifier = {
 				add = 100
@@ -4487,7 +4822,7 @@ country_event = { ## BAL question
 			}
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
 		}
-		create_wargoal = { target = BAL type = annex_everything }
+		create_wargoal = { target = BAL type = civil_war }
 		hidden_effect = {
 			STG = { country_event = { id = stalliongrad.8 days = 1 }
 			}
@@ -4544,7 +4879,7 @@ country_event = { ## BAL/LSP REFUSES
 				remove_from_faction = FROM
 			}
 		}
-		create_wargoal = { target = FROM type = annex_everything }
+		create_wargoal = { target = FROM type = civil_war }
 		ai_chance = { factor = 50 }
 	}
 	option = {
@@ -4634,7 +4969,7 @@ country_event = { ## VAN refuses
 				remove_from_faction = VAN
 			}
 		}
-		create_wargoal = { target = VAN type = annex_everything }
+		create_wargoal = { target = VAN type = civil_war }
 		ai_chance = { factor = 50 }
 	}
 	option = {
@@ -6695,8 +7030,8 @@ country_event = { #AJ & Big mac
 	option = {
 		name = equestria.175.a
 		if = {
-			limit = { has_unit_leader = 7 }
-			event_target:EQS_BigMac = {
+			limit = { EQS_big_macintosh = { is_unit_leader = yes } }
+			EQS_big_macintosh = {
 				add_timed_unit_leader_trait = {
 					trait = wounded
 					days = 45

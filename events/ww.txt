@@ -16,7 +16,6 @@ country_event = { #factions
 		RCT = { add_to_faction = MIT }
 		RCT = { add_to_faction = GRY }
 		RCT = { add_to_faction = WNG }
-		RCT = { add_to_faction = NLR }
 		RCT = { add_to_faction = SCS }
 		RCT = { add_to_faction = NMS }
 		RCT = { add_to_faction = ZES }
@@ -28,7 +27,6 @@ country_event = { #factions
 		BAK = { add_to_faction = MIT }
 		BAK = { add_to_faction = GRY }
 		BAK = { add_to_faction = WNG }
-		BAK = { add_to_faction = NLR }
 		BAK = { add_to_faction = SCS }
 		BAK = { add_to_faction = NMS }
 		BAK = { add_to_faction = ZES }
@@ -40,7 +38,6 @@ country_event = { #factions
 		LCT = { add_to_faction = MIT }
 		LCT = { add_to_faction = GRY }
 		LCT = { add_to_faction = WNG }
-		LCT = { add_to_faction = NLR }
 		LCT = { add_to_faction = SCS }
 		LCT = { add_to_faction = NMS }
 		LCT = { add_to_faction = ZES }
@@ -52,7 +49,6 @@ country_event = { #factions
 		WIT = { add_to_faction = MIT }
 		WIT = { add_to_faction = GRY }
 		WIT = { add_to_faction = WNG }
-		WIT = { add_to_faction = NLR }
 		WIT = { add_to_faction = SCS }
 		WIT = { add_to_faction = NMS }
 		WIT = { add_to_faction = ZES }
@@ -64,7 +60,6 @@ country_event = { #factions
 		NIM = { add_to_faction = MIT }
 		NIM = { add_to_faction = GRY }
 		NIM = { add_to_faction = WNG }
-		NIM = { add_to_faction = NLR }
 		NIM = { add_to_faction = SCS }
 		NIM = { add_to_faction = NMS }
 		NIM = { add_to_faction = ZES }
