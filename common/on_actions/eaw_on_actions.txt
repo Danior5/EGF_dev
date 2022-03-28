@@ -100,6 +100,9 @@ on_actions = {
 			add_to_array = { global.ww_friendship_is_magic = NLR }
 			add_to_array = { global.ww_friendship_is_magic = NMS }
 			add_to_array = { global.ww_friendship_is_magic = SCS }
+			add_to_array = { global.ww_friendship_is_magic = LSP }
+			add_to_array = { global.ww_friendship_is_magic = BAL }
+			add_to_array = { global.ww_friendship_is_magic = JUN }
 
 			
 			for_each_scope_loop = {
