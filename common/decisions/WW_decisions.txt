@@ -202,7 +202,7 @@ foreign_politics = {
 			annex_country = { target = YAL transfer_troops = yes }
 		}
 	}
-		GRI_intergrate_HLQ = {
+	GRI_intergrate_HLQ = {
 		icon = generic_form_nation
 
 		targets = { HLQ }
@@ -269,97 +269,9 @@ foreign_politics = {
 			annex_country = { target = HLQ transfer_troops = yes }
 		}
 	}
-		
-		
-		
-	GRF_intergrate_PNG = {
-		icon = generic_form_nation
-
-		targets = { PNG }
-		targets_dynamic = yes
-
-		target_trigger = {
-			PNG = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = GRF
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = GRF
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [PNG.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = PNG
-				}
-				add_core_of = GRF
-			}
-			#annex_country = { target = PNG }
-		}
-	}
-	
-	GRF_intergrate_PLB = {
-		icon = generic_form_nation
-
-		targets = { PLB }
-		targets_dynamic = yes
-
-		target_trigger = {
-			PLB = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = GRF
-		}
 
 
-		ai_will_do = {
-			factor = 0
-		}
 
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = GRF
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [PLB.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = PLB
-				}
-				add_core_of = GRF
-			}
-			#annex_country = { target = PLB }
-		}
-	}
 
 
 	
@@ -616,8 +528,6 @@ foreign_politics = {
 				original_tag = FAW
 				original_tag = GRF
 				original_tag = OLE
-				original_tag = PNG
-				original_tag = EQS
 				original_tag = EQC
 				original_tag = STG
 				original_tag = CRY
@@ -630,11 +540,9 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAK
 				original_tag = NIM
-				original_tag = NLR
 				original_tag = HAU
 				original_tag = ZES
-				original_tag = SCS
-				original_tag = NMS
+
 			}
 		}
 		available = {
@@ -689,6 +597,9 @@ foreign_politics = {
 				original_tag = ZES
 				original_tag = SCS
 				original_tag = NMS
+				original_tag = JUN
+				original_tag = BAL
+				original_tag = LSP			
 			}
 		}
 		available = {
