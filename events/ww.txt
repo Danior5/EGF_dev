@@ -238,6 +238,13 @@ country_event = { #factions
 			}
 			GRI = { add_to_faction = OLE }
 		}
+		if = {
+			limit = {
+				tag = BAR
+				is_ai = no
+			}
+			GRI = { add_to_faction = BAR }
+		}
 		GRI = { add_to_faction = CRY }
 		GRI = { add_to_faction = GRF }
 		GRI = { add_to_faction = FAT }

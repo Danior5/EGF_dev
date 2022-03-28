@@ -82,6 +82,13 @@ on_actions = {
 				}
 				add_to_array = { global.ww_grandpa_eros_wild_ride = OLE }
 			}
+			if = {
+				limit = {
+					tag = BAR
+					is_ai = no
+				}
+				add_to_array = { global.ww_grandpa_eros_wild_ride = BAR }
+			}
 			
 			### SOUTH GUYS ###
 			add_to_array = { global.ww_friendship_is_magic = RCT }
@@ -299,14 +306,10 @@ on_actions = {
 			CHN = {
 				add_opinion_modifier = { target = EQS modifier = distrustful_relations }
 				reverse_add_opinion_modifier = { target = EQS modifier = distrustful_relations }
-				add_opinion_modifier = { target = CRY modifier = distrustful_relations }
-				reverse_add_opinion_modifier = { target = CRY modifier = distrustful_relations }
 				add_opinion_modifier = { target = EQC modifier = distrustful_relations }
 				reverse_add_opinion_modifier = { target = EQC modifier = distrustful_relations }
 				add_opinion_modifier = { target = EQS modifier = CHN_Embargo }
 				reverse_add_opinion_modifier = { target = EQS modifier = CHN_Embargo }
-				add_opinion_modifier = { target = CRY modifier = CHN_Embargo }
-				reverse_add_opinion_modifier = { target = CRY modifier = CHN_Embargo }
 				add_opinion_modifier = { target = EQC modifier = CHN_Embargo }
 				reverse_add_opinion_modifier = { target = EQC modifier = CHN_Embargo }
 				add_opinion_modifier = { target = GRI modifier = CHN_GRI_Friendship }

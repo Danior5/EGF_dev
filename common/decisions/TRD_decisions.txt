@@ -930,6 +930,12 @@ foreign_politics = {
 				original_tag = MIT
 				original_tag = GRY
 				original_tag = STG
+				original_tag = LSP
+				original_tag = SCS
+				original_tag = BAL
+				original_tag = JUN
+				original_tag = NMS
+				original_tag = ZES
 			}
 		}
 		visible = {
@@ -3006,7 +3012,15 @@ foreign_politics = {
 	TRD_conquer_HAU = {
 		icon = generic_ignite_civil_war
 		allowed = {
-		    original_tag = TRD
+			AND = {
+				original_tag = TRD
+				if = {
+					limit = {
+						tag = HAU
+						is_ai = yes
+					}
+				}
+			}
 		}
 		available = {
 			is_subject = no
