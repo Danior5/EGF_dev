@@ -31,13 +31,8 @@ country_event = { #factions
 			}
 			RCT = { add_to_faction = LSP }
 		}
-		if = {
-			limit = {
-				tag = NMS
-				is_ai = no
-			}
 			RCT = { add_to_faction = NMS }
-		}
+		
 		if = {
 			limit = {
 				tag = BAL
@@ -75,13 +70,9 @@ country_event = { #factions
 			}
 			BAK = { add_to_faction = LSP }
 		}
-		if = {
-			limit = {
-				tag = NMS
-				is_ai = no
-			}
+
 			BAK = { add_to_faction = NMS }
-		}
+		
 		if = {
 			limit = {
 				tag = BAL
@@ -119,13 +110,9 @@ country_event = { #factions
 			}
 			LCT = { add_to_faction = LSP }
 		}
-		if = {
-			limit = {
-				tag = NMS
-				is_ai = no
-			}
+
 			LCT = { add_to_faction = NMS }
-		}
+		
 		if = {
 			limit = {
 				tag = BAL
@@ -163,13 +150,9 @@ country_event = { #factions
 			}
 			WIT = { add_to_faction = LSP }
 		}
-		if = {
-			limit = {
-				tag = NMS
-				is_ai = no
-			}
+
 			WIT = { add_to_faction = NMS }
-		}
+		
 		if = {
 			limit = {
 				tag = BAL
@@ -207,13 +190,9 @@ country_event = { #factions
 			}
 			NIM = { add_to_faction = LSP }
 		}
-		if = {
-			limit = {
-				tag = NMS
-				is_ai = no
-			}
+
 			NIM = { add_to_faction = NMS }
-		}
+		
 		if = {
 			limit = {
 				tag = BAL
@@ -238,13 +217,7 @@ country_event = { #factions
 			}
 			GRI = { add_to_faction = OLE }
 		}
-		if = {
-			limit = {
-				tag = BAR
-				is_ai = no
-			}
-			GRI = { add_to_faction = BAR }
-		}
+		GRI = { add_to_faction = BAR }
 		GRI = { add_to_faction = CRY }
 		GRI = { add_to_faction = GRF }
 		GRI = { add_to_faction = FAT }
