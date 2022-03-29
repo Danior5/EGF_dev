@@ -46,27 +46,27 @@ on_actions = {
 			#### WW 1.5 factions ####
 			### NORTH GUYS ###
 			add_to_array = { global.ww_grandpa_eros_wild_ride = GRI }
-			if = {
-				limit = {
-					tag = BRZ
-					is_ai = no
-				}
-				add_to_array = { global.ww_grandpa_eros_wild_ride = BRZ }
-			}
-			if = {
-				limit = {
-					tag = ROU
-					is_ai = no
-				}
+			#if = {
+			#	limit = {
+			#		tag = BRZ
+			#		is_ai = no
+			#	}
+			#	add_to_array = { global.ww_grandpa_eros_wild_ride = BRZ }
+			#}
+			#if = {
+			#	limit = {
+			#		tag = ROU
+			#		is_ai = no
+			#	}
 				add_to_array = { global.ww_grandpa_eros_wild_ride = ROU }
-			}
-			if = {
-				limit = {
-					tag = YAL
-					is_ai = no
-				}
+			#}
+			#if = {
+			#	limit = {
+			#		tag = YAL
+			#		is_ai = no
+			#	}
 				add_to_array = { global.ww_grandpa_eros_wild_ride = YAL }
-			}
+			#}
 			add_to_array = { global.ww_grandpa_eros_wild_ride = HLQ }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = FAT }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = TRD }
@@ -75,20 +75,9 @@ on_actions = {
 			add_to_array = { global.ww_grandpa_eros_wild_ride = HAU }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = CRY }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = GRF }
-			if = {
-				limit = {
-					tag = OLE
-					is_ai = no
-				}
-				add_to_array = { global.ww_grandpa_eros_wild_ride = OLE }
-			}
-			if = {
-				limit = {
-					tag = BAR
-					is_ai = no
-				}
-				add_to_array = { global.ww_grandpa_eros_wild_ride = BAR }
-			}
+			add_to_array = { global.ww_grandpa_eros_wild_ride = OLE }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = BAR }
+			
 			
 			### SOUTH GUYS ###
 			add_to_array = { global.ww_friendship_is_magic = RCT }
@@ -106,10 +95,10 @@ on_actions = {
 			add_to_array = { global.ww_friendship_is_magic = ZES }
 			add_to_array = { global.ww_friendship_is_magic = NLR }
 			add_to_array = { global.ww_friendship_is_magic = NMS }
-			add_to_array = { global.ww_friendship_is_magic = SCS }
-			add_to_array = { global.ww_friendship_is_magic = LSP }
-			add_to_array = { global.ww_friendship_is_magic = BAL }
-			add_to_array = { global.ww_friendship_is_magic = JUN }
+			#add_to_array = { global.ww_friendship_is_magic = SCS }
+			#add_to_array = { global.ww_friendship_is_magic = LSP }
+			#add_to_array = { global.ww_friendship_is_magic = BAL }
+			#add_to_array = { global.ww_friendship_is_magic = JUN }
 
 			
 			for_each_scope_loop = {

@@ -207,16 +207,14 @@ country_event = { #factions
 			}
 			NIM = { add_to_faction = JUN }
 		}		
-		
-
-		
 		if = {
 			limit = {
 				tag = OLE
-				is_ai = no
+				is_subject = no
 			}
 			GRI = { add_to_faction = OLE }
 		}
+		#GRI = { add_to_faction = OLE }	
 		GRI = { add_to_faction = BAR }
 		GRI = { add_to_faction = CRY }
 		GRI = { add_to_faction = GRF }
