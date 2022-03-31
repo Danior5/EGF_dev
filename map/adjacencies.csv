@@ -1,0 +1,296 @@
+From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+9363;6345;sea;8533;-1;-1;-1;-1;;LittleHoof
+11773;9851;sea;5250;-1;-1;-1;-1;;SpaIslands
+902;11824;sea;5250;-1;-1;-1;-1;;SpaIslands2
+11529;177;sea;5328;-1;-1;-1;-1;;Yukka
+177;13077;sea;5328;-1;-1;-1;-1;;Yukka2
+379;7166;sea;8556;-1;-1;-1;-1;;South
+11625;6670;sea;5927;-1;-1;-1;-1;;Sunshine
+11612;3631;sea;8273;-1;-1;-1;-1;;Minefield
+9847;9580;sea;2458;-1;-1;-1;-1;;Olenia
+1163;10051;sea;4666;-1;-1;-1;-1;;IslandofDeath
+4057;10046;sea;8543;-1;-1;-1;-1;;IslandofDeath2
+1198;4047;sea;8543;-1;-1;-1;-1;;IslandofDeath3
+10370;12463;sea;8694;-1;-1;-1;-1;;Queensland
+12463;1534;sea;8694;-1;-1;-1;-1;;Queensland2
+10370;1534;sea;8694;-1;-1;-1;-1;;Queensland3
+10457;7607;sea;5830;-1;-1;-1;-1;;Queensland4
+4166;6737;sea;1256;-1;-1;-1;-1;;Bears
+4166;4029;sea;1256;-1;-1;-1;-1;;Bears2
+12368;4834;sea;1256;-1;-1;-1;-1;;Bears3
+3699;4834;sea;1256;-1;-1;-1;-1;;Bears4
+4775;4875;sea;8782;-1;-1;-1;-1;;PinPegasus
+4305;6057;sea;8557;-1;-1;-1;-1;;PinPegasus2
+11104;6015;sea;8482;-1;-1;-1;-1;;Griffons
+9328;9089;sea;8482;-1;-1;-1;-1;;Griffons2
+3301;11361;sea;2448;-1;-1;-1;-1;;Trottingham
+11361;3369;sea;8865;-1;-1;-1;-1;;Trottingham2
+11406;6526;sea;8865;-1;-1;-1;-1;;Trottingham3
+9833;11829;sea;4213;-1;-1;-1;-1;;Dragons
+10070;1194;sea;2375;-1;-1;-1;-1;;Dragons2
+7463;9059;sea;8340;-1;-1;-1;-1;;Haukland
+9165;9059;sea;8340;-1;-1;-1;-1;;Haukland
+9165;10138;sea;2942;-1;-1;-1;-1;;Haukland
+7673;98;sea;3195;-1;-1;-1;-1;;Haukland
+4446;98;sea;3195;-1;-1;-1;-1;;Haukland
+;;;;;;;;;
+4305;13115;sea;8565;-1;-1;-1;-1;;PinguinsCapital
+12929;4305;sea;8604;-1;-1;-1;-1;;Pinguins-Left-Island
+13215;12929;sea;8604;-1;-1;-1;-1;;Pinguins
+13215;10833;sea;8604;-1;-1;-1;-1;;Pinguins-Land
+12801;9190;sea;8517;-1;-1;-1;-1;;Pinguins-Land2
+13094;4875;sea;8782;-1;-1;-1;-1;;Pinguins-Lospegasus
+11575;9604;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Islands
+11575;753;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Shore
+8101;11213;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia
+10882;7107;sea;5890;-1;-1;-1;-1;;New Manehattan-Talononte
+6275;8360;sea;8262;-1;-1;-1;-1;;Northern-Island
+9055;12142;sea;5838;-1;-1;-1;-1;;Southern-Islands-Mainland
+9055;9045;sea;5838;-1;-1;-1;-1;;Southern-Islands-IslandSouth
+12142;9045;sea;5838;-1;-1;-1;-1;;Mainland-IslandSouth
+12182;5104;sea;7678;-1;-1;-1;-1;;Smolsouthisland
+12182;9055;sea;7678;-1;-1;-1;-1;;Smolisland-Southernisland
+10180;3080;sea;5656;-1;-1;-1;-1;;Mainland-Smolright-island
+1228;3080;sea;5656;-1;-1;-1;-1;;Smolrightisland-BigSouthIsland
+7601;1400;sea;5656;-1;-1;-1;-1;;Tinyisland-Mainland
+1642;4576;sea;8308;-1;-1;-1;-1;;LandofHeroes-Mainland
+1248;1577;sea;411;-1;-1;-1;-1;;uwotm8
+1577;10453;sea;411;-1;-1;-1;-1;;uwotm8-2
+1248;8160;sea;411;-1;-1;-1;-1;;ToMinotauria
+5214;12965;sea;5185;-1;-1;-1;-1;;Minotauria3
+12919;4335;sea;464;-1;-1;-1;-1;;Minotauria2
+11020;12129;sea;8334;-1;-1;-1;-1;;Minotauria2
+10274;3147;sea;843;-1;-1;-1;-1;;HeartIsland
+1316;7376;sea;8334;-1;-1;-1;-1;;TriangleIsland
+1064;6177;sea;6040;-1;-1;-1;-1;;Thatisland
+1064;1273;sea;6040;-1;-1;-1;-1;;Thatisland
+1064;12269;sea;6040;-1;-1;-1;-1;;Thatisland
+12834;2100;sea;8708;-1;-1;-1;-1;;Tinyeasternisland
+10485;10395;sea;8442;-1;-1;-1;-1;;Someislands-EquestrianWest
+10395;1479;sea;8442;-1;-1;-1;-1;;Someislands-EquestrianWest
+1479;10435;sea;8442;-1;-1;-1;-1;;Someislands-EquestrianWest
+1614;10435;sea;8865;-1;-1;-1;-1;;Someislands-EquestrianWest
+;;;;;;;;;
+1428;11963;sea;1050;-1;-1;-1;-1;;ZESIslands
+11963;12126;sea;6040;-1;-1;-1;-1;;ZESIslands
+12126;11990;sea;6040;-1;-1;-1;-1;;ZESIslands
+11990;12253;sea;6040;-1;-1;-1;-1;;ZESIslands
+11990;12269;sea;6040;-1;-1;-1;-1;;ZESIslands
+12253;4423;sea;6040;-1;-1;-1;-1;;ZESIslands
+4423;10001;sea;6040;-1;-1;-1;-1;;ZESIslands
+;;;;;;;;;
+7572;10398;sea;8334;-1;-1;-1;-1;;Sydia-SaltIsland
+;;;;;;;;;
+12710;5041;sea;2996;-1;-1;-1;-1;;Deerland-Nimbusia
+;;;;;;;;;
+12373;12388;sea;13220;-1;-1;-1;-1;;Cyanolisia-Minotauria
+12402;10266;sea;411;-1;-1;-1;-1;;Sicameon-Minotauria
+1252;10266;sea;411;-1;-1;-1;-1;;Sicameon-Minotauria
+10438;1252;sea;411;-1;-1;-1;-1;;Sicameon-Sicameon
+4396;4323;sea;11015;-1;-1;-1;-1;;Minotauria4
+4323;1123;sea;11015;-1;-1;-1;-1;;Minotauria4
+1123;7415;sea;11015;-1;-1;-1;-1;;Minotauria4
+11932;2047;sea;11015;-1;-1;-1;-1;;Minotauria5
+11932;10124;sea;3826;-1;-1;-1;-1;;Minotauria5
+10124;10269;sea;3826;-1;-1;-1;-1;;Minotauria5
+12196;12969;sea;411;-1;-1;-1;-1;;Minotauria6
+;;;;;;;;;
+12171;7387;sea;2864;-1;-1;-1;-1;;Minotauria7
+7387;10285;sea;2864;-1;-1;-1;-1;;Minotauria7
+8091;2117;sea;2864;-1;-1;-1;-1;;Minotauria7
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+8300;8404;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal West
+8300;2499;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal East
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+6047;3083;impassable;-1;-1;-1;-1;-1;WW east;
+3341;3083;impassable;-1;-1;-1;-1;-1;WW east;
+3341;151;impassable;-1;-1;-1;-1;-1;WW east;
+9083;151;impassable;-1;-1;-1;-1;-1;WW east;
+9083;3193;impassable;-1;-1;-1;-1;-1;WW east;
+9083;9226;impassable;-1;-1;-1;-1;-1;WW east;
+9083;67;impassable;-1;-1;-1;-1;-1;WW east;
+9038;67;impassable;-1;-1;-1;-1;-1;WW east;
+11409;67;impassable;-1;-1;-1;-1;-1;WW east;
+11409;9167;impassable;-1;-1;-1;-1;-1;WW east;
+9435;9167;impassable;-1;-1;-1;-1;-1;WW east;
+6480;9167;impassable;-1;-1;-1;-1;-1;WW east;
+6480;6163;impassable;-1;-1;-1;-1;-1;WW east;
+6480;3119;impassable;-1;-1;-1;-1;-1;WW east;
+6480;6138;impassable;-1;-1;-1;-1;-1;WW east;
+11424;6138;impassable;-1;-1;-1;-1;-1;WW east;
+11424;3009;impassable;-1;-1;-1;-1;-1;WW east;
+32;3009;impassable;-1;-1;-1;-1;-1;WW east;
+32;3095;impassable;-1;-1;-1;-1;-1;WW east;
+32;101;impassable;-1;-1;-1;-1;-1;WW east;
+169;101;impassable;-1;-1;-1;-1;-1;WW east;
+169;9178;impassable;-1;-1;-1;-1;-1;WW east;
+11464;9178;impassable;-1;-1;-1;-1;-1;WW east;
+11464;6055;impassable;-1;-1;-1;-1;-1;WW east;
+11706;6791;impassable;-1;-1;-1;-1;-1;WW west;
+9735;6791;impassable;-1;-1;-1;-1;-1;WW west;
+9735;3597;impassable;-1;-1;-1;-1;-1;WW west;
+9735;11579;impassable;-1;-1;-1;-1;-1;WW west;
+11403;11579;impassable;-1;-1;-1;-1;-1;WW west;
+11403;449;impassable;-1;-1;-1;-1;-1;WW west;
+11418;449;impassable;-1;-1;-1;-1;-1;WW west;
+11418;484;impassable;-1;-1;-1;-1;-1;WW west;
+509;484;impassable;-1;-1;-1;-1;-1;WW west;
+500;484;impassable;-1;-1;-1;-1;-1;WW west;
+500;11459;impassable;-1;-1;-1;-1;-1;WW west;
+1530;11459;impassable;-1;-1;-1;-1;-1;WW west;
+9626;11459;impassable;-1;-1;-1;-1;-1;WW west;
+9632;654;impassable;-1;-1;-1;-1;-1;WW west;
+6674;654;impassable;-1;-1;-1;-1;-1;WW west;
+11706;3505;impassable;-1;-1;-1;-1;-1;WW west;
+11706;426;impassable;-1;-1;-1;-1;-1;WW west;
+3443;426;impassable;-1;-1;-1;-1;-1;WW west;
+3464;426;impassable;-1;-1;-1;-1;-1;WW west;
+9626;654;impassable;-1;-1;-1;-1;-1;WW west;
+9626;3658;impassable;-1;-1;-1;-1;-1;WW west;
+;;;;;;;;;
+7877;3914;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7877;11390;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7877;9054;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7877;12001;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7877;6188;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6722;6188;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6722;856;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10709;856;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10709;9929;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10709;981;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10709;3951;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12566;3951;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12566;6871;impassable;-1;-1;-1;-1;-1;West EQS Range;
+1836;6871;impassable;-1;-1;-1;-1;-1;West EQS Range;
+1836;11784;impassable;-1;-1;-1;-1;-1;West EQS Range;
+13162;11784;impassable;-1;-1;-1;-1;-1;West EQS Range;
+979;11784;impassable;-1;-1;-1;-1;-1;West EQS Range;
+979;6908;impassable;-1;-1;-1;-1;-1;West EQS Range;
+979;6920;impassable;-1;-1;-1;-1;-1;West EQS Range;
+979;3919;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11883;3919;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11883;6923;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10203;6923;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10203;11767;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6483;11767;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6483;914;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4430;914;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4430;3980;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4430;3884;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4430;11414;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11536;11414;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11536;11372;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11536;279;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11536;6431;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6600;6431;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6600;6460;impassable;-1;-1;-1;-1;-1;West EQS Range;
+6600;9051;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7683;9051;impassable;-1;-1;-1;-1;-1;West EQS Range;
+7683;863;impassable;-1;-1;-1;-1;-1;West EQS Range;
+11434;863;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12276;863;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12276;125;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12276;49;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12276;11091;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10685;11091;impassable;-1;-1;-1;-1;-1;West EQS Range;
+10685;3045;impassable;-1;-1;-1;-1;-1;West EQS Range;
+1870;3045;impassable;-1;-1;-1;-1;-1;West EQS Range;
+1870;11040;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12685;11040;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12685;9362;impassable;-1;-1;-1;-1;-1;West EQS Range;
+12685;9916;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4759;9916;impassable;-1;-1;-1;-1;-1;West EQS Range;
+4759;3914;impassable;-1;-1;-1;-1;-1;West EQS Range;
+;;;;;;;;;
+1655;334;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+1655;11372;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+1655;11414;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+1655;3884;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+9875;3884;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+9875;11786;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+9875;966;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+833;966;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+833;133;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+833;9914;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+552;9914;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+552;10;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+6534;10;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+6534;6462;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+6534;8025;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3545;8025;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3545;9736;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3545;9701;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3545;9563;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3545;494;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3722;494;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+4287;494;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+4287;3485;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3720;3485;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+3720;9570;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+2729;9570;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+2729;11343;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+2729;334;impassable;-1;-1;-1;-1;-1;Centre EQS Range;
+;;;;;;;;;
+9138;11114;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9138;179;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9138;13058;impassable;-1;-1;-1;-1;-1;East EQS Range;
+1173;13058;impassable;-1;-1;-1;-1;-1;East EQS Range;
+1173;3764;impassable;-1;-1;-1;-1;-1;East EQS Range;
+1173;3612;impassable;-1;-1;-1;-1;-1;East EQS Range;
+1173;11590;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11965;11590;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11965;6668;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11965;611;impassable;-1;-1;-1;-1;-1;East EQS Range;
+4178;611;impassable;-1;-1;-1;-1;-1;East EQS Range;
+4178;778;impassable;-1;-1;-1;-1;-1;East EQS Range;
+7096;778;impassable;-1;-1;-1;-1;-1;East EQS Range;
+7096;4078;impassable;-1;-1;-1;-1;-1;East EQS Range;
+4109;4078;impassable;-1;-1;-1;-1;-1;East EQS Range;
+4109;3988;impassable;-1;-1;-1;-1;-1;East EQS Range;
+4109;575;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9500;575;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9500;9536;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3576;9536;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3576;11483;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3576;3536;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11548;3536;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11548;11606;impassable;-1;-1;-1;-1;-1;East EQS Range;
+11548;962;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3476;962;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3476;3933;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3476;932;impassable;-1;-1;-1;-1;-1;East EQS Range;
+6147;932;impassable;-1;-1;-1;-1;-1;East EQS Range;
+6147;3393;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3005;3393;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3005;400;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3005;6195;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3128;6195;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3128;3070;impassable;-1;-1;-1;-1;-1;East EQS Range;
+6160;3070;impassable;-1;-1;-1;-1;-1;East EQS Range;
+6160;114;impassable;-1;-1;-1;-1;-1;East EQS Range;
+3007;114;impassable;-1;-1;-1;-1;-1;East EQS Range;
+156;114;impassable;-1;-1;-1;-1;-1;East EQS Range;
+156;3976;impassable;-1;-1;-1;-1;-1;East EQS Range;
+156;3773;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9218;3773;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9218;6788;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9218;9738;impassable;-1;-1;-1;-1;-1;East EQS Range;
+9218;11114;impassable;-1;-1;-1;-1;-1;East EQS Range;
+;;;;;;;;;
+-1;-1;;-1;-1;-1;-1;-1;-1;
