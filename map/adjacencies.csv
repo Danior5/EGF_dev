@@ -163,5 +163,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3464;426;impassable;-1;-1;-1;-1;-1;WW west;
 9626;654;impassable;-1;-1;-1;-1;-1;WW west;
 9626;3658;impassable;-1;-1;-1;-1;-1;WW west;
+9793;422;sea;11182;-1;-1;-1;-1;BOREAS_TUNNEL;Small Natural Tunnel
 ;;;;;;;;;
 -1;-1;;-1;-1;-1;-1;-1;-1;
