@@ -718,7 +718,7 @@ ideas = {
 				political_power_gain = -0.75
 				stability_factor = -0.15
 				production_speed_buildings_factor = -0.10
-				research_speed_factor = -0.2
+				#research_speed_factor = -0.2
 			}
 		}
 	}

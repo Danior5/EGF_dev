@@ -83,7 +83,7 @@ shared_focus = {
 		}
 	}
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 4
@@ -162,7 +162,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_dreams_of_a_federation
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -262,7 +262,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_science_society
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -359,7 +359,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_dreams_of_a_federation
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -473,7 +473,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_develop_DEP
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -584,7 +584,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_build_roads_in_DEP
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -672,7 +672,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_dreams_of_a_federation
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -787,7 +787,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_develop_FRE
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -894,7 +894,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_build_roads_in_FRE
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -979,7 +979,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_development_grants_DEP
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1075,7 +1075,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rdc
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1425,7 +1425,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_rdc_rail_projects
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1530,7 +1530,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rec
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1619,7 +1619,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_social_fund
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 2
@@ -1736,7 +1736,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_eastern_transport_fund
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1835,7 +1835,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = RIV_river_parliament
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -1933,7 +1933,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_river_parliament
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -2026,7 +2026,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_centeral_bank
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -2126,7 +2126,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_rivbit
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -2222,7 +2222,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_river_union
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -2324,7 +2324,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_river_union
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
