@@ -897,15 +897,11 @@ war_measures = {
                 }
                 AND = {
                     has_government = fascism
-                    OR = {
-                        has_war_support > 0.89
-                        surrender_progress > 0
-                    }
+					has_war_support > 0.79
                 }
                 AND = {
                     has_government = neutrality
-                    has_war_support > 0.84
-                    has_stability > 0.7
+					has_war_support > 0.79
                 }
             }
         }
