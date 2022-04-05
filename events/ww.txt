@@ -9,58 +9,83 @@ country_event = { #factions
 	is_triggered_only = yes
 	option = {
 	name = ww.5.a
+		## South ##
 		RCT = { add_to_faction = STG }
-		RCT = { add_to_faction = EQC }
 		RCT = { add_to_faction = EQS }
-		RCT = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			RCT = { add_to_faction = CRY }
+		}
 		RCT = { add_to_faction = MIT }
 		RCT = { add_to_faction = GRY }
 		RCT = { add_to_faction = WNG }
 		
 		BAK = { add_to_faction = STG }
-		BAK = { add_to_faction = EQC }
 		BAK = { add_to_faction = EQS }
-		BAK = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			BAK = { add_to_faction = CRY }
+		}
 		BAK = { add_to_faction = MIT }
 		BAK = { add_to_faction = GRY }
 		BAK = { add_to_faction = WNG }
 		
 		LCT = { add_to_faction = STG }
-		LCT = { add_to_faction = EQC }
 		LCT = { add_to_faction = EQS }
-		LCT = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			LCT = { add_to_faction = CRY }
+		}
 		LCT = { add_to_faction = MIT }
 		LCT = { add_to_faction = GRY }
 		LCT = { add_to_faction = WNG }
 		
 		WIT = { add_to_faction = STG }
-		WIT = { add_to_faction = EQC }
 		WIT = { add_to_faction = EQS }
-		WIT = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			WIT = { add_to_faction = CRY }
+		}
 		WIT = { add_to_faction = MIT }
 		WIT = { add_to_faction = GRY }
 		WIT = { add_to_faction = WNG }
 		
 		NIM = { add_to_faction = STG }
-		NIM = { add_to_faction = EQC }
 		NIM = { add_to_faction = EQS }
-		NIM = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			NIM = { add_to_faction = CRY }
+		}
 		NIM = { add_to_faction = MIT }
 		NIM = { add_to_faction = GRY }
 		NIM = { add_to_faction = WNG }
 		
 		DMT = { add_to_faction = STG }
-		DMT = { add_to_faction = EQC }
 		DMT = { add_to_faction = EQS }
-		DMT = { add_to_faction = CRY }
+		if = {
+			limit = {
+				CRY = { is_subject = no }
+			}
+			DMT = { add_to_faction = CRY }
+		}
 		DMT = { add_to_faction = MIT }
 		DMT = { add_to_faction = GRY }
 		DMT = { add_to_faction = WNG }
 		
+		## North ##
 		if = {
 			limit = {
-				tag = OLE
-				is_ai = no
+				OLE = { is_subject = no }
 			}
 			GRI = { add_to_faction = OLE }
 		}
