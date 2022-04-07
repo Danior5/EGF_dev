@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 military_training_category:0 "Military Actions"
 military_training:0 "Military Training"
 lessons_of_war_army:0 "Practical Doctrinal Experience on Land"
@@ -184,21 +184,21 @@ decision_cost_CP_25_army_xp_50:0 "£command_power  §Y25§! £army_experience  �
 decision_cost_CP_25_army_xp_50_blocked:0 "£command_power  §R25§! £army_experience  §R50§!"
 decision_cost_CP_25_army_xp_50_tooltip:0 "It costs [This.GetDecisionCostCP25ArmyXP50] to take the decision"
 
+decision_cost_army_xp_5:0 "£army_experience  §Y5§!"
+decision_cost_army_xp_5_blocked:0 "£army_experience  §R5§!"
+decision_cost_army_xp_5_tooltip:0 "It costs [This.GetDecisionCostArmyXP5] to take the decision"
+
 decision_cost_army_xp_10:0 "£army_experience  §Y10§!"
 decision_cost_army_xp_10_blocked:0 "£army_experience  §R10§!"
 decision_cost_army_xp_10_tooltip:0 "It costs [This.GetDecisionCostArmyXP10] to take the decision"
 
+decision_cost_army_xp_15:0 "£army_experience  §Y15§!"
+decision_cost_army_xp_15_blocked:0 "£army_experience  §R15§!"
+decision_cost_army_xp_15_tooltip:0 "It costs [This.GetDecisionCostArmyXP15] to take the decision"
+
 decision_cost_army_xp_20:0 "£army_experience  §Y20§!"
 decision_cost_army_xp_20_blocked:0 "£army_experience  §R20§!"
 decision_cost_army_xp_20_tooltip:0 "It costs [This.GetDecisionCostArmyXP20] to take the decision"
-
-decision_cost_army_xp_30:0 "£army_experience  §Y30§!"
-decision_cost_army_xp_30_blocked:0 "£army_experience  §R30§!"
-decision_cost_army_xp_30_tooltip:0 "It costs [This.GetDecisionCostArmyXP30] to take the decision"
-
-decision_cost_army_xp_40:0 "£army_experience  §Y40§!"
-decision_cost_army_xp_40_blocked:0 "£army_experience  §R40§!"
-decision_cost_army_xp_40_tooltip:0 "It costs [This.GetDecisionCostArmyXP40] to take the decision"
 
 decision_cost_army_xp_50:0 "£army_experience  §Y50§!"
 decision_cost_army_xp_50_blocked:0 "£army_experience  §R50§!"
