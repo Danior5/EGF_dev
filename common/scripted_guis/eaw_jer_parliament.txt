@@ -529,7 +529,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH3_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH2_COMPLETED
-				army_experience = -10
+				army_experience = -5
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH3_BUTTON_click = {
 				set_technology = {
@@ -537,7 +537,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH4_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH3_COMPLETED
-				army_experience = -20
+				army_experience = -10
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH4_BUTTON_click = {
 				set_technology = {
@@ -545,14 +545,14 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH5_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH4_COMPLETED
-				army_experience = -30
+				army_experience = -15
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH5_BUTTON_click = {
 				set_technology = {
 			    	JER_magical_artillery_tech = 1
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH5_COMPLETED
-				army_experience = -40
+				army_experience = -20
 			}
 			JER_ARMY_DOCTRINE_CLOSE_BUTTON_click = {
 				clr_country_flag = JER_ARMY_DOCTRINE_GUI_OPENED
@@ -573,7 +573,7 @@ scripted_gui = {
 			JER_ARMY_DOCTRINE_PATH1_TECH2_LOCKED_visible = {
 				OR = { 
 					NOT = {
-						has_army_experience > 9
+						has_army_experience > 4
 					}
 					NOT = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH2_UNLOCKED 
@@ -585,7 +585,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH2_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH2_UNLOCKED
-				has_army_experience > 9
+				has_army_experience > 4
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH2_COMPLETED
 				}
@@ -600,7 +600,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH3_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 19
+						has_army_experience > 9
 					}
 				}
 				NOT = { 
@@ -609,7 +609,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH3_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH3_UNLOCKED
-				has_army_experience > 19
+				has_army_experience > 9
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH3_COMPLETED
 				}
@@ -624,7 +624,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH4_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 29
+						has_army_experience > 14
 					}
 				}
 				NOT = { 
@@ -633,7 +633,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH4_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH4_UNLOCKED
-				has_army_experience > 29
+				has_army_experience > 14
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH4_COMPLETED
 				}
@@ -648,7 +648,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH5_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 39
+						has_army_experience > 19
 					}
 				}
 				NOT = { 
@@ -657,7 +657,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH1_TECH5_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH5_UNLOCKED
-				has_army_experience > 39
+				has_army_experience > 19
 				NOT = {
 					has_country_flag = JER_ARMY_DOCTRINE_PATH1_TECH5_COMPLETED
 				}
@@ -693,7 +693,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH3_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH2_COMPLETED
-				army_experience = -10
+				army_experience = -5
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH3_BUTTON_click = {
 				set_technology = {
@@ -701,7 +701,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH4_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH3_COMPLETED
-				army_experience = -20
+				army_experience = -10
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH4_BUTTON_click = {
 				set_technology = {
@@ -709,14 +709,14 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH5_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH4_COMPLETED
-				army_experience = -30
+				army_experience = -15
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH5_BUTTON_click = {
 				set_technology = {
 			    	JER_magical_tanks_tech = 1
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH5_COMPLETED
-				army_experience = -40
+				army_experience = -20
 			}
 			JER_ARMY_DOCTRINE_CLOSE_BUTTON_click = {
 				clr_country_flag = JER_ARMY_DOCTRINE_GUI_OPENED
@@ -737,7 +737,7 @@ scripted_gui = {
 			JER_ARMY_DOCTRINE_PATH2_TECH2_LOCKED_visible = {
 				OR = { 
 					NOT = {
-						has_army_experience > 9
+						has_army_experience > 4
 					}
 					NOT = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH2_UNLOCKED 
@@ -749,7 +749,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH2_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH2_UNLOCKED
-				has_army_experience > 9
+				has_army_experience > 4
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH2_COMPLETED
 				}
@@ -764,7 +764,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH3_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 19
+						has_army_experience > 9
 					}
 				}
 				NOT = { 
@@ -773,7 +773,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH3_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH3_UNLOCKED
-				has_army_experience > 19
+				has_army_experience > 9
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH3_COMPLETED
 				}
@@ -788,7 +788,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH4_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 29
+						has_army_experience > 14
 					}
 				}
 				NOT = { 
@@ -797,7 +797,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH4_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH4_UNLOCKED
-				has_army_experience > 29
+				has_army_experience > 14
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH4_COMPLETED
 				}
@@ -812,7 +812,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH5_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 39
+						has_army_experience > 19
 					}
 				}
 				NOT = { 
@@ -821,7 +821,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH2_TECH5_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH5_UNLOCKED
-				has_army_experience > 39
+				has_army_experience > 19
 				NOT = {
 					has_country_flag = JER_ARMY_DOCTRINE_PATH2_TECH5_COMPLETED
 				}
@@ -857,7 +857,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH3_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH2_COMPLETED
-				army_experience = -10
+				army_experience = -5
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH3_BUTTON_click = {
 				set_technology = {
@@ -865,7 +865,7 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH4_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH3_COMPLETED
-				army_experience = -20
+				army_experience = -10
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH4_BUTTON_click = {
 				set_technology = {
@@ -873,14 +873,14 @@ scripted_gui = {
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH5_UNLOCKED
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH4_COMPLETED
-				army_experience = -30
+				army_experience = -15
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH5_BUTTON_click = {
 				set_technology = {
 			    	JER_pegasi_divisions = 1
 				}
 				set_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH5_COMPLETED
-				army_experience = -40
+				army_experience = -20
 			}
 			JER_ARMY_DOCTRINE_CLOSE_BUTTON_click = {
 				clr_country_flag = JER_ARMY_DOCTRINE_GUI_OPENED
@@ -901,7 +901,7 @@ scripted_gui = {
 			JER_ARMY_DOCTRINE_PATH3_TECH2_LOCKED_visible = {
 				OR = { 
 					NOT = {
-						has_army_experience > 9
+						has_army_experience > 4
 					}
 					NOT = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH2_UNLOCKED 
@@ -913,7 +913,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH2_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH2_UNLOCKED
-				has_army_experience > 9
+				has_army_experience > 4
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH2_COMPLETED
 				}
@@ -928,7 +928,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH3_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 19
+						has_army_experience > 9
 					}
 				}
 				NOT = { 
@@ -937,7 +937,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH3_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH3_UNLOCKED
-				has_army_experience > 19
+				has_army_experience > 9
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH3_COMPLETED
 				}
@@ -952,7 +952,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH4_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 29
+						has_army_experience > 14
 					}
 				}
 				NOT = { 
@@ -961,7 +961,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH4_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH4_UNLOCKED
-				has_army_experience > 29
+				has_army_experience > 14
 				NOT = { 
 					has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH4_COMPLETED
 				}
@@ -976,7 +976,7 @@ scripted_gui = {
 						has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH5_UNLOCKED 
 					}
 					NOT = {
-						has_army_experience > 39
+						has_army_experience > 19
 					}
 				}
 				NOT = { 
@@ -985,7 +985,7 @@ scripted_gui = {
 			}
 			JER_ARMY_DOCTRINE_PATH3_TECH5_BUTTON_visible = {
 				has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH5_UNLOCKED
-				has_army_experience > 39
+				has_army_experience > 19
 				NOT = {
 					has_country_flag = JER_ARMY_DOCTRINE_PATH3_TECH5_COMPLETED
 				}
