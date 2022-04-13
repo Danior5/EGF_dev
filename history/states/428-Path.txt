@@ -20,11 +20,4 @@ state={
 			arms_factory = 1
 		}
 	}
-	resources = {
-		chromium = 19
-		oil = 21
-		tungsten=24
-		steel = 42
-		aluminium = 12
-	}
 }
