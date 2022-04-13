@@ -33,8 +33,11 @@ state={
 	}
 
 	resources = {
-		oil = 4
-		steel = 3
-		rubber=34
+		oil = 7
+		steel = 39
+		rubber = 34
+		chromium = 15
+		aluminium = 11
+		tungsten = 24
 	}
 }
