@@ -16,4 +16,56 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		WW_tassen_surrender_limit = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HLQ_knights
+			modifier = {
+				surrender_limit = 1.00
+			}
+		}
+	}
+	
+	country = {
+		WW_tarrin_offensive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HLQ_knights
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+		WW_defence_of_aquileia = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HLQ_knights
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+	
+	
 }
