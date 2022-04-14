@@ -342,11 +342,7 @@ foreign_politics = {
 		}
 
 		visible = {
-			if = {
-				limit = {
 					original_tag = GRF
-				}
-			}
 		}
 
 		complete_effect = {
@@ -385,11 +381,7 @@ foreign_politics = {
 		}
 
 		visible = {
-			if = {
-				limit = {
 					original_tag = EQS
-				}
-			}
 		}
 
 		complete_effect = {
@@ -875,6 +867,60 @@ foreign_politics = {
 }
 
 war_measures = {
+	JER_tarrin_offensive = {
+
+		icon = generic_industry
+
+        allowed = {
+           	original_tag = JER
+        }
+
+        available = {
+            has_war = yes
+        }
+		fire_only_once = yes
+        visible = {
+			AND = {
+				has_war = yes
+				date > 1011.10.30
+			}
+        }
+
+        ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+        }
+    }
+	
+	JER_defence_of_aquileia = {
+
+		icon = generic_industry
+
+        allowed = {
+           	original_tag = JER
+        }
+
+        available = {
+            has_war = yes
+        }
+		fire_only_once = yes
+        visible = {
+			AND = {
+				has_war = yes
+				date > 1011.10.30
+			}
+        }
+
+        ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_timed_idea = { idea = WW_defence_of_aquileia  days = 90 }
+        }
+    }
+	
 	women_in_the_workforce = {
 
 		icon = generic_industry
