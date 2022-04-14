@@ -156,6 +156,23 @@ units = {
 		start_equipment_factor = 0.4 }
 }
 
+air_wings = {
+	598 = {
+		fighter_equipment_0 = {
+			owner = "GRY"
+			amount = 1
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_genius"
+			name="Sam"
+			surname="Hyde"
+			callsign="Ghost of Kaiv"
+			portrait=1 # Pick random index here, or make special GFX_EQS_ace_Night_Glider n to override.
+		}
+		start_experience_factor = 1
+	}
+}
+
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
