@@ -414,7 +414,7 @@ continuous_focus_palette = {
 	focus = {
 		id = continuous_reduced_resource_penalty
 		
-		icon = GFX_goal_continuous_research
+		icon = GFX_All_resource
 		
 		available = {
 		}
@@ -441,7 +441,7 @@ continuous_focus_palette = {
 	focus = {
 		id = continuous_extra_fuel
 		
-		icon = GFX_goal_continuous_research
+		icon = GFX_oilbarrels
 		
 		available = {
 		}
@@ -471,7 +471,7 @@ continuous_focus_palette = {
 	focus = {
 		id = continuous_faster_mobilization
 		
-		icon = GFX_goal_continuous_research
+		icon = GFX_goal_conscription
 		
 		available = {
 		}
@@ -482,7 +482,7 @@ continuous_focus_palette = {
 		}
 
 		modifier = {
-			mobilization_speed = 3.00
+			mobilization_speed = 2.00
 		}
 		
 		
@@ -498,7 +498,7 @@ continuous_focus_palette = {
 	focus = {
 		id = continuous_cheaper_infantry_equipment
 		
-		icon = GFX_goal_continuous_research
+		icon = GFX_goal_van_rifles
 		
 		available = {
 		}

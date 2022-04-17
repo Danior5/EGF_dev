@@ -17,6 +17,17 @@
  
   
  WW_timer_mission:0 "Impending World War"
+ WW_spawn_50w:0 "Spawn a 50 width Division"
  
  women_in_the_workforce:0 "All Adults Serve haters in the Workforce"
  women_in_the_workforce_desc:0 "Tassen is a pussy who doesn't have the balls to just go All Adults and cope with the industry penalty. -9999 tryhard credit"
+ continuous_extra_fuel:0 "Fuel Production"
+ continuous_reduced_resource_penalty:0 "Resource-efficient Production"
+ continuous_faster_mobilization:0 "Rapid Mobilization"
+ continuous_cheaper_infantry_equipment:0 "Infantry Equipment Production"
+ 
+ JER_tarrin_offensive:0 "Tarrin Offensive"
+ JER_defence_of_aquileia:0 "Defence of Aquileia"
+ 
+ WW_tarrin_offensive:0 "Operation: 'Fuck Wingbardian Chromium'"
+ WW_defence_of_aquileia:0 "Operation: 'Great Trial but with catbirds'"
