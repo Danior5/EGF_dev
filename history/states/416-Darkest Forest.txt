@@ -11,11 +11,12 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = DED
-		add_core_of = DED
+
 
 		buildings = {
 			infrastructure = 1
 		}
 	}
+
+
 }

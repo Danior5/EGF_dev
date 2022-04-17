@@ -11,7 +11,8 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+
 	}
+
+
 }
