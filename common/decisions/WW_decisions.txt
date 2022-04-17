@@ -869,7 +869,7 @@ foreign_politics = {
 war_measures = {
 	JER_tarrin_offensive = {
 
-		icon = generic_industry
+		icon = border_war
 
         allowed = {
            	original_tag = JER
@@ -896,7 +896,7 @@ war_measures = {
 	
 	JER_defence_of_aquileia = {
 
-		icon = generic_industry
+		icon = rifles
 
         allowed = {
            	original_tag = JER
