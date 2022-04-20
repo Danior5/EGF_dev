@@ -1,0 +1,677 @@
+characters={
+	BAK_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	BRZ_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	CHN_WW_fieldmarshel={
+		name="YO SPEER!!!11!"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_speer.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	CRY_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	DMT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	EQC_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	EQS_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	FAT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	GRF_WW_fieldmarshel={
+		name="Super Ukrainian 9000"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_Danoir7.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	GRI_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	GRY_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	HLQ_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	JER_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	LCT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	MIT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NIM_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	OLE_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	PNG_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	RCT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	ROU_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	STG_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	TRD_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	WIT_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	WNG_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	YAL_WW_fieldmarshel={
+		name="Teng's OC"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_ponazov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

@@ -1,0 +1,678 @@
+characters={
+	BAK_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	BRZ_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	CHN_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	CRY_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	DMT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	EQC_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	EQS_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	FAT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	GRF_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	GRI_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	GRY_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	HLQ_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	JER_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	LCT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	MIT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	NIM_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	OLE_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	PNG_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	RCT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	ROU_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	STG_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	TRD_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	WIT_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	WNG_WW_infantry={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	YAL_WW_infantry={
+		name="Batov'd"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	
+}

@@ -1,0 +1,326 @@
+characters={
+	WMP_pony_fieldmarshel={
+		name="Fieldmarshel Fella"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_zhukov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	TAG_WW_tank={
+		name="Blitzkrig Bloke"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_yazov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader cavalry_leader trickster hill_fighter ranger adaptable }
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	TAG_WW_commando={
+		name="Commando Chap"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_sablin.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+				advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	TAG_WW_infantry={
+		name="Infantry Individual"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_tucker.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	WMP_pony_fieldmarshel={
+		name="Fieldmarshel Fella"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_zhukov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable logistics_wizard}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	WMP_griffon_tank={
+		name="Blitzkrig Bloke"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_yazov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader cavalry_leader trickster hill_fighter ranger adaptable }
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	WMP_griffon_commando={
+		name="Commando Chap"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_sablin.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+				advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	WMP_griffon_infantry={
+		name="Infantry Individual"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_tucker.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	WMP_griffon_tank={
+		name="Blitzkrig Bloke"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_yazov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader cavalry_leader trickster hill_fighter ranger adaptable }
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	WMP_griffon_marine={
+		name="Marine Man"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_men.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader naval_invader commando ranger hill_fighter}
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+				advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	WMP_griffon_commando={
+		name="Commando Chap"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_sablin.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+				advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+	WMP_griffon_infantry={
+		name="Infantry Individual"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_tucker.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { organizer infantry_leader skilled_staffer}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+}
