@@ -173,6 +173,7 @@ recruit_character = HLQ_WW_commando
 recruit_character = HLQ_WW_infantry
 recruit_character = HLQ_WW_fieldmarshel
 
+
 set_rule = {
 	can_generate_female_aces = yes
 }

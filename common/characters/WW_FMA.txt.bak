@@ -540,10 +540,10 @@ characters={
 		}
 	}
 	STG_WW_fieldmarshel={
-		name="Buckharin (best alicorn)"
+		name="Buckarien (best alicorn)"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_bukharin.tga"
+				large="gfx/leaders/WW/WW_tucker.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}

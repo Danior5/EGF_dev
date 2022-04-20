@@ -1,9 +1,9 @@
 characters={
 	BAK_WW_tank={
-		name="El Generico"
+		name="Arabic Monkey"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_garett_monkey.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -54,10 +54,10 @@ characters={
 		}
 	}
 	CHN_WW_tank={
-		name="El Generico"
+		name="Fev's OC"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Fev_OC.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -270,10 +270,10 @@ characters={
 		}
 	}
 	GRY_WW_tank={
-		name="El Generico"
+		name="Volodymyr Zelenskyy"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_zalensky.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -297,10 +297,10 @@ characters={
 		}
 	}
 	HLQ_WW_tank={
-		name="El Generico"
+		name="Mordicai"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_mordicai.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -324,10 +324,10 @@ characters={
 		}
 	}
 	JER_WW_tank={
-		name="El Generico"
+		name="Charles de Gaulle"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_degull.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -486,10 +486,10 @@ characters={
 		}
 	}
 	RCT_WW_tank={
-		name="El Generico"
+		name="Walther White"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_walther.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -621,10 +621,10 @@ characters={
 		}
 	}
 	WNG_WW_tank={
-		name="El Generico"
+		name="Tassen's beloved"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_tassen_beloved.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}

@@ -102,6 +102,7 @@ recruit_character = GRY_WW_commando
 recruit_character = GRY_WW_infantry
 recruit_character = GRY_WW_fieldmarshel
 
+
 GRY_symon_preenliura = { set_character_flag = RIV_advisor_from_GRY }
 GRY_mykhailo_thrushkevsky = { set_character_flag = RIV_advisor_from_GRY }
 GRY_anatoli_kreenakh = { set_character_flag = RIV_advisor_from_GRY }

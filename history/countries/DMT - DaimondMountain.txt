@@ -110,6 +110,12 @@ recruit_character = DMT_yorkie
 recruit_character = DMT_rex
 recruit_character = DMT_mastiff
 recruit_character = DMT_daner
+#pregrinded generals
+recruit_character = DMT_WW_tank
+recruit_character = DMT_WW_commando
+recruit_character = DMT_WW_infantry
+recruit_character = DMT_WW_fieldmarshel
+
 
 set_rule = {
 	can_generate_female_aces = yes

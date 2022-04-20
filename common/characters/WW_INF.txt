@@ -54,10 +54,10 @@ characters={
 		}	
 	}
 	CHN_WW_infantry={
-		name="El Generico"
+		name="Felix Steiner"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_steiner.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -135,10 +135,10 @@ characters={
 		}	
 	}
 	EQC_WW_infantry={
-		name="El Generico"
+		name="John Curtain"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_john_curtian.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -270,10 +270,10 @@ characters={
 		}	
 	}
 	GRY_WW_infantry={
-		name="El Generico"
+		name="Lightest Evi Light-Infantry"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Danoir7.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -297,10 +297,10 @@ characters={
 		}	
 	}
 	HLQ_WW_infantry={
-		name="El Generico"
+		name="Berghley"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_berdly.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -324,10 +324,10 @@ characters={
 		}	
 	}
 	JER_WW_infantry={
-		name="El Generico"
+		name="Single peice of bagette"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_begette.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -351,10 +351,10 @@ characters={
 		}	
 	}
 	LCT_WW_infantry={
-		name="El Generico"
+		name="Josip Broz Tito"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_tito.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -402,7 +402,7 @@ characters={
 			ai_will_do = {
 				factor = 0
 			}
-		}	
+		}
 	}
 	NIM_WW_infantry={
 		name="El Generico"
@@ -432,10 +432,10 @@ characters={
 		}	
 	}
 	OLE_WW_infantry={
-		name="El Generico"
+		name="Yokodk"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_yokodk.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -486,10 +486,10 @@ characters={
 		}	
 	}
 	RCT_WW_infantry={
-		name="El Generico"
+		name="Jesse Pinkman"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_jesse.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -540,10 +540,10 @@ characters={
 		}	
 	}
 	STG_WW_infantry={
-		name="El Generico"
+		name="Live Tukhar reaction"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_tucker.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -621,10 +621,10 @@ characters={
 		}	
 	}
 	WNG_WW_infantry={
-		name="El Generico"
+		name="Tassen Sharkpony"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_tassenshark.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -651,7 +651,7 @@ characters={
 		name="Batov'd"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_batov.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}

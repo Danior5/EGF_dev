@@ -1,9 +1,9 @@
 characters={
 	BAK_WW_commando={
-		name="El Generico"
+		name="Garret's OC"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_pony_garrett.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -54,10 +54,10 @@ characters={
 		}		
 	}
 	CHN_WW_commando={
-		name="El Generico"
+		name="Lunason OC"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Lunason_OC.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -108,10 +108,10 @@ characters={
 		}		
 	}
 	DMT_WW_commando={
-		name="El Generico"
+		name="Blues clues"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_blues_clues.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -135,10 +135,10 @@ characters={
 		}		
 	}
 	EQC_WW_commando={
-		name="El Generico"
+		name="Merchant from EU4"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_eu4_merchant.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -270,10 +270,10 @@ characters={
 		}		
 	}
 	GRY_WW_commando={
-		name="El Generico"
+		name="Hogrider"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_hog_rider.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -324,10 +324,10 @@ characters={
 		}		
 	}
 	JER_WW_commando={
-		name="El Generico"
+		name="Spy TF2"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_spy_tf2.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -405,10 +405,10 @@ characters={
 		}		
 	}
 	NIM_WW_commando={
-		name="El Generico"
+		name="!!!Nimbussy!!!"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_pre_nimbussy.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -486,10 +486,10 @@ characters={
 		}		
 	}
 	RCT_WW_commando={
-		name="El Generico"
+		name="Saul Goodmen"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_saul.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -621,10 +621,10 @@ characters={
 		}		
 	}
 	WNG_WW_commando={
-		name="El Generico"
+		name="Tassen OC (real)"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_sharktassen.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
