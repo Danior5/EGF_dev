@@ -61,6 +61,7 @@ add_ideas = {
 
 set_stability = 0.70
 
+	
 recruit_character = GRY_hetman_calas_bulba
 recruit_character = GRY_interim_government
 recruit_character = GRY_pavel_vereskopadsky

@@ -1,0 +1,18 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_dancing_pig"
+		texturefile = "gfx/leaders/WW/dancing_pig.dds"
+		noOfFrames = 17
+		animation_rate_fps = 17
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_dancing_saul"
+		texturefile = "gfx/leaders/WW/dancing_saul.dds"
+		noOfFrames = 110
+		animation_rate_fps = 13
+		looping = yes
+		play_on_show = yes
+	}
+}

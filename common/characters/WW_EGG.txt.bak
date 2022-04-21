@@ -1,0 +1,19 @@
+characters={
+	JER_WW_EGG={
+		name="Orbital panda"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_orbital.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		corps_commander={
+			traits= { politically_connected imbecile }
+			skill=1
+			attack_skill=0
+			defense_skill=0
+			planning_skill=0
+			logistics_skill=0
+		}
+	}
+}

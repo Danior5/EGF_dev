@@ -1,4 +1,4 @@
-characters={
+characters= {
 	BAK_WW_commando={
 		name="Garret's OC"
 		portraits={
@@ -8,49 +8,29 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}		
 	}
 	BRZ_WW_commando={
-		name="El Generico"
+		name="Comrade Dog"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_dog_comrade.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}		
 	}
 	CHN_WW_commando={
@@ -62,77 +42,47 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}		
 	}
 	CRY_WW_commando={
-		name="Arstotska's OC"
+		name="Francis Yockey"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_Arstotska_OC.tga"
+				large="gfx/leaders/WW/WW_yockey.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
+		}	
 	}
 	DMT_WW_commando={
-		name="Blues clues"
+		name="Cheems"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_blues_clues.tga"
+				large="gfx/leaders/WW/WW_cheems.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	EQC_WW_commando={
 		name="Merchant from EU4"
@@ -143,77 +93,47 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
+		}	
 	}
 	EQS_WW_commando={
-		name="El Generico"
+		name="Military Aviation History"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_MAH.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	FAT_WW_commando={
-		name="El Generico"
+		name="IMPOSTER VASA"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Vasa_sus.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
+		}	
 	}
 	GRF_WW_commando={
 		name="Danoir 7"
@@ -224,50 +144,30 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	GRI_WW_commando={
-		name="El Generico"
+		name="Karibela on the phone"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_karib.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	GRY_WW_commando={
 		name="Hogrider"
@@ -278,50 +178,30 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	HLQ_WW_commando={
-		name="El Generico"
+		name="Twitter"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_twitter.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	JER_WW_commando={
 		name="Spy TF2"
@@ -332,187 +212,117 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	LCT_WW_commando={
-		name="El Generico"
+		name="Jetstream Sam "
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_sam.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	MIT_WW_commando={
-		name="El Generico"
+		name="Angry Videogame Nerd"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_AVGN.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	NIM_WW_commando={
-		name="!!!Nimbussy!!!"
+		name="Horse Ignacy Mościcki"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_pre_nimbussy.tga"
+				large="gfx/leaders/WW/WW_polish.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	OLE_WW_commando={
-		name="El Generico"
+		name="Urho Kekkonen"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_kekkonen.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	PNG_WW_commando={
-		name="El Generico"
+		name="Tom Scott"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_tomscott.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	RCT_WW_commando={
-		name="Saul Goodmen"
+		name="Walther White"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_saul.tga"
+				large=""
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
-	ROU_WW_commando={
+	YAL_WW_commando={
 		name="El Generico"
 		portraits={
 			army={
@@ -521,104 +331,64 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	STG_WW_commando={
-		name="El Generico"
+		name="Svetlana Stalina"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_stalina.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	TRD_WW_commando={
-		name="El Generico"
+		name="Fluttershy Mcchimpus"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_FS_comrade.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	WIT_WW_commando={
-		name="El Generico"
+		name="Single pint of Guinness"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_guinness.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 	WNG_WW_commando={
 		name="Tassen OC (real)"
@@ -629,25 +399,15 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
-	YAL_WW_commando={
+	ROU_WW_commando={
 		name="Dmitry Yazov"
 		portraits={
 			army={
@@ -656,22 +416,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trickster naval_invader hill_fighter ranger adaptable artillery_specialist}
+			traits={ infantry_leader trickster naval_invader commando hill_fighter ranger adaptable artillery_specialist}
 			skill=5
 			attack_skill=8
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 		}
-				advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}		
 	}
 }

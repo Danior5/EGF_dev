@@ -15,22 +15,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	BRZ_WW_fieldmarshel={
-		name="El Generico"
+		name="Tenek Dog"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_dog_tenek.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -41,16 +31,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	CHN_WW_fieldmarshel={
@@ -69,22 +49,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	CRY_WW_fieldmarshel={
-		name="El Generico"
+		name="Annoying ass OC"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Arstotska_OC.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -95,23 +65,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	DMT_WW_fieldmarshel={
-		name="El Generico"
+		name="Doge"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_doge.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -122,16 +82,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	EQC_WW_fieldmarshel={
@@ -150,22 +100,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	EQS_WW_fieldmarshel={
-		name="El Generico"
+		name="LindyBeige"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_lindy.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -176,16 +116,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	FAT_WW_fieldmarshel={
@@ -204,16 +134,6 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	GRF_WW_fieldmarshel={
 		name="Tryhard party Leader"
@@ -231,22 +151,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	GRI_WW_fieldmarshel={
-		name="El Generico"
+		name="Danoir's society"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_society.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -257,16 +167,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	GRY_WW_fieldmarshel={
@@ -285,22 +185,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	HLQ_WW_fieldmarshel={
-		name="El Generico"
+		name="Andreia x Wingfried(OTP)"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_OTP.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -311,16 +201,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	JER_WW_fieldmarshel={
@@ -339,22 +219,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	LCT_WW_fieldmarshel={
-		name="Megoku Man"
+		name="Senetor Armstrong"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_meng.tga"
+				large="gfx/leaders/WW/WW_armstrong.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -365,23 +235,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	MIT_WW_fieldmarshel={
-		name="El Generico"
+		name="Scott the Woz"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_scott.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -392,23 +252,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	NIM_WW_fieldmarshel={
-		name="El Generico"
+		name="NIMBUSSY!!!"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_pre_nimbussy.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -419,23 +269,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	OLE_WW_fieldmarshel={
-		name="El Generico"
+		name="Yokodk"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_yokodk.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -446,23 +286,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	PNG_WW_fieldmarshel={
-		name="El Generico"
+		name="Vsauce Michael"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_vsauce.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -473,16 +303,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	RCT_WW_fieldmarshel={
@@ -501,18 +321,8 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
-	ROU_WW_fieldmarshel={
+	YAL_WW_fieldmarshel={
 		name="El Generico"
 		portraits={
 			army={
@@ -527,16 +337,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	STG_WW_fieldmarshel={
@@ -555,22 +355,12 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	TRD_WW_fieldmarshel={
-		name="El Generico"
+		name="Vasa's hornyass OC"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Vasa_OC.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -581,23 +371,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	WIT_WW_fieldmarshel={
-		name="El Generico"
+		name="A fucking Kettle"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_kettle.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -608,23 +388,13 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	WNG_WW_fieldmarshel={
 		name="ShroomKid"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_shroomkid.tga.tga"
+				large="gfx/leaders/WW/WW_shroomkid.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -636,18 +406,8 @@ characters={
 			planning_skill=3
 			logistics_skill=5
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
-	YAL_WW_fieldmarshel={	
+	ROU_WW_fieldmarshel={	
 		name="Teng's OC"
 		portraits={
 			army={
@@ -662,16 +422,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=5
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 }

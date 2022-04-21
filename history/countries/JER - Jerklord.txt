@@ -225,6 +225,7 @@ recruit_character = JER_WW_tank
 recruit_character = JER_WW_commando
 recruit_character = JER_WW_infantry
 recruit_character = JER_WW_fieldmarshel
+recruit_character = JER_WW_EGG
 
 create_faction = Aquileia
 add_to_faction = JER

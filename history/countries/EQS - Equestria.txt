@@ -329,6 +329,7 @@ recruit_character = EQS_WW_tank
 recruit_character = EQS_WW_commando
 recruit_character = EQS_WW_infantry
 recruit_character = EQS_WW_fieldmarshel
+recruit_character = EQS_WW_EGG
 if = {
 	limit = {
 		has_dlc = "La Resistance"

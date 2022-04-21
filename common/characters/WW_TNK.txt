@@ -15,22 +15,12 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	BRZ_WW_tank={
-		name="El Generico"
+		name="Gonzo Dog"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_dog_gonzo.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -41,16 +31,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	CHN_WW_tank={
@@ -69,22 +49,12 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	CRY_WW_tank={
-		name="El Generico"
+		name="RFK (best princess) "
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_rfk.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -95,23 +65,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	DMT_WW_tank={
-		name="El Generico"
+		name="Walter"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_walter.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -122,23 +82,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	EQC_WW_tank={
-		name="El Generico"
+		name="A fucking Kangaroo"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_kangaroo.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -149,23 +99,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	EQS_WW_tank={
-		name="El Generico"
+		name="The Cheifton"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_cheifton.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -176,23 +116,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	FAT_WW_tank={
-		name="El Generico"
+		name="Vasa commissioning porn"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_Vasa_OC2.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -203,16 +133,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	GRF_WW_tank={
@@ -231,22 +151,12 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	GRI_WW_tank={
-		name="El Generico"
+		name="Suspecious Kerensky"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_susfat.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -257,16 +167,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	GRY_WW_tank={
@@ -285,16 +185,6 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	HLQ_WW_tank={
 		name="Mordicai"
@@ -311,16 +201,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	JER_WW_tank={
@@ -339,22 +219,12 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 	LCT_WW_tank={
-		name="El Generico"
+		name="Raiden"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_raiden.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -365,23 +235,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	MIT_WW_tank={
-		name="El Generico"
+		name="SsethTzeentach"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_seth.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -392,23 +252,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	NIM_WW_tank={
-		name="El Generico"
+		name="Mr. President"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_obama.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -419,23 +269,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	OLE_WW_tank={
-		name="El Generico"
+		name="Carl XVI Gustaf"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_carl.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -446,23 +286,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	PNG_WW_tank={
-		name="El Generico"
+		name="Armchair Historian"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_armchair.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -473,23 +303,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	RCT_WW_tank={
-		name="Walther White"
+		name="Saul Goodmen"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_walther.tga"
+				large="GFX_dancing_saul"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -501,18 +321,8 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
-	ROU_WW_tank={
+	YAL_WW_tank={
 		name="El Generico"
 		portraits={
 			army={
@@ -527,23 +337,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	STG_WW_tank={
-		name="El Generico"
+		name="Velery Sablin"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_sablin.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -554,23 +354,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	TRD_WW_tank={
-		name="Vasa's OC"
+		name="Rainboyye dash"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_Vasa_OC.tga"
+				large="gfx/leaders/WW/WW_RD_comrade.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -581,23 +371,13 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	WIT_WW_tank={
-		name="El Generico"
+		name="Óglaigh na hÉireann"
 		portraits={
 			army={
-				large="gfx/leaders/WW/WW_el_generico.tga"
+				large="gfx/leaders/WW/WW_ira.tga"
 				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -608,16 +388,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 	WNG_WW_tank={
@@ -636,18 +406,8 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
-	YAL_WW_tank={
+	ROU_WW_tank={
 		name="Dmitry Moyazov"
 		portraits={
 			army={
@@ -662,16 +422,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-		}
-		advisor={
-			slot = 
-			cost = 9999
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 0
-			}
 		}
 	}
 }
