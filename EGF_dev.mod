@@ -1,14 +1,15 @@
 version="0.17.1"
 tags={
-	"National Focuses"
-	"Gameplay"
-	"Events"
 	"Balance"
+	"Events"
+	"Gameplay"
+	"National Focuses"
 }
 dependencies={
 	"Equestria at War"
 }
 name="Equus and Griffonia on Fire"
+picture="thumbnail.png"
 supported_version="1.11.*"
-path="D:/Program Files/Steam/steamapps/workshop/content/394360/2694179069"
+path="C:/Users/user/Desktop/new WW preparations folder/EGF_dev"
 remote_file_id="2694179069"
