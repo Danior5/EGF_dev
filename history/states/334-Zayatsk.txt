@@ -1,0 +1,30 @@
+state={
+	id=334
+	name="STATE_334"
+
+	provinces={
+		2082 9374 9491 9519 13212 13014 13016
+	}
+
+	manpower=251580
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = STG
+		add_core_of = STG
+
+		victory_points = { 2082 5 }
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	resources = {
+		oil = 5
+		aluminium = 16
+		tungsten = 5
+	}
+}
