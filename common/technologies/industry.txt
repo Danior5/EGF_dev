@@ -233,61 +233,7 @@ technologies = {
 	}
 
 	#Conversion branch - Enabled in DoD
-	improved_equipment_conversion = {
-
-
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		path = {
-			leads_to_tech = advanced_equipment_conversion
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1008
-
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 0
-
-
-
-		}
-
-		categories = {
-			industry
-			cat_production
-		}
-	}
-
-	advanced_equipment_conversion = {
-
-
-		research_cost = 2
-		start_year = 1010
-
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		categories = {
-			industry
-			cat_production
-		}
-	}
-
+	
 	###############
 
 	###------> X <><> <><> <><> <><> <><>
