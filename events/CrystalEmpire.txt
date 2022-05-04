@@ -512,7 +512,13 @@ country_event = { ## Out of the club
 
 	is_triggered_only = yes
 
-
+	option = {
+		name = cryscr.20.a
+		custom_effect_tooltip = join_the_club_tlp
+		set_country_flag = joined_the_club
+		unlock_decision_tooltip = CRY_librarywork_d
+		ai_chance = { factor = 100 }
+	}
 	option = {
 		name = cryscr.20.b
 		custom_effect_tooltip = reported_sombras
@@ -522,6 +528,14 @@ country_event = { ## Out of the club
 				id = cryscr.21 hours = 10
 			}
 		}
+	}
+	option = {
+		name = cryscr.20.c
+		custom_effect_tooltip = not_reported_sombras
+		hidden_effect = {
+			swap_ideas = { remove_idea = sombra_threat add_idea = sombra_threat2 }
+		}
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = { ## Organization Arrested

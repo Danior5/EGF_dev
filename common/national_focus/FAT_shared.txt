@@ -19,6 +19,309 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_STABILITY }
 }
 
+shared_focus = {
+	id = FAT_aiding_the_generals
+	icon = GFX_goal_rosewing_and_suntail
+	x = 2
+	y = 0
+	cost = 1
+	ai_will_do = {
+		factor = 50
+	}
+	mutually_exclusive = {
+		focus = FAT_chaos_in_the_countryside
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_aiding_the_generals"
+		country_event = griffonRepublic.227
+	}
+}
+
+shared_focus = {
+	id = FAT_some_choice_assassinations
+	icon = GFX_goal_gunpoint_diplomacy
+	x = 2
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_aiding_the_generals
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_some_choice_assassinations"
+		add_political_power = -50
+		custom_effect_tooltip = FAT_sack_the_commanders_tt2
+		hidden_effect = {
+			if = {
+				limit = {
+					has_character = FAT_otto_gremmersen
+				}
+				retire_character = FAT_otto_gremmersen
+			}
+			if = {
+				limit = {
+					has_character = FAT_jonas_hafslund
+				}
+				retire_character = FAT_jonas_hafslund
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = FAT_support_from_the_natives
+	icon = GFX_goal_generic_national_unity_claws
+	x = 0
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_some_choice_assassinations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_support_from_the_natives"
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = FAT_bring_in_the_monarchists
+	icon = GFX_focus_rom_royal_dictatorship
+	x = 0
+	y = 4
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_support_from_the_natives
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_bring_in_the_monarchists"
+		add_stability = -0.025
+		add_political_power = -25
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.025
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = FAT_secure_lostgate
+	icon = GFX_goal_ideology_authoritarian_democrat
+	x = 1
+	y = 3
+	cost = 3
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_crack_open_the_armories
+	}
+	prerequisite = {
+		focus = FAT_support_from_the_natives
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_secure_lostgate"
+		add_stability = -0.025
+		add_political_power = -25
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+		474 = {
+			set_demilitarized_zone = yes
+		}
+		583 = {
+			set_demilitarized_zone = yes
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = FAT_secure_windford
+	icon = GFX_goal_authority
+	x = 3
+	y = 3
+	cost = 3
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_crack_open_the_armories
+	}
+	prerequisite = {
+		focus = FAT_support_from_fascists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_secure_windford"
+		add_stability = -0.025
+		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+		480 = {
+			set_demilitarized_zone = yes
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = FAT_move_south
+	icon = GFX_focus_indy_tanks_across_the_border
+	x = 2
+	y = 4
+	cost = 3
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_secure_windford
+	}
+	prerequisite = {
+		focus = FAT_secure_lostgate
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_move_south"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.075
+		}
+		add_political_power = -100
+		449 = {
+			set_demilitarized_zone = yes
+		}
+		450 = {
+			set_demilitarized_zone = yes
+		}
+		582 = {
+			set_demilitarized_zone = yes
+		}
+		548 = {
+			set_demilitarized_zone = yes
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = FAT_support_from_fascists
+	icon = GFX_focus_HOL_deal_with_right
+	x = 4
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_some_choice_assassinations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_support_from_fascists"
+		add_political_power = -25
+		add_stability = -0.025
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = FAT_sway_the_old_guard
+	icon = GFX_goal_ideology_social_conservative
+	x = 4
+	y = 4
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_support_from_fascists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_sway_the_old_guard"
+		add_political_power = -50
+		add_stability = -0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = FAT_crack_open_the_armories
+	icon = GFX_goal_arms_dealing
+	x = 2
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_some_choice_assassinations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_crack_open_the_armories"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = -500
+			producer = FAT
+		}
+		add_war_support = -0.025
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = FAT_the_battle_for_cloudbury
+	icon = GFX_goal_FAT_the_three_musketeers
+	x = 2
+	y = 5
+	cost = 3
+	ai_will_do = {
+		factor = 50
+	}
+	prerequisite = {
+		focus = FAT_move_south
+	}
+	prerequisite = {
+		focus = FAT_sway_the_old_guard
+	}
+	prerequisite = {
+		focus = FAT_bring_in_the_monarchists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FAT_the_battle_for_cloudbury"
+		country_event = griffonRepublic.13
+	}
+}
 
 ###------> Reform the military   <><> <><> <><> <><> <><>
 shared_focus = {
