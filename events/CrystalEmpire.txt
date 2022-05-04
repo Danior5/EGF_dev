@@ -342,6 +342,45 @@ country_event = { ## The Return of Sombra event chain
 			}
 		}
 	}
+	option = {
+		name = cryscr.12.c
+		custom_effect_tooltip = support_the_club
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = CRY_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_country_flag = CRY_AI_HISTORICAL_PATH
+					has_game_rule = {
+						rule = CRY_ai_behavior
+						option = CRY_HISTORICAL_PATH
+					}
+					has_country_flag = CRY_AI_INTEGRATION_PATH
+					has_game_rule = {
+						rule = CRY_ai_behavior
+						option = CRY_INTEGRATION_PATH
+					}
+					has_country_flag = CRY_AI_COMMUNIST_PATH
+					has_game_rule = {
+						rule = CRY_ai_behavior
+						option = CRY_COMMUNIST_PATH
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = crystalemp.14 hours = 1
+			}
+		}
+	}
 }
 country_event = { ## Take the invitation
 	id = cryscr.13
@@ -429,6 +468,11 @@ country_event = { ## Walk to the club place
 			country_event = { id = cryscr.16 hours = 1 }
 		}
 		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = cryscr.15.b
+		custom_effect_tooltip = walk_away
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = { ## Into the club
