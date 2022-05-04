@@ -973,62 +973,6 @@ country_event = {##Red Saturday
 
 	is_triggered_only = yes
 
-	option = {#Caramel's militia seize control of the state
-		name = rivercity.27.a
-		set_country_flag = RCT_caramels_coup
-		ai_chance = {
-			factor = 150
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = RCT_AI_NOVAWHIRL
-					has_game_rule = {
-						rule = RCT_ai_behavior
-						option = NOVAWHIRL
-					}
-				}
-			}
-		}
-		hidden_effect = {
-			complete_national_focus = RCT_proletarian_dictatorship
-		}
-				RCT_nova_whirl = {
-			retire = yes
-		}
-		RIV_leave_fed = yes
-		add_country_leader_role = {
-			character = RCT_caramel_haze
-			country_leader = {
-				desc = "POLITICS_CARAMELHAZE_DESC"
-				expire = "1965.1.1"
-				ideology = anti_revisionism
-				traits = {  }
-			}
-			promote_leader = yes
-		}
-		set_portraits = {
-            character = RCT_caramel_haze 
-			civilian = {
-				large ="gfx/leaders/RCT/Caramel_Haze_Com.tga"
-			}
-			army = {
-				large ="gfx/leaders/RCT/Caramel_Haze_Com.tga"
-				small="gfx/interface/ideas/Advisors/RCT/RCT_caramel_haze_com.tga"
-			}
-        }
-		add_ideas = RCT_caramels_stubbornness
-		hidden_effect = {
-			set_cosmetic_tag = RCT_caramel
-			every_other_country = {
-				limit = { is_guaranteed_by = ROOT }
-				diplomatic_relation = {
-					country = FROM
-					relation = guarantee
-					active = no
-				}
-			}
-		}
-	}
 	option = {#Nova's spies intercept Caramel and remove him from power
 		name = rivercity.27.b
 		set_country_flag = RCT_nova_remains
