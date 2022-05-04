@@ -67,5 +67,21 @@ ideas = {
 		}
 	}
 	
+	country = {
+		WW_special_special_forces= {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HLQ_knights
+			modifier = {
+				special_forces_min = 10000
+			}
+		}
+	}
+	
 	
 }
