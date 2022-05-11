@@ -759,7 +759,7 @@ foreign_politics = {
 			annex_country = { target = NIM transfer_troops = yes }
 			set_technology = {
 				popup = yes
-				NIM_funny_tech = 1
+				carrier_cloud_tech = 1
 			}
 		}
 	}
