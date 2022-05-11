@@ -356,45 +356,6 @@ foreign_politics = {
 			annex_country = { target = PLB }
 		}
 	}
-	EQS_intergrate_BUF = {
-		icon = generic_form_nation
-
-		targets = { BUF }
-		targets_dynamic = yes
-
-		target_trigger = {
-			BUF = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = EQS
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-					original_tag = EQS
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [BUF.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = BUF
-				}
-				add_core_of = EQS
-			}
-			annex_country = { target = BUF }
-		}
-	}
 	EQS_intergrate_DRG = {
 		icon = generic_form_nation
 
