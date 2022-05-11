@@ -356,49 +356,6 @@ foreign_politics = {
 			annex_country = { target = PLB }
 		}
 	}
-	EQS_intergrate_DRG = {
-		icon = generic_form_nation
-
-		targets = { DRG }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DRG = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = EQS
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = EQS
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DRG.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DRG
-				}
-				add_core_of = EQS
-			}
-			annex_country = { target = DRG }
-		}
-	}
 	
 	CHN_takeover_OLE_fleet = {
 		icon = generic_naval
