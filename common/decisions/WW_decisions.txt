@@ -757,6 +757,10 @@ foreign_politics = {
 				add_core_of = BAK
 			}
 			annex_country = { target = NIM transfer_troops = yes }
+			set_technology = {
+				popup = yes
+				NIM_funny_tech = 1
+			}
 		}
 	}
 	
