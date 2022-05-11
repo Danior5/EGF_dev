@@ -132,23 +132,6 @@ RIV_race_cat = {
 }
 
 RIV_political_decisions = {
-	RCT_Get_Trolls = {
-		icon = rifles
-		visible = { always = yes}
-		available = { original_tag = RCT
-		owns_state = 637
-		} 
-		complete_effect = { 
-		set_technology = {
-				popup = yes
-				tech_ironpaws = 1
-			 }
-		set_technology = {
-				popup = yes
-				troll_hound_tech = 1
-			 }
-		}
-	}
 	RIV_join_rcsc_decision = {
 
 		icon = scroll
