@@ -990,7 +990,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 32
-			hard_attack = 40
+			hard_attack = 50
 			ap_attack = 130
 			build_cost_ic = 7
 			maximum_speed = -0.8
@@ -1069,7 +1069,7 @@ equipment_modules = {
 		parent = tank_heavy_cannon_2
 		add_stats = {
 			soft_attack = 44
-			hard_attack = 40
+			hard_attack = 44
 			ap_attack = 110
 			build_cost_ic = 8
 			maximum_speed = -0.8
