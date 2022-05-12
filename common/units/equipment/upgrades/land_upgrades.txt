@@ -81,7 +81,7 @@ upgrades = {
 		maximum_speed = -0.05
 		reliability = -0.02
 		add_stats = {
-			armor_value = 2.5
+			armor_value = 2
 			build_cost_ic = 0.2
 
 		}
