@@ -989,6 +989,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
+			tank_small_high_velocity_cannon
 			squeezebore_adaptor
 		}
 		path = {
@@ -1054,7 +1055,6 @@ technologies = {
 			tank_heavy_cannon_2
 			tank_medium_cannon_2
 			tank_medium_high_velocity_cannon
-			tank_small_high_velocity_cannon
 		}		
 		path = {
 			leads_to_tech = antitank3
