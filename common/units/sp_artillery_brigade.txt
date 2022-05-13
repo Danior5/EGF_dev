@@ -35,7 +35,7 @@ sub_units = {
 
 		breakthrough = -0.75
 
-		soft_attack = 0.25
+		soft_attack = 0.5
 
 		hard_attack = -0.5
 
@@ -103,7 +103,7 @@ sub_units = {
 
 		breakthrough = -0.75
 
-		soft_attack = 0.25
+		soft_attack = 0.5
 
 		hard_attack = -0.5
 
@@ -175,7 +175,7 @@ sub_units = {
 
 		breakthrough = -0.75
 
-		soft_attack = 0.25
+		soft_attack = 0.75
 
 		hard_attack = -0.5
 
@@ -236,7 +236,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			super_heavy_tank_artillery_chassis = 40
+			super_heavy_tank_artillery_chassis = 15
 		}
 		manpower = 500
 		max_organisation = 0
@@ -248,7 +248,7 @@ sub_units = {
 
 		breakthrough = -0.75
 
-		soft_attack = 0.25
+		soft_attack = 0.75
 
 		hard_attack = -0.5
 
@@ -320,7 +320,7 @@ sub_units = {
 		
 		breakthrough = -0.75
 
-		soft_attack = 0.25
+		soft_attack = 0.5
 
 		hard_attack = -0.5
 

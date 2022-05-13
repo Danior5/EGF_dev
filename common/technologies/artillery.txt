@@ -97,8 +97,7 @@ technologies = {
 
 	interwar_artillery = {
 		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
+			soft_attack = 0.05
 		}
 
 		artillery = {
@@ -150,10 +149,6 @@ technologies = {
 	}
 
 	artillery1 = {
-		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
-		}
 
 		enable_equipments = {
 			artillery_equipment_2
@@ -204,8 +199,7 @@ technologies = {
 
 	artillery2 = {
 		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
+			soft_attack = 0.05
 		}
 
 		enable_equipment_modules = {
@@ -271,8 +265,7 @@ technologies = {
 
 	artillery3 = {
 		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
+			soft_attack = 0.05
 		}
 
 		artillery = {
@@ -323,10 +316,6 @@ technologies = {
 	}
 
 	artillery4 = {
-		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
-		}
 
 		enable_equipments = {
 			artillery_equipment_3
@@ -378,8 +367,7 @@ technologies = {
 
 	artillery5 = {
 		category_all_armor = {
-			soft_attack = 0.03
-			hard_attack = 0.01
+			soft_attack = 0.05
 		}
 
 		artillery = {
@@ -908,10 +896,6 @@ technologies = {
 	###------> X <><> <><> <><> <><> <><>
 
 	interwar_antitank = {
-		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
-		}
 
 		enable_equipments = {
 			anti_tank_equipment_1
@@ -970,8 +954,7 @@ technologies = {
 
 	antitank1 = {
 		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
+			hard_attack = 0.05
 		}
 
 		anti_tank = {
@@ -1038,10 +1021,6 @@ technologies = {
 	}
 
 	antitank2 = {
-		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
-		}
 
 		mot_anti_tank_brigade = {
 			hard_attack = 0.2
@@ -1108,8 +1087,7 @@ technologies = {
 
 	antitank3 = {
 		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
+			hard_attack = 0.05
 		}
 		enable_equipment_modules = {
 			tank_small_cannon_3
@@ -1180,8 +1158,7 @@ technologies = {
 
 	antitank4 = {
 		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
+			hard_attack = 0.05
 		}
 
 		enable_equipment_modules = {
@@ -1246,10 +1223,6 @@ technologies = {
 	}
 
 	antitank5 = {
-		category_all_armor = {
-			soft_attack = 0.01
-			hard_attack = 0.03
-		}
 
 		enable_equipments = {
 			anti_tank_equipment_3

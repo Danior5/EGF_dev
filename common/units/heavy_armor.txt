@@ -72,6 +72,8 @@ sub_units = {
 
 		breakthrough = 0		
 
+		hard_attack = 0.25		
+
 		#Tanks are awesome
 		# soft_attack = 0.5
 		

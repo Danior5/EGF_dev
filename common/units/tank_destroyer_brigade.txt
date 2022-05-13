@@ -36,7 +36,7 @@ sub_units = {
 
 		breakthrough = -0.65
 
-		soft_attack = -0.5
+		soft_attack = -0.25
 
 		hard_attack = 0.25
 
@@ -109,7 +109,7 @@ sub_units = {
 
 		breakthrough = -0.65
 
-		soft_attack = -0.5
+		soft_attack = -0.25
 
 		hard_attack = 0.25
 
@@ -185,9 +185,9 @@ sub_units = {
 
 		breakthrough = -0.65
 
-		soft_attack = -0.5
+		soft_attack = -0.25
 
-		hard_attack = 0.25
+		hard_attack = 0.5
 
 		ap_attack = 0.15
 
@@ -263,9 +263,9 @@ sub_units = {
 
 		breakthrough = -0.65
 
-		soft_attack = -0.5
+		soft_attack = -0.25
 
-		hard_attack = 0.25
+		hard_attack = 0.5
 
 		ap_attack = 0.15
 
@@ -342,7 +342,7 @@ sub_units = {
 		
 		breakthrough = -0.65
 
-		soft_attack = -0.5
+		soft_attack = -0.25
 
 		hard_attack = 0.25
 
