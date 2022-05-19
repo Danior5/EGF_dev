@@ -88,7 +88,8 @@ NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.3 -- starting penalty
 NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.0 -- added penalty as we move away from origin (Default is 1.2)
 
 -- WW changes
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.2, 0.15, 0.1, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.2, 0.15, 0.1, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 
