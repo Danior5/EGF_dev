@@ -323,7 +323,7 @@ foreign_politics = {
 		targets_dynamic = yes
 
 		target_trigger = {
-			PLB = {
+			PNG = {
 				is_ai = yes
 			}
 		}
@@ -353,7 +353,6 @@ foreign_politics = {
 				}
 				add_core_of = GRF
 			}
-			annex_country = { target = PLB }
 		}
 	}
 	
