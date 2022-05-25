@@ -5178,20 +5178,6 @@ country_event = { ## Conscription
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = equestria.139.a
-		add_political_power = 20
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				OR = {
-					is_historical_focus_on = yes
-					NOT = { has_global_flag = EQS_nice_celestia }
-				}
-			}
-		}
-	}
-	option = {
 		name = equestria.139.b
 		add_political_power = -150
 		hidden_effect = {
@@ -5240,17 +5226,7 @@ country_event = { ## Economy
 
 	is_triggered_only = yes
 	fire_only_once = yes
-	option = {
-		name = equestria.140.a
-		add_political_power = 20
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				NOT = { has_global_flag = EQS_nice_celestia }
-			}
-		}
-	}
+
 	option = {
 		name = equestria.140.b
 		custom_effect_tooltip = equestria.140.b.tp
@@ -5536,22 +5512,6 @@ country_event = { #Remove magic of friendship
 	picture = GFX_event_canterlot
 
 	is_triggered_only = yes
-
-	option = {
-		name = equestria.144.a #just a temporary measure
-		remove_ideas = friendly_harmony
-		hidden_effect = { set_country_flag = eqs_bring_back_friendship }
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				OR = {
-					OR = { is_historical_focus_on = yes has_global_flag = EQS_nice_celestia }
-					has_global_flag = EQS_evil_celestia
-				}
-			}
-		}
-	}
 
 	option = {
 		name = equestria.144.b #remove permanently
