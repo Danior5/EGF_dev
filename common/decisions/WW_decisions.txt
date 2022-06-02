@@ -633,53 +633,7 @@ foreign_politics = {
 		}
 	}
 
-	BAK_intergrate_NIM = {
-		icon = generic_form_nation
 
-		targets = { NIM }
-		targets_dynamic = yes
-
-		target_trigger = {
-			NIM = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = BAK
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = BAK
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [NIM.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = NIM
-				}
-				add_core_of = BAK
-			}
-			annex_country = { target = NIM transfer_troops = yes }
-			set_technology = {
-				popup = yes
-				carrier_cloud_tech_mtg = 1
-			}
-		}
-	}
 	
 	RCT_intergrate_WIT = {
 		icon = generic_form_nation
