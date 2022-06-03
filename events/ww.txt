@@ -109,17 +109,41 @@ country_event = { #war
 	is_triggered_only = yes
 	option = {
 	name = ww.6.a
-		hidden_effect = {
+	hidden_effect = {
 		CHN = {
 			create_wargoal = { 
 				type = annex_everything 
 				target = EQS 
 			}
-		declare_war_on = { 
-		    type = annex_everything 
-			target = EQS 
+			declare_war_on = { 
+				type = annex_everything 
+				target = EQS 
+			}
 		}
-	}
+		GRF = {
+			country_event = {
+				id = ww.7
+				days = 61
+			}
+		}
+		STG = {
+			country_event = {
+				id = ww.7
+				days = 61
+			}
+		}
+		TRD = {
+			country_event = {
+				id = ww.7
+				days = 61
+			}
+		}
+		EQC = {
+			country_event = {
+				id = ww.7
+				days = 61
+			}
+		}		
 	}
 }
 }
