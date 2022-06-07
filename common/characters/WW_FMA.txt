@@ -1,0 +1,427 @@
+characters={
+	BAK_WW_fieldmarshel={
+		name="'Racial Slurs'"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_mouse.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	BRZ_WW_fieldmarshel={
+		name="Tenek Dog"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_dog_tenek.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	CHN_WW_fieldmarshel={
+		name="YO SPEER!!!11!"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_speer.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	CRY_WW_fieldmarshel={
+		name="Annoying ass OC"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_Arstotska_OC.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	DMT_WW_fieldmarshel={
+		name="Doge"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_doge.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	EQC_WW_fieldmarshel={
+		name="EMU"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_emu.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	EQS_WW_fieldmarshel={
+		name="LindyBeige"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_lindy.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	FAT_WW_fieldmarshel={
+		name="Original Fatass"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_fatass.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	GRF_WW_fieldmarshel={
+		name="Tryhard party Leader"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_party_leader.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	GRI_WW_fieldmarshel={
+		name="Danoir's society"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_society.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	GRY_WW_fieldmarshel={
+		name="Saint Javalin"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_saint_jav.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	HLQ_WW_fieldmarshel={
+		name="Andreia x Wingfried(OTP)"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_OTP.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	JER_WW_fieldmarshel={
+		name="Cat's OC (dont steal)"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_cat_OC.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	LCT_WW_fieldmarshel={
+		name="Senetor Armstrong"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_armstrong.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	MIT_WW_fieldmarshel={
+		name="Scott the Woz"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_scott.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	NIM_WW_fieldmarshel={
+		name="NIMBUSSY!!!"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_pre_nimbussy.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	OLE_WW_fieldmarshel={
+		name="Yokodk"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_yokodk.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	PNG_WW_fieldmarshel={
+		name="Vsauce Michael"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_vsauce.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	RCT_WW_fieldmarshel={
+		name="Gus Fring"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_gus.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	YAL_WW_fieldmarshel={
+		name="El Generico"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_el_generico.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	STG_WW_fieldmarshel={
+		name="Buckharin (best alicorn)"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_bukharin.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	TRD_WW_fieldmarshel={
+		name="Vasa's hornyass OC"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_Vasa_OC.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	WIT_WW_fieldmarshel={
+		name="A fucking Kettle"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_kettle.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	WNG_WW_fieldmarshel={
+		name="ShroomKid"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_shroomkid.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+	ROU_WW_fieldmarshel={	
+		name="Teng's OC"
+		portraits={
+			army={
+				large="gfx/leaders/WW/WW_ponazov.tga"
+				small="gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		field_marshal={
+			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
+			skill=4
+			attack_skill= 4
+			defense_skill= 4
+			planning_skill= 4
+			logistics_skill= 4
+		}
+	}
+}
