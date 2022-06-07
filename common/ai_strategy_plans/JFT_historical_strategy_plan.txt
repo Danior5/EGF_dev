@@ -1,0 +1,18 @@
+JFT_historical = {
+	name = "Pridea Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = JFT
+
+	}
+
+	enable = {
+		is_historical_focus_on = yes
+	
+	}
+
+	ai_national_focuses = {
+        griffon_naval_effort
+	}
+}

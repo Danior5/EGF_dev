@@ -1,4 +1,4 @@
-﻿capital = 619
+capital = 619
 
 oob = "RCT_1007"
 
@@ -129,9 +129,6 @@ recruit_character = RCT_Up_Oven
 recruit_character = RCT_Under_Water
 recruit_character = RCT_ironside_vandergallop
 #pregrinded generals
-recruit_character = RCT_WW_tank
-recruit_character = RCT_WW_commando
-recruit_character = RCT_WW_infantry
 recruit_character = RCT_WW_fieldmarshel
 
 RCT_arclight = { set_character_flag = RIV_advisor_from_RCT }

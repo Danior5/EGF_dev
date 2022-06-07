@@ -1,4 +1,4 @@
-﻿capital = 381
+capital = 381
 oob = "TRD_1007"
 
 set_research_slots = 3
@@ -217,9 +217,6 @@ recruit_character = TRD_nelis_decoster
 recruit_character = TRD_anke_husch
 recruit_character = TRD_lord_protector_trubach
 #pregrinded generals
-recruit_character = TRD_WW_tank
-recruit_character = TRD_WW_commando
-recruit_character = TRD_WW_infantry
 recruit_character = TRD_WW_fieldmarshel
 
 random_character = {

@@ -1,4 +1,4 @@
-﻿capital = 325
+capital = 325
 
 oob = "PNG_1007"
 
@@ -143,9 +143,6 @@ recruit_character = PNG_hannes_liljestrom
 recruit_character = PNG_allan_bollander
 recruit_character = PNG_sture_persson
 #pregrinded generals
-recruit_character = PNG_WW_tank
-recruit_character = PNG_WW_commando
-recruit_character = PNG_WW_infantry
 recruit_character = PNG_WW_fieldmarshel
 
 set_rule = {

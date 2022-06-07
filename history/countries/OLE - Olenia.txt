@@ -1,4 +1,4 @@
-﻿capital = 76
+capital = 76
 
 oob = "OLE_1007"
 
@@ -166,9 +166,6 @@ recruit_character = OLE_mieli
 recruit_character = OLE_Vidkun_Hjortsling
 recruit_character = OLE_prinve_djavulen
 #pregrinded generals
-recruit_character = OLE_WW_tank
-recruit_character = OLE_WW_commando
-recruit_character = OLE_WW_infantry
 recruit_character = OLE_WW_fieldmarshel
 
 random_character = {

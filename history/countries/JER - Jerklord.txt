@@ -1,4 +1,4 @@
-﻿capital = 377
+capital = 377
 oob = "JER_1007"
 
 set_research_slots = 3
@@ -221,11 +221,7 @@ recruit_character = JER_archon_arcturius
 recruit_character = JER_count_trubach
 
 #pregrinded generals
-recruit_character = JER_WW_tank
-recruit_character = JER_WW_commando
-recruit_character = JER_WW_infantry
 recruit_character = JER_WW_fieldmarshel
-recruit_character = JER_WW_EGG
 
 create_faction = Aquileia
 add_to_faction = JER

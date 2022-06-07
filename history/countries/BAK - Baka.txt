@@ -1,4 +1,4 @@
-﻿capital = 649
+capital = 649
 
 oob = "BAK_1007"
 
@@ -190,9 +190,6 @@ recruit_character = BAK_lightning_charm
 recruit_character = BAK_apple_cider
 recruit_character = BAK_violet_dusk
 #pregrinded generals
-recruit_character = BAK_WW_tank
-recruit_character = BAK_WW_commando
-recruit_character = BAK_WW_infantry
 recruit_character = BAK_WW_fieldmarshel
 
 random_army_leader = {

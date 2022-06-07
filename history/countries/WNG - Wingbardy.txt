@@ -1,4 +1,4 @@
-﻿capital = 371
+capital = 371
 if = {
 	limit = {
 		NOT = {
@@ -249,9 +249,6 @@ recruit_character = WNG_national_liberation_committee
 recruit_character = WNG_king_trubach
 
 #pregrinded generals
-recruit_character = WNG_WW_tank
-recruit_character = WNG_WW_commando
-recruit_character = WNG_WW_infantry
 recruit_character = WNG_WW_fieldmarshel
 
 create_faction = Southern_Kingdoms

@@ -1,4 +1,4 @@
-﻿capital = 153
+capital = 153
 
 if = {
 	limit = {
@@ -217,9 +217,6 @@ recruit_character = STG_fleetfoot
 recruit_character = STG_chernushka
 recruit_character = STG_popeye
 #pregrinded generals
-recruit_character = STG_WW_tank
-recruit_character = STG_WW_commando
-recruit_character = STG_WW_infantry
 recruit_character = STG_WW_fieldmarshel
 
 set_rule = {

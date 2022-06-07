@@ -1,4 +1,4 @@
-﻿capital = 387
+capital = 387
 
 oob = "LCT_1007"
 
@@ -141,9 +141,6 @@ recruit_character = LCT_wavebreaker
 recruit_character = LCT_heavenly_snow
 
 #pregrinded generals
-recruit_character = LCT_WW_tank
-recruit_character = LCT_WW_commando
-recruit_character = LCT_WW_infantry
 recruit_character = LCT_WW_fieldmarshel
 
 LCT_tito_titovich = { set_character_flag = RIV_advisor_from_LCT }

@@ -1,4 +1,4 @@
-﻿capital = 386
+capital = 386
 oob = "MIT_1007"
 set_research_slots = 3
 
@@ -218,9 +218,6 @@ recruit_character = MIT_eirini_kondyli
 recruit_character = MIT_giannis_tauros
 
 #pregrinded generals
-recruit_character = MIT_WW_tank
-recruit_character = MIT_WW_commando
-recruit_character = MIT_WW_infantry
 recruit_character = MIT_WW_fieldmarshel
 
 if = {

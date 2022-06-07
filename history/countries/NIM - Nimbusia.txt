@@ -1,4 +1,4 @@
-﻿capital = 645
+capital = 645
 
 oob = "NIM_1007"
 
@@ -162,9 +162,6 @@ recruit_character = NIM_navy_chief_1
 recruit_character = NIM_navy_chief_2
 recruit_character = NIM_navy_chief_3
 #pregrinded generals
-recruit_character = NIM_WW_tank
-recruit_character = NIM_WW_commando
-recruit_character = NIM_WW_infantry
 recruit_character = NIM_WW_fieldmarshel
 
 NIM_scleroanavates = { set_character_flag = RIV_advisor_from_NIM }

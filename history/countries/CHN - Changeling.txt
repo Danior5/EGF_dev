@@ -1,4 +1,4 @@
-﻿capital = 251
+capital = 251
 
 set_research_slots = 3
 starting_train_buffer = 2
@@ -249,9 +249,6 @@ recruit_character = CHN_queen_yaria
 recruit_character = CHN_queen_argynnis
 recruit_character = CHN_spymaster
 #pregrinded generals
-recruit_character = CHN_WW_tank
-recruit_character = CHN_WW_commando
-recruit_character = CHN_WW_infantry
 recruit_character = CHN_WW_fieldmarshel
 if = {
 	limit = {

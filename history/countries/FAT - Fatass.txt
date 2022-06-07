@@ -1,4 +1,4 @@
-﻿capital = 485 #### The Griffon Republic
+capital = 485 #### The Griffon Republic
 oob = "FAT_1007"
 
 set_research_slots = 3
@@ -138,9 +138,6 @@ recruit_character = FAT_karl_vettericht
 recruit_character = FAT_jansen_fryshatter
 recruit_character = FAT_duke_featherus_i
 #pregrinded generals
-recruit_character = FAT_WW_tank
-recruit_character = FAT_WW_commando
-recruit_character = FAT_WW_infantry
 recruit_character = FAT_WW_fieldmarshel
 set_rule = {
 	can_generate_female_aces = yes

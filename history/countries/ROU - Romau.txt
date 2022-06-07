@@ -1,4 +1,4 @@
-﻿capital = 674
+capital = 674
 oob = "ROU_1007"
 set_research_slots = 3
 
@@ -114,9 +114,6 @@ recruit_character = ROU_haufenschuler
 recruit_character = ROU_hammenchet
 recruit_character = ROU_lord_protector_trubach
 #pregrinded generals
-recruit_character = ROU_WW_tank
-recruit_character = ROU_WW_commando
-recruit_character = ROU_WW_infantry
 recruit_character = ROU_WW_fieldmarshel
 
 random_character = {

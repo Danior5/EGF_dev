@@ -1,4 +1,4 @@
-﻿capital = 3
+capital = 3
 
 if = {
 	limit = {
@@ -325,11 +325,7 @@ recruit_character = UESR_literally_sablin
 recruit_character = POE_country_leader
 recruit_character = ERE_country_leader
 #pregrinded generals
-recruit_character = EQS_WW_tank
-recruit_character = EQS_WW_commando
-recruit_character = EQS_WW_infantry
 recruit_character = EQS_WW_fieldmarshel
-recruit_character = EQS_WW_EGG
 if = {
 	limit = {
 		has_dlc = "La Resistance"

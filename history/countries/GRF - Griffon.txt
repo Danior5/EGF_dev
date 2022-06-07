@@ -1,4 +1,4 @@
-﻿capital = 243
+capital = 243
 
 oob = "GRF_1007"
 
@@ -161,9 +161,6 @@ recruit_character = GRF_arnaud_cuvillier
 recruit_character = GRF_felix_cloudtalon
 recruit_character = GRF_lord_protector_trubach
 #pregrinded generals
-recruit_character = GRF_WW_tank
-recruit_character = GRF_WW_commando
-recruit_character = GRF_WW_infantry
 recruit_character = GRF_WW_fieldmarshel
 
 set_rule = {

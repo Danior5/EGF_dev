@@ -1,4 +1,4 @@
-﻿capital = 598
+capital = 598
 oob = "GRY_1007"
 set_research_slots = 3
 
@@ -98,9 +98,6 @@ recruit_character = GRY_vasyl_chupchukak
 recruit_character = GRY_mateusz_nobeak
 recruit_character = GRY_archduke_trubach
 #pregrinded generals
-recruit_character = GRY_WW_tank
-recruit_character = GRY_WW_commando
-recruit_character = GRY_WW_infantry
 recruit_character = GRY_WW_fieldmarshel
 
 

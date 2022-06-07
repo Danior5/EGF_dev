@@ -1,4 +1,4 @@
-﻿capital = 492
+capital = 492
 oob = "BRZ_1007"
 set_research_slots = 3
 
@@ -122,9 +122,6 @@ recruit_character = BRZ_karl_spaniel
 recruit_character = BRZ_conrad_headwig
 recruit_character = BRZ_wuffles_saltspire
 #pregrinded generals
-recruit_character = BRZ_WW_tank
-recruit_character = BRZ_WW_commando
-recruit_character = BRZ_WW_infantry
 recruit_character = BRZ_WW_fieldmarshel
 
 random_character = {

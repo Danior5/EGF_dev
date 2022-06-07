@@ -1,4 +1,4 @@
-﻿capital = 382
+capital = 382
 set_research_slots = 3
 
 set_technology = {
@@ -441,9 +441,6 @@ recruit_character = GRI_regency_council
 recruit_character = GRI_emperor_grover_vi
 recruit_character = GRI_lord_protector_trubach
 #pregrinded generals
-recruit_character = GRI_WW_tank
-recruit_character = GRI_WW_commando
-recruit_character = GRI_WW_infantry
 recruit_character = GRI_WW_fieldmarshel
 
 random_character = {

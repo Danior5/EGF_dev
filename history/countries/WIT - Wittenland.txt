@@ -1,4 +1,4 @@
-﻿capital = 617
+capital = 617
 
 oob = "WIT_1007"
 
@@ -114,9 +114,6 @@ recruit_character = WIT_brisk_colt
 recruit_character = WIT_duke_wing
 recruit_character = WIT_cloud_harmony
 #pregrinded generals
-recruit_character = WIT_WW_tank
-recruit_character = WIT_WW_commando
-recruit_character = WIT_WW_infantry
 recruit_character = WIT_WW_fieldmarshel
 
 WIT_thunder_redmane = { set_character_flag = RIV_advisor_from_WIT }

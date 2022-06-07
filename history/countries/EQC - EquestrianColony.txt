@@ -1,4 +1,4 @@
-﻿capital = 356
+capital = 356
 oob = "EQC_1007"
 set_research_slots = 3
 
@@ -228,9 +228,6 @@ recruit_character = EQC_MIT_mommy_cow
 recruit_character = EQC_flawless_glow
 
 #pregrinded generals
-recruit_character = EQC_WW_tank
-recruit_character = EQC_WW_commando
-recruit_character = EQC_WW_infantry
 recruit_character = EQC_WW_fieldmarshel
 
 random_character = {
