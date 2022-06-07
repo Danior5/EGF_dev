@@ -61,6 +61,7 @@ add_ideas = {
 
 set_stability = 0.70
 
+	
 recruit_character = GRY_hetman_calas_bulba
 recruit_character = GRY_interim_government
 recruit_character = GRY_pavel_vereskopadsky
@@ -96,6 +97,12 @@ recruit_character = GRY_konstantin_movalotov
 recruit_character = GRY_vasyl_chupchukak
 recruit_character = GRY_mateusz_nobeak
 recruit_character = GRY_archduke_trubach
+#pregrinded generals
+recruit_character = GRY_WW_tank
+recruit_character = GRY_WW_commando
+recruit_character = GRY_WW_infantry
+recruit_character = GRY_WW_fieldmarshel
+
 
 GRY_symon_preenliura = { set_character_flag = RIV_advisor_from_GRY }
 GRY_mykhailo_thrushkevsky = { set_character_flag = RIV_advisor_from_GRY }
