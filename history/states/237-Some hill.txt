@@ -1,0 +1,25 @@
+state={
+	id=237
+	name="STATE_237"
+
+	provinces={
+		3468 3568 6458 6532 9543
+	}
+
+	manpower=60257
+	state_category = pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = STG
+		add_core_of = STG
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	resources={
+		crystals = 18
+	}
+}
