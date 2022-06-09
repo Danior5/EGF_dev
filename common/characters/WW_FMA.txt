@@ -1,14 +1,6 @@
 characters={
 	BAK_WW_fieldmarshel={
 		name="'Racial Slurs'"
-		field_marshal={
-			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
-			skill=4
-			attack_skill= 4
-			defense_skill= 4
-			planning_skill= 4
-			logistics_skill= 4
-		}
 	}
 	BRZ_WW_fieldmarshel={
 		name="Tenek Dog"
@@ -23,14 +15,6 @@ characters={
 	}
 	CHN_WW_fieldmarshel={
 		name="YO SPEER!!!11!"
-		field_marshal={
-			traits= { organizer adaptable infantry_leader panzer_leader cavalry_leader }
-			skill=4
-			attack_skill= 4
-			defense_skill= 4
-			planning_skill= 4
-			logistics_skill= 4
-		}
 	}
 	CRY_WW_fieldmarshel={
 		name="Annoying ass OC"
