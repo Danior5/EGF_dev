@@ -120,7 +120,6 @@ buildings = {
 		is_port = yes
 		icon_frame = 6
 		max_level = 10
-		damage_factor = 0
 		value = 1
 		allied_build = yes
 		infrastructure_construction_effect = yes
