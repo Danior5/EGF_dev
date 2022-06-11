@@ -1,0 +1,100 @@
+focus_tree = {
+	id = LAK_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = LAK
+		}
+	}
+	default = no
+focus = {
+		id = LAK_first_tension
+		icon = GFX_goal_generic_propaganda
+		cost = .01
+		x = 8
+		y = 0
+		available = {
+		date > 1008.1.1
+	}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_named_threat = { threat = 30 name = threat_chn_attack_plb }
+		}
+	}
+
+	focus = {
+		id = LAK_tension_two
+		icon = GFX_goal_generic_consumer_goods
+		cost = 0.1
+		relative_position_id = LAK_first_tension
+		x = -2
+		y = 1
+				available = {
+		date > 1008.6.1
+	}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_named_threat = { threat = 20 name = threat_chn_attack_plb }
+		}
+	}
+
+	focus = {
+		id = LAK_tension_three
+		icon = GFX_goal_KTG_Bookstack
+		cost = 0.1
+		relative_position_id = LAK_first_tension
+		x = 0
+		y = 1
+				available = {
+		date > 1009.1.1
+	}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_named_threat = { threat = 20 name = threat_chn_attack_plb }
+		}
+	}
+
+	focus = {
+		id = LAK_tension_four
+		icon = GFX_focus_generic_military_mission
+		cost = 0.1
+		relative_position_id = LAK_first_tension
+		x = 2
+		y = 1
+						available = {
+		date > 1010.1.1
+	}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_named_threat = { threat = 100 name = threat_chn_attack_plb }
+		}
+	}
+	
+	focus = {
+		id = LAK_factions
+		icon = GFX_focus_generic_military_mission
+		cost = 0.1
+		relative_position_id = LAK_first_tension
+		x = 3
+		y = 0
+						available = {
+		date > 1011.6.1
+		}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+					if = {
+			limit = {
+				OLE = { is_subject = no }
+			}
+			CHN = { add_to_faction = OLE }
+		}
+		CHN = { add_to_faction = GRF }
+		CHN = { add_to_faction = TRD }
+		CHN = { add_to_faction = PNG }
+		CHN = { add_to_faction = CHN }
+		}
+	}
+}
