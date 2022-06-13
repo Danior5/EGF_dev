@@ -18,9 +18,9 @@ country_event = { #factions
 			}
 			RCT = { add_to_faction = CRY }
 		}
-		RCT = { add_to_faction = MIT }
-		RCT = { add_to_faction = GRY }
-		RCT = { add_to_faction = WNG }
+		RCT = { add_to_faction = JER }
+		RCT = { add_to_faction = TRD }
+		RCT = { add_to_faction = FAT }
 		
 		BAK = { add_to_faction = STG }
 		BAK = { add_to_faction = EQS }
@@ -30,9 +30,9 @@ country_event = { #factions
 			}
 			BAK = { add_to_faction = CRY }
 		}
-		BAK = { add_to_faction = MIT }
-		BAK = { add_to_faction = GRY }
-		BAK = { add_to_faction = WNG }
+		BAK = { add_to_faction = JER }
+		BAK = { add_to_faction = TRD }
+		BAK = { add_to_faction = FAT }
 		
 		LCT = { add_to_faction = STG }
 		LCT = { add_to_faction = EQS }
@@ -42,9 +42,9 @@ country_event = { #factions
 			}
 			LCT = { add_to_faction = CRY }
 		}
-		LCT = { add_to_faction = MIT }
-		LCT = { add_to_faction = GRY }
-		LCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = JER }
+		LCT = { add_to_faction = TRD }
+		LCT = { add_to_faction = FAT }
 		
 		WIT = { add_to_faction = STG }
 		WIT = { add_to_faction = EQS }
@@ -54,9 +54,9 @@ country_event = { #factions
 			}
 			WIT = { add_to_faction = CRY }
 		}
-		WIT = { add_to_faction = MIT }
-		WIT = { add_to_faction = GRY }
-		WIT = { add_to_faction = WNG }
+		WIT = { add_to_faction = JER }
+		WIT = { add_to_faction = TRD }
+		WIT = { add_to_faction = FAT }
 		
 		NIM = { add_to_faction = STG }
 		NIM = { add_to_faction = EQS }
@@ -66,9 +66,9 @@ country_event = { #factions
 			}
 			NIM = { add_to_faction = CRY }
 		}
-		NIM = { add_to_faction = MIT }
-		NIM = { add_to_faction = GRY }
-		NIM = { add_to_faction = WNG }
+		NIM = { add_to_faction = JER }
+		NIM = { add_to_faction = TRD }
+		NIM = { add_to_faction = FAT }
 		
 		DMT = { add_to_faction = STG }
 		DMT = { add_to_faction = EQS }
@@ -78,9 +78,9 @@ country_event = { #factions
 			}
 			DMT = { add_to_faction = CRY }
 		}
-		DMT = { add_to_faction = MIT }
-		DMT = { add_to_faction = GRY }
-		DMT = { add_to_faction = WNG }
+		DMT = { add_to_faction = JER }
+		DMT = { add_to_faction = TRD }
+		DMT = { add_to_faction = FAT }
 		
 		## North ##
 		if = {
@@ -90,10 +90,9 @@ country_event = { #factions
 			GRI = { add_to_faction = OLE }
 		}
 		GRI = { add_to_faction = GRF }
-		GRI = { add_to_faction = FAT }
-		GRI = { add_to_faction = FAW }
-		GRI = { add_to_faction = TRD }
-		GRI = { add_to_faction = JER }
+		GRI = { add_to_faction = WNG }
+		GRI = { add_to_faction = MIT }
+		GRI = { add_to_faction = GRY }
 		GRI = { add_to_faction = PNG }
 		GRI = { add_to_faction = CHN }
 		GRI	= { add_to_faction = HLQ }

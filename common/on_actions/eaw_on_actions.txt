@@ -68,9 +68,9 @@ on_actions = {
 				add_to_array = { global.ww_grandpa_eros_wild_ride = YAL }
 			}
 			add_to_array = { global.ww_grandpa_eros_wild_ride = HLQ }
-			add_to_array = { global.ww_grandpa_eros_wild_ride = FAT }
-			add_to_array = { global.ww_grandpa_eros_wild_ride = TRD }
-			add_to_array = { global.ww_grandpa_eros_wild_ride = JER }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = WNG }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = MIT }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = GRY }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = CHN }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = PNG }
 			add_to_array = { global.ww_grandpa_eros_wild_ride = GRF }
@@ -90,9 +90,9 @@ on_actions = {
 			add_to_array = { global.ww_friendship_is_magic = BAK }
 			add_to_array = { global.ww_friendship_is_magic = DMT }
 			add_to_array = { global.ww_friendship_is_magic = NCH }
-			add_to_array = { global.ww_friendship_is_magic = GRY }
-			add_to_array = { global.ww_friendship_is_magic = WNG }
-			add_to_array = { global.ww_friendship_is_magic = MIT }
+			add_to_array = { global.ww_friendship_is_magic = TRD }
+			add_to_array = { global.ww_friendship_is_magic = JER }
+			add_to_array = { global.ww_friendship_is_magic = FAT }
 			add_to_array = { global.ww_friendship_is_magic = EQC }
 			add_to_array = { global.ww_friendship_is_magic = STG }
 			add_to_array = { global.ww_friendship_is_magic = CRY }
