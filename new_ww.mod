@@ -1,4 +1,4 @@
-version="0.25"
+version="0.25.1"
 tags={
 	"National Focuses"
 	"Gameplay"
