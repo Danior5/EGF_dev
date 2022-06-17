@@ -14,7 +14,7 @@ state={
 		owner = STG
 		add_core_of = STG
 
-		victory_points = { 3069 3 }
+		victory_points = { 9042 10 }
 
 		buildings = {
 			infrastructure = 1
