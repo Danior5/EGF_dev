@@ -5906,11 +5906,10 @@ country_event = {
 	option = {
 		name = wingbardy_king_struggle.5.a
 		add_political_power = 15
-		}
 	}
 }
 
-
+		
 ##############################################
 ######		INVESTIGATION EVENTS		######
 ##############################################

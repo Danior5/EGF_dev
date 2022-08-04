@@ -21,9 +21,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 200
 		}
-		mutually_exclusive = {
-			focus = thoraxian_betrayal
-		}
+
 		x = 8
 		y = 0
 		completion_reward = {

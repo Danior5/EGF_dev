@@ -31,7 +31,6 @@ bookmarks = {
 			}
 			focuses = {
 				CRY_oldorder
-				CRY_comrevolution
 				CRY_oldking
 			}
 		}
@@ -77,7 +76,7 @@ bookmarks = {
 		}
 
 
-		 minors 
+		# minors 
 		"TRD"={
 			minor = yes
 			history = "TRD_GATHERING_STORM_DESC"

@@ -31,7 +31,6 @@ bookmarks = {
 			}
 			focuses = {
 				CRY_oldorder
-				CRY_comrevolution
 				CRY_oldking
 			}
 		}

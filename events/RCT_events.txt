@@ -1096,7 +1096,7 @@ country_event = {##Nova Whirl's ultimatum
 			limit = { is_core_of = ROOT }
 			add_core_of = FROM
 		}
-		very_character = {
+		every_character = {
 			limit = { is_unit_leader = yes }
 			set_nationality = FROM
 		}
