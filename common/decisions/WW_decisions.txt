@@ -709,6 +709,9 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAK
 				original_tag = NIM
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = HIP
 			}
 		}
 		available = {
@@ -758,6 +761,9 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAK
 				original_tag = NIM
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = HIP
 			}
 		}
 		available = {

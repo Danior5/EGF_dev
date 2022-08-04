@@ -488,7 +488,7 @@ country_event = { #Revolutionaries Take Control of Rila
 			    limit = { 
 				    has_character = JEB_beau_harnais
 				}
-				JEB_beau_harnais = {
+			    JEB_beau_harnais = {
 					retire = yes
 				}
 		    }
@@ -504,7 +504,7 @@ country_event = { #Revolutionaries Take Control of Rila
 			    limit = { 
 				    has_character = JEB_roche_verger
 				}
-			    			    JEB_roche_verger = {
+			    JEB_roche_verger = {
 					retire = yes
 				}
 		    }
@@ -581,6 +581,7 @@ country_event = { #Monarchists MPA takes control of Westkeep
 					type = annex_everything
 				}
 			}
+			
 		}
 	}
 }
@@ -697,13 +698,15 @@ country_event = { #Revolutionaries Take Control of Westkeep
 			    limit = { 
 				    has_character = JRR_tinteniac
 				}
-			    retire_character = JRR_tinteniac
+			    JRR_tinteniac = {
+					retire = yes
+				}
 		    }
 			if = {
 			    limit = { 
 				    has_character = JRR_philippe_le_bas
 				}
-			    			    JRR_philippe_le_bas = {
+			    JRR_philippe_le_bas = {
 					retire = yes
 				}
 		    }
@@ -711,7 +714,7 @@ country_event = { #Revolutionaries Take Control of Westkeep
 			    limit = { 
 				    has_character = JRR_georges_groussard 
 				}
-			    			    JRR_georges_groussard = {
+			    JRR_georges_groussard = {
 					retire = yes
 				}
 		    }
@@ -924,7 +927,7 @@ country_event = { #Revolutionaries Take Control of Vinovia
 			    limit = { 
 				    has_character = VIN_robert_niverolle 
 				}
-								VIN_robert_niverolle = {
+				VIN_robert_niverolle = {
 					retire = yes
 				}
 		    }
@@ -940,7 +943,7 @@ country_event = { #Revolutionaries Take Control of Vinovia
 			    limit = { 
 				    has_character = VIN_hubert_roitelet
 				}
-			    			    VIN_hubert_roitelet = {
+			    VIN_hubert_roitelet = {
 					retire = yes
 				}
 		    }
@@ -948,7 +951,7 @@ country_event = { #Revolutionaries Take Control of Vinovia
 			    limit = { 
 				    has_character = VIN_bernard_de_cormoragnac
 				}
-			    			    VIN_bernard_de_cormoragnac = {
+			    VIN_bernard_de_cormoragnac = {
 					retire = yes
 				}
 		    }
@@ -1048,6 +1051,18 @@ country_event = { #Aquileian Revolution (Revolutionaries)
 		    set_country_flag = JER_democracy_established
 			clr_country_flag = JER_is_monarchist
 		    set_faction_name = griffonian_democratic_faction
+			end_puppet = MER
+			if = {
+                limit = {
+                    MER = {
+                        is_in_faction_with = JER
+                    }
+                }
+                MER = {
+                    leave_faction = yes
+
+                }
+            }
 		    add_popularity = {
 				ideology = neutrality
 				popularity = -1.00
@@ -1195,25 +1210,25 @@ country_event = { #Aquileian Revolution (Revolutionaries)
 			set_cosmetic_tag = JER_REPUBLIC
 			if = {
 			    limit = { has_character = JER_king_moriset_discret }
-			    			    JER_king_moriset_discret = {
+			    JER_king_moriset_discret = {
 					retire = yes
 				}
 		    }
 		    if = {
 			    limit = { has_character = JER_albert_berthelot }
-			    			    JER_albert_berthelot = {
+			    JER_albert_berthelot = {
 					retire = yes
 				}
 		    }
 			if = {
 			    limit = { has_character = JER_charlesguillaumeferdinand_de_greifenwaldstrawberry }
-			    			    JER_charlesguillaumeferdinand_de_greifenwaldstrawberry = {
+			    JER_charlesguillaumeferdinand_de_greifenwaldstrawberry = {
 					retire = yes
 				}
 		    }
 			if = {
 			    limit = { has_character = JER_genevieve_artigue }
-			    			    JER_genevieve_artigue = {
+			    JER_genevieve_artigue = {
 					retire = yes
 				}
 		    }
@@ -1235,7 +1250,7 @@ country_event = { #Aquileian Revolution (Revolutionaries)
 						NOT = { has_character_flag = JER_convince_officers_flag }	
 					}
 				}
-								JER_gabriel_duval = {
+				JER_gabriel_duval = {
 					retire = yes
 				}
 		    }
@@ -1246,7 +1261,7 @@ country_event = { #Aquileian Revolution (Revolutionaries)
 						NOT = { has_character_flag = JER_convince_officers_flag }
 					}	
 				}
-			    			    JER_cecilia_dutertre = {
+			    JER_cecilia_dutertre = {
 					retire = yes
 				}
 		    }
@@ -1263,7 +1278,7 @@ country_event = { #Aquileian Revolution (Revolutionaries)
 		    }
 			if = {
 			    limit = { has_character = JER_seva_shako }
-			    			    JER_seva_shako = {
+			    JER_seva_shako = {
 					retire = yes
 				}
 		    }
@@ -1426,7 +1441,7 @@ country_event = { #Revolution Succeeds Completely
 		}
 		if = {
 			limit = { has_character = JER_king_moriset_discret }
-						JER_king_moriset_discret = {
+			JER_king_moriset_discret = {
 				retire = yes
 			}
 		}
@@ -1681,22 +1696,33 @@ country_event = { #Revolution Succeeds Completely
 					}
 				}
 			}
+			end_puppet = MER
+            if = {
+                limit = {
+                    MER = {
+                        is_in_faction_with = JER
+                    }
+                }
+                MER = {
+                    leave_faction = yes
+                }
+            }
 			set_cosmetic_tag = JER_REPUBLIC
 			if = {
 			    limit = { has_character = JER_albert_berthelot }
-			     JER_albert_berthelot = {
+			    JER_albert_berthelot = {
 					retire = yes
 				}
 		    }
 			if = {
 			    limit = { has_character = JER_charlesguillaumeferdinand_de_greifenwaldstrawberry }
-			    			    JER_charlesguillaumeferdinand_de_greifenwaldstrawberry = {
+			    JER_charlesguillaumeferdinand_de_greifenwaldstrawberry = {
 					retire = yes
 				}
 		    }
 			if = {
 			    limit = { has_character = JER_genevieve_artigue }
-			    			    JER_genevieve_artigue = {
+			    JER_genevieve_artigue = {
 					retire = yes
 				}
 		    }
@@ -1718,7 +1744,7 @@ country_event = { #Revolution Succeeds Completely
 						NOT = { has_character_flag = JER_convince_officers_flag }	
 					}
 				}
-								JER_gabriel_duval = {
+				JER_gabriel_duval = {
 					retire = yes
 				}
 		    }
@@ -1729,7 +1755,7 @@ country_event = { #Revolution Succeeds Completely
 						NOT = { has_character_flag = JER_convince_officers_flag }
 					}	
 				}
-			    			    JER_cecilia_dutertre = {
+			    JER_cecilia_dutertre = {
 					retire = yes
 				}
 		    }
@@ -1746,7 +1772,7 @@ country_event = { #Revolution Succeeds Completely
 		    }
 			if = {
 			    limit = { has_character = JER_seva_shako }
-			    			    JER_seva_shako = {
+			    JER_seva_shako = {
 					retire = yes
 				}
 		    }
@@ -2295,7 +2321,7 @@ country_event = { #Marthal Berthelot Dies of Old Age
 		add_political_power = -25
 		if = {
 			limit = { has_character = JER_albert_berthelot }
-						JER_albert_berthelot = {
+			JER_albert_berthelot = {
 				retire = yes
 			}
 		}
@@ -2313,7 +2339,7 @@ country_event = { #King Moriset Captured And Executed
 		name = aquileia.31.a
 		if = {
 			limit = { has_character = JER_king_moriset_discret }
-						JER_king_moriset_discret = {
+			JER_king_moriset_discret = {
 				retire = yes
 			}
 		}
@@ -2876,7 +2902,7 @@ country_event = { #Revolutionaries Take Control of Pridea
 			    limit = { 
 				    has_character = JFT_jacques_pivert
 				}
-			    			    JFT_jacques_pivert = {
+			    JFT_jacques_pivert = {
 					retire = yes
 				}
 		    }
@@ -2884,7 +2910,7 @@ country_event = { #Revolutionaries Take Control of Pridea
 			    limit = { 
 				    has_character = JFT_jeanne_de_belleville
 				}
-			    			    JFT_jeanne_de_belleville = {
+			    JFT_jeanne_de_belleville = {
 					retire = yes
 				}
 		    }
@@ -2892,7 +2918,7 @@ country_event = { #Revolutionaries Take Control of Pridea
 			    limit = { 
 				    has_character = JFT_andre_abeille
 				}
-			    			    JFT_andre_abeille = {
+			    JFT_andre_abeille = {
 					retire = yes
 				}
 		    }
@@ -2915,6 +2941,18 @@ country_event = { #Revolution (Monarchists)
 		add_war_support = 0.15
 		add_political_power = 50
 		hidden_effect = {
+			end_puppet = MER
+                if = {
+                    limit = {
+                        MER = {
+                            is_in_faction_with = JER
+                        }
+                    }
+                    MER = {
+                        leave_faction = yes
+    
+                    }
+                }
 			JEB = {
 				if = {
 					limit = { 
@@ -3156,7 +3194,7 @@ country_event = { #The King gets shot and killed
 			limit = {
 				has_character = JER_king_moriset_discret
 			}
-						JER_king_moriset_discret = {
+			JER_king_moriset_discret = {
 				retire = yes
 			}
 		}
@@ -5431,7 +5469,7 @@ country_event = { #Rodier Announces Intent To Run as the MPA Representative
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.112"}
 	title = aquileia.112.t
 	desc = aquileia.112.d
-	picture = GFX_event_aquileian_toasts
+	picture = GFX_event_medieval_castle_on_hill
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -5449,7 +5487,7 @@ country_event = { #The Election
 	title = aquileia.113.t
 	desc = aquileia.113.d
 	
-	picture = GFX_event_aquileian_toasts
+	picture = GFX_event_medieval_castle_on_hill
 	is_triggered_only = yes
 	
 	option = {
@@ -6177,7 +6215,7 @@ country_event = { #In Vino Veritas
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.125"}
 	title = aquileia.125.t
 	desc = aquileia.125.d
-	picture = GFX_event_medieval_castle_on_hill
+	picture = GFX_event_aquileian_toasts
 	
 	trigger = {
 		has_country_flag = JER_is_monarchist
@@ -6195,7 +6233,7 @@ country_event = { #Republican Toasts
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.126"}
 	title = aquileia.126.t
 	desc = aquileia.126.d
-	picture = GFX_event_medieval_castle_on_hill
+	picture = GFX_event_aquileian_toasts
 
 	is_triggered_only = yes
 	
@@ -7245,7 +7283,7 @@ country_event = { #Aquileia Sets the Herzland Free
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.170"}
 	title = aquileia.170.t
 	desc = aquileia.170.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7271,7 +7309,7 @@ country_event = { #The Matter Of Herzland
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.171"}
 	title = aquileia.171.t
 	desc = aquileia.171.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7341,7 +7379,7 @@ country_event = { #The Matter Of Herzland
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.172"}
 	title = aquileia.172.t
 	desc = aquileia.172.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7411,7 +7449,7 @@ country_event = { #Confirm We are the best, and the greatest
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.173"}
 	title = aquileia.173.t
 	desc = aquileia.173.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7435,7 +7473,7 @@ country_event = { #The Aquileian Offer
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.171"}
 	title = aquileia.174.t
 	desc = aquileia.174.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7502,7 +7540,7 @@ country_event = { #The Republicans have betrayed us!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.175"}
 	title = aquileia.175.t
 	desc = aquileia.175.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7563,7 +7601,7 @@ country_event = { #The Republicans have agreed to our terms!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.176"}
 	title = aquileia.176.t
 	desc = aquileia.176.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7598,7 +7636,7 @@ country_event = { #The Republicans have agreed to our terms!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.177"}
 	title = aquileia.177.t
 	desc = aquileia.177.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -7634,7 +7672,7 @@ country_event = { #The Aquileians have betrayed us!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.178"}
 	title = aquileia.178.t
 	desc = aquileia.178.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -8989,7 +9027,11 @@ country_event = { #Aquileia wishes to unite our two Republics under their flag -
 				global.griffonian_empire_var = THIS
 			}
 		    JER = {
-		    	every_unit_leader = { 
+		    	every_character = {
+					limit = { 
+						is_country_leader = no
+						is_unit_leader = yes 
+					}
 					set_nationality = FAT 
 				}
 			}
@@ -9040,7 +9082,7 @@ country_event = { #The New Republic - Unification with the Republic
 			set_variable = {
 				global.griffonian_empire_var = THIS
 			}
-		   	FAT = {
+		    FAT = {
 		    	every_character = { 
 					limit = { 
 						is_country_leader = no
@@ -9514,7 +9556,7 @@ country_event = { #Cecile grover event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.250"}
 	title = aquileia.250.t
 	desc = aquileia.250.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -9528,7 +9570,7 @@ country_event = { #Gommie grover event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.251"}
 	title = aquileia.251.t
 	desc = aquileia.251.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -9542,7 +9584,7 @@ country_event = { #Vivienne grover event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.252"}
 	title = aquileia.252.t
 	desc = aquileia.252.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -9558,7 +9600,7 @@ country_event = { #Verany grover event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event aquileia.253"}
 	title = aquileia.253.t
 	desc = aquileia.253.d
-	picture = GFX_event_medieval_city_2
+	picture = GFX_event_griffenheim
 
 	is_triggered_only = yes
 	
@@ -10390,7 +10432,7 @@ news_event = { #Revolution Lost
 	option = {
 		name = aquileia_news.5.a
 		trigger = {
-			is_on_equestrian_continent = yes
+			is_griffon_continent_country = no
 		}
 	}
 	option = {
