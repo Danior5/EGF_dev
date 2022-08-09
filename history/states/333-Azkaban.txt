@@ -1,0 +1,25 @@
+state={
+	id=333
+	name="STATE_333"
+
+	provinces={
+		6070 9176
+	}
+
+	manpower=3900
+	state_category = tiny_island
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = STG
+		add_core_of = STG
+
+		buildings = {
+			infrastructure = 1
+
+			9176 = {
+				naval_base = 1
+			}
+		}
+	}
+}

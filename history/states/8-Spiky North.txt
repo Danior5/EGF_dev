@@ -1,0 +1,25 @@
+state={
+	id=8
+	name="STATE_8"
+
+	provinces={
+		7069 9833 9945 10113
+	}
+
+	manpower=43000
+	state_category = pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = EQS
+		add_core_of = EQS
+
+		buildings = {
+			dockyard = 1
+
+			10113 = {
+				naval_base = 1
+			}
+		}
+	}
+}
