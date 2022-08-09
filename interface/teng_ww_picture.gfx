@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_funny_zog_event_image"
+		texturefile = "gfx/event_pictures/funny_zog.dds"
+	}
+	spriteType = {
+		name = "GFX_soldiertf2_event_image"
+		texturefile = "gfx/event_pictures/soldier_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_harris_event_image"
+		texturefile = "gfx/event_pictures/harris_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_rommel_event_image"
+		texturefile = "gfx/event_pictures/rommel_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_walter_event_image"
+		texturefile = "gfx/event_pictures/walter_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_lindy_event_image"
+		texturefile = "gfx/event_pictures/lindy_recruit.dds"
+	}
+	
+}

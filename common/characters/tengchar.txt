@@ -1,0 +1,72 @@
+characters={
+	BAK_WW_fieldmarshel = {
+		name = "Soldier TF2"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WW/soldiertf2.tga"
+				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+	BAT_WW_fieldmarshel = {
+		name = "Arthur Harris"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WW/harris.tga"
+				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+	CHN_WW_fieldmarshel = {
+		name = "Erwin Rommel"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WW/rommel.tga"
+				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+	CRY_WW_fieldmarshel = {
+		name = "Walther white"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WW/walter.tga"
+				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+	EQS_WW_fieldmarshel = {
+		name = "Lindybeige"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WW/lindy.tga"
+				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
+			}
+		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+}

@@ -1,0 +1,127 @@
+﻿add_namespace = teng_ww
+
+country_event = {
+	id = teng_ww.1
+	title = teng_ww.1.t
+	desc = teng_ww.1.d
+	picture = GFX_soldiertf2_event_image
+	is_triggered_only = yes	
+	option = {
+		name = "Give him command immediately"
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = BAK_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	option = { 
+		name = "I dont want soldier tf2! I want my army xp back!"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.2
+	title = teng_ww.2.t
+	desc = teng_ww.2.d
+	picture = GFX_harris_event_image
+	is_triggered_only = yes	
+	option = {
+		name = "Time to reap the whirlwind"
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = BAT_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	option = { 
+		name = "this guy makes no sense for this country. i want my xp back"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.3
+	title = teng_ww.3.t
+	desc = teng_ww.3.d
+	picture = GFX_rommel_event_image
+	is_triggered_only = yes
+	option = {
+		name = "Im sure he'll give trimmel a run for his money"
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = CHN_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	option = { 
+		name = "I thought trimmel and rommel are the same person, I need a refund"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.4
+	title = teng_ww.4.t
+	desc = teng_ww.4.d
+	picture = GFX_walter_event_image
+	is_triggered_only = yes
+	option = {
+		name = "jesse we need to cook"
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = CRY_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	option = {
+		name = ":nerd: eaw crystals and BB crystals arnt the same thing!!, i want a refund"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.5
+	title = teng_ww.5.t
+	desc = teng_ww.5.d
+	picture = GFX_lindy_event_image
+	is_triggered_only = yes
+	option = {
+		name = "I love listening to a random enlgish man talk for 25 minutes or so on random subjects!"
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = EQS_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	option = {
+		name = "Who the hell is lindybeige, I want a refund"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
