@@ -9,6 +9,8 @@ state={
 	history={
 		owner = EQS
 		add_core_of = EQS
+		set_state_flag = EQS_controls
+
 		buildings = {
 			infrastructure = 0
 			20720 = {

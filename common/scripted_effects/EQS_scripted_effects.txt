@@ -1,0 +1,76 @@
+EQS_island_debuff_level_up = {	
+	if = {
+		limit = { has_idea = EQS_island_debuff1 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff1
+			add_idea = EQS_island_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff2 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff2
+			add_idea = EQS_island_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff3 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff3
+			add_idea = EQS_island_debuff4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff4 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff4
+			add_idea = EQS_island_debuff5
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff5 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff5
+			add_idea = EQS_island_debuff6
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+EQS_island_debuff_level_down = {
+	if = {
+		limit = { has_idea = EQS_island_debuff6 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff6
+			add_idea = EQS_island_debuff5
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff5 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff5
+			add_idea = EQS_island_debuff4
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff4 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff4
+			add_idea = EQS_island_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff3 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff3
+			add_idea = EQS_island_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = EQS_island_debuff2 }
+		swap_ideas = {
+			remove_idea = EQS_island_debuff2
+			add_idea = EQS_island_debuff1
+		}
+	}
+}
