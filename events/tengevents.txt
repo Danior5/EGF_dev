@@ -125,3 +125,14 @@ country_event = {
 		army_experience = 75
 	}
 }
+country_event = {
+	id = teng_ww.99
+	title = "pregrinded generals is not implemented to this country yet"
+	desc = "yeah its gonna take a while"
+	is_triggered_only = yes
+	option = {
+		name = "bruh"
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
