@@ -241,6 +241,8 @@ recruit_character = BAT_advisor_80
 recruit_character = BAT_advisor_81
 #pregrinded generals
 recruit_character = BAT_WW_fieldmarshel
+
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"

@@ -1,4 +1,4 @@
-capital = 356
+﻿capital = 356
 oob = "EQC_1007"
 set_research_slots = 3
 
@@ -227,12 +227,12 @@ recruit_character = EQC_MIT_mommy_cow
 ### NLR Dudes ###
 recruit_character = EQC_flawless_glow
 
-#pregrinded generals
+### Pregrinded Generals###
 recruit_character = EQC_WW_fieldmarshel
 
 random_character = {
-    limit = { is_character = EQC_jet_set }
-    save_global_event_target_as = EQC_jet_set_target
+	limit = { is_character = EQC_jet_set }
+	save_global_event_target_as = EQC_jet_set_target
 }
 
 if = {
@@ -453,7 +453,6 @@ if = {
 		}
 	}
 }
-
 
 set_rule = {
 	can_generate_female_aces = yes

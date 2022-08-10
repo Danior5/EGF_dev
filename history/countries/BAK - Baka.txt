@@ -1,4 +1,4 @@
-capital = 649
+﻿capital = 649
 
 oob = "BAK_1007"
 
@@ -194,55 +194,55 @@ recruit_character = BAK_WW_fieldmarshel
 
 random_army_leader = {
 	limit = { 
-	    has_id = 21431 
+		has_id = 21431 
 	}
 	save_global_event_target_as = BAK_Cobalt
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21432 
+		has_id = 21432 
 	}
 	save_global_event_target_as = BAK_Stormy
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21433 
+		has_id = 21433 
 	}
 	save_global_event_target_as = BAK_Sea
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21434 
+		has_id = 21434 
 	}
 	save_global_event_target_as = BAK_Tough
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21435 
+		has_id = 21435 
 	}
 	save_global_event_target_as = BAK_Fall
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21436 
+		has_id = 21436 
 	}
 	save_global_event_target_as = BAK_Direct
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21437
+		has_id = 21437
 	}
 	save_global_event_target_as = BAK_Golden
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21438 
+		has_id = 21438 
 	}
 	save_global_event_target_as = BAK_Keen
 }
 random_army_leader = {
 	limit = { 
-	    has_id = 21439
+		has_id = 21439
 	}
 	save_global_event_target_as = BAK_Flight
 }

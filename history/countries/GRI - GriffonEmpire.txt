@@ -1,4 +1,4 @@
-capital = 382
+﻿capital = 382
 set_research_slots = 3
 
 set_technology = {
@@ -430,8 +430,8 @@ recruit_character = karl
 recruit_character = konstantinos
 recruit_character = cornelius
 recruit_character = eggert
-recruit_character = konrad
 recruit_character = harald
+recruit_character = konrad
 recruit_character = conrad
 recruit_character = adrastea
 recruit_character = GRI_atlas_hengsbach
@@ -440,6 +440,7 @@ recruit_character = GRI_aras_seeliger
 recruit_character = GRI_regency_council
 recruit_character = GRI_emperor_grover_vi
 recruit_character = GRI_lord_protector_trubach
+recruit_character = GRI_occupational_authority
 #pregrinded generals
 recruit_character = GRI_WW_fieldmarshel
 

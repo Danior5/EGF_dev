@@ -1,4 +1,4 @@
-capital = 537
+﻿capital = 537
 oob = "HLQ_1007"
 set_research_slots = 3
 
@@ -24,7 +24,7 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 
 if = {
 	limit = {
-		not = { has_dlc = "Man the Guns" }
+		NOT = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
 		early_destroyer = 1
@@ -169,7 +169,6 @@ recruit_character = HLQ_cecilia_schmid
 recruit_character = HLQ_grand_master_trubach
 #pregrinded generals
 recruit_character = HLQ_WW_fieldmarshel
-
 
 set_rule = {
 	can_generate_female_aces = yes

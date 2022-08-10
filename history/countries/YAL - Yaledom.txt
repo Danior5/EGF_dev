@@ -1,4 +1,4 @@
-capital = 398
+﻿capital = 398
 oob = "YAL_1007"
 set_research_slots = 3
 
@@ -91,6 +91,7 @@ recruit_character = YAL_trade_union_congress
 recruit_character = YAL_herald_of_boreas
 #pregrinded generals
 recruit_character = YAL_WW_fieldmarshel
+
 random_character = {
     limit = { is_character = YAL_emperor_grover_ii }
     save_global_event_target_as = YAL_emperor_grover_ii_target
