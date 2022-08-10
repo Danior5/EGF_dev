@@ -167,7 +167,7 @@ characters={
 			traits = {}
 		}
 	}
-	HIQ_WW_fieldmarshel = {
+	HLQ_WW_fieldmarshel = {
 		name = "Mordecai"
 		portraits = {
 			army = {
