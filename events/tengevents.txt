@@ -7,7 +7,7 @@ country_event = {
 	picture = GFX_soldiertf2_event_image
 	is_triggered_only = yes	
 	option = {
-		name = "Give him command immediately"
+		name = teng_ww.1.a
 		ai_chance = { factor = 0 }
 		add_field_marshal_role = {
 			Character = BAK_WW_fieldmarshel
@@ -18,9 +18,10 @@ country_event = {
 			planning_skill=4
 			logistics_skill=4
 		}
+		custom_effect_tooltip = teng_ww_skill
 	}
 	option = { 
-		name = "I dont want soldier tf2! I want my army xp back!"
+		name = teng_ww.1.b
 		ai_chance = { factor = 100 }
 		army_experience = 75
 	}
@@ -32,7 +33,7 @@ country_event = {
 	picture = GFX_harris_event_image
 	is_triggered_only = yes	
 	option = {
-		name = "Time to reap the whirlwind"
+		name = teng_ww.2.a
 		ai_chance = { factor = 0 }
 		add_field_marshal_role = {
 			Character = BAT_WW_fieldmarshel
@@ -43,9 +44,10 @@ country_event = {
 			planning_skill=4
 			logistics_skill=4
 		}
+		custom_effect_tooltip = teng_ww_skill
 	}
 	option = { 
-		name = "this guy makes no sense for this country. i want my xp back"
+		name = teng_ww.2.b
 		ai_chance = { factor = 100 }
 		army_experience = 75
 	}
@@ -57,7 +59,7 @@ country_event = {
 	picture = GFX_rommel_event_image
 	is_triggered_only = yes
 	option = {
-		name = "Im sure he'll give trimmel a run for his money"
+		name = teng_ww.3.a
 		ai_chance = { factor = 0 }
 		add_field_marshal_role = {
 			Character = CHN_WW_fieldmarshel
@@ -68,9 +70,10 @@ country_event = {
 			planning_skill=4
 			logistics_skill=4
 		}
+		custom_effect_tooltip = teng_ww_skill
 	}
 	option = { 
-		name = "I thought trimmel and rommel are the same person, I need a refund"
+		name = teng_ww.3.b
 		ai_chance = { factor = 100 }
 		army_experience = 75
 	}
@@ -82,7 +85,7 @@ country_event = {
 	picture = GFX_walter_event_image
 	is_triggered_only = yes
 	option = {
-		name = "jesse we need to cook"
+		name = teng_ww.4.a
 		ai_chance = { factor = 0 }
 		add_field_marshal_role = {
 			Character = CRY_WW_fieldmarshel
@@ -93,21 +96,75 @@ country_event = {
 			planning_skill=4
 			logistics_skill=4
 		}
+		custom_effect_tooltip = teng_ww_skill
 	}
 	option = {
-		name = ":nerd: eaw crystals and BB crystals arnt the same thing!!, i want a refund"
+		name = teng_ww.4.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+
+country_event = {
+	id = teng_ww.5
+	title = teng_ww.5.t
+	desc = teng_ww.5.d
+	picture = GFX_kingarthur_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.5.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = CTH_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = {
+		name = teng_ww.5.b
 		ai_chance = { factor = 100 }
 		army_experience = 75
 	}
 }
 country_event = {
-	id = teng_ww.5
-	title = teng_ww.5.t
-	desc = teng_ww.5.d
+	id = teng_ww.6
+	title = teng_ww.6.t
+	desc = teng_ww.6.d
+	picture = GFX_jesse_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.6.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = EQC_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = {
+		name = teng_ww.6.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.7
+	title = teng_ww.7.t
+	desc = teng_ww.7.d
 	picture = GFX_lindy_event_image
 	is_triggered_only = yes
 	option = {
-		name = "I love listening to a random enlgish man talk for 25 minutes or so on random subjects!"
+		name = teng_ww.7.a
 		ai_chance = { factor = 0 }
 		add_field_marshal_role = {
 			Character = EQS_WW_fieldmarshel
@@ -118,9 +175,452 @@ country_event = {
 			planning_skill=4
 			logistics_skill=4
 		}
+		custom_effect_tooltip = teng_ww_skill
 	}
 	option = {
-		name = "Who the hell is lindybeige, I want a refund"
+		name = teng_ww.7.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.8
+	title = teng_ww.8.t
+	desc = teng_ww.8.d
+	picture = GFX_karensky_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.8.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = FAT_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.8.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.9
+	title = teng_ww.9.t
+	desc = teng_ww.9.d
+	picture = GFX_danior_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.9.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = GRF_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.9.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.10
+	title = teng_ww.10.t
+	desc = teng_ww.10.d
+	picture = GFX_steiner_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.10.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = GRI_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.10.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.11
+	title = teng_ww.11.t
+	desc = teng_ww.11.d
+	picture = GFX_zalenskyy_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.11.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = GRY_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.11.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.12
+	title = teng_ww.12.t
+	desc = teng_ww.12.d
+	picture = GFX_lemay_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.12.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = HIP_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.12.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.13
+	title = teng_ww.13.t
+	desc = teng_ww.13.d
+	picture = GFX_mordecai_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.13.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = HLQ_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.13.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.14
+	title = teng_ww.14.t
+	desc = teng_ww.14.d
+	picture = GFX_spytf2_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.14.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = JER_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.14.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.15
+	title = teng_ww.15.t
+	desc = teng_ww.15.d
+	picture = GFX_raiden_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.15.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = LCT_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.15.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.16
+	title = teng_ww.16.t
+	desc = teng_ww.16.d
+	picture = GFX_rfk_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.16.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = NIM_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.16.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.17
+	title = teng_ww.17.t
+	desc = teng_ww.17.d
+	picture = GFX_hayha_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.17.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = PNG_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.17.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.18
+	title = teng_ww.18.t
+	desc = teng_ww.18.d
+	picture = GFX_tito_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.18.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = RCT_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.18.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.19
+	title = teng_ww.19.t
+	desc = teng_ww.19.d
+	picture = GFX_saul_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.19.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = ROU_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.19.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.20
+	title = teng_ww.20.t
+	desc = teng_ww.20.d
+	picture = GFX_buckharin_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.20.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = STG_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.20.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.21
+	title = teng_ww.21.t
+	desc = teng_ww.21.d
+	picture = GFX_vasa_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.21.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = TRD_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.21.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.22
+	title = teng_ww.22.t
+	desc = teng_ww.22.d
+	picture = GFX_sam_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.22.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = WIT_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.22.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.23
+	title = teng_ww.23.t
+	desc = teng_ww.23.d
+	picture = GFX_tassen_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.23.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = WNG_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.23.b
+		ai_chance = { factor = 100 }
+		army_experience = 75
+	}
+}
+country_event = {
+	id = teng_ww.24
+	title = teng_ww.24.t
+	desc = teng_ww.24.d
+	picture = GFX_gus_event_image
+	is_triggered_only = yes
+	option = {
+		name = teng_ww.24.a
+		ai_chance = { factor = 0 }
+		add_field_marshal_role = {
+			Character = YAL_WW_fieldmarshel
+			traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+		custom_effect_tooltip = teng_ww_skill
+	}
+	option = { 
+		name = teng_ww.24.b
 		ai_chance = { factor = 100 }
 		army_experience = 75
 	}
