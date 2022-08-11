@@ -1,9 +1,5 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_funny_zog_event_image"
-		texturefile = "gfx/event_pictures/funny_zog.dds"
-	}
-	spriteType = {
 		name = "GFX_soldiertf2_event_image"
 		texturefile = "gfx/event_pictures/soldier_recruit.dds"
 	}
@@ -20,8 +16,79 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/walter_recruit.dds"
 	}
 	spriteType = {
+		name = "GFX_kingarthur_event_image"
+		texturefile = "gfx/event_pictures/kingarthur_recruit.dds"
+	}
+	spriteType = {
 		name = "GFX_lindy_event_image"
 		texturefile = "gfx/event_pictures/lindy_recruit.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_karensky_event_image"
+		texturefile = "gfx/event_pictures/karensky_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_danior_event_image"
+		texturefile = "gfx/event_pictures/danior_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_gus_event_image"
+		texturefile = "gfx/event_pictures/gus_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_zalenskyy_event_image"
+		texturefile = "gfx/event_pictures/zalenskyy_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_lemay_event_image"
+		texturefile = "gfx/event_pictures/lemay_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_mordecai_event_image"
+		texturefile = "gfx/event_pictures/mordecai_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_spytf2_event_image"
+		texturefile = "gfx/event_pictures/spytf2_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_raiden_event_image"
+		texturefile = "gfx/event_pictures/raiden_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_rfk_event_image"
+		texturefile = "gfx/event_pictures/rfk_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_sheldon_event_image"
+		texturefile = "gfx/event_pictures/sheldon_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_tito_event_image"
+		texturefile = "gfx/event_pictures/tito_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_saul_event_image"
+		texturefile = "gfx/event_pictures/saul_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_buckharin_event_image"
+		texturefile = "gfx/event_pictures/buckharin_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_vasa_event_image"
+		texturefile = "gfx/event_pictures/vasa_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_sam_event_image"
+		texturefile = "gfx/event_pictures/sam_recruit.dds"
+	}
+	spriteType = {	
+		name = "GFX_tassen_event_image"
+		texturefile = "gfx/event_pictures/tassen_recruit.dds"
+	}
+	spriteType = {
+		name = "GFX_mike_event_image"
+		texturefile = "gfx/event_pictures/mike_recruit.dds"
+	}
 }

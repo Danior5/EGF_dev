@@ -112,10 +112,10 @@ characters={
 		}
 	}
 	GRF_WW_fieldmarshel = {
-		name = "Chairman Danoir"
+		name = "Chairman Danior"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/danoir.tga"
+				large = "gfx/leaders/WW/danior.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -126,10 +126,10 @@ characters={
 		}
 	}
 	GRI_WW_fieldmarshel = {
-		name = "Felix Steiner"
+		name = "Gus Fring"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/steiner.tga"
+				large = "gfx/leaders/WW/gus.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -224,10 +224,10 @@ characters={
 		}
 	}
 	PNG_WW_fieldmarshel = {
-		name = "Simo Häyhä "
+		name = "Sheldon Cooper "
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/hayha.tga"
+				large = "gfx/leaders/WW/sheldon.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -322,10 +322,10 @@ characters={
 		}
 	}
 	YAL_WW_fieldmarshel = {
-		name = "Gus Fring"
+		name = "Mike Ehrmantraut"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/gus.tga"
+				large = "gfx/leaders/WW/mike.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
