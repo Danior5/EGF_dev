@@ -1,3 +1,4 @@
+
 shared_focus = {
 	id = HLR_final_decree
 	icon = GFX_goal_skull_treaty

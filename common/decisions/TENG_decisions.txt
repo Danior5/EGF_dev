@@ -1,0 +1,183 @@
+foreign_politics = {		
+	pregrinded_generals= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				date > 1011.10.1
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {		
+			is_ai = no
+		}
+		
+		complete_effect = {
+			army_experience = -75
+			custom_effect_tooltip = "you can get a refund if you like"
+			custom_effect_tooltip = "you can only fire this event once"
+			hidden_effect = {
+				if = { 
+					limit = { TAG = bak }
+					country_event = {
+						id = teng_ww.1
+					}
+				}
+				else_if = {
+					limit = { TAG = bat }
+					country_event = {
+						id = teng_ww.2
+					}
+				}
+				else_if = {
+					limit = { TAG = chn }
+					country_event = {
+						id = teng_ww.3
+					}
+				}
+				else_if = {
+					limit = { TAG = cry }
+					country_event = {
+						id = teng_ww.4
+					}
+				}
+				else_if = {
+					limit = { TAG = cth }
+					country_event = {
+						id = teng_ww.5
+					}
+				}
+				else_if = {
+					limit = { TAG = eqc }
+					country_event = {
+						id = teng_ww.6
+					}
+				}
+				else_if = {
+					limit = { TAG = eqs }
+					country_event = {
+						id = teng_ww.7
+					}
+				}
+				else_if = {
+					limit = { TAG = fat }
+					country_event = {
+						id = teng_ww.8
+					}
+				}
+				else_if = {
+					limit = { TAG = grf }
+					country_event = {
+						id = teng_ww.9
+					}
+				}
+				else_if = {
+					limit = { TAG = gri }
+					country_event = {
+						id = teng_ww.10
+					}
+				}
+				else_if = {
+					limit = { TAG = gry }
+					country_event = {
+						id = teng_ww.11
+					}
+				}
+				else_if = {
+					limit = { TAG = hip }
+					country_event = {
+						id = teng_ww.12
+					}
+				}
+				else_if = {
+					limit = { TAG = hlq }
+					country_event = {
+						id = teng_ww.13
+					}
+				}
+				else_if = {
+					limit = { TAG = jer }
+					country_event = {
+						id = teng_ww.14
+					}
+				}
+				else_if = {
+					limit = { TAG = lct }
+					country_event = {
+						id = teng_ww.15
+					}
+				}
+				else_if = {
+					limit = { TAG = nim }
+					country_event = {
+						id = teng_ww.16
+					}
+				}
+				else_if = {
+					limit = { TAG = png }
+					country_event = {
+						id = teng_ww.17
+					}
+				}
+				else_if = {
+					limit = { TAG = rct }
+					country_event = {
+						id = teng_ww.18
+					}
+				}
+				else_if = {
+					limit = { TAG = rou }
+					country_event = {
+						id = teng_ww.19
+					}
+				}
+				else_if = {
+					limit = { TAG = stg }
+					country_event = {
+						id = teng_ww.20
+					}
+				}
+				else_if = {
+					limit = { TAG = trd }
+					country_event = {
+						id = teng_ww.21
+					}
+				}
+				else_if = {
+					limit = { TAG = wit }
+					country_event = {
+						id = teng_ww.22
+					}
+				}
+				else_if = {
+					limit = { TAG = wng }
+					country_event = {
+						id = teng_ww.23
+					}
+				}
+				else_if = {
+					limit = { TAG = yal }
+					country_event = {
+						id = teng_ww.24
+					}
+				}
+				else = {
+					country_event = {
+						id = teng_ww.99
+					}
+				}
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+}
