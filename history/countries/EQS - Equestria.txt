@@ -1,4 +1,4 @@
-capital = 3
+﻿capital = 3
 
 if = {
 	limit = {
@@ -329,7 +329,9 @@ recruit_character = UESR_cheese_sandwich
 recruit_character = UESR_floppa
 recruit_character = UESR_literally_sablin
 recruit_character = POE_country_leader
-recruit_character = ERE_country_leader
+recruit_character = ERE_country_leader	
+###Pregrinded Generals###
+recruit_character = EQS_WW_fieldmarshel
 
 create_faction = "All_ponies_front"
 add_to_faction = CRY
