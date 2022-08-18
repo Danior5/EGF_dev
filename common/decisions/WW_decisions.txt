@@ -711,6 +711,10 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+			EQS = { add_to_faction = HIP }
+
+			GRI	= { add_to_faction = CTH }
+			GRI	= { add_to_faction = BAT }
 		}
 		
 		complete_effect = {
@@ -725,6 +729,10 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+			EQS = { add_to_faction = HIP }
+
+			GRI	= { add_to_faction = CTH }
+			GRI	= { add_to_faction = BAT }
 		}
 	}
 	
@@ -759,6 +767,35 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+		BAK = { add_to_faction = HIP }
+		BAK = { add_to_faction = EQS }
+		BAK = { add_to_faction = CRY }		
+		BAK = { add_to_faction = STG }		
+		
+		RCT = { add_to_faction = HIP }
+		RCT = { add_to_faction = EQS }
+		RCT = { add_to_faction = CRY }		
+		RCT = { add_to_faction = STG }	
+
+		LCT = { add_to_faction = HIP }
+		LCT = { add_to_faction = EQS }
+		LCT = { add_to_faction = CRY }		
+		LCT = { add_to_faction = STG }		
+
+		WIT = { add_to_faction = HIP }
+		WIT = { add_to_faction = EQS }
+		WIT = { add_to_faction = CRY }		
+		WIT = { add_to_faction = STG }		
+
+		NIM = { add_to_faction = HIP }
+		NIM = { add_to_faction = EQS }
+		NIM = { add_to_faction = CRY }		
+		NIM = { add_to_faction = STG }				
+		
+		
+		GRI	= { add_to_faction = CHN }
+		GRI	= { add_to_faction = GRF }
+		GRI	= { add_to_faction = PNG }
 		}
 		
 		complete_effect = {
@@ -773,6 +810,35 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+		BAK = { add_to_faction = HIP }
+		BAK = { add_to_faction = EQS }
+		BAK = { add_to_faction = CRY }		
+		BAK = { add_to_faction = STG }		
+		
+		RCT = { add_to_faction = HIP }
+		RCT = { add_to_faction = EQS }
+		RCT = { add_to_faction = CRY }		
+		RCT = { add_to_faction = STG }	
+
+		LCT = { add_to_faction = HIP }
+		LCT = { add_to_faction = EQS }
+		LCT = { add_to_faction = CRY }		
+		LCT = { add_to_faction = STG }		
+
+		WIT = { add_to_faction = HIP }
+		WIT = { add_to_faction = EQS }
+		WIT = { add_to_faction = CRY }		
+		WIT = { add_to_faction = STG }		
+
+		NIM = { add_to_faction = HIP }
+		NIM = { add_to_faction = EQS }
+		NIM = { add_to_faction = CRY }		
+		NIM = { add_to_faction = STG }				
+		
+		
+		GRI	= { add_to_faction = CHN }
+		GRI	= { add_to_faction = GRF }
+		GRI	= { add_to_faction = PNG }
 		}
 	}
 
@@ -807,6 +873,23 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
+		BAK = { add_to_faction = WNG }
+		BAK = { add_to_faction = GRY }	
+		
+		RCT = { add_to_faction = WNG }
+		RCT = { add_to_faction = GRY }
+
+		LCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = GRY }
+	
+		WIT = { add_to_faction = WNG }
+		WIT = { add_to_faction = GRY }
+
+		NIM = { add_to_faction = WNG }
+		NIM = { add_to_faction = GRY }
+
+		
+		GRI	= { add_to_faction = HLQ }			
 		}
 		
 		complete_effect = {
@@ -821,6 +904,23 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
+		BAK = { add_to_faction = WNG }
+		BAK = { add_to_faction = GRY }	
+		
+		RCT = { add_to_faction = WNG }
+		RCT = { add_to_faction = GRY }
+
+		LCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = GRY }
+	
+		WIT = { add_to_faction = WNG }
+		WIT = { add_to_faction = GRY }
+
+		NIM = { add_to_faction = WNG }
+		NIM = { add_to_faction = GRY }
+
+		
+		GRI	= { add_to_faction = HLQ }
 		}
 	}
 	
