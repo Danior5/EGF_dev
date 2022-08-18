@@ -10,117 +10,50 @@ country_event = { #factions
 	option = {
 		name = ww.5.a
 		## South ##
-		RCT = { add_to_faction = STG }
-		RCT = { add_to_faction = EQS }
-		if = {
-			limit = {
-				CRY = { is_subject = no }
-			}
-			RCT = { add_to_faction = CRY }
-		}
-		RCT = { add_to_faction = MIT }
-		RCT = { add_to_faction = GRY }
-		RCT = { add_to_faction = WNG }
-		
-		BAK = { add_to_faction = STG }
-		BAK = { add_to_faction = EQS }
-		if = {
-			limit = {
-				CRY = { is_subject = no }
-			}
-			BAK = { add_to_faction = CRY }
-		}
-		BAK = { add_to_faction = MIT }
-		BAK = { add_to_faction = GRY }
-		BAK = { add_to_faction = WNG }
-		
-		LCT = { add_to_faction = STG }
-		LCT = { add_to_faction = EQS }
-		if = {
-			limit = {
-				CRY = { is_subject = no }
-			}
-			LCT = { add_to_faction = CRY }
-		}
-		LCT = { add_to_faction = MIT }
-		LCT = { add_to_faction = GRY }
-		LCT = { add_to_faction = WNG }
-		
-		WIT = { add_to_faction = STG }
-		WIT = { add_to_faction = EQS }
-		if = {
-			limit = {
-				CRY = { is_subject = no }
-			}
-			WIT = { add_to_faction = CRY }
-		}
-		WIT = { add_to_faction = MIT }
-		WIT = { add_to_faction = GRY }
-		WIT = { add_to_faction = WNG }
-		
-		NIM = { add_to_faction = STG }
-		NIM = { add_to_faction = EQS }
-		if = {
-			limit = {
-				CRY = { is_subject = no }
-			}
-			NIM = { add_to_faction = CRY }
-		}
-		NIM = { add_to_faction = MIT }
-		NIM = { add_to_faction = GRY }
-		NIM = { add_to_faction = WNG }
-				
+		EQS = { add_to_faction = STG }
+
 		## North ##
-		if = {
-			limit = {
-				OLE = { is_subject = no }
-			}
-			GRI = { add_to_faction = OLE }
-		}
-		GRI = { add_to_faction = GRF }
 		GRI = { add_to_faction = FAT }
 		GRI = { add_to_faction = FAW }
 		GRI = { add_to_faction = TRD }
 		GRI = { add_to_faction = JER }
-		GRI = { add_to_faction = PNG }
-		GRI = { add_to_faction = CHN }
-		GRI	= { add_to_faction = HLQ }
+
 	}
 }
 
-country_event = { #war
-	id = ww.6
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.6"}
-	title = ww.6.t
-	desc = ww.6.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = ww.6.a
-		hidden_effect = {
-		CHN = {
-			create_wargoal = { 
-				type = annex_everything 
-				target = EQS 
-			}
-			declare_war_on = { 
-		    type = annex_everything 
-			target = EQS 
-			}
-		}
-		RCT = { add_to_faction = HIP }
-		LCT = { add_to_faction = HIP }		
-		BAK = { add_to_faction = HIP }		
-		WIT = { add_to_faction = HIP }
-		NIM = { add_to_faction = HIP }
-		
-		GRI	= { add_to_faction = CTH }
-		GRI	= { add_to_faction = BAT }
-		}
-	}
-}
+#country_event = { #war
+#	id = ww.6
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.6"}
+#	title = ww.6.t
+#	desc = ww.6.d
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	option = {
+#		name = ww.6.a
+#		hidden_effect = {
+#		CHN = {
+#			create_wargoal = { 
+#				type = annex_everything 
+#				target = EQS 
+#			}
+#			declare_war_on = { 
+#		    type = annex_everything 
+#			target = EQS 
+#			}
+#		}
+#		RCT = { add_to_faction = HIP }
+#		LCT = { add_to_faction = HIP }		
+#		BAK = { add_to_faction = HIP }		
+#		WIT = { add_to_faction = HIP }
+#		NIM = { add_to_faction = HIP }
+#		
+#		GRI	= { add_to_faction = CTH }
+#		GRI	= { add_to_faction = BAT }
+#		}
+#	}
+#}
 
-country_event = { #GRIvsEQS war
+country_event = { #NOT USED GRIvsEQS war
 	id = ww.7
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.7"}
 	title = ww.7.t
@@ -144,6 +77,101 @@ country_event = { #GRIvsEQS war
 
 		GRI	= { add_to_faction = CTH }
 		GRI	= { add_to_faction = BAT }
+	}
+	}
+}
+
+country_event = { #NOT USED CHNvsEQS war
+	id = ww.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.8"}
+	title = ww.8.t
+	desc = ww.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww.8.a
+	hidden_effect = {
+			CHN = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = EQS 
+				}
+				declare_war_on = { 
+				type = annex_everything 
+				target = EQS 
+				}
+			}
+		BAK = { add_to_faction = HIP }
+		BAK = { add_to_faction = EQS }
+		BAK = { add_to_faction = CRY }		
+		BAK = { add_to_faction = STG }		
+		
+		RCT = { add_to_faction = HIP }
+		RCT = { add_to_faction = EQS }
+		RCT = { add_to_faction = CRY }		
+		RCT = { add_to_faction = STG }	
+
+		LCT = { add_to_faction = HIP }
+		LCT = { add_to_faction = EQS }
+		LCT = { add_to_faction = CRY }		
+		LCT = { add_to_faction = STG }		
+
+		WIT = { add_to_faction = HIP }
+		WIT = { add_to_faction = EQS }
+		WIT = { add_to_faction = CRY }		
+		WIT = { add_to_faction = STG }		
+
+		NIM = { add_to_faction = HIP }
+		NIM = { add_to_faction = EQS }
+		NIM = { add_to_faction = CRY }		
+		NIM = { add_to_faction = STG }				
+		
+		
+		GRI	= { add_to_faction = CHN }
+		GRI	= { add_to_faction = GRF }
+		GRI	= { add_to_faction = PNG }
+	}
+	}
+}
+
+
+country_event = { #NOT USED CHNvsEQS war
+	id = ww.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.9"}
+	title = ww.9.t
+	desc = ww.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww.9.a
+	hidden_effect = {
+			JER = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = WNG 
+				}
+				declare_war_on = { 
+				type = annex_everything 
+				target = WNG 
+				}
+			}
+		BAK = { add_to_faction = WNG }
+		BAK = { add_to_faction = GRY }	
+		
+		RCT = { add_to_faction = WNG }
+		RCT = { add_to_faction = GRY }
+
+		LCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = GRY }
+	
+		WIT = { add_to_faction = WNG }
+		WIT = { add_to_faction = GRY }
+
+		NIM = { add_to_faction = WNG }
+		NIM = { add_to_faction = GRY }
+
+		
+		GRI	= { add_to_faction = HLQ }
 	}
 	}
 }

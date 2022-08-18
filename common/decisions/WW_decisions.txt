@@ -678,8 +678,157 @@ foreign_politics = {
 			annex_country = { target = WIT transfer_troops = yes }
 		}
 	}
-### Funni Timer ###
-	WW_timer_mission = {
+
+### WW 3.0 DECISIONS BEGIN HERE (end my suffering) ###	
+	WW_GRIvsEQS_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+				original_tag = GRI
+		}
+		available = {
+			AND = {
+				date > 1011.1.1
+				date < 1011.7.1
+			}
+		}
+		activation = {
+			date > 1006.11.1
+		}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 1641
+		fire_only_once = yes
+		
+		timeout_effect = {
+			#set_global_flag = GRI_war_immenent
+			GRI = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = EQS 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = EQS 
+				}
+			}
+		}
+		
+		complete_effect = {
+			#set_global_flag = GRI_war_immenent
+			GRI = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = EQS 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = EQS 
+				}
+			}
+		}
+	}
+	
+	WW_CHNvsEQS_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+				original_tag = CHN
+		}
+		available = {
+			AND = {
+				date > 1011.11.1
+				date < 1012.1.1
+			}
+		}
+		activation = {
+			date > 1006.11.1
+		}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 1825
+		fire_only_once = yes
+		
+		timeout_effect = {
+			#set_global_flag = CHN_war_immenent
+			CHN = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = EQS 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = EQS 
+				}
+			}
+		}
+		
+		complete_effect = {
+			#set_global_flag = CHN_war_immenent
+			CHN = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = EQS 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = EQS 
+				}
+			}
+		}
+	}
+
+	WW_JERvsWNG_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+				original_tag = JER
+		}
+		available = {
+			AND = {
+				date > 1012.5.1
+				date < 1012.9.1
+			}
+		}
+		activation = {
+			date > 1006.11.1
+		}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 2068
+		fire_only_once = yes
+		
+		timeout_effect = {
+			#set_global_flag = JER_war_immenent
+			JER = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = WNG 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = WNG 
+				}
+			}
+		}
+		
+		complete_effect = {
+			#set_global_flag = JER_war_immenent
+			JER = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = WNG 
+				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = WNG 
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	WW_timer_mission_1 = {  ## NOT USED Warning for immenent GRI vs UPA war
 		icon = generic_ignite_civil_war
 		allowed = {
 			OR = {
@@ -689,39 +838,41 @@ foreign_politics = {
 				original_tag = YAL
 				original_tag = BRZ
 				original_tag = ROU
-				original_tag = HLQ
 				original_tag = TRD
-				original_tag = CHN
 				original_tag = FAW
-				original_tag = GRF
-				original_tag = OLE
-				original_tag = PNG
+				
+
+				
 				original_tag = EQS
 				original_tag = EQC
 				original_tag = STG
 				original_tag = CRY
-				original_tag = WNG
-				original_tag = GRY
-				original_tag = MIT
-				original_tag = RCT
-				original_tag = LCT
-				original_tag = DMT
-				original_tag = WIT
-				original_tag = BAK
-				original_tag = NIM
-				original_tag = CTH
-				original_tag = BAT
-				original_tag = HIP
+				
+				#original_tag = GRF
+				#original_tag = PNG
+				#original_tag = HLQ
+				#original_tag = CHN
+				#original_tag = WNG
+				#original_tag = GRY
+				#original_tag = RCT
+				#original_tag = LCT
+				#original_tag = DMT
+				#original_tag = WIT
+				#original_tag = BAK
+				#original_tag = NIM
+				#original_tag = CTH
+				#original_tag = BAT
+				#original_tag = HIP
 			}
 		}
 		available = {
 			hidden_trigger = { always = no }
 		}
 		activation = {
-			date > 1006.11.1
+			has_global_flag = GRI_war_immenent
 		}
 		is_good = no
-		days_mission_timeout = 1764
+		days_mission_timeout = 30
 		fire_only_once = yes
 		timeout_effect = {
 
@@ -730,45 +881,116 @@ foreign_politics = {
 
 		}
 	}
-### WW 3.0 DECISIONS BEGIN HERE (end my suffering) ###	
-	WW_GRIvsEQS_mission = {
+	
+	WW_timer_mission_2 = {  ## NOT USED Warning for immenent CHN vs UPA war
 		icon = generic_ignite_civil_war
 		allowed = {
+			OR = {
+				original_tag = JER
+				original_tag = FAT
 				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = TRD
+				original_tag = FAW
+				
+
+				
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				
+				original_tag = GRF
+				original_tag = PNG
+				original_tag = CHN
+				
+				#original_tag = HLQ
+				#original_tag = WNG
+				#original_tag = GRY
+				#original_tag = RCT
+				#original_tag = LCT
+				#original_tag = DMT
+				#original_tag = WIT
+				#original_tag = BAK
+				#original_tag = NIM
+				#original_tag = CTH
+				#original_tag = BAT
+				#original_tag = HIP
+			}
 		}
 		available = {
-			AND = {
-				date > 1010.12.1
-				date < 1011.6.1
-			}
+			hidden_trigger = { always = no }
 		}
 		activation = {
-			date > 1006.11.1
+			has_global_flag = CHN_war_immenent
 		}
 		is_good = no
-		selectable_mission = yes
-		days_mission_timeout = 1611
+		days_mission_timeout = 30
 		fire_only_once = yes
-		
 		timeout_effect = {
-			HLR = {
-			    country_event = { 
-				    id = ww.7
-				    days = 30
-				}
-			}
+
 		}
-		
 		complete_effect = {
-			HLR = {
-			    country_event = { 
-				    id = ww.7
-				    days = 30
-				}
-			}
+
 		}
 	}
-### 3.0 end ###
+	
+	WW_timer_mission_3 = {  ## NOT USED Warning for immenent JER vs WNG war
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				original_tag = JER
+				original_tag = FAT
+				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = TRD
+				original_tag = FAW
+				
+
+				
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				
+				original_tag = GRF
+				original_tag = PNG
+				original_tag = CHN
+				
+				original_tag = HLQ
+				original_tag = WNG
+				original_tag = GRY
+				original_tag = RCT
+				original_tag = LCT
+				original_tag = WIT
+				original_tag = BAK
+				original_tag = NIM
+				#original_tag = CTH
+				#original_tag = BAT
+				#original_tag = HIP
+			}
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		activation = {
+			has_global_flag = JER_war_immenent
+		}
+		is_good = no
+		days_mission_timeout = 30
+		fire_only_once = yes
+		timeout_effect = {
+
+		}
+		complete_effect = {
+
+		}
+	}
+### WW 3.0 end ###
 
 
 

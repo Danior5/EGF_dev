@@ -68,8 +68,8 @@ on_actions = {
 			
 			#### WW 1.5 factions ####
 			HLR = {
-				country_event = { id = ww.5 days = 1611 }
-				country_event = { id = ww.6 days = 1764 }
+				country_event = { id = ww.5 days = 1400 }
+				#country_event = { id = ww.6 days = 1764 }
 			}
 			### NORTH GUYS ###
 			add_to_array = { global.ww_grandpa_eros_wild_ride = GRI }
