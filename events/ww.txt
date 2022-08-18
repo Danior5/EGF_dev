@@ -96,7 +96,7 @@ country_event = { #war
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-	name = ww.6.a
+		name = ww.6.a
 		hidden_effect = {
 		CHN = {
 			create_wargoal = { 
@@ -116,6 +116,34 @@ country_event = { #war
 		
 		GRI	= { add_to_faction = CTH }
 		GRI	= { add_to_faction = BAT }
+		}
 	}
 }
+
+country_event = { #GRIvsEQS war
+	id = ww.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.7"}
+	title = ww.7.t
+	desc = ww.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+	name = ww.7.a
+		hidden_effect = {
+		GRI = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = EQS 
+			}
+			declare_war_on = { 
+		    type = annex_everything 
+			target = EQS 
+			}
+		}
+		EQS = { add_to_faction = HIP }
+
+		GRI	= { add_to_faction = CTH }
+		GRI	= { add_to_faction = BAT }
+	}
+	}
 }

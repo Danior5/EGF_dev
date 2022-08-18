@@ -730,7 +730,49 @@ foreign_politics = {
 
 		}
 	}
-	
+### WW 3.0 DECISIONS BEGIN HERE (end my suffering) ###	
+	WW_GRIvsEQS_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+				original_tag = GRI
+		}
+		available = {
+			AND = {
+				date > 1010.12.1
+				date < 1011.6.1
+			}
+		}
+		activation = {
+			date > 1006.11.1
+		}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 1611
+		fire_only_once = yes
+		
+		timeout_effect = {
+			HLR = {
+			    country_event = { 
+				    id = ww.7
+				    days = 30
+				}
+			}
+		}
+		
+		complete_effect = {
+			HLR = {
+			    country_event = { 
+				    id = ww.7
+				    days = 30
+				}
+			}
+		}
+	}
+### 3.0 end ###
+
+
+
+
 	WW_spawn_50w = {		
 		icon = rifles
 		allowed = {
