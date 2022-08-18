@@ -767,6 +767,7 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+		hidden_effect = {	
 		BAK = { add_to_faction = HIP }
 		BAK = { add_to_faction = EQS }
 		BAK = { add_to_faction = CRY }		
@@ -797,6 +798,7 @@ foreign_politics = {
 		GRI	= { add_to_faction = GRF }
 		GRI	= { add_to_faction = PNG }
 		}
+		}
 		
 		complete_effect = {
 			#set_global_flag = CHN_war_immenent
@@ -810,6 +812,7 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
+		hidden_effect = {
 		BAK = { add_to_faction = HIP }
 		BAK = { add_to_faction = EQS }
 		BAK = { add_to_faction = CRY }		
@@ -839,6 +842,7 @@ foreign_politics = {
 		GRI	= { add_to_faction = CHN }
 		GRI	= { add_to_faction = GRF }
 		GRI	= { add_to_faction = PNG }
+		}
 		}
 	}
 
@@ -873,6 +877,7 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
+		hidden_effect = {
 		BAK = { add_to_faction = WNG }
 		BAK = { add_to_faction = GRY }	
 		
@@ -889,7 +894,8 @@ foreign_politics = {
 		NIM = { add_to_faction = GRY }
 
 		
-		GRI	= { add_to_faction = HLQ }			
+		GRI	= { add_to_faction = HLQ }	
+		}
 		}
 		
 		complete_effect = {
@@ -904,6 +910,7 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
+		hidden_effect = {
 		BAK = { add_to_faction = WNG }
 		BAK = { add_to_faction = GRY }	
 		
@@ -921,6 +928,7 @@ foreign_politics = {
 
 		
 		GRI	= { add_to_faction = HLQ }
+		}
 		}
 	}
 	
