@@ -1,4 +1,4 @@
-﻿capital = 251
+capital = 251
 
 set_research_slots = 3
 starting_train_buffer = 2
@@ -166,6 +166,7 @@ add_ideas = {
 	low_economic_mobilisation
 	CHN_GRI_Attache_For_CHN
 	CHN_army_reorganization
+	WW_CHN_core_buff
 }
 if = {
 	limit = {
