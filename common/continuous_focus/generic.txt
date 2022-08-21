@@ -420,7 +420,7 @@ continuous_focus_palette = {
 		}
 
 		enable = {
-			date > 1012.1.1
+			date > 1011.11.1
 			
 		}
 
@@ -438,35 +438,7 @@ continuous_focus_palette = {
 		available_if_capitulated = no
 	}
 	
-	focus = {
-		id = continuous_extra_fuel
-		
-		icon = GFX_oilbarrels
-		
-		available = {
-		}
 
-		enable = {
-			date > 1012.1.1
-			
-		}
-
-		modifier = {
-			base_fuel_gain_factor = 0.5
-			fuel_gain_factor = 0.5	
-			fuel_gain_factor_from_states = 0.5	
-		}
-		
-
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		daily_cost = 1
-		
-		available_if_capitulated = no
-	}
 	
 	focus = {
 		id = continuous_faster_mobilization
@@ -477,7 +449,7 @@ continuous_focus_palette = {
 		}
 
 		enable = {
-			date > 1012.1.1
+			date > 1011.11.1
 			
 		}
 
@@ -495,33 +467,5 @@ continuous_focus_palette = {
 		available_if_capitulated = no
 	}
 	
-	focus = {
-		id = continuous_cheaper_infantry_equipment
-		
-		icon = GFX_goal_van_rifles
-		
-		available = {
-		}
 
-		enable = {
-			date > 1012.1.1
-			
-		}
-	
-		select_effect = {
-			add_ideas = ww_cheaper_guns	
-		}
-		
-		cancel_effect = {
-			remove_ideas = ww_cheaper_guns
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		daily_cost = 1
-		
-		available_if_capitulated = no
-	}
 }

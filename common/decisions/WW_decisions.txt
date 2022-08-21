@@ -868,6 +868,7 @@ foreign_politics = {
 		timeout_effect = {
 			#set_global_flag = JER_war_immenent
 			JER = {
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 
@@ -901,6 +902,7 @@ foreign_politics = {
 		complete_effect = {
 			#set_global_flag = JER_war_immenent
 			JER = {
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 
@@ -1164,59 +1166,9 @@ foreign_politics = {
 }
 
 war_measures = {
-	JER_tarrin_offensive = {
 
-		icon = border_war
-
-        allowed = {
-           	original_tag = JER
-        }
-
-        available = {
-            has_war = yes
-        }
-		fire_only_once = yes
-        visible = {
-			AND = {
-				has_war = yes
-				date > 1011.10.30
-			}
-        }
-
-        ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
-        }
-    }
 	
-	JER_defence_of_aquileia = {
 
-		icon = rifles
-
-        allowed = {
-           	original_tag = JER
-        }
-
-        available = {
-            has_war = yes
-        }
-		fire_only_once = yes
-        visible = {
-			AND = {
-				has_war = yes
-				date > 1011.10.30
-			}
-        }
-
-        ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			add_timed_idea = { idea = WW_defence_of_aquileia  days = 90 }
-        }
-    }
 	
 	women_in_the_workforce = {
 
