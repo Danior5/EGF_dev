@@ -794,13 +794,11 @@ foreign_politics = {
 				NIM = { add_to_faction = CRY }		
 				NIM = { add_to_faction = STG }				
 		
-				GRI	= { add_to_faction = CHN }
-				GRI	= { add_to_faction = GRF }
-				GRI	= { add_to_faction = PNG }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }
 				
-				CHN = {
-					add_ideas = WW_CHN_core_buff
-				}
+				CHN = { add_ideas = WW_CHN_core_buff }
 			}
 		}
 		
@@ -847,6 +845,8 @@ foreign_politics = {
 		GRI	= { add_to_faction = CHN }
 		GRI	= { add_to_faction = GRF }
 		GRI	= { add_to_faction = PNG }
+
+		CHN = { add_ideas = WW_CHN_core_buff }
 		}
 		}
 	}
