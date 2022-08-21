@@ -32,10 +32,13 @@ ideas = {
 		}
 		WW_CHN_core_buff = {
 			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = WW_ole_safe
+			picture = HLQ_knights
 			modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
