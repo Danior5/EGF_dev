@@ -166,7 +166,7 @@ add_ideas = {
 	low_economic_mobilisation
 	CHN_GRI_Attache_For_CHN
 	CHN_army_reorganization
-	WW_CHN_core_buff
+	EQS_island_buff1
 }
 if = {
 	limit = {

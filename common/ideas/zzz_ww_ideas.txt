@@ -32,7 +32,7 @@ ideas = {
 		}
 		WW_CHN_core_buff = {
 			allowed = {
-				always = no
+				always = yes
 			}
 			removal_cost = -1
 			picture = WW_ole_safe
