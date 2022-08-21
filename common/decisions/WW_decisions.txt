@@ -798,7 +798,7 @@ foreign_politics = {
 				GRI	= { add_to_faction = GRF }
 				GRI	= { add_to_faction = PNG }
 
-				add_ideas = WW_CHN_core_buff
+				add_idea = WW_CHN_core_buff
 			}
 		}
 		
