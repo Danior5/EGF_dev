@@ -1040,7 +1040,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1007
 		folder = {
 			name = industry_folder
@@ -1075,7 +1075,7 @@ technologies = {
 
 	oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		start_year = 1008
 
@@ -1084,7 +1084,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 
 		folder = {
 			name = industry_folder
@@ -1121,14 +1121,14 @@ technologies = {
 
 	improved_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1010
 
 		folder = {
@@ -1166,14 +1166,14 @@ technologies = {
 
 	advanced_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1012
 
 		folder = {
@@ -1211,14 +1211,14 @@ technologies = {
 
 	modern_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing_a
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1014
 
 		folder = {
@@ -1270,7 +1270,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1008
 
 		folder = {
@@ -1321,7 +1321,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1010
 
 		folder = {
@@ -1372,7 +1372,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1012
 
 		folder = {
@@ -1423,7 +1423,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1014
 
 		folder = {
@@ -1635,14 +1635,14 @@ technologies = {
 	
 	modern_oil_processing_a = {
 
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing_b
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1016
 
 		folder = {
@@ -1680,14 +1680,14 @@ technologies = {
 
 	modern_oil_processing_b = {
 
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing_c
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1019
 
 		folder = {
@@ -1725,14 +1725,14 @@ technologies = {
 
 	modern_oil_processing_c = {
 
-		fuel_gain_factor_from_states = 0.15
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing_d
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1022
 
 		folder = {
@@ -1771,9 +1771,9 @@ technologies = {
 	
 	modern_oil_processing_d = {
 
-		fuel_gain_factor_from_states = 0.10
+		fuel_gain_factor_from_states = 1.5
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1025
 
 		folder = {
@@ -1824,7 +1824,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1016
 
 		folder = {
@@ -1875,7 +1875,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1019
 
 		folder = {
@@ -1926,7 +1926,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1022
 
 		folder = {
@@ -1972,7 +1972,7 @@ technologies = {
 			}
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1025
 
 		folder = {
