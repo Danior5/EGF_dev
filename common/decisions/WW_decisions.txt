@@ -758,6 +758,7 @@ foreign_politics = {
 		timeout_effect = {
 			#set_global_flag = CHN_war_immenent
 			CHN = {
+				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = EQS 
@@ -804,6 +805,7 @@ foreign_politics = {
 		complete_effect = {
 			#set_global_flag = CHN_war_immenent
 			CHN = {
+				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = EQS 
