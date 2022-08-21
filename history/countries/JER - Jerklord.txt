@@ -1,4 +1,4 @@
-﻿capital = 377
+capital = 377
 oob = "JER_1007"
 
 set_research_slots = 3
@@ -110,6 +110,7 @@ add_ideas = {
 	lack_of_scientists 
 	JER_memories 
 	JER_legacy_of_coltbert
+	EQS_island_buff1
 }
 
 set_stability = 0.55

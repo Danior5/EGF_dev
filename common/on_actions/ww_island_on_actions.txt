@@ -31,6 +31,19 @@ on_actions = {
 			 	EQS = { 
 			 		EQS_island_debuff_level_up = yes
 			 	}
+				GRI = {
+			 		EQS_island_buff_level_up = yes
+				}
+				JER = {
+			 		EQS_island_buff_level_up = yes
+				}
+				FAT = {
+			 		EQS_island_buff_level_up = yes
+				}
+				TRD = {
+			 		EQS_island_buff_level_up = yes
+				}
+
 			}
 		}
 	}
@@ -60,7 +73,19 @@ on_actions = {
 				}
 		 		EQS = {
 					EQS_island_debuff_level_down = yes
-		 		} 
+		 		}
+				GRI = {
+			 		EQS_island_buff_level_down = yes
+				}
+				JER = {
+			 		EQS_island_buff_level_down = yes
+				}
+				FAT = {
+			 		EQS_island_buff_level_down = yes
+				}
+				TRD = {
+			 		EQS_island_buff_level_down = yes
+				}
 			}
 		}
 	}

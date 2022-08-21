@@ -1,4 +1,4 @@
-﻿capital = 485 #### The Griffon Republic
+capital = 485 #### The Griffon Republic
 oob = "FAT_1007"
 
 set_research_slots = 3
@@ -97,6 +97,7 @@ add_ideas = {
 	limited_conscription
 	lack_of_scientists1
 	poverty3
+	EQS_island_buff1
 }
 set_stability = 0.30
 set_war_support = 0.10

@@ -1,4 +1,4 @@
-﻿capital = 381
+capital = 381
 oob = "TRD_1007"
 
 set_research_slots = 3
@@ -108,9 +108,10 @@ set_politics = {
 }
 
 add_ideas = { 
-    TRD_the_iron_chancellor
+  	TRD_the_iron_chancellor
 	TRD_the_riches_of_skyfall
 	TRD_social_inequality
+	EQS_island_buff1
 }
 
 country_event = {

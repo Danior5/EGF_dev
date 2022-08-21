@@ -74,5 +74,75 @@ ideas = {
 				industrial_capacity_factory = -0.4
 			}
 		}
+		EQS_island_buff1 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		EQS_island_buff2 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		EQS_island_buff3 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		EQS_island_buff4 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				political_power_gain = 0.15
+			}
+		}
+		EQS_island_buff5 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				political_power_gain = 0.2
+			}
+		}
+		EQS_island_buff6 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_buff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.25
+				political_power_gain = 0.25
+			}
+		}
 	}
 }
