@@ -767,37 +767,38 @@ foreign_politics = {
 					target = EQS 
 				}
 			}
-		hidden_effect = {	
-		BAK = { add_to_faction = HIP }
-		BAK = { add_to_faction = EQS }
-		BAK = { add_to_faction = CRY }		
-		BAK = { add_to_faction = STG }		
+			hidden_effect = {	
+				BAK = { add_to_faction = HIP }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
 		
-		RCT = { add_to_faction = HIP }
-		RCT = { add_to_faction = EQS }
-		RCT = { add_to_faction = CRY }		
-		RCT = { add_to_faction = STG }	
+				RCT = { add_to_faction = HIP }
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-		LCT = { add_to_faction = HIP }
-		LCT = { add_to_faction = EQS }
-		LCT = { add_to_faction = CRY }		
-		LCT = { add_to_faction = STG }		
+				LCT = { add_to_faction = HIP }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-		WIT = { add_to_faction = HIP }
-		WIT = { add_to_faction = EQS }
-		WIT = { add_to_faction = CRY }		
-		WIT = { add_to_faction = STG }		
+				WIT = { add_to_faction = HIP }
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
 
-		NIM = { add_to_faction = HIP }
-		NIM = { add_to_faction = EQS }
-		NIM = { add_to_faction = CRY }		
-		NIM = { add_to_faction = STG }				
+				NIM = { add_to_faction = HIP }
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }				
 		
-		
-		GRI	= { add_to_faction = CHN }
-		GRI	= { add_to_faction = GRF }
-		GRI	= { add_to_faction = PNG }
-		}
+				GRI	= { add_to_faction = CHN }
+				GRI	= { add_to_faction = GRF }
+				GRI	= { add_to_faction = PNG }
+
+				add_ideas = WW_CHN_core_buff
+			}
 		}
 		
 		complete_effect = {

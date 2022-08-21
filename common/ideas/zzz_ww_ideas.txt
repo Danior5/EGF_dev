@@ -16,7 +16,6 @@ ideas = {
 			}
 		}
 	}
-	country = {
 		WW_tassen_surrender_limit = {
 			allowed = {
 				always = no
@@ -31,8 +30,6 @@ ideas = {
 			}
 		}
 	}
-	
-	country = {
 		WW_tarrin_offensive = {
 			allowed = {
 				always = no
@@ -51,8 +48,16 @@ ideas = {
 			}
 		}
 	}
-	
-
-	
-	
+		WW_CHN_core_buff = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = CHN_core_buff
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+			}
+		}
+	}	
 }

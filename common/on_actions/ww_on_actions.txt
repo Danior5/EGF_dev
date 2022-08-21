@@ -1,0 +1,18 @@
+on_actions = {
+
+	#OLE dying removes CHN core buffs
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = OLE
+					}
+				}
+				CHN = {
+					remove_ideas = WW_CHN_core_buff
+				}
+			}
+		}
+	}
+}
