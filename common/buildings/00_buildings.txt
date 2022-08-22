@@ -235,7 +235,7 @@ buildings = {
 		local_resources_oil = 0
 		local_resources_crystals = 0
 		show_modifier = yes
-		max_fuel_building = 100.0 #k
+		max_fuel_building = 350.0 #k
 	}
 
 	radar_station = {
