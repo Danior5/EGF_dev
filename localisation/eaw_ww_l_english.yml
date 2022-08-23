@@ -34,7 +34,7 @@
  women_in_the_workforce:0 "All Adults Serve haters in the Workforce"
  women_in_the_workforce_desc:0 "Tassen is a pussy who doesn't have the balls to just go All Adults and cope with the industry penalty. -9999 tryhard credit"
  continuous_extra_fuel:0 "Fuel Production"
- continuous_reduced_resource_penalty:0 "Resource-efficient Production"
+ continuous_reduced_resource_penalty:0 "Resource-Efficient Production"
  continuous_faster_mobilization:0 "Rapid Mobilization"
  continuous_cheaper_infantry_equipment:0 "Infantry Equipment Production"
  
@@ -43,5 +43,27 @@
  
  WW_tarrin_offensive:0 "Operation: 'Fuck Wingbardian Chromium'"
  WW_defence_of_aquileia:0 "Operation: 'Great Trial but with catbirds'"
- 
+
+ WW_OLE_surrender_limit:0 "Changeling Occupation"
+ WW_OLE_surrender_limit_desc:0 "The Olenian populace holds no love for their Changeling oppressors. If a foriegn power were to enter their country they would quickly join them."
+
+ WW_CHN_core_buff:0 "Olenian Front Secure"
+ WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
+
+ EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
+ EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
+ EQS_island_debuff3:0 "Celestial Sea Islands: §OSlight Danger§!" 
+ EQS_island_debuff4:0 "Celestial Sea Islands: §ODangerous§!" 
+ EQS_island_debuff5:0 "Celestial Sea Islands: §RVery Dangerous§!" 
+ EQS_island_debuff6:0 "Celestial Sea Islands: §RCatastrophe§!"
+ EQS_island_debuff6_desc:0 "Our control over the Celestial Sea islands has been lost completely. The danger to our coastline has crippled our industry and the morale of our people."  
+
+ EQS_island_buff1:0 "Equestrian Island Campaign: §RUnengaged§!" 
+ EQS_island_buff2:0 "Equestrian Island Campaign: §RInitiated§!" 
+ EQS_island_buff3:0 "Equestrian Island Campaign: §OSlight Success§!" 
+ EQS_island_buff4:0 "Equestrian Island Campaign: §OSuccess§!" 
+ EQS_island_buff5:0 "Equestrian Island Campaign: §GVery Successful§!" 
+ EQS_island_buff6:0 "Equestrian Island Campaign: §GDomination§!"
+ EQS_island_buff6_desc:0 "Our alliance has total control over the former Equestrian islands within the Celestial Sea. Our merchant vessels can now travel freely, greatly boosting our industrial capacity."  
+
  GRF_intergrate_PLB:0 "Click this to get cores on Polar Bears. You won't annex them though"
