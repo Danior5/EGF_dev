@@ -521,7 +521,7 @@ focus_tree = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 			}
 			country_event = {
 				id = changelings.37 days = 1
@@ -645,7 +645,16 @@ focus_tree = {
 		x = -1
 		y = 2
 		ai_will_do = { factor = 100 }
-		available = { owns_state = 300 owns_state = 292 }
+		available = {
+			OLE = {
+				OR = {
+					is_subject_of = ROOT
+					exists = no
+					has_capitulated = yes
+					has_country_flag = CHN_annexed_olenia_by_event
+				}
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus national_resources"
 			add_resource = {
@@ -772,7 +781,6 @@ focus_tree = {
 					has_country_flag = CHN_annexed_olenia_by_event
 				}
 			}
-			OLE = { any_cores_controlled_by_ROOT = yes }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_olenian_factories"
@@ -856,7 +864,6 @@ focus_tree = {
 					has_country_flag = CHN_annexed_olenia_by_event
 				}
 			}
-			OLE = { any_cores_controlled_by_ROOT = yes }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_study_olenian_magic"
