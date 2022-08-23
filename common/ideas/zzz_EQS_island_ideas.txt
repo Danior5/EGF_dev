@@ -82,7 +82,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
@@ -92,7 +92,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
@@ -104,7 +104,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
@@ -116,7 +116,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
@@ -128,7 +128,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
@@ -140,7 +140,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = EQS_island_buff
+			picture = EQS_island_debuff
 			removal_cost = -1
 
 			modifier = {
