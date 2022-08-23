@@ -1,0 +1,120 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if={limit={NOT={is_historical_focus_on=yes}} every_country={news_event= { id = horsttool.2} } }
+			if = {
+				limit = {has_game_rule = { rule = horst_host_country option = CHN} }
+				set_variable = { host = CHN.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = GRI} }
+				set_variable = { host = GRI.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = FAT} }
+				set_variable = { host = FAT.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = JER} }
+				set_variable = { host = JER.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = TRD} }
+				set_variable = { host = TRD.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = HLQ} }
+				set_variable = { host = HLQ.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = GRF} }
+				set_variable = { host = GRF.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = PNG} }
+				set_variable = { host = PNG.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = ROU} }
+				set_variable = { host = ROU.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = YAL} }
+				set_variable = { host = YAL.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = BAT} }
+				set_variable = { host = BAT.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = CTH} }
+				set_variable = { host = CTH.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = EQS} }
+				set_variable = { host = EQS.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = CRY} }
+				set_variable = { host = CRY.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = STG} }
+				set_variable = { host = STG.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = EQC} }
+				set_variable = { host = EQC.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = WNG} }
+				set_variable = { host = WNG.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = GRY} }
+				set_variable = { host = GRY.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = RCT} }
+				set_variable = { host = RCT.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = LCT} }
+				set_variable = { host = LCT.id }
+			}
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = WIT} }
+				set_variable = { host = WIT.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = NIM} }
+				set_variable = { host = NIM.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = BAK} }
+				set_variable = { host = BAK.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = MIT} }
+				set_variable = { host = MIT.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = HIP} }
+				set_variable = { host = HIP.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = OLE} }
+				set_variable = { host = OLE.id }
+			}
+						else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = OLV} }
+				set_variable = { host = OLV.id }
+			}
+			var:host = {
+				set_variable = { marked_states = 0 }
+				set_country_flag = host
+			}
+		}
+	}
+}
+
