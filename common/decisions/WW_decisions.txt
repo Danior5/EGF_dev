@@ -799,6 +799,7 @@ foreign_politics = {
 				GRI = { add_to_faction = PNG }
 				
 				CHN = { add_ideas = WW_CHN_core_buff }
+				OLE = { add_ideas = WW_OLE_surrender_limit }
 			}
 		}
 		
@@ -847,6 +848,7 @@ foreign_politics = {
 		GRI	= { add_to_faction = PNG }
 
 		CHN = { add_ideas = WW_CHN_core_buff }
+		OLE = { add_ideas = WW_OLE_surrender_limit }
 		}
 		}
 	}

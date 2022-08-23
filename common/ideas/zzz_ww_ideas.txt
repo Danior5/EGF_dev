@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		WW_tassen_surrender_limit = {
+		WW_OLE_surrender_limit = {
 			allowed = {
 				always = no
 			}
@@ -8,9 +8,9 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = HLQ_knights
+			picture = WW_OLE_surrender_limit
 			modifier = {
-				surrender_limit = 1.00
+				surrender_limit = -0.2
 			}
 		}
 		WW_tarrin_offensive = {
