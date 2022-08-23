@@ -42,7 +42,7 @@ characters={
 		}
 	}
 	CRY_WW_fieldmarshel = {
-		name = "Walther white"
+		name = "Walther White"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/walter.tga"
@@ -56,7 +56,7 @@ characters={
 		}
 	}
 	CTH_WW_fieldmarshel= {
-		name = "King arthur"
+		name = "King Arthur"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/kingarthur.tga"

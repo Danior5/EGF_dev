@@ -1,11 +1,11 @@
-foreign_politics = {		
-	pregrinded_generals= {
+foreign_politics = {
+	BAK_pregrinded_general= {
 		icon = GFX_decision_icon_default
 
 		available = {
 			AND = {
 				has_army_experience > 74
-				date > 1011.10.1
+				 
 			}
 		}
 		custom_cost_trigger = {
@@ -16,168 +16,1020 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {		
-			is_ai = no
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = BAK
+			}
 		}
 		
 		complete_effect = {
-			army_experience = -75
-			custom_effect_tooltip = "you can get a refund if you like"
-			custom_effect_tooltip = "you can only fire this event once"
+			add_field_marshal_role = {
+				Character = BAK_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
-				if = { 
-					limit = { TAG = bak }
-					country_event = {
-						id = teng_ww.1
-					}
-				}
-				else_if = {
-					limit = { TAG = bat }
-					country_event = {
-						id = teng_ww.2
-					}
-				}
-				else_if = {
-					limit = { TAG = chn }
-					country_event = {
-						id = teng_ww.3
-					}
-				}
-				else_if = {
-					limit = { TAG = cry }
-					country_event = {
-						id = teng_ww.4
-					}
-				}
-				else_if = {
-					limit = { TAG = cth }
-					country_event = {
-						id = teng_ww.5
-					}
-				}
-				else_if = {
-					limit = { TAG = eqc }
-					country_event = {
-						id = teng_ww.6
-					}
-				}
-				else_if = {
-					limit = { TAG = eqs }
-					country_event = {
-						id = teng_ww.7
-					}
-				}
-				else_if = {
-					limit = { TAG = fat }
-					country_event = {
-						id = teng_ww.8
-					}
-				}
-				else_if = {
-					limit = { TAG = grf }
-					country_event = {
-						id = teng_ww.9
-					}
-				}
-				else_if = {
-					limit = { TAG = gri }
-					country_event = {
-						id = teng_ww.10
-					}
-				}
-				else_if = {
-					limit = { TAG = gry }
-					country_event = {
-						id = teng_ww.11
-					}
-				}
-				else_if = {
-					limit = { TAG = hip }
-					country_event = {
-						id = teng_ww.12
-					}
-				}
-				else_if = {
-					limit = { TAG = hlq }
-					country_event = {
-						id = teng_ww.13
-					}
-				}
-				else_if = {
-					limit = { TAG = jer }
-					country_event = {
-						id = teng_ww.14
-					}
-				}
-				else_if = {
-					limit = { TAG = lct }
-					country_event = {
-						id = teng_ww.15
-					}
-				}
-				else_if = {
-					limit = { TAG = nim }
-					country_event = {
-						id = teng_ww.16
-					}
-				}
-				else_if = {
-					limit = { TAG = png }
-					country_event = {
-						id = teng_ww.17
-					}
-				}
-				else_if = {
-					limit = { TAG = rct }
-					country_event = {
-						id = teng_ww.18
-					}
-				}
-				else_if = {
-					limit = { TAG = rou }
-					country_event = {
-						id = teng_ww.19
-					}
-				}
-				else_if = {
-					limit = { TAG = stg }
-					country_event = {
-						id = teng_ww.20
-					}
-				}
-				else_if = {
-					limit = { TAG = trd }
-					country_event = {
-						id = teng_ww.21
-					}
-				}
-				else_if = {
-					limit = { TAG = wit }
-					country_event = {
-						id = teng_ww.22
-					}
-				}
-				else_if = {
-					limit = { TAG = wng }
-					country_event = {
-						id = teng_ww.23
-					}
-				}
-				else_if = {
-					limit = { TAG = yal }
-					country_event = {
-						id = teng_ww.24
-					}
-				}
-				else = {
-					country_event = {
-						id = teng_ww.99
-					}
-				}
+				army_experience = -75
 			}
 		}
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
 			factor = 0			
 		}
 	}
+	BAT_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = BAT
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = BAT_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	CHN_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = CHN
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = CHN_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	CRY_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = CRY
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = CRY_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	CTH_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = CTH
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = CTH_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	EQC_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = EQC
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = EQC_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	EQS_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = EQS
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = EQS_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	FAT_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = FAT
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = FAT_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	GRF_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = GRF
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = GRF_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	GRI_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = GRI
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = GRI_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	GRY_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = GRY
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = GRY_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	HIP_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = HIP
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = HIP_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	HLQ_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = HLQ
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = HLQ_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	JER_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = JER
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = JER_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	LCT_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = LCT
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = LCT_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	NIM_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = NIM
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = NIM_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	PNG_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = PNG
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = PNG_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	RCT_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = RCT
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = RCT_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	ROU_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = ROU
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = ROU_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	STG_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = STG
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = STG_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	TRD_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = TRD
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = TRD_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	WIT_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = WIT
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = WIT_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	WNG_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = WNG
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = WNG_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	YAL_pregrinded_general= {
+		icon = GFX_decision_icon_default
+
+		available = {
+			AND = {
+				has_army_experience > 74
+				 
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 74
+		}
+		
+		custom_cost_text = decision_cost_army_xp_75
+		
+		fire_only_once = yes
+
+		visible = {
+			AND = {
+				is_ai = no
+				TAG = YAL
+			}
+		}
+		
+		complete_effect = {
+			add_field_marshal_role = {
+				Character = YAL_WW_fieldmarshel
+				traits = { organizer panzer_leader cavalry_leader infantry_leader adaptable }
+				skill=4
+				attack_skill=4
+				defense_skill=4
+				planning_skill=4
+				logistics_skill=4
+			}	
+			custom_effect_tooltip = teng_ww_skill
+			hidden_effect = {
+				army_experience = -75
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	
 }
