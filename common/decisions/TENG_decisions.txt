@@ -48,7 +48,7 @@ foreign_politics = {
 		available = {
 			AND = {
 				has_army_experience > 74
-				date > 1011.10.1
+				date > 1010.07.1
 			}
 		}
 		custom_cost_trigger = {
@@ -177,7 +177,7 @@ foreign_politics = {
 		available = {
 			AND = {
 				has_army_experience > 74
-				date > 1011.10.1
+				date > 1010.07.1
 			}
 		}
 		custom_cost_trigger = {
@@ -478,7 +478,7 @@ foreign_politics = {
 		available = {
 			AND = {
 				has_army_experience > 74
-				date > 1011.10.1
+				date > 1010.07.1
 			}
 		}
 		custom_cost_trigger = {
