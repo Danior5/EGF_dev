@@ -1,0 +1,27 @@
+scripted_gui = {	
+
+	WW_big_event_island_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_island_war_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_island_war ### this country flag triggers the #superevent
+		}
+	}
+
+	WW_big_event_frame_island_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_frame_island_war_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_island_war
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_island_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+#set_country_flag big_event_custom_latin_wars ## quick command for testing

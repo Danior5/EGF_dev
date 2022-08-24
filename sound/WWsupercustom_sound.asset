@@ -1,0 +1,5 @@
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "island_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/rule_brittania_island_war_sound.wav" ## location of the sound file
+	always_load = no
+}

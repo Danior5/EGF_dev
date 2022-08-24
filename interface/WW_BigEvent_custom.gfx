@@ -1,0 +1,7 @@
+spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
+	spriteType = { #START OF 1ST SPRITE
+		name = "GFX_superevent_custom_island_war"
+		textureFile = "gfx//superevent_pictures//island_war_custom.tga"
+	} # END OF 1ST SPRITE
+	# YOU CAN PUT AS MANY SPRITES AS YOU WANT IN THIS SPACE
+}
