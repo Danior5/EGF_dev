@@ -5917,7 +5917,6 @@ country_event = { #War plan
 
 	option = { #Mild
 		name = equestria.152.a
-		add_political_power = 20
 		add_ideas = war_plan_equestria_mild
 		hidden_effect = { set_country_flag = EQS_war_plan_equestria_mild }
 		ai_chance = {
@@ -5938,7 +5937,6 @@ country_event = { #War plan
 		add_ideas = war_plan_equestria
 		hidden_effect = {
 			set_country_flag = EQS_war_plan_equestria
-			modify_country_flag = { flag = celestia_evil_meter value = 2 }
 		}
 		ai_chance = {
 			factor = 75
@@ -5950,15 +5948,10 @@ country_event = { #War plan
 	}
 
 	option = { #Extreme
-		trigger = {
-			NOT = { has_global_flag = celestia_and_luna_fused }
-		}
 		name = equestria.152.c
-		add_political_power = -50
 		add_ideas = war_plan_equestria_extreme
 		hidden_effect = {
 			set_country_flag = EQS_war_plan_equestria_extreme
-			modify_country_flag = { flag = celestia_evil_meter value = 6 }
 		}
 		ai_chance = {
 			factor = 15
