@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = "WW_big_event_island_war_custom_window"
 
 		visible = {
-			has_country_flag = big_event_custom_island_war ### this country flag triggers the #superevent
+			has_global_flag = big_event_custom_island_war ### this global flag triggers the #superevent
 		}
 	}
 
@@ -14,14 +14,13 @@ scripted_gui = {
 		window_name = "WW_big_event_frame_island_war_custom"
 
 		visible = {
-			has_country_flag = big_event_custom_island_war
+			has_global_flag = big_event_custom_island_war
 		}
 
 		effects = {
 			Option_click = {
-				clr_country_flag = big_event_custom_island_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+				clr_global_flag = big_event_custom_island_war ### this disables the global flag #that fires the superevent (so the superevent actually goes away)
 			}
 		}
 	}
 }
-#set_country_flag big_event_custom_latin_wars ## quick command for testing
