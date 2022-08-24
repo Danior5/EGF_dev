@@ -12,7 +12,7 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			quadTextureSprite ="GFX_tiled_window_1b_thin_border"
 		}
 
 		instantTextBoxType = {
