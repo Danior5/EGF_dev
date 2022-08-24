@@ -899,19 +899,19 @@ ideas = {
 				repair_speed_factor = 0.25
 				navy_fuel_consumption_factor = -0.5
 				industrial_capacity_dockyard = 0.15
-				equipment_bonus = {
-					fighter_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
-					heavy_fighter_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
-					CAS_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
-					nav_bomber_equipment = {
-						build_cost_ic = -0.15 instant = yes
-					}
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
@@ -958,10 +958,10 @@ ideas = {
 				conscription = 0.06
 				consumer_goods_factor = -0.05
 				resistance_target_on_our_occupied_states = 0.2
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = -0.15 instant = yes
-					}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
