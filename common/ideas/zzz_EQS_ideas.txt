@@ -936,8 +936,8 @@ ideas = {
 				production_speed_bunker_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
-				production_speed_radar_station_building_factor = 0.25
-				industrial_capacity_factory = 0.1
+				production_speed_radar_station_factor = 0.25
+				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = -0.1
 			}
 		}
@@ -955,8 +955,8 @@ ideas = {
 			removal_cost = -1
 			picture = EQS_war_plan_equestria
 			modifier = {
-				conscription = 0.06
-				consumer_goods_factor = -0.05
+				conscription = 0.05
+				consumer_goods_factor = -0.03
 				resistance_target_on_our_occupied_states = 0.2
 			}
 			equipment_bonus = {
