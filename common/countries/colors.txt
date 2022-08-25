@@ -607,10 +607,7 @@ BAT = {
 	color = rgb { 0 33 71 }
 	color_ui = rgb { 0 33 71 }
 }
-MDL = {
-	color = rgb { 31 138 40 }
-	color_ui = rgb { 31 138 40 }
-}
+
 TBK = {
 	color = rgb { 25 105 90 }
 	color_ui = rgb { 25 105 90 }
@@ -647,10 +644,7 @@ CVA = {
 	color = rgb { 245 62 32 }
 	color_ui = rgb { 245 62 32 }
 }
-BKH = {
-	color = rgb { 49 175 191 }
-	color_ui = rgb { 49 175 191 }
-}
+
 CDR = {
 	color = rgb { 130 168 224 }
 	color_ui = rgb { 130 168 224 }
@@ -659,19 +653,23 @@ LMB = {
 	color = rgb { 177 207 205 }
 	color_ui = rgb { 177 207 205 }
 }
-WIN = {
-	color = rgb { 211 219 240 }
-	color_ui = rgb { 82 111 194 }
+
+SDL = {
+	color = rgb { 0 108 53 }
+	color_ui = rgb { 0 108 53 }
 }
-KLG = {
-	color = rgb { 75 45 37 }
-	color_ui = rgb { 33 25 23 }
+
+STM = {
+	color = rgb { 0 69 135 }
+	color_ui = rgb { 0 69 135 }
 }
-HIE = {
-	color = rgb { 205 80 200 }
-	color_ui = rgb { 205 80 200 }
+
+KIR = {
+	color = rgb { 237 45 0 }
+	color_ui = rgb { 237 45 0 }
 }
-TRO = {
-	color = rgb { 170 205 130 }
-	color_ui = rgb { 170 205 130 }
+
+CNT = {
+	color = rgb { 200 4 0 }
+	color_ui = rgb { 200 4 0 }
 }
