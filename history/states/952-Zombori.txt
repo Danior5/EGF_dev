@@ -9,8 +9,8 @@ state={
 		steel=10.000
 	}
 	history={
-		owner = REE
-		add_core_of = REE
+		owner = STM
+		add_core_of = STM
 		add_claim_by = STM
 		buildings = {
 			infrastructure = 2

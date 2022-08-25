@@ -4,9 +4,9 @@ state={
 	name="STATE_962"
 
 	history={
-		owner = MTA
-		add_core_of = MTA
-		add_claim_by = STM
+		owner = SDL
+		add_core_of = SDL
+		add_claim_by = SDL
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
