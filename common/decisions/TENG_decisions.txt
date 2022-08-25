@@ -32,6 +32,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = BAK_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -75,6 +76,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = BAT_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -118,6 +120,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = CHN_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -161,6 +164,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = CRY_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -204,6 +208,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = CTH_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -247,6 +252,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = EQC_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -548,6 +554,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = HLQ_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {

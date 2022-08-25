@@ -84,10 +84,10 @@ characters={
 		}
 	}
 	EQS_WW_fieldmarshel = {
-		name = "Lindybeige"
+		name = "Bernard Montgomery"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/lindy.tga"
+				large = "gfx/leaders/WW/monty.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -126,10 +126,10 @@ characters={
 		}
 	}
 	GRI_WW_fieldmarshel = {
-		name = "Gus Fring"
+		name = "Saul Goodman"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/gus.tga"
+				large = "gfx/leaders/WW/saul.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -168,10 +168,10 @@ characters={
 		}
 	}
 	HLQ_WW_fieldmarshel = {
-		name = "Mordecai"
+		name = "Lalo Salamanca"		
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/mordecai.tga"
+				large = "gfx/leaders/WW/lalo.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -196,10 +196,10 @@ characters={
 		}
 	}
 	LCT_WW_fieldmarshel = {
-		name = "Raiden"
+		name = "Howard Hamlin"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/raiden.tga"
+				large = "gfx/leaders/WW/hamlin.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -252,10 +252,10 @@ characters={
 		}
 	}
 	ROU_WW_fieldmarshel = {
-		name = "Saul Goodman"
+		name = "Gus Fring"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/saul.tga"
+				large = "gfx/leaders/WW/gus.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -294,10 +294,10 @@ characters={
 		}
 	}
 	WIT_WW_fieldmarshel = {
-		name = "Jetstream Sam"
+		name = "Chuck McGill"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/sam.tga"
+				large = "gfx/leaders/WW/chuck.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
