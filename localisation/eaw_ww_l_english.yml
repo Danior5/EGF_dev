@@ -66,4 +66,12 @@
  EQS_island_buff6:0 "Equestrian Island Campaign: §GDomination§!"
  EQS_island_buff6_desc:0 "Our alliance has total control over the former Equestrian islands within the Celestial Sea. Our merchant vessels can now travel freely, greatly boosting our industrial capacity."  
 
- GRF_intergrate_PLB:0 "Click this to get cores on Polar Bears. You won't annex them though"
+ GRF_intergrate_PLB:0 "Gain cores on the polarbears"
+ GRF_intergrate_PNG:0 "Annex the Penguin AI"
+ RCT_intergrate_LCT:0 "Annex the Lake City AI"
+ RCT_intergrate_BAK:0 "Annex the Bakaran AI"
+ RCT_intergrate_NIM:0 "Annex the Nimbusia AI"
+ RCT_intergrate_WIT:0 "Annex the Wittenland AI"
+ 
+ GRI_takeover_FEA_fleet:0 "Take control of the Feathisian navy"
+ CHN_takeover_OLE_fleet:0 "Take control of the Olenian navy"
