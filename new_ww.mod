@@ -1,4 +1,4 @@
-version="2.999"
+version="3.0"
 tags={
 	"National Focuses"
 	"Gameplay"
