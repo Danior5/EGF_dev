@@ -701,7 +701,9 @@ foreign_politics = {
 		
 		timeout_effect = {
 			#set_global_flag = GRI_war_immenent
-			set_global_flag = big_event_custom_island_war
+			every_country = {
+			set_country_flag = big_event_custom_island_war
+			}
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -720,7 +722,9 @@ foreign_politics = {
 		
 		complete_effect = {
 			#set_global_flag = GRI_war_immenent
-			set_global_flag = big_event_custom_island_war
+			every_country = {
+			set_country_flag = big_event_custom_island_war
+			}
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -759,6 +763,9 @@ foreign_politics = {
 		
 		timeout_effect = {
 			#set_global_flag = CHN_war_immenent
+			every_country = {
+			set_country_flag = big_event_custom_great_war
+			}
 			CHN = {
 				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
 				create_wargoal = { 
@@ -807,6 +814,9 @@ foreign_politics = {
 		
 		complete_effect = {
 			#set_global_flag = CHN_war_immenent
+			every_country = {
+			set_country_flag = big_event_custom_great_war
+			}
 			CHN = {
 				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
 				create_wargoal = { 
@@ -876,6 +886,9 @@ foreign_politics = {
 		
 		timeout_effect = {
 			#set_global_flag = JER_war_immenent
+			every_country = {
+			set_country_flag = big_event_custom_tarrin_war
+			}
 			JER = {
 				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
 				create_wargoal = { 
@@ -910,6 +923,8 @@ foreign_politics = {
 		
 		complete_effect = {
 			#set_global_flag = JER_war_immenent
+			set_country_flag = big_event_custom_tarrin_war
+			}
 			JER = {
 				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
 				create_wargoal = { 
