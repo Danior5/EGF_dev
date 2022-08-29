@@ -1172,26 +1172,23 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
 		}		
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_helvia
-			cost = 50
 			allowed = {
 				original_tag = CHN
 			}
 			available = {
-				NOT = {
-					has_idea = {
-						chn_queen_aurantia
-						chn_queen_yaria
-						chn_queen_argynnis
-					}
+				NOT = { 
+					has_idea = chn_queen_aurantia
+					has_idea = chn_queen_yaria
+					has_idea = chn_queen_argynnis
 				}
 				has_government = fascism
+			}
+			on_add = {
+				add_research_slot = 1
 			}
 			traits = {
 				queen_helvia_WW
@@ -1207,25 +1204,19 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
 		}		
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_aurantia
-			cost = 50
 			allowed = {
 				original_tag = CHN
 			}
 			available = {
-				NOT = {
-					has_idea = {
-						chn_queen_helvia
-						chn_queen_yaria
-						chn_queen_argynnis
-					}
-				}	
+				NOT = { 
+					has_idea = chn_queen_helvia
+					has_idea = chn_queen_yaria
+					has_idea = chn_queen_argynnis
+				}
 				has_government = fascism
 			}
 			traits = {
@@ -1242,27 +1233,23 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
-		}
-		add_research_slot = 1		
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_yaria
-			cost = 50
 			allowed = {
 				original_tag = CHN
 			}
 			available = {
-				NOT = {
-					has_idea = {
-						chn_queen_helvia
-						chn_queen_aurantia
-						chn_queen_argynnis
-					}
+				NOT = { 
+					has_idea = chn_queen_helvia
+					has_idea = chn_queen_aurantia
+					has_idea = chn_queen_argynnis
 				}
 				has_government = fascism
+			}
+			research_bonus = {
+				magical_tech = 0.05
 			}
 			traits = {
 				queen_yaria_WW
@@ -1278,24 +1265,18 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
-		}	
+		}		
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
-			cost = 50
 			allowed = {
 				original_tag = CHN
 			}
 			available = {
-				NOT = {
-					has_idea = {
-						chn_queen_helvia
-						chn_queen_aurantia
-						chn_queen_yaria
-					}
+				NOT = { 
+					has_idea = chn_queen_helvia
+					has_idea = chn_queen_aurantia
+					has_idea = chn_queen_yaria
 				}
 				has_government = fascism
 			}
