@@ -27,6 +27,7 @@ leader_traits = {
 		random = no
 		consumer_goods_factor = 0.07
 		political_power_gain = -0.1
+		custom_modifier_tooltip = queen_yaria_research_tt
 		ai_will_do = {
 			factor = 1
 		}

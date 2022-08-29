@@ -1245,7 +1245,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			custom_effect_tooltip = queen_yaria_tt
 			traits = {
 				queen_yaria_WW
 			}
