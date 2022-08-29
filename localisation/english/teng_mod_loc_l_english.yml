@@ -48,3 +48,6 @@
  WW_rct_1_b:0 "this option will give you : \n§R-3% stability§!\n§Y-4% Harmony support§!"
  WW_rct_2_a:0 "this option will give you : \n§G+25 Political Power§!\n§Y+4% Harmony support§!"
  WW_rct_2_b:0 "this option will give you : \n§G+25 Political Power§!\n§Y+5% Communism support§!" 
+ 
+ BAK_increase_d_ww:0 "\nThe §CSDH§! will §Ggain§! §Y100%§! §CVoter§! Support\n\n"
+ BAK_increase_n_ww:0 "\nThe §YBSP§! will §Ggain§! §Y100%§! §CVoter§! Support\n\n"
