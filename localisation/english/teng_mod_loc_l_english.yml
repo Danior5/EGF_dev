@@ -43,3 +43,8 @@
  wittenland_duel.ww.b:0 "I would like Honoria (Supremacist) to win"
  wittenland_duel.ww.c:0 "I would like Wulfric (Non-Aligned) to win"
  wittenland_duel.ww.z:0 "This event is a PSYOP by the MP community\nWe need to return to SP tradition"
+ 
+ WW_rct_1_a:0 "this option will give you : \n§G+25 Political Power§! \n§Y+3% Harmony support§! \n§GLowers Poverty§!"
+ WW_rct_1_b:0 "this option will give you : \n§R-3% stability§!\n§Y-4% Harmony support§!"
+ WW_rct_2_a:0 "this option will give you : \n§G+25 Political Power§!\n§Y+4% Harmony support§!"
+ WW_rct_2_b:0 "this option will give you : \n§G+25 Political Power§!\n§Y+5% Communism support§!" 
