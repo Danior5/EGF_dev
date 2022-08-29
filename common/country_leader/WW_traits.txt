@@ -1,0 +1,44 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+	queen_helvia_WW = {
+		random = no
+		consumer_goods_factor = 0.03
+		industrial_capacity_dockyard = 0.25
+		experience_gain_navy = 0.1
+		custom_modifier_tooltip = queen_helvia_admiral_tt
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	queen_aurantia_WW = {
+		random = no
+		production_speed_industrial_complex_factor = 0.25
+		production_speed_arms_factory_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	queen_yaria_WW = {
+		random = no
+		consumer_goods_factor = 0.07
+		political_power_gain = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	queen_argynnis_WW = {
+		random = no
+		production_factory_max_efficiency_factor = -0.05
+		army_morale_factor = 0.3
+		dig_in_speed_factor = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
