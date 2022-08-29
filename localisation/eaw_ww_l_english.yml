@@ -50,6 +50,9 @@
  WW_CHN_core_buff:0 "Olenian Front Secure"
  WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
 
+ queen_yaria_tt: "Choosing this advisor will unlock a decision to add §G1§! research slot.\n"
+
+
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
  EQS_island_debuff3:0 "Celestial Sea Islands: §OSlight Danger§!" 

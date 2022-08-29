@@ -1187,9 +1187,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			on_add = {
-				add_research_slot = 1
-			}
 			traits = {
 				queen_helvia_WW
 			}
@@ -1248,9 +1245,7 @@ characters={
 				}
 				has_government = fascism
 			}
-			research_bonus = {
-				magical_tech = 0.05
-			}
+			custom_effect_tooltip = queen_yaria_tt
 			traits = {
 				queen_yaria_WW
 			}
