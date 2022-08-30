@@ -36,3 +36,18 @@
  WIT_pregrinded_general:0 "Recruit pre-grinded field marshel"
  WNG_pregrinded_general:0 "Recruit pre-grinded field marshel"
  YAL_pregrinded_general:0 "Recruit pre-grinded field marshel"
+ 
+ wittenland_duel.ww.t:0 "A Convenient Interruption"
+ wittenland_duel.ww.d:0 "The MP mod interrupts you for a quick and convenient break. \nDue to the mildly complicated way the monarch is selected in Wittenland several cases has been had where the player ended up with the monarch they do not want \nThis event is a solution to those occurrences and forces the monarch the player wanted on the throne \n\nHowever if you like to read the events or would like to 'challenge' your self feel free to click the 4th option to have the game continue down the regular path like this event never happened."
+ wittenland_duel.ww.a:0 "I would like White Star (Hrmonist) to win"
+ wittenland_duel.ww.b:0 "I would like Honoria (Supremacist) to win"
+ wittenland_duel.ww.c:0 "I would like Wulfric (Non-Aligned) to win"
+ wittenland_duel.ww.z:0 "This event is a PSYOP by the MP community\nWe need to return to SP tradition"
+ 
+ WW_rct_1_a:0 "this option will give you : \n§G+25 Political Power§! \n§Y+3% Harmony support§! \n§GLowers Poverty§!"
+ WW_rct_1_b:0 "this option will give you : \n§R-3% stability§!\n§Y-4% Harmony support§!"
+ WW_rct_2_a:0 "this option will give you : \n§G+25 Political Power§!\n§Y+4% Harmony support§!"
+ WW_rct_2_b:0 "this option will give you : \n§G+25 Political Power§!\n§Y+5% Communism support§!" 
+ 
+ BAK_increase_d_ww:0 "\nThe §CSDH§! will §Ggain§! §Y100%§! §CVoter§! Support\n\n"
+ BAK_increase_n_ww:0 "\nThe §YBSP§! will §Ggain§! §Y100%§! §CVoter§! Support\n\n"
