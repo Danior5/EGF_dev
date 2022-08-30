@@ -37,6 +37,7 @@
  continuous_reduced_resource_penalty:0 "Resource-Efficient Production"
  continuous_faster_mobilization:0 "Rapid Mobilization"
  continuous_cheaper_infantry_equipment:0 "Infantry Equipment Production"
+ neutral_idea:0 "Neutral Nation"
  
  JER_tarrin_offensive:0 "Tarrin Offensive"
  JER_defence_of_aquileia:0 "Defence of Aquileia"

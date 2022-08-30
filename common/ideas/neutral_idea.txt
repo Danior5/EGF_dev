@@ -1,6 +1,4 @@
 ideas={
-	hidden_ideas={
-	}
 	country={
 		neutral_idea = {
 			allowed = {
