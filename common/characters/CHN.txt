@@ -1230,7 +1230,7 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}	
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_yaria
@@ -1247,6 +1247,9 @@ characters={
 			}
 			traits = {
 				queen_yaria_WW
+			}
+			on_add = {
+				add_research_slot = 1
 			}
 		}
 	}
