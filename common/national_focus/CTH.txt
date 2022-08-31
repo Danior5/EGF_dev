@@ -2509,58 +2509,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CTH_on_our_own
-		icon = GFX_goal_Colthaginian_soldier
-		cost = 6
-		relative_position_id = CTH_denounce_the_mandate
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = CTH_denounce_the_mandate
-		}
-		mutually_exclusive = {
-			focus = CTH_the_batfag_alliance
-		}
-
-		available = {
-			#has_war = no
-			BAT = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_in_faction = yes
-						is_faction_leader = no
-					}
-					has_country_flag = BAT_national_catastrophe
-				}
-			}
-		}
-		bypass = {
-			ZUM = {
-				exists = yes
-				is_subject = no
-				is_in_faction = no
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = CTH_preparing_for_war
-		}
-	}
-	focus = {
 		id = CTH_the_batfag_alliance
 		icon = GFX_goal_bat_with_hat
 		cost = 6
 		relative_position_id = CTH_denounce_the_mandate
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = CTH_denounce_the_mandate
@@ -2620,11 +2573,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			BAT = {
-				country_event = {
-					id = colthage_other.20
-				}
-			}
+			add_ideas = CTH_preparing_for_war
 		}
 	}
 	focus = {
@@ -2632,10 +2581,9 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 8
 		relative_position_id = CTH_the_batfag_alliance
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
-			focus = CTH_on_our_own
 			focus = CTH_the_batfag_alliance
 		}
 
