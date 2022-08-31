@@ -1251,6 +1251,9 @@ characters={
 			on_add = {
 				add_research_slot = 1
 			}
+			on_remove = {
+				add_research_slot = -1
+			}
 		}
 	}
 	CHN_queen_argynnis = {
@@ -1281,8 +1284,17 @@ characters={
 				queen_argynnis_WW
 			}
 			on_add = {
-				set_technology = {
+				if = {
+					limit = {
+						ROOT = {
+							NOT = {
+								has_tech = JER_magical_tanks_tech = 1
+							}
+						}
+					}
+					set_technology = {
 			    		JER_magical_tanks_tech = 1
+					}
 				}
 			}
 		}
