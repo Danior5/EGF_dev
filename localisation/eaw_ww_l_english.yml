@@ -54,6 +54,10 @@
  queen_yaria_research_tt:0 "Gain §G1§! Research Slot.\n"
  queen_argynnis_research_tt:0 "Enables: §YMagical Tanks§!\n" #You don't see anything danior
 
+ queen_helvia_WW:0 "Queen of Ditrysium"
+ queen_aurantia_WW:0 "Queen of Lyctida"
+ queen_yaria_WW:0 "Queen of Soryth"
+ queen_argynnis_WW:0 "Queen of Vraks"
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 

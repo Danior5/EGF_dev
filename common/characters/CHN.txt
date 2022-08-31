@@ -1280,6 +1280,11 @@ characters={
 			traits = {
 				queen_argynnis_WW
 			}
+			on_add = {
+				set_technology = {
+			    		JER_magical_tanks_tech = 1
+				}
+			}
 		}
 	}
 	CHN_spymaster = {
