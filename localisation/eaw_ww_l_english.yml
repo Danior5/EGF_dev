@@ -51,8 +51,8 @@
  WW_CHN_core_buff:0 "Olenian Front Secure"
  WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
 
- queen_yaria_research_tt:0 "Unlocks a §Ydecision§! to add §G1§! research slot.\n"
- queen_argynnis_research_tt:0 "Unlocks a §Ydecision§! to enable §YMagical Tanks§!.\n" #You don't see anything danior
+ queen_yaria_research_tt:0 "Gain §G1§! Research Slot.\n"
+ queen_argynnis_research_tt:0 "Enables: §YMagical Tanks§!\n" #You don't see anything danior
 
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
