@@ -718,6 +718,11 @@ foreign_politics = {
 
 			GRI	= { add_to_faction = CTH }
 			GRI	= { add_to_faction = BAT }
+
+			FAT = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			TRD = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			GRI = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			JER = { add_timed_idea = { idea = WW_toratoratora days = 90 }
 		}
 		
 		complete_effect = {
@@ -737,8 +742,13 @@ foreign_politics = {
 			}
 			EQS = { add_to_faction = HIP }
 
-			GRI	= { add_to_faction = CTH }
-			GRI	= { add_to_faction = BAT }
+			GRI = { add_to_faction = CTH }
+			GRI = { add_to_faction = BAT }
+
+			FAT = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			TRD = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			GRI = { add_timed_idea = { idea = WW_toratoratora days = 90 }
+			JER = { add_timed_idea = { idea = WW_toratoratora days = 90 }
 		}
 	}
 	
