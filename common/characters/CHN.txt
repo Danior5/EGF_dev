@@ -1172,11 +1172,9 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
 		}		
 		advisor={
+			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_helvia
 			allowed = {
@@ -1205,11 +1203,9 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}
-		allowed_to_remove = {
-			always = no
 		}		
 		advisor={
+			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_aurantia
 			allowed = {
@@ -1239,10 +1235,8 @@ characters={
 		allowed_civil_war = {
 			has_government = fascism
 		}
-		allowed_to_remove = {
-			always = no
-		}
 		advisor={
+			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_yaria
 			allowed = {
@@ -1278,10 +1272,8 @@ characters={
 		allowed_civil_war = {
 			has_government = fascism
 		}
-		allowed_to_remove = {
-			always = no
-		}
 		advisor={
+			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
 			allowed = {
