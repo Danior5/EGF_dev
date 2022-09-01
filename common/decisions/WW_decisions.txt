@@ -955,8 +955,9 @@ foreign_politics = {
 		
 		GRI	= { add_to_faction = HLQ }
 		}
-		}
 	}
+	
+
 	
 	
 	
