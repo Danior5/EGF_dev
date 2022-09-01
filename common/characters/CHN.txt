@@ -1172,6 +1172,9 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
+		}
+		allowed_to_remove = {
+			always = no
 		}		
 		advisor={
 			slot = political_advisor
@@ -1187,6 +1190,7 @@ characters={
 				}
 				has_government = fascism
 			}
+			cost = 50
 			traits = {
 				queen_helvia_WW
 			}
@@ -1201,6 +1205,9 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
+		}
+		allowed_to_remove = {
+			always = no
 		}		
 		advisor={
 			slot = political_advisor
@@ -1216,6 +1223,7 @@ characters={
 				}
 				has_government = fascism
 			}
+			cost = 50
 			traits = {
 				queen_aurantia_WW
 			}
@@ -1231,6 +1239,9 @@ characters={
 		allowed_civil_war = {
 			has_government = fascism
 		}
+		allowed_to_remove = {
+			always = no
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_yaria
@@ -1245,6 +1256,7 @@ characters={
 				}
 				has_government = fascism
 			}
+			cost = 50
 			traits = {
 				queen_yaria_WW
 			}
@@ -1265,7 +1277,10 @@ characters={
 		}
 		allowed_civil_war = {
 			has_government = fascism
-		}		
+		}
+		allowed_to_remove = {
+			always = no
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
@@ -1280,6 +1295,7 @@ characters={
 				}
 				has_government = fascism
 			}
+			cost = 50
 			traits = {
 				queen_argynnis_WW
 			}
