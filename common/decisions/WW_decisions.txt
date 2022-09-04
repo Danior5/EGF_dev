@@ -457,94 +457,6 @@ foreign_politics = {
 		}
 	}
 	
-	RCT_intergrate_DMT = {
-		icon = generic_form_nation
-
-		targets = { DMT }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DMT = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = RCT
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = RCT
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DMT
-				}
-				add_core_of = RCT
-			}
-			annex_country = { target = DMT transfer_troops = yes }
-		}
-	}
-	
-	LCT_intergrate_DMT = {
-		icon = generic_form_nation
-
-		targets = { DMT }
-		targets_dynamic = yes
-
-		target_trigger = {
-			DMT = {
-				is_ai = yes
-			}
-		}
-
-		allowed = {
-			original_tag = LCT
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		target_root_trigger = {
-			is_subject = no
-		}
-
-		visible = {
-			if = {
-				limit = {
-					original_tag = LCT
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_bronzehill target: [DMT.GetName]"
-			every_state = {
-				limit = {
-					is_core_of = DMT
-				}
-				add_core_of = LCT
-			}
-			annex_country = { target = DMT transfer_troops = yes }
-		}
-	}
-	
 	RCT_intergrate_BAK = {
 		icon = generic_form_nation
 
@@ -910,31 +822,33 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
-		hidden_effect = {
-		BAK = { add_to_faction = WNG }
-		BAK = { add_to_faction = GRY }	
+			hidden_effect = {
+				BAK = { add_to_faction = WNG }
+				BAK = { add_to_faction = GRY }	
 		
-		RCT = { add_to_faction = WNG }
-		RCT = { add_to_faction = GRY }
+				RCT = { add_to_faction = WNG }
+				RCT = { add_to_faction = GRY }
 
-		LCT = { add_to_faction = WNG }
-		LCT = { add_to_faction = GRY }
+				LCT = { add_to_faction = WNG }
+				LCT = { add_to_faction = GRY }
 	
-		WIT = { add_to_faction = WNG }
-		WIT = { add_to_faction = GRY }
+				WIT = { add_to_faction = WNG }
+				WIT = { add_to_faction = GRY }
 
-		NIM = { add_to_faction = WNG }
-		NIM = { add_to_faction = GRY }
+				NIM = { add_to_faction = WNG }
+				NIM = { add_to_faction = GRY }
 
-		
-		GRI	= { add_to_faction = HLQ }	
-		}
+				
+				GRI	= { add_to_faction = HLQ }	
+			}
 		}
 		
 		complete_effect = {
 			#set_global_flag = JER_war_immenent
-			set_country_flag = big_event_custom_tarrin_war
+			every_country = {
+				set_country_flag = big_event_custom_tarrin_war
 			}
+			
 			JER = {
 				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
 				create_wargoal = { 
@@ -946,27 +860,28 @@ foreign_politics = {
 					target = WNG 
 				}
 			}
-		hidden_effect = {
-		BAK = { add_to_faction = WNG }
-		BAK = { add_to_faction = GRY }	
 		
-		RCT = { add_to_faction = WNG }
-		RCT = { add_to_faction = GRY }
+			hidden_effect = {
+				BAK = { add_to_faction = WNG }
+				BAK = { add_to_faction = GRY }	
+		
+				RCT = { add_to_faction = WNG }
+				RCT = { add_to_faction = GRY }
 
-		LCT = { add_to_faction = WNG }
-		LCT = { add_to_faction = GRY }
+				LCT = { add_to_faction = WNG }
+				LCT = { add_to_faction = GRY }
 	
-		WIT = { add_to_faction = WNG }
-		WIT = { add_to_faction = GRY }
+				WIT = { add_to_faction = WNG }
+				WIT = { add_to_faction = GRY }
 
-		NIM = { add_to_faction = WNG }
-		NIM = { add_to_faction = GRY }
+				NIM = { add_to_faction = WNG }
+				NIM = { add_to_faction = GRY }
 
-		
-		GRI	= { add_to_faction = HLQ }
+				
+				GRI	= { add_to_faction = HLQ }
+			}
 		}
 	}
-	
 
 	
 	
