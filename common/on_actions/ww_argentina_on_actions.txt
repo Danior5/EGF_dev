@@ -1,0 +1,22 @@
+on_actions = {
+
+	
+	on_capitulation = {
+		effect = {
+			#EQS dying gives buffs to RCT and WNG
+			if = {
+				limit = {
+					ROOT = {
+						tag = EQS
+					}
+				}
+				RCT = {
+					country_event = ww.10
+				}
+				WNG = {
+					country_event = ww.10
+				}
+			}
+		}
+	}
+}
