@@ -631,10 +631,10 @@ foreign_politics = {
 			GRI	= { add_to_faction = CTH }
 			GRI	= { add_to_faction = BAT }
 
-			FAT = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			TRD = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			GRI = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			JER = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
+			FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 		}
 		
 		complete_effect = {
@@ -657,10 +657,10 @@ foreign_politics = {
 			GRI = { add_to_faction = CTH }
 			GRI = { add_to_faction = BAT }
 
-			FAT = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			TRD = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			GRI = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
-			JER = { add_timed_idea = { idea = WW_toratoratora days = 90 }}
+			FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 		}
 	}
 	
@@ -689,7 +689,7 @@ foreign_politics = {
 			set_country_flag = big_event_custom_great_war
 			}
 			CHN = {
-				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
+				add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = EQS 
@@ -740,7 +740,7 @@ foreign_politics = {
 			set_country_flag = big_event_custom_great_war
 			}
 			CHN = {
-				add_timed_idea = { idea = CHN_plan_east_prep days = 180 }
+				add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = EQS 
