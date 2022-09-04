@@ -3,3 +3,13 @@ sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
 	file = "customsound/rule_brittania_island_war_sound.wav" ## location of the sound file
 	always_load = no
 }
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "great_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/italian_symphony_great_war_sound.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "tarrin_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/danse_macabre_tarrin_war_sound.wav" ## location of the sound file
+	always_load = no
+}

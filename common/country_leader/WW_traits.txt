@@ -17,8 +17,8 @@ leader_traits = {
 	
 	queen_aurantia_WW = {
 		random = no
-		production_speed_industrial_complex_factor = 0.2
-		production_speed_arms_factory_factor = -0.1
+		production_speed_industrial_complex_factor = 0.05
+		min_export = -0.1
 		local_resources_factor = 0.15
 		production_lack_of_resource_penalty_factor = -0.15 
 		ai_will_do = {
@@ -28,8 +28,8 @@ leader_traits = {
 	
 	queen_yaria_WW = {
 		random = no
-		consumer_goods_factor = 0.07
-		political_power_gain = -0.1
+		consumer_goods_factor = 0.09
+		political_power_gain = -0.15
 		research_speed_factor = 0.05
 		custom_modifier_tooltip = queen_yaria_research_tt
 		ai_will_do = {
@@ -39,7 +39,7 @@ leader_traits = {
 	
 	queen_argynnis_WW = {
 		random = no
-		production_factory_max_efficiency_factor = -0.05
+		production_factory_max_efficiency_factor = -0.1
 		army_morale_factor = 0.1
 		custom_modifier_tooltip = queen_argynnis_research_tt	
 		ai_will_do = {

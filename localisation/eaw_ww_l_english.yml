@@ -22,6 +22,10 @@
  ww.9.t:0 "The Reichspakt attacks Wingbardy!"
  ww.9.d:0 ""
  ww.9.a:0 ""
+
+ ww.10.t:0 "Allied ships spotted"
+ ww.10.d:0 "Allied ships carrying officers from their capitulated nations have arrived to help us in defence"
+ ww.10.a:0 "Welcome them with open arms" ##fuck hooves
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"
@@ -44,6 +48,8 @@
  
  WW_tarrin_offensive:0 "Operation: 'Fuck Wingbardian Chromium'"
  WW_defence_of_aquileia:0 "Operation: 'Great Trial but with catbirds'"
+
+ WW_toratoratora:0 "Taifunkrieg"
 
  WW_OLE_surrender_limit:0 "Changeling Occupation"
  WW_OLE_surrender_limit_desc:0 "The Olenian populace holds no love for their Changeling oppressors. If a foreign power were to enter their country they would quickly join them."
@@ -84,3 +90,6 @@
  
  GRI_takeover_FEA_fleet:0 "Take control of the Feathisian navy"
  CHN_takeover_OLE_fleet:0 "Take control of the Olenian navy"
+
+ WW_escaped_officers:0 "Officers In Exile"
+ WW_escaped_officers_desc:0 "Officers that escaped the enemy have bolstered defence in our terretory"

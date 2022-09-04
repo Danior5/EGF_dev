@@ -144,34 +144,47 @@ country_event = { #NOT USED CHNvsEQS war
 	is_triggered_only = yes
 	option = {
 		name = ww.9.a
-	hidden_effect = {
-			JER = {
-				create_wargoal = { 
+		hidden_effect = {
+				JER = {
+					create_wargoal = { 
+						type = annex_everything 
+						target = WNG 
+					}
+					declare_war_on = { 
 					type = annex_everything 
 					target = WNG 
+					}
 				}
-				declare_war_on = { 
-				type = annex_everything 
-				target = WNG 
-				}
-			}
-		BAK = { add_to_faction = WNG }
-		BAK = { add_to_faction = GRY }	
+			BAK = { add_to_faction = WNG }
+			BAK = { add_to_faction = GRY }	
+			
+			RCT = { add_to_faction = WNG }
+			RCT = { add_to_faction = GRY }
+
+			LCT = { add_to_faction = WNG }
+			LCT = { add_to_faction = GRY }
 		
-		RCT = { add_to_faction = WNG }
-		RCT = { add_to_faction = GRY }
+			WIT = { add_to_faction = WNG }
+			WIT = { add_to_faction = GRY }
 
-		LCT = { add_to_faction = WNG }
-		LCT = { add_to_faction = GRY }
-	
-		WIT = { add_to_faction = WNG }
-		WIT = { add_to_faction = GRY }
+			NIM = { add_to_faction = WNG }
+			NIM = { add_to_faction = GRY }
 
-		NIM = { add_to_faction = WNG }
-		NIM = { add_to_faction = GRY }
-
-		
-		GRI	= { add_to_faction = HLQ }
+			
+			GRI	= { add_to_faction = HLQ }
+		}
 	}
+}
+
+country_event = {
+	id = ww.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.10"}
+	title = ww.10.t
+	desc = ww.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww.10.a
+		add_ideas = WW_escaped_officers
 	}
 }
