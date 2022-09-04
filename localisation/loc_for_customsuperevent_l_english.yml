@@ -1,12 +1,4 @@
 ﻿l_english:
-  ISLAND_WAR_T:0 "The Celestial Sea War"
+  ISLAND_WAR_T:0 "THE CELESTIAL SEA WAR"
   ISLAND_WAR_D:0 "Naval battles require consent.\n- Alexander Kemerkai"
   ISLAND_WAR_A:0 "Superpowers Clash"
- 
-  GREAT_WAR_T:0 "Changeling Lands Strikes"
-  GREAT_WAR_D:0 "Bravery is the capacity to perform properly\neven when scared half to death.\n- Omarr Bradly"
-  GREAT_WAR_A:0 "The Land War Has Begun"    
-    
-  TARRIN_WAR_T:0 "War Spreads to Griffonia"
-  TARRIN_WAR_D:0 "It is hard to fail, but it is worse never to have tried to succeed.\n- Theodore Moosavelt"
-  TARRIN_WAR_A:0 "New Fronts, New Opportunity"

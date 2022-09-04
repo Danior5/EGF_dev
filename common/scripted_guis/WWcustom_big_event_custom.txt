@@ -26,53 +26,53 @@ scripted_gui = {
 
 
 
-	WW_big_event_great_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "WW_big_event_great_war_custom_window"
+	#WW_big_event_great_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		#context_type = player_context
+		#window_name = "WW_big_event_great_war_custom_window"
 
-		visible = {
-			has_country_flag = big_event_custom_great_war ### this global flag triggers the #superevent
-		}
-	}
+		#visible = {
+			#has_country_flag = big_event_custom_great_war ### this global flag triggers the #superevent
+		#}
+	#}
 
-	WW_big_event_frame_great_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "WW_big_event_frame_great_war_custom"
+	#WW_big_event_frame_great_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		#context_type = player_context
+		#window_name = "WW_big_event_frame_great_war_custom"
 
-		visible = {
-			has_country_flag = big_event_custom_great_war
-		}
+		#visible = {
+			#has_country_flag = big_event_custom_great_war
+		#}
 
-		effects = {
-			Option_click = {
-				clr_country_flag = big_event_custom_great_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
-			}
-		}
-	}
+		#effects = {
+			#Option_click = {
+				#clr_country_flag = big_event_custom_great_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			#}
+		#}
+	#}
 
 
 
-	WW_big_event_tarrin_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "WW_big_event_tarrin_war_custom_window"
+	#WW_big_event_tarrin_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		#context_type = player_context
+		#window_name = "WW_big_event_tarrin_war_custom_window"
 
-		visible = {
-			has_country_flag = big_event_custom_tarrin_war ### this global flag triggers the #superevent
-		}
-	}
+		#visible = {
+			#has_country_flag = big_event_custom_tarrin_war ### this global flag triggers the #superevent
+		#}
+	#}
 
-	WW_big_event_frame_tarrin_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "WW_big_event_frame_tarrin_war_custom"
+	#WW_big_event_frame_tarrin_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		#context_type = player_context
+		#window_name = "WW_big_event_frame_tarrin_war_custom"
 
-		visible = {
-			has_country_flag = big_event_custom_tarrin_war
-		}
+		#visible = {
+			#has_country_flag = big_event_custom_tarrin_war
+		#}
 
-		effects = {
-			Option_click = {
-				clr_country_flag = big_event_custom_tarrin_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
-			}
-		}
-	}
+		#effects = {
+			#Option_click = {
+				#clr_country_flag = big_event_custom_tarrin_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			#}
+		#}
+	#}
 }
