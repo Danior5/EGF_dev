@@ -1,4 +1,4 @@
-capital = 1059 # Vermilion
+﻿capital = 1059 # Vermilion
 
 set_stability = 0.6
 set_war_support = 0

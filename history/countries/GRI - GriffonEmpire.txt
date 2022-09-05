@@ -1,4 +1,4 @@
-capital = 382
+﻿capital = 382
 set_research_slots = 3
 
 set_technology = {
@@ -496,7 +496,7 @@ if = {
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
+			turret_type_slot = tank_light_three_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
@@ -514,7 +514,7 @@ if = {
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_two_man_tank_turret
+			turret_type_slot = tank_light_three_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
