@@ -4022,7 +4022,7 @@ CTH_trade_decisions_cat = {
 				value > -11
 			}
 			FROM = {
-				has_war = no
+				#has_war = no
 				has_opinion = {
 					target = ROOT
 					value > -11
@@ -4254,7 +4254,7 @@ CTH_trade_decisions_cat = {
 				value > -11
 			}
 			FROM = {
-				has_war = no
+				#has_war = no
 				has_opinion = {
 					target = ROOT
 					value > -11
