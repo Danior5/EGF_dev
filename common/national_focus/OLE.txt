@@ -2552,19 +2552,7 @@ focus_tree = {
 		#bypass = {}
 		available = {
 			has_civil_war = no
-			OR = {
-				has_country_flag = OLE_situation_stable
-				AND = {
-					is_subject = yes
-					NOT = {
-						overlord = {
-							original_tag = CHN
-							has_government = fascism
-							has_war = yes
-						}
-					}
-				}
-			}
+			has_country_flag = OLE_situation_stable
 		}
 		ai_will_do = { factor = 8 }
 		x = 32
@@ -2593,16 +2581,6 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = OLE_industrial_incentives }
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		cost = 10
 		available_if_capitulated = no
@@ -2621,16 +2599,6 @@ focus_tree = {
 		x = 34
 		y = 2
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		prerequisite = { focus = OLE_public_works_fund }
 		cost = 10
@@ -2675,16 +2643,6 @@ focus_tree = {
 		prerequisite = { focus = OLE_public_works_fund }
 		available = {
 			213 = { is_owned_and_controlled_by = ROOT }
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2949,16 +2907,6 @@ focus_tree = {
 			}
 		}
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		x = 36
 		y = 3
@@ -2994,16 +2942,6 @@ focus_tree = {
 		prerequisite = { focus = OLE_cervus_industrial_district }
 		available = {
 			194 = { is_owned_and_controlled_by = ROOT }
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3047,16 +2985,6 @@ focus_tree = {
 		mutually_exclusive = { focus = OLE_a_gun_for_every_buck }
 		cost = 10
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		available_if_capitulated = no
 		complete_tooltip = {
@@ -3154,16 +3082,6 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = OLE_industrial_incentives }
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		cost = 10
 		available_if_capitulated = no
@@ -3273,17 +3191,6 @@ focus_tree = {
 		prerequisite = { focus = OLE_industrial_revolution }
 
 		available = {
-			191 = { is_owned_and_controlled_by = ROOT }
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3326,16 +3233,6 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = OLE_cervus_industrial_district }
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		cost = 10
 		available_if_capitulated = no
@@ -3356,16 +3253,6 @@ focus_tree = {
 		prerequisite = { focus = OLE_hjortland_institute_of_engineering }
 		cost = 10
 		available = {
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		available_if_capitulated = no
 		completion_reward = {
@@ -3390,16 +3277,6 @@ focus_tree = {
 		prerequisite = { focus = OLE_industrial_incentives }
 		available = {
 			192 = { is_owned_and_controlled_by = ROOT }
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3443,16 +3320,6 @@ focus_tree = {
 
 		available = {
 			191 = { is_owned_and_controlled_by = ROOT }
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
-			}
 		}
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3507,16 +3374,6 @@ focus_tree = {
 			any_owned_state = {
 				state_population > 10000
 				is_controlled_by = ROOT
-			}
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
 			}
 		}
 
@@ -3613,16 +3470,6 @@ focus_tree = {
 			any_owned_state = {
 				state_population > 10000
 				is_controlled_by = ROOT
-			}
-			OR = {
-				is_subject = no
-				NOT = {
-					overlord = {
-						original_tag = CHN
-						has_government = fascism
-						has_war = yes
-					}
-				}
 			}
 		}
 		completion_reward = {
