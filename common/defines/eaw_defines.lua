@@ -127,3 +127,4 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- RESERVE_FLEET
 		0.1, -- NAVAL_INVASION_SUPPORT
 	}
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2	-- Base year ahead penalty. Vanilla is 2. Changed back to 2 from 2.5 in vanilla EaW
