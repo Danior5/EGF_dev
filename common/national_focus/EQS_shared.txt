@@ -113,15 +113,15 @@ shared_focus = {
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus industry_crystal_emp"
-		53 = { add_extra_state_shared_building_slots = 3
+		53 = { add_extra_state_shared_building_slots = 5
 			add_building_construction = { type = industrial_complex
-				level = 3
+				level = 5
 				instant_build = yes 
 			}
 		}
-		142 = { add_extra_state_shared_building_slots = 3
+		142 = { add_extra_state_shared_building_slots = 5
 			add_building_construction = { type = arms_factory
-				level = 3
+				level = 5
 				instant_build = yes 
 			} 
 		} 
@@ -196,7 +196,7 @@ shared_focus = {
 shared_focus = {
 	id = eqs_ww_buff_eqc3 ### 3rd EQC boost focus
 	icon = GFX_focus_eqc_defence_of_the_commonwelth
-	cost = 5.00
+	cost = 10.00
 	ai_will_do = { factor = 30 }
 	x = 10
 	y = 5
@@ -216,26 +216,57 @@ shared_focus = {
 		has_government = democratic
 	}
 	completion_reward = {
-		EQC = {
-			every_owned_state = {
-				add_building_construction = {
-					type = bunker
-					level = 6
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
+		custom_effect_tooltip = bastion_of_the_east_tt
+		hidden_effect = {
+			EQC = {
+				every_owned_state = {
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 6
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
 					}
 				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 6
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-				}
+			}
+		}
+		364 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+		362 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+		359 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+		356 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
 			}
 		}
 	}
