@@ -3,7 +3,7 @@ on_actions = {
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 
-	##Island Hopping
+	##EQS Island Hopping
 	on_state_control_changed = {
 		effect = {
 			if = {
@@ -43,7 +43,6 @@ on_actions = {
 				TRD = {
 			 		EQS_island_buff_level_up = yes
 				}
-
 			}
 		}
 	}
@@ -86,6 +85,67 @@ on_actions = {
 				TRD = {
 			 		EQS_island_buff_level_down = yes
 				}
+			}
+		}
+	}
+##HIP Island Hopping
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = BAT 
+							tag = BAT
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = HIP_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = BAT_controls
+				 	clr_state_flag = HIP_controls
+				}
+			 	HIP = { 
+			 		HIP_island_debuff_level_up = yes
+			 	}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = BAT
+							tag = BAT
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = HIP
+							tag = HIP
+						}	 
+					}
+					FROM.FROM = {
+						has_state_flag = BAT_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = HIP_controls 
+				 	clr_state_flag = BAT_controls 
+				}
+		 		HIP = {
+					HIP_island_debuff_level_down = yes
+		 		}
 			}
 		}
 	}
