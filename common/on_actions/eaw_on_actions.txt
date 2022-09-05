@@ -1579,6 +1579,9 @@ on_actions = {
 								}
 							}
 							set_global_flag = HIP_north_war_news_event_fired
+							every_country = {
+								set_country_flag = big_event_custom_zebra_war
+							}
 							news_event = {
 								id = north_war.101
 								hours = 8
@@ -1666,6 +1669,9 @@ on_actions = {
 								}
 							}
 							set_global_flag = HIP_north_war_news_event_fired
+							every_country = {
+								set_country_flag = big_event_custom_zebra_war
+							}
 							news_event = {
 								id = north_war.101
 								hours = 8

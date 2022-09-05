@@ -11,4 +11,8 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		name = "GFX_superevent_custom_tarrin_war"
 		textureFile = "gfx//superevent_pictures//tarrin_war_custom.tga"
 	}
+	spriteType = { #zebra war
+		name = "GFX_superevent_custom_zebra_war"
+		textureFile = "gfx//superevent_pictures//zebra_war_custom.tga"
+	}
 }
