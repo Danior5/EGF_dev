@@ -384,7 +384,7 @@ shared_focus = {
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon
-							turret_type_slot = tank_medium_two_man_tank_turret
+							turret_type_slot = tank_medium_three_man_tank_turret
 							suspension_type_slot = tank_bogie_suspension
 							armor_type_slot = tank_riveted_armor
 							engine_type_slot = tank_gasoline_engine
@@ -450,10 +450,10 @@ shared_focus = {
 	continue_if_invalid = no
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus industry_manehattan"
-		75 = {	add_extra_state_shared_building_slots = 4
+		75 = {	add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -593,10 +593,10 @@ shared_focus = {
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus industry_las_pegasus"
-		66 = {	add_extra_state_shared_building_slots = 4
+		66 = {	add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -708,7 +708,7 @@ shared_focus = {
 	icon = GFX_goal_eqs_canterlot
 	cost = 10.00
 	dynamic = yes
-	ai_will_do = { factor = 95 }
+	ai_will_do = { factor = 200 }
 	prerequisite = {
 		focus = Fund_public_schools
 	}
@@ -859,7 +859,7 @@ shared_focus = {
 	icon = GFX_focus_indy_technological_supremacy
 	cost = 10.00
 	dynamic = yes
-	ai_will_do = { factor = 95 }
+	ai_will_do = { factor = 200 }
 	prerequisite = {
 		focus = magical_training
 	}
@@ -2706,7 +2706,7 @@ shared_focus = {
 shared_focus = {
 	id = tenochtitlan_state_university
 	icon = GFX_goal_tfv_generic_tech_sharing
-	cost = 17.00
+	cost = 15.00
 	ai_will_do = {
 		factor = 80
 	}
