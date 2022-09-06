@@ -6950,20 +6950,20 @@ country_event = { #Post-Civil War Convo
 	}
 }
 
-country_event = { #Sunset arrives to save the day, maybe
-	id = equestria.188
-	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria.188"}
-	title = equestria.188.t
-	desc = equestria.188.d
-	picture = GFX_event_canterlot
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = equestria.188.a
-		custom_effect_tooltip = sunset_shimmer_stats_tp
-		set_country_flag = EQS_sunset_shimmer_arrived
-	}
-}
+#country_event = { #Sunset arrives to save the day, maybe
+#	id = equestria.188
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria.188"}
+#	title = equestria.188.t
+#	desc = equestria.188.d
+#	picture = GFX_event_canterlot
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	option = {
+#		name = equestria.188.a
+#		custom_effect_tooltip = sunset_shimmer_stats_tp
+#		set_country_flag = EQS_sunset_shimmer_arrived
+#	}
+#}
 
 country_event = { #Starlight joins the Equestrian Army
 	id = equestria.189

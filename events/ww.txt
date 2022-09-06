@@ -191,7 +191,9 @@ country_event = {
 	id = ww.11
 	fire_only_once = yes
 	is_triggered_only = yes
-	hidden = yes
+	#hidden = yes
+	title = ww.11.t
+	desc = ww.11.d
 	immediate = {
 		EQS = {
 			division_template = {
@@ -233,26 +235,31 @@ country_event = {
 			random_owned_controlled_state = {
 				prioritize = { 1 }
 				create_unit = {
-					division = "name = \"1. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"1st 'Canterlot High' Humanoid Student Expeditionary Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"2. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"2nd 'Crystal Prep High' Humanoid Student Expeditionary Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"3. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"3rd 'Ooarai Girls Academy' Humanoid Student Expeditionary Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"4. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"4th 'Kuromorimine Girls Academy' Humanoid Student Expeditionary Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"5. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"5th 'Bonple High School' Humanoid Student Expeditionary Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
 			}
 		}
+	}
+	option = {
+		name = ww.11.a
+		custom_effect_tooltip = sunset_shimmer_stats_tp
+		set_country_flag = EQS_sunset_shimmer_arrived
 	}
 }
