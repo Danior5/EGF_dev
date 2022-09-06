@@ -188,3 +188,72 @@ country_event = {
 		add_ideas = WW_escaped_officers
 	}
 }
+country_event = {
+	id = WW_spawn_in.1
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		EQS = {
+			division_template = {
+				name = "Sunset Armour Division"
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+	
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					medium_armor = { x = 2 y = 3 }
+					medium_armor = { x = 2 y = 4 }
+
+					medium_armor = { x = 3 y = 0 }
+					medium_armor = { x = 3 y = 1 }
+					medium_armor = { x = 3 y = 2 }
+					medium_armor = { x = 3 y = 3 }
+
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+					medium_armor = { x = 4 y = 2 }
+					medium_armor = { x = 4 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					anti_air = { x = 0 y = 1 }
+				}
+			}
+		}
+		EQS = {
+			random_owned_controlled_state = {
+				prioritize = { 1 }
+				create_unit = {
+					division = "name = \"1. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"2. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"3. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"4. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"5. Equestrian Armoured Corp\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
+			}
+		}
+	}
+}

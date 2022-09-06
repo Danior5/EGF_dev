@@ -15,4 +15,35 @@ on_actions = {
 			}
 		}
 	}
+	#Sunset's Counteroffensive
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_in_faction_with = EQS
+							tag = EQS
+						}
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = CHN
+							tag = CHN
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = sunset_offensive_ready
+					}
+				}
+				country_event = {
+					id = WW_spawn_in.1
+					days = 7
+				}
+				FROM.FROM = {
+					clr_state_flag = sunset_offensive_ready
+				}
+			}
+		}
+	}
 }
