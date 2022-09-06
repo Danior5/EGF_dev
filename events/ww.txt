@@ -189,7 +189,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = WW_spawn_in.1
+	id = ww.11
 	fire_only_once = yes
 	is_triggered_only = yes
 	hidden = yes

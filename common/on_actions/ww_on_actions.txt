@@ -37,7 +37,7 @@ on_actions = {
 					}
 				}
 				country_event = {
-					id = WW_spawn_in.1
+					id = ww.11
 					days = 7
 				}
 				FROM.FROM = {
