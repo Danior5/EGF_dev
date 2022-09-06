@@ -68,6 +68,28 @@ on_actions = {
 					country_event = ww.10
 				}
 			}
+			#HIP dying gives buffs to EQC
+			if = {
+				limit = {
+					ROOT = {
+						tag = HIP
+					}
+				}
+				EQC = {
+					country_event = ww.10
+				}
+			}
+			#EQC dying gives buffs to HIP
+			if = {
+				limit = {
+					ROOT = {
+						tag = EQC
+					}
+				}
+				HIP = {
+					country_event = ww.10
+				}
+			}
 		}
 	}
 }
