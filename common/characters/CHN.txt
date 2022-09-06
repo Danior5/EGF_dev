@@ -1188,7 +1188,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			cost = 50
 			traits = {
 				queen_helvia_WW
 			}
@@ -1219,7 +1218,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			cost = 50
 			traits = {
 				queen_aurantia_WW
 			}
@@ -1250,7 +1248,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			cost = 50
 			traits = {
 				queen_yaria_WW
 			}
@@ -1287,7 +1284,6 @@ characters={
 				}
 				has_government = fascism
 			}
-			cost = 50
 			traits = {
 				queen_argynnis_WW
 			}
