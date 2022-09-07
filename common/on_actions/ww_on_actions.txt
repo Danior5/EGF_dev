@@ -33,17 +33,19 @@ on_actions = {
 						}
 					}
 					FROM.FROM = {
-						state = 66
-						state = 119
-						state = 114
-						state = 101
-						state = 2
-						state = 3
-						state = 104
-						state = 74
-						state = 178
-						state = 135
-						state = 134
+						OR = {
+							state = 66
+							state = 119
+							state = 114
+							state = 101
+							state = 2
+							state = 3
+							state = 104
+							state = 74
+							state = 178
+							state = 135
+							state = 134
+						}
 					}
 				}
 				country_event = {
