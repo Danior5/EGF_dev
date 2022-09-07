@@ -196,6 +196,107 @@ country_event = {
 	desc = ww.11.d
 	immediate = {
 		EQS = {
+			if = {
+				limit = {
+					has_tech = advanced_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "Medium Tank, M26 'general Pershing'"
+					type = medium_tank_chassis_3
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_3
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_cast_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = secondary_turret_small_cannon
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 10
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "gfx/interface/technologies/USA_adv_main_tank.dds"
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "Medium Tank, M4 'general Sherman'"
+					type = medium_tank_chassis_2
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = additional_machine_guns
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 12
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "gfx/interface/technologies/USA_imp_main_tank.dds"
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "Medium Tank, M3 'general Lee'"
+					type = medium_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 12
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "gfx/interface/technologies/USA_basic_main_tank.dds"
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Medium Tank, M2"
+					type = medium_tank_chassis_0
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 12
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+				}
+			}
 			division_template = {
 				name = "Sunset Armour Division"
 				regiments = {
