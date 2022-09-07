@@ -290,9 +290,11 @@ country_event = {
 				}
 			}
 			every_controlled_state = {
-				any_neighbor_state = {
-					controller = {
-						has_war_with = EQS
+				limit = {
+					any_neighbor_state = {
+						controller = {
+							has_war_with = EQS
+						}
 					}
 				}
 				create_unit = {
