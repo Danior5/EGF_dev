@@ -220,6 +220,7 @@ country_event = {
 				icon = "gfx/interface/technologies/ENG_basic_main_tank.dds"
 				}
 			}
+			delete_unit_template_and_units = { division_template = "Sunset Armour Division" }
 			division_template = {
 				name = "Sunset Armour Division"
 				regiments = {
@@ -254,6 +255,7 @@ country_event = {
 					anti_air = { x = 0 y = 1 }
 				}
 			}
+			delete_unit_template_and_units = { division_template = "Sunset Infantry Division" }
 			division_template = {
 				name = "Sunset Infantry Division"
 				regiments = {
@@ -356,7 +358,6 @@ country_event = {
 				}
 			}
 		}
-	}
 	}
 	option = {
 		name = ww.11.a
