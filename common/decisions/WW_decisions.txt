@@ -835,7 +835,10 @@ foreign_politics = {
 				NIM = { add_to_faction = GRY }
 
 				
-				GRI	= { add_to_faction = HLQ }	
+				GRI = { add_to_faction = HLQ }
+
+				EQC = ( remove_ideas = WW_last_AC }	
+				HIP = ( remove_ideas = WW_last_AC }	
 			}
 		}
 		
@@ -873,7 +876,10 @@ foreign_politics = {
 				NIM = { add_to_faction = GRY }
 
 				
-				GRI	= { add_to_faction = HLQ }
+				GRI = { add_to_faction = HLQ }
+
+				EQC = ( remove_ideas = WW_last_AC }	
+				HIP = ( remove_ideas = WW_last_AC }
 			}
 		}
 	}

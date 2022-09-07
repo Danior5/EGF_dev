@@ -61,5 +61,22 @@ ideas = {
 				army_core_defence_factor = 0.1
 			}
 		}
+		WW_last_AC = {
+			removal_cost = -1
+			picture = generic_air_bonus
+			modifier = {
+				air_home_defence_factor = 0.2
+			}
+			equipment_bonus = {
+   				fighter_equipment = {
+				build_cost_ic = -0.25
+				instant = yes
+				}
+   				heavy_fighter_equipment = {
+				build_cost_ic = -0.25
+				instant = yes
+				}
+   			}
+		}
 	}	
 }

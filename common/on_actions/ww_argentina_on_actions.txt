@@ -1,73 +1,76 @@
 on_actions = {
+#	on_capitulation = {
+#		effect = {
+#			#EQS dying gives buffs to RCT, GRY and WNG
+#			if = {
+#				limit = {
+#					ROOT = {
+#						tag = EQS
+#					}
+#				}
+#				RCT = {
+#					country_event = ww.10
+#				}
+#				WNG = {
+#					country_event = ww.10
+#				}
+#				GRY = {
+#					country_event = ww.10
+#				}
+#			}
+#			#WNG or RCT dying gives buffs to EQS and STG
+#			if = {
+#				limit = {
+#					ROOT = {
+#						OR = {
+#							tag = WNG
+#							tag = RCT
+#						}
+#					}
+#				}
+#				EQS = {
+#					country_event = ww.10
+#				}
+#				STG = {
+#					country_event = ww.10
+#				}
+#			}
+#			#JER or GRI dying gives buffs to CHN and GRF
+#			if = {
+#				limit = {
+#					ROOT = {
+#						OR = {
+#							tag = JER
+#							tag = GRI
+#						}
+#					}
+#				}
+#				GRF = {
+#					country_event = ww.10
+#				}
+#				CHN = {
+#					country_event = ww.10
+#				}
+#			}
+#			#CHN dying gives buffs to JER and GRI
+#			if = {
+#				limit = {
+#					ROOT = {
+#						tag = CHN
+#					}
+#				}
+#				GRI = {
+#					country_event = ww.10
+#				}
+#				JER = {
+#					country_event = ww.10
+#				}
+#			}
+#		}
+#	}
 
-	
 	on_capitulation = {
 		effect = {
-			#EQS dying gives buffs to RCT, GRY and WNG
-			if = {
-				limit = {
-					ROOT = {
-						tag = EQS
-					}
-				}
-				RCT = {
-					country_event = ww.10
-				}
-				WNG = {
-					country_event = ww.10
-				}
-				GRY = {
-					country_event = ww.10
-				}
-			}
-			#WNG or RCT dying gives buffs to EQS and STG
-			if = {
-				limit = {
-					ROOT = {
-						OR = {
-							tag = WNG
-							tag = RCT
-						}
-					}
-				}
-				EQS = {
-					country_event = ww.10
-				}
-				STG = {
-					country_event = ww.10
-				}
-			}
-			#JER or GRI dying gives buffs to CHN and GRF
-			if = {
-				limit = {
-					ROOT = {
-						OR = {
-							tag = JER
-							tag = GRI
-						}
-					}
-				}
-				GRF = {
-					country_event = ww.10
-				}
-				CHN = {
-					country_event = ww.10
-				}
-			}
-			#CHN dying gives buffs to JER and GRI
-			if = {
-				limit = {
-					ROOT = {
-						tag = CHN
-					}
-				}
-				GRI = {
-					country_event = ww.10
-				}
-				JER = {
-					country_event = ww.10
-				}
-			}
 			#HIP dying gives buffs to EQC
 			if = {
 				limit = {
@@ -76,7 +79,7 @@ on_actions = {
 					}
 				}
 				EQC = {
-					country_event = ww.10
+					add_ideas = WW_last_AC
 				}
 			}
 			#EQC dying gives buffs to HIP
@@ -87,7 +90,7 @@ on_actions = {
 					}
 				}
 				HIP = {
-					country_event = ww.10
+					add_ideas = WW_last_AC
 				}
 			}
 		}
