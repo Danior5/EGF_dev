@@ -81,9 +81,9 @@ on_actions = {
 				EQC = {
 					add_ideas = WW_last_AC
 				}
-				every_country = {
-					set_country_flag = big_event_custom_hip_dead
-				}
+#				every_country = {
+#					set_country_flag = big_event_custom_hip_dead
+#				}
 			}
 			#EQC dying gives buffs to HIP
 			if = {
@@ -95,9 +95,9 @@ on_actions = {
 				HIP = {
 					add_ideas = WW_last_AC
 				}
-				every_country = {
-					set_country_flag = big_event_custom_eqc_dead
-				}
+#				every_country = {
+#					set_country_flag = big_event_custom_eqc_dead
+#				}
 			}
 		}
 	}
