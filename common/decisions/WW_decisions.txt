@@ -837,8 +837,8 @@ foreign_politics = {
 				
 				GRI = { add_to_faction = HLQ }
 
-				EQC = ( remove_ideas = WW_last_AC }	
-				HIP = ( remove_ideas = WW_last_AC }	
+				EQC = { remove_ideas = WW_last_AC }	
+				HIP = { remove_ideas = WW_last_AC }	
 			}
 		}
 		
@@ -878,8 +878,8 @@ foreign_politics = {
 				
 				GRI = { add_to_faction = HLQ }
 
-				EQC = ( remove_ideas = WW_last_AC }	
-				HIP = ( remove_ideas = WW_last_AC }
+				EQC = { remove_ideas = WW_last_AC }	
+				HIP = { remove_ideas = WW_last_AC }
 			}
 		}
 	}
