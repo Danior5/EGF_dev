@@ -48,9 +48,11 @@ on_actions = {
 						}
 					}
 				}
-				country_event = {
-					id = ww.11
-					days = 7
+				EQS = {
+					country_event = {
+						id = ww.11
+						days = 7
+					}
 				}
 			}
 		}
