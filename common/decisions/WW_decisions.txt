@@ -791,8 +791,8 @@ foreign_politics = {
 		}
 		available = {
 			AND = {
-				date > 1012.5.1
-				date < 1012.9.1
+				date > 1012.3.1
+				date < 1012.6.1
 			}
 		}
 		activation = {
@@ -800,7 +800,7 @@ foreign_politics = {
 		}
 		is_good = no
 		selectable_mission = yes
-		days_mission_timeout = 2068
+		days_mission_timeout = 1976
 		fire_only_once = yes
 		
 		timeout_effect = {
