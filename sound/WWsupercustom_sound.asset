@@ -18,3 +18,8 @@ sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
 	file = "customsound/newworld_symphony_zebra_war_sound.wav" ## location of the sound file
 	always_load = no
 }
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "hip_dead_bigevent_sound" #name you're using for the sound
+	file = "customsound/zigeunerweisen_hip_dead_sound.wav" ## location of the sound file
+	always_load = no
+}

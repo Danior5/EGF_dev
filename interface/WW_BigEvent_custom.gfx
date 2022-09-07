@@ -15,4 +15,8 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		name = "GFX_superevent_custom_zebra_war"
 		textureFile = "gfx//superevent_pictures//zebra_war_custom.tga"
 	}
+	spriteType = { #hip dead
+		name = "GFX_superevent_custom_hip_dead"
+		textureFile = "gfx//superevent_pictures//hip_dead_custom.tga"
+	}
 }

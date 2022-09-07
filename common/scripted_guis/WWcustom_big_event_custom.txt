@@ -101,4 +101,30 @@ scripted_gui = {
 			}
 		}
 	}
+	
+	#hip dead
+	
+	WW_big_event_hip_dead_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_hip_dead_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_hip_dead ### this global flag triggers the #superevent
+		}
+	}
+
+	WW_big_event_frame_hip_dead_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_frame_hip_dead_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_hip_dead
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_hip_dead ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }
