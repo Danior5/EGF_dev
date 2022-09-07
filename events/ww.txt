@@ -195,6 +195,7 @@ country_event = {
 	title = ww.11.t
 	desc = ww.11.d
 	immediate = {
+	hidden_effect = {
 		EQS = {
 			if = {
 				limit = {
@@ -412,6 +413,7 @@ country_event = {
 				}
 			}
 		}
+	}
 	}
 	option = {
 		name = ww.11.a
