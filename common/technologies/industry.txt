@@ -231,6 +231,78 @@ technologies = {
 			cat_production
 		}
 	}
+	
+	#Conversion branch - Enabled in DoD
+	improved_equipment_conversion = {
+
+		#equipment_conversion_speed = 0.40
+		production_factory_efficiency_gain_factor = 0.05
+		
+		allow_branch = {
+			has_dlc = "Death or Dishonor"
+		}
+
+		path = {
+			leads_to_tech = advanced_equipment_conversion
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1008
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1008.1.1"
+			}
+
+		}
+
+		categories = {
+			industry
+			cat_production
+		}
+	}
+
+	advanced_equipment_conversion = {
+
+		#equipment_conversion_speed = 0.40
+		production_factory_efficiency_gain_factor = 0.05
+		
+		research_cost = 2
+		start_year = 1010
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+
+		categories = {
+			industry
+			cat_production
+		}
+	}
 
 	#Conversion branch - Enabled in DoD
 	#PDX sucks at coding, they literally tried to make conversion a semi-functioning mechanic like 4 times already and each time they ended up creating more and more broken exploits lmao, ratio
@@ -243,7 +315,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		
 		dependencies = {
 			infantry_weapons = 1
@@ -298,7 +370,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry3
 			research_cost_coeff = 1
@@ -336,7 +408,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry4
 			research_cost_coeff = 1
@@ -373,7 +445,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
@@ -412,7 +484,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry_a
 			research_cost_coeff = 1
