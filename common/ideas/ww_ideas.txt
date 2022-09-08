@@ -78,5 +78,12 @@ ideas = {
 				}
    			}
 		}
+		WW_incompetent_tanks = {
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				army_armor_attack_factor = -1
+			}
+		}
 	}	
 }
