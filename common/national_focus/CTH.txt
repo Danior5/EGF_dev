@@ -2703,11 +2703,11 @@ focus_tree = {
 			#has_war = no
 			HIP = {
 				NOT = {
-					owns_state = 695
-					owns_state = 698
-					owns_state = 697
-					owns_state = 711
-					owns_state = 710
+					controls_state = 695
+					controls_state = 698
+					controls_state = 697
+					controls_state = 711
+					controls_state = 710
 				}
 			}
 		}
@@ -2737,11 +2737,11 @@ focus_tree = {
 		available = {
 			HIP = {
 				NOT = {
-					owns_state = 694
-					owns_state = 693
-					owns_state = 696
-					owns_state = 687
-					owns_state = 1199
+					controls_state = 694
+					controls_state = 693
+					controls_state = 696
+					controls_state = 687
+					controls_state = 1199
 				}
 			}
 		}
