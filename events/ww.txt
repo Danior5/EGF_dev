@@ -290,49 +290,70 @@ country_event = {
 			random_owned_controlled_state = {
 				prioritize = { 1 }
 				create_unit = {
-					division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"1st 'Canterlot High' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"2nd 'Crystal Prep High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"2nd 'Crystal Prep High' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"5th 'Bonple High School' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
 					}
 				}
 				create_unit = {
-					division = "name = \"7th 'Pravda High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 0.5  start_equipment_factor = 1"
+					division = "name = \"7th 'Pravda High School' Tank Division\" 
+					division_template = \"Sunset Armour Division\" 
+					start_experience_factor = 0.5  
+					start_equipment_factor = 1"
 					owner = EQS
 					force_equipment_variants = {
 						Cruiser A40 'Shimmer'
@@ -348,15 +369,24 @@ country_event = {
 					}
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" 
+					division_template = \"Sunset Infantry Division\" 
+					start_experience_factor = 0.05 
+					start_equipment_factor = 0.8"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" 
+					division_template = \"Sunset Infantry Division\" 
+					start_experience_factor = 0.05 
+					start_equipment_factor = 0.8"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" 
+					division_template = \"Sunset Infantry Division\" 
+					start_experience_factor = 0.05 
+					start_equipment_factor = 0.8"
 					owner = EQS
 				}
 			}
