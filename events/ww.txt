@@ -348,15 +348,15 @@ country_event = {
 					}
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
 					owner = EQS
 				}
 				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
 					owner = EQS
 				}
 			}
