@@ -447,3 +447,238 @@ country_event = {
 		set_country_flag = EQS_sunset_shimmer_arrived
 	}
 }
+country_event = {
+	id = ww.12
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		add_timed_idea = { idea = WW_JER_counteroffensive days = 100 }
+		JER = {
+			if = {
+				limit = {
+					has_tech = advanced_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "AMX28 'Cuirassier'"
+					type = medium_tank_chassis_3
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 14
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "gfx/interface/technologies/FRA_basic_main_tank.dds"
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "AMX28 'Cuirassier'"
+					type = medium_tank_chassis_2
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 14
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "gfx/interface/technologies/FRA_basic_main_tank.dds"
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_medium_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "AMX28 'Cuirassier'"
+					type = medium_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 14
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "gfx/interface/technologies/FRA_basic_main_tank.dds"
+				}
+			}
+			else_if = {
+				create_equipment_variant = {
+					name = "AMX28 'Cuirassier'"
+					type = medium_tank_chassis_0
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_2
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_3
+						special_type_slot_2 = secondary_turret_small_cannon 
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = wet_ammo_storage
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 14
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "gfx/interface/technologies/FRA_basic_main_tank.dds"
+				}
+			}
+			delete_unit_template_and_units = { division_template = "Guard Armour Division" }
+			division_template = {
+				name = "Guard Armour Division"
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+	
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					medium_armor = { x = 2 y = 3 }
+					medium_armor = { x = 2 y = 4 }
+
+					medium_armor = { x = 3 y = 0 }
+					medium_armor = { x = 3 y = 1 }
+					medium_armor = { x = 3 y = 2 }
+					medium_armor = { x = 3 y = 3 }
+
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+					medium_armor = { x = 4 y = 2 }
+					medium_armor = { x = 4 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					anti_air = { x = 0 y = 1 }
+				}
+			}
+			delete_unit_template_and_units = { division_template = "Guard Infantry Division" }
+			division_template = {
+				name = "Guard Infantry Division"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+	
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					
+					artillery_brigade = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					anti_tank_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					anti_tank = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+					anti_air = { x = 0 y = 3 }
+				}
+			}
+		}
+		JER = {
+			random_owned_controlled_state = {
+				prioritize = { 1 }
+				create_unit = {
+					division = "name = \"1st Old Guard Division\" division_template = \"Guard Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = JER
+					force_equipment_variants = {
+						AMX28 'Cuirassier'
+					}
+				}
+				create_unit = {
+					division = "name = \"2nd Old Guard Division\" division_template = \"Guard Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = JER
+					force_equipment_variants = {
+						AMX28 'Cuirassier'
+					}
+				}
+				create_unit = {
+					division = "name = \"3rd Old Guard Division\" division_template = \"Guard Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = JER
+					force_equipment_variants = {
+						AMX28 'Cuirassier'
+					}
+				}
+				create_unit = {
+					division = "name = \"4th Old Guard Division\" division_template = \"Guard Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = JER
+					force_equipment_variants = {
+						AMX28 'Cuirassier'
+					}
+				}
+				create_unit = {
+					division = "name = \"5th Old Guard Division\" division_template = \"Guard Armour Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = JER
+					force_equipment_variants = {
+						AMX28 'Cuirassier'
+					}
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					any_neighbor_state = {
+						controller = {
+							has_war_with = JER
+						}
+					}
+				}
+				create_unit = {
+					division = "name = \"Young Guard Division\" division_template = \"Guard Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
+					owner = JER
+				}
+				create_unit = {
+					division = "name = \"Young Guard Division\" division_template = \"Guard Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
+					owner = JER
+				}
+				create_unit = {
+					division = "name = \"Young Guard Division\" division_template = \"Guard Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
+					owner = JER
+				}
+			}
+		}
+	}
+}

@@ -30,6 +30,23 @@ ideas = {
 				planning_speed = 1.0
 			}
 		}
+		WW_JER_counteroffensive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = fra_deluge
+			modifier = {
+				army_attack_factor = 0.2
+				army_core_attack_factor = 0.2
+				breakthrough_factor = 0.2
+				army_speed_factor = 0.15
+				no_supply_grace	= 72.0
+			}
+		}
 		WW_CHN_core_buff = {
 			allowed = {
 				always = no

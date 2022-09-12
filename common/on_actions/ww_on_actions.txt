@@ -15,6 +15,24 @@ on_actions = {
 			}
 		}
 	}
+	#GRI dying gives JER steroids
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = GRI
+					}
+				}
+				JER = {
+					country_event = {
+						id = ww.12
+						days = 30
+					}
+				}
+			}
+		}
+	}
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {
