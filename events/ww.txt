@@ -533,7 +533,7 @@ country_event = {
 					icon = "gfx/interface/technologies/FRA_basic_main_tank.dds"
 				}
 			}
-			else_if = {
+			else = {
 				create_equipment_variant = {
 					name = "AMX28 'Cuirassier'"
 					type = medium_tank_chassis_0
