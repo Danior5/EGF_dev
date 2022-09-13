@@ -275,7 +275,7 @@ country_event = {
 					icon = "gfx/interface/technologies/ENG_basic_main_tank.dds"
 				}
 			}
-			else_if = {
+			else = {
 				create_equipment_variant = {
 					name = "Cruiser A40 'Shimmer'"
 					type = medium_tank_chassis_0
