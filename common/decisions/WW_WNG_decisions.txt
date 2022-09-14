@@ -1,4 +1,4 @@
-war_measures = {
+military_training_category = {
 	WW_WNG_inundate_the_water_lines = {
 
 		icon = hol_inundate_water_lines
@@ -20,6 +20,11 @@ war_measures = {
 		days_remove = 14
 
 		highlight_states = {
+			highlight_state_targets = { 
+				state = 487 
+				state = 652 
+				state = 521 
+			}
 			highlight_state_targets = { 
 				state = 487 
 				state = 652 
@@ -97,7 +102,7 @@ war_measures = {
 					}
 				}
 			}
-			set_global_flag = WNG_inundation_lines_flooded
+			set_global_flag = WW_WNG_inundation_lines_flooded
 		}
 
 		complete_effect = {
@@ -105,7 +110,7 @@ war_measures = {
 
 	}
 
-	WNG_drain_the_water_lines = {
+	WW_WNG_drain_the_water_lines = {
 
 		icon = hol_drain_water_lines
 
@@ -157,7 +162,7 @@ war_measures = {
 			487 = { is_fully_controlled_by = ROOT }
 			652 = { is_fully_controlled_by = ROOT }
 			521 = { is_fully_controlled_by = ROOT }
-			has_global_flag = HOL_inundation_lines_flooded
+			has_global_flag = WW_WNG_inundation_lines_flooded
 		}
 
 		remove_effect = {
@@ -203,7 +208,7 @@ war_measures = {
 					}
 				}
 			}
-			clr_global_flag = WNG_inundation_lines_flooded
+			clr_global_flag = WW_WNG_inundation_lines_flooded
 		}
 
 		complete_effect = {
