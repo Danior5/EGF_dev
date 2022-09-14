@@ -36,7 +36,8 @@
  WW_JERvsWNG_mission:0 "Declare war on Wingbardy"
  WW_WNGvsBAT_mission:0 "Declare war on Chiropterra and Colthage"
  
-
+ WW_WNG_inundate_the_water_lines:0 "Inundate the Tarrin Area"
+ WW_WNG_drain_the_water_lines:0 "Drain the Tarrin Area"
  
  WW_spawn_50w:0 "Spawn a 50 width Division Template"
  
