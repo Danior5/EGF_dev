@@ -1281,6 +1281,7 @@ characters={
 					has_idea = chn_queen_helvia
 					has_idea = chn_queen_aurantia
 					has_idea = chn_queen_yaria
+					date > 1010.01.01
 				}
 				has_government = fascism
 			}

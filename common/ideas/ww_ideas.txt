@@ -65,9 +65,9 @@ ideas = {
 			removal_cost = -1
 			picture = generic_navy_bonus
 			modifier = {
-				naval_damage_factor = 0.2
-				naval_hit_chance = 0.2
-				naval_speed_factor = 0.2
+				naval_damage_factor = 0.3
+				naval_hit_chance = 0.3
+				naval_speed_factor = 0.3
 			}
 		}
 		WW_escaped_officers = {
