@@ -1,4 +1,4 @@
-foreign_politics = {
+WW_category = {
 	BAK_pregrinded_general= {
 		icon = GFX_decision_icon_default
 
