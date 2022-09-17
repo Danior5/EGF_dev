@@ -770,6 +770,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = RCT_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
