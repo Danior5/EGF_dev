@@ -168,7 +168,7 @@ characters={
 		}
 	}
 	HLQ_WW_fieldmarshel = {
-		name = "Lalo Salamanca"		
+		name = "Lalo Salamanca"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/lalo.tga"
@@ -238,10 +238,10 @@ characters={
 		}
 	}
 	RCT_WW_fieldmarshel = {
-		name = "Josip Broz Tito "
+		name = "Kim Wexler"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/tito.tga"
+				large = "gfx/leaders/WW/kim.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}

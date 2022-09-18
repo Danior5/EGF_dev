@@ -1,4 +1,4 @@
-foreign_politics = {
+WW_category = {
 	BAK_pregrinded_general= {
 		icon = GFX_decision_icon_default
 
@@ -16,11 +16,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = BAK
-			}
+		allowed = {
+			original_tag = BAK
 		}
 		
 		complete_effect = {
@@ -60,11 +57,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = BAT
-			}
+		allowed = {
+			original_tag = BAT
 		}
 		
 		complete_effect = {
@@ -104,11 +98,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = CHN
-			}
+		allowed = {
+			original_tag = CHN
 		}
 		
 		complete_effect = {
@@ -148,11 +139,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = CRY
-			}
+		allowed = {
+			original_tag = CRY
 		}
 		
 		complete_effect = {
@@ -192,11 +180,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = CTH
-			}
+		allowed = {
+			original_tag = CTH
 		}
 		
 		complete_effect = {
@@ -236,11 +221,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = EQC
-			}
+		allowed = {
+			original_tag = EQC
 		}
 		
 		complete_effect = {
@@ -280,11 +262,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = EQS
-			}
+		allowed = {
+			original_tag = EQS
 		}
 		
 		complete_effect = {
@@ -323,11 +302,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = FAT
-			}
+		allowed = {
+			original_tag = FAT
 		}
 		
 		complete_effect = {
@@ -366,11 +342,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = GRF
-			}
+		allowed = {
+			original_tag = GRF
 		}
 		
 		complete_effect = {
@@ -409,11 +382,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = GRI
-			}
+		allowed = {
+			original_tag = GRI
 		}
 		
 		complete_effect = {
@@ -452,11 +422,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = GRY
-			}
+		allowed = {
+			original_tag = GRY
 		}
 		
 		complete_effect = {
@@ -495,11 +462,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = HIP
-			}
+		allowed = {
+			original_tag = HIP
 		}
 		
 		complete_effect = {
@@ -538,11 +502,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = HLQ
-			}
+		allowed = {
+			original_tag = HLQ
 		}
 		
 		complete_effect = {
@@ -582,11 +543,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = JER
-			}
+		allowed = {
+			original_tag = JER
 		}
 		
 		complete_effect = {
@@ -625,11 +583,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = LCT
-			}
+		allowed = {
+			original_tag = LCT
 		}
 		
 		complete_effect = {
@@ -668,11 +623,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = NIM
-			}
+		allowed = {
+			original_tag = NIM
 		}
 		
 		complete_effect = {
@@ -711,11 +663,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = PNG
-			}
+		allowed = {
+			original_tag = PNG
 		}
 		
 		complete_effect = {
@@ -754,11 +703,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = RCT
-			}
+		allowed = {
+			original_tag = RCT
 		}
 		
 		complete_effect = {
@@ -770,6 +716,7 @@ foreign_politics = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = RCT_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -797,11 +744,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = ROU
-			}
+		allowed = {
+			original_tag = ROU
 		}
 		
 		complete_effect = {
@@ -840,11 +784,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = STG
-			}
+		allowed = {
+			original_tag = STG
 		}
 		
 		complete_effect = {
@@ -883,11 +824,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = TRD
-			}
+		allowed = {
+			original_tag = TRD
 		}
 		
 		complete_effect = {
@@ -926,11 +864,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = WIT
-			}
+		allowed = {
+			original_tag = WIT
 		}
 		
 		complete_effect = {
@@ -969,11 +904,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = WNG
-			}
+		allowed = {
+			original_tag = WNG
 		}
 		
 		complete_effect = {
@@ -1012,11 +944,8 @@ foreign_politics = {
 		
 		fire_only_once = yes
 
-		visible = {
-			AND = {
-				is_ai = no
-				TAG = YAL
-			}
+		allowed = {
+				original_tag = YAL
 		}
 		
 		complete_effect = {

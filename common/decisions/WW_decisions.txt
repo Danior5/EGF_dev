@@ -1,5 +1,4 @@
-
-foreign_politics = {
+WW_category = {
 
 	GRI_intergrate_BRZ = {
 		icon = generic_form_nation
