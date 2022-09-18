@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "category_gamer"
+		texturefile = "gfx/interface/decisions/category_gamer.dds"
+	}
+}
