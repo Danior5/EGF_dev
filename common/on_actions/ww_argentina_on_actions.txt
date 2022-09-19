@@ -77,6 +77,7 @@ on_actions = {
 					ROOT = {
 						tag = HIP
 					}
+					date < 1012.03.01
 				}
 				EQC = {
 					add_ideas = WW_last_AC
@@ -91,6 +92,7 @@ on_actions = {
 					ROOT = {
 						tag = EQC
 					}
+					date < 1012.03.01
 				}
 				HIP = {
 					add_ideas = WW_last_AC
