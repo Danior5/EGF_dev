@@ -1,4 +1,7 @@
-﻿l_english:
+﻿##This organisation fucking sucks
+##Why did we organise it like this :bruh:
+
+l_english:
 # ww.4.t:0 " Countries smack talk each other "
 # ww.4.d:0 " Leadears are denouncing each other left and right. People are worried about looming global conflict. "
 # ww.4.a:0 " Idiots! "
@@ -35,7 +38,8 @@
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_JERvsWNG_mission:0 "Declare war on Wingbardy"
  WW_WNGvsBAT_mission:0 "Declare war on Chiropterra and Colthage"
- 
+
+ WW_JERvsWNG_mission_timer:0 "War with Aquileia"
  WW_WNG_inundate_the_water_lines:0 "Inundate the Tarrin Area"
  WW_WNG_drain_the_water_lines:0 "Drain the Tarrin Area"
  
