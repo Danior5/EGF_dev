@@ -1,6 +1,6 @@
 alarm_clock_category = {
 	WW_JERvsWNG_mission_timer = {
-		icon = generic_ignite_civil_war
+		icon = decisions_alarm_clock
 		allowed = {
 				original_tag = WNG
 		}
