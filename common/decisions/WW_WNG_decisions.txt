@@ -1,4 +1,4 @@
-WW_category = {
+alarm_clock_category = {
 	WW_JERvsWNG_mission_timer = {
 		icon = generic_ignite_civil_war
 		allowed = {
