@@ -9,7 +9,11 @@ WW_category = {		#ID of category
 	allowed = {
 		always = yes
 	}
-	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
-		is_ai = no
+}
+alarm_clock_category = {
+	priority = 9998
+	icon =  category_alarm_clock
+	allowed = {
+		always = yes
 	}
 }

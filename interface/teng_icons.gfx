@@ -3,4 +3,12 @@ spriteTypes = {
 		name = "category_gamer"
 		texturefile = "gfx/interface/decisions/category_gamer.dds"
 	}
+	spriteType = {
+		name = "category_alarm_clock"
+		texturefile = "gfx/interface/decisions/category_alarm_clock.dds"
+	}
+	spriteType = {
+		name = "decisions_alarm_clock"
+		texturefile = "gfx/interface/decisions/decision_alarm_clock.dds"
+	}
 }

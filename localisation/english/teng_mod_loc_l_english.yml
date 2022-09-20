@@ -54,3 +54,8 @@
  BAK_increase_n_ww:0 "\nThe §YBSP§! will §Ggain§! §Y100%§! §CVoter§! Support\n\n"
  
  WW_category:0 "MP decisions"
+ alarm_clock_category:0 "EAW alarm clock"
+ 
+ alarmover.1.t:0 "Aqulia Is Able to declare war "
+ alarmover.1.d:0 "today is the first day that aqulia is able to declare its war\n This will now start the land war in eastern griffonia by bringing in Hellquill as well.\n\n you should by now have your army ready or face the consequences"
+ alarmover.1.a:0 "Incoming!"
