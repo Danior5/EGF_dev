@@ -612,9 +612,12 @@ WW_category = {
 		
 		timeout_effect = {
 			#set_global_flag = GRI_war_immenent
-			every_country = {
-			set_country_flag = big_event_custom_island_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_island_war
+				}
 			}
+			custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -625,45 +628,50 @@ WW_category = {
 					target = EQS 
 				}
 			}
+			hidden_effect = {
+				BAK = { add_to_faction = HIP }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
 			
-			BAK = { add_to_faction = HIP }
-			BAK = { add_to_faction = EQS }
-			BAK = { add_to_faction = CRY }		
-			BAK = { add_to_faction = STG }		
-		
-			RCT = { add_to_faction = HIP }
-			RCT = { add_to_faction = EQS }
-			RCT = { add_to_faction = CRY }		
-			RCT = { add_to_faction = STG }	
+				RCT = { add_to_faction = HIP }
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-			LCT = { add_to_faction = HIP }
-			LCT = { add_to_faction = EQS }
-			LCT = { add_to_faction = CRY }		
-			LCT = { add_to_faction = STG }		
+				LCT = { add_to_faction = HIP }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-			WIT = { add_to_faction = HIP }
-			WIT = { add_to_faction = EQS }
-			WIT = { add_to_faction = CRY }		
-			WIT = { add_to_faction = STG }		
-				
-			NIM = { add_to_faction = HIP }
-			NIM = { add_to_faction = EQS }
-			NIM = { add_to_faction = CRY }		
-			NIM = { add_to_faction = STG }	
+				WIT = { add_to_faction = HIP }
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = HIP }
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 
-			GRI	= { add_to_faction = CTH }
-			GRI	= { add_to_faction = BAT }
-
-			FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				GRI	= { add_to_faction = CTH }
+				GRI	= { add_to_faction = BAT }
+			
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			}
+			custom_effect_tooltip = adding_toratoratora
 		}
 		
 		complete_effect = {
-			every_country = {
-			set_country_flag = big_event_custom_island_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_island_war
+				}
 			}
+			custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -674,38 +682,41 @@ WW_category = {
 					target = EQS 
 				}
 			}
-			BAK = { add_to_faction = HIP }
-			BAK = { add_to_faction = EQS }
-			BAK = { add_to_faction = CRY }		
-			BAK = { add_to_faction = STG }		
-		
-			RCT = { add_to_faction = HIP }
-			RCT = { add_to_faction = EQS }
-			RCT = { add_to_faction = CRY }		
-			RCT = { add_to_faction = STG }	
+			hidden_effect = {
+				BAK = { add_to_faction = HIP }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = HIP }
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-			LCT = { add_to_faction = HIP }
-			LCT = { add_to_faction = EQS }
-			LCT = { add_to_faction = CRY }		
-			LCT = { add_to_faction = STG }		
+				LCT = { add_to_faction = HIP }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-			WIT = { add_to_faction = HIP }
-			WIT = { add_to_faction = EQS }
-			WIT = { add_to_faction = CRY }		
-			WIT = { add_to_faction = STG }		
-				
-			NIM = { add_to_faction = HIP }
-			NIM = { add_to_faction = EQS }
-			NIM = { add_to_faction = CRY }		
-			NIM = { add_to_faction = STG }	
+				WIT = { add_to_faction = HIP }
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = HIP }
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 
-			GRI = { add_to_faction = CTH }
-			GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = BAT }
 
-			FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-			JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			}	
+			custom_effect_tooltip = adding_toratoratora
 		}
 	}
 	
@@ -805,8 +816,10 @@ WW_category = {
 		fire_only_once = yes
 		
 		timeout_effect = {
-			every_country = {
-			set_country_flag = big_event_custom_great_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_great_war
+				}
 			}
 			CHN = {
 				add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
@@ -830,8 +843,10 @@ WW_category = {
 		}
 		
 		complete_effect = {
-			every_country = {
-			set_country_flag = big_event_custom_great_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_great_war
+				}
 			}
 			CHN = {
 				add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
@@ -875,8 +890,10 @@ WW_category = {
 		fire_only_once = yes
 		
 		timeout_effect = {
-			every_country = {
-			set_country_flag = big_event_custom_tarrin_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_tarrin_war
+				}
 			}
 			JER = {
 				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
@@ -915,8 +932,10 @@ WW_category = {
 		}
 		
 		complete_effect = {
-			every_country = {
-				set_country_flag = big_event_custom_tarrin_war
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_tarrin_war
+				}
 			}
 			
 			JER = {
