@@ -2815,6 +2815,7 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = { state = 153 }
+					153 = {is_capital = yes}
 					NOT = { has_global_flag = stalliongrad_nuked }
 				}
 				set_global_flag = stalliongrad_nuked
@@ -4393,6 +4394,7 @@ on_actions = {
 					}
 				}
 			}
+			actually_fix_weapon_techs = yes
 		}
 	}
 
@@ -5320,6 +5322,51 @@ on_actions = {
 					remove_opinion_modifier = {
 						target = PREV
 						modifier = mortal_enemies
+					}
+				}
+				if = {
+					limit = { has_character = MQA_ceyda_vatosoa }
+	
+					if = {
+						limit = { has_government = democratic }
+	
+						MQA_ceyda_vatosoa = {
+							set_portraits = {
+								civilian = {
+									large = "gfx/leaders/MQA/Ceyda_Vatosoa_harmony.tga"
+								}	
+								army = {
+									large = "gfx/leaders/MQA/Ceyda_Vatosoa_harmony.tga"
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = { has_government = fascism }
+
+						MQA_ceyda_vatosoa = {
+							set_portraits = {
+								civilian = {
+									large = "gfx/leaders/MQA/Ceyda_Vatosoa_Supremacy.tga"
+								}
+								army = {
+									large = "gfx/leaders/MQA/Ceyda_Vatosoa_Supremacy.tga"
+								}
+							}
+						}
+
+						else = {
+							MQA_ceyda_vatosoa = {
+								set_portraits = {
+									civilian = {
+										large = "gfx/leaders/MQA/Ceyda_Vatosoa.tga"
+									}
+									army = {
+										large = "gfx/leaders/MQA/Ceyda_Vatosoa.tga"
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -6726,6 +6773,17 @@ on_actions = {
 									tag = HIE
 								}
 						    }
+							NOT = {
+								ROOT = {
+									any_enemy_country = {
+										AND = {
+											is_subject = no
+											has_country_flag = north_zebrican_war_participant
+											has_capitulated = no
+										}
+									}
+								}
+							}
 						}
 					}
 					set_country_flag = HIP_won_north_zebrican_war
