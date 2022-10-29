@@ -129,8 +129,8 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 2				-- Number of human players as winners needed for peace conference to pause and open for everyone in multiplayer, needs to fullfill MP_NUM_LOSERS_FOR_PEACE_PAUSE as well.
 NDefines.NDiplomacy.MP_NUM_LOSERS_FOR_PEACE_PAUSE = 0				-- Number of human players as losers needed for peace conference to pause and open for everyone in multiplayer, needs to fullfill MP_NUM_WINNERS_FOR_PEACE_PAUSE as well.
 
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 50					-- Days of client lag for decrease of gamespeed
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 50				-- Days of client lag for pause of gamespeed.
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 250					-- Days of client lag for decrease of gamespeed
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250				-- Days of client lag for pause of gamespeed.
 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
