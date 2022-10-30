@@ -1,4 +1,5 @@
 add_namespace = ww
+add_namespace = ww.news
 
 country_event = { #factions
 	id = ww.5
@@ -454,7 +455,7 @@ news_event = {  ### Sunset worldwide news event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.1"}
 	title = ww.news.1.t
 	desc = ww.news.1.d
-	picture = GFX_news_elf_assault
+	picture = GFX_news_ponies_advance
 
 	major = yes
 
