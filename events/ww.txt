@@ -187,11 +187,11 @@ country_event = {
 		add_ideas = WW_escaped_officers
 	}
 }
-country_event = {
+country_event = { ### Sunset's Great Counteroffensive
 	id = ww.11
 	fire_only_once = yes
 	is_triggered_only = yes
-	#hidden = yes
+	hidden = yes
 	title = ww.11.t
 	desc = ww.11.d
 	immediate = {
@@ -445,8 +445,28 @@ country_event = {
 		name = ww.11.a
 		custom_effect_tooltip = sunset_shimmer_stats_tp
 		set_country_flag = EQS_sunset_shimmer_arrived
+		hidden_effect = { news_event = { hours = 1 id = ww.news.1 } }
 	}
 }
+
+news_event = {  ### Sunset worldwide news event
+	id = ww.news.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.1"}
+	title = ww.news.1.t
+	desc = ww.news.1.d
+	picture = GFX_news_elf_assault
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww.news.1.a
+	}
+}
+
+
+
 country_event = {
 	id = ww.12
 	fire_only_once = yes
