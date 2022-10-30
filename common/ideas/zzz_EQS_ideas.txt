@@ -843,6 +843,7 @@ ideas = {
 			removal_cost = -1
 			picture = EQS_war_plan_equestria
 			modifier = {
+				conscription = 0.03
 				repair_speed_factor = 0.25
 				navy_fuel_consumption_factor = -0.5
 				industrial_capacity_dockyard = 0.15
