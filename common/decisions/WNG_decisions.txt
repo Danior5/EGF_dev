@@ -325,33 +325,25 @@ form_WNG_workers_empire_category = {
 			set_country_flag = is_wng_empire
 			if = {
 				limit = {
-					has_country_leader = {
-						character = WNG_antonino_proletarino
-						ruling_only = yes
-					}
-				}
-				WNG_antonino_proletarino = {
-					set_portraits = {
-						civilian = {
-							large = "gfx/leaders/WNG/portrait_k_prolet.tga"
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
 					371 = {
 						is_capital = no
 					}
 				}
-				set_capital = { state = 371 }
+				set_capital = 371
 			}
-			WNG = { add_to_ROOT_potential_cores = yes }
-			FAL = { add_to_ROOT_potential_cores = yes }
-			SIC = { add_to_ROOT_potential_cores = yes }
-			TAL = { add_to_ROOT_potential_cores = yes }
-			FRN = { add_to_ROOT_potential_cores = yes }
-			ARA = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ARA
+						is_core_of = FRN
+						is_core_of = JES
+						is_core_of = TAL
+						is_core_of = FAL
+						is_core_of = SIC
+					}
+				}
+				add_core_of = ROOT
+			}
 			hidden_effect = {
 				news_event = { id = news_wingbardy.11 hours = 6 }
 				set_global_flag = form_wingbardian_empire_flag
@@ -399,7 +391,14 @@ form_WNG_workers_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			EQC = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = EQC
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -443,7 +442,14 @@ form_WNG_workers_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			BOI = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BOI
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -487,7 +493,14 @@ form_WNG_workers_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			LAK = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LAK
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -564,7 +577,7 @@ form_WNG_workers_empire_category = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 150
 
 		available = {
 			is_subject = no
@@ -575,7 +588,12 @@ form_WNG_workers_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			671 = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = CYA
+					}
+				}
 				add_core_of = ROOT
 			}
 		}
@@ -612,15 +630,6 @@ form_WNG_wingbardian_empire_category = {
 						has_completed_focus = WNG_the_karthinian_restoration
 						has_completed_focus = WNG_unite_the_kingdoms
 					}
-				}
-			}
-			if = {
-				limit = {
-					original_tag = TAL
-				}
-				NOT = {
-					has_government = fascism
-					has_government = communism
 				}
 			}
 			NOT = { has_global_flag = form_wingbardian_empire_flag }
@@ -668,65 +677,28 @@ form_WNG_wingbardian_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
+			set_cosmetic_tag = WNG_EMPIRE
 			set_country_flag = is_wng_empire
 			if = {
-                limit = {
-                    tag = FAL
-				}
-                drop_cosmetic_tag = yes
-                set_cosmetic_tag = FAL_Falcoria
-				if = { 
-					limit = { 
-						has_government = fascism
-					}
-					country_event = falcor.24
-				}
-			}
-			else = {
-				set_capital = {
-					state = 371
-					remember_old_capital = no 
-				}
-			}
-			if = {
 				limit = {
-					has_cosmetic_tag = JER_FRN_formed
-				}
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = FRN_karthinia_aquileia
-			}
-			else_if = {
-				limit = {
-					has_country_flag = have_regular_puppets
-				}
-				set_cosmetic_tag = WNG_EMPIRE_REPUBLIC
-			}
-			else_if = {
-				limit = {
-					NOT = {original_tag = FAL }
-				}
-				set_cosmetic_tag = WNG_EMPIRE
-			}
-			WNG = { add_to_ROOT_potential_cores = yes }
-			FAL = { add_to_ROOT_potential_cores = yes }
-			SIC = { add_to_ROOT_potential_cores = yes }
-			TAL = { add_to_ROOT_potential_cores = yes }
-			FRN = { add_to_ROOT_potential_cores = yes }
-			ARA = { add_to_ROOT_potential_cores = yes }
-			if = {
-				limit = {
-					has_country_leader = {
-						character = WNG_giulio_beakolini
-						ruling_only = yes
+					371 = {
+						is_capital = no
 					}
 				}
-				WNG_giulio_beakolini = {
-					set_portraits = {
-						civilian = {
-							large = "gfx/leaders/WNG/portrait_wingbardy_giulio_beakolini_karthin.tga"
-						}
+				set_capital = 371
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ARA
+						is_core_of = FRN
+						is_core_of = JES
+						is_core_of = TAL
+						is_core_of = FAL
+						is_core_of = SIC
 					}
 				}
+				add_core_of = ROOT
 			}
 			hidden_effect = {
 				news_event = { id = news_wingbardy.10 hours = 6 }
@@ -764,7 +736,7 @@ form_WNG_wingbardian_empire_category = {
 					}
 				}
 			}
-			NOT = { has_country_leader = { ruling_only = yes character = TAL_amilcare_fetivola } }
+			NOT = { has_country_leader = { ruling_only = yes name = "Amilcare Fetivola" } }
 		}
 
 		fire_only_once = yes
@@ -773,102 +745,23 @@ form_WNG_wingbardian_empire_category = {
 
 		available = {
 			is_subject = no
-			has_war = no
 			# Wingbardy
 			has_country_flag = is_wng_empire
-			has_full_control_of_state = 356
-			has_full_control_of_state = 360
-			has_full_control_of_state = 361
-			has_full_control_of_state = 675
-			has_full_control_of_state = 676
-			has_full_control_of_state = 362
-			has_full_control_of_state = 363
-			has_full_control_of_state = 364
-			has_full_control_of_state = 365
-			has_full_control_of_state = 354
-			has_full_control_of_state = 355
-			has_full_control_of_state = 356
-			has_full_control_of_state = 357
-			has_full_control_of_state = 358
-			has_full_control_of_state = 359
-			EQC = {
-				exists = no
-			}
+			owns_state = 356
 		}
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			custom_effect_tooltip = release_EQC_tp
-			hidden_effect = {
-				add_state_core = 358
-				EQC = {
-					transfer_state = 360
-					transfer_state = 361
-					transfer_state = 675
-					transfer_state = 676
-					transfer_state = 362
-					transfer_state = 363
-					transfer_state = 364
-					transfer_state = 365
-					transfer_state = 354
-					transfer_state = 355
-					transfer_state = 356
-					transfer_state = 357
-					transfer_state = 359
-					ROOT = {
-						puppet = PREV
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = EQC
 					}
 				}
-				EQC = {
-					generate_character = {
-						token_base = WNG_EQC_puppet_leader
-						name = WNG_EQC_puppet_leader
-					}
-					if = {
-						limit = {
-							has_character = WNG_EQC_puppet_leader
-						}
-						set_portraits = {
-							character = WNG_EQC_puppet_leader 
-							civilian = { large ="gfx/leaders/Asia/Unknown_Griffon.dds" }
-						}
-						add_country_leader_role = {
-							character = WNG_EQC_puppet_leader
-							country_leader = {
-								expire = "1965.1.1"
-								ideology = despotism
-							}
-							promote_leader = yes
-						}
-						add_country_leader_role = {
-							character = WNG_EQC_puppet_leader
-							country_leader = {
-								expire = "1965.1.1"
-								ideology = fascism_ideology
-							}
-							promote_leader = yes
-						}
-					}
-					if = {				 
-						limit = {
-							ROOT = {
-								original_tag = FAL
-							}
-						}
-						set_cosmetic_tag = EQC_FAL_protectorate
-					}
-					else_if = {
-						limit = {
-							ROOT = {
-								original_tag = WNG
-							}
-						}
-						set_cosmetic_tag = EQC_WNG_protectorate
-					}
-					load_focus_tree = { tree = generic_griffon_focus keep_completed = no }
-				}
+				add_core_of = ROOT
 			}
 		}
+
 		ai_will_do = {
 			factor = 150
 		}
@@ -899,7 +792,7 @@ form_WNG_wingbardian_empire_category = {
 					}
 				}
 			}
-			NOT = { has_country_leader = { ruling_only = yes character = TAL_amilcare_fetivola } }
+			NOT = { has_country_leader = { ruling_only = yes name = "Amilcare Fetivola" } }
 		}
 
 		fire_only_once = yes
@@ -915,7 +808,14 @@ form_WNG_wingbardian_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			BOI = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BOI
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -948,7 +848,7 @@ form_WNG_wingbardian_empire_category = {
 					}
 				}
 			}
-			NOT = { has_country_leader = { ruling_only = yes character = TAL_amilcare_fetivola } }
+			NOT = { has_country_leader = { ruling_only = yes name = "Amilcare Fetivola" } }
 		}
 
 		fire_only_once = yes
@@ -964,7 +864,14 @@ form_WNG_wingbardian_empire_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
-			LAK = { add_to_ROOT_potential_cores = yes }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LAK
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -1044,12 +951,12 @@ form_WNG_wingbardian_empire_category = {
 					}
 				}
 			}
-			NOT = { has_country_leader = { ruling_only = yes character = TAL_amilcare_fetivola } }
+			NOT = { has_country_leader = { ruling_only = yes name = "Amilcare Fetivola" } }
 		}
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 150
 
 		available = {
 			is_subject = no
@@ -1059,91 +966,17 @@ form_WNG_wingbardian_empire_category = {
 		}
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision intergrate_cyanolisia"
-			671 = {
+			log = "[GetDateText]: [Root.GetName]: Decision form_WNG_wingbardian_empire"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = CYA
+					}
+				}
 				add_core_of = ROOT
 			}
 		}
 
-		ai_will_do = {
-			factor = 150
-		}
-	}
-	WNG_hand_over_land_to_minotaurs = {
-
-		icon = generic_civil_support
-
-		visible = {
-			original_tag = WNG
-			has_government = fascism
-			MIT = {
-				exists = yes
-				has_government = fascism
-				NOT = { has_war_with = WNG }
-			}
-			OR = {
-				owns_state = 510
-				owns_state = 511
-				owns_state = 507
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 50
-
-		available = {
-			is_subject = no
-			OR = {
-				owns_state = 510
-				owns_state = 511
-				owns_state = 507
-			}
-			MIT = {
-				exists = yes
-				has_government = fascism
-				NOT = { has_war_with = WNG }
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision WNG_hand_over_land_to_minotaurs"
-			if = {
-				limit = {
-					owns_state = 510
-				}
-				MIT = {
-					transfer_state = 510
-				}
-			}
-			if = {
-				limit = {
-					owns_state = 511
-				}
-				MIT = {
-					transfer_state = 511
-				}
-			}
-			if = {
-				limit = {
-					owns_state = 507
-				}
-				MIT = {
-					transfer_state = 507
-				}
-			}
-			if = {
-				limit = {
-					owns_state = 446
-				}
-				MIT = {
-					transfer_state = 446
-				}
-			}
-			MIT = {
-				country_event = wingbardy.100
-			}
-		}
 		ai_will_do = {
 			factor = 150
 		}
@@ -1158,7 +991,7 @@ WNG_reunifying_the_republic_category = {
 			original_tag = WNG
 		}
 
-		targets = { TAL FRN ARA FAL SIC FAL }
+		targets = { TAL FRN ARA FAL SIC }
 		targets_dynamic = yes
 		target_trigger = {
 			FROM = {
@@ -1167,7 +1000,6 @@ WNG_reunifying_the_republic_category = {
 					original_tag = FRN
 					original_tag = ARA
 					original_tag = SIC
-					original_tag = FAL
 				}
 			}
 		}
@@ -1203,14 +1035,6 @@ WNG_reunifying_the_republic_category = {
 					}
 				}
 				has_completed_focus = WNG_unite_with_sicameon
-			}
-			else_if = {
-				limit = {
-					FROM = {
-						original_tag = FAL
-					}
-				}
-				has_completed_focus = WNG_unite_with_falcor
 			}
 			FROM = {
 				is_in_faction_with = ROOT
@@ -1277,7 +1101,175 @@ WNG_reunifying_the_republic_category = {
 					original_tag = FRN
 					original_tag = ARA
 					original_tag = SIC
-					original_tag = FAL
+				}
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		target_root_trigger = {
+			is_subject = no
+			has_government = democratic
+		}
+		visible = {
+			FROM = {
+				exists = yes
+			}
+		}
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FROM
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_core_of = ROOT
+			}
+			FROM = {
+				transfer_navy = {
+					target = ROOT
+				}
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+WNG_reunifying_the_republic_category = {
+	WNG_offer_associate_status_to_TAG = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = WNG
+		}
+
+		targets = { TAL FRN ARA FAL SIC }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = TAL
+					original_tag = FRN
+					original_tag = ARA
+					original_tag = SIC
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = TAL
+					}
+				}
+				has_completed_focus = WNG_unite_with_talouse
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ARA
+					}
+				}
+				has_completed_focus = WNG_unite_with_arantiga
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = FRN
+					}
+				}
+				has_completed_focus = WNG_unite_with_arantiga
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SIC
+					}
+				}
+				has_completed_focus = WNG_unite_with_sicameon
+			}
+			FROM = {
+				is_in_faction_with = ROOT
+				NOT = { has_idea = WNG_intergration }
+			}
+		}
+		target_root_trigger = {
+			is_subject = no
+			has_government = democratic
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			FROM = { country_event = wingbardy.90 }
+			custom_effect_tooltip = if_they_accept
+			effect_tooltip = {
+				puppet = FROM
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					FROM = {
+						add_ideas = WNG_intergration
+					}
+				}
+				else = {
+					FROM = {
+						add_timed_idea = {
+							idea = WNG_intergration_notfv
+							days = 547
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	WNG_intergrate_TAG = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = WNG
+		}
+
+		targets = { TAL FRN ARA FAL SIC }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = TAL
+					original_tag = FRN
+					original_tag = ARA
+					original_tag = SIC
 				}
 			}
 		}
@@ -1289,12 +1281,6 @@ WNG_reunifying_the_republic_category = {
 						has_dlc = "Together for Victory"
 					}
 					has_autonomy_state = autonomy_integrated_puppet
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_autonomy_state = autonomy_reichskommissariat
 				}
 				else = {
 					NOT = {
@@ -1330,11 +1316,7 @@ WNG_reunifying_the_republic_category = {
 				transfer_navy = {
 					target = ROOT
 				}
-				every_character = {
-					limit = {
-						is_unit_leader = yes 
-						is_country_leader = no
-					}
+				every_unit_leader = {
 					set_nationality = ROOT
 				}
 			}
@@ -1527,7 +1509,6 @@ foreign_politics = {
 				}
 				NOT = {
 					has_completed_focus = FRN_torchbearers_of_peasants
-					has_completed_focus = TAL_miners_split
 				}
 			}
 			FROM = {
@@ -1535,7 +1516,6 @@ foreign_politics = {
 				original_tag = WNG
 				is_subject = no
 				has_government = communism
-				is_faction_leader = yes
 			}
 		}
 
@@ -1564,7 +1544,7 @@ foreign_politics = {
 				has_completed_focus = WNG_rebuild_the_pact
 			}
 		}
-		targets = { FRN ARA TAL BRF BAN CYA LUS LAK JES SIC GRY }
+		targets = { FRN ARA TAL BRF BAN CYA LUS LAK JES SIC }
 		targets_dynamic = yes
 		target_trigger = {
 			FROM = {
@@ -1579,7 +1559,6 @@ foreign_politics = {
 					original_tag = LAK
 					original_tag = JES
 					original_tag = SIC
-					original_tag = GRY
 				}
 			}
 		}
@@ -1622,7 +1601,6 @@ foreign_politics = {
 					original_tag = LAK
 					original_tag = JES
 					original_tag = SIC
-					original_tag = GRY
 				}
 				is_subject = no
 				is_in_faction = no
@@ -2337,7 +2315,7 @@ WNG_wingbardian_parliament_cat = {
 				country_event = wingbardy.52
 			}
 			else = {
-				WNG_start_anti_fascist_civil_war_monarchy = yes
+				WNG_start_anti_fascist_civil_war = yes
 			}
 		}
 	}
@@ -3217,19 +3195,9 @@ WNG_altar_of_the_fatherland_cat = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WNG_altar_ready_to_finish
-				OR = {
-					check_variable = {
-						WNG_alta_stage = 3
-					}
-					AND = {
-						has_government = fascism
-						has_cosmetic_tag = WNG_republic
-						check_variable = {
-							WNG_alta_stage = 2
-						}
-					}
+				check_variable = {
+					WNG_alta_stage = 3
 				}
-				
 			}
 			owns_state = 371
 			has_full_control_of_state = 371
@@ -3642,7 +3610,7 @@ WNG_murder_investigation_cat = {
 				owns_state = 382
 				382 = {
 					owner = {
-						is_subject_of = WNG
+						is_puppet_of = WNG
 					}
 				}
 			}
@@ -3682,7 +3650,7 @@ WNG_murder_investigation_cat = {
 				owns_state = 382
 				382 = {
 					owner = {
-						is_subject_of = WNG
+						is_puppet_of = WNG
 					}
 				}
 			}
@@ -3729,9 +3697,7 @@ WNG_murder_investigation_cat = {
 		}
 		fire_only_once = yes
 	}
-}
-
-WNG_support_the_saddle_arabian_civil_war_cat = {
+	WNG_support_the_saddle_arabian_civil_war_cat = {
 	WNG_support_SDF = {
 		icon = GFX_decision_generic_nationalism
 		allowed = {

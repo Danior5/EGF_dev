@@ -164,11 +164,11 @@ SRS_political_discussion = {
 					name = "Commune Militia"
 					is_locked = yes
 					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-						militia = { x = 0 y = 3 }
-						militia = { x = 0 y = 4 }
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
 					}
 				}
 				random_owned_controlled_state = {
@@ -948,10 +948,6 @@ SRS_political_discussion = {
 				tooltip = SRS_internationalist_delagates_tt_40
 				check_variable = { internationalists_support_var > 39 }
 			}
-			received_expeditionary_forces = {
-				sender = FROM
-				value < 1
-			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -1279,7 +1275,7 @@ SRS_political_discussion = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SRS_invite_baltimare_exiles"
 			BAL = {
-				BAL_golden_delicious = {
+				event_target:BAL_golden_delicious_target = {
 					set_nationality = ROOT
 				}
 				BAL_stylus_pen = {
@@ -1565,7 +1561,7 @@ SRS_political_discussion = {
 						planning_skill = 3
 						logistics_skill = 2
 					}
-					RCT_nova_whirl = {
+					event_target:RCT_nova_whirl_target = {
 						set_nationality = ROOT
 					}
 					custom_effect_tooltip = nova_whirl_stats_tp
@@ -1615,15 +1611,7 @@ SRS_political_discussion = {
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SRS_internationalist_intelligence_agency"
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_ideas = SRS_internationalist_intelligence_agency_the_idea_lar
-			}
-			else = {
-				add_ideas = SRS_internationalist_intelligence_agency_the_idea
-			}
+			add_ideas = SRS_internationalist_intelligence_agency_the_idea
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SRS_internationalist_intelligence_agency"
@@ -3313,7 +3301,6 @@ SRS_recruit_foreign_units = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove SRS_socialist_mages"
 
 			set_technology = { tech_unicorn = 1 }
-			fix_weapon_techs = yes
 			custom_effect_tooltip = SRS_form_the_w_o_t_r_tt
 			hidden_effect = {
 				division_template = {
