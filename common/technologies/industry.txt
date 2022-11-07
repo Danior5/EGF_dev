@@ -231,13 +231,13 @@ technologies = {
 			cat_production
 		}
 	}
-	
+
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 
 		#equipment_conversion_speed = 0.40
-		production_factory_efficiency_gain_factor = 0.05
-		
+		production_factory_efficiency_gain_factor = 0.1
+
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
 		}
@@ -274,8 +274,8 @@ technologies = {
 	advanced_equipment_conversion = {
 
 		#equipment_conversion_speed = 0.40
-		production_factory_efficiency_gain_factor = 0.05
-		
+		production_factory_efficiency_gain_factor = 0.1
+
 		research_cost = 2
 		start_year = 1010
 
@@ -303,9 +303,6 @@ technologies = {
 			cat_production
 		}
 	}
-
-	#Conversion branch - Enabled in DoD
-	#PDX sucks at coding, they literally tried to make conversion a semi-functioning mechanic like 4 times already and each time they ended up creating more and more broken exploits lmao, ratio
 
 	###############
 
@@ -1707,14 +1704,14 @@ technologies = {
 	
 	modern_oil_processing_a = {
 
-		fuel_gain_factor_from_states = 1.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = modern_oil_processing_b
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1016
 
 		folder = {
@@ -1752,14 +1749,14 @@ technologies = {
 
 	modern_oil_processing_b = {
 
-		fuel_gain_factor_from_states = 1.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = modern_oil_processing_c
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1019
 
 		folder = {
@@ -1797,14 +1794,14 @@ technologies = {
 
 	modern_oil_processing_c = {
 
-		fuel_gain_factor_from_states = 1.5
+		fuel_gain_factor_from_states = 0.15
 
 		path = {
 			leads_to_tech = modern_oil_processing_d
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1022
 
 		folder = {
@@ -1843,9 +1840,9 @@ technologies = {
 	
 	modern_oil_processing_d = {
 
-		fuel_gain_factor_from_states = 1.5
+		fuel_gain_factor_from_states = 0.10
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1025
 
 		folder = {
@@ -1896,7 +1893,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1016
 
 		folder = {
@@ -1947,7 +1944,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1019
 
 		folder = {
@@ -1998,7 +1995,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1022
 
 		folder = {
@@ -2044,7 +2041,7 @@ technologies = {
 			}
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1025
 
 		folder = {
@@ -2898,6 +2895,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2925,6 +2923,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2951,6 +2950,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2977,6 +2977,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2999,6 +3000,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
