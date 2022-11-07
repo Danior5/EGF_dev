@@ -1,4 +1,3 @@
-﻿
 division_template = {
 	name = "Imperial Guard Division"			#Infantry Division - kek
 	division_names_group = GRI_Inf_01
@@ -238,19 +237,6 @@ units = {
 		division_template = "Panzer Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0 
-	}
-}
-
-air_wings = {
-	382 = {
-		fighter_equipment_0 = {
-			owner = "GRI"
-			amount = 60
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "GRI"
-			amount = 40
-		}
 	}
 }
 
