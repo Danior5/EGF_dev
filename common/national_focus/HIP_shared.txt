@@ -2333,13 +2333,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = WW_HIP_primo_victoria
+			add_ideas = WW_HIP_primo_victoria1
+			add_ideas = WW_HIP_primo_victoria2
+			add_ideas = WW_HIP_primo_victoria2
 			add_stability = 0.5
 			add_war_support = 0.5
 			add_manpower = 500000
-			HIP = {
-				country_event = {
-					id = ww.13
+			custom_effect_tooltip = WW_HIP_primo_victoria_tt
+			hidden_effect = {
+				HIP = {
+					country_event = {
+						id = ww.13
+					}
 				}
 			}
 		}
