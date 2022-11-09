@@ -2,26 +2,28 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	##HIP Island Setup
 	on_startup = {
-		686 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		685 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		683 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		1204 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		1203 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		1202 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
-		}
-		1164 = {
-			add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+		effect = {
+			686 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			685 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			683 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			1204 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			1203 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			1202 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
+			1164 = {
+				add_dynamic_modifier = { modifier = HIP_island_wall_1 }				
+			}
 		}
 	}
 	on_declare_war = {
