@@ -96,14 +96,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.25
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
 			}
 		}
 		HIP_island_debuff8 = {
@@ -114,14 +108,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.5
 				industrial_capacity_factory = -0.5
 				industrial_capacity_dockyard = -0.5
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.3 instant = yes
-				}
 			}
 		}
 	}
