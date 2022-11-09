@@ -2339,7 +2339,7 @@
 			add_stability = 0.5
 			add_war_support = 0.5
 			add_manpower = 500000
-			custom_effect_tooltip = WW_HIP_primo_victoria_tt
+			custom_effect_tooltip = WW_HIP_gates_of_hell_tt
 			hidden_effect = {
 				HIP = {
 					country_event = {

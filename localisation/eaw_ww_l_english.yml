@@ -126,4 +126,5 @@ l_english:
  WW_escaped_officers_desc:0 "Officers that escaped the enemy have bolstered defence in our territory"
 
  HIP_gates_of_hell:0 "Primo Victoria"
- HIP_gates_of_hell_desc:0 "You are about to embark upon the Great Crusade, toward which we have striven these many months.\nThe eyes of the world are upon you. The hopes and prayers of liberty-loving people everywhere march with you.\nIn company with our brave Allies and brothers-in-arms on other Fronts you will bring about the destruction of the Chiropterran war machine, the elimination of the Legion's tyranny over oppressed peoples of Zebrica, and security for ourselves in a free world."
+ HIP_gates_of_hell_desc:0 "You're about to embark upon the Great Crusade, toward which we have striven these many months. The eyes of the world are upon you. In company with our brave Allies and brothers-in-arms on other Fronts you will bring about the destruction of the Chiropterran war machine, the elimination of the Legion's tyranny over oppressed peoples of Zebrica, and security for ourselves in a free world."
+ WW_HIP_gates_of_hell_tt:0 "Spawns §G10§ Elite Marine Divisions" 
