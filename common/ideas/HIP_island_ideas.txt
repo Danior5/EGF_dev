@@ -4,7 +4,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -25,7 +25,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -46,7 +46,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -56,7 +56,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -68,7 +68,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -80,7 +80,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -92,7 +92,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
@@ -104,7 +104,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = HIP_island_debuff
+			picture = hol_prepare_the_inundation_lines
 			removal_cost = -1
 
 			modifier = {
