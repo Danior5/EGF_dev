@@ -1,7 +1,7 @@
 HIP_island_wall_1 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	naval_invasion_penalty = 0.6
 	army_core_attack_factor = 0.5
@@ -10,7 +10,7 @@ HIP_island_wall_1 = {
 HIP_island_wall_2 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	naval_invasion_penalty = 0.4
 	army_core_attack_factor = 0.4
@@ -19,7 +19,7 @@ HIP_island_wall_2 = {
 HIP_island_wall_3 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	naval_invasion_penalty = 0.2
 	army_core_attack_factor = 0.3
@@ -28,7 +28,7 @@ HIP_island_wall_3 = {
 HIP_island_wall_4 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	army_core_attack_factor = 0.2
 	army_core_defence_factor = 0.2
@@ -36,7 +36,7 @@ HIP_island_wall_4 = {
 HIP_island_wall_5 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders
+	picture = generic_fortify_the_borders
 
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1	
@@ -44,12 +44,12 @@ HIP_island_wall_5 = {
 HIP_island_wall_6 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 }
 HIP_island_wall_7 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	naval_invasion_penalty = -0.2
 	army_core_attack_factor = -0.1
@@ -58,7 +58,7 @@ HIP_island_wall_7 = {
 HIP_island_wall_8 = { 
 	enable = { always = yes }
 	
-	icon = generic_fortify_the_borders	
+	picture = generic_fortify_the_borders	
 
 	naval_invasion_penalty = -0.4
 	army_core_attack_factor = -0.2
