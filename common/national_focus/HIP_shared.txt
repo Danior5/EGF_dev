@@ -2305,7 +2305,7 @@
 	}
 	shared_focus = {
 		id = HIP_gates_of_hell
-		icon = GFX_Goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 		cost = 5
 		x = 0
 		y = 1

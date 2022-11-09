@@ -103,7 +103,7 @@ ideas = {
 		}
 		WW_HIP_primo_victoria = {
 			removal_cost = -1
-			picture = idea_eng_preparing_the_second_front
+			picture = eng_preparing_the_second_front
 			modifier = {
 				naval_invasion_capacity = 50
 				naval_invasion_prep_speed = 1
