@@ -703,3 +703,92 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ww.13
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		HIP = {
+			delete_unit_template_and_units = { division_template = "Special Marine Corps" }
+			division_template = {
+				name = "Special Marine Corps"
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+	
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					marine = { x = 2 y = 4 }
+					
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					rocket_artillery = { x = 0 y = 1 }
+					medium_flame_tank = { x = 0 y = 2 }
+					engineer = { x = 0 y = 3 }
+					anti_air = { x = 0 y = 4 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1165 }
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+			}
+		}
+	}
+}

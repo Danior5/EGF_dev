@@ -70,7 +70,10 @@ l_english:
 
  WW_last_AC:0 "Our Finest Hour"
 
- WW_incompetent_tanks:0 "Inexperienced Armour Corp"
+ WW_incompetent_tanks:0 "Inexperienced Armor Corps"
+ WW_incompetent_tanks:0_desc:0 "Our armored divisions are completely untested. They aren't yet ready for combat at home, nevermind on a foreign continent."
+
+ WW_HIP_primo_victoria:0 "Primo Victoria"
 
  queen_yaria_research_tt:0 "Gain §G1§! Research Slot.\n"
  queen_argynnis_research_tt:0 "Enables: §YMagical Tanks§!\n" #You don't see anything danior
@@ -80,7 +83,7 @@ l_english:
  queen_yaria_WW:0 "Queen of Soryth"
  queen_argynnis_WW:0 "Queen of Vraks"
 
- bastion_of_the_east_tt:0 "Add §Y6 Land Fort§! and §Y6 Coastal Fort§! to every province with a §YNaval Base§!."
+ bastion_of_the_east_tt:0 "Add §G6§ §YLand Fort§! and §G6§ §YCoastal Fort§! to every province with a §YNaval Base§!."
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
@@ -98,6 +101,15 @@ l_english:
  EQS_island_buff6:0 "Equestrian Island Campaign: §GDomination§!"
  EQS_island_buff6_desc:0 "Our alliance has total control over the former Equestrian islands within the Celestial Sea. Our merchant vessels can now travel freely, greatly boosting our industrial capacity."  
 
+ HIP_island_debuff1:0 "Hippogriffian Islands: §GSafe§!" 
+ HIP_island_debuff2:0 "Hippogriffian Islands: §GSlightly Threatened§!" 
+ HIP_island_debuff3:0 "Hippogriffian Islands: §YHeavily Threatened§!" 
+ HIP_island_debuff4:0 "Hippogriffian Islands: §YSlight Danger§!" 
+ HIP_island_debuff5:0 "Hippogriffian Islands: §OIncreasingly Dangerous§!" 
+ HIP_island_debuff6:0 "Hippogriffian Islands: §ODangerous§!"
+ HIP_island_debuff7:0 "Hippogriffian Islands: §RVery Dangerous§!"
+ HIP_island_debuff8:0 "Hippogriffian Islands: §RCatastrophe§!"
+
  GRF_intergrate_PLB:0 "Gain cores on the polarbears"
  GRF_intergrate_PNG:0 "Annex the Penguin AI"
  RCT_intergrate_LCT:0 "Annex the Lake City AI"
@@ -109,4 +121,7 @@ l_english:
  CHN_takeover_OLE_fleet:0 "Take control of the Olenian navy"
 
  WW_escaped_officers:0 "Officers In Exile"
- WW_escaped_officers_desc:0 "Officers that escaped the enemy have bolstered defence in our terretory"
+ WW_escaped_officers_desc:0 "Officers that escaped the enemy have bolstered defence in our territory"
+
+ HIP_gates_of_hell:0 "Primo Victoria"
+ HIP_gates_of_hell_desc:0 "We have weathered the storm of our enemy well, now is our moment to strike back."
