@@ -30,15 +30,17 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					tag = HIP
+					FROM = {tag = HIP}
 					ROOT = {
 						OR = {
-							tag = BAT
 							tag = CTH
+							tag = BAT
 						}
 					}
 				}
-				add_ideas = HIP_island_debuff1
+				FROM = {
+					add_ideas = HIP_island_debuff1
+				}
 			}
 		}
 	}
