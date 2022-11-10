@@ -794,6 +794,26 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2007;8050;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 5026;10736;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 ;;;;;;;;;
+6398;6279;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6398;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3345;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3345;11235;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3345;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6411;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6411;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+9253;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3335;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3335;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6355;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6252;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+6305;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+11063;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+11063;9261;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+11063;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+9042;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+9042;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3069;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+3069;6079;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 ;;;;;;;;;
 ;;;;;;;;;
 ;;;;;;;;;
