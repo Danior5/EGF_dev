@@ -121,13 +121,11 @@ ideas = {
 				naval_invasion_capacity = 20
 				naval_invasion_prep_speed = 1
 				naval_invasion_planning_bonus_speed = 0.5
-			}
-			custom_effect_tooltip = WW_HIP_primo_victoria2_tt
-			hidden_effect = {
-				modifier = {
+				hidden_modifier = {
 					naval_damage_factor = 0.1
 					naval_defense_factor = 0.1
 				}
+				custom_modifier_tooltip = WW_HIP_primo_victoria2_tt
 			}		
 		}
 		WW_HIP_primo_victoria3 = {
