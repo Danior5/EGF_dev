@@ -8,27 +8,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_dockyard = 0.2
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-			}
-		}
-		HIP_island_debuff2 = {
-			allowed = {
-				always = no
-			}
-			picture = hol_prepare_the_inundation_lines
-			removal_cost = -1
-
-			modifier = {
+				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
 			equipment_bonus = {
@@ -42,6 +22,16 @@ ideas = {
 				}
 			}
 		}
+		HIP_island_debuff2 = {
+			allowed = {
+				always = no
+			}
+			picture = hol_prepare_the_inundation_lines
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
 		HIP_island_debuff3 = {
 			allowed = {
 				always = no
@@ -50,6 +40,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 		HIP_island_debuff4 = {
@@ -72,8 +64,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		HIP_island_debuff6 = {
@@ -84,8 +76,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
 			}
 		}
 		HIP_island_debuff7 = {
@@ -96,8 +88,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 			}
 		}
 		HIP_island_debuff8 = {
@@ -108,8 +100,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.5
-				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
 			}
 		}
 	}
