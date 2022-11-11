@@ -815,6 +815,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3069;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 3069;6079;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 ;;;;;;;;;
+8045;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+3995;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+1833;12516;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1833;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4610;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4528;5231;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4528;2171;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;3995;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;4610;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;4839;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+10425;12433;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10425;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
 ;;;;;;;;;
 ;;;;;;;;;
 ;;;;;;;;;
