@@ -2374,10 +2374,10 @@ focus_tree = {
 			is_subject = no
 			#has_war = no
 			owns_state = 1092
-			has_war_support > 0.8
-			has_army_manpower = {
-				size > 150000
-			}
+			#has_war_support > 0.8
+			#has_army_manpower = {
+			#	size > 150000
+			#}
 		}
 		bypass = {
 			OR = {
@@ -2599,17 +2599,17 @@ focus_tree = {
 
 		available = {
 			#has_war = no
-			has_war_support > 0.8
-			OR = {
-				has_army_manpower = {
-					size > 250000
-				}
-				ZUM = {
-					exists = yes
-					is_subject = no
-					is_in_faction = no
-				}
-			}
+			#has_war_support > 0.8
+			#OR = {
+			#	has_army_manpower = {
+			#		size > 250000
+			#	}
+			#	ZUM = {
+			#		exists = yes
+			#		is_subject = no
+			#		is_in_faction = no
+			#	}
+			#}
 		}
 		bypass = {
 			OR = {
