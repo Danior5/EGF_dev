@@ -12,21 +12,21 @@ division_template = {
 		mechanized = { x = 1 y = 2 }
 		mechanized = { x = 1 y = 3 }
 
-		heavier_armor = { x = 2 y = 0 }
-		heavier_armor = { x = 2 y = 1 }
-		heavier_armor = { x = 2 y = 2 }
-		heavier_armor = { x = 2 y = 3 }
-		heavier_armor = { x = 2 y = 4 }
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 2 y = 4 }
 
-		heavier_armor = { x = 3 y = 0 }
-		heavier_armor = { x = 3 y = 1 }
-		heavier_armor = { x = 3 y = 2 }
-		heavier_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
 
-		heavier_armor = { x = 4 y = 0 }
-		heavier_armor = { x = 4 y = 1 }
-		heavier_armor = { x = 4 y = 2 }
-		heavier_armor = { x = 4 y = 3 }
+		heavy_armor = { x = 4 y = 0 }
+		heavy_armor = { x = 4 y = 1 }
+		heavy_armor = { x = 4 y = 2 }
+		heavy_armor = { x = 4 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
