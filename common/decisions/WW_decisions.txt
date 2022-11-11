@@ -1203,7 +1203,7 @@ WW_category = {
 	}
 
 	WW_heavy_tanks = {		
-		icon = decision_generic_tank
+		icon = generic_tank
 		allowed = {
 			OR = {
 				original_tag = JER
@@ -1244,6 +1244,7 @@ WW_category = {
 		ai_will_do = {
 			factor = 0
 		}
+		fire_only_once = yes
 		visible = {
 			date > 1006.11.1
 		}
