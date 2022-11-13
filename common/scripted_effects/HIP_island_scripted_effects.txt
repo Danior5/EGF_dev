@@ -65,8 +65,8 @@ HIP_island_debuff_level_up = {
 			add_dynamic_modifier = { modifier = HIP_island_wall_3 }				
 		}
 		1164 = {
-			remove_dynamic_modifier = { modifier = HIP_island_wall_1 }
-			add_dynamic_modifier = { modifier = HIP_island_wall_2 }				
+			remove_dynamic_modifier = { modifier = HIP_island_wall_2 }
+			add_dynamic_modifier = { modifier = HIP_island_wall_3 }				
 		}
 	}
 	else_if = {
