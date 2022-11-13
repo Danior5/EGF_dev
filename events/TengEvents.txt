@@ -5,7 +5,6 @@ country_event = { #tarrin alarm over
 	title = alarmover.1.t
 	desc = alarmover.1.d
 	fire_only_once = no
-	is_triggered_only = yes
 	option = {
 		name = alarmover.1.a
 	}
@@ -15,7 +14,6 @@ country_event = { #great war alarm over
 	title = alarmover.2.t
 	desc = alarmover.2.d
 	fire_only_once = no
-	is_triggered_only = yes
 	option = {
 		name = alarmover.2.a
 	}
@@ -25,7 +23,6 @@ country_event = { #island war alarm over
 	title = alarmover.3.t
 	desc = alarmover.3.d
 	fire_only_once = no
-	is_triggered_only = yes
 	option = {
 		name = alarmover.3.a
 	}
@@ -35,7 +32,6 @@ country_event = { #wng war alarm over
 	title = alarmover.4.t
 	desc = alarmover.4.d
 	fire_only_once = no
-	is_triggered_only = yes
 	option = {
 		name = alarmover.4.a
 	}
@@ -45,7 +41,6 @@ country_event = { #wng war alarm over
 #	title = alarmover.5.t
 #	desc = alarmover.5.d
 #	fire_only_once = no
-#	is_triggered_only = yes
 #	option = {
 #		name = alarmover.5.a
 #	}

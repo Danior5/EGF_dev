@@ -2,8 +2,9 @@ alarm_clock_category = {
 ###player war alarms###
 	jer_able_declare = {
 		activation = {
-			OR = {
-					has_country_flag = jer_alarm_clock
+			AND = {
+				date < 1007.01.03
+				OR = {
 					original_tag = WNG
 					original_tag = GRY
 					original_tag = RCT
@@ -13,7 +14,10 @@ alarm_clock_category = {
 					original_tag = LCT
 					original_tag = HLQ
 					original_tag = GRI
+					original_tag = ROU
+					original_tag = YAL
 				}
+			}
 		}
 		available = {
 			always = no
@@ -21,6 +25,7 @@ alarm_clock_category = {
 		cancel_trigger = {
 			has_war_with = JER
 		}
+		fire_only_once = yes
 		icon = decisions_alarm_clock     # For GFX_decision_mission_icon
 		is_good = no
 		days_mission_timeout = 1885
@@ -38,14 +43,16 @@ alarm_clock_category = {
 	}
 	chn_able_declare = {
 		activation = {
-			OR = {
-					has_country_flag = chn_alarm_clock
-					original_tag = EQS
-					original_tag = CRY
-					original_tag = STG
-					original_tag = GRF
-					original_tag = PNG
+			AND = {
+				date < 1007.01.03
+				OR = {
+						original_tag = EQS
+						original_tag = CRY
+						original_tag = STG
+						original_tag = GRF
+						original_tag = PNG
 				}
+			}
 		}
 		available = {
 			always = no
@@ -53,6 +60,7 @@ alarm_clock_category = {
 		cancel_trigger = {
 			has_war_with = CHN
 		}
+		fire_only_once = yes
 		icon = decisions_alarm_clock     # For GFX_decision_mission_icon
 		is_good = no
 		days_mission_timeout = 1765
@@ -70,9 +78,12 @@ alarm_clock_category = {
 	}
 	gri_able_declare = {
 		activation = {
-			OR = {
-					has_country_flag = gri_alarm_clock
+			AND = {
+				date < 1007.01.03
+				OR = {
 					original_tag = EQS
+					original_tag = STG
+					original_tag = CRY
 					original_tag = EQC
 					original_tag = RCT
 					original_tag = BAK
@@ -81,7 +92,11 @@ alarm_clock_category = {
 					original_tag = LCT
 					original_tag = FAT
 					original_tag = TRD
+					original_tag = ROU
+					original_tag = YAL
+					original_tag = JER
 				}
+			}
 		}
 		available = {
 			always = no
@@ -89,6 +104,7 @@ alarm_clock_category = {
 		cancel_trigger = {
 			has_war_with = GRI
 		}
+		fire_only_once = yes
 		icon = decisions_alarm_clock     # For GFX_decision_mission_icon
 		is_good = no
 		days_mission_timeout = 1461 
@@ -99,18 +115,18 @@ alarm_clock_category = {
 			}	
 		}
 		timeout_effect = {
-			hidden_effect = {
-				country_event = alarmover.3
-			}
+			country_event = alarmover.3
 		}
 	}
 	wng_able_declare = {
 		activation = {
-			OR = {
-					has_country_flag = wng_alarm_clock
-					original_tag = BAT
-					original_tag = CTH
+			AND = {
+				date < 1007.01.03
+				OR = {
+						original_tag = BAT
+						original_tag = CTH
 				}
+			}
 		}
 		available = {
 			always = no
@@ -118,6 +134,7 @@ alarm_clock_category = {
 		cancel_trigger = {
 			has_war_with = WNG
 		}
+		fire_only_once = yes
 		icon = decisions_alarm_clock     # For GFX_decision_mission_icon
 		is_good = no
 		days_mission_timeout = 1461 
