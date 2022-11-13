@@ -165,7 +165,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- RESERVE_FLEET
 		0.1, -- NAVAL_INVASION_SUPPORT
 	}
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.2 -- this screen ratio to num convoys is needed for full screening beyond screen line
-NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1 -- this capital ratio to num convoys is needed for full screening beyond screen line
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1 -- this screen ratio to num convoys is needed for full screening beyond screen line
+NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.05 -- this capital ratio to num convoys is needed for full screening beyond screen line
 
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2	-- Base year ahead penalty. Vanilla is 2. Changed back to 2 from 2.5 in vanilla EaW
