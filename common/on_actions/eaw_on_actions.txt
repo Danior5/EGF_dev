@@ -4957,15 +4957,15 @@ on_actions = {
 						limit = { is_subject = yes }
 						end_puppet_this = yes
 					}
+					#if = {  ### EGZF CHANGE 
+					#	limit = { is_in_faction = yes }
+					#	leave_faction = yes
+					#}
 					if = {
-						limit = { is_in_faction = yes }
-						leave_faction = yes
-					}
-					if = {
-						limit = { has_war_with = FROM }
-						set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
-						white_peace = FROM
-					}
+					#	limit = { has_war_with = FROM }
+					#	set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
+					#	white_peace = FROM
+					#}
 					if = {
 						limit = { FROM = { tag = CHN } }
 						set_country_flag = EQC_govt_in_exile
@@ -4998,54 +4998,54 @@ on_actions = {
 						has_war_with = FROM
 					}
 				}
-				HIP = {
-					if = {
-						limit = { is_in_faction_with = EQS }
-						leave_faction = yes
-					}
-					if = {
-						limit = { has_war_with = FROM }
-						set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
-						white_peace = FROM
-						remove_wargoal = {
-							type = all
-							target = FROM
-						}
-					}
-					if = {
-						limit = {
-							has_country_flag = HIP_alliance_member
-						}
-						create_faction = HIP_middle_sea_treaty
-						every_other_country = {
-							limit = {
-								OR = {
-									has_country_flag = HIP_alliance_member
-									is_subject_of = HIP
-								}
-							}
-							HIP = {add_to_faction = PREV}
-						}
-						every_other_country = {
-							limit = {
-								OR = {
-									has_country_flag = HIP_alliance_member
-									is_subject_of = HIP
-									AND = {
-										is_in_faction_with = HIP
-										NOT = {
-											is_in_faction_with = EQS
-										}
-									}
-								}
-							}
-							if = {
-								limit = { has_war_with = FROM }
-								set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
-								white_peace = FROM
-							}
-						}
-					}
+				HIP = { ### EGZF CHANGE 
+					#if = {
+					#	limit = { is_in_faction_with = EQS }
+					#	leave_faction = yes
+					#}
+					#if = {
+					#	limit = { has_war_with = FROM }
+					#	set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
+					#	white_peace = FROM
+					#	remove_wargoal = {
+					#		type = all
+					#		target = FROM
+					#	}
+					#}
+					#if = {
+					#	limit = {
+					#		has_country_flag = HIP_alliance_member
+					#	}
+					#	create_faction = HIP_middle_sea_treaty
+					#	every_other_country = {
+					#		limit = {
+					#			OR = {
+					#				has_country_flag = HIP_alliance_member
+					#				is_subject_of = HIP
+					#			}
+					#		}
+					#		HIP = {add_to_faction = PREV}
+					#	}
+					#	every_other_country = {
+					#		limit = {
+					#			OR = {
+					#				has_country_flag = HIP_alliance_member
+					#				is_subject_of = HIP
+					#				AND = {
+					#					is_in_faction_with = HIP
+					#					NOT = {
+					#						is_in_faction_with = EQS
+					#					}
+					#				}
+					#			}
+					#		}
+					#		if = {
+					#			limit = { has_war_with = FROM }
+					#			set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
+					#			white_peace = FROM
+					#		}
+					#	}
+					#}
 					HIP = {country_event = hippogriff.83}
 				}
 			}
