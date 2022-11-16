@@ -1794,10 +1794,10 @@ shared_focus = {
 			limit = {
 				has_state_flag = EQC_littlehoof_small_arms_factory
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -1814,10 +1814,10 @@ shared_focus = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 3
 				instant_build = yes
 			}
 			set_state_flag = EQC_littlehoof_small_arms_factory
@@ -1997,7 +1997,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 4
 				instant_build = yes
 			}
 		}
@@ -2015,10 +2015,10 @@ shared_focus = {
 					size > 1
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 4
 				instant_build = yes
 			}
 			set_state_flag = EQC_expand_new_manehatten_factory1
@@ -2442,7 +2442,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2452,7 +2452,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2469,10 +2469,10 @@ shared_focus = {
 					size > 1
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 			set_state_flag = EQC_every_little_helps_factory1
@@ -2487,10 +2487,10 @@ shared_focus = {
 					size > 1
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 			set_state_flag = EQC_every_little_helps_factory2
