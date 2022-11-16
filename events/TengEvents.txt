@@ -2,6 +2,7 @@ add_namespace = alarmover
 
 country_event = { #tarrin alarm over
 	id = alarmover.1
+	is_triggered_only = yes
 	title = alarmover.1.t
 	desc = alarmover.1.d
 	fire_only_once = no
@@ -11,6 +12,7 @@ country_event = { #tarrin alarm over
 }
 country_event = { #great war alarm over
 	id = alarmover.2
+	is_triggered_only = yes
 	title = alarmover.2.t
 	desc = alarmover.2.d
 	fire_only_once = no
@@ -20,6 +22,7 @@ country_event = { #great war alarm over
 }
 country_event = { #island war alarm over
 	id = alarmover.3
+	is_triggered_only = yes
 	title = alarmover.3.t
 	desc = alarmover.3.d
 	fire_only_once = no
@@ -29,6 +32,7 @@ country_event = { #island war alarm over
 }
 country_event = { #wng war alarm over
 	id = alarmover.4
+	is_triggered_only = yes
 	title = alarmover.4.t
 	desc = alarmover.4.d
 	fire_only_once = no
@@ -38,6 +42,7 @@ country_event = { #wng war alarm over
 }
 #country_event = { #nzw war alarm over
 #	id = alarmover.5
+#	is_triggered_only = yes
 #	title = alarmover.5.t
 #	desc = alarmover.5.d
 #	fire_only_once = no
