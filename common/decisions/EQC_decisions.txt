@@ -967,8 +967,6 @@ EQC_economic_policy_decisions = {
 		}
 
 		modifier = {
-			civilian_factory_use = 3
-			consumer_goods_factor = 0.03
 		}
 
 		fire_only_once = yes
@@ -1027,8 +1025,6 @@ EQC_economic_policy_decisions = {
 		}
 
 		modifier = {
-			civilian_factory_use = 1
-			consumer_goods_factor = 0.02
 		}
 
 		fire_only_once = yes
@@ -1087,8 +1083,6 @@ EQC_economic_policy_decisions = {
 		}
 
 		modifier = {
-			civilian_factory_use = 3
-			consumer_goods_factor = 0.03
 		}
 
 		fire_only_once = yes
