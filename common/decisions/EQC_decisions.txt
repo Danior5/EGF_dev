@@ -954,7 +954,6 @@ EQC_economic_policy_decisions = {
 				has_completed_focus = EQC_basic_incom
 				has_completed_focus = EQC_NLR_regulated_shadowbolts
 			}
-			num_of_civilian_factories_available_for_projects > 3
 		}
 
 		visible = {
@@ -1011,7 +1010,6 @@ EQC_economic_policy_decisions = {
 				has_completed_focus = EQC_basic_incom
 				has_completed_focus = EQC_NLR_regulated_shadowbolts
 			}
-			num_of_civilian_factories_available_for_projects > 0
 			NOT = { has_government = communism }
 		}
 
@@ -1069,8 +1067,6 @@ EQC_economic_policy_decisions = {
 				has_completed_focus = EQC_basic_incom
 				has_completed_focus = EQC_NLR_regulated_shadowbolts
 			}
-
-			num_of_civilian_factories_available_for_projects > 3
 		}
 
 		visible = {
