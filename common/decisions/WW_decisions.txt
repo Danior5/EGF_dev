@@ -1047,7 +1047,7 @@ WW_category = {
 				}
 			}
 			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 
@@ -1090,7 +1090,7 @@ WW_category = {
 			}
 			
 			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 

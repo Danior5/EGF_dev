@@ -23,11 +23,9 @@ ideas = {
 			removal_cost = -1
 			picture = HLQ_knights
 			modifier = {
-				army_attack_factor = 0.2
+				army_attack_factor = 0.1
 				army_speed_factor = 0.1
-				supply_consumption_factor = -0.2
 				no_supply_grace	= 48.0
-				planning_speed = 1.0
 			}
 		}
 		WW_JER_counteroffensive = {
