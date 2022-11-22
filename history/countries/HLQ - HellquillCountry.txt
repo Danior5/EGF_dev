@@ -1,4 +1,4 @@
-﻿capital = 537
+capital = 537
 oob = "HLQ_1007"
 set_research_slots = 3
 
@@ -93,6 +93,7 @@ add_ideas = {
 	HLQ_knights_1
 	HLQ_reformists
 	HLQ_pony_minorities
+	EQS_island_buff1
 }
 
 country_event = {
