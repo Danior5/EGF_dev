@@ -1,0 +1,15 @@
+characters={
+	STB_peter_iv={
+		name= STB_peter_iv ###"Tsar Peter IV"
+		portraits={
+			civilian={
+				large="gfx/leaders/STB/PrincePeterIV.tga"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}	

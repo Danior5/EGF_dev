@@ -13,6 +13,14 @@
  EQS_commonwealth_long:0 "The Princess and Parliament of Equestria"
  EQS_republic:0 "Equestrian Congress"
  EQS_republic_long:0 "The Congress and President of Equestria"
+ 
+ STB_neutrality_party:0 "BD-R"
+ STB_neutrality_party_long:0 "Beloye Dvizheniye - Radikaly"
+ STB_communism_party:0 "SCP Infiltration"
+ STB_communism_party_long:0 "Stalliongradian Communist Party"
+ STB_democratic_party:0 "BD-U"
+ STB_democratic_party_long:0 "Beloye Dvizheniye - Umerennyye"
+ STB_fascism_party:0 "ZD"
 
  SOL_neutrality_party:0 "Random Party"
  SOL_neutrality_party_long:0 "Random Party"

@@ -1,7 +1,10 @@
-
 EQS = {
 	color = rgb { 158 242 117 }
 	color_ui = rgb { 158 242 117 }
+}
+STB = {
+	color = rgb { 252 219 100 }
+	color_ui = rgb { 155 135 62 }
 }
 NLR = {
 	color = rgb { 41 37 110 }
