@@ -1,0 +1,90 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1002.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "EQS"
+		default = yes
+		
+		### MAJOR LINE 1 ###
+		
+		## EQUUS
+
+		"EQS"={
+			history = "EQS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_ponies
+				alicorn_sisters
+				friendly_harmony
+			}
+			focuses = {
+				Ministry_of_defense
+				Friendship_Games
+				unicorn_academy_f
+			}
+		}
+		"CRY"={
+			history = "CRY_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				crystal_heart
+				royal_family
+				sombra_threat
+			}
+			focuses = {
+				CRY_oldorder
+				CRY_comrevolution
+				CRY_oldking
+			}
+		}
+		
+		
+		
+		### END MAJOR LINE 1 ###
+		
+		### MAJOR LINE 2 ###
+		
+		## EQUUS
+		
+		"STG"={
+			history = "STG_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				severe_famine
+				incomplete_industrialization
+			}
+			focuses = {
+				vasya_2
+				the_palace
+				manifesto_of_materialism
+			}
+		}
+		"CHN"={
+			history = "CHN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				canterlot_defeat
+				political_divisions
+				CHN_GRI_Attache_For_CHN
+			}
+			focuses = {
+				unite_the_people
+				Chrysalis
+				demand_equestria
+			}
+		}
+		
+
+
+		
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

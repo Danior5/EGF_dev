@@ -260,6 +260,7 @@ add_equipment_to_stockpile = {
 	producer = STG
 }
 
+recruit_character = STG_sinister_serov
 recruit_character = STG_vinous_kostylev
 recruit_character = STG_tsar_peter_iv
 recruit_character = STG_ratibor_svetoslavich
@@ -288,7 +289,6 @@ recruit_character = STG_furious_glory
 recruit_character = STG_grey_gorshkov
 recruit_character = STG_karina
 recruit_character = STG_gold_muffin
-recruit_character = STG_sinister_serov
 recruit_character = STG_vasiliy_pantsushenko
 recruit_character = STG_dark_wing
 recruit_character = STG_cranberry_branch
@@ -304,8 +304,6 @@ recruit_character = STG_nevsky
 recruit_character = STG_fleetfoot
 #recruit_character = STG_chernushka
 recruit_character = STG_popeye
-#pregrinded generals
-recruit_character = STG_WW_fieldmarshel
 
 set_rule = {
 	can_generate_female_aces = yes

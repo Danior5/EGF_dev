@@ -1,8 +1,8 @@
-NDefines.NGame.START_DATE = "1007.1.1.12"
+NDefines.NGame.START_DATE = "1002.1.1.12"
 NDefines.NGame.END_DATE = "1030.1.1.1"
 NDefines.NGame.HANDS_OFF_START_TAG = "DRG"
 
-NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "1007.1.1.12"
+NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "1002.1.1.12"
 --NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 10
 NDefines.NDiplomacy.MAX_OPINION_VALUE = 200							-- Max opinion value cap.
 NDefines.NDiplomacy.MIN_OPINION_VALUE = -200						-- Min opinion value cap.

@@ -19,7 +19,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 3
 starting_train_buffer = 4
 
 save_global_event_target_as = equestria
@@ -318,10 +318,10 @@ add_tech_bonus = {
 }
 set_convoys = 269
 set_popularities = {
-	democratic = 79
-	fascism = 1
-	communism = 20
-	neutrality = 0
+	democratic = 56
+	fascism = 8
+	communism = 10
+	neutrality = 26
 }
 set_politics = {
 	ruling_party = democratic
@@ -336,7 +336,6 @@ add_ideas = {
 	friendly_harmony
 	harmonic_stagnation
 	EQS_bat_pony_divide_1
-	EQS_island_debuff1
 }
 if = {
 	limit = {
@@ -363,10 +362,10 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	set_autonomy = {
-		target = CRY
-		autonomy_state = autonomy_integrated_puppet
-	}
+	#set_autonomy = {
+	#	target = CRY
+	#	autonomy_state = autonomy_integrated_puppet
+	#}
 	set_autonomy = {
 		target = EQC
 		autonomy_state = autonomy_dominion
@@ -377,7 +376,7 @@ if = {
 	}
 	else = {
 		puppet = EQC
-		puppet = CRY
+		#puppet = CRY
 		puppet = PCB
 	}
 }
@@ -388,7 +387,7 @@ if = {
 	add_to_tech_sharing_group = equestrian_research
 }
 
-set_stability = 0.65
+set_stability = 0.1
 set_war_support = 0.3
 
 recruit_character = EQS_prince_blueblood
@@ -492,11 +491,9 @@ recruit_character = UESR_floppa
 recruit_character = UESR_literally_sablin
 recruit_character = POE_country_leader
 recruit_character = ERE_country_leader
-###Pregrinded Generals###
-recruit_character = EQS_WW_fieldmarshel
 
 create_faction = "All_ponies_front"
-add_to_faction = CRY
+#add_to_faction = CRY
 add_to_faction = EQC
 add_to_faction = PCB
 
