@@ -1,0 +1,41 @@
+characters={
+	CMG_shining_armour={
+		name=CMG_shining_armour
+		portraits={
+			army={
+				large="gfx/leaders/CRY/ShiningArmour.tga"
+				small="GFX_idea_CRY_shining_armour"
+			}
+		}
+		field_marshal={
+			traits={ royal_guard_commander pony_race_trait defensive_doctrine }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1043
+		}
+		
+		advisor = {
+			slot = army_chief 
+			idea_token = shining_armour
+			cost = 100
+			allowed = {
+				original_tag = CMG
+			}
+			available = {
+				has_government = democratic				
+			}
+			traits = { army_chief_defensive_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		country_leader={
+			ideology=khakistocracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}	

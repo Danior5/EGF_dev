@@ -1,0 +1,89 @@
+﻿division_template = {
+	name = "Volunteer Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Strelkovaya Brigada"
+	division_names_group = STG_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1st Novochernuskan Volunteer Rifle Brigade"
+		location = 12503
+		division_template = "Strelkovaya Brigada"
+		start_experience_factor = 0.4 }
+	division = {
+		name = "2nd White Severyanian Rifle Brigade"
+		location = 3983
+		division_template = "Strelkovaya Brigada"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Baicall Militia"
+		location = 6208
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.2 }
+	division = {
+		name = "1-y Partisanski Polk"
+		location = 6350
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.2 }
+	division = {
+		name = "Vostok Polk"
+		location = 351
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		name = "Nimbusi Polk"
+		location = 11253
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "STB"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 90
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "STB"
+		}
+		requested_factories = 1
+		progress = 0.16
+		efficiency = 20
+	}
+}

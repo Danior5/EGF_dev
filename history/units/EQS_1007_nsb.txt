@@ -1,0 +1,231 @@
+﻿division_template = {
+	name = "Infantry Division"			#Infantry Division
+	division_names_group = EQS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Royal Guards"			#RoyalGuards
+	division_names_group = EQS_GRD_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Airborne Division"
+	division_names_group = EQS_PEG_01
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 0 y = 3 }
+		pegasi = { x = 0 y = 4 }
+		pegasi = { x = 1 y = 0 }
+		pegasi = { x = 1 y = 1 }
+		pegasi = { x = 1 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Armoured Division"			#Tanks
+	division_names_group = EQS_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 300
+		}
+		location = 9094
+		division_template = "Airborne Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}		
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 179
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11066
+		division_template = "Armoured Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EQS" creator = "EQS" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "EQS" version_name = "Light Tank Mk. IV Breezie" } medium_tank_chassis_0 = { owner = "EQS" version_name = "Stallion Medium Mk. II Great Yak" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11211
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9573
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3120
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3203
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12503
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5 }
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "EQS"
+		}
+		requested_factories = 7
+		progress = 0.86
+		efficiency = 90
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "EQS" }
+		requested_factories = 3
+		progress = 0.40
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "EQS"
+		}
+		requested_factories = 2
+		progress = 0.90
+		efficiency = 80
+	}
+}

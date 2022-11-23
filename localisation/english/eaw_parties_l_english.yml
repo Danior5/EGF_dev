@@ -22,6 +22,15 @@
  STB_democratic_party_long:0 "Beloye Dvizheniye - Umerennyye"
  STB_fascism_party:0 "ZD"
 
+ CMG_neutrality_party:0 "Loyalist Military Junta"
+ CMG_neutrality_party_long:0 "Loyalist Military Junta"
+ CMG_communism_party:0 "RCWP"
+ CMG_communism_party_long:0 "Red Crystal Worker's Party"
+ CMG_democratic_party:0 "CPRP"
+ CMG_democratic_party_long:0 "Crystal People's Republican Party"
+ CMG_fascism_party:0 "Sombra's Cultists"
+ CMG_fascism_party_long:0 "Sombra's Cultists"
+ 
  SOL_neutrality_party:0 "Random Party"
  SOL_neutrality_party_long:0 "Random Party"
  SOL_communism_party:0 "Random Party"

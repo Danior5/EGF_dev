@@ -362,10 +362,14 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	#set_autonomy = {
-	#	target = CRY
-	#	autonomy_state = autonomy_integrated_puppet
-	#}
+	set_autonomy = {
+		target = CMG
+		autonomy_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = STB
+		autonomy_state = autonomy_colony
+	}
 	set_autonomy = {
 		target = EQC
 		autonomy_state = autonomy_dominion
@@ -375,6 +379,8 @@ if = {
 		autonomous_state = autonomy_dominion
 	}
 	else = {
+		puppet = CMG
+		puppet = STB
 		puppet = EQC
 		#puppet = CRY
 		puppet = PCB
@@ -493,7 +499,8 @@ recruit_character = POE_country_leader
 recruit_character = ERE_country_leader
 
 create_faction = "All_ponies_front"
-#add_to_faction = CRY
+add_to_faction = CMG
+add_to_faction = STB
 add_to_faction = EQC
 add_to_faction = PCB
 

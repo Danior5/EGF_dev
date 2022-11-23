@@ -1,0 +1,91 @@
+﻿division_template = {
+	name = "Love Division"			#Infantry Division - kek
+	division_names_group = CRY_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Crystal Guard Regiment"			#RoyalGuards
+	division_names_group = CRY_GRD_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Militia Regiment"			#Infantry Division - kek
+	division_names_group = CRY_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		location = 11032
+		division_template = "Crystal Guard Regiment"
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.9 }
+	division = {
+		location = 9249
+		division_template = "Crystal Guard Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9 }
+	division = {
+		location = 3219
+		division_template = "Militia Regiment"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.8}
+	division = {
+		location = 3151
+		division_template = "Militia Regiment"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.8}
+	division = {
+		location = 9236
+		division_template = "Militia Regiment"	
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5}
+	division = {
+		location = 3511
+		division_template = "Militia Regiment"	
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CMG"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 50
+	}
+}

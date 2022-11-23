@@ -1,14 +1,7 @@
 ﻿capital = 157
 
-#if = {
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-	#set_oob = "STG_1007"
-	#else = {
-	#	set_oob = "STG_1007_nsb"
-	#}
-#}
+set_oob = "STB_1002"
+
 
 set_research_slots = 3
 starting_train_buffer = 2
@@ -177,7 +170,6 @@ if = {
 		pre_dreadnoughts_nomtg = 1
 		transport = 1
 	}
-	set_naval_oob = "STG_1007_naval_legacy"
 }
 if = {
 	limit = {
@@ -206,7 +198,6 @@ if = {
 		mtg_transport = 1
 		basic_fire_control_system = 1
 	}
-	set_naval_oob = "STG_1007_naval"
 }
 if = {
 	limit = {

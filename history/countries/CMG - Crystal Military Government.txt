@@ -1,8 +1,8 @@
-﻿capital = 344
+﻿capital = 324
 
-oob = "CRY_1007"
+oob = "CMG_1002"
 
-set_research_slots = 3
+set_research_slots = 2
 starting_train_buffer = 1
 
 set_technology = {
@@ -11,7 +11,6 @@ set_technology = {
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	gw_artillery = 1
 	tech_support = 1
 	tech_recon = 1
@@ -91,13 +90,13 @@ generic_SS_template = yes
 
 set_convoys = 69
 set_popularities = {
-	democratic = 15
-	fascism = 80
+	democratic = 30
+	fascism = 22
 	communism = 5
-	neutrality = 0
+	neutrality = 43
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -117,51 +116,11 @@ add_ideas = {
 	pre_industrial_society
 }
 
-set_stability = 0.6
-set_war_support = 0.8
+set_stability = 0.5
+set_war_support = 0.5
 
-recruit_character = CRY_sombra
-recruit_character = CRY_reese
-recruit_character = CRY_disputed
-recruit_character = CRY_radiant_hope
-recruit_character = CRY_princess_mi_amore_cadenza
-recruit_character = CRY_arctic_lily
-recruit_character = CRY_shining_armour
-recruit_character = CRY_dusty_ember
-recruit_character = CRY_forest_nutmeg
-recruit_character = CRY_icy_snow
-recruit_character = CRY_cloudie
-recruit_character = CRY_deimos_falafel
-recruit_character = CRY_crystalline
-recruit_character = CRY_flash_sentry
-recruit_character = CRY_solid_shot
-recruit_character = CRY_wondermane
-recruit_character = CRY_ice
-recruit_character = CRY_flurry_heart
-recruit_character = CRY_spike
-recruit_character = CRY_sakira
-recruit_character = CRY_erich
-recruit_character = CRY_idol_hooves
-recruit_character = CRY_dust_snowfall
-recruit_character = CRY_ponies_act
-recruit_character = CRY_nlr_finance_expert
-recruit_character = CRY_mistmane
-recruit_character = CRY_take_off_cry
-recruit_character = CRY_martini
-recruit_character = CRY_sweet_snow
-recruit_character = CRY_cloudy
-recruit_character = CRY_peyote
-recruit_character = CRY_nlr_entrenchment
-recruit_character = CRY_sunburst
-recruit_character = CRY_shadow_stone
-recruit_character = CRY_lake_frost
-recruit_character = CRY_snow_puff
-recruit_character = CRY_wild_strikes
-recruit_character = CRY_atom 
-recruit_character = CRY_squeeky_hooves
-recruit_character = CRY_misty_night
-recruit_character = CRY_nightmare_moon
-recruit_character = CRY_arstotzka_reptov
+
+recruit_character = CMG_shining_armour
 
 set_rule = {
 	can_generate_female_aces = yes
