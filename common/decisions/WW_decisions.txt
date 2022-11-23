@@ -768,7 +768,7 @@ WW_category = {
 					set_country_flag = big_event_custom_island_war
 				}
 			}
-			custom_effect_tooltip = rivco_upa_merge
+			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -779,35 +779,7 @@ WW_category = {
 					target = EQS 
 				}
 			}
-			hidden_effect = {
-				BAK = { add_to_faction = HIP }
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = HIP }
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = HIP }
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = HIP }
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = HIP }
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
-
-				GRI	= { add_to_faction = CTH }
-				GRI	= { add_to_faction = BAT }
-			
+			hidden_effect = {	
 				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
@@ -822,7 +794,7 @@ WW_category = {
 					set_country_flag = big_event_custom_island_war
 				}
 			}
-			custom_effect_tooltip = rivco_upa_merge
+			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -834,34 +806,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				BAK = { add_to_faction = HIP }
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = HIP }
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = HIP }
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = HIP }
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = HIP }
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
-
-				GRI = { add_to_faction = CTH }
-				GRI = { add_to_faction = BAT }
-
 				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
@@ -915,6 +859,12 @@ WW_category = {
 				}
 			}
 			
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }	
+			NIM = { add_to_faction = HIP }
+			
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
 		
@@ -942,7 +892,13 @@ WW_category = {
 					target = WNG 
 				}
 			}
-			
+
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }		
+			NIM = { add_to_faction = HIP }
+				
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
 	}
@@ -984,9 +940,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {	
-				GRI = { add_to_faction = CHN }
-				GRI = { add_to_faction = GRF }
-				GRI = { add_to_faction = PNG }
 				
 				CHN = { add_ideas = WW_CHN_core_buff }
 				OLE = { add_ideas = WW_OLE_surrender_limit }
@@ -1011,9 +964,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				GRI	= { add_to_faction = CHN }
-				GRI	= { add_to_faction = GRF }
-				GRI	= { add_to_faction = PNG }
 
 				CHN = { add_ideas = WW_CHN_core_buff }
 				OLE = { add_ideas = WW_OLE_surrender_limit }
@@ -1058,24 +1008,34 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				BAK = { add_to_faction = WNG }
-				BAK = { add_to_faction = GRY }	
-		
-				RCT = { add_to_faction = WNG }
-				RCT = { add_to_faction = GRY }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-				LCT = { add_to_faction = WNG }
-				LCT = { add_to_faction = GRY }
-	
-				WIT = { add_to_faction = WNG }
-				WIT = { add_to_faction = GRY }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-				NIM = { add_to_faction = WNG }
-				NIM = { add_to_faction = GRY }
-
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 				
-				GRI = { add_to_faction = HLQ }
-
+				
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }			
+				
+				
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
@@ -1102,23 +1062,32 @@ WW_category = {
 			}
 		
 			hidden_effect = {
-				BAK = { add_to_faction = WNG }
-				BAK = { add_to_faction = GRY }	
-		
-				RCT = { add_to_faction = WNG }
-				RCT = { add_to_faction = GRY }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-				LCT = { add_to_faction = WNG }
-				LCT = { add_to_faction = GRY }
-	
-				WIT = { add_to_faction = WNG }
-				WIT = { add_to_faction = GRY }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-				NIM = { add_to_faction = WNG }
-				NIM = { add_to_faction = GRY }
-
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 				
-				GRI = { add_to_faction = HLQ }
+				
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }
 
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
