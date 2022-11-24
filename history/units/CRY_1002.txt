@@ -1,0 +1,126 @@
+﻿division_template = {
+	name = "Imperial Legion"			#Cultist Infantry
+	division_names_group = CRY_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Thrall Legion"			#Mind Controlled shitspam
+	division_names_group = CRY_GRD_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Umbral Horde"			#Placeholder
+	division_names_group = CRY_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		location = 489
+		division_template = "Imperial Legion"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9 }
+	division = {
+		location = 489
+		division_template = "Imperial Legion"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9 }
+	division = {
+		location = 489
+		division_template = "Imperial Legion"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Thrall Legion"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 }
+	division = {
+		location = 489
+		division_template = "Umbral Horde"	
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1 }
+	division = {
+		location = 489
+		division_template = "Umbral Horde"	
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1 }
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CRY"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CRY" }
+		requested_factories = 1
+		progress = 0.10
+		efficiency = 50
+	}
+}

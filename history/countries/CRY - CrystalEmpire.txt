@@ -1,6 +1,6 @@
 ﻿capital = 344
 
-oob = "CRY_1007"
+oob = "CRY_1002"
 
 set_research_slots = 3
 starting_train_buffer = 1
@@ -19,6 +19,7 @@ set_technology = {
 	tech_engineers = 1
 	basic_train = 1
 }
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_technology = {
@@ -61,7 +62,6 @@ if = {
 		set_air_oob = "CRY_1007_air_legacy"
 	}
 }
-actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 
 if = {
 	limit = { NOT = { has_dlc = "Man the Guns" } }
@@ -115,6 +115,7 @@ add_equipment_to_stockpile = {
 }
 add_ideas = {
 	pre_industrial_society
+	partial_economic_mobilisation
 }
 
 set_stability = 0.6

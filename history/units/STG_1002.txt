@@ -13,7 +13,7 @@
 	priority = 0
 }
 division_template = {
-	name = "Kopytnaya Diviziya"
+	name = "Strelkovaya Brigada"
 	division_names_group = STG_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -26,10 +26,11 @@ division_template = {
 
 	support = {
 		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "Motokopytnyaya Diviziya"
+	name = "Motostrelkovaya Brigada"
 	division_names_group = STG_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -41,6 +42,8 @@ division_template = {
 	}
 
 	support = {
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -48,109 +51,75 @@ division_template = {
 	division_names_group = STG_ARM_01
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
 	}
 	support = {
 		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
-division_template = {
-	name = "Tankovaya Diviziya"
-	division_names_group = STG_ARM_01
-	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		medium_armor = { x = 0 y = 2 }
-		medium_armor = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-	}
-	support = {
-		light_tank_recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Diviziya Pegasov"
-	division_names_group = STG_PEG_01
-	regiments = {
-		pegasi = { x = 0 y = 0 }
-		pegasi = { x = 0 y = 1 }
-		pegasi = { x = 0 y = 2 }
-		pegasi = { x = 1 y = 0 }
-		pegasi = { x = 1 y = 1 }
-		pegasi = { x = 1 y = 2 }
-	}
-
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
 units = {
 	division = {
-		name = "Diviziya im. Stalliona"
+		name = "Ivankov Militia"
 		location = 488
 		division_template = "Pony's Militia"
 		start_experience_factor = 0.2 }
 	division = {
-		name = "Pervaya Pegasiya Diviziya"
-		location = 3159
-		division_template = "Diviziya Pegasov"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.8 }
-	division = {
 		name = "Kvass Militia"
 		location = 311
 		division_template = "Pony's Militia"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9 }
+		start_experience_factor = 0.1 }
 	division = {
-		name = "Partisanskaya Diviziya"
+		name = "Stalliongrad Militia"
+		location = 311
+		division_template = "Pony's Militia"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "Petershoof Militia"
 		location = 11546
 		division_template = "Pony's Militia"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
-		force_equipment_variants = { infantry_equipment_0 = { owner = "STG" creator = "EQS" } } }
+		start_experience_factor = 0.1 }
 	division = {
-		name = "Diviziya Krasnoi Revolutsii"
+		name = "1-ya Strelkovaya Brigada im. Stalliona"
 		location = 3274
-		division_template = "Pony's Militia"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9 }
+		division_template = "Strelkovaya Brigada"
+		start_experience_factor = 0.2 }
 	division = {
-		name = "Diviziya Podkovi i Molota"
+		name = "2-ya Strelkovaya Brigada Podkovi i Molota"
 		location = 200
-		division_template = "Kopytnaya Diviziya"
+		division_template = "Strelkovaya Brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7 }
 	division = {
-		name = "Diviziya Novoczernuszkih Boytsov"
+		name = "3-ya Strelkovaya Brigada Krasnoi Revolutsii"
 		location = 3379
-		division_template = "Kopytnaya Diviziya"
+		division_template = "Strelkovaya Brigada"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5 }
 	division = {
-		name = "Motokopytnyaya Diviziya Stavroponya"
+		name = "4-ya Strelkovaya Brigada im. Carameli"
+		location = 3379
+		division_template = "Strelkovaya Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5 }
+	division = {
+		name = "5-ya Stavroponskaya Motostrelkovaya Brigada"
 		location = 3217
-		division_template = "Motokopytnyaya Diviziya"
+		division_template = "Motostrelkovaya Brigada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.65 }
 	division = {
-		name = "Brigada Krepkaya Bronya"
+		name = "1-ya Tankovaya Brigada Bronya"
 		location = 9433
 		division_template = "Tankovaya Brigada"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.70
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "STG" version_name = "T-26 Obr.1006" } medium_tank_chassis_1 = { owner = "STG" version_name = "T-28" } }
-	}
+		start_equipment_factor = 0.70 }
 }
 
 ### Starting Production ###
@@ -178,30 +147,11 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "STG"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.56
 		efficiency = 60
 	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_2
-			creator = "STG" 
-			version_name = "BT-7A"
-		}
-		requested_factories = 1
-		progress = 0.9
-		efficiency = 80
-	}
-	add_equipment_production = {
-		equipment = {
-			type = medium_tank_chassis_1
-			creator = "STG" 
-			version_name = "T-28"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 60
-	}
+
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1

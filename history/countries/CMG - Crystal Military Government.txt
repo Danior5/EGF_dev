@@ -109,11 +109,13 @@ if = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 3000
+	amount = 1000
 	producer = EQS
 }
 add_ideas = {
 	pre_industrial_society
+	low_economic_mobilisation
+	limited_conscription
 }
 
 set_stability = 0.5
