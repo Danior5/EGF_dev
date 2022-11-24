@@ -526,6 +526,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			breakthrough = -0.25
+			hard_attack = 0.35
 		}
 
 		can_convert_from = {
