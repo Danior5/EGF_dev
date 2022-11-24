@@ -125,6 +125,16 @@ shared_focus = {
 				instant_build = yes 
 			} 
 		} 
+		CRY = {
+			create_railway_gun = {
+				equipment = railway_gun_equipment_1
+				name = M. 10031
+			}
+			create_railway_gun = {
+				equipment = railway_gun_equipment_1
+				name = M. 10032
+			}	
+		}
 	}
 }
 
