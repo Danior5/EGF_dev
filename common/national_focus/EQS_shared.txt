@@ -126,7 +126,7 @@ shared_focus = {
 			} 
 		} 
 		CRY = {
-			set_technology = { railway_gun = 1 }
+			#set_technology = { railway_gun = 1 }
 			create_railway_gun = {
 				equipment = railway_gun_equipment_1
 			}
