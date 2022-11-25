@@ -2536,16 +2536,6 @@
 			is_in_faction = yes
 			any_allied_country = {
 				NOT = { tag = ROOT }
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = HIP_invest_in_our_allies_trigger_civ_tt
-						check_variable = { num_of_military_factories < 20 }
-					}
-					custom_trigger_tooltip = {
-						tooltip = HIP_invest_in_our_allies_trigger_mil_tt
-						check_variable = { num_of_military_factories < 15 }
-					}
-				}
 			}
 		}
 
@@ -2562,7 +2552,6 @@
 				limit = {
 					is_in_faction_with = ROOT
 					has_capitulated = no
-					check_variable = { num_of_civilian_factories < 20 }
 				}
 				two_random_industrial_complex = yes
 			}
@@ -2570,7 +2559,6 @@
 				limit = {
 					is_in_faction_with = ROOT
 					has_capitulated = no
-					check_variable = { num_of_military_factories < 15 }
 				}
 				two_random_arms_factory = yes
 			}
