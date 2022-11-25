@@ -7174,7 +7174,7 @@ shared_focus = {
 				}
 				generic_basic_nav_bomber = yes
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
+					type = small_plane_naval_bomber_airframe_1
 					variant_name = "Basic Naval Bomber"
 					amount = 75
 				}
@@ -12819,7 +12819,7 @@ shared_focus = {
 				}
 				generic_basic_nav_bomber = yes
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
+					type = small_plane_naval_bomber_airframe_1
 					variant_name = "Basic Naval Bomber"
 					amount = 75
 				}
@@ -13483,7 +13483,7 @@ shared_focus = {
 				}
 				generic_basic_nav_bomber = yes
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
+					type = small_plane_naval_bomber_airframe_1
 					variant_name = "Basic Naval Bomber"
 					amount = 75
 				}
