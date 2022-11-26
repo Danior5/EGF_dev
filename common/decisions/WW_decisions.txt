@@ -859,7 +859,8 @@ WW_category = {
 				}
 			}
 			
-			
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
 			for_each_scope_loop = {
 				array = global.rivco
 				add_to_faction = HIP
