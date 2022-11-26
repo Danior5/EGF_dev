@@ -14,17 +14,24 @@ country_event = { #factions
 		EQS = { add_to_faction = STG }
 		
 		## South RivCo ##
-		for_each_scope_loop = {
-			array = global.rivco
-			add_to_faction = WNG
-			add_to_faction = GRY
-		}
+		RCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = WNG }		
+		BAK = { add_to_faction = WNG }		
+		WIT = { add_to_faction = WNG }
+		NIM = { add_to_faction = WNG }
+		
+		RCT = { add_to_faction = GRY }
+		LCT = { add_to_faction = GRY }		
+		BAK = { add_to_faction = GRY }		
+		WIT = { add_to_faction = GRY }
+		NIM = { add_to_faction = GRY }
 		
 		## North Reichspakt ##
-		for_each_scope_loop = {
-			array = global.reichspakt
-			GRI = {add_to_faction = PREV}
-		}
+		GRI = { add_to_faction = FAT }
+		GRI = { add_to_faction = FAW }
+		GRI = { add_to_faction = TRD }
+		GRI = { add_to_faction = JER }
+		GRI = { add_to_faction = HLQ }
 		## North CHNHegemony ##
 		CHN = { add_to_faction = PNG }
 		CHN = { add_to_faction = GRF }

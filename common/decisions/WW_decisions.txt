@@ -861,10 +861,9 @@ WW_category = {
 			
 			BAK = { add_to_faction = HIP }		
 			LCT = { add_to_faction = HIP }
-			for_each_scope_loop = {
-				array = global.rivco
-				add_to_faction = HIP
-			}
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }	
+			NIM = { add_to_faction = HIP }
 			
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
@@ -894,10 +893,11 @@ WW_category = {
 				}
 			}
 
-			for_each_scope_loop = {
-				array = global.rivco
-				add_to_faction = HIP
-			}
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }		
+			NIM = { add_to_faction = HIP }
 				
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
@@ -1008,29 +1008,32 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				
-				add_to_array = {global.rivco = WNG}
-				
-				for_each_scope_loop = {
-					array = global.united_ponies
-					for_each_scope_loop = { 
-						array = global.rivco
-						add_to_faction = PREV
-					}
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
+
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
+
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
 					
-				}
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 				
 				
-				GRI = {
-					for_each_scope_loop = {
-						array = global.chn_heg
-						add_to_faction = PREV
-					}
-					for_each_scope_loop = {
-						array = global.bat_cringe
-						add_to_faction = PREV
-					}
-				}			
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }			
 				
 				
 				EQC = { remove_ideas = WW_last_AC }	
@@ -1040,9 +1043,6 @@ WW_category = {
 		}
 		
 		complete_effect = {
-
-			
-
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_tarrin_war
@@ -1062,31 +1062,32 @@ WW_category = {
 			}
 		
 			hidden_effect = {
-				add_to_array = {global.rivco = WNG}
-				##OK so this is very whacky. 
-				##this is basically TAG from RIVCO = {add_to_faction = TAGS from UPA}
-				##but it shouldn't fucking work like this
-				
-				for_each_scope_loop = {
-					array = global.united_ponies
-					for_each_scope_loop = { 
-						array = global.rivco
-						add_to_faction = PREV
-					}
-					
-				}
-				
-				
-				
-				for_each_scope_loop = {
-					array = global.chn_heg
-					GRI = {add_to_faction = PREV}
-				}
-				for_each_scope_loop = {
-					array = global.bat_cringe
-					GRI = {add_to_faction = PREV}
-				}
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
 			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
+
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
+
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
+				
+				
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }
 
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
@@ -1270,7 +1271,37 @@ WW_category = {
 	WW_spawn_50w = {		
 		icon = rifles
 		allowed = {
-			always = yes
+			OR = {
+				original_tag = JER
+				original_tag = FAT
+				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = HLQ
+				original_tag = TRD
+				original_tag = CHN
+				original_tag = FAW
+				original_tag = GRF
+				original_tag = OLE
+				original_tag = PNG
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				original_tag = WNG
+				original_tag = GRY
+				original_tag = MIT
+				original_tag = RCT
+				original_tag = LCT
+				original_tag = DMT
+				original_tag = WIT
+				original_tag = BAK
+				original_tag = NIM
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = HIP
+			}
 		}
 		available = {
 			date > 1006.11.1
@@ -1281,14 +1312,7 @@ WW_category = {
 		}
 		fire_only_once = yes
 		visible = {
-			OR ={
-				is_in_array = { global.reichspakt = ROOT}
-				is_in_array = { global.chn_heg = ROOT}
-				is_in_array = { global.united_ponies = ROOT}
-				is_in_array = { global.rivco = ROOT}
-				is_in_array = { global.bat_cringe = ROOT}
-				original_tag = WNG
-			}
+			date > 1006.11.1
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -1301,7 +1325,37 @@ WW_category = {
 	WW_heavy_tanks = {		
 		icon = generic_tank
 		allowed = {
-			always = yes
+			OR = {
+				original_tag = JER
+				original_tag = FAT
+				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = HLQ
+				original_tag = TRD
+				original_tag = CHN
+				original_tag = FAW
+				original_tag = GRF
+				original_tag = OLE
+				original_tag = PNG
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				original_tag = WNG
+				original_tag = GRY
+				original_tag = MIT
+				original_tag = RCT
+				original_tag = LCT
+				original_tag = DMT
+				original_tag = WIT
+				original_tag = BAK
+				original_tag = NIM
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = HIP
+			}
 		}
 		available = {
 			date > 1006.11.1
@@ -1312,14 +1366,7 @@ WW_category = {
 		}
 		fire_only_once = yes
 		visible = {
-			OR ={
-				is_in_array = { global.reichspakt = ROOT}
-				is_in_array = { global.chn_heg = ROOT}
-				is_in_array = { global.united_ponies = ROOT}
-				is_in_array = { global.rivco = ROOT}
-				is_in_array = { global.bat_cringe = ROOT}
-				original_tag = WNG
-			}
+			date > 1006.11.1
 		}
 		complete_effect = {
 			hidden_effect = {
