@@ -1,0 +1,100 @@
+﻿
+division_template = {
+	name = "Cannibal Clan"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+	}
+
+}
+
+division_template = {
+	name = "Virgil's Bandits"			
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Socialist Guerillas"			
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+
+	support = {
+	}
+}
+
+units = {
+	division = {
+		#name = "Frontier Rifle Division"
+		location = 3030
+		division_template = "Virgil's Bandits"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0 }
+	division = {
+		#name = "Frontier Rifle Division"
+		location = 9235
+		division_template = "Virgil's Bandits"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0 }
+	division = {
+		#name = "Socialist Guerillas"	
+		location = 11217
+		division_template = "Socialist Guerillas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0 }
+	division = {
+		#name = "Socialist Guerillas"
+		location = 214
+		division_template = "Socialist Guerillas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0 }
+	division = {
+		#name = "Frontier Rifle Division"
+		location = 9181
+		division_template = "Cannibal Clan"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9 }
+	division = {
+		#name = "Frontier Mountaineer Guard"
+		location = 11043
+		division_template = "Cannibal Clan"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9 }
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GFF"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 60
+	}
+}

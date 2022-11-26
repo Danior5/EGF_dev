@@ -1,0 +1,187 @@
+﻿division_template = {
+	name = "Infantry Brigade"			
+	division_names_group = GRF_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Rangers Brigade"			
+	division_names_group = GRF_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Volunteer Regiment"
+	division_names_group = GRF_GAR_01
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Falcons Volunteer Regiment"
+	division_names_group = GRF_GAR_01
+	template_counter = 33
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Talon Industries PSD Detachment"
+	division_names_group = GRF_INF_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Republican Guard Infantry Brigade"
+		location = 52
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "14th Weter Infantry Brigade"
+		location = 11083
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "24th New Aquilan Infantry Brigade"
+		location = 3133
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "28th Northern Rangers Brigade"
+		location = 283
+		division_template = "Rangers Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10th Southern Rangers Brigade"
+		location = 6092
+		division_template = "Rangers Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Free Virgillian Regiment"
+		location = 10715
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Northern Self-Defense Force"
+		location = 6210
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Kluv Valley Self-Defense Force"
+		location = 212
+		division_template = "Volunteer Regiment"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "1st 'Spirirts of Solarspike' FoG Line Regiment"
+		location = 52
+		division_template = "Falcons Volunteer Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd 'Black Fog' FoG Line Regiment"
+		location = 3133
+		division_template = "Falcons Volunteer Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "1st TIPSD Protection Detachment"
+		location = 6203
+		division_template = "Talon Industries PSD Detachment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GRF"
+		}
+		requested_factories = 3
+		progress = 0.86
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRF"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRF"
+		}
+		requested_factories = 2
+		progress = 0.67
+		efficiency = 50
+	}
+}
