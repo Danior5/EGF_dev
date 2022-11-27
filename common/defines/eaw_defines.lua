@@ -136,8 +136,8 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  			   -- amount of extra attrition from being in training
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01			-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 7.0	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02			-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 3.5	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
