@@ -130,9 +130,7 @@ NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 2				-- Number of human pla
 NDefines.NDiplomacy.MP_NUM_LOSERS_FOR_PEACE_PAUSE = 0				-- Number of human players as losers needed for peace conference to pause and open for everyone in multiplayer, needs to fullfill MP_NUM_WINNERS_FOR_PEACE_PAUSE as well.
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 250					-- Days of client lag for decrease of gamespeed
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250				-- Days of client lag for pause of gamespeed.
-
-NDefines.NAir.ESCORT_FACTOR = 6.0
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250				-- Days of client lag for pause of gamespeed
 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
@@ -153,7 +151,8 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 -- Divs required to send volunteers
 NDefines.NDiplomacy.TENSION_DECAY = 0.1 -- default 0.1, changed from 0.25 in EaW vanilla
-NDefines.NDiplomacy.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				-- Impact of being in defensive war
+
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				-- Impact of being in defensive war
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- HOLD
