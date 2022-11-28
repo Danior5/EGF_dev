@@ -151,6 +151,107 @@ political_actions = {
 
 WW_category = {
 
+	BAT_annex_CTH = {
+		icon = generic_form_nation
+
+		targets = { CTH }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+			}
+		}
+		allowed = {
+			original_tag = BAT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			CTH = {
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_BRZ target: [From.GetName]"
+
+			#CTH = {
+			#	every_character = {
+			#		limit = {
+			#			is_unit_leader = yes 
+			#			is_country_leader = no
+			#		}
+			#		set_nationality = BAT
+			#	}
+			#}
+			# TO BE DISCUSSED
+
+
+			every_state = {
+				limit = {
+					is_core_of = CTH
+				}
+				add_core_of = BAT
+			}
+			annex_country = { target = CTH transfer_troops = yes }
+		}
+	}
+	CTH_annex_BAT = {
+		icon = generic_form_nation
+
+		targets = { BAT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+			}
+		}
+
+
+		allowed = {
+			original_tag = CTH
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			BAT = {
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_BRZ target: [From.GetName]"
+
+			#BAT = {
+			#	every_character = {
+			#		limit = {
+			#			is_unit_leader = yes 
+			#			is_country_leader = no
+			#		}
+			#		set_nationality = CTH
+			#	}
+			#}
+			# TO BE DISCUSSED
+
+
+			every_state = {
+				limit = {
+					is_core_of = BAT
+				}
+				add_core_of = CTH
+			}
+			annex_country = { target = BAT transfer_troops = yes }
+		}
+	}
 	GRI_intergrate_BRZ = {
 		icon = generic_form_nation
 
@@ -1274,7 +1375,7 @@ WW_category = {
 		complete_effect = {
 			BAK = { add_to_faction = GRY }
 			RCT = { add_to_faction = GRY }
-			LCT = { add_to_faction = GRY }
+			LCT = { add_to_faction = GRY }`
 			WIT = { add_to_faction = GRY }
 			add_ideas = RIV_member_state
 			hidden_effect = { 
