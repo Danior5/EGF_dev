@@ -6529,6 +6529,24 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_military_research_department"
 			add_research_slot = 1
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				technology = infantry_weapons2
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				technology = magical_weapons
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -6781,8 +6799,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_standard_rifles"
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -6899,7 +6917,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_motorized_f"
 			add_tech_bonus = {
 				name = mech_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = motorized_equipment
 			}
