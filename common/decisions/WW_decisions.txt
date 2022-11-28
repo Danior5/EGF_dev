@@ -1375,7 +1375,7 @@ WW_category = {
 		complete_effect = {
 			BAK = { add_to_faction = GRY }
 			RCT = { add_to_faction = GRY }
-			LCT = { add_to_faction = GRY }`
+			LCT = { add_to_faction = GRY }
 			WIT = { add_to_faction = GRY }
 			add_ideas = RIV_member_state
 			hidden_effect = { 
