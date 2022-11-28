@@ -487,11 +487,11 @@ shared_focus = {
 		focus = GRI_noble_industrial_council
 	}
 	available = {
-	    NOT = {
-	        OR = {
-			has_idea = war_economy
-			has_idea = tot_economic_mobilisation
-		    }
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
 		}
 	}
 	x = 18
