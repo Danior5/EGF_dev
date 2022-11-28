@@ -1263,6 +1263,26 @@ WW_category = {
 
 		}
 	}
+	WW_GRY_join_coltstream = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			original_tag = GRY
+		}
+		available = {
+			NOT = {is_in_faction_with = RCT}
+		}
+		complete_effect = {
+			BAK = { add_to_faction = GRY }
+			RCT = { add_to_faction = GRY }
+			LCT = { add_to_faction = GRY }
+			WIT = { add_to_faction = GRY }
+			add_ideas = RIV_member_state
+			hidden_effect = { 
+				RIV_set_cosmetic_tag = yes
+				update_river_fed_array = yes
+			}
+		}
+	}
 ### WW 3.0 end ###
 
 
