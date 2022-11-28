@@ -914,7 +914,6 @@ foreign_politics = {
 				original_tag = WIT
 				original_tag = BAR
 				original_tag = FEZ
-				original_tag = GRI
 				original_tag = DED
 				original_tag = HLR
 				original_tag = EWI
@@ -937,6 +936,16 @@ foreign_politics = {
 				original_tag = HIE
 				original_tag = TRO #They don't tolerate competition
 				original_tag = WIN #Second verse same as the first
+				
+				NOT = {
+					AND = {
+						original_tag = GRI	
+						has_country_leader = { 
+							ruling_only = yes 
+							character = STW_gabriela_eagleclaw 
+						}
+					}
+				}
 			}
 		}
 		visible = {

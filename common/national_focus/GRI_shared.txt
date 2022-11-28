@@ -748,7 +748,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_joint_armies"
 		add_ideas = GRI_joint_army
-		add_manpower = 15000
+		add_manpower = 150000
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
 }
@@ -769,6 +769,22 @@ shared_focus = {
 		    }
 		}
 		owns_state = 486
+		has_country_leader = { 
+		    ruling_only = yes 
+			character = STW_gabriela_eagleclaw 
+		}
+	}
+	bypass = {
+		if = {
+			limit = { original_tag = GRI }
+			has_country_leader = { 
+				ruling_only = yes 
+				character = GRI_archon_eros_vii
+			}
+		}
+		else = {
+			has_government = fascism
+		}
 	}
 	prerequisite = {
 		focus = GRI_conquer_STW
@@ -791,6 +807,11 @@ shared_focus = {
 			state = 546
 		}
 		add_resource = {
+			type = tungsten
+			amount = 28
+			state = 546
+		}
+		add_resource = {
 			type = steel
 			amount = 14
 			state = 545
@@ -798,6 +819,11 @@ shared_focus = {
 		add_resource = {
 			type = chromium
 			amount = 9
+			state = 545
+		}
+		add_resource = {
+			type = tungsten
+			amount = 20
 			state = 545
 		}
 		486 = {
@@ -1938,6 +1964,19 @@ shared_focus = {
 				    is_subject_of = ROOT
 			    }
 		    }
+		}
+		if = {
+			limit = { original_tag = GRI }
+			has_country_leader = { 
+				ruling_only = yes 
+				character = GRI_archon_eros_vii
+			}
+		}
+	}
+	bypass = {
+	    has_country_leader = { 
+		    ruling_only = yes 
+			character = STW_gabriela_eagleclaw
 		}
 	}
 	prerequisite = {
