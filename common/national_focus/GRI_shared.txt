@@ -825,7 +825,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = tungsten
-			amount = 28
+			amount = 14
 			state = 546
 		}
 		add_resource = {
@@ -840,7 +840,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = tungsten
-			amount = 20
+			amount = 12
 			state = 545
 		}
 		486 = {
