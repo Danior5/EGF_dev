@@ -1,16 +1,4 @@
 GRI_noble_management_category = {
-	icon = GFX_category_icon
-	picture = GFX_category_image_template
-
-	allowed = {
-		always = yes
-	}
-	visible = {
-	}
-	visible_when_empty = yes
-}
-
-GRI_noble_management_category = {
 	GRI_noble_management = {
 		on_map_mode = map_only
 		state_target = yes
