@@ -1294,12 +1294,14 @@ characters={
 			allowed = {
 				original_tag = CHN
 			}
+			visible = {
+				date < 1010.01.01
+			}
 			available = {
 				NOT = { 
 					has_idea = chn_queen_helvia
 					has_idea = chn_queen_aurantia
 					has_idea = chn_queen_yaria
-					date > 1010.01.01
 				}
 				has_government = fascism
 			}
