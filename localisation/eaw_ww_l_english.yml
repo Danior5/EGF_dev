@@ -89,6 +89,8 @@ l_english:
 
  bastion_of_the_east_tt:0 "Add §G6§! §YLand Fort§! and §G6§! §YCoastal Fort§! to every province with a §YNaval Base§!."
 
+ GRI_dutchess_allow_trade_tt:0 "Unlocks Decision: §YTrade With Skyfall§!"
+
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
  EQS_island_debuff3:0 "Celestial Sea Islands: §OSlight Danger§!" 

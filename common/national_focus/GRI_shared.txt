@@ -401,7 +401,11 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_noble_council"
 		add_ideas = GRI_council
-		hidden_effect = { set_country_flag = GRI_noble_council_established }
+		custom_effect_tooltip = GRI_dutchess_allow_trade_tt
+		hidden_effect = { 
+			set_country_flag = GRI_noble_council_established
+			clear_country_flag = GRI_not_dutchess
+		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
