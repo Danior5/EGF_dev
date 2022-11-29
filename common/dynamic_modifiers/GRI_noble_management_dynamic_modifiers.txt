@@ -14,6 +14,7 @@ GRI_noble_management_2 = {
 
 	state_production_speed_buildings_factor = 0.2
 	local_building_slots = 3
+	local_factories = 0.1
 	local_resources = 0.15
 }
 GRI_noble_management_3 = { 
@@ -23,6 +24,7 @@ GRI_noble_management_3 = {
 
 	state_production_speed_buildings_factor = 0.3
 	local_building_slots = 4
+	local_factories = 0.2
 	local_resources = 0.2
 	army_core_attack_factor = 0.15
 	army_core_defence_factor = 0.15
