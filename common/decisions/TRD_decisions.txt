@@ -892,7 +892,10 @@ foreign_politics = {
 				is_coastal = yes
 				is_fully_controlled_by = ROOT
 			}
-			has_country_flag = GRI_allow_trade
+			hidden_trigger = {
+				original_tag = GRI
+				has_country_flag = GRI_allow_trade
+			}
 			NOT = {
 				has_idea = closed_economy
 			}
