@@ -10,14 +10,14 @@ increase_noble_management = {
 		add_dynamic_modifier = { modifier = GRI_noble_management_1 }
 	}
 	else_if = {
-		limit = (
+		limit = {
 			has_dynamic_modifier = { modifier = GRI_noble_management_1 }
 		}
 		remove_dynamic_modifier = { modifier = GRI_noble_management_1 }
 		add_dynamic_modifier = { modifier = GRI_noble_management_2 }
 	}
 	else_if = {
-		limit = (
+		limit = {
 			has_dynamic_modifier = { modifier = GRI_noble_management_2 }
 		}
 		remove_dynamic_modifier = { modifier = GRI_noble_management_2 }

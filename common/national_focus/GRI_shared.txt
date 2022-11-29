@@ -402,6 +402,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_noble_council"
 		add_ideas = GRI_council
 		custom_effect_tooltip = GRI_dutchess_allow_trade_tt
+		custom_effect_tooltip = GRI_noble_management_tt
 		hidden_effect = { 
 			set_country_flag = GRI_noble_council_established
 			set_country_flag = GRI_allow_trade
