@@ -2,33 +2,25 @@ increase_noble_management = {
 	if = {
 		limit = {
 			NOT = {
-				has_dynamic_modifier = {
-					modifier = GRI_noble_management_1
-				}
-				has_dynamic_modifier = {
-					modifier = GRI_noble_management_2
-				}
-				has_dynamic_modifier = {
-					modifier = GRI_noble_management_3
-				}
+				has_dynamic_modifier = { modifier = GRI_noble_management_1 }
+				has_dynamic_modifier = { modifier = GRI_noble_management_2 }
+				has_dynamic_modifier = { modifier = GRI_noble_management_3 }
 			}
 		}
-		add_dynamic_modifier = GRI_noble_management_1
+		add_dynamic_modifier = { modifier = GRI_noble_management_1 }
 	}
 	else_if = {
 		limit = (
-			has_dynamic_modifier = {
-				modifier = GRI_noble_management_1
-			}
+			has_dynamic_modifier = { modifier = GRI_noble_management_1 }
 		}
-		add_dynamic_modifier = GRI_noble_management_2
+		remove_dynamic_modifier = { modifier = GRI_noble_management_1 }
+		add_dynamic_modifier = { modifier = GRI_noble_management_2 }
 	}
 	else_if = {
 		limit = (
-			has_dynamic_modifier = {
-				modifier = GRI_noble_management_2
-			}
+			has_dynamic_modifier = { modifier = GRI_noble_management_2 }
 		}
-		add_dynamic_modifier = GRI_noble_management_3
+		remove_dynamic_modifier = { modifier = GRI_noble_management_2 }
+		add_dynamic_modifier = { modifier = GRI_noble_management_3 }
 	}
 }

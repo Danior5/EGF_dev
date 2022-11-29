@@ -17,11 +17,3 @@ alarm_clock_category = {
 		always = yes
 	}
 }
-GRI_noble_management_category = {
-	icon = GFX_category_icon
-	picture = GFX_category_image_template
-
-	allowed = {
-		always = yes
-	}
-}
