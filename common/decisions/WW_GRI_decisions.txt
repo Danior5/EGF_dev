@@ -13,15 +13,7 @@ GRI_noble_management_category = {
 		cost = 50
 		days_remove = 60
 		visible = {
-			FROM = {
-				is_core_of = ROOT
-				is_owned_and_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = GRI_noble_management_3
-					}
-				}
-			}
+			always = yes
 		}
 		target_root_trigger = {
 			has_completed_focus = GRI_noble_council
