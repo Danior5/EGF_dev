@@ -371,9 +371,6 @@ add_ideas = {
 	GRI_boreas_archonate
 	EQS_island_buff1
 }
-
-set_country_flag = GRI_not_dutchess
-
 add_manpower = 45000
 set_major = yes
 if = {

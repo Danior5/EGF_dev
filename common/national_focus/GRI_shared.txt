@@ -404,7 +404,7 @@ shared_focus = {
 		custom_effect_tooltip = GRI_dutchess_allow_trade_tt
 		hidden_effect = { 
 			set_country_flag = GRI_noble_council_established
-			clear_country_flag = GRI_not_dutchess
+			set_country_flag = GRI_allow_trade
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
