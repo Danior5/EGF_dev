@@ -956,6 +956,7 @@ ideas = {
 				political_power_factor = 0.10
 				drift_defence_factor = 0.25
 				neutrality_drift = 0.01
+				stability_factor = 0.2
 			}
 		}
 	}
@@ -972,8 +973,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.05
-				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -1473,7 +1474,7 @@ ideas = {
 				enemy_operative_detection_chance_factor = 0.10
 				resistance_growth = -0.05
 				drift_defence_factor = 0.15
-				new_operative_slot_bonus = 2
+				operative_slot = 2
 			}
 		}
 	}
