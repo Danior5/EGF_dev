@@ -91,7 +91,9 @@ l_english:
 
  GRI_dutchess_allow_trade_tt:0 "Unlocks Decision: §YTrade With Skyfall§!"
 
- GRI_noble_management:0 "Increase Noble Management"
+ GRI_noble_management_decision_1:0 "Increase Noble Management"
+ GRI_noble_management_decision_2:0 "Increase Noble Management"
+ GRI_noble_management_decision_3:0 "Increase Noble Management"
  GRI_noble_management_tt:0 "Unlocks §YIncrease Noble Management§! decisions."
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
