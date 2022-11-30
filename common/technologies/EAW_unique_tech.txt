@@ -748,7 +748,7 @@ tech_vampire_armour = {
         }
         military_police = {
             need = {
-                magical_equipment = 40
+                infantry_equipment = 40
             }
         }
     }
