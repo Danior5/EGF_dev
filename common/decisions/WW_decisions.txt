@@ -1563,5 +1563,384 @@ war_measures = {
    }
    
 
-}	
+}
+
+WNG_dec_cat = {
+	WNG_attack_SIC = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { SIC }
+		available = {
+			date > 1009.6.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = SIC
+				}
+			}
+			declare_war_on = {
+				target = SIC
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_FRN = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { FRN }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = FRN
+				}
+			}
+			declare_war_on = {
+				target = FRN
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_TAL = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { TAL }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = TAL
+				}
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_ARA = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { ARA }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ARA
+				}
+			}
+			declare_war_on = {
+				target = ARA
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_BOI = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { BOI }
+		available = {
+			date > 1010.6.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = BOI
+				}
+			}
+			declare_war_on = {
+				target = BOI
+				type = annex_everything
+			}
+		}
+	}
+}
+	
 	
