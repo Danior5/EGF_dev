@@ -2341,52 +2341,52 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
-			if = {
-				limit = { 
-					AND = {
-						has_tech = basic_medium_tank_chassis
-						has_dlc = "No Step Back"
-					}
-				}
-				create_equipment_variant = {
-					name = "Panzer III Ausf. J"
-					type = medium_tank_chassis_1
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 3
-					}
-					icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
-				}
-				create_equipment_variant = {
-					name = "Panzer IV Ausf. E"
-					type = medium_tank_chassis_1
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_close_support_gun
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
-				}
-			}	
+			#if = {
+			#	limit = { 
+			#		AND = {
+			#			has_tech = basic_medium_tank_chassis
+			#			has_dlc = "No Step Back"
+			#		}
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Panzer III Ausf. J"
+			#		type = medium_tank_chassis_1
+			#		parent_version = 0
+			#		modules = {
+			#			main_armament_slot = tank_high_velocity_cannon
+			#			turret_type_slot = tank_medium_three_man_tank_turret
+			#			suspension_type_slot = tank_bogie_suspension
+			#			armor_type_slot = tank_welded_armor
+			#			engine_type_slot = tank_gasoline_engine
+			#			special_type_slot_1 = tank_radio_1
+			#			special_type_slot_2 = smoke_launchers
+			#		}
+			#		upgrades = {
+			#			tank_nsb_engine_upgrade = 6
+			#			tank_nsb_armor_upgrade = 3
+			#		}
+			#		icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Panzer IV Ausf. E"
+			#		type = medium_tank_chassis_1
+			#		parent_version = 0
+			#		modules = {
+			#			main_armament_slot = tank_close_support_gun
+			#			turret_type_slot = tank_medium_three_man_tank_turret
+			#			suspension_type_slot = tank_bogie_suspension
+			#			armor_type_slot = tank_welded_armor
+			#			engine_type_slot = tank_gasoline_engine
+			#			special_type_slot_1 = tank_radio_1
+			#			special_type_slot_2 = smoke_launchers
+			#		}
+			#		upgrades = {
+			#			tank_nsb_engine_upgrade = 6
+			#			tank_nsb_armor_upgrade = 4
+			#		}
+			#		icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+			#	}
+			#}	
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3524,39 +3524,39 @@ focus_tree = {
 				uses = 1
 				category = cat_medium_armor
 			}
-			custom_effect_tooltip = CHN_PzIVH_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_medium_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = artillery1
-							has_tech = antitank1
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Panzer IV  Ausf. H"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = armor_skirts
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/CHN_panzerIV.dds"
-				}		
-			}
+			#custom_effect_tooltip = CHN_PzIVH_tooltip
+			#if = {
+			#	limit = { 
+			#		AND = {
+			#			has_tech = improved_medium_tank_chassis
+			#			has_dlc = "No Step Back"
+			#			OR = {
+			#				has_tech = artillery1
+			#				has_tech = antitank1
+			#			}
+			#		}
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Panzer IV  Ausf. H"
+			#		type = medium_tank_chassis_2
+			#		parent_version = 0
+			#		modules = {
+			#			main_armament_slot = tank_medium_cannon
+			#			turret_type_slot = tank_medium_three_man_tank_turret
+			#			suspension_type_slot = tank_bogie_suspension
+			#			armor_type_slot = tank_welded_armor
+			#			engine_type_slot = tank_gasoline_engine
+			#			special_type_slot_1 = tank_radio_1
+			#			special_type_slot_2 = additional_machine_guns
+			#			special_type_slot_3 = armor_skirts
+			#		}
+			#		upgrades = {
+			#			tank_nsb_engine_upgrade = 6
+			#			tank_nsb_armor_upgrade = 4
+			#		}
+			#		icon = "gfx/interface/technologies/CHN_panzerIV.dds"
+			#	}		
+			#}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3594,70 +3594,70 @@ focus_tree = {
 				uses = 1
 				category = cat_heavy_armor
 			}
-		custom_effect_tooltip = CHN_Panther_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = advanced_medium_tank_chassis
-						has_dlc = "No Step Back"
-						has_tech = antitank2
-					}
-				}
-				create_equipment_variant = {
-					name = "Panther Ausf. D"
-					type = medium_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_2
-						special_type_slot_2 = sloped_armor
-						special_type_slot_3 = armor_skirts
-						special_type_slot_4 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 11
-						tank_nsb_armor_upgrade = 10
-					}
-					icon = "gfx/interface/technologies/CHN_panther.dds"
-				}		
-			}
-		custom_effect_tooltip = CHN_TigerI_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_heavy_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = antitank2
-							has_tech = antiair3
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Tiger I"
-					type = heavy_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon_2
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_2
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 7
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/CHN_tiger.dds"
-				}		
-			}
+		#custom_effect_tooltip = CHN_Panther_tooltip
+		#	if = {
+		#		limit = { 
+		#			AND = {
+		#				has_tech = advanced_medium_tank_chassis
+		#				has_dlc = "No Step Back"
+		#				has_tech = antitank2
+		#			}
+		#		}
+		#		create_equipment_variant = {
+		#			name = "Panther Ausf. D"
+		#			type = medium_tank_chassis_3
+		#			parent_version = 0
+		#			modules = {
+		#				main_armament_slot = tank_high_velocity_cannon_2
+		#				turret_type_slot = tank_medium_three_man_tank_turret
+		#				suspension_type_slot = tank_interleaved_suspension
+		#				armor_type_slot = tank_welded_armor
+		#				engine_type_slot = tank_gasoline_engine
+		#				special_type_slot_1 = tank_radio_2
+		#				special_type_slot_2 = sloped_armor
+		#				special_type_slot_3 = armor_skirts
+		#				special_type_slot_4 = smoke_launchers
+		#			}
+		#			upgrades = {
+		#				tank_nsb_engine_upgrade = 11
+		#				tank_nsb_armor_upgrade = 10
+		#			}
+		#			icon = "gfx/interface/technologies/CHN_panther.dds"
+		#		}		
+		#	}
+		#custom_effect_tooltip = CHN_TigerI_tooltip
+		#	if = {
+		#		limit = { 
+		#			AND = {
+		#				has_tech = improved_heavy_tank_chassis
+		#				has_dlc = "No Step Back"
+		#				OR = {
+		#					has_tech = antitank2
+		#					has_tech = antiair3
+		#				}
+		#			}
+		#		}
+		#		create_equipment_variant = {
+		#			name = "Tiger I"
+		#			type = heavy_tank_chassis_2
+		#			parent_version = 0
+		#			modules = {
+		#				main_armament_slot = tank_heavy_cannon_2
+		#				turret_type_slot = tank_heavy_three_man_tank_turret
+		#				suspension_type_slot = tank_interleaved_suspension
+		#				armor_type_slot = tank_welded_armor
+		#				engine_type_slot = tank_gasoline_engine
+		#				special_type_slot_1 = tank_radio_2
+		#				special_type_slot_2 = additional_machine_guns
+		#				special_type_slot_3 = smoke_launchers
+		#			}
+		#			upgrades = {
+		#				tank_nsb_engine_upgrade = 7
+		#				tank_nsb_armor_upgrade = 7
+		#			}
+		#			icon = "gfx/interface/technologies/CHN_tiger.dds"
+		#		}		
+		#	}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3720,36 +3720,36 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_Dedicated_Panzer_Production"
 			add_ideas = CNN_Vreod
-			custom_effect_tooltip = CHN_TigerII_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = advanced_heavy_tank_chassis
-						has_dlc = "No Step Back"
-						has_tech = antitank5
-					}
-				}
-				create_equipment_variant = {
-					name = "Tiger II"
-					type = heavy_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_3
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_3
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 11
-						tank_nsb_armor_upgrade = 18
-					}
-					icon = "gfx/interface/technologies/CHN_King_Tiger.dds"
-				}		
-			}
+			#custom_effect_tooltip = CHN_TigerII_tooltip
+			#if = {
+			#	limit = { 
+			#		AND = {
+			#			has_tech = advanced_heavy_tank_chassis
+			#			has_dlc = "No Step Back"
+			#			has_tech = antitank5
+			#		}
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Tiger II"
+			#		type = heavy_tank_chassis_3
+			#		parent_version = 0
+			#		modules = {
+			#			main_armament_slot = tank_high_velocity_cannon_3
+			#			turret_type_slot = tank_heavy_three_man_tank_turret
+			#			suspension_type_slot = tank_interleaved_suspension
+			#			armor_type_slot = tank_welded_armor
+			#			engine_type_slot = tank_gasoline_engine
+			#			special_type_slot_1 = tank_radio_3
+			#			special_type_slot_2 = additional_machine_guns
+			#			special_type_slot_3 = sloped_armor
+			#		}
+			#		upgrades = {
+			#			tank_nsb_engine_upgrade = 11
+			#			tank_nsb_armor_upgrade = 18
+			#		}
+			#		icon = "gfx/interface/technologies/CHN_King_Tiger.dds"
+			#	}		
+			#}
 		}
 		
 	}
