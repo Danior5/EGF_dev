@@ -1575,8 +1575,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus stallion_falcons"
-			custom_effect_tooltip = once_improved_small_airframe_researched_tt
-			custom_effect_tooltip = once_advanced_small_airframe_researched_tt
 			if = {
             	limit = {
             	    has_dlc = "By Blood Alone"
@@ -1604,6 +1602,7 @@ focus_tree = {
 					limit = {
 						has_tech = improved_small_airframe
 					}
+					custom_effect_tooltip = once_improved_small_airframe_researched_tt
 					create_equipment_variant = {
 						name = "La-5FN" 
 						type = small_plane_airframe_2
@@ -1632,6 +1631,7 @@ focus_tree = {
 					limit = {
 						has_tech = improved_small_airframe
 					}
+					custom_effect_tooltip = once_advanced_small_airframe_researched_tt
 					create_equipment_variant = {
 						name = "La-9"
 						type = small_plane_airframe_3
@@ -2556,8 +2556,6 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus death_from_above"
-			custom_effect_tooltip = once_improved_small_airframe_researched_tt
-			custom_effect_tooltip = once_advanced_small_airframe_researched_tt
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
@@ -2581,6 +2579,7 @@ focus_tree = {
 					limit = {
 						has_tech = improved_small_airframe
 					}
+					custom_effect_tooltip = once_improved_small_airframe_researched_tt
 					create_equipment_variant = {
 						name = "La-5FN" 
 						type = small_plane_airframe_2
@@ -2609,6 +2608,7 @@ focus_tree = {
 					limit = {
 						has_tech = improved_small_airframe
 					}
+					custom_effect_tooltip = once_advanced_small_airframe_researched_tt
 					create_equipment_variant = {
 						name = "La-9"
 						type = small_plane_airframe_3
@@ -2696,6 +2696,12 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2793,7 +2799,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = strike_GRF
+		id = WW_strike_GRF
 		icon = GFX_goal_generic_consumer_goods
 		cost = 10
 		prerequisite = {
@@ -2810,14 +2816,11 @@ focus_tree = {
 				GRF = { has_war = yes }
 			}
 		}
-		bypass = {
-			GRF = { exists = no }
-		}
 		x = 30
 		y = 5
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus strike_GRF"
-			country_event = { id = stalliongrad.76 days = 1 }
+			log = "[GetDateText]: [Root.GetName]: Focus WW_strike_GRF"
+			add_ideas = STG_economic_policy
 		}
 	}
 	focus = {
@@ -2825,7 +2828,7 @@ focus_tree = {
 		icon = GFX_goal_sinister_focus
 		cost = 10
 		prerequisite = {
-			focus = strike_GRF
+			focus = WW_strike_GRF
 		}
 		ai_will_do = {
 			factor = 40
@@ -2868,7 +2871,7 @@ focus_tree = {
 		icon = GFX_goal_stg_sinister_line
 		cost = 10
 		prerequisite = {
-			focus = strike_GRF
+			focus = WW_strike_GRF
 		}
 		ai_will_do = {
 			factor = 7
@@ -2975,7 +2978,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
-		id = STG_attack_yaks
+		id = WW_STG_attack_yaks
 		icon = GFX_goal_stg_yak
 		cost = 5
 		prerequisite = {
@@ -2998,44 +3001,23 @@ focus_tree = {
 
 		x = 31
 		y = 7
-		will_lead_to_war_with = YAK
-		will_lead_to_war_with = JAK
-		available = {
-			GRF = {
-				OR = {
-					exists = no
-					has_government = communism
-				}
-			}
-		}
-		bypass = {
-			YAK = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-			JAK = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus STG_attack_yaks"
-			if = {
-				limit = { YAK = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = YAK
+			log = "[GetDateText]: [Root.GetName]: Focus WW_STG_attack_yaks"
+			add_ideas = WW_protect_eqc
+			163 = {	
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			if = {
-				limit = { JAK = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = JAK
+			168 = {	
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -3047,7 +3029,7 @@ focus_tree = {
 		cost = 6
 		will_lead_to_war_with = PNG
 		prerequisite = {
-			focus = STG_attack_yaks
+			focus = WW_STG_attack_yaks
 		}
 		ai_will_do = {
 			factor = 1
@@ -3092,7 +3074,7 @@ focus_tree = {
 		icon = GFX_goal_stg_worst_case
 		cost = 10
 		prerequisite = {
-			focus = STG_attack_yaks
+			focus = WW_STG_attack_yaks
 		}
 		ai_will_do = {
 			factor = 6
