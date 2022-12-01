@@ -107,6 +107,7 @@ l_english:
 
  WW_protect_eqc:0 "The Eastern Army"
  WW_crusaders:0 "Ideological Crusaders"
+ STG_economic_policy:0 "Rapid Production Economy"
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
