@@ -976,39 +976,39 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
-	focus = {
-		id = PNG_equestrian_guarantee
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = PNG_closer_to_equestria }
-		x = 23
-		y = 6
-		cost = 10
-		ai_will_do = { factor = 80 }
-		available = {
-			is_subject = no
-			event_target:equestria = {
-				exists = yes
-				is_subject = no
-				has_government = democratic
-				NOT = { has_war_with = ROOT }
-			}
-		}
-		bypass = {
-			OR = {
-				is_subject_of = event_target:equestria
-				is_in_faction_with = event_target:equestria
-				is_guaranteed_by = event_target:equestria
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus PNG_equestrian_guarantee"
-			event_target:equestria = {
-				country_event = {
-					id = penguin.17
-				}
-			}
-		}
-	}
+	#focus = {
+	#	id = PNG_equestrian_guarantee
+	#	icon = GFX_focus_generic_diplomatic_treaty
+	#	prerequisite = { focus = PNG_closer_to_equestria }
+	#	x = 23
+	#	y = 6
+	#	cost = 10
+	#	ai_will_do = { factor = 80 }
+	#	available = {
+	#		is_subject = no
+	#		event_target:equestria = {
+	#			exists = yes
+	#			is_subject = no
+	#			has_government = democratic
+	#			NOT = { has_war_with = ROOT }
+	#		}
+	#	}
+	#	bypass = {
+	#		OR = {
+	#			is_subject_of = event_target:equestria
+	#			is_in_faction_with = event_target:equestria
+	#			is_guaranteed_by = event_target:equestria
+	#		}
+	#	}
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus PNG_equestrian_guarantee"
+	#		event_target:equestria = {
+	#			country_event = {
+	#				id = penguin.17
+	#			}
+	#		}
+	#	}
+	#}
 
 	focus = {
 		id = PNG_pact_against_griffonia
