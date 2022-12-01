@@ -96,6 +96,18 @@ l_english:
  GRI_noble_management_decision_3:0 "Increase Noble Management"
  GRI_noble_management_tt:0 "Unlocks §YIncrease Noble Management§! decisions."
 
+ WW_strike_GRF:0 "Rapid Production Policy"
+ WW_strike_GRF_desc:0 "Our relations with the Reichspakt have deteriorated faster than expected, we must rapidly shift our entire economy if we are to be prepared for their attack."
+
+ mareginot_line:0 "Mareginot Line"
+ mareginot_line_desc:0 "The initial thrust of the Changeling attack will surely fall upon Fairflanks and head towards Vanhoover. With the permission of Equestria, our engineers are capable of constructing a fortified line here to halt their advance."
+
+ WW_STG_attack_yaks:0 "The Vulnerable East"
+ WW_STG_attack_yaks_desc:0 "With the Mareginot Line complete, our attention must fall back on defending the eastern front."
+
+ WW_protect_eqc:0 "The Eastern Army"
+ WW_crusaders:0 "Ideological Crusaders"
+
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
  EQS_island_debuff3:0 "Celestial Sea Islands: §OSlight Danger§!" 
