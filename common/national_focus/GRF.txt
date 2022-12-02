@@ -114,10 +114,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GRF_beak_mines
 		}
-		prerequisite = {
-			focus = GRF_dulli_mines
-		}
-		x = -4
+		#prerequisite = {
+		#	focus = GRF_dulli_mines
+		#}
+		x = -3
 		y = 3
 		available = {
 			222 = { is_owned_and_controlled_by = ROOT }
@@ -207,10 +207,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GRF_beak_mines
 		}
-		prerequisite = {
-			focus = GRF_northern_oil
-		}
-		x = 0
+		#prerequisite = {
+		#	focus = GRF_northern_oil
+		#}
+		x = -1
 		y = 3
 		available = {
 			244 = { is_owned_and_controlled_by = ROOT }
@@ -235,13 +235,7 @@ focus_tree = {
                level = 2
 				path = { 7513 13334 13337 13336 502 453 }
             }
-			244 = {
-				add_building_construction = {
-					type = supply_node
-					province = 6432
-					level = 1
-					instant_build = yes
-				}
+			244 = { add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2915,7 +2909,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_war = no
+			#has_war = no
 			has_country_flag = GRF_refuse_junta
 		}
 		bypass = {
@@ -6529,24 +6523,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_military_research_department"
 			add_research_slot = 1
-			add_tech_bonus = {
-				name = mech_bonus
-				bonus = 1.0
-				uses = 1
-				technology = mechanised_infantry
-			}
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 1
-				technology = infantry_weapons2
-			}
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 1
-				technology = magical_weapons
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -6799,9 +6775,15 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_standard_rifles"
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6917,7 +6899,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_motorized_f"
 			add_tech_bonus = {
 				name = mech_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
 			}
