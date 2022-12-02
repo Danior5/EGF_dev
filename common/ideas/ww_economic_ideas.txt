@@ -2,7 +2,7 @@ ideas = {
 	economy = {
 		law = yes
 		use_list_view = yes
-		STG_economic_policy = {
+		STG_economic_policy_1 = {
 
 			picture = new_economic_policy
 
@@ -22,7 +22,34 @@ ideas = {
 				production_speed_arms_factory_factor = -0.1
 				production_factory_efficiency_gain_factor = 0.5
 				industrial_capacity_factory = 0.2
+			}
 
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0
+   			}
+		}
+		STG_economic_policy_2 = {
+
+			picture = new_economic_policy
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				conversion_cost_mil_to_civ_factor = 0.5
+				conversion_cost_civ_to_mil_factor = -0.3
+				production_speed_arms_factory_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.1
 			}
 
 			cancel_if_invalid = no

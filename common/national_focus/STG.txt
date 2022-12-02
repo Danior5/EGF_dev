@@ -2820,7 +2820,27 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_strike_GRF"
-			add_ideas = STG_economic_policy
+			if = {
+				limit = {
+					date < 1011.03.01
+				}
+				add_ideas = STG_economic_policy_1
+			}
+			else = {
+				add_ideas = STG_economic_policy_2
+			}
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_core_of = STG 
+						industrial_complex > 2
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 			random_owned_state = {
 				limit = {
 					AND = {
