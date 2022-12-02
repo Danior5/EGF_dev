@@ -2475,7 +2475,8 @@ focus_tree = {
 		icon = GFX_goal_step_on_skull
 		cost = 10
 		prerequisite = {
-			focus = take_down_STL
+			focus = death_from_above
+			focus = the_secret_police
 		}
 		ai_will_do = {
 			factor = 6
@@ -2488,24 +2489,24 @@ focus_tree = {
 			}
 		}
 		x = 26
-		y = 5
+		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus hegemonic_doctrine"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
-				cost_reduction = 0.9
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
 			add_doctrine_cost_reduction = {
 				name = nav_doc_bonus
-				cost_reduction = 0.9
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2550,7 +2551,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 10
 		prerequisite = {
-			focus = hegemonic_doctrine
+			focus = new_infantry_equipment
 		}
 		x = 25
 		y = 6
@@ -2669,7 +2670,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
-			focus = hegemonic_doctrine
+			focus = new_infantry_equipment
 		}
 		x = 27
 		y = 6
@@ -2684,11 +2685,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		cost = 10
 		prerequisite = {
-			focus = death_from_above
-			focus = the_secret_police
+			focus = take_down_STL
 		}
 		x = 26
-		y = 7
+		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus new_infantry_equipment"
 			add_tech_bonus = {
@@ -2711,7 +2711,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		prerequisite = {
-			focus = new_infantry_equipment
+			focus = hegemonic_doctrine
 		}
 		available = {
 			has_template = "Sugoi Dekai"
@@ -2821,6 +2821,52 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_strike_GRF"
 			add_ideas = STG_economic_policy
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_core_of = STG 
+						industrial_complex > 2
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_core_of = STG 
+						industrial_complex > 2
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
+			}
 		}
 	}
 	focus = {
@@ -3004,22 +3050,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_STG_attack_yaks"
 			add_ideas = WW_protect_eqc
-			163 = {	
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			168 = {	
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
