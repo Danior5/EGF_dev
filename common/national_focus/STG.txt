@@ -2820,6 +2820,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_strike_GRF"
+			custom_effect_tooltip = WW_STG_delayed_focus_tt
 			if = {
 				limit = {
 					date < 1011.03.01
@@ -2828,18 +2829,6 @@ focus_tree = {
 			}
 			else = {
 				add_ideas = STG_economic_policy_2
-			}
-			random_owned_state = {
-				limit = {
-					AND = {
-						is_core_of = STG 
-						industrial_complex > 2
-					}
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 2
-				}
 			}
 			random_owned_state = {
 				limit = {
@@ -3050,6 +3039,30 @@ focus_tree = {
 		prerequisite = {
 			focus = mareginot_line
 		}
+		available = {
+			is_in_faction_with = EQS
+			army_manpower_in_state = {
+				amount > 35000
+				state = 67
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 8
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 4
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 1193
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 1195
+			}
+
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3069,15 +3082,112 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_STG_attack_yaks"
+			custom_effect_tooltip = WW_protect_eqc_tt
 			add_ideas = WW_protect_eqc
+			hidden_effect = {
+				transfer_state = 67
+				transfer_state = 6
+				transfer_state = 7
+				transfer_state = 8
+				transfer_state = 9
+				transfer_state = 10
+				transfer_state = 4
+				transfer_state = 328
+				transfer_state = 1193
+				transfer_state = 1194
+				transfer_state = 1195
+				67 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 9484
+					}
+				}
+				6 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				7 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				8 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 10113
+					}
+				}
+				9 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				10 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				4 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 11755
+					}
+				}
+				328 = { 
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				1193 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 20703
+					}
+				}
+				1194 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				1195 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 20720
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
-		id = STG_attack_PNG
+		id = WW_STG_attack_PNG
 		icon = GFX_goal_support_communism
 		cost = 6
-		will_lead_to_war_with = PNG
 		prerequisite = {
 			focus = WW_STG_attack_yaks
 		}
@@ -3100,21 +3210,63 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-			PNG = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
 		x = 30
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_attack_PNG"
-			create_wargoal = {
-				type = annex_everything target = PNG
+			custom_effect_tooltip = WW_communist_citadel_tt
+			hidden_effect = {
+				333 = {
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					set_victory_points = {
+						province = 9176
+						value = 10
+					}
+					set_province_name = {
+						id = 9176
+						name = WW_communist_citadel
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = naval_base
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 10
+						instant_build = yes
+						province = 6070
+					}
+					set_building_level = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 6070
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					set_building_level = {
+						type = anti_air_building
+						level = 10
+						instant_build = yes
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -3210,7 +3362,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = prepare_for_the_crusade
-			focus = STG_attack_PNG
+			focus = WW_STG_attack_PNG
 		}
 		ai_will_do = {
 			factor = 1

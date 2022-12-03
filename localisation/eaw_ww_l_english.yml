@@ -105,10 +105,18 @@ l_english:
  WW_STG_attack_yaks:0 "The Vulnerable East"
  WW_STG_attack_yaks_desc:0 "With the Mareginot Line complete, our attention must fall back on defending the eastern front."
 
- WW_protect_eqc:0 "The Eastern Army"
+ WW_STG_attack_PNG:0 "Citadel of Communism"
+ WW_STG_attack_PNG_desc:0 "As the new defenders of the Celestial Sea islands, we must construct an adequete headquarters to command our new assets. Given this oppertunity we shall show the superiority of communist engineering by creating the greatest fortress the world has ever seen."
+ WW_communist_citadel_tt:0 "The Island of Azkaban will be turned into a symbol of the invincibility of communism."
+ WW_communist_citadel:0 "Citadel of Communism"
+
+ WW_protect_eqc:0 "Protector of the East"
+ WW_protect_eqc_tt:0 "Transfers control of the Celestial Sea islands to us and fortifies them."
  WW_crusaders:0 "Ideological Crusaders"
  STG_economic_policy_1:0 "Rapid Production Economy"
  STG_economic_policy_2:0 "Semi-Rapid Production Economy"
+ WW_STG_delayed_focus_tt:0 "Grants a weaker economy law after March 1st."
+ 
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
  EQS_island_debuff2:0 "Celestial Sea Islands: §GThreatened§!" 
