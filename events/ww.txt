@@ -10,15 +10,31 @@ country_event = { #factions
 	is_triggered_only = yes
 	option = {
 		name = ww.5.a
-		## South ##
+		## South UPA ##
 		EQS = { add_to_faction = STG }
-
-		## North ##
+		
+		## South RivCo ##
+		RCT = { add_to_faction = WNG }
+		LCT = { add_to_faction = WNG }		
+		BAK = { add_to_faction = WNG }		
+		WIT = { add_to_faction = WNG }
+		NIM = { add_to_faction = WNG }
+		
+		RCT = { add_to_faction = GRY }
+		LCT = { add_to_faction = GRY }		
+		BAK = { add_to_faction = GRY }		
+		WIT = { add_to_faction = GRY }
+		NIM = { add_to_faction = GRY }
+		
+		## North Reichspakt ##
 		GRI = { add_to_faction = FAT }
 		GRI = { add_to_faction = FAW }
 		GRI = { add_to_faction = TRD }
 		GRI = { add_to_faction = JER }
-
+		GRI = { add_to_faction = HLQ }
+		## North CHNHegemony ##
+		CHN = { add_to_faction = PNG }
+		CHN = { add_to_faction = GRF }
 	}
 }
 
@@ -91,7 +107,7 @@ country_event = { #NOT USED CHNvsEQS war
 	is_triggered_only = yes
 	option = {
 		name = ww.8.a
-	hidden_effect = {
+		hidden_effect = {
 			CHN = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -102,36 +118,36 @@ country_event = { #NOT USED CHNvsEQS war
 				target = EQS 
 				}
 			}
-		BAK = { add_to_faction = HIP }
-		BAK = { add_to_faction = EQS }
-		BAK = { add_to_faction = CRY }		
-		BAK = { add_to_faction = STG }		
+			BAK = { add_to_faction = HIP }
+			BAK = { add_to_faction = EQS }
+			BAK = { add_to_faction = CRY }		
+			BAK = { add_to_faction = STG }		
 		
-		RCT = { add_to_faction = HIP }
-		RCT = { add_to_faction = EQS }
-		RCT = { add_to_faction = CRY }		
-		RCT = { add_to_faction = STG }	
+			RCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = EQS }
+			RCT = { add_to_faction = CRY }		
+			RCT = { add_to_faction = STG }	
 
-		LCT = { add_to_faction = HIP }
-		LCT = { add_to_faction = EQS }
-		LCT = { add_to_faction = CRY }		
-		LCT = { add_to_faction = STG }		
+			LCT = { add_to_faction = HIP }
+			LCT = { add_to_faction = EQS }
+			LCT = { add_to_faction = CRY }		
+			LCT = { add_to_faction = STG }		
 
-		WIT = { add_to_faction = HIP }
-		WIT = { add_to_faction = EQS }
-		WIT = { add_to_faction = CRY }		
-		WIT = { add_to_faction = STG }		
+			WIT = { add_to_faction = HIP }
+			WIT = { add_to_faction = EQS }
+			WIT = { add_to_faction = CRY }		
+			WIT = { add_to_faction = STG }		
 
-		NIM = { add_to_faction = HIP }
-		NIM = { add_to_faction = EQS }
-		NIM = { add_to_faction = CRY }		
-		NIM = { add_to_faction = STG }				
+			NIM = { add_to_faction = HIP }
+			NIM = { add_to_faction = EQS }
+			NIM = { add_to_faction = CRY }		
+			NIM = { add_to_faction = STG }				
 		
 		
-		GRI	= { add_to_faction = CHN }
-		GRI	= { add_to_faction = GRF }
-		GRI	= { add_to_faction = PNG }
-	}
+			GRI	= { add_to_faction = CHN }
+			GRI	= { add_to_faction = GRF }
+			GRI	= { add_to_faction = PNG }
+		}
 	}
 }
 
@@ -698,6 +714,95 @@ country_event = {
 				create_unit = {
 					division = "name = \"Young Guard Division\" division_template = \"Guard Infantry Division\" start_experience_factor = 0.05 start_equipment_factor = 0.8"
 					owner = JER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww.13
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		HIP = {
+			delete_unit_template_and_units = { division_template = "Special Marine Corps" }
+			division_template = {
+				name = "Special Marine Corps"
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+	
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					marine = { x = 2 y = 4 }
+					
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					rocket_artillery = { x = 0 y = 1 }
+					medium_flame_tank = { x = 0 y = 2 }
+					engineer = { x = 0 y = 3 }
+					anti_air = { x = 0 y = 4 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1165 }
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = HIP
 				}
 			}
 		}

@@ -19,10 +19,8 @@ focus_tree = {
 	shared_focus = Ministry_of_defense
 	shared_focus = Crystal_Fair
 	shared_focus = Friendship_Games
-	
 	shared_focus = EQS_buffalo_relations
-	
-	
+
 
 	shared_focus = SOL_Imperium_Solis
 

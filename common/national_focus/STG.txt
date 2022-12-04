@@ -1575,12 +1575,113 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus stallion_falcons"
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				technology = fighter1
-				technology = fighter2
+			if = {
+            	limit = {
+            	    has_dlc = "By Blood Alone"
+            	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_improved_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-5FN" 
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-2" 
+						type = small_plane_cas_airframe_2
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS2_medium"
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_advanced_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-9"
+						type = small_plane_airframe_3
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+							}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-10"
+						type = small_plane_cas_airframe_3
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = tank_buster_2
+							fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS3_medium"
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Yak-1" 
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_1x
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter3_medium"
+					}
+					create_equipment_variant = {
+						name = "Su-2" 
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = small_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = lmg_defense_turret
+						}
+						icon = "GFX_STG_CAS1_medium"
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1847,6 +1948,121 @@ focus_tree = {
 				uses = 3
 				category = air_doctrine
 			}
+			if = {
+        	    limit = {
+        	        has_dlc = "By Blood Alone"
+        	    }
+				add_tech_bonus = {
+					name = heavy_air
+					bonus = 0.75
+					uses = 1
+					category = heavy_air
+				}
+				add_tech_bonus = {
+					name = medium_air
+					bonus = 0.75
+					uses = 1
+					category = medium_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.25
+					uses = 1
+					category = cat_strategic_bomber
+					category = tactical_bomber
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_improved_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-5FN" 
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-2" 
+						type = small_plane_cas_airframe_2
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS2_medium"
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_advanced_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-9"
+						type = small_plane_airframe_3
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+							}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-10"
+						type = small_plane_cas_airframe_3
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = tank_buster_2
+							fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS3_medium"
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Yak-1" 
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_1x
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter3_medium"
+					}
+					create_equipment_variant = {
+						name = "Su-2" 
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = small_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = lmg_defense_turret
+						}
+						icon = "GFX_STG_CAS1_medium"
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1987,7 +2203,7 @@ focus_tree = {
 	focus = {
 		id = simplify_bureaucracy
 		icon = GFX_goal_continuous_naval_production
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = end_food_problem2
 		}
@@ -2012,6 +2228,12 @@ focus_tree = {
 		}
 		available = {
 			225 = { is_owned_and_controlled_by = ROOT }
+			NOT = {
+				has_country_leader = {
+					character = STG_sinister_serov
+					ruling_only = yes
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2234,7 +2456,7 @@ focus_tree = {
 	focus = {
 		id = take_down_STL
 		icon = GFX_goal_stg_stl
-		cost = 10
+		cost = 4
 		prerequisite = {
 			focus = simplify_bureaucracy
 		}
@@ -2253,7 +2475,8 @@ focus_tree = {
 		icon = GFX_goal_step_on_skull
 		cost = 10
 		prerequisite = {
-			focus = take_down_STL
+			focus = death_from_above
+			focus = the_secret_police
 		}
 		ai_will_do = {
 			factor = 6
@@ -2266,20 +2489,26 @@ focus_tree = {
 			}
 		}
 		x = 26
-		y = 5
+		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus hegemonic_doctrine"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = nav_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
 			}
 			custom_effect_tooltip = STG_T3476_tooltip
 			if = {
@@ -2322,7 +2551,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 10
 		prerequisite = {
-			focus = hegemonic_doctrine
+			focus = new_infantry_equipment
 		}
 		x = 25
 		y = 6
@@ -2343,6 +2572,96 @@ focus_tree = {
 				technology = strategic_bomber3
 				category = tactical_bomber
 			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_improved_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-5FN" 
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-2" 
+						type = small_plane_cas_airframe_2
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS2_medium"
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					custom_effect_tooltip = once_advanced_small_airframe_researched_tt
+					create_equipment_variant = {
+						name = "La-9"
+						type = small_plane_airframe_3
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+							}
+						icon = "GFX_STG_fighter2_medium"
+					}
+					create_equipment_variant = {
+						name = "IL-10"
+						type = small_plane_cas_airframe_3
+						modules = {
+							fixed_main_weapon_slot = rocket_rails
+							fixed_auxiliary_weapon_slot_1 = tank_buster_2
+							fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+							engine_type_slot = engine_4_1x
+							special_type_slot_1 = hmg_defense_turret
+							special_type_slot_2 = self_sealing_fuel_tanks_small
+							special_type_slot_3 = armor_plate_small
+						}
+						icon = "GFX_STG_CAS3_medium"
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Yak-1" 
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_1x
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+						}
+						icon = "GFX_STG_fighter3_medium"
+					}
+					create_equipment_variant = {
+						name = "Su-2" 
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = small_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = lmg_defense_turret
+						}
+						icon = "GFX_STG_CAS1_medium"
+					}
+				}
+			}
+
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2351,7 +2670,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
-			focus = hegemonic_doctrine
+			focus = new_infantry_equipment
 		}
 		x = 27
 		y = 6
@@ -2366,11 +2685,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		cost = 10
 		prerequisite = {
-			focus = death_from_above
-			focus = the_secret_police
+			focus = take_down_STL
 		}
 		x = 26
-		y = 7
+		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus new_infantry_equipment"
 			add_tech_bonus = {
@@ -2378,6 +2696,12 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2387,12 +2711,19 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		prerequisite = {
-			focus = new_infantry_equipment
+			focus = hegemonic_doctrine
+		}
+		available = {
+			has_template = "Sugoi Dekai"
 		}
 		x = 26
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus heavy_tanks_projects"
+			set_division_template_cap = { 
+				division_template = "Sugoi Dekai" 
+				division_cap = 6
+			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.5
@@ -2468,7 +2799,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = strike_GRF
+		id = WW_strike_GRF
 		icon = GFX_goal_generic_consumer_goods
 		cost = 10
 		prerequisite = {
@@ -2485,22 +2816,74 @@ focus_tree = {
 				GRF = { has_war = yes }
 			}
 		}
-		bypass = {
-			GRF = { exists = no }
-		}
 		x = 30
 		y = 5
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus strike_GRF"
-			country_event = { id = stalliongrad.76 days = 1 }
+			log = "[GetDateText]: [Root.GetName]: Focus WW_strike_GRF"
+			custom_effect_tooltip = WW_STG_delayed_focus_tt
+			if = {
+				limit = {
+					date < 1011.03.01
+				}
+				add_ideas = STG_economic_policy_1
+			}
+			else = {
+				add_ideas = STG_economic_policy_2
+			}
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_core_of = STG 
+						industrial_complex > 2
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_core_of = STG 
+						industrial_complex > 2
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
+			}
 		}
 	}
 	focus = {
 		id = STG_sinister_law
 		icon = GFX_goal_sinister_focus
-		cost = 11
+		cost = 10
 		prerequisite = {
-			focus = strike_GRF
+			focus = WW_strike_GRF
 		}
 		ai_will_do = {
 			factor = 40
@@ -2517,7 +2900,7 @@ focus_tree = {
 	focus = {
 		id = STG_liquid_magic
 		icon = GFX_goal_stg_magic
-		cost = 11
+		cost = 5
 		prerequisite = {
 			focus = STG_sinister_law
 		}
@@ -2531,19 +2914,19 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_liquid_magic"
 			add_tech_bonus = {
 				name = magical_bonus
-				bonus = 0.65
-				uses = 2
+				bonus = 1.0
+				uses = 3
 				category = magical_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = sinister_line
+		id = mareginot_line
 		icon = GFX_goal_stg_sinister_line
 		cost = 10
 		prerequisite = {
-			focus = strike_GRF
+			focus = WW_strike_GRF
 		}
 		ai_will_do = {
 			factor = 7
@@ -2552,539 +2935,133 @@ focus_tree = {
 		x = 31
 		y = 6
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus sinister_line"
-		237 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6458
+			log = "[GetDateText]: [Root.GetName]: Focus mareginot_line"
+			if = {
+				limit = {
+					EQS = { owns_state = 14 }
 				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6532
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3468
-				}
-		}
-		if = {
-			limit = {
-				NOT = { 
-					owns_state = 155
-					owns_state = 154
-					owns_state = 157
-					owns_state = 158
-					owns_state = 159
-					owns_state = 229
-					owns_state = 653
-					owns_state = 662
-				}
-			}
-			168 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6270
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9297
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6268
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3342
-				}
-			}
-			166 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6221
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					instant_build = yes
-					province = 7239
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 407
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3274
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6363
-				}
-			}
-			161 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 303
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					instant_build = yes
-					province = 11293
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3329
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3379
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 337
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3359
-				}
-			}
-			163= {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3396
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 7377
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6451
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 409
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3403
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_state = 154
-				owns_state = 155
-				owns_state = 156
-				owns_state = 157
-				owns_state = 158
-				owns_state = 159
-				owns_state = 164
-				owns_state = 229
-				owns_state = 653
-				owns_state = 662
-			}
-		154 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9175
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9134
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6152
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 11069
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9095
-				}
-		}
-		155 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3083
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 151
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6168
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6074
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3054
-				}
-		}
-		156 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 12503
-				}
-		}
-		157 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9397
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 7003
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 385
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6384
-				}
-		}
-		158 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 10007
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3876
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9861
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 13122
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9901
-				}
-		}
-		159 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6925
-				}
-		}
-		164 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 10244
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 574
-				}
-		}
-		229 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 909
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6807
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9763
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 869
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 4127
-				}
-		}
-		653 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 2026
-				}
-		}
-		662 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 2065
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 7602
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6458
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 8099
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 7618
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 1614
-				}
-			}
-		}
-		if = {
-			limit = {
-				CRY = { 
-					OR = { 
-						is_in_faction_with = EQS
-						has_government = fascism 
-						has_war_with = CHN
+				14 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 717
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 3686
 					}
 				}
 			}
-		235 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 582
+			if = {
+				limit = {
+					EQS = { owns_state = 172 }
 				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6495
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 559
-				}
-		}
-		334 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9519
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9374
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 13212
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 13016
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 13014
-				}
-		}
-		240 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6386
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 9384
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 6355
-				}
-		}
-		57 = {
-			add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3335
+				172 = {
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 9718
+					}
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 705
+					}
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 9663
+					}
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 11647
+					}
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 1539
+					}
+					add_building_construction = {
+						type = bunker
+						level = 6
+						instant_build = yes
+						province = 4605
+					}
 				}
 			}
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 67 }
-			}
-			166 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3301
+			if = {
+				limit = {
+					EQS = { owns_state = 175 }
+				}
+				175 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4545
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 10454
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 12434
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4463
+					}
 				}
 			}
-		}
-		if = {
-			limit = {
-				EQS = { owns_state = 241 }
-			}
-			678 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = 3069
-				}
-			}
-		}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
-		id = STG_attack_yaks
+		id = WW_STG_attack_yaks
 		icon = GFX_goal_stg_yak
 		cost = 5
 		prerequisite = {
-			focus = sinister_line
+			focus = mareginot_line
+		}
+		available = {
+			is_in_faction_with = EQS
+			army_manpower_in_state = {
+				amount > 35000
+				state = 67
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 8
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 4
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 1193
+			}
+			army_manpower_in_state = {
+				amount > 35000
+				state = 1195
+			}
+
 		}
 		ai_will_do = {
 			factor = 1
@@ -3103,56 +3080,116 @@ focus_tree = {
 
 		x = 31
 		y = 7
-		will_lead_to_war_with = YAK
-		will_lead_to_war_with = JAK
-		available = {
-			GRF = {
-				OR = {
-					exists = no
-					has_government = communism
-				}
-			}
-		}
-		bypass = {
-			YAK = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-			JAK = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus STG_attack_yaks"
-			if = {
-				limit = { YAK = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = YAK
+			log = "[GetDateText]: [Root.GetName]: Focus WW_STG_attack_yaks"
+			custom_effect_tooltip = WW_protect_eqc_tt
+			add_ideas = WW_protect_eqc
+			hidden_effect = {
+				transfer_state = 67
+				transfer_state = 6
+				transfer_state = 7
+				transfer_state = 8
+				transfer_state = 9
+				transfer_state = 10
+				transfer_state = 4
+				transfer_state = 328
+				transfer_state = 1193
+				transfer_state = 1194
+				transfer_state = 1195
+				67 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 9484
+					}
 				}
-			}
-			if = {
-				limit = { JAK = { exists = yes } }
-				create_wargoal = {
-					type = annex_everything target = JAK
+				6 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				7 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				8 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 10113
+					}
+				}
+				9 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				10 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				4 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 11755
+					}
+				}
+				328 = { 
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				1193 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 20703
+					}
+				}
+				1194 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+				}
+				1195 = { 
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					add_core_of = STG
+					remove_core_of = EQS
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 20720
+					}
 				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
-		id = STG_attack_PNG
+		id = WW_STG_attack_PNG
 		icon = GFX_goal_support_communism
 		cost = 6
-		will_lead_to_war_with = PNG
 		prerequisite = {
-			focus = STG_attack_yaks
+			focus = WW_STG_attack_yaks
 		}
 		ai_will_do = {
 			factor = 1
@@ -3173,21 +3210,63 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-			PNG = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
 		x = 30
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_attack_PNG"
-			create_wargoal = {
-				type = annex_everything target = PNG
+			custom_effect_tooltip = WW_communist_citadel_tt
+			hidden_effect = {
+				333 = {
+					add_dynamic_modifier = { modifier = STG_island_wall }
+					set_victory_points = {
+						province = 9176
+						value = 10
+					}
+					set_province_name = {
+						id = 9176
+						name = WW_communist_citadel
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = naval_base
+						level = 10
+						instant_build = yes
+						province = 9176
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 10
+						instant_build = yes
+						province = 6070
+					}
+					set_building_level = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 6070
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					set_building_level = {
+						type = anti_air_building
+						level = 10
+						instant_build = yes
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -3197,7 +3276,7 @@ focus_tree = {
 		icon = GFX_goal_stg_worst_case
 		cost = 10
 		prerequisite = {
-			focus = STG_attack_yaks
+			focus = WW_STG_attack_yaks
 		}
 		ai_will_do = {
 			factor = 6
@@ -3219,7 +3298,7 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus prepare_for_the_crusade"
-			add_timed_idea = { idea = crusaders days = 340 }
+			add_timed_idea = { idea = WW_crusaders days = 365 }
 		}
 	}
 	focus = {
@@ -3283,7 +3362,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = prepare_for_the_crusade
-			focus = STG_attack_PNG
+			focus = WW_STG_attack_PNG
 		}
 		ai_will_do = {
 			factor = 1

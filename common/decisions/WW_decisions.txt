@@ -1,5 +1,257 @@
+political_actions = {
+	##Propaganda campaign against a country in offensive that has caused a lot of tension and started a war   ## ADDED BACK IN EGZF ##
+	war_propaganda_against_warmonger = {
+
+	 	icon = generic_prepare_civil_war
+
+	 	available = {
+	 		if = {
+	 			limit = {
+	 				FROM = {
+	 					is_neighbor_of = ROOT
+	 				}
+	 				set_temp_variable = { war_propaganda_cost = 25 }
+	 			}
+	 		}
+	 		NOT = { has_country_flag = war_propaganda_campaign_running }
+	 		FROM = {
+	 			OR = {
+	 				is_justifying_wargoal_against = ROOT
+	 				AND = {
+	 					has_war_with = ROOT
+	 					is_neighbor_of = ROOT
+	 				}
+	 				has_offensive_war = yes
+	 			}
+	 		}
+	 		if = {
+	 			limit = {
+	 				OR = {
+	 					tag = EQS
+	 					tag = CRY
+	 				}
+	 				has_government = democratic
+	 			}
+				OR = {
+	 				has_defensive_war = yes
+	 				FROM = {
+	 					is_justifying_wargoal_against = ROOT
+	 				}
+	 			}
+			}
+	 	}
+
+	 	visible = {
+	 		FROM = {
+	 			NOT = { is_in_faction_with = ROOT }
+	 			OR = {
+	 				is_justifying_wargoal_against = ROOT
+	 				AND = {
+	 					is_neighbor_of = ROOT
+	 					OR = {
+	 						has_war_with = ROOT
+	 						AND = {
+	 							NOT = { has_government = ROOT }
+	 							has_offensive_war = yes
+	 							has_added_tension_amount > 5
+	 						}
+	 					}
+	 				}
+	 				AND = {
+	 					NOT = { is_neighbor_of = ROOT }
+	 					OR = {
+	 						has_offensive_war_with = ROOT
+	 						AND = {
+	 							NOT = { has_government = ROOT }
+								has_offensive_war = yes
+	 							has_added_tension_amount > 30
+	 						}
+						}
+	 				}
+	 			}
+	 		}
+	 	}
+
+	 	target_trigger = {
+	 		FROM = {
+	 			NOT = { is_in_faction_with = ROOT }
+	 			OR = {
+	 				is_justifying_wargoal_against = ROOT
+	 				AND = {
+	 					is_neighbor_of = ROOT
+	 					OR = {
+	 						has_war_with = ROOT
+	 						AND = {
+	 							NOT = { has_government = ROOT }
+	 							has_offensive_war = yes
+	 							has_added_tension_amount > 5
+	 						}
+	 					}
+	 				}
+	 				AND = {
+	 					NOT = { is_neighbor_of = ROOT }
+	 					OR = {
+	 						has_offensive_war_with = ROOT
+	 						AND = {
+	 							NOT = { has_government = ROOT }
+								has_offensive_war = yes
+	 							has_added_tension_amount > 30
+	 						}
+	 					}
+	 				}
+	 			}
+	 		}
+	 	}
+
+	 	target_array = potential_and_current_enemies
+	 	target_array = enemies_of_allies
+
+	 	target_root_trigger = {
+	 		OR = {
+	 			is_ai = no
+	 			NOT = { has_war_support > 0.9 }
+	 		}
+	 	}
+
+	 	days_remove = 90
+	 	days_re_enable = 180
+
+	 	fire_only_once = yes
+
+	 	cost = var:war_propaganda_cost?50
+
+	 	modifier = {
+	 		war_support_weekly = 0.01
+	 	}
+
+	 	complete_effect = {
+	 		log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger target: [From.GetName]"
+	 		set_country_flag = war_propaganda_campaign_running
+	 	}
+	 	remove_effect = {
+	 		log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger target: [From.GetName]"
+	 		clr_country_flag = war_propaganda_campaign_running
+	 	}
+	 	cancel_effect = {
+	 		log = "[GetDateText]: [Root.GetName]: Decision cancel war_propaganda_against_warmonger target: [From.GetName]"
+	 		clr_country_flag = war_propaganda_campaign_running
+	 	}
+
+		ai_will_do = {
+			factor = 1
+	 		modifier = {
+	 			factor = 0
+	 			has_war_support > 0.9
+	 		}
+	 	}
+	}
+}
+
+
+
 WW_category = {
 
+	BAT_annex_CTH = {
+		icon = generic_form_nation
+
+		targets = { CTH }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+			}
+		}
+		allowed = {
+			original_tag = BAT
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			CTH = {
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_BRZ target: [From.GetName]"
+
+			#CTH = {
+			#	every_character = {
+			#		limit = {
+			#			is_unit_leader = yes 
+			#			is_country_leader = no
+			#		}
+			#		set_nationality = BAT
+			#	}
+			#}
+			# TO BE DISCUSSED
+
+
+			every_state = {
+				limit = {
+					is_core_of = CTH
+				}
+				add_core_of = BAT
+			}
+			annex_country = { target = CTH transfer_troops = yes }
+		}
+	}
+	CTH_annex_BAT = {
+		icon = generic_form_nation
+
+		targets = { BAT }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+			}
+		}
+
+
+		allowed = {
+			original_tag = CTH
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			BAT = {
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_intergrate_BRZ target: [From.GetName]"
+
+			#BAT = {
+			#	every_character = {
+			#		limit = {
+			#			is_unit_leader = yes 
+			#			is_country_leader = no
+			#		}
+			#		set_nationality = CTH
+			#	}
+			#}
+			# TO BE DISCUSSED
+
+
+			every_state = {
+				limit = {
+					is_core_of = BAT
+				}
+				add_core_of = CTH
+			}
+			annex_country = { target = BAT transfer_troops = yes }
+		}
+	}
 	GRI_intergrate_BRZ = {
 		icon = generic_form_nation
 
@@ -617,7 +869,7 @@ WW_category = {
 					set_country_flag = big_event_custom_island_war
 				}
 			}
-			custom_effect_tooltip = rivco_upa_merge
+			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -628,35 +880,7 @@ WW_category = {
 					target = EQS 
 				}
 			}
-			hidden_effect = {
-				BAK = { add_to_faction = HIP }
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = HIP }
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = HIP }
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = HIP }
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = HIP }
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
-
-				GRI	= { add_to_faction = CTH }
-				GRI	= { add_to_faction = BAT }
-			
+			hidden_effect = {	
 				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
@@ -671,7 +895,7 @@ WW_category = {
 					set_country_flag = big_event_custom_island_war
 				}
 			}
-			custom_effect_tooltip = rivco_upa_merge
+			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
 				create_wargoal = { 
 					type = annex_everything 
@@ -683,34 +907,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				BAK = { add_to_faction = HIP }
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = HIP }
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = HIP }
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = HIP }
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = HIP }
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
-
-				GRI = { add_to_faction = CTH }
-				GRI = { add_to_faction = BAT }
-
 				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
 				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
@@ -764,6 +960,12 @@ WW_category = {
 				}
 			}
 			
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }	
+			NIM = { add_to_faction = HIP }
+			
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
 		
@@ -791,7 +993,13 @@ WW_category = {
 					target = WNG 
 				}
 			}
-			
+
+			BAK = { add_to_faction = HIP }		
+			LCT = { add_to_faction = HIP }
+			RCT = { add_to_faction = HIP }		
+			WIT = { add_to_faction = HIP }		
+			NIM = { add_to_faction = HIP }
+				
 			WNG = { add_ideas = WW_incompetent_tanks }
 		}
 	}
@@ -833,9 +1041,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {	
-				GRI = { add_to_faction = CHN }
-				GRI = { add_to_faction = GRF }
-				GRI = { add_to_faction = PNG }
 				
 				CHN = { add_ideas = WW_CHN_core_buff }
 				OLE = { add_ideas = WW_OLE_surrender_limit }
@@ -860,9 +1065,6 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				GRI	= { add_to_faction = CHN }
-				GRI	= { add_to_faction = GRF }
-				GRI	= { add_to_faction = PNG }
 
 				CHN = { add_ideas = WW_CHN_core_buff }
 				OLE = { add_ideas = WW_OLE_surrender_limit }
@@ -896,7 +1098,7 @@ WW_category = {
 				}
 			}
 			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 
@@ -907,24 +1109,34 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				BAK = { add_to_faction = WNG }
-				BAK = { add_to_faction = GRY }	
-		
-				RCT = { add_to_faction = WNG }
-				RCT = { add_to_faction = GRY }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-				LCT = { add_to_faction = WNG }
-				LCT = { add_to_faction = GRY }
-	
-				WIT = { add_to_faction = WNG }
-				WIT = { add_to_faction = GRY }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-				NIM = { add_to_faction = WNG }
-				NIM = { add_to_faction = GRY }
-
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 				
-				GRI = { add_to_faction = HLQ }
-
+				
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }			
+				
+				
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
@@ -939,7 +1151,7 @@ WW_category = {
 			}
 			
 			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
 				create_wargoal = { 
 					type = annex_everything 
 					target = WNG 
@@ -951,23 +1163,32 @@ WW_category = {
 			}
 		
 			hidden_effect = {
-				BAK = { add_to_faction = WNG }
-				BAK = { add_to_faction = GRY }	
-		
-				RCT = { add_to_faction = WNG }
-				RCT = { add_to_faction = GRY }
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
 
-				LCT = { add_to_faction = WNG }
-				LCT = { add_to_faction = GRY }
-	
-				WIT = { add_to_faction = WNG }
-				WIT = { add_to_faction = GRY }
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
 
-				NIM = { add_to_faction = WNG }
-				NIM = { add_to_faction = GRY }
-
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }	
 				
-				GRI = { add_to_faction = HLQ }
+				
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+				GRI = { add_to_faction = CHN }
+				GRI = { add_to_faction = GRF }
+				GRI = { add_to_faction = PNG }
 
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
@@ -1143,6 +1364,26 @@ WW_category = {
 
 		}
 	}
+	WW_GRY_join_coltstream = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			original_tag = GRY
+		}
+		available = {
+			NOT = {is_in_faction_with = RCT}
+		}
+		complete_effect = {
+			BAK = { add_to_faction = GRY }
+			RCT = { add_to_faction = GRY }
+			LCT = { add_to_faction = GRY }
+			WIT = { add_to_faction = GRY }
+			add_ideas = RIV_member_state
+			hidden_effect = { 
+				RIV_set_cosmetic_tag = yes
+				update_river_fed_array = yes
+			}
+		}
+	}
 ### WW 3.0 end ###
 
 
@@ -1201,11 +1442,59 @@ WW_category = {
 		}
 
 	}
-	
-	
-	
-	
-	
+
+	WW_heavy_tanks = {		
+		icon = generic_tank
+		allowed = {
+			OR = {
+				original_tag = JER
+				original_tag = FAT
+				original_tag = GRI
+				original_tag = YAL
+				original_tag = BRZ
+				original_tag = ROU
+				original_tag = HLQ
+				original_tag = TRD
+				original_tag = CHN
+				original_tag = FAW
+				original_tag = GRF
+				original_tag = OLE
+				original_tag = PNG
+				original_tag = EQS
+				original_tag = EQC
+				original_tag = STG
+				original_tag = CRY
+				original_tag = WNG
+				original_tag = GRY
+				original_tag = MIT
+				original_tag = RCT
+				original_tag = LCT
+				original_tag = DMT
+				original_tag = WIT
+				original_tag = BAK
+				original_tag = NIM
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = HIP
+			}
+		}
+		available = {
+			date > 1006.11.1
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		visible = {
+			date > 1006.11.1
+		}
+		complete_effect = {
+			hidden_effect = {
+				load_oob = "WW_heavy_tank"
+			}
+		}
+	}	
 }
 
 war_measures = {
@@ -1274,5 +1563,384 @@ war_measures = {
    }
    
 
-}	
+}
+
+WNG_dec_cat = {
+	WNG_attack_SIC = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { SIC }
+		available = {
+			date > 1009.6.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = SIC
+				}
+			}
+			declare_war_on = {
+				target = SIC
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_FRN = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { FRN }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = FRN
+				}
+			}
+			declare_war_on = {
+				target = FRN
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_TAL = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { TAL }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = TAL
+				}
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_ARA = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { ARA }
+		available = {
+			date > 1010.1.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ARA
+				}
+			}
+			declare_war_on = {
+				target = ARA
+				type = annex_everything
+			}
+		}
+	}
+	WNG_attack_BOI = {
+		icon = generic_intelligence_operation
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = WNG
+		}
+		targets = { BOI }
+		available = {
+			date > 1010.6.1
+			FROM = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT 
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+				    	is_subject_of = ROOT
+					}
+				}
+				NOT = { 
+				    has_war_with = ROOT 
+				}
+				NOT = {
+				    is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		war_with_target_on_remove = yes
+		complete_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = 1000
+                }
+            }
+		}
+		remove_effect = {
+			FROM = {
+                add_ai_strategy = {
+                    type = prepare_for_war
+                    id = ROOT
+                    value = -1000
+                }
+            }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = BOI
+				}
+			}
+			declare_war_on = {
+				target = BOI
+				type = annex_everything
+			}
+		}
+	}
+}
+	
 	

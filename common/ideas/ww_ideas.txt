@@ -23,11 +23,9 @@ ideas = {
 			removal_cost = -1
 			picture = HLQ_knights
 			modifier = {
-				army_attack_factor = 0.2
+				army_attack_factor = 0.1
 				army_speed_factor = 0.1
-				supply_consumption_factor = -0.2
 				no_supply_grace	= 48.0
-				planning_speed = 1.0
 			}
 		}
 		WW_JER_counteroffensive = {
@@ -44,6 +42,34 @@ ideas = {
 				army_core_attack_factor = 0.2
 				army_speed_factor = 0.15
 				no_supply_grace	= 72.0
+			}
+		}
+		WW_crusaders = {
+			allowed = { 
+				always = yes 
+			}
+
+			removal_cost = -1
+			picture = STG_crusaders
+			modifier = {
+				war_support_factor = 0.15
+				land_reinforce_rate = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		WW_protect_eqc = {
+			allowed = { 
+				always = yes 
+			}
+
+			removal_cost = -1
+			picture = STG_crusaders
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				max_dig_in = 5
 			}
 		}
 		WW_CHN_core_buff = {
@@ -84,15 +110,15 @@ ideas = {
 				air_home_defence_factor = 0.2
 			}
 			equipment_bonus = {
-   				fighter_equipment = {
-					build_cost_ic = -0.25
+				small_plane_airframe = {
 					instant = yes
-				}
-   				heavy_fighter_equipment = {
 					build_cost_ic = -0.25
-					instant = yes
 				}
-   			}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
 		}
 		WW_incompetent_tanks = {
 			removal_cost = -1
@@ -100,6 +126,59 @@ ideas = {
 			modifier = {
 				army_armor_attack_factor = -1
 			}
+		}
+		WW_HIP_primo_victoria1 = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				conscription = 0.03
+				industrial_capacity_factory = 0.2
+				production_speed_arms_factory_factor = 0.3 
+				production_speed_dockyard_factor = 0.3
+				production_factory_max_efficiency_factor = 0.1
+			}
+		
+		}
+		WW_HIP_primo_victoria2 = {
+			removal_cost = -1
+			picture = eng_preparing_the_second_front
+			modifier = {
+				special_forces_attack_factor = 0.2
+				naval_invasion_capacity = 20
+				naval_invasion_prep_speed = 1
+				naval_invasion_planning_bonus_speed = 0.5
+				hidden_modifier = {
+					naval_damage_factor = 0.1
+					naval_defense_factor = 0.1
+				}
+				custom_modifier_tooltip = WW_HIP_primo_victoria2_tt
+			}		
+		}
+		WW_HIP_primo_victoria3 = {
+			removal_cost = -1
+			picture = air_support_focus
+			modifier = {
+				ground_attack_factor = 0.1
+				army_bonus_air_superiority_factor = 0.2
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}		
 		}
 	}	
 }

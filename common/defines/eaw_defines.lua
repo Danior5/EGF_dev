@@ -7,7 +7,8 @@ NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "1007.1.1.12"
 NDefines.NDiplomacy.MAX_OPINION_VALUE = 200							-- Max opinion value cap.
 NDefines.NDiplomacy.MIN_OPINION_VALUE = -200						-- Min opinion value cap.
 NDefines.NDiplomacy.TENSION_PUPPET = 0
---NDefines.NDiplomacy.TENSION_DECAY = 0.25 -- default 0.1
+NDefines.NDiplomacy.PEACE_SCORE_DISTRIBUTION = { 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 } -- How much of the total peace conference score you get during the first n turns.
+NDefines.NDiplomacy.PEACE_CONTEST_REFUND_FACTOR = { 1.0, 0.90, 0.80, 0.70, 0.60, 0.50 } -- How much of the spent peace conference score that gets refunded in a contest. First element applies for the first round of conflicts, second element for the second round of conflicts, etc. The final element is used for each consecutive turn, so setting that to e.g. 0.7 means you get 70 % of the spent score back for every turn thereafter.
 
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 32					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -36,11 +37,14 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 --NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.02
+NDefines.NMilitary.BASE_FEMALE_DIVISIONAL_COMMANDER_CHANCE = 0.5 -- 50% of time by default, female_divisional_commander_chance modifier is additive
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3 -- Vanilla is 0.25
 NDefines.NNavy.SCREENS_TO_CAPITAL_RATIO = 3.0 -- Vanilla is 4.0, mostly AI stuff
 
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03 	-- Max planes that can join a combat comparing to the total strength of the ships, vanilla is 0.05
+
 
 NDefines.NAI.RESEARCH_LAND_DOCTRINE_NEED_GAIN_FACTOR = 0.12 -- Multiplies value based on relative military industry size / country size.
 NDefines.NAI.DYNAMIC_STRATEGIES_THREAT_FACTOR = 6.0
@@ -88,8 +92,6 @@ NDefines.NAI.DIPLOMACY_ACCEPT_VOLUNTEERS_BASE = 100
 NDefines.NAI.RESEARCH_AHEAD_OF_TIME_FACTOR = 4.5 		-- To which extent AI should care about ahead of time penalties to research
 NDefines.NAI.RESEARCH_AHEAD_BONUS_FACTOR = 2.5          -- To which extent AI should care about ahead of time bonuses to research
 NDefines.NAI.RESEARCH_BONUS_FACTOR = 2.0 				-- To which extent AI should care about bonuses to research
-NDefines.NAI.AIR_WING_REINFORCEMENT_LIMIT = 50
-NDefines.NAI.AIR_WING_SCOUT_REINFORCEMENT_LIMIT = 20
 
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 3
 NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 4			-- Number of upgrade needed to unlock an additional operative slot
@@ -118,11 +120,9 @@ NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.1
 NDefines.NAI.DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_LAND = 30
 NDefines.NAI.DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_NAVY = 50
 
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.02
-
 -- WW changes
 
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.2, 0.2, 0.15, 0.1, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.3, 0.2, 0.1, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 
@@ -130,11 +130,14 @@ NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 2				-- Number of human pla
 NDefines.NDiplomacy.MP_NUM_LOSERS_FOR_PEACE_PAUSE = 0				-- Number of human players as losers needed for peace conference to pause and open for everyone in multiplayer, needs to fullfill MP_NUM_WINNERS_FOR_PEACE_PAUSE as well.
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 250					-- Days of client lag for decrease of gamespeed
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250				-- Days of client lag for pause of gamespeed.
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250				-- Days of client lag for pause of gamespeed
 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot
+NDefines.NMilitary.TRAINING_ATTRITION = 0		  			   -- amount of extra attrition from being in training
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02			-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 3.5	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
@@ -149,6 +152,8 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 -- Divs required to send volunteers
 NDefines.NDiplomacy.TENSION_DECAY = 0.1 -- default 0.1, changed from 0.25 in EaW vanilla
 
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				-- Impact of being in defensive war
+
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- HOLD
 		1.0, -- PATROL
@@ -161,4 +166,10 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- RESERVE_FLEET
 		0.1, -- NAVAL_INVASION_SUPPORT
 	}
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1 -- this screen ratio to num convoys is needed for full screening beyond screen line
+NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.05 -- this capital ratio to num convoys is needed for full screening beyond screen line
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- Chances one ship get damage each hour while on training
+
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2	-- Base year ahead penalty. Vanilla is 2. Changed back to 2 from 2.5 in vanilla EaW
+
+NDefines.NCountry.WAR_SUPPORT_TENSION_IMPACT = 0.3				-- Total impact of world tension vanilla is 0.4

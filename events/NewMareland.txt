@@ -1,4 +1,4 @@
-﻿add_namespace = mareland
+add_namespace = mareland
 add_namespace = eqc_news
 add_namespace = eqc_bandit_event
 
@@ -1751,7 +1751,7 @@ country_event = {
 	option = { # Great!
 		name = mareland.40.a
 		add_ideas = EQC_nuke_power_idea
-		add_political_power = 200
+		add_political_power = 100
 		add_tech_bonus = {
 			name = mareland.40.t
 			bonus = 1.0
@@ -1881,7 +1881,7 @@ country_event = {
 
 	option = { # Good Show!
 		name = mareland.43.a
-		add_political_power = 200
+		add_political_power = 100
 		add_timed_idea = { idea = EQC_malls_idea days = 185 }
 	}
 }

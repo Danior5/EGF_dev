@@ -966,62 +966,7 @@ country_event = {##Red Saturday
 
 	is_triggered_only = yes
 
-	option = {#Caramel's militia seize control of the state
-		name = rivercity.27.a
-		set_country_flag = RCT_caramels_coup
-		ai_chance = {
-			factor = 150
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = RCT_AI_NOVAWHIRL
-					has_game_rule = {
-						rule = RCT_ai_behavior
-						option = NOVAWHIRL
-					}
-				}
-			}
-		}
-		hidden_effect = {
-			complete_national_focus = RCT_proletarian_dictatorship
-		}
-				RCT_nova_whirl = {
-			retire = yes
-		}
-		RIV_leave_fed = yes
-		add_country_leader_role = {
-			character = RCT_caramel_haze
-			country_leader = {
-				desc = "POLITICS_CARAMELHAZE_DESC"
-				expire = "1965.1.1"
-				ideology = anti_revisionism
-				traits = {  }
-			}
-			promote_leader = yes
-		}
-		set_portraits = {
-            character = RCT_caramel_haze 
-			civilian = {
-				large ="gfx/leaders/RCT/Caramel_Haze_Com.tga"
-			}
-			army = {
-				large ="gfx/leaders/RCT/Caramel_Haze_Com.tga"
-				small="gfx/interface/ideas/Advisors/RCT/RCT_caramel_haze_com.tga"
-			}
-        }
-		add_ideas = RCT_caramels_stubbornness
-		hidden_effect = {
-			set_cosmetic_tag = RCT_caramel
-			every_other_country = {
-				limit = { is_guaranteed_by = ROOT }
-				diplomatic_relation = {
-					country = FROM
-					relation = guarantee
-					active = no
-				}
-			}
-		}
-	}
+	## Caramel Option deleted in EGZF
 	option = {#Nova's spies intercept Caramel and remove him from power
 		name = rivercity.27.b
 		set_country_flag = RCT_nova_remains
@@ -1433,100 +1378,100 @@ country_event = {#The result of the vote comes back. If votes > 0, then that mea
 	}
 }
 
-country_event = {#Event that gives you awful debuffs if you take over the River Fed as a Communist. Sadly, it has to be a MTTH event as it can occur through either war or peace. Don't hurt me guys >.>
-	id = rivercity.1927
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rivercity.1927"}
-	title = rivercity.1927.t
-	desc = rivercity.1927.d
-	picture = GFX_event_river_city
-
-	trigger = {
-		original_tag = RCT
-		has_government = communism
-		OR = {
-			has_country_flag = RCT_caramels_coup
-			has_country_flag = RCT_nova_remains
-			has_country_flag = RCT_caramel_took_power
-		}
-		617 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		580 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		645 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		649 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		619 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		637 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		544 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		387 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-	}
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = rivercity.1927.a
-		add_ideas = RCT_cultural_divides
-		add_ideas = RCT_antisocialist_militia
-		add_ideas = RCT_disparate_economies
-		add_ideas = RCT_disintegrated_armies
-		set_country_flag = RCT_commie_crash
-	}
-}
+#country_event = {#Event that gives you awful debuffs if you take over the River Fed as a Communist. Sadly, it has to be a MTTH event as it can occur through either war or peace. Don't hurt me guys >.>
+#	id = rivercity.1927
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event rivercity.1927"}
+#	title = rivercity.1927.t
+#	desc = rivercity.1927.d
+#	picture = GFX_event_river_city
+#
+#	trigger = {
+#		original_tag = RCT
+#		has_government = communism
+#		OR = {
+#			has_country_flag = RCT_caramels_coup
+#			has_country_flag = RCT_nova_remains
+#			has_country_flag = RCT_caramel_took_power
+#		}
+#		617 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		580 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		645 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		649 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		619 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		637 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		544 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#		387 = {
+#			owner = {
+#				OR = {
+#					tag = ROOT
+#					is_subject_of = ROOT
+#				}
+#			}
+#		}
+#	}
+#	fire_only_once = yes
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = rivercity.1927.a
+#		add_ideas = RCT_cultural_divides
+#		add_ideas = RCT_antisocialist_militia
+#		add_ideas = RCT_disparate_economies
+#		add_ideas = RCT_disintegrated_armies
+#		set_country_flag = RCT_commie_crash
+#	}
+#}
 
 country_event = {#Events for ponies resisting your attempt to impose a monoculture on them
 	id = rivercity.1928

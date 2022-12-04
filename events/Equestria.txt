@@ -3480,11 +3480,11 @@ country_event = { #### Final reform event
 			remove_ideas = EQS_bat_pony_divide_1
 		}
         hidden_effect = {
-		    BAT = {
-			    country_event = {
-			        id = bat.16
-			    }
-			}
+		    #BAT = {
+			#    country_event = {
+			#        id = bat.16
+			#    }
+			#}
 		}
 	}
 	option = {
@@ -3498,11 +3498,11 @@ country_event = { #### Final reform event
 			}
 		}
 		hidden_effect = {
-		    BAT = {
-			    country_event = {
-			        id = bat.16
-			    }
-			}
+		    #BAT = {
+			#    country_event = {
+			#        id = bat.16
+			#    }
+			#}
 		}
 	}
 }

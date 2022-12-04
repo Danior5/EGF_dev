@@ -213,7 +213,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7251;5917;sea;1889;-1;-1;-1;-1;;Parakeets
 ;;;;;;;;;
 14791;3817;sea;20303;-1;-1;-1;-1;;GreatLakes
-4418;4180;sea;20308;-1;-1;-1;-1;;GreatLakes
+4418;4180;sea;20309;-1;-1;-1;-1;;GreatLakes
 ;;;;;;;;;
 16758;16759;sea;2884;-1;-1;-1;-1;;HyenaIsles
 ;;;;;;;;;
@@ -527,10 +527,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15240;15226;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15240;15224;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 ;;;;;;;;;
-15227;15208;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-15227;15219;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-15241;15219;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-15241;15247;impassable;-1;-1;-1;-1;-1;;HyenaMountains
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
 ;;;;;;;;;
 15170;15195;impassable;-1;-1;-1;-1;-1;;StormMountains
 15170;15178;impassable;-1;-1;-1;-1;-1;;StormMountains
@@ -794,19 +794,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2007;8050;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 5026;10736;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 ;;;;;;;;;
-8300;8404;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal West
-8300;2499;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal East
-20193;5698;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Inner Arabian Strait
-20193;4030;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Outer Arabian Strait
-20170;2421;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar West
-20170;2396;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar Middle
-20170;8576;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar East
-8551;13166;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza North
-8551;3222;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza South
-20202;8697;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Northeast
-20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
-20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
-;;;;;;;;;
 6398;6279;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 6398;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 3345;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
@@ -827,5 +814,37 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9042;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 3069;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
 3069;6079;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+;;;;;;;;;
+8045;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+3995;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+1833;12516;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1833;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4610;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4528;5231;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4528;2171;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;3995;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;4610;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;4839;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+10425;12433;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10425;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+7103;4568;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
 ;;;;;;;;;
 -1;-1;;-1;-1;-1;-1;-1;-1;
