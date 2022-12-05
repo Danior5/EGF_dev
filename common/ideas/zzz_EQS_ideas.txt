@@ -569,12 +569,22 @@ ideas = {
 				is_subject = no
 			}
 			removal_cost = -1
-			picture = EQS_alicorn_sisters
+			picture = idea_chi_army_corruption3
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				army_morale_factor = 0.05
-				political_power_gain = 0.1
+				army_org_factor	= -0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				land_reinforce_rate	= -0.05
+				experience_gain_army_factor	= -0.25
+				land_doctrine_cost_factor = 0.5
+				training_time_army_factor = 0.4
+				max_planning = -0.15
+				planning_speed -0.5
+				military_leader_cost_factor	 = 5.0
+				command_power_gain_mult = -0.5
+				mobilization_speed	= -0.3
+				custom_modifier_tooltip = ZES_military_blocked_tp
+
 			}
 		}
 	}
