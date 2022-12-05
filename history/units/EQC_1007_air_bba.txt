@@ -13,10 +13,22 @@ air_wings = {
 			creator = "EQS"
 			version_name = "Hollow Shades Demon"
 		}
-		large_plane_airframe_0 =  {
+		large_plane_maritime_patrol_plane_airframe_0 =  {
 			owner = "EQC"
-			amount = 300
-			creator = "EQS"
+			amount = 100
+			creator = "EQC"
+			version_name = "Submarine Stopper"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 =  {
+			owner = "EQC"
+			amount = 100
+			creator = "EQC"
+			version_name = "Submarine Stopper"
+		}
+		large_plane_maritime_patrol_plane_airframe_0 =  {
+			owner = "EQC"
+			amount = 100
+			creator = "EQC"
 			version_name = "Submarine Stopper"
 		}
 	}

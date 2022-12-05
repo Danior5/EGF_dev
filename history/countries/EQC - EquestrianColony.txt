@@ -441,7 +441,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Submarine Stopper" 
-		type = large_plane_airframe_0
+		type = large_plane_maritime_patrol_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
 			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
