@@ -1,4 +1,4 @@
-﻿capital = 356
+capital = 356
 oob = "EQC_1007"
 set_research_slots = 3
 
@@ -438,6 +438,17 @@ if = {
 			special_type_slot_1 = empty
 		}
 		icon = "GFX_ENG_early_fighter_medium"
+	}
+	create_equipment_variant = {
+		name = "Submarine Stopper" 
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = flying_boat_large
+		}
+		icon = "GFX_ENG_heavy_plane_1_medium"
 	}
 	set_air_oob = "EQC_1007_air_bba"
 
