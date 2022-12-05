@@ -448,7 +448,7 @@ if = {
 			engine_type_slot = engine_2_4x
 			special_type_slot_1 = flying_boat_large
 		}
-		icon = "GFX_ENG_heavy_plane_1_medium
+		icon = "GFX_ENG_heavy_plane_1_medium"
 	}
 	set_air_oob = "EQC_1007_air_bba"
 
