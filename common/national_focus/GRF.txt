@@ -43,6 +43,13 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_beak_mines"
+			238 = {	add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_resource = {
 				type = steel
 				amount = 16
@@ -68,6 +75,13 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_dulli_mines"
+			245 = {	add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_resource = {
 				type = steel
 				amount = 12
@@ -93,6 +107,20 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_northern_oil"
+			288 = {	add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			287 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_resource = {
 				type = oil
 				amount = 8
@@ -111,12 +139,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 8.00
 		ai_will_do = { factor = 80 }
-		prerequisite = {
-			focus = GRF_beak_mines
-		}
-		#prerequisite = {
-		#	focus = GRF_dulli_mines
-		#}
+		prerequisite = { focus = GRF_beak_mines focus = GRF_dulli_mines }
 		x = -3
 		y = 3
 		available = {
@@ -204,12 +227,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 8.00
 		ai_will_do = { factor = 80 }
-		prerequisite = {
-			focus = GRF_beak_mines
-		}
-		#prerequisite = {
-		#	focus = GRF_northern_oil
-		#}
+		prerequisite = { focus = GRF_beak_mines focus = GRF_northern_oil }
 		x = -1
 		y = 3
 		available = {
@@ -318,9 +336,41 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = naval_base
-					level = 2
-					province = 9258
+					type = coastal_bunker
+					level = 3
+					province = 6210
+					instant_build = yes
+				}
+			}
+			243 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 85
+					instant_build = yes
+				}
+			}
+			242 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 6015
+					instant_build = yes
+				}
+			}
+			239 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 22
+					instant_build = yes
+				}
+			}
+			241 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 3082
 					instant_build = yes
 				}
 			}
@@ -435,7 +485,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 4
-					province = 9258
+					province = 6210
 					instant_build = yes
 				}
 			}
@@ -476,26 +526,37 @@ focus_tree = {
 			increase_society_development = yes
 		}
 	}
-
+	### BASED EGZF LATE INDUSTRY REWORK BEGINS HERE - GLORY TO THE GREAT PIG ###
 	focus = {
 		id = GRF_great_lake_development
 		icon = GFX_goal_agriculture
 		cost = 8.00
 		ai_will_do = { factor = 80 }
-		prerequisite = { focus = GRF_good_economy }
+		prerequisite = { focus = GRF_immigration }
+		mutually_exclusive = { focus = GRF_frontier_development }
 		x = -4
-		y = 8
+		y = 9
+		available = {
+			owns_state = 277
+			owns_state = 281
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_great_lake_development"
-			add_political_power = 50
-			271 = {
-				add_manpower = 50000
+			add_political_power = 100
+			277 = {
+				add_manpower = 25000
 			}
-			286 = {
-				add_manpower = 50000
+			281 = {
+				add_manpower = 25000
+			}
+			271 = {
+				add_manpower = 25000
 			}
 			279 = {
-				add_manpower = 50000
+				add_manpower = 25000
+			}
+			286 = {
+				add_manpower = 25000
 			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
@@ -503,48 +564,69 @@ focus_tree = {
 
 	focus = {
 		id = GRF_great_lake_oil
-		icon = GFX_goal_further_oil
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_great_lake_development }
 		x = -5
-		y = 9
+		y = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_great_lake_oil"
-			add_resource = {
-				type = oil
-				amount = 8
-				state = 271
+			271 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
-			add_resource = {
-				type = oil
-				amount = 8
-				state = 286
+			277 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
-			add_resource = {
-				type = oil
-				amount = 8
-				state = 279
-			}
+			281 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
 		id = GRF_infrastructure_projects
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_great_lake_development }
 		x = -3
-		y = 9
-		available = {
-			271 = { is_owned_and_controlled_by = ROOT }
-			286 = { is_owned_and_controlled_by = ROOT }
-			279 = { is_owned_and_controlled_by = ROOT }
-		}
+		y = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_infrastructure_projects"
+			277 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			281 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			271 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -581,60 +663,50 @@ focus_tree = {
 		prerequisite = { focus = GRF_great_lake_oil }
 		prerequisite = { focus = GRF_infrastructure_projects }
 		x = -4
-		y = 10
+		y = 11
 		available = {
 			279 = { is_owned_and_controlled_by = ROOT }
 			286 = { is_owned_and_controlled_by = ROOT }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_great_lake_industry"
-			279 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			286 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
-	focus = {
-		id = GRF_frontier_development
+	focus = { ### The New Frontier ###
+		id = GRF_frontier_development  
 		icon = GFX_goal_generic_production2
 		cost = 8.00
 		ai_will_do = { factor = 80 }
-		prerequisite = { focus = GRF_good_economy }
+		prerequisite = { focus = GRF_immigration }
+		mutually_exclusive = { focus = GRF_great_lake_development }
 		available = {
-			owns_state = 277
-			owns_state = 283
-			owns_state = 281
-			owns_state = 278
+			owns_state = 290
+			owns_state = 272
+			owns_state = 265
+			owns_state = 266
+			owns_state = 325
 		}
 		x = 0
-		y = 8
+		y = 9
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_frontier_development"
-			add_political_power = 25
-			277 = {
+			add_political_power = 100
+			290 = {
 				add_manpower = 25000
 			}
-			283 = {
+			272 = {
 				add_manpower = 25000
 			}
-			281 = {
+			265 = {
 				add_manpower = 25000
 			}
-			278 = {
+			266 = {
+				add_manpower = 25000
+			}
+			325 = {
 				add_manpower = 25000
 			}
 		}
@@ -647,23 +719,10 @@ focus_tree = {
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_frontier_development }
-		available = {
-			277 = { is_owned_and_controlled_by = ROOT }
-			283 = { is_owned_and_controlled_by = ROOT }
-			281 = { is_owned_and_controlled_by = ROOT }
-			278 = { is_owned_and_controlled_by = ROOT }
-		}
 		x = -1
-		y = 9
+		y = 10
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_frontier_infrastructure"
-			build_railway = {
-                level = 2
-				start_province = 9235
-                target_province = 11043
-                build_only_on_allied = yes
-            }
-			277 = {
+			290 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -671,7 +730,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			283 = {
+			272 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -679,7 +738,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			281 = {
+			265 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -687,7 +746,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			278 = {
+			266 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			325 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -701,23 +768,45 @@ focus_tree = {
 
 	focus = {
 		id = GRF_frontier_crystals
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_industry_2
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_frontier_development }
 		x = 1
-		y = 9
+		y = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_frontier_crystals"
-			add_resource = {
-				type = crystals
-				amount = 16
-				state = 278
+			290 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
-			add_resource = {
-				type = crystals
-				amount = 16
-				state = 283
+			272 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			266 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			325 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -731,29 +820,13 @@ focus_tree = {
 		prerequisite = { focus = GRF_frontier_crystals }
 		prerequisite = { focus = GRF_frontier_infrastructure }
 		x = 0
-		y = 10
+		y = 11
 		available = {
 			277 = { is_owned_and_controlled_by = ROOT }
 			281 = { is_owned_and_controlled_by = ROOT }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_frontier_industry"
-			277 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			281 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -761,7 +834,7 @@ focus_tree = {
 	focus = {
 		id = GRF_immigration
 		icon = GFX_goal_GRF_immigration
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_good_economy }
 		x = -2
@@ -793,10 +866,9 @@ focus_tree = {
 		icon = GFX_goal_gold_up
 		cost = 10.00
 		ai_will_do = { factor = 80 }
-		prerequisite = { focus = GRF_immigration }
 		prerequisite = { focus = GRF_frontier_industry focus = GRF_great_lake_industry }
 		x = -2
-		y = 11
+		y = 12
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_prosperity"
 			add_ideas = GRF_p_economy
