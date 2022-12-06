@@ -180,5 +180,12 @@ ideas = {
 				}
 			}		
 		}
+		WW_equus_only_dockyard_rebalancer = {
+			removal_cost = -1
+			picture = air_support_focus
+			modifier = {
+				production_speed_dockyard_factor = 0.5
+			}
+		}
 	}	
 }

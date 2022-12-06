@@ -51,6 +51,12 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					#NOT = {
+					#	has_game_rule = {
+					#		rule = ww_game_mode
+					#		option = EQS_ONLY
+					#	}
+					#}
 					FROM = { 
 						OR = { 
 							is_in_faction_with = EQS  
@@ -93,6 +99,12 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					#NOT = {
+					#	has_game_rule = {
+					#		rule = ww_game_mode
+					#		option = EQS_ONLY
+					#	}
+					#}
 					FROM = { 
 						OR = { 
 							is_in_faction_with = GRI

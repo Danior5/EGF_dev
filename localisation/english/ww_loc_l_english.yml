@@ -5,3 +5,10 @@
  WNG_attack_FRN:0 "Wingbardian Invasion Of Francistria"
  WNG_attack_TAL:0 "Wingbardian Invasion Of Talouse"
  WNG_attack_BOI:0 "Wingbardian Invasion Of Griffonstone"
+ 
+ ww_game_mode_event.1.t:0 "Do we play with Air Controllers?"
+ ww_game_mode_event.1.d:0 "Do we desire to conduct our glorious warfare with the help of dedicated Air Controllers or do we make them disappear, annexed into the greater mass of Griffonian Arcturian Order?"
+ ww_game_mode_event.1.a:0 "Yes"
+ ww_game_mode_event.1.b:0 "No"
+ 
+ WW_equus_only_dockyard_rebalancer:0 "WW Equus Only Dockyard Rebalancer"

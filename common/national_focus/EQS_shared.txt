@@ -1936,6 +1936,10 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Forget_magic_of_friendship"
 		country_event = equestria.144
+		if = {
+			limit = { has_idea = WW_equus_only_dockyard_rebalancer }
+			remove_ideas = WW_equus_only_dockyard_rebalancer
+		}
 	}
 }
 shared_focus = {
