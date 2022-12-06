@@ -31,12 +31,6 @@ air_wings = {
 			creator = "EQC"
 			version_name = "Submarine Stopper"
 		}
-		large_plane_maritime_patrol_plane_airframe_0 =  {
-			owner = "EQC"
-			amount = 100
-			creator = "EQC"
-			version_name = "Submarine Stopper"
-		}
 	}
 	"NMRNS Princess of New Mareland" = {
 		cv_small_plane_airframe_0 = { owner = "EQS" amount = 10 version_name = "Hollow Shades Nimrod" }

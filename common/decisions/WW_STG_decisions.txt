@@ -1,0 +1,29 @@
+WW_category = {
+	STG_mass_teleport = {
+		allowed = {
+			tag = STG
+		}
+		visible = {
+			has_completed_focus = WW_the_war_to_end_disorder
+		}
+		available = {
+			is_in_faction_with = WNG
+			STG = {
+				owns = 153
+			}
+			WNG = {
+				owns = 371
+			}
+		}
+		icon = hol_draw_up_staff_plans
+		cost = 0
+		days_remove = 7
+		remove_effect = {
+			153 = {
+				teleport_armies = {
+					to_state = 371
+				}
+			}
+		}
+	}
+}

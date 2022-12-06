@@ -1314,7 +1314,7 @@ focus_tree = {
 		icon = GFX_goal_stg_eqs
 		cost = 10
 		prerequisite = {
-			focus = the_war_to_end_disorder
+			focus = WW_the_war_to_end_disorder
 		}
 		available = {
 			OR = {
@@ -2456,7 +2456,7 @@ focus_tree = {
 	focus = {
 		id = take_down_STL
 		icon = GFX_goal_stg_stl
-		cost = 4
+		cost = 0
 		prerequisite = {
 			focus = simplify_bureaucracy
 		}
@@ -2473,7 +2473,7 @@ focus_tree = {
 	focus = {
 		id = hegemonic_doctrine
 		icon = GFX_goal_step_on_skull
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = death_from_above
 			focus = the_secret_police
@@ -2549,7 +2549,7 @@ focus_tree = {
 	focus = {
 		id = death_from_above
 		icon = GFX_goal_generic_air_naval_bomber
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = new_infantry_equipment
 		}
@@ -2668,7 +2668,7 @@ focus_tree = {
 	focus = {
 		id = the_secret_police
 		icon = GFX_goal_demand_sudetenland
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = new_infantry_equipment
 		}
@@ -2683,7 +2683,7 @@ focus_tree = {
 	focus = {
 		id = new_infantry_equipment
 		icon = GFX_goal_generic_army_artillery
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = take_down_STL
 		}
@@ -2709,7 +2709,7 @@ focus_tree = {
 	focus = {
 		id = heavy_tanks_projects
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = hegemonic_doctrine
 		}
@@ -2801,7 +2801,7 @@ focus_tree = {
 	focus = {
 		id = WW_strike_GRF
 		icon = GFX_goal_generic_consumer_goods
-		cost = 10
+		cost = 1
 		prerequisite = {
 			focus = take_down_STL
 		}
@@ -2881,7 +2881,7 @@ focus_tree = {
 	focus = {
 		id = STG_sinister_law
 		icon = GFX_goal_sinister_focus
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = WW_strike_GRF
 		}
@@ -2924,9 +2924,9 @@ focus_tree = {
 	focus = {
 		id = mareginot_line
 		icon = GFX_goal_stg_sinister_line
-		cost = 10
+		cost = 5
 		prerequisite = {
-			focus = WW_strike_GRF
+			focus = mareginot_line
 		}
 		ai_will_do = {
 			factor = 7
@@ -3037,7 +3037,7 @@ focus_tree = {
 		icon = GFX_goal_stg_yak
 		cost = 5
 		prerequisite = {
-			focus = mareginot_line
+			focus = WW_strike_GRF
 		}
 		available = {
 			is_in_faction_with = EQS
@@ -3187,9 +3187,9 @@ focus_tree = {
 	focus = {
 		id = WW_STG_attack_PNG
 		icon = GFX_goal_support_communism
-		cost = 6
+		cost = 3
 		prerequisite = {
-			focus = WW_STG_attack_yaks
+			focus = mareginot_line
 		}
 		ai_will_do = {
 			factor = 1
@@ -3276,7 +3276,7 @@ focus_tree = {
 		icon = GFX_goal_stg_worst_case
 		cost = 10
 		prerequisite = {
-			focus = WW_STG_attack_yaks
+			focus = mareginot_line
 		}
 		ai_will_do = {
 			factor = 6
@@ -3357,7 +3357,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
-		id = the_war_to_end_disorder
+		id = WW_the_war_to_end_disorder
 		icon = GFX_goal_stg_sinister_war_on_eqs
 		cost = 10
 		prerequisite = {
@@ -3386,69 +3386,12 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-			EQS = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-			if = {
-				limit = {
-					country_exists = ELF
-				}
-				ELF = {
-					OR = {
-						exists = no
-						is_subject_of = ROOT
-						has_war_with = ROOT
-					}
-				}
-			}
-			event_target:equestria = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-			NLR = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
 		x = 31
 		y = 9
-		will_lead_to_war_with = EQS
-		will_lead_to_war_with = ELF
-		will_lead_to_war_with = NLR
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_war_to_end_disorder"
-			set_global_flag = stg_vs_eqs_war
-			if = { limit = { EQS = { exists = yes } }
-				create_wargoal = {
-					target = EQS type = annex_everything
-				}
-			}
-			else_if = { 
-				limit = { event_target:equestria = { exists = yes } }
-				create_wargoal = {
-					target = event_target:equestria type = annex_everything
-				}
-			}
-			if = { limit = { NLR = { exists = yes } }
-				create_wargoal = {
-					target = NLR type = annex_everything
-				}
-			}
+			unlock_decision_tooltip = STG_mass_teleport
 			hidden_effect = {
-				news_event = {
-					id = news.28 days = 1
-				}
 			}
 		}
 	}
