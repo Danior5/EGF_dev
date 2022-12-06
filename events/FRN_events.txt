@@ -2959,7 +2959,6 @@ country_event = { #FLNT overruns tarrin and declares independence
 				id = francistria.81
 				days = 7
 			}
-			news_event = { id = francistria_news.1 hours = 12 }
 		}
 	}
 	option = {
@@ -5266,37 +5265,6 @@ country_event = { #Francis epilogue event 2
 }
 
 ### News
-
-news_event = {
-	id = francistria_news.1
-	immediate = {log = "[Root.GetName]: event francistria_news.1"}#Auto-logging
-	title = francistria_news.1.t
-	desc = francistria_news.1.d
-	picture = GFX_news_aquiliea_revolution
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = francistria_news.1.a
-		trigger = {
-			tag = JES
-		}
-	}
-	option = {
-		name = francistria_news.1.b
-		trigger = {
-			tag = FRN
-		}
-	}
-	option = {
-		name = francistria_news.1.c
-		trigger = {
-			NOT = {
-				tag = JES
-				tag = FRN
-			}
-		}
-	}
-}
 news_event = {
 	id = francistria_news.2
 	immediate = {log = "[Root.GetName]: event francistria_news.2"}#Auto-logging

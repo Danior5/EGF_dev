@@ -1,0 +1,196 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ww_game_mode
+						option = EQS_ONLY
+					}
+				}
+				HLR  = {
+					add_ideas = neutral_idea
+					add_ideas = neutral_trade_idea
+					annex_country = { target = NTR transfer_troops = no } 
+					annex_country = { target = SRS transfer_troops = no } 
+					annex_country = { target = VED transfer_troops = no } 
+					annex_country = { target = FAT transfer_troops = no } 
+					annex_country = { target = MNC transfer_troops = no }
+					annex_country = { target = GRI transfer_troops = no } 
+					annex_country = { target = STW transfer_troops = no } 
+					annex_country = { target = YAL transfer_troops = no } 
+					annex_country = { target = ANG transfer_troops = no } 
+					annex_country = { target = BRZ transfer_troops = no }
+					annex_country = { target = FEA transfer_troops = no }
+					annex_country = { target = PYT transfer_troops = no }
+					annex_country = { target = KAT transfer_troops = no } 
+					annex_country = { target = AET transfer_troops = no } 
+					annex_country = { target = HEL transfer_troops = no }
+					annex_country = { target = FLO transfer_troops = no }
+					annex_country = { target = POM transfer_troops = no }
+					annex_country = { target = AVI transfer_troops = no } 
+					annex_country = { target = ERI transfer_troops = no } 
+					annex_country = { target = JEB transfer_troops = no } 
+					annex_country = { target = JER transfer_troops = no } 
+					annex_country = { target = JRR transfer_troops = no } 
+					annex_country = { target = VIN transfer_troops = no } 
+					annex_country = { target = JFT transfer_troops = no } 
+					annex_country = { target = ARA transfer_troops = no } 
+					annex_country = { target = FRN transfer_troops = no } 
+					annex_country = { target = TAL transfer_troops = no } 
+					annex_country = { target = WNG transfer_troops = no }
+					annex_country = { target = FAL transfer_troops = no }
+					annex_country = { target = SIC transfer_troops = no }
+					annex_country = { target = BOI transfer_troops = no }
+					annex_country = { target = HLQ transfer_troops = no }
+					annex_country = { target = LNS transfer_troops = no } 
+					annex_country = { target = BAK transfer_troops = no } 
+					annex_country = { target = LCT transfer_troops = no } 
+					annex_country = { target = RCT transfer_troops = no } 
+					annex_country = { target = WIT transfer_troops = no } 
+					annex_country = { target = NIM transfer_troops = no } 
+					annex_country = { target = GRY transfer_troops = no } 
+					annex_country = { target = GRW transfer_troops = no } 
+					annex_country = { target = BRF transfer_troops = no } 
+					annex_country = { target = LUS transfer_troops = no } 
+					annex_country = { target = BAN transfer_troops = no } 
+					annex_country = { target = CYA transfer_troops = no } 
+					annex_country = { target = MIT transfer_troops = no } 
+					annex_country = { target = GRU transfer_troops = no } 
+					annex_country = { target = BAR transfer_troops = no } 
+					annex_country = { target = ZES transfer_troops = no } 
+					annex_country = { target = OLV transfer_troops = no }
+				}					
+				every_state = {
+					limit = {
+							is_owned_by = HLR
+					}
+					add_core_of = HLR
+				}
+				ZAI = {
+					add_ideas = neutral_idea
+					add_ideas = neutral_trade_idea
+					annex_country = { target = HIP transfer_troops = no }
+					annex_country = { target = CTH transfer_troops = no }
+					annex_country = { target = WAR transfer_troops = no }
+					annex_country = { target = BAT transfer_troops = no }
+					annex_country = { target = TBK transfer_troops = no }
+					annex_country = { target = ZAR transfer_troops = no }
+					annex_country = { target = CGI transfer_troops = no }
+					annex_country = { target = LMB transfer_troops = no }
+					annex_country = { target = KIR transfer_troops = no }
+					annex_country = { target = CNT transfer_troops = no }
+					annex_country = { target = STM transfer_troops = no }
+					annex_country = { target = ABY transfer_troops = no }
+					annex_country = { target = SDL transfer_troops = no }
+					annex_country = { target = MGY transfer_troops = no }
+					
+				}				
+				every_state = {
+					limit = {
+							is_owned_by = ZAI
+					}
+					add_core_of = ZAI
+				}
+				EQS = { country_event = ww_game_mode_event.1 }
+				EQS = {
+					add_research_slot = -1
+					add_ideas = WW_equus_only_dockyard_rebalancer
+					remove_ideas = EQS_island_debuff1
+				}
+				EQS = {
+					4 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					46 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					99 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					96 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}	
+					95 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					74 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					70 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					48 = {
+						remove_building = {
+						type = industrial_complex
+						level = 2
+						}
+					}
+					170 = {
+						remove_building = {
+						type = industrial_complex
+						level = 2
+						}
+					}
+					179 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					181 = {
+						remove_building = {
+						type = industrial_complex
+						level = 2
+						}
+					}
+					129 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					132 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					1195 = {
+						remove_building = {
+						type = industrial_complex
+						level = 1
+						}
+					}
+					103 = {
+						remove_building = {
+						type = industrial_complex
+						level = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}

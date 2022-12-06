@@ -1,0 +1,67 @@
+political_actions = {
+	HIP_form_the_government_of_national_unity = {
+		icon = GFX_decision_gre_investment_decisions
+		allowed = {
+			OR = {
+				original_tag = CTH
+				original_tag = BAT
+				original_tag = WNG
+			}
+		}
+		visible = {
+			OR = {
+				HIP = {
+					is_subject_of = ROOT
+				}
+				owns_state = 1165
+			}
+			OR = {
+				NOT = {tag = BAT}
+				CTH = {
+					AND = {
+						is_in_faction_with = BAT
+						is_subject = no
+					}
+				}
+			}
+		}
+		ai_will_do ={
+			factor = 100
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			1199 = {
+				remove_core_of = HIP
+			}
+			694 = {
+				remove_core_of = HIP
+			}
+			687 = {
+				remove_core_of = HIP
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZUM
+						is_core_of = WAR
+					}
+				}
+				remove_core_of = HIP
+			}
+			if = {
+				limit = {
+					HIP = {
+						exists = no
+					}
+				}
+				release_autonomy = {
+					target = HIP
+					autonomy_state = autonomy_satellite
+					freedom_level = 0.5
+				}
+			}
+			country_event = north_war.102
+		}
+	}
+}

@@ -1,0 +1,25 @@
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "island_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/rule_brittania_island_war_sound.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "great_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/italian_symphony_great_war_sound.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "tarrin_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/danse_macabre_tarrin_war_sound.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "zebra_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/newworld_symphony_zebra_war_sound.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "hip_dead_bigevent_sound" #name you're using for the sound
+	file = "customsound/zigeunerweisen_hip_dead_sound.wav" ## location of the sound file
+	always_load = no
+}

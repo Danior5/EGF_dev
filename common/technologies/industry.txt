@@ -233,7 +233,76 @@ technologies = {
 	}
 
 	#Conversion branch - Enabled in DoD
-	#PDX sucks at coding, they literally tried to make conversion a semi-functioning mechanic like 4 times already and each time they ended up creating more and more broken exploits lmao, ratio
+	improved_equipment_conversion = {
+
+		#equipment_conversion_speed = 0.40
+		production_factory_efficiency_gain_factor = 0.1
+
+		allow_branch = {
+			has_dlc = "Death or Dishonor"
+		}
+
+		path = {
+			leads_to_tech = advanced_equipment_conversion
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1008
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1008.1.1"
+			}
+
+		}
+
+		categories = {
+			industry
+			cat_production
+		}
+	}
+
+	advanced_equipment_conversion = {
+
+		#equipment_conversion_speed = 0.40
+		production_factory_efficiency_gain_factor = 0.1
+
+		research_cost = 2
+		start_year = 1010
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+
+		categories = {
+			industry
+			cat_production
+		}
+	}
 
 	###############
 
@@ -243,7 +312,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		
 		dependencies = {
 			infantry_weapons = 1
@@ -298,7 +367,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry3
 			research_cost_coeff = 1
@@ -336,7 +405,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry4
 			research_cost_coeff = 1
@@ -373,7 +442,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
@@ -412,7 +481,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.30
 		path = {
 			leads_to_tech = concentrated_industry_a
 			research_cost_coeff = 1
@@ -1040,7 +1109,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1007
 		folder = {
 			name = industry_folder
@@ -1075,7 +1144,7 @@ technologies = {
 
 	oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		start_year = 1008
 
@@ -1084,7 +1153,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 
 		folder = {
 			name = industry_folder
@@ -1121,14 +1190,14 @@ technologies = {
 
 	improved_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1010
 
 		folder = {
@@ -1166,14 +1235,14 @@ technologies = {
 
 	advanced_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1012
 
 		folder = {
@@ -1211,14 +1280,14 @@ technologies = {
 
 	modern_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 1.5
 
 		path = {
 			leads_to_tech = modern_oil_processing_a
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1014
 
 		folder = {
@@ -1270,7 +1339,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1008
 
 		folder = {
@@ -1321,7 +1390,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1010
 
 		folder = {
@@ -1372,7 +1441,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1012
 
 		folder = {
@@ -1423,7 +1492,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1014
 
 		folder = {
@@ -2826,6 +2895,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2853,6 +2923,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2879,6 +2950,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2905,6 +2977,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 
@@ -2927,6 +3000,7 @@ technologies = {
 
 		categories = {
 			industry
+			cat_production
 		}
 	}
 

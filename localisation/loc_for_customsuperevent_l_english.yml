@@ -1,0 +1,20 @@
+﻿l_english:
+  ISLAND_WAR_T:0 "THE CELESTIAL SEA WAR"
+  ISLAND_WAR_D:0 "Naval battles require consent.\n- Alexander Kemerkai"
+  ISLAND_WAR_A:0 "Superpowers Clash"
+ 
+  GREAT_WAR_T:0 "THE GREAT WAR"
+  GREAT_WAR_D:0 "The Equestrian ability to wage war is matched\nonly by the Equestrian ability for racial tolerance.\n- Alexander Kemerkai"
+  GREAT_WAR_A:0 "1000 Years of Peace Shattered"    
+    
+  TARRIN_WAR_T:0 "THE WORLD WAR"
+  TARRIN_WAR_D:0 "All warfare is based...\n- Alexander Kemerkai"
+  TARRIN_WAR_A:0 "Eques on Fire"
+  
+  ZEBRA_WAR_T:0 "THE NORTH ZEBRICAN WAR"
+  ZEBRA_WAR_D:0 "If there is ever another war on Equus, it will\ncome out of some damned silly thing in North Zebrica.\n- Alexander Kemerkai"
+  ZEBRA_WAR_A:0 "Blood Stained Sand"
+  
+  HIP_DEAD_T:0 "FALL OF HIPPOGRIFFIA"
+  HIP_DEAD_D:0 "place holder\n- Alexander Kemerkai"
+  HIP_DEAD_A:0 "place holder"

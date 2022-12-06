@@ -1,0 +1,16 @@
+ww_game_mode = {
+	name = "Select WW Game Mode"
+	group = "WW Game Mode"
+	icon = "GFX_wargoals"
+	default = {
+		name = DEFAULT
+		text = "Normal WW"
+		desc = "All Nations Playable"
+	}
+	option = {
+		name = EQS_ONLY
+		text = "Equus Only"
+		desc = "Zebrica and Griffonia Annexed"
+		
+	}
+}

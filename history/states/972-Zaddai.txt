@@ -1,0 +1,21 @@
+state={
+	id=972
+	name="STATE_972"
+	state_category = pastoral
+	provinces={
+		13221 19510 19522 19525 19526 19539 19541 19543 19564 
+	}
+	history={
+		owner = STM
+		add_core_of = STM
+		add_claim_by = STM
+		buildings = {
+			infrastructure = 0
+		}
+		victory_points = {
+			19526 3
+		}
+	}
+	manpower=232600
+	buildings_max_level_factor=1.000
+}

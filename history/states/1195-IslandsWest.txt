@@ -9,7 +9,10 @@ state={
 	history={
 		owner = EQS
 		add_core_of = EQS
+		set_state_flag = EQS_controls
+
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 0
 			20720 = {
 				naval_base = 1

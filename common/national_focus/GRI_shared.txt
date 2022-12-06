@@ -342,7 +342,7 @@ shared_focus = {
 				}
 				
 				STW = {
-					event_target:STW_gabriela_eagleclaw_target = {
+					STW_gabriela_eagleclaw = {
 						set_nationality = GRI
 					}
 				}
@@ -401,7 +401,12 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_noble_council"
 		add_ideas = GRI_council
-		hidden_effect = { set_country_flag = GRI_noble_council_established }
+		custom_effect_tooltip = GRI_dutchess_allow_trade_tt
+		custom_effect_tooltip = GRI_noble_management_tt
+		hidden_effect = { 
+			set_country_flag = GRI_noble_council_established
+			set_country_flag = GRI_allow_trade
+		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
@@ -422,7 +427,15 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_secret_service"
 		remove_ideas = GRI_boreas_archonate
-		add_ideas = GRI_agency
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			add_ideas = GRI_agency_lar
+		}
+		else = {
+			add_ideas = GRI_agency
+		}
 		hidden_effect = {
 			country_event = { id = grover.18 days = 30 }
 		}
@@ -479,29 +492,18 @@ shared_focus = {
 		focus = GRI_noble_industrial_council
 	}
 	available = {
-	    NOT = {
-	        OR = {
-		        has_idea = war_economy
+		NOT = {
+			OR = {
+				has_idea = war_economy
 				has_idea = tot_economic_mobilisation
-		    }
+			}
 		}
 	}
 	x = 18
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_prepare_for_war"
-		if = {
-			limit = { has_idea = civilian_economy }
-			add_ideas = low_economic_mobilisation
-		}
-		else_if = {
-			limit = { has_idea = low_economic_mobilisation }
-			add_ideas = partial_economic_mobilisation
-		}
-		else_if = {
-			limit = { has_idea = partial_economic_mobilisation }
-			add_ideas = war_economy
-		}
+		add_ideas = war_economy
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 }
@@ -596,104 +598,31 @@ shared_focus = {
 	}
 	prerequisite = { focus = GRI_noble_industrial }
 	prerequisite = { focus = GRI_the_secret_service }
-	bypass = {
-		STW = {
-			OR = {
-				tag = ROOT
-				NOT = { 
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				} 
-			}
-		}
-	    NOT = {
-	        FEA = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        PYT = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        BRZ = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	}
-	will_lead_to_war_with = STW
-	will_lead_to_war_with = FEA
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_unite_nobles"
-		if = {
-			limit = { 
-				STW = { 
-					NOT = { tag = ROOT }
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			STW = { 
-			    country_event = { 
-			        id = imperial.31 
-					days = 1 
-				} 
-			}
+		annex_country = {
+			target = FEA
 		}
-		if = {
-			limit = { 
-				FEA = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			FEA = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
+		annex_country = {
+			target = STW
 		}
-		if = {
-			limit = { 
-				PYT = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			PYT = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
+		annex_country = {
+			target = BRZ
 		}
-		if = {
-			limit = { 
-			    BRZ = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}					
-				}
-			} 
-			unlock_decision_tooltip = GRI_intergrate_bronzehill
+		annex_country = {
+			target = PYT
+		}
+		annex_country = {
+			target = ROU
+		}
+		annex_country = {
+			target = YAL
+		}
+		annex_country = {
+			target = KAT
+		}
+		annex_country = {
+			target = ANG
 		}
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
@@ -708,6 +637,18 @@ shared_focus = {
 				}
 				add_core_of = ROOT
 			}
+			every_state = {
+				limit = { 
+					OR = {
+						is_core_of = ROU
+						is_core_of = YAL
+						is_core_of = KAT
+						is_core_of = ANG
+					}
+				}
+				set_compliance = 0
+			}
+		
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -824,7 +765,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_joint_armies"
 		add_ideas = GRI_joint_army
-		add_manpower = 15000
+		add_manpower = 150000
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
 }
@@ -845,6 +786,22 @@ shared_focus = {
 		    }
 		}
 		owns_state = 486
+		has_country_leader = { 
+		    ruling_only = yes 
+			character = STW_gabriela_eagleclaw 
+		}
+	}
+	bypass = {
+		if = {
+			limit = { original_tag = GRI }
+			has_country_leader = { 
+				ruling_only = yes 
+				character = GRI_archon_eros_vii
+			}
+		}
+		else = {
+			has_government = fascism
+		}
 	}
 	prerequisite = {
 		focus = GRI_conquer_STW
@@ -867,6 +824,11 @@ shared_focus = {
 			state = 546
 		}
 		add_resource = {
+			type = tungsten
+			amount = 14
+			state = 546
+		}
+		add_resource = {
 			type = steel
 			amount = 14
 			state = 545
@@ -874,6 +836,11 @@ shared_focus = {
 		add_resource = {
 			type = chromium
 			amount = 9
+			state = 545
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
 			state = 545
 		}
 		486 = {
@@ -954,7 +921,6 @@ shared_focus = {
 				set_country_flag = GRI_chose_eros
 			}
 		}
-		
 	}
 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 }
@@ -1148,6 +1114,7 @@ shared_focus = {
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_military_support"
+		set_country_flag = GRI_army_and_air_unlocked
 		add_manpower = 25000
 		army_experience = 25
 		add_war_support = 0.10
@@ -2015,6 +1982,19 @@ shared_focus = {
 			    }
 		    }
 		}
+		if = {
+			limit = { original_tag = GRI }
+			has_country_leader = { 
+				ruling_only = yes 
+				character = GRI_archon_eros_vii
+			}
+		}
+	}
+	bypass = {
+	    has_country_leader = { 
+		    ruling_only = yes 
+			character = STW_gabriela_eagleclaw
+		}
 	}
 	prerequisite = {
 		focus = GRI_conquer_ANG
@@ -2409,7 +2389,8 @@ shared_focus = {
 			factor = 0
 		}
 		modifier = {
-			any_other_country = {
+			any_of_scopes = {
+				array = potential_and_current_enemies
 				OR = {
 					is_justifying_wargoal_against = ROOT
 					has_wargoal_against = ROOT
@@ -2424,6 +2405,12 @@ shared_focus = {
 	    custom_trigger_tooltip = {
 			tooltip = GRI_core_FAT_SRS_MNC_VED_HAU_tp
 		    FAT = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FAW = {
 			    OR = {
 				    exists = no
 				    is_subject_of = ROOT
@@ -2706,6 +2693,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_north"
 		add_political_power = -150
 		FAT = { add_to_ROOT_potential_original_cores = yes }
+		FAW = { add_to_ROOT_potential_original_cores = yes }
 		SRS = { add_to_ROOT_potential_cores = yes }
 		MNC = { add_to_ROOT_potential_cores = yes }
 		VED = { add_to_ROOT_potential_cores = yes }
@@ -2732,7 +2720,8 @@ shared_focus = {
 			factor = 0
 		}
 		modifier = {
-			any_other_country = {
+			any_of_scopes = {
+				array = potential_and_current_enemies
 				OR = {
 					is_justifying_wargoal_against = ROOT
 					has_wargoal_against = ROOT
@@ -2946,7 +2935,8 @@ shared_focus = {
 			factor = 0
 		}
 		modifier = {
-			any_other_country = {
+			any_of_scopes = {
+				array = potential_and_current_enemies
 				OR = {
 					is_justifying_wargoal_against = ROOT
 					has_wargoal_against = ROOT
@@ -3227,7 +3217,8 @@ shared_focus = {
 			factor = 0
 		}
 		modifier = {
-			any_other_country = {
+			any_of_scopes = {
+				array = potential_and_current_enemies
 				OR = {
 					is_justifying_wargoal_against = ROOT
 					has_wargoal_against = ROOT
@@ -3371,6 +3362,7 @@ shared_focus = {
 				exists = no 
 				is_subject_of = ROOT 
 				is_in_faction_with = ROOT
+				has_war_with = ROOT
 			} 
 		} 
 	}
@@ -4584,7 +4576,22 @@ shared_focus = {
 	cost = 5.80
 
 	ai_will_do = {
-		factor = 120
+		factor = 12
+		modifier = {
+			factor = 0.1
+			OR = {
+				JER = {
+					exists = yes
+					NOT = { is_ally_with = ROOT }
+					is_major = yes
+				}
+				FAT = {
+					exists = yes
+					NOT = { is_ally_with = ROOT }
+					is_major = yes
+				}
+			}
+		}
 	}
 
 	completion_reward = {
@@ -4602,7 +4609,6 @@ shared_focus = {
 		}
 	}
 }
-
 
 shared_focus = {
 	id = GRI_cheap_and_quick
@@ -5030,10 +5036,7 @@ shared_focus = {
 	id = GRI_army
 	icon = GFX_goal_Griffonian_Heer_2
 	available = {
-		OR = {
-			has_completed_focus = GRI_military_support
-			has_completed_focus = GRI_reform_the_army
-		}
+		has_country_flag = GRI_army_and_air_unlocked
 	}
 	ai_will_do = { factor = 11 }
 	cost = 5.80
@@ -5187,7 +5190,15 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_enigma_code"
-		add_ideas = GRI_coding
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			add_ideas = GRI_coding_lar
+		}
+		else = {
+			add_ideas = GRI_coding
+		}
 		if = {
 			limit = {
 				has_tech = radio
@@ -5225,11 +5236,16 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_officer_training"
 		army_experience = 25
-		every_unit_leader = {
+		every_character = {
+			limit = {
+				is_unit_leader = yes 
+			}
 			add_logistics = 1
-		    add_planning = 1
+			add_planning = 1
             add_defense = 1
-		    add_attack = 1
+			add_attack = 1
+			add_coordination = 1
+			add_maneuver = 1
 		}
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -5673,10 +5689,7 @@ shared_focus = {
 	id = GRI_airforce
 	icon = GFX_goal_Girffonian_Air_Brigade_2
 	available = {
-		OR = {
-			has_completed_focus = GRI_military_support
-			has_completed_focus = GRI_reform_the_army
-		}
+		has_country_flag = GRI_army_and_air_unlocked
 	}
 	x = 46
 	y = 0
@@ -5759,27 +5772,45 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_fighters"
 		if = {
 			limit = {
-			    has_tech = fighter1
+			    OR = {
+					has_tech = early_fighter
+					has_tech = iw_small_airframe
+				}
 		    }
 		    add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
 				uses = 1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 			add_equipment_to_stockpile = {
-				type = fighter_equipment
+				type = small_plane_airframe
 				amount = 50
 			}
 		}
 		else = {
-			set_technology = {
-				fighter1 = 1
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}	
+				set_technology = {
+					iw_small_airframe = 1
+				}
+				generic_early_fighter = yes
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					variant_name = "Early Fighter"
+					amount = 50
+				}
 			}
-			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 50
+			else = {
+				set_technology = {
+					early_fighter  = 1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 50
+				}
 			}
 		}
 	}
@@ -5801,29 +5832,44 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_CAS"
 		if = {
-			limit = {
-			    has_tech = CAS1
-		    }
-		    add_tech_bonus = {
-				name = bomber_effort
-				bonus = 1.0
+            limit = {
+                has_dlc = "By Blood Alone"
+            }
+			add_tech_bonus = {
+				name = rocketry
+				bonus = 0.75
+				uses = 1
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = cat_anti_tank
+				bonus = 0.5
 				uses = 2
-				technology = CAS1
-				technology = CAS2
-				technology = CAS3
+				category = cat_anti_tank
 			}
 		}
 		else = {
-			set_technology = {
-				CAS1 = 1
+			if = {
+				limit = {
+				    has_tech = CAS1
+			    }
+			    add_tech_bonus = {
+					name = bomber_effort
+					bonus = 1.0
+					uses = 2
+					category = cas_bomber
+				}
 			}
-			add_tech_bonus = {
-				name = bomber_effort
-				bonus = 1.0
-				uses = 1
-				technology = CAS1
-				technology = CAS2
-				technology = CAS3
+			else = {
+				set_technology = {
+					CAS1 = 1
+				}
+				add_tech_bonus = {
+					name = bomber_effort
+					bonus = 1.0
+					uses = 1
+					category = cas_bomber
+				}
 			}
 		}
 	}
@@ -5845,6 +5891,23 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_naval_bomber"
 		if = {
+        	limit = {
+         	   has_dlc = "By Blood Alone"
+       	 	}
+			add_tech_bonus = {
+				name = naval_air
+				bonus = 0.75
+				uses = 1
+				category = naval_air
+			}
+			add_tech_bonus = {
+				name = plane_modules_tech
+				bonus = 0.75
+				uses = 1
+				category = plane_modules_tech
+			}
+		}
+		else_if = {
 			limit = {
 			    has_tech = naval_bomber1
 		    }
@@ -5852,9 +5915,7 @@ shared_focus = {
 				name = naval_air_effort
 				bonus = 1.0
 				uses = 2
-				technology = naval_bomber1
-				technology = naval_bomber2
-				technology = naval_bomber3
+				category = naval_bomber
 			}
 		}
 		else = {
@@ -5865,9 +5926,7 @@ shared_focus = {
 				name = naval_air_effort
 				bonus = 1.0
 				uses = 1
-				technology = naval_bomber1
-				technology = naval_bomber2
-				technology = naval_bomber3
+				category = naval_bomber
 			}
 		}
 	}
@@ -5974,7 +6033,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_tac_bombers"
 		if = {
 			limit = {
-			    has_tech = tactical_bomber1
+			    has_tech = early_bomber
 		    }
 		    add_tech_bonus = {
 				name = bomber_bonus
@@ -5983,17 +6042,33 @@ shared_focus = {
 				category = tactical_bomber
 			}
 			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
+				type = medium_plane_airframe
 				amount = 30
 			}
 		}
 		else = {
-			set_technology = {
-				tactical_bomber1 = 1
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_technology = {
+					iw_medium_airframe = 1
+				}
+				generic_early_tac_bomber = yes
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_0
+					variant_name = "Early Tactical Bomber"
+					amount = 30
+				}
 			}
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 30
+			else = {
+				set_technology = {
+					early_bomber = 1
+				}				
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_0
+					amount = 30
+				}
 			}
 		}
 	}
@@ -6015,19 +6090,22 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_strat_bombers"
 		if = {
-			limit = {
-			    has_tech = strategic_bomber1
-		    }
-		    add_tech_bonus = {
-			    name =  bomber_bonus
-			    bonus = 1.0
-			    uses = 1
-			    category = cat_strategic_bomber
-		    }
+            limit = {
+                has_dlc = "By Blood Alone"
+            }
+			add_tech_bonus = {
+				name = heavy_air
+				bonus = 1.0
+				uses = 2
+				category = heavy_air
+			}
 		}
 		else = {
-			set_technology = {
-				strategic_bomber1 = 1
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
 			}
 		}
 	}
@@ -6049,21 +6127,28 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_develop_heavy_fighters"
 		if = {
-			limit = {
-			    has_tech = heavy_fighter1
-		    }
-		    add_tech_bonus = {
-				name = fighter_bonus
+            limit = {
+                has_dlc = "By Blood Alone"
+            }
+			add_tech_bonus = {
+				name = medium_air
 				bonus = 1.0
 				uses = 1
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = medium_air
+			}
+			add_tech_bonus = {
+				name = cat_air_guns
+				bonus = 0.75
+				uses = 1
+				category = cat_air_guns
 			}
 		}
 		else = {
-			set_technology = {
-				heavy_fighter1 = 1
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -6646,6 +6731,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_reform_the_army"
+		set_country_flag = GRI_army_and_air_unlocked
 		add_manpower = 7500
 		army_experience = 25
 		add_war_support = 0.05
@@ -7506,6 +7592,12 @@ shared_focus = {
 				    is_subject_of = ROOT
 			    }
 		    }
+			FAW = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
 			SRS = {
 			    OR = {
 				    exists = no
@@ -7536,6 +7628,8 @@ shared_focus = {
 	will_lead_to_war_with = FAW
 	will_lead_to_war_with = SRS
 	will_lead_to_war_with = MNC
+	will_lead_to_war_with = VED
+	will_lead_to_war_with = HAU
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_push_into_the_north"
 		effect_tooltip = { create_wargoal = { type = annex_everything target = FAT } }
@@ -7786,6 +7880,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_north"
 		add_political_power = -150
 		FAT = { add_to_ROOT_potential_original_cores = yes }
+		FAW = { add_to_ROOT_potential_original_cores = yes }
 		SRS = { add_to_ROOT_potential_cores = yes }
 		MNC = { add_to_ROOT_potential_cores = yes }
 		VED = { add_to_ROOT_potential_cores = yes }
@@ -9370,7 +9465,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRI_article_of_federalisation
-	icon = GFX_goal_liberty
+	icon = GFX_goal_generic_liberty_statue
 	x = 14
 	y = 6
 	cost = 2.90
@@ -9412,6 +9507,12 @@ shared_focus = {
 			    has_idea = GRI_agency
 			}
 			remove_ideas = GRI_agency
+		}
+		if = {
+		    limit = {
+			    has_idea = GRI_agency_lar
+			}
+			remove_ideas = GRI_agency_lar
 		}
 	}
 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
@@ -9971,5 +10072,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_back_to_normal"
 		remove_ideas = GRI_status_quo_shaken_up
+		country_event = { 
+		    id = grover.43
+		}
 	}
 }

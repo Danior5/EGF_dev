@@ -20,6 +20,8 @@ state={
 			}
 		}
 		add_core_of = EQS
+		set_state_flag = EQS_controls
+
 		victory_points = {
 			20703 10
 		}

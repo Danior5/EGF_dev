@@ -268,9 +268,6 @@ focus_tree = {
 		x = 10
 		y = 1
 		ai_will_do = { factor = 40 }
-		bypass = {
-			has_country_flag = FLO_sekrit_bypass
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FLO_revert_reforms"
 			country_event = flowena.31
@@ -362,6 +359,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FLO_adelart_deal"
+			country_event = flowena.33
 		}
 	}
 	focus = {
@@ -527,7 +525,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
 	focus = {
 		id = FLO_build_cement_factory
 		icon = GFX_goal_generic_construction
@@ -558,9 +555,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
-
-
-
 	focus = {
 		id = FLO_negotiate_with_workers
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -605,7 +599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FLO_open_the_gates
-		icon = GFX_goal_liberty
+		icon = GFX_goal_generic_liberty_statue
 		cost = 6
 		relative_position_id = FLO_revert_reforms
 		x = -2
@@ -686,7 +680,7 @@ focus_tree = {
 			JER = {
 			add_opinion_modifier = { target = ROOT modifier = CHN_approves_actions }
 			}
-			event_target:griffonian_empire = {
+			GRD = {
 				add_opinion_modifier = { target = ROOT modifier = CHN_approves_actions }
 			}
 			POM = {
@@ -798,7 +792,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			event_target:griffonian_empire = {
+			GRD = {
 				exists = no
 			}
 		}
@@ -856,15 +850,9 @@ focus_tree = {
 		prerequisite = { focus = FLO_protection_from_empire }
 		ai_will_do = { 
 			factor = 40 
-		}
-		cancel = {
-			JER = {
-				OR = {
-					exists = no
-					is_subject = yes
-					has_war_with = ROOT
-					has_government = communism
-				}
+			modifier = {
+				factor = 4
+				has_war = yes
 			}
 		}
 		completion_reward = {
@@ -965,11 +953,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
-
-	
-
-
-
 	
 }
 focus_tree = {
@@ -1269,11 +1252,24 @@ focus_tree = {
 				}
 			}
 			swap_ideas = { remove_idea = FLO_tourism_board_idea add_idea = FLO_high_tourism }
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				category = light_air
+			if = {
+	            limit = {
+   	            	has_dlc = "By Blood Alone"
+   	        	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -2126,7 +2122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FLO_democratic_fervour
-		icon = GFX_goal_liberty
+		icon = GFX_goal_generic_liberty_statue
 		cost = 6
 		relative_position_id = FLO_revert_reforms
 		x = 8
@@ -2939,7 +2935,7 @@ focus_tree = {
 				add_building_construction =
 				{
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3088,17 +3084,49 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FLO_airplane_designs"
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
+			if = {
+	            limit = {
+            		has_dlc = "By Blood Alone"
+	            }
+				add_tech_bonus = {
+					name = rocketry
+					bonus = 0.75
+					uses = 1
+					category = rocketry
+				}
+				add_tech_bonus = {
+					name = cat_anti_tank
+					bonus = 0.75
+					uses = 1
+					category = cat_anti_tank
+				}
 			}
-			add_tech_bonus = {
-				name =  tactical_bombers
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cas_bomber
+				}
+			}
+			if = {
+	            limit = {
+	            	has_dlc = "By Blood Alone"
+	            }
+				add_tech_bonus = {
+					name = medium_air
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = tactical_bomber
+					bonus = 1.0
+					uses = 1
+					category = tactical_bomber
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -3469,6 +3497,9 @@ focus_tree = {
 		relative_position_id = FLO_long_live_revolution
 		x = 2
 		y = 12
+		available = {
+			is_subject = no
+		}
 		prerequisite = { focus = FLO_call_for_freedom }
 		prerequisite = { focus = FLO_supply_revolution }
 		prerequisite = { focus = FLO_international_cause }
@@ -3706,9 +3737,9 @@ focus_tree = {
 			army_experience = 30
 			if = {
 				limit = {
-					has_unit_leader = 5201
 					FLO_nicolas_de_charbon = {
 						is_field_marshal = no
+						is_unit_leader = yes
 					}
 				}
 				FLO_nicolas_de_charbon = {
@@ -4248,7 +4279,7 @@ focus_tree = {
 					AET = {
 						OR = {
 							is_guaranteed_by = JER
-							is_guaranteed_by = event_target:griffonian_empire
+							is_guaranteed_by = GRD
 						}
 					}
 				}
@@ -4501,7 +4532,7 @@ focus_tree = {
 				add_building_construction =
 				{
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4789,11 +4820,30 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FLO_rule_the_skies"
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
+			if = {
+	            limit = {
+            		has_dlc = "By Blood Alone"
+	            }
+				add_tech_bonus = {
+					name = rocketry
+					bonus = 0.75
+					uses = 1
+					category = rocketry
+				}
+				add_tech_bonus = {
+					name = cat_anti_tank
+					bonus = 0.75
+					uses = 1
+					category = cat_anti_tank
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cas_bomber
+				}
 			}
 			442 = {
 				add_building_construction =
@@ -4803,11 +4853,24 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 1
-				category = light_air
+			if = {
+	            limit = {
+   	            	has_dlc = "By Blood Alone"
+   	        	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }

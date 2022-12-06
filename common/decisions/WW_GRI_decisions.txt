@@ -1,0 +1,72 @@
+WW_category = {
+	GRI_noble_management_decision_1 = {
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = GRI_noble_council
+		}
+		target_array = core_states
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					has_dynamic_modifier = { modifier = GRI_noble_management_1 }
+					has_dynamic_modifier = { modifier = GRI_noble_management_2 }
+					has_dynamic_modifier = { modifier = GRI_noble_management_3 }
+				}
+			}
+		}
+		on_map_mode = map_only
+		icon = hol_draw_up_staff_plans
+		cost = 25
+		days_remove = 60
+		remove_effect = {
+			FROM = {
+				increase_noble_management = yes
+			}
+		}
+	}
+	GRI_noble_management_decision_2 = {
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = GRI_noble_council
+		}
+		target_array = core_states
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				has_dynamic_modifier = { modifier = GRI_noble_management_1 }
+			}
+		}
+		on_map_mode = map_only
+		icon = hol_draw_up_staff_plans
+		cost = 50
+		days_remove = 60
+		remove_effect = {
+			FROM = {
+				increase_noble_management = yes
+			}
+		}
+	}
+	GRI_noble_management_decision_3 = {
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = GRI_noble_council
+		}
+		target_array = core_states
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				has_dynamic_modifier = { modifier = GRI_noble_management_2 }
+			}
+		}
+		on_map_mode = map_only
+		icon = hol_draw_up_staff_plans
+		cost = 75
+		days_remove = 60
+		remove_effect = {
+			FROM = {
+				increase_noble_management = yes
+			}
+		}
+	}
+}

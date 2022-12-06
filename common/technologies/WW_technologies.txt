@@ -1,0 +1,10 @@
+technologies = {
+	temp_railway_gun = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			WW_railway_gun_equipment_1
+		}
+	}
+}

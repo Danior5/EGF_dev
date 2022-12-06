@@ -1,0 +1,158 @@
+ideas = {
+	country = {	   
+		EQS_island_debuff1 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		EQS_island_debuff2 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		EQS_island_debuff3 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = -0.05
+				army_core_defence_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		EQS_island_debuff4 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				industrial_capacity_factory = -0.2
+			}
+		}
+		EQS_island_debuff5 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = -0.15
+				army_core_defence_factor = -0.15
+				industrial_capacity_factory = -0.3
+			}
+		}
+		EQS_island_debuff6 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
+				industrial_capacity_factory = -0.4
+			}
+		}
+		EQS_island_buff1 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		EQS_island_buff2 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.02
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		EQS_island_buff3 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.04
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		EQS_island_buff4 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.06
+				stability_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+		EQS_island_buff5 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.08
+				stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		EQS_island_buff6 = {
+			allowed = {
+				always = no
+			}
+			picture = EQS_island_debuff
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = 0.25
+				war_support_factor = 0.25
+			}
+		}
+	}
+}

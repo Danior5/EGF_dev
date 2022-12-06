@@ -13,6 +13,7 @@ state={
 	history={
 		owner = EQS
 		add_core_of = EQS
+		set_state_flag = EQS_controls
 
 		victory_points = { 13071 15 }
 
