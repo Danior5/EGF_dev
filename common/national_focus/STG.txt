@@ -2926,14 +2926,14 @@ focus_tree = {
 		icon = GFX_goal_stg_sinister_line
 		cost = 5
 		prerequisite = {
-			focus = mareginot_line
+			focus = WW_STG_attack_yaks
 		}
 		ai_will_do = {
 			factor = 7
 		}
 
 		x = 31
-		y = 6
+		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus mareginot_line"
 			if = {
@@ -3079,7 +3079,7 @@ focus_tree = {
 		}
 
 		x = 31
-		y = 7
+		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WW_STG_attack_yaks"
 			custom_effect_tooltip = WW_protect_eqc_tt
