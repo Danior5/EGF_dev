@@ -8,10 +8,8 @@ WW_category = {
 		}
 		available = {
 			is_in_faction_with = WNG
-		available = {
 			153 = { is_fully_controlled_by = STG }
 			371 = { is_fully_controlled_by = WNG }
-		}
 		}
 		icon = hol_draw_up_staff_plans
 		cost = 0
