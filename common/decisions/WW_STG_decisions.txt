@@ -20,7 +20,7 @@ WW_category = {
 					limit = {
 						tag = STG
 					}
-					to_state = 371
+					to_state = 3144
 				}
 			}
 		}
