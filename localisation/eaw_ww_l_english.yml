@@ -103,19 +103,23 @@ l_english:
  mareginot_line_desc:0 "The initial thrust of the Changeling attack will surely fall upon Fairflanks and head towards Vanhoover. With the permission of Equestria, our engineers are capable of constructing a fortified line here to halt their advance."
 
  WW_STG_attack_yaks:0 "The Vulnerable East"
- WW_STG_attack_yaks_desc:0 "With the Mareginot Line complete, our attention must fall back on defending the eastern front."
+ WW_STG_attack_yaks_desc:0 "We must ensure the eastern flank of Equestria is secure if we want to sucessfully defend against the Changelings. Control over the Celestia Sea islands seems an sufficient payment for forces to take over the defence."
 
  WW_STG_attack_PNG:0 "Citadel of Communism"
  WW_STG_attack_PNG_desc:0 "As the new defenders of the Celestial Sea islands, we must construct an adequete headquarters to command our new assets. Given this oppertunity we shall show the superiority of communist engineering by creating the greatest fortress the world has ever seen."
  WW_communist_citadel_tt:0 "The Island of Azkaban will be turned into a symbol of the invincibility of communism."
  WW_communist_citadel:0 "Citadel of Communism"
 
+ WW_the_war_to_end_disorder:0 "Pierce the Shroud"
+ WW_the_war_to_end_disorder_desc:0 "Time and time again, we have saved Equestria on every front. Now we will ensure that we can support our Griffonian allies as well. Our scientists and mages have worked together to create an experimental device capable of sending entire divisions across the continent, all we need to do is active it."
+ STG_mass_teleport:0 "Emergency Temporal Shift"
+
  WW_protect_eqc:0 "Protector of the East"
  WW_protect_eqc_tt:0 "§RTransfers control of the Celestial Sea islands to us and fortifies them.§!\n "
  WW_crusaders:0 "Ideological Crusaders"
  STG_economic_policy_1:0 "Rapid Production Economy"
  STG_economic_policy_2:0 "Semi-Rapid Production Economy"
- WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law after March 1st 1011.§!\n "
+ WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law if completed after March 1st 1011.§!\n "
  
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 

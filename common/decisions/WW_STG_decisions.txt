@@ -8,11 +8,11 @@ WW_category = {
 		}
 		available = {
 			is_in_faction_with = WNG
-			STG = {
-				owns = 153
+			153 = {
+				owner = STG
 			}
-			WNG = {
-				owns = 371
+			371 = {
+				owner = WNG
 			}
 		}
 		icon = hol_draw_up_staff_plans
@@ -21,7 +21,10 @@ WW_category = {
 		remove_effect = {
 			153 = {
 				teleport_armies = {
-					to_state = 371
+					limit = {
+						owner = STG
+					}
+					to_province = 3144
 				}
 			}
 		}
