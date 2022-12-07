@@ -767,7 +767,7 @@ focus_tree = {
 
 	focus = {
 		id = GRF_frontier_crystals
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_frontier_development }
