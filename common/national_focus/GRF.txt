@@ -657,27 +657,26 @@ focus_tree = {
 
 	focus = {
 		id = GRF_great_lake_industry
-		icon = GFX_focus_generic_industry_2
-		cost = 10.00
+		icon = GFX_goal_agricultural_aid
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_great_lake_oil }
 		prerequisite = { focus = GRF_infrastructure_projects }
 		x = -4
 		y = 11
-		available = {
-			279 = { is_owned_and_controlled_by = ROOT }
-			286 = { is_owned_and_controlled_by = ROOT }
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_great_lake_industry"
-
+			add_timed_idea = { 
+				idea = WW_Nova_Old_Frontier_Buff 
+				days = 365 
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = { ### The New Frontier ###
 		id = GRF_frontier_development  
-		icon = GFX_goal_generic_production2
+		icon = GFX_focus_generic_industry_2
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_immigration }
@@ -814,19 +813,19 @@ focus_tree = {
 
 	focus = {
 		id = GRF_frontier_industry
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		icon = GFX_goal_economic_control
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_frontier_crystals }
 		prerequisite = { focus = GRF_frontier_infrastructure }
 		x = 0
 		y = 11
-		available = {
-			277 = { is_owned_and_controlled_by = ROOT }
-			281 = { is_owned_and_controlled_by = ROOT }
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_frontier_industry"
+			add_timed_idea = { 
+				idea = WW_Nova_New_Frontier_Buff 
+				days = 365 
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}

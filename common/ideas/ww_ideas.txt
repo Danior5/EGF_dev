@@ -187,5 +187,37 @@ ideas = {
 				production_speed_dockyard_factor = 0.5
 			}
 		}
+		WW_Nova_Old_Frontier_Buff = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRE_medium_industry
+			modifier = {
+				stability_weekly = 0.002
+				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory	= 0.1
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+		WW_Nova_New_Frontier_Buff = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HIRA_trade
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_dockyard = 0.15
+				fuel_gain_factor = 0.5
+			}
+		}
 	}	
 }

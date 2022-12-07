@@ -167,3 +167,6 @@ l_english:
  CTH_annex_BAT:0 "Annex BAT"
  BAT_annex_CTH:0 "Annex CTH"
  WW_GRY_join_coltstream:0 "Join Coltstream"
+ 
+ WW_Nova_Old_Frontier_Buff:0 "Old Frontier's Self-sufficiency"
+ WW_Nova_New_Frontier_Buff:0 "New Frontier's Ingenuity"
