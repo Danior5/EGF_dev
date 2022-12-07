@@ -8,12 +8,10 @@ WW_category = {
 		}
 		available = {
 			is_in_faction_with = WNG
-			153 = {
-				owner = STG
-			}
-			371 = {
-				owner = WNG
-			}
+		available = {
+			153 = { is_fully_controlled_by = STG }
+			371 = { is_fully_controlled_by = WNG }
+		}
 		}
 		icon = hol_draw_up_staff_plans
 		cost = 0
@@ -22,9 +20,9 @@ WW_category = {
 			153 = {
 				teleport_armies = {
 					limit = {
-						owner = STG
+						tag = STG
 					}
-					to_province = 3144
+					to_state = 371
 				}
 			}
 		}
