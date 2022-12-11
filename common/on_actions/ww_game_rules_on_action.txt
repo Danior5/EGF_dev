@@ -9,6 +9,9 @@ on_actions = {
 					}
 				}
 				HLR  = {
+					country_event = { id = ww_game_mode_event.2 days = 365 }
+					country_event = { id = ww_game_mode_event.3 days = 545 }
+					country_event = { id = ww_game_mode_event.4 days = 800 }
 					add_ideas = neutral_idea
 					add_ideas = neutral_trade_idea
 					annex_country = { target = NTR transfer_troops = no } 

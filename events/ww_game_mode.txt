@@ -32,3 +32,54 @@ country_event = { # Event for Bandits to join the Pryhwen Civil War
 		}
 	}
 }
+
+country_event = { # 
+	id = ww_game_mode_event.2
+	title = ww_game_mode_event.2.t
+	desc = ww_game_mode_event.2.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_game_mode_event.2.a
+		hidden_effect = {
+			HLR = {
+				add_named_threat = { threat = 30 name = prepare_for_war }
+			}
+		}
+	}
+}
+
+country_event = { # 
+	id = ww_game_mode_event.3
+	title = ww_game_mode_event.3.t
+	desc = ww_game_mode_event.3.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_game_mode_event.3.a
+		hidden_effect = {
+			HLR = {
+				add_named_threat = { threat = 40 name = prepare_for_war }
+			}
+		}
+	}
+}
+
+country_event = { # 
+	id = ww_game_mode_event.4
+	title = ww_game_mode_event.4.t
+	desc = ww_game_mode_event.4.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_game_mode_event.4.a
+		hidden_effect = {
+			HLR = {
+				add_named_threat = { threat = 30 name = prepare_for_war }
+			}
+		}
+	}
+}
