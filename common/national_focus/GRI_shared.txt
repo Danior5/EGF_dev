@@ -637,18 +637,7 @@ shared_focus = {
 				}
 				add_core_of = ROOT
 			}
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = ROU
-						is_core_of = YAL
-						is_core_of = KAT
-						is_core_of = ANG
-					}
-				}
-				set_compliance = 0
-			}
-		
+			add_threat = 25
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
