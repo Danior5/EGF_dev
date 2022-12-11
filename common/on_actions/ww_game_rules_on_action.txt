@@ -15,6 +15,7 @@ on_actions = {
 					add_ideas = neutral_idea
 					add_ideas = neutral_trade_idea
 					annex_country = { target = NTR transfer_troops = no } 
+					annex_country = { target = ROU transfer_troops = no }
 					annex_country = { target = SRS transfer_troops = no } 
 					annex_country = { target = VED transfer_troops = no } 
 					annex_country = { target = FAT transfer_troops = no } 
