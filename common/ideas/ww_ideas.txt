@@ -184,7 +184,23 @@ ideas = {
 			removal_cost = -1
 			picture = air_support_focus
 			modifier = {
-				production_speed_dockyard_factor = 0.5
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		WW_CHN_plan_east_prep_equus_only = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.1
+				operative_slot = 1
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
 			}
 		}
 		WW_Nova_Old_Frontier_Buff = {

@@ -1554,7 +1554,26 @@ shared_focus = {
 	x = 29
 	y = 1
 	available = {
-		date > 1009.7.1
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = {
+						rule = ww_game_mode
+						option = EQS_ONLY
+					}
+				}
+			}
+			date > 1009.7.1
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = ww_game_mode
+					option = EQS_ONLY
+				}
+			}
+			date > 1009.11.1
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no

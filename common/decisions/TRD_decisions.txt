@@ -946,6 +946,10 @@ foreign_politics = {
 		}
 		visible = {
 			NOT = {
+				has_game_rule = {
+					rule = ww_game_mode
+					option = EQS_ONLY
+				}
 				has_government = communism
 				has_idea = detached_country
 				has_idea = communal_society
