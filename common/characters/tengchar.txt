@@ -28,7 +28,7 @@ characters={
 		}
 	}
 	CHN_WW_fieldmarshel = {
-		name = "Erwin Rommel"
+		name = "Skittlebug Psody" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/rommel.tga"
@@ -42,7 +42,7 @@ characters={
 		}
 	}
 	CRY_WW_fieldmarshel = {
-		name = "Walther White"
+		name = "Based Cadence" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/walter.tga"
@@ -98,7 +98,7 @@ characters={
 		}
 	}
 	FAT_WW_fieldmarshel = {
-		name = "Alexander Kerensky"
+		name = "Alexander Kemerkai"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/karensky.tga"
@@ -112,7 +112,7 @@ characters={
 		}
 	}
 	GRF_WW_fieldmarshel = {
-		name = "Chairman Danior"
+		name = "Tryhard Party Supreme Leader" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/danior.tga"
@@ -139,8 +139,8 @@ characters={
 			traits = {}
 		}
 	}
-	GRY_WW_fieldmarshel = {
-		name = "Volodymyr Zelenskyy"
+	GRY_WW_fieldmarshel = { 
+		name = "The Spirit of Ukraine (real)" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/zalenskyy.tga"
@@ -196,7 +196,7 @@ characters={
 		}
 	}
 	LCT_WW_fieldmarshel = {
-		name = "Howard Hamlin"
+		name = "Howard Hamlin" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/hamlin.tga"
@@ -210,7 +210,7 @@ characters={
 		}
 	}
 	NIM_WW_fieldmarshel = {
-		name = "Robert F. Kennedy"
+		name = "NImbussy" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/rfk.tga"
@@ -223,8 +223,8 @@ characters={
 			traits = {}
 		}
 	}
-	PNG_WW_fieldmarshel = {
-		name = "Sheldon Cooper "
+	PNG_WW_fieldmarshel = { 
+		name = "Sheldon Cooper " ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/sheldon.tga"
@@ -251,8 +251,8 @@ characters={
 			traits = {}
 		}
 	}
-	ROU_WW_fieldmarshel = {
-		name = "Gus Fring"
+	ROU_WW_fieldmarshel = { 
+		name = "Gus Fring" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/gus.tga"
@@ -266,7 +266,7 @@ characters={
 		}
 	}
 	STG_WW_fieldmarshel = {
-		name = "Nikolai Buckharin "
+		name = "Nikolai Buckharin"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/buckharin.tga"
@@ -280,7 +280,7 @@ characters={
 		}
 	}
 	TRD_WW_fieldmarshel = {
-		name = "Vasa's Oc"
+		name = "Vasa's Oc" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/vasa.tga"
@@ -308,7 +308,7 @@ characters={
 		}
 	}
 	WNG_WW_fieldmarshel = {
-		name = "Tassen's OC"
+		name = "Tassen's OC" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/tassen.tga"
@@ -322,7 +322,7 @@ characters={
 		}
 	}
 	YAL_WW_fieldmarshel = {
-		name = "Mike Ehrmantraut"
+		name = "Mike Ehrmantraut" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/mike.tga"
