@@ -70,7 +70,7 @@ characters={
 		}
 	}
 	EQC_WW_fieldmarshel= {
-		name = "Jesse Pinkman"
+		name = "IT'S TIME" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/jesse.tga"
@@ -98,7 +98,7 @@ characters={
 		}
 	}
 	FAT_WW_fieldmarshel = {
-		name = "Alexander Kemerkai"
+		name = "Alexander Kemerkai" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/karensky.tga"
@@ -140,7 +140,7 @@ characters={
 		}
 	}
 	GRY_WW_fieldmarshel = { 
-		name = "The Spirit of Ukraine (real)" ## Decringified ##
+		name = "Schweiner" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/zalenskyy.tga"
@@ -280,7 +280,7 @@ characters={
 		}
 	}
 	TRD_WW_fieldmarshel = {
-		name = "Vasa's Oc" ## Decringified ##
+		name = "Mihaly Dumitru Margareta Corneliu Leopold Blanca Karol Aeon Ignatius Raphael Maria Niketas A. Shilage" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/vasa.tga"
