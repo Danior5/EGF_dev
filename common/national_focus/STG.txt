@@ -3097,7 +3097,6 @@ focus_tree = {
 				transfer_state = 1194
 				transfer_state = 1195
 				67 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 					set_building_level = {
@@ -3108,17 +3107,14 @@ focus_tree = {
 					}
 				}
 				6 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 				}
 				7 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 				}
 				8 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 					set_building_level = {
@@ -3129,17 +3125,14 @@ focus_tree = {
 					}
 				}
 				9 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 				}
 				10 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 				}
 				4 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 					set_building_level = {
@@ -3154,7 +3147,6 @@ focus_tree = {
 					remove_core_of = EQS
 				}
 				1193 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 					set_building_level = {
@@ -3165,12 +3157,10 @@ focus_tree = {
 					}
 				}
 				1194 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 				}
 				1195 = { 
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					add_core_of = STG
 					remove_core_of = EQS
 					set_building_level = {
@@ -3217,7 +3207,6 @@ focus_tree = {
 			custom_effect_tooltip = WW_communist_citadel_tt
 			hidden_effect = {
 				333 = {
-					add_dynamic_modifier = { modifier = STG_island_wall }
 					set_victory_points = {
 						province = 9176
 						value = 10
