@@ -638,6 +638,7 @@ shared_focus = {
 				add_core_of = ROOT
 			}
 			add_threat = 25
+			set_country_flag = economic_laws_blocked
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
