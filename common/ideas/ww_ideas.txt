@@ -111,11 +111,11 @@ ideas = {
 			equipment_bonus = {
 				small_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.25
+					build_cost_ic = -0.2
 				}
 				medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = -0.25
+					build_cost_ic = -0.2
 				}
 			}
 		}
