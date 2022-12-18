@@ -92,6 +92,9 @@ on_actions = {
 				TRD = {
 			 		EQS_island_buff_level_up = yes
 				}
+				HLQ = {
+			 		EQS_island_buff_level_up = yes
+				}
 			}
 		}
 	}
@@ -138,6 +141,9 @@ on_actions = {
 			 		EQS_island_buff_level_down = yes
 				}
 				TRD = {
+			 		EQS_island_buff_level_down = yes
+				}
+				HLQ = {
 			 		EQS_island_buff_level_down = yes
 				}
 			}

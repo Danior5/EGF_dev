@@ -17,7 +17,7 @@ WW_category = {
 		}
 		on_map_mode = map_only
 		icon = hol_draw_up_staff_plans
-		cost = 25
+		cost = 40
 		days_remove = 60
 		remove_effect = {
 			FROM = {
@@ -61,7 +61,7 @@ WW_category = {
 		}
 		on_map_mode = map_only
 		icon = hol_draw_up_staff_plans
-		cost = 75
+		cost = 60
 		days_remove = 60
 		remove_effect = {
 			FROM = {

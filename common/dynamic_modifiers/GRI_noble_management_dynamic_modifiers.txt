@@ -4,6 +4,7 @@ GRI_noble_management_1 = {
 	icon = GFX_idea_generic_political_support	
 
 	state_production_speed_buildings_factor = 0.1
+	local_building_slots = 1
 	local_resources = 0.05
 }
 GRI_noble_management_2 = { 
@@ -21,8 +22,7 @@ GRI_noble_management_3 = {
 	icon = GFX_idea_generic_political_support	
 
 	state_production_speed_buildings_factor = 0.3
-	local_factories = 0.1
-	local_building_slots = 4
+	local_building_slots = 3
 	local_resources = 0.15
 }
 
