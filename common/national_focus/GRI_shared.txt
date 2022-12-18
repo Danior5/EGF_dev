@@ -504,6 +504,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_prepare_for_war"
 		add_ideas = war_economy
+		hidden_effect = {
+			set_country_flag = economic_laws_blocked
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 }
