@@ -56,7 +56,6 @@ ideas = {
 				land_reinforce_rate = 0.1
 				army_morale_factor = 0.1
 				army_org_factor = 0.1
-				army_attack_factor = 0.05
 			}
 		}
 		WW_protect_eqc = {
