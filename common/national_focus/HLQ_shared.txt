@@ -5225,7 +5225,7 @@
 	shared_focus = {
 		id = HLQ_wehrmacht
 		icon = GFX_focus_ger_reichskommisariats
-		x = 28
+		x = 18
 		y = 0
 
 		relative_position_id = HLQ_siegfrieds_retirement
