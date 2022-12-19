@@ -61,20 +61,7 @@
 			factor = 30
 		}
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = HLQ_status_quo
-						has_completed_focus = HLQ_black_cloaks
-					}
-				}
-			}
+			always = no
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reconciliation"
@@ -1763,32 +1750,20 @@
 	shared_focus = {
 		id = HLQ_status_quo
 		icon = GFX_goal_ideology_authoritarian_democrat
-		x = 0
-		y = 1
-		relative_position_id = HLQ_siegfrieds_retirement
+		x = -6
+		y = 5
+		relative_position_id = HLQ_black_cloaks
 		cost = 5.00
-		prerequisite = { focus = HLQ_siegfrieds_retirement }
-		mutually_exclusive = { focus = HLQ_black_cloaks }
-		mutually_exclusive = { focus = HLQ_reconciliation }
+		prerequisite = { focus = HLQ_what_minorities }
+		prerequisite = { focus = HLQ_longsword_destroy }
+		prerequisite = { focus = HLQ_the_industrial_revolution }
+		mutually_exclusive = { focus = HLQ_the_kingdom_of_hellquill }
 
 		ai_will_do = {
 			factor = 30
 		}
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = HLQ_reconciliation
-						has_completed_focus = HLQ_black_cloaks
-					}
-				}
-			}
+			#always = no
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_status_quo"
@@ -1808,276 +1783,13 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_speak_with_van_ortelsburg
-		icon = GFX_goal_support_equestria
-		x = -2
-		y = 1
-		relative_position_id = HLQ_status_quo
-		cost = 2.90
-		prerequisite = { focus = HLQ_status_quo }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_speak_with_van_ortelsburg"
-			country_event = { 
-			    id = hellquill.85 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_open_dialouge_with_ponies
-		icon = GFX_goal_improve_relations_pony_griffon
-		x = -1
-		y = 1
-		relative_position_id = HLQ_speak_with_van_ortelsburg
-		cost = 2.90
-		prerequisite = { focus = HLQ_speak_with_van_ortelsburg }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_open_dialouge_with_ponies"
-			country_event = { 
-			    id = hellquill.86 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_work_with_posniaks
-		icon = GFX_goal_industrial_pony
-		x = 1
-		y = 1
-		relative_position_id = HLQ_speak_with_van_ortelsburg
-		cost = 2.90
-		prerequisite = { focus = HLQ_speak_with_van_ortelsburg }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_work_with_posniaks"
-			country_event = { 
-			    id = hellquill.87 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_towards_a_better_future_hopefully
-		icon = GFX_goal_generic_liberty_statue
-		x = 0
-		y = 2
-		relative_position_id = HLQ_speak_with_van_ortelsburg
-		cost = 2.90
-		prerequisite = { focus = HLQ_open_dialouge_with_ponies }
-		prerequisite = { focus = HLQ_work_with_posniaks }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_towards_a_better_future_hopefully"
-			country_event = { 
-			    id = hellquill.88 
-			}
-			hidden_effect = {
-		        country_event = { id = hellquill.166 days = 360 }
-		        country_event = { id = hellquill.167 days = 720 }
-		    }
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_trust_in_von_soldau
-		icon = GFX_goal_COS_Peace
-		x = 0
-		y = 1
-		relative_position_id = HLQ_status_quo
-		cost = 2.90
-		prerequisite = { focus = HLQ_status_quo }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_speak_with_van_ortelsburg"
-			country_event = { 
-			    id = hellquill.89 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_birth_of_ost_griffonien_bund
-		icon = GFX_focus_ger_revive_kaiserreich
-		x = 0
-		y = 3
-		relative_position_id = HLQ_status_quo
-		cost = 2.90
-		prerequisite = { focus = HLQ_trust_in_von_soldau }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_birth_of_ost_griffonien_bund"
-			country_event = { 
-			    id = hellquill.90 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_convince_stackelberg
-		icon = GFX_goal_checkmate
-		x = 2
-		y = 1
-		relative_position_id = HLQ_status_quo
-		cost = 2.90
-		prerequisite = { focus = HLQ_status_quo }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_speak_with_van_ortelsburg"
-			country_event = { 
-			    id = hellquill.91
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_arrest_edler
-		icon = GFX_goal_HOL_amend_wapenwet
-		x = -1
-		y = 1
-		relative_position_id = HLQ_convince_stackelberg
-		cost = 2.90
-		prerequisite = { focus = HLQ_convince_stackelberg }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_arrest_edler"
-			country_event = { 
-			    id = hellquill.92 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_discrete_murders
-		icon = GFX_goal_secret_agents
-		x = 1
-		y = 1
-		relative_position_id = HLQ_convince_stackelberg
-		cost = 2.90
-		prerequisite = { focus = HLQ_convince_stackelberg }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_discrete_murders"
-			add_popularity = { ideology = fascism popularity = -0.04 }
-			hidden_effect = {
-				if = {
-					limit = { 
-						has_completed_focus = HLQ_arrest_edler 
-					}
-					country_event = { 
-						days = 3 
-						id = hellquill.171
-					}
-				}
-				else = {
-					country_event = { 
-					    days = 3 
-						id = hellquill.93 
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_operation_downfall
-		icon = GFX_goal_shadow_government
-		x = 0
-		y = 2
-		relative_position_id = HLQ_convince_stackelberg
-		cost = 2.90
-		prerequisite = { focus = HLQ_arrest_edler }
-		prerequisite = { focus = HLQ_discrete_murders }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_operation_downfall"
-			country_event = { 
-			    id = hellquill.94 
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
 		id = HLQ_wholesale_education_reforms
 		icon = GFX_goal_double_research
 		x = -1
 		y = 1
-		relative_position_id = HLQ_birth_of_ost_griffonien_bund
+		relative_position_id = HLQ_status_quo
 		cost = 6.50
-		prerequisite = { focus = HLQ_towards_a_better_future_hopefully }
-		prerequisite = { focus = HLQ_birth_of_ost_griffonien_bund }
-		prerequisite = { focus = HLQ_operation_downfall }
+		prerequisite = { focus = HLQ_status_quo }
 		available = {
 			has_government = neutrality
 		}
@@ -2117,510 +1829,14 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_call_of_the_east
-		icon = GFX_goal_plantation_grants
-		x = -1
-		y = 1
-		relative_position_id = HLQ_wholesale_education_reforms 
-		cost = 6.50
-		prerequisite = { focus = HLQ_wholesale_education_reforms } 
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_call_of_the_east"
-			add_ideas = HLQ_call_of_the_east_idea 
-			if = {
-			    limit = {
-				    has_country_flag = HLQ_the_people
-				}
-				every_owned_state = {
-			        limit = {
-				        is_core_of = ROOT
-			        }
-					add_extra_state_shared_building_slots = 1
-			        add_manpower = 15000
-		        }
-			}
-			else = {
-			    every_owned_state = {
-			        limit = {
-				        is_core_of = ROOT
-			        }
-					add_extra_state_shared_building_slots = 1
-			        add_manpower = 12500
-		        }
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-	}
-	
-	shared_focus = {
-		id = HLQ_urban_growth
-		icon = GFX_goal_ITA_urban
-		x = -1
-		y = 1
-		relative_position_id = HLQ_call_of_the_east 
-		cost = 6.50
-		prerequisite = { focus = HLQ_call_of_the_east } 
-		available = {
-			has_government = neutrality
-			any_owned_state = {
-			    is_controlled_by = ROOT
-			    free_building_slots = {
-				    building = arms_factory
-				    size > 0
-				    include_locked = yes
-			    }
-		    }
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_urban_growth"
-			increase_science_base = yes
-			if = {
-				limit = { 
-				    has_country_flag = HLQ_the_industrial_sector 
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-			    random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-	}
-	
-	shared_focus = {
-		id = HLQ_rural_support
-		icon = GFX_focus_indy_agriculture_2
-		x = -1
-		y = 2
-		relative_position_id = HLQ_call_of_the_east 
-		cost = 6.50
-		prerequisite = { focus = HLQ_urban_growth } 
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_urban_growth"
-			swap_ideas = {
-			    remove_idea = HLQ_ost_bund
-				add_idea = HLQ_ost_bund_2
-			}
-			add_popularity = { 
-		        ideology = neutrality 
-			    popularity = 0.03
-		    }
-			if = {
-			    limit = {
-				    has_country_flag = HLQ_the_people
-				}
-				every_owned_state = {
-			        limit = {
-				        is_core_of = ROOT
-			        }
-					add_extra_state_shared_building_slots = 1
-			        add_manpower = 10000
-		        }
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_assist_pony_towns
-		icon = GFX_goal_KTG_Bookstack
-		x = 1
-		y = 1
-		relative_position_id = HLQ_call_of_the_east 
-		cost = 6.50
-		prerequisite = { focus = HLQ_call_of_the_east } 
-		available = {
-			has_government = neutrality
-			any_owned_state = {
-			    is_controlled_by = ROOT
-			    free_building_slots = {
-				    building = industrial_complex
-				    size > 0
-				    include_locked = yes
-			    }
-		    }
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_connect_pony_towns"
-			add_stability = 0.03
-			hidden_effect = {
-		    country_event = { id = hellquill.165 days = 7 }
-		    }
-			add_popularity = { 
-		        ideology = democratic 
-			    popularity = 0.03
-		    }
-			if = {
-				limit = { 
-				    has_country_flag = HLQ_the_people 
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
-	}
-	
-	shared_focus = {
-		id = HLQ_lessen_restrictions_on_ponies
-		icon = GFX_goal_pony_passport
-		x = 0
-		y = 3
-		relative_position_id = HLQ_call_of_the_east 
-		cost = 6.50
-		prerequisite = { focus = HLQ_rural_support } 
-		prerequisite = { focus = HLQ_assist_pony_towns } 
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_connect_pony_towns"
-			increase_society_development = yes
-			hidden_effect = {
-		    country_event = { id = hellquill.168 days = 14 }
-		    }
-			add_political_power = 50
-			if = {
-			    limit = {
-				    has_idea = HLQ_pony_minorities_5
-				}
-				swap_ideas = {
-				    remove_idea = HLQ_pony_minorities_5
-					add_idea = HLQ_pony_minorities_6
-				}
-			}
-			else = {
-			    swap_ideas = {
-				    remove_idea = HLQ_pony_minorities_6
-					add_idea = HLQ_pony_minorities_7
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_take_longsword
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = 0
-		y = 2
-		relative_position_id = HLQ_birth_of_ost_griffonien_bund
-		cost = 6.50
-		prerequisite = { focus = HLQ_affirm_oaths }
-		prerequisite = { focus = HLQ_wholesale_education_reforms }
-		bypass  = {
-			event_target:longsword = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-					has_war_with = ROOT
-				}
-			}
-			hidden_trigger = {
-				LNS = {
-					OR = {
-						exists = no
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}
-				LSM = {
-					OR = {
-						exists = no
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}
-				LSC = {
-					OR = {
-						exists = no
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}
-			}
-		}
-		available = {
-			has_global_flag = LNS_civil_war_end_flag
-			has_government = neutrality
-		}
-		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-					tag = event_target:longsword
-					ratio < 0.8
-				}
-			}
-		}
-		will_lead_to_war_with = LNS
-		will_lead_to_war_with = LSC
-		will_lead_to_war_with = LSM
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_take_longsword"
-			if = {
-				limit = { event_target:longsword = { has_country_flag = LNS_bandit_takeover } }
-				create_wargoal = {
-					type = annex_everything
-					target = event_target:longsword
-				}
-				every_state = {
-					limit = { is_core_of = event_target:longsword }
-					add_core_of = ROOT
-				}
-			}
-			else_if = {
-				limit = {
-					event_target:longsword = { 
-						has_government = fascism 
-						NOT = {
-							has_country_leader = {
-								character = LSC_golden_morning
-								ruling_only = yes
-							}
-						}
-					}
-				}
-				event_target:longsword = { country_event = { id = hellquill.23 days = 4 } }
-			}
-			else = {
-				create_wargoal = {
-					type = annex_everything
-					target = event_target:longsword
-				}
-				every_state = {
-					limit = { is_core_of = event_target:longsword }
-					add_core_of = ROOT
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-	}
-	
-	shared_focus = {
 		id = HLQ_build_the_ostwall
 		icon = GFX_goal_nested_fortifications
 		x = 0
-		y = 4
-		relative_position_id = HLQ_birth_of_ost_griffonien_bund
+		y = 2
+		relative_position_id = HLQ_status_quo
 		cost = 6.50
-		prerequisite = { focus = HLQ_take_longsword }
+		prerequisite = { focus = HLQ_wholesale_education_reforms }
+		prerequisite = { focus = HLQ_affirm_oaths }
 		available = {
 			has_government = neutrality
 			634 = { 
@@ -2633,7 +1849,7 @@
 			    is_owned_and_controlled_by = ROOT 
 			}
 		}
-
+	
 		ai_will_do = {
 			factor = 100
 		}
@@ -2847,8 +2063,8 @@
 		id = HLQ_the_military_frontier
 		icon = GFX_COS_Ferrer_Coup
 		x = 0
-		y = 5
-		relative_position_id = HLQ_birth_of_ost_griffonien_bund
+		y = 3
+		relative_position_id = HLQ_status_quo
 		cost = 6.50
 		prerequisite = { focus = HLQ_build_the_ostwall }
 		available = {
@@ -2871,11 +2087,9 @@
 		icon = GFX_goal_agency
 		x = 1
 		y = 1
-		relative_position_id = HLQ_birth_of_ost_griffonien_bund
+		relative_position_id = HLQ_status_quo
 		cost = 6.50
-		prerequisite = { focus = HLQ_towards_a_better_future_hopefully }
-		prerequisite = { focus = HLQ_birth_of_ost_griffonien_bund }
-		prerequisite = { focus = HLQ_operation_downfall }
+		prerequisite = { focus = HLQ_status_quo }
 		available = {
 			has_government = neutrality
 		}
@@ -2940,7 +2154,7 @@
 		id = HLQ_absorb_reformisten_remnants
 		icon = GFX_goal_offensive_army
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = HLQ_centralising_the_order
 		cost = 6.50
 		prerequisite = { focus = HLQ_centralising_the_order }
@@ -2969,7 +2183,7 @@
 	shared_focus = {
 		id = HLQ_standardise_rectuirment_practices
 		icon = GFX_goal_authority
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HLQ_centralising_the_order
 		cost = 6.50
@@ -3067,11 +2281,10 @@
 		id = HLQ_shield_of_griffonkind
 		icon = GFX_goal_ideology_national_populist
 		x = 0
-		y = 1
+		y = 3
 		relative_position_id = HLQ_the_military_frontier
 		cost = 6.50
 		prerequisite = { focus = HLQ_the_military_frontier }
-		prerequisite = { focus = HLQ_lessen_restrictions_on_ponies }
 		prerequisite = { focus = HLQ_segregated_military }
 		available = {
 			has_government = neutrality
@@ -3105,15 +2318,8 @@
 	shared_focus = {
 		id = HLQ_black_cloaks
 		icon = GFX_goal_national_populism
-		x = 10
+		x = 0
 		y = 1
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = HLQ_black_cloaks
-			}
-		}
 		relative_position_id = HLQ_siegfrieds_retirement
 		cost = 5.00
 		prerequisite = { focus = HLQ_siegfrieds_retirement }
@@ -3987,13 +3193,14 @@
 	shared_focus = {
 		id = HLQ_the_kingdom_of_hellquill
 		icon = GFX_goal_The_Reformisten_Supremacy
-		x = 0
+		x = 6
 		y = 5
 		relative_position_id = HLQ_black_cloaks
 		cost = 5.00
 		prerequisite = { focus = HLQ_what_minorities }
 		prerequisite = { focus = HLQ_longsword_destroy }
 		prerequisite = { focus = HLQ_the_industrial_revolution }
+		mutually_exclusive = { focus = HLQ_status_quo }
 		select_effect = {
 		    hidden_effect = {
 		    	country_event = { id = hellquill.228 days = 2 }
@@ -4058,7 +3265,7 @@
 	shared_focus = {
 		id = HLQ_new_judicial_code
 		icon = GFX_goal_DOM_The_Trial
-		x = -3
+		x = -1
 		y = 2
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4084,7 +3291,7 @@
 	shared_focus = {
 		id = HLQ_curtail_the_SG
 		icon = GFX_goal_split_helmet
-		x = -4
+		x = -1
 		y = 3
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4114,7 +3321,7 @@
 	shared_focus = {
 		id = HLQ_pony_collaborators
 		icon = GFX_goal_derpy_conscription
-		x = -3
+		x = -1
 		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4155,7 +3362,7 @@
 	shared_focus = {
 		id = HLQ_reform_the_neuland_act
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
-		x = -2
+		x = -1
 		y = 5
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4246,7 +3453,7 @@
 	shared_focus = {
 		id = HLQ_total_control
 		icon = GFX_goal_purge_opposition
-		x = 3
+		x = 1
 		y = 2
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4285,7 +3492,7 @@
 	shared_focus = {
 		id = HLQ_reform_the_secret_police
 		icon = GFX_goal_generic_investigation
-		x = 4
+		x = 1
 		y = 3
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4322,7 +3529,7 @@
 	shared_focus = {
 		id = HLQ_beasts_of_labour
 		icon = GFX_goal_industry_air
-		x = 3
+		x = 1
 		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4348,7 +3555,7 @@
 	shared_focus = {
 		id = HLQ_test_subjects
 		icon = GFX_goal_generic_secret_documents
-		x = 2
+		x = 1
 		y = 5
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 6.50
@@ -4395,9 +3602,9 @@
 	shared_focus = {
 		id = HLQ_the_war_economy
 		icon = GFX_goal_Focus_Military_Mobilisation
-		x = -1
-		y = 2
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = 0
+		y = 3
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
 		prerequisite = { focus = HLQ_the_moderates focus = HLQ_the_hardliners }
 		available = {
@@ -4421,263 +3628,262 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 
-	shared_focus = {
-		id = HLQ_the_ostwall_building
-		icon = GFX_goal_nested_fortifications
-		x = 1
-		y = 2
-		relative_position_id = HLQ_the_kingdom_of_hellquill
-		cost = 6.50
-		prerequisite = { focus = HLQ_the_moderates focus = HLQ_the_hardliners }
+	#shared_focus = {
+	#	id = HLQ_the_ostwall_building
+	#	icon = GFX_goal_nested_fortifications
+	#	x = 1
+	#	y = 3
+	#	relative_position_id = HLQ_longsword_destroy
+	#	cost = 6.50
+	#	prerequisite = { focus = HLQ_the_moderates focus = HLQ_the_hardliners }
+	#
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#	available = {
+	#		537 = { is_owned_and_controlled_by = ROOT }
+	#		634 = { is_owned_and_controlled_by = ROOT }
+	#		has_government = fascism
+	#	}
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_ostwall_building"
+	#		if = {
+	#			limit = { has_country_flag = HLQ_army_stuff }
+	#			634 = {
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 1845
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 10608
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 12694
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 8192
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 8251
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 2179
+	#					instant_build = yes
+	#				}
+	#			}
+	#			537 = {
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 10678
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 7421
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 12947
+	#					instant_build = yes
+	#				}
+	#			}
+	#			else = {
+	#				634 = {
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 1845
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 10608
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 12694
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 8192
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 8251
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 2179
+	#						instant_build = yes
+	#					}
+	#				}
+	#				537 = {
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 10678
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 7421
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 12947
+	#						instant_build = yes
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	search_filters = { FOCUS_FILTER_INDUSTRY }
+	#	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	#}
 
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			537 = { is_owned_and_controlled_by = ROOT }
-			634 = { is_owned_and_controlled_by = ROOT }
-			has_government = fascism
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_ostwall_building"
-			if = {
-				limit = { has_country_flag = HLQ_army_stuff }
-				634 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 1845
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10608
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 12694
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 8192
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 8251
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 2179
-						instant_build = yes
-					}
-				}
-				537 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10678
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 7421
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 12947
-						instant_build = yes
-					}
-				}
-				else = {
-					634 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 1845
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 10608
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 12694
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 8192
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 8251
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 2179
-							instant_build = yes
-						}
-					}
-					537 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 10678
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 7421
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 12947
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		search_filters = { FOCUS_FILTER_ARMY_BONUS }
-	}
-
-	shared_focus = {
-		id = HLQ_prepare_longsword
-		icon = GFX_goal_forced_con
-		x = 0
-		y = 3
-		relative_position_id = HLQ_the_kingdom_of_hellquill
-		cost = 6.50
-		prerequisite = { focus = HLQ_the_war_economy }
-		prerequisite = { focus = HLQ_the_ostwall_building }
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			552 = { is_owned_and_controlled_by = ROOT }
-			has_government = fascism
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_prepare_longsword"
-			if = {
-				limit = { has_country_flag = HLQ_army_stuff }
-				552 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11828
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11775
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 978
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11770
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10083
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 7070
-						instant_build = yes
-					}
-				}
-				else = {
-					552 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 11828
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 11775
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 978
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 11770
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 10083
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 7070
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		search_filters = { FOCUS_FILTER_ARMY_BONUS }
-	}
+	#shared_focus = {
+	#	id = HLQ_prepare_longsword
+	#	icon = GFX_goal_forced_con
+	#	x = 0
+	#	y = 4
+	#	relative_position_id = HLQ_longsword_destroy
+	#	cost = 6.50
+	#	prerequisite = { focus = HLQ_the_war_economy }
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#	available = {
+	#		552 = { is_owned_and_controlled_by = ROOT }
+	#		has_government = fascism
+	#	}
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus HLQ_prepare_longsword"
+	#		if = {
+	#			limit = { has_country_flag = HLQ_army_stuff }
+	#			552 = {
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 11828
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 11775
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 978
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 11770
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 10083
+	#					instant_build = yes
+	#				}
+	#				add_building_construction = {
+	#					type = bunker
+	#					level = 3
+	#					province = 7070
+	#					instant_build = yes
+	#				}
+	#			}
+	#			else = {
+	#				552 = {
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 11828
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 11775
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 978
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 11770
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 10083
+	#						instant_build = yes
+	#					}
+	#					add_building_construction = {
+	#						type = bunker
+	#						level = 2
+	#						province = 7070
+	#						instant_build = yes
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	search_filters = { FOCUS_FILTER_INDUSTRY }
+	#	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	#}
 
 	shared_focus = {
 		id = HLQ_role_of_stormgriffons
 		icon = GFX_goal_conscription
 		x = -2
-		y = 3
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 4
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
-		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
+		prerequisite = { focus = HLQ_the_war_economy }
 		available = {
 		    has_government = fascism
 		}
@@ -4696,8 +3902,8 @@
 		id = HLQ_proper_cadets
 		icon = GFX_focus_generic_military_mission
 		x = -1
-		y = 4
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 5
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
 		prerequisite = { focus = HLQ_role_of_stormgriffons }
 		available = {
@@ -4719,10 +3925,10 @@
 		id = HLQ_finish_industry
 		icon = GFX_goal_improve_industry
 		x = 2
-		y = 3
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 4
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
-		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
+		prerequisite = { focus = HLQ_the_war_economy }
 		available = {
 			has_government = fascism
 			any_owned_state = {
@@ -4752,15 +3958,59 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	
+	shared_focus = {
+		id = HLQ_call_of_the_east
+		icon = GFX_goal_plantation_grants
+		x = 0
+		y = 1
+		relative_position_id = HLQ_the_war_economy 
+		cost = 6.50
+		prerequisite = { focus = HLQ_the_war_economy }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_call_of_the_east"
+			add_ideas = HLQ_call_of_the_east_idea 
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				every_owned_state = {
+			        limit = {
+				        is_core_of = ROOT
+			        }
+					add_extra_state_shared_building_slots = 1
+			        add_manpower = 70000
+		        }
+			}
+			else = {
+			    every_owned_state = {
+			        limit = {
+				        is_core_of = ROOT
+			        }
+					add_extra_state_shared_building_slots = 1
+			        add_manpower = 30000
+		        }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+	}
 
 	shared_focus = {
 		id = HLQ_bring_settlers
 		icon = GFX_goal_agricultural_aid
 		x = 0
-		y = 5
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 6
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
-		prerequisite = { focus = HLQ_prepare_longsword }
+		prerequisite = { focus = HLQ_call_of_the_east }
 
 		ai_will_do = {
 			factor = 100
@@ -4851,8 +4101,8 @@
 		id = HLQ_war_industry
 		icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		x = 1
-		y = 4
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 5
+		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
 		prerequisite = { focus = HLQ_finish_industry }
 		available = {
@@ -4986,7 +4236,7 @@
 		}
 	    cost = 6.50
 		ai_will_do = { factor = 80 }
-	    x = -8
+	    x = 0
 	    y = 0
 	    completion_reward = {
 		    log = "[GetDateText]: [Root.GetName]: Focus HLQ_regular_economics"
@@ -5327,17 +4577,163 @@
 		available = {
 		    has_government = fascism
 			has_completed_focus = HLQ_black_cloaks
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 		mutually_exclusive = {
 		    focus = HLQ_regular_economics
 		}
 	    cost = 6.50
 		ai_will_do = { factor = 80 }
-	    x = -4
+	    x = 4
 	    y = 0
 	    completion_reward = {
 		    log = "[GetDateText]: [Root.GetName]: Focus HLQ_fascist_economics"
-			add_ideas = HLQ_fascist_economics_idea
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				add_political_power = -50
+				add_stability = -0.05
+			}
+			else = {
+				add_political_power = -100
+				add_stability = -0.10
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
 	    search_filters = { FOCUS_FILTER_INDUSTRY }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -5497,31 +4893,14 @@
 	shared_focus = {
 		id = HLQ_build_up_industrial_base
 		icon = GFX_focus_indy_industrial_tanks
-		x = 0
+		x = 2
 		y = 2
 		relative_position_id = HLQ_fascist_economics
 		cost = 6.50
 		prerequisite = { 
-		    focus = HLQ_fascist_economics 
+		    focus = HLQ_appropriate_pony_farms 
 		}
 		available = {
-			has_government = fascism
-			any_owned_state = {
-			    is_controlled_by = ROOT
-			    free_building_slots = {
-				    building = industrial_complex
-				    size > 0
-				    include_locked = yes
-			    }
-		    }
-			any_owned_state = {
-			    is_controlled_by = ROOT
-			    free_building_slots = {
-				    building = arms_factory
-				    size > 0
-				    include_locked = yes
-			    }
-		    }
 		}
 
 		ai_will_do = {
@@ -5529,136 +4908,10 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_build_up_industrial_base"
-			if = {
-			    limit = {
-				    has_country_flag = HLQ_the_people
-				}
-				add_political_power = -50
-				add_stability = -0.05
-			}
-			else = {
-				add_political_power = -100
-				add_stability = -0.10
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			custom_effect_tooltip = HLQ_WW_for_2y
+			add_offsite_building = { 
+				type = arms_factory 
+				level = 4
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
@@ -5704,14 +4957,42 @@
 				}
 			}
 			save_current_manpower = yes
-			every_owned_state = {
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				every_owned_state = {
 			    limit = {
 				    is_core_of = ROOT
+				    free_building_slots = {
+					    building = infrastructure
+					    size > 0
+				    }
 			    }
 				add_extra_state_shared_building_slots = 1
-				add_manpower = -12500
-		    }
-			restore_previous_manpower = yes
+			    add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+			        }
+		        }
+			}
+			else = {
+				every_owned_state = {
+			    limit = {
+				    is_core_of = ROOT
+				    free_building_slots = {
+					    building = infrastructure
+					    size > 0
+				    }
+			    }
+			    add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+			        }
+		        }
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
@@ -5720,12 +5001,12 @@
 	shared_focus = {
 		id = HLQ_collectivization_effort
 		icon = GFX_goal_forced_con
-		x = 2
+		x = 0
 		y = 2
 		relative_position_id = HLQ_fascist_economics
 		cost = 6.50
 		prerequisite = { 
-		    focus = HLQ_appropriate_pony_farms 
+		    focus = HLQ_fascist_economics 
 		}
 		available = {
 		    has_government = fascism
@@ -5764,43 +5045,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_builder_squads"
-			add_ideas = HLQ_build_squads
-			if = {
-			    limit = {
-				    has_country_flag = HLQ_the_industrial_sector
-				}
-				every_owned_state = {
-			    limit = {
-				    is_core_of = ROOT
-				    free_building_slots = {
-					    building = infrastructure
-					    size > 0
-				    }
-			    }
-				add_extra_state_shared_building_slots = 1
-			    add_building_construction = {
-				    type = infrastructure
-				    level = 1
-				    instant_build = yes
-			        }
-		        }
-			}
-			else = {
-				every_owned_state = {
-			    limit = {
-				    is_core_of = ROOT
-				    free_building_slots = {
-					    building = infrastructure
-					    size > 0
-				    }
-			    }
-			    add_building_construction = {
-				    type = infrastructure
-				    level = 1
-				    instant_build = yes
-			        }
-		        }
-			}
+			add_timed_idea = { idea = HLQ_fascist_economics_idea days = 730 }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -5809,7 +5054,7 @@
 	shared_focus = {
 		id = HLQ_industrial_expansion
 		icon = GFX_goal_factory_complex
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = HLQ_regular_economics
 		cost = 6.50
@@ -5850,46 +5095,9 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_connecting_the_nation
-		icon = GFX_goal_generic_construct_public_housing
-		x = 2
-		y = 4
-		relative_position_id = HLQ_regular_economics
-		cost = 6.50
-		prerequisite = { 
-		    focus = HLQ_full_spead_ahead 
-		}
-		prerequisite = { 
-		    focus = HLQ_fiscal_reforms 
-			focus = HLQ_builder_squads 
-		}
-
-		ai_will_do = {
-			factor = 80
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_connecting_the_nation"
-			build_railway = {
-				level = 2
-				start_state = 537
-				target_state = 634
-				build_only_on_allied = yes
-			}
-			build_railway = {
-				level = 2
-				start_state = 537
-				target_state = 633
-				build_only_on_allied = yes
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-	
-	shared_focus = {
 		id = HLQ_thriving_arms_industry
 		icon = GFX_goal_artillery_factories
-		x = 4
+		x = 3
 		y = 4
 		relative_position_id = HLQ_regular_economics
 		cost = 6.50
@@ -5992,9 +5200,6 @@
 		    focus = HLQ_industrial_expansion 
 		}
 		prerequisite = { 
-		    focus = HLQ_connecting_the_nation 
-		}
-		prerequisite = { 
 		    focus = HLQ_thriving_arms_industry 
 		}
 
@@ -6020,19 +5225,9 @@
 	shared_focus = {
 		id = HLQ_wehrmacht
 		icon = GFX_focus_ger_reichskommisariats
-		x = 27
+		x = 28
 		y = 0
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				OR = {
-					has_completed_focus = HLQ_reconciliation
-					has_completed_focus = HLQ_status_quo
-					has_completed_focus = HLQ_black_cloaks
-				}
-			}
-		}
+
 		relative_position_id = HLQ_siegfrieds_retirement
 		cost = 6.50
 		available = {
