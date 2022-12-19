@@ -214,7 +214,6 @@ on_actions = {
 			}
 		}
 	}
-}
 ##STG Citadel of Communism
 	on_state_control_changed = {
 		effect = {
@@ -275,3 +274,4 @@ on_actions = {
 			}
 		}
 	}
+}

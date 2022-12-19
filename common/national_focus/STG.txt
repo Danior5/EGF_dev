@@ -3348,6 +3348,8 @@ focus_tree = {
 		cost = 20
 		prerequisite = {
 			focus = prepare_for_the_crusade
+		}
+		prerequisite = {
 			focus = WW_STG_attack_PNG
 		}
 		ai_will_do = {
