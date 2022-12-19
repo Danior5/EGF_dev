@@ -67,6 +67,8 @@ on_actions = {
 						OR = { 
 							is_in_faction_with = GRI 
 							tag = GRI
+							is_in_faction_with = BAT 
+							tag = BAT
 						} 
 					}
 					FROM.FROM = {
@@ -112,6 +114,8 @@ on_actions = {
 						OR = { 
 							is_in_faction_with = GRI
 							tag = GRI
+							is_in_faction_with = BAT 
+							tag = BAT
 						}
 					}
 					ROOT = { 
@@ -207,6 +211,66 @@ on_actions = {
 		 		HIP = {
 					HIP_island_debuff_level_down = yes
 		 		}
+			}
+		}
+	}
+##STG Citadel of Communism
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = STG  
+							tag = STG
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GRI 
+							tag = GRI
+							is_in_faction_with = BAT
+							tag = BAT
+						} 
+					}
+					FROM.FROM = {
+						state = 333
+					}
+					STG = {
+						has_completed_focus = WW_STG_attack_PNG
+					}
+				}
+			 	STG = { 
+			 		add_ideas = WW_citadel_fallen
+			 	}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GRI 
+							tag = GRI
+							is_in_faction_with = BAT
+							tag = BAT
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = STG  
+							tag = STG
+						} 
+					}
+					FROM.FROM = {
+						state = 333
+					}
+				}
+			 	STG = { 
+			 		remove_ideas = WW_citadel_fallen
+			 	}
 			}
 		}
 	}
