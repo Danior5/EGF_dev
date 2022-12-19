@@ -121,6 +121,7 @@ l_english:
  STG_economic_policy_2:0 "Semi-Rapid Production Economy"
  WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law if completed after March 1st 1011.§!\n "
  WW_citadel_fallen:0 "Citadel Fallen"
+ WW_citadel_fallen_desc:0 "The loss of citadel broke our ponies' spirits and has shown the world our lack of skill"
  WW_citadel_fallen_tt:0 "Skill: §R-100%§!"
  
 
