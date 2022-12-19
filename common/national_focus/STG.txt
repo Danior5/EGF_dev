@@ -3175,6 +3175,9 @@ focus_tree = {
 		prerequisite = {
 			focus = mareginot_line
 		}
+		available = {
+			controls_state = 333
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
