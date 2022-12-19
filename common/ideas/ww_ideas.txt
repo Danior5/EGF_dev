@@ -80,9 +80,9 @@ ideas = {
 			picture = SOV_factionalism_modifier
 			modifier = {
 				stability_factor = -0.1
-				war_support_factor = -0.3
+				war_support_factor = -0.1
+				custom_modifier_tooltip = WW_citadel_fallen_tt
 			}
-			custom_effect_tooltip = WW_citadel_fallen_tt
 		}
 		WW_CHN_core_buff = {
 			allowed = {
