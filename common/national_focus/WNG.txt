@@ -7574,32 +7574,9 @@ offset = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus WNG_wingbardian_stalliongrad_treaty"
+			add_ideas = WW_WNG_STG_friendship
 			STG = {
-				country_event = wingbardy.49
-			}
-			custom_effect_tooltip = if_they_accept
-			effect_tooltip = {
-				army_experience = 25
-				navy_experience = 25
-				air_experience = 25
-				add_doctrine_cost_reduction = {
-					name = land_doc_bonus
-					cost_reduction = 0.5
-					uses = 1
-					category = land_doctrine
-				}
-				STG = {
-					army_experience = 25
-					navy_experience = 25
-					air_experience = 25
-					add_doctrine_cost_reduction = {
-						name = land_doc_bonus
-						cost_reduction = 0.5
-						uses = 1
-						category = land_doctrine
-					}
-				}
+				add_ideas = WW_WNG_STG_friendship
 			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }

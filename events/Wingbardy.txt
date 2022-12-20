@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Wingbardy Events
 ###########################
 
@@ -694,20 +694,6 @@ country_event = {
 			type = alliance
 			id = "WNG"
 			value = 200
-		}
-
-		hidden_effect = {
-
-		}
-	}
-
-	option = {
-		name = wingbardy.120.b #No
-		ai_chance = {
-			factor = 0
-		}
-		WNG = {
-			country_event = { id = wingbardy.122 hours = 6 }
 		}
 
 		hidden_effect = {
