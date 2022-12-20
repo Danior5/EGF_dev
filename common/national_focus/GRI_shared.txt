@@ -629,6 +629,7 @@ shared_focus = {
 		}
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
+			country_event = { id = ww.14 days = 1 }
 			every_state = {
 				limit = { 
 					OR = {
