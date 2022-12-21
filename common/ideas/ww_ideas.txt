@@ -91,8 +91,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_deal_with_the_devil
 			research_bonus = {
-				air_equipment = 0.15
-				armor = 0.15
+				air_equipment = 0.1
+				armor = 0.1
 				artillery = 0.1
 			}
 			equipment_bonus = {

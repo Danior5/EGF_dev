@@ -5713,9 +5713,6 @@ offset = {
 		available_if_capitulated = no
 
 		available = {
-			fascism > 0.24
-			communism < 0.25
-			democratic < 0.3
 			has_government = fascism
 		}
 		ai_will_do = {
@@ -5725,15 +5722,10 @@ offset = {
 			country_event = wingbardy.38
 		}
 		completion_reward = {
-			custom_effect_tooltip = WNG_the_gacerbo_law_tt
-			custom_effect_tooltip = on_selection_tt
 			effect_tooltip = {
 				country_event = wingbardy.38
 			}
-			custom_effect_tooltip = on_completion_tt
-			custom_effect_tooltip = WNG_the_gacerbo_law_tt_2
 			effect_tooltip = {
-				custom_effect_tooltip = WNG_fascists_in_power_election_tt
 				swap_ruler_traits = {
 					remove = aspiring_duce
 					add = duce
@@ -5745,25 +5737,10 @@ offset = {
 				}
 			}
 			hidden_effect = {
-				if = {
-					limit = {
-						OR = {
-							is_ai = yes
-							WNG_has_majority_support = yes
-						}
-					}
-					country_event = wingbardy.40
-					country_event = {
-						id = wingbardy.39
-						days = 30
-					}
-				}
-				else = {
-					country_event = wingbardy.41
-					country_event = {
-						id = wingbardy.48
-						days = 2
-					}
+				country_event = wingbardy.40
+				country_event = {
+					id = wingbardy.39
+					days = 30
 				}
 			}
 		}
@@ -6171,7 +6148,7 @@ offset = {
 		cost = 8
 		relative_position_id = WNG_wingbard_empire
 
-		x = 1
+		x = 0
 		y = 1
 
 		prerequisite = {
@@ -7005,6 +6982,7 @@ offset = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_national_recreational_club"
+			add_political_power = 200
 			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
