@@ -2047,8 +2047,8 @@ foreign_politics = {
 		}
 		visible = {
 			NOT = {
-				has_idea = TRD_trading_with_skyfall_1
-				has_idea = TRD_trading_with_skyfall_2
+				has_idea = WW_equus_only_trading_1
+				has_idea = WW_equus_only_trading_2
 			}
 			FROM = {
 				exists = yes
@@ -2065,10 +2065,10 @@ foreign_politics = {
 			    limit = {
 				    original_tag = CHN
 				}
-				 add_ideas = TRD_trading_with_skyfall_2
+				 add_ideas = WW_equus_only_trading_2
 			}
 			else = {
-				add_ideas = TRD_trading_with_skyfall_1
+				add_ideas = WW_equus_only_trading_1
 			}
 		}
 	}

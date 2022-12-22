@@ -266,5 +266,27 @@ ideas = {
 				fuel_gain_factor = 0.5
 			}
 		}
+        WW_equus_only_trading_1 = {
+            available = {
+				always = no
+            }
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.075
+                consumer_goods_factor = -0.04
+            }
+        }
+        WW_equus_only_trading_2 = {
+            available = {
+				always = no
+            }
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                consumer_goods_factor = -0.02
+            }
+        }
 	}	
 }
