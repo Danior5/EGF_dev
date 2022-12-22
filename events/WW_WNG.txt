@@ -5,7 +5,7 @@ country_event = {
 	title = ww_wng.1.t
 	desc = ww_wng.1.desc
 
-	is_trigger_only = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = ww_wng.1.a
@@ -28,7 +28,7 @@ country_event = {
 	title = ww_wng.2.t
 	desc = ww_wng.2.desc
 
-	is_trigger_only = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = ww_wng.2.a
