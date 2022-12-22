@@ -1,5 +1,4 @@
 on_actions = {
-
 	#OLE dying removes CHN core buffs
 	on_capitulation = {
 		effect = {

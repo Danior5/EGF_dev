@@ -1187,11 +1187,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				ai_focus_aggressive_factor = 0.25
-				army_morale_factor = 0.1
-				fascism_acceptance = 10
-				communism_acceptance = -10
-				democratic_acceptance = -10
+				army_morale_factor = 0.15
+				army_attack_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
 
@@ -2372,6 +2370,7 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.1
 				army_attack_factor = 0.1
+				conscription = 0.02
 			}
 		}
 		WNG_karthinian_martial_tradition = {
