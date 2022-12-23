@@ -16,7 +16,7 @@ country_event = {
 		hidden_effect = {
 			WNG = {
 				country_event = {
-					id = ww.wng.2
+					id = ww_wng.2
 					days = 3
 				}
 			}

@@ -5925,16 +5925,41 @@ offset = {
 		}
 
 		available = {
+			FRN = {
+				exists = no
+			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		select_effect = {
+			add_ideas = WW_WNG_reorganizing_army_1
+		}
 		completion_reward = {
-			remove_ideas = WNG_outdated_army
-			remove_ideas = WNG_outdated_army_2
-			remove_ideas = WNG_outdated_army_3
+			if = {
+				limit = {
+					has_idea = WNG_outdated_army
+				}
+				remove_ideas = WNG_outdated_army
+			}
+			if = {
+				limit = {
+					has_idea = WNG_outdated_army_2
+				}
+				remove_ideas = WNG_outdated_army_2
+			}
+			if = {
+				limit = {
+					has_idea = WNG_outdated_army_3
+				}
+				remove_ideas = WNG_outdated_army_3
+			}
+			JER = {
+				country_event = {
+					id = ww_wng.1
+				}
+			}
 		}
 	}
 	focus = {
@@ -5957,6 +5982,10 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = WW_WNG_reorganizing_army_1
+				add_idea = WW_WNG_reorganizing_army_6
+			}
 		}
 	}
 	focus = {
@@ -6074,6 +6103,7 @@ offset = {
 		}
 
 		available = {
+			has_country_flag = WW_WNG_betrayal
 		}
 
 		cancel_if_invalid = yes

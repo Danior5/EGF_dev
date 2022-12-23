@@ -84,18 +84,6 @@ ideas = {
 				custom_modifier_tooltip = WW_citadel_fallen_tt
 			}
 		}
-		WW_WNG_STG_friendship = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			picture = generic_deal_with_the_devil
-			research_bonus = {
-				air_equipment = 0.1
-				armor = 0.1
-				artillery = 0.1
-			}
-		}
 		WW_CHN_core_buff = {
 			allowed = {
 				always = no
