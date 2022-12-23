@@ -5918,7 +5918,7 @@ offset = {
 		id = WNG_reorganize_the_army
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 3
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = WNG_glory_to_wingbardy
@@ -5938,7 +5938,7 @@ offset = {
 		id = WNG_immediate_preparation
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 2
+		x = 3
 		y = 2
 		prerequisite = {
 			focus = WNG_reorganize_the_army
@@ -5960,7 +5960,7 @@ offset = {
 		id = WNG_finish_reorganization
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 4
+		x = 5
 		y = 2
 		prerequisite = {
 			focus = WNG_reorganize_the_army
@@ -5983,7 +5983,7 @@ offset = {
 		id = WNG_strengthen_military_research
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 3
+		x = 4
 		y = 3
 		prerequisite = {
 			focus = WNG_immediate_preparation
@@ -6004,7 +6004,7 @@ offset = {
 		id = WNG_southern_military_conference
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 3
+		x = 4
 		y = 4
 		prerequisite = {
 			focus = WNG_strengthen_military_research
@@ -6024,7 +6024,7 @@ offset = {
 		id = WNG_advanced_weapons
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 2
+		x = 3
 		y = 5
 		prerequisite = {
 			focus = WNG_southern_military_conference
@@ -6044,10 +6044,97 @@ offset = {
 		id = WNG_advanced_tactics
 		cost = 8
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 4
+		x = 5
 		y = 5
 		prerequisite = {
 			focus = WNG_southern_military_conference
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = WNG_fury_il_duce
+		cost = 8
+		relative_position_id = WNG_glory_to_wingbardy
+		x = 7
+		y = 1
+		prerequisite = {
+			focus = WNG_glory_to_wingbardy
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = WNG_warrior_of_fascism
+		cost = 8
+		relative_position_id = WNG_glory_to_wingbardy
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = WNG_fury_il_duce
+		}
+		mutually_exclusive = {
+			focus = WNG_protector_of_karthinia
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = WNG_protector_of_karthinia
+		cost = 8
+		relative_position_id = WNG_glory_to_wingbardy
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = WNG_fury_il_duce
+		}
+		mutually_exclusive = {
+			focus = WNG_warrior_of_fascism
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = WNG_tarrin_plan
+		cost = 8
+		relative_position_id = WNG_glory_to_wingbardy
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = WNG_warrior_of_fascism
+			focus = WNG_protector_of_karthinia
 		}
 
 		available = {
