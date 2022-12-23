@@ -12,10 +12,13 @@ country_event = {
 		transfer_state = 487
 		transfer_state = 652
 		transfer_state = 521
-		WNG = {
-			country_event = {
-				id = ww.wng.2
-				days = 3
+
+		hidden_effect = {
+			WNG = {
+				country_event = {
+					id = ww_wng.2
+					days = 3
+				}
 			}
 		}
 	}
