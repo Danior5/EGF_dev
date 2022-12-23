@@ -95,13 +95,6 @@ ideas = {
 				armor = 0.1
 				artillery = 0.1
 			}
-			equipment_bonus = {
-				armor = {
-					instant = yes
-					hard_attack = 0.05
-					reliability = 0.1
-				}
-			}
 		}
 		WW_CHN_core_buff = {
 			allowed = {

@@ -5916,7 +5916,7 @@ offset = {
 	###WORLD WAR TREELET START
 	focus = {
 		id = WNG_reorganize_the_army
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
 		y = 1
@@ -5932,11 +5932,14 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = WNG_outdated_army
+			remove_ideas = WNG_outdated_army_2
+			remove_ideas = WNG_outdated_army_3
 		}
 	}
 	focus = {
 		id = WNG_immediate_preparation
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 3
 		y = 2
@@ -5958,7 +5961,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_finish_reorganization
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 5
 		y = 2
@@ -5981,7 +5984,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_strengthen_military_research
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
 		y = 3
@@ -6002,7 +6005,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_southern_military_conference
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
 		y = 4
@@ -6022,7 +6025,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_advanced_weapons
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 3
 		y = 5
@@ -6042,7 +6045,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_advanced_tactics
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 5
 		y = 5
@@ -6062,9 +6065,9 @@ offset = {
 	}
 	focus = {
 		id = WNG_fury_il_duce
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 7
+		x = 8
 		y = 1
 		prerequisite = {
 			focus = WNG_glory_to_wingbardy
@@ -6082,9 +6085,9 @@ offset = {
 	}
 	focus = {
 		id = WNG_warrior_of_fascism
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 6
+		x = 7
 		y = 2
 		prerequisite = {
 			focus = WNG_fury_il_duce
@@ -6105,9 +6108,9 @@ offset = {
 	}
 	focus = {
 		id = WNG_protector_of_karthinia
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 8
+		x = 9
 		y = 2
 		prerequisite = {
 			focus = WNG_fury_il_duce
@@ -6128,9 +6131,9 @@ offset = {
 	}
 	focus = {
 		id = WNG_tarrin_plan
-		cost = 8
+		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
-		x = 7
+		x = 8
 		y = 3
 		prerequisite = {
 			focus = WNG_warrior_of_fascism
@@ -6963,6 +6966,7 @@ offset = {
 
 		completion_reward = {
 			add_ideas = WW_WNG_STG_friendship
+			add_ideas = stalliongrad_tractor_factory
 			STG = {
 				add_ideas = WW_WNG_STG_friendship
 			}
@@ -10444,7 +10448,7 @@ offset = {
 		}
 
 		bypass = {
-
+			has_completed_focus = WNG_reorganize_the_army
 		}
 
 		cancel_if_invalid = yes
@@ -10479,7 +10483,7 @@ offset = {
 		}
 
 		bypass = {
-
+			has_completed_focus = WNG_reorganize_the_army
 		}
 
 		cancel_if_invalid = yes
