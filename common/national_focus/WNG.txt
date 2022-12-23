@@ -5925,7 +5925,9 @@ offset = {
 		}
 
 		available = {
-			FRN
+			FRN = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = no
