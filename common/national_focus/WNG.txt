@@ -5650,46 +5650,6 @@ offset = {
 		}
 		completion_reward = {
 			add_ideas = WNG_blackwings
-			custom_effect_tooltip = WNG_legitimise_the_blackwings_tt
-			hidden_effect = {
-				division_template = { #Blackwings
-					name = "Ali Nere" 
-					division_names_group = WNG_INF_02
-					template_counter = 68
-					is_locked = yes
-					force_allow_recruiting = yes
-					division_cap = 12 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var ITA_militias_cap set in history file
-				
-					# Represents nearly all infantry divisions
-					# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
-					# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
-					regiments = { 
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 1 y = 0 }
-						militia = { x = 1 y = 1 }
-						militia = { x = 2 y = 0 }
-						militia = { x = 2 y = 1 }
-					}
-					support = { 
-						engineer = { x = 0 y = 0 }
-					}
-				}
-				random_controlled_state = { #Create a few more Blackshirt Divs
-					limit = {
-						is_core_of = ROOT
-						is_fully_controlled_by = ROOT
-					}
-					custom_effect_tooltip = WNG_legitimise_the_blackwings_spawn_tt
-					hidden_effect = {
-						create_unit = {
-							division = "division_template = \"Ali Nere\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-							owner = ROOT
-							count = 3
-						}
-					}
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -5925,9 +5885,7 @@ offset = {
 		}
 
 		available = {
-			FRN = {
-				exists = no
-			}
+			has_country_flag = is_wng_empire
 		}
 
 		cancel_if_invalid = no
@@ -6030,6 +5988,10 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = WW_WNG_strengthening_military_research
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -6043,6 +6005,7 @@ offset = {
 		}
 
 		available = {
+
 		}
 
 		cancel_if_invalid = yes
@@ -6063,6 +6026,9 @@ offset = {
 		}
 
 		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -6083,6 +6049,9 @@ offset = {
 		}
 
 		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -6134,6 +6103,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_country_leader_trait = WW_WNG_warrior_of_fascism
 		}
 	}
 	focus = {
@@ -6157,6 +6127,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_country_leader_trait = WW_WNG_protector_of_karthinia
 		}
 	}
 	focus = {
@@ -7143,7 +7114,7 @@ offset = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_fix_the_resource_deficit"
 			add_tech_bonus = {
 				name = WNG_fix_the_resource_deficit
-				bonus = 3.0
+				bonus = 1.0
 				uses = 2
 				category = excavation_tech
 			}

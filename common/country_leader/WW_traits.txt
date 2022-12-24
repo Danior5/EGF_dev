@@ -45,4 +45,35 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	corporatist_industrialist_WW = {
+		random = no
+		
+		consumer_goods_factor = -0.05
+		fascism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	warrior_of_fascism_WW = {
+		random = no
+		war_support_factor = 0.2
+		army_core_attack_factor = 0.075
+		org_loss_at_low_org_factor = -0.15
+		terrain_penalty_reduction = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	protector_of_karthinia_WW = {
+		random = no
+		war_stability_factor = 0.2
+		army_core_defence_factor = 0.15
+		supply_combat_penalties_on_core_factor = -0.3
+		land_reinforce_rate = 0.05
+		max_dig_in = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
