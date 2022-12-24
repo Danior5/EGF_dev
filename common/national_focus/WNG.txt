@@ -6103,7 +6103,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_country_leader_trait = WW_WNG_warrior_of_fascism
+			add_country_leader_trait = warrior_of_fascism_WW
 		}
 	}
 	focus = {
@@ -6127,7 +6127,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_country_leader_trait = WW_WNG_protector_of_karthinia
+			add_country_leader_trait = protector_of_karthinia_WW
 		}
 	}
 	focus = {
