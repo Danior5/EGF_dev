@@ -15,11 +15,12 @@ ability = {
 		unit_modifiers = {
 			offence = -0.2
 		}
-		add_temporary_buff_to_units = {
-            org_damage_multiplier = 0.25
-            str_damage_multiplier = -0.4
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				org_damage_multiplier = 0.25
+				str_damage_multiplier = -0.4
+			}
 		}
-		
 		cancelable = yes
 		cost = 0.1
 		duration = -1
