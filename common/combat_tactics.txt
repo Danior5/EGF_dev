@@ -720,6 +720,8 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	base =  { factor = 4 }
 	picture = tactic_guerrilla_tactics
 
+	countered_by = tactic_WNG_attack
+
 	combat_width = -0.5
 	attacker = -0.7
 	defender = -0.6
@@ -918,7 +920,7 @@ tactic_slow_tank_attack = { #Unique Aquileian tank attack tactic
 	}
 
 	picture = blitz
-	#countered_by = tactic_elastic_defense
+	countered_by = tactic_WNG_defend
 
 	attacker_movement_speed = -0.5
 	attacker = 0.25
@@ -1077,11 +1079,12 @@ tactic_WNG_attack = { #Beakolini's Chad Attack
 
 	active = no
 
-	base =  { factor = 12 }
+	base =  { factor = 8 }
 	picture = WNG_attack
 
-	attacker = -0.5
-	defender = -0.8
+	combat_width = -0.5
+	attacker = -0.6
+	defender = -0.7
 }
 
 tactic_WNG_defend = { #Beakolini's Chad Defence
@@ -1094,7 +1097,7 @@ tactic_WNG_defend = { #Beakolini's Chad Defence
 
 	active = no
 
-	base =  { factor = 12 }
+	base =  { factor = 8 }
 	picture = WNG_defend
 
 	attacker_movement_speed = -0.5
