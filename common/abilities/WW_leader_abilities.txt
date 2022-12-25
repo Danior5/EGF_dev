@@ -15,12 +15,34 @@ ability = {
 		unit_modifiers = {
 			offence = -0.2
 		}
-		one_time_effect = {
+		if = {
+			limit = {
+				OWNER = {
+					NOT = {
+						has_country_flag = probing_attack_yes
+					}
+				}
+			}
+			OWNER = {
+				set_country_flag = probing_attack_yes
+			}
 			add_temporary_buff_to_units = {
 				org_damage_multiplier = 0.25
 				str_damage_multiplier = -0.4
+				days = -1
 			}
 		}
+		else = {
+			add_temporary_buff_to_units = {
+				org_damage_multiplier = -0.25
+				str_damage_multiplier = 0.4
+				days = -1
+			}
+			OWNER = {
+				clear_country_flag = probing_attack_yes
+			}
+		}
+
 		cancelable = yes
 		cost = 0.1
 		duration = -1
