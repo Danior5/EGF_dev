@@ -1950,6 +1950,10 @@
 
 		completion_reward = {
 			add_ideas = HIP_industrial_mobilisation_plan_1
+			add_timed_idea = {
+				idea = HIP_industrial_buildup
+				days = 180
+			}
 		}
 	}
 	shared_focus = {
