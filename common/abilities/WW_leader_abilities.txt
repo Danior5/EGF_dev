@@ -1,31 +1,26 @@
 ability = {
-    WW_WNG_special_ability = {
-        name = WNG_SPECIAL_ABILITY_1
-        desc = WNG_SPECIAL_ABILITY_1_DESC
-        icon = GFX_ability_chi_force_attack
-
-        sound_effect = command_power_ability_offensive
-
-        type = army_leader
-
-        allowed = {
-            is_leading_army_group = no
-            is_border_war = no
+	WNG_probing_attack = {
+		name = WNG_ABILITY_PROBING_ATTACK
+		desc = WNG_ABILITY_PROBING_ATTACK_DESC
+		
+		type = army_leader
+		
+		allowed = {
             OWNER = {
                 has_country_flag = WW_WNG_special_ability_enabled
             }
-        }
-
-        add_temporary_buff_to_units = {
-            combat_offense = -0.2
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			offence = -0.2
             org_damage_multiplier = 0.25
             str_damage_multiplier = -0.4
-        }
-
-        cancelable = yes
-        cost = 0.1
-        duration = -1
-
-    }
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = -1
+	}
 
 }
