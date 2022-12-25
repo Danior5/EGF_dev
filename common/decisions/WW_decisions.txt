@@ -881,10 +881,10 @@ WW_category = {
 				}
 			}
 			hidden_effect = {	
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
 			}
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -907,10 +907,10 @@ WW_category = {
 				}
 			}
 			hidden_effect = {
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
 			}	
 			custom_effect_tooltip = adding_toratoratora
 		}

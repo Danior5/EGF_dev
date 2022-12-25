@@ -6059,6 +6059,8 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_country_flag = WW_WNG_special_ability_enabled
+			set_technology = { WW_WNG_tactic_technology = 1 }
 		}
 	}
 	focus = {

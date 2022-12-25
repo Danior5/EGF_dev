@@ -1,0 +1,24 @@
+ability = {
+	WNG_probing_attack = {
+		name = WNG_ABILITY_PROBING_ATTACK
+		desc = WNG_ABILITY_PROBING_ATTACK_DESC
+		
+		type = army_leader
+		
+		allowed = {
+            OWNER = {
+                has_country_flag = WW_WNG_special_ability_enabled
+            }
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			offence = -0.2
+		}
+
+		cancelable = yes
+		cost = 0.1
+		duration = -1
+	}
+
+}

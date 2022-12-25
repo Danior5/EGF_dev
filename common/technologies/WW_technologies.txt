@@ -7,4 +7,12 @@ technologies = {
 			WW_railway_gun_equipment_1
 		}
 	}
+	WW_WNG_tactic_technology = {
+		allow = {
+			always = no
+		}
+
+		enable_tactic = tactic_WNG_attack
+		enable_tactic = tactic_WNG_defend
+	}
 }
