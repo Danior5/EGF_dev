@@ -2622,6 +2622,16 @@ ideas = {
 				has_government = democratic
 			}
 
+			available = {
+				NOT = {
+					OR = {
+						has_idea = HIP_industrial_mobilisation_plan_2
+						has_idea = HIP_industrial_mobilisation_plan_3
+						has_idea = HIP_industrial_mobilisation_plan_4
+					}
+				}
+			}
+
 			removal_cost = -1
 			
 			modifier = {
@@ -2640,9 +2650,16 @@ ideas = {
 				has_government = democratic
 			}
 
-			available = {has_war = yes}
+			available = {
+				has_war = yes
+				NOT = {
+					OR = {
+						has_idea = HIP_industrial_mobilisation_plan_3
+						has_idea = HIP_industrial_mobilisation_plan_4
+					}
+				}
+			}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
 				if = {
 					limit = {
 						has_war = no
@@ -2672,9 +2689,13 @@ ideas = {
 				has_government = democratic
 			}
 
-			available = {has_war = yes}
+			available = {
+				has_war = yes
+				NOT = {
+					has_idea = HIP_industrial_mobilisation_plan_4
+				}
+			}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
 				if = {
 					limit = {
 						has_war = no
@@ -2707,7 +2728,6 @@ ideas = {
 
 			available = {has_war = yes}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
 				if = {
 					limit = {
 						has_war = no
@@ -2730,6 +2750,23 @@ ideas = {
 				political_power_gain = -0.1
 			}
 		}
+		HIP_industrial_buildup = {
+			picture = WAR_hippogriffian_aid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
 		HIP_harmony_bonds_idea = {
 			picture = generic_goods_red_bonus
 			allowed = {
@@ -2741,7 +2778,6 @@ ideas = {
 			}
 
 			available = {has_war = yes}
-			on_remove = {set_country_flag = HIP_can_remobilise}
 
 			removal_cost = -1
 			
@@ -3446,8 +3482,8 @@ ideas = {
 			}
 		}
 
-		HIP_radical_war = {#Give ability to return if you go to war again
-		picture = HIP_AF_totalwar
+		HIP_radical_war = {
+			picture = HIP_AF_totalwar
 			allowed = {
 				always = no
 			}
@@ -3460,7 +3496,14 @@ ideas = {
 				has_war = yes
 			}
 
-			on_remove = {set_country_flag = HIP_can_remobilise}
+			on_remove = {
+				if = {
+					limit = {
+						has_war = no
+					}
+					set_country_flag = HIP_can_remobilise
+				}
+			}
 
 			removal_cost = -1
 
@@ -3777,7 +3820,14 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
 			}
-			on_remove = {set_country_flag = HIP_can_remobilise}
+			on_remove = {
+				if = {
+					limit = {
+						has_war = no
+					}
+					set_country_flag = HIP_can_remobilise
+				}
+			}
 		}
 
 		HIP_arisfirst_bonds = {
@@ -3798,7 +3848,12 @@ ideas = {
 			}
 			available = {has_war = yes}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
+				if = {
+					limit = {
+						has_war = no
+					}
+					set_country_flag = HIP_can_remobilise
+				}
 			}
 		}
 
@@ -3821,7 +3876,12 @@ ideas = {
 			}
 			available = {has_war = yes}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
+				if = {
+					limit = {
+						has_war = no
+					}
+					set_country_flag = HIP_can_remobilise
+				}
 			}
 		}
 
@@ -3844,7 +3904,12 @@ ideas = {
 			}
 			available = {has_war = yes}
 			on_remove = {
-				set_country_flag = HIP_can_remobilise
+				if = {
+					limit = {
+						has_war = no
+					}
+					set_country_flag = HIP_can_remobilise
+				}
 			}
 		}
 
