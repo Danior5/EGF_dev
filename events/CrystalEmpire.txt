@@ -1595,6 +1595,13 @@ country_event = { ## ACTUAL SOMBRA RETURN HERE AYY LMAOOOOOOOOO
 			defense_skill = 1
 			planning_skill = 5
 			logistics_skill = 5
+			visible = {
+				has_government = fascism
+				has_country_leader = {
+					character = CRY_sombra
+					ruling_only = yes
+				}
+			}
 		} 
 		custom_effect_tooltip = king_sombra_stats_tp
 		
