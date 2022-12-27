@@ -229,7 +229,7 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_reorganizing_army_11
 			}
 		}
-		days_remove = 5
+		days_remove = 120
 		cost = 50
 		remove_effect = {
 			WNG_army_reorganization_increase = yes

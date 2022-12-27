@@ -5942,7 +5942,7 @@ offset = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = WW_WNG_reorganizing_army_1
-				add_idea = WW_WNG_reorganizing_army_6
+				add_idea = WW_WNG_reorganizing_army_fast
 			}
 		}
 	}
@@ -5967,6 +5967,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			unlock_decision_category_tooltip = WNG_army_reorganization_category
 		}
 	}
 	focus = {
