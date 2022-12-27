@@ -217,3 +217,22 @@ military_training_category = {
 	}
 
 }
+WNG_army_reorganization_category = {
+	WNG_army_reorganization_increase_decision = {
+		icon = GFX_decision_generic_army_support
+		allowed = {
+			tag = WNG
+		}
+		visible = {
+			has_completed_focus = WNG_finish_reorganization
+			NOT = {
+				has_idea = WW_WNG_reorganizing_army_11
+			}
+		}
+		days_remove = 5
+		cost = 50
+		remove_effect = {
+			WNG_army_reorganization_increase = yes
+		}
+	}
+}
