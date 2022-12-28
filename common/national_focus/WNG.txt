@@ -5891,9 +5891,6 @@ offset = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-		select_effect = {
-			add_ideas = WW_WNG_reorganizing_army_1
-		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -5913,9 +5910,11 @@ offset = {
 				}
 				remove_ideas = WNG_outdated_army_3
 			}
+			add_ideas = WW_WNG_reorganizing_army_1
 			JER = {
 				country_event = {
 					id = ww_wng.1
+					days = 5
 				}
 			}
 		}
@@ -6013,7 +6012,106 @@ offset = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		select_effect = {
+			EQS = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			STG = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			CRY = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			EQC = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			GRY = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			RCT = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+			HIP = {
+				country_event = {
+					id = ww_wng.4
+				}
+			}
+		}
 		completion_reward = {
+			if = {
+				limit = {
+					var:global.WNG_military_aid > 7
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					uses = 2
+					category = land_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					uses = 2
+					category = air_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+			else_if = {
+				limit = {
+					var:global.WNG_military_aid > 3
+					var:global.WNG_military_aid < 7
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = air_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+			else_if = {
+				limit = {
+					var:global.WNG_military_aid > 0
+					var:global.WNG_military_aid < 4
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = land_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = air_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = naval_doctrine
+				}
+			}
 		}
 	}
 	focus = {
@@ -6083,6 +6181,11 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			WNG = {
+				country_event = {
+					id = ww_wng.3
+				}
+			}
 		}
 	}
 	focus = {

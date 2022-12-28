@@ -22,7 +22,68 @@ ideas = {
 				consumer_goods_factor = 0.02
 				research_speed_factor = -0.05
 			}
+		}
+		WW_WNG_airforce_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+			}
+		}
+		WW_WNG_army_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.3 
+					instant = yes
+				}
+			}
 
+		}
+		WW_WNG_fortification_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				production_speed_air_base_factor = 0.5
+				production_speed_supply_node_factor = 0.5
+				production_speed_rail_way_factor = 0.5
+				production_speed_bunker_factor = 0.5
+				production_speed_anti_air_building_factor = 0.5
+				production_speed_radar_station_factor = 0.5 
+			}
 		}
 		WW_WNG_reorganizing_army_1 = {
 			allowed = {
@@ -161,7 +222,6 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2
-				experience_gain_army_factor = -0.1
 			}
 		}
 		WW_WNG_reorganizing_army_fast = {

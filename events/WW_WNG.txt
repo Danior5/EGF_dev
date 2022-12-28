@@ -37,3 +37,65 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ww_wng.3
+	title = ww_wng.3.t
+	desc = ww_wng.3.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.3.a
+		add_timed_idea = {idea = WW_WNG_airforce_priority days = 90}
+	}
+	option = {
+		name = ww_wng.3.b
+		add_timed_idea = {idea = WW_WNG_army_priority days = 50}
+	}
+	option = {
+		name = ww_wng.3.c
+		add_timed_idea = {idea = WW_WNG_fortification_priority days = 180}
+	}
+}
+country_event = {
+	id = ww_wng.4
+	title = ww_wng.4.t
+	desc = ww_wng.4.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.4.a
+	}
+	option = {
+		name = ww_wng.4.b
+		trigger = {
+			random_owned_state = {
+				AND = {
+					is_core_of = ROOT
+					arms_factory > 1
+				}
+			}
+			has_army_experience > 15
+		}
+		random_owned_state = {
+			limit = {
+				AND = {
+					is_core_of = ROOT
+					arms_factory > 1
+				}
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		army_experience = -15
+		hidden_effect = {
+			add_to_variable = {
+				var = global.WNG_military_aid
+				value = 1
+			}
+		}
+	}
+}
