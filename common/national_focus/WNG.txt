@@ -5990,7 +5990,7 @@ offset = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = WW_WNG_strengthening_military_research
-				days = 180
+				days = 365
 			}
 		}
 	}
@@ -6055,19 +6055,23 @@ offset = {
 					var:global.WNG_military_aid > 7
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.75
+					cost_reduction = 0.6
 					uses = 2
 					category = land_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.75
+					cost_reduction = 0.6
 					uses = 2
 					category = air_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.75
+					cost_reduction = 0.6
 					uses = 2
 					category = naval_doctrine
+				}
+				modify_timed_idea = {
+					idea = WW_WNG_strengthening_military_research
+					days = -270
 				}
 			}
 			else_if = {
@@ -6076,19 +6080,23 @@ offset = {
 					var:global.WNG_military_aid < 7
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = land_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = air_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = naval_doctrine
+				}
+				modify_timed_idea = {
+					idea = WW_WNG_strengthening_military_research
+					days = -180
 				}
 			}
 			else_if = {
@@ -6097,19 +6105,23 @@ offset = {
 					var:global.WNG_military_aid < 4
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.25
+					cost_reduction = 0.2
 					uses = 2
 					category = land_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.25
+					cost_reduction = 0.2
 					uses = 2
 					category = air_doctrine
 				}
 				add_doctrine_cost_reduction = {
-					cost_reduction = 0.25
+					cost_reduction = 0.2
 					uses = 2
 					category = naval_doctrine
+				}
+				modify_timed_idea = {
+					idea = WW_WNG_strengthening_military_research
+					days = -90
 				}
 			}
 		}
