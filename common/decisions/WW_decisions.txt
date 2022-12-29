@@ -1187,6 +1187,17 @@ WW_category = {
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
+				
+				if = {
+					limit = {
+						WNG = {
+							has_completed_focus = WNG_tarrin_plan
+						}
+					}
+					WNG = {
+						add_timed_idea = { idea = WW_tarrin_offensive days = 60 }
+					}
+				}
 			}
 		}
 		
@@ -1240,6 +1251,17 @@ WW_category = {
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
+
+				if = {
+					limit = {
+						WNG = {
+							has_completed_focus = WNG_tarrin_plan
+						}
+					}
+					WNG = {
+						add_timed_idea = { idea = WW_tarrin_offensive days = 60 }
+					}
+				}
 			}
 		}
 	}

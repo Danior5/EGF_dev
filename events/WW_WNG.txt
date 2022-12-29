@@ -71,6 +71,9 @@ country_event = {
 		name = ww_wng.4.b
 		trigger = {
 			has_army_experience > 15
+			any_owned_state = {
+				arms_factory > 0
+			}
 		}
 		random_owned_state = {
 			limit = { arms_factory > 0 }
