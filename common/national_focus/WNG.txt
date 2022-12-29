@@ -6016,43 +6016,54 @@ offset = {
 			EQS = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			STG = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			CRY = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			EQC = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			GRY = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			RCT = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
 			}
 			HIP = {
 				country_event = {
 					id = ww_wng.4
+					days = 5
 				}
+			}
+			set_variable = {
+				var = global.WNG_military_aid
+				value = 0
 			}
 		}
 		completion_reward = {
 			if = {
 				limit = {
-					var:global.WNG_military_aid > 7
+					check_variable = { global.WNG_military_aid > 6 }
 				}
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.6
@@ -6076,8 +6087,8 @@ offset = {
 			}
 			else_if = {
 				limit = {
-					var:global.WNG_military_aid > 3
-					var:global.WNG_military_aid < 7
+					check_variable = { global.WNG_military_aid > 3 }
+					check_variable = { global.WNG_military_aid < 7 }
 				}
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.4
@@ -6101,8 +6112,8 @@ offset = {
 			}
 			else_if = {
 				limit = {
-					var:global.WNG_military_aid > 0
-					var:global.WNG_military_aid < 4
+					check_variable = { global.WNG_military_aid > 0 }
+					check_variable = { global.WNG_military_aid < 4 }
 				}
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.2

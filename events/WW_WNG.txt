@@ -70,21 +70,10 @@ country_event = {
 	option = {
 		name = ww_wng.4.b
 		trigger = {
-			random_owned_state = {
-				AND = {
-					is_core_of = ROOT
-					arms_factory > 1
-				}
-			}
 			has_army_experience > 15
 		}
 		random_owned_state = {
-			limit = {
-				AND = {
-					is_core_of = ROOT
-					arms_factory > 1
-				}
-			}
+			limit = { arms_factory > 0 }
 			remove_building = {
 				type = arms_factory
 				level = 1
