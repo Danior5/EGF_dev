@@ -2050,6 +2050,10 @@ foreign_politics = {
 				has_idea = WW_equus_only_trading_1
 				has_idea = WW_equus_only_trading_2
 			}
+			has_game_rule = {
+				rule = ww_game_mode
+				option = EQS_ONLY
+			}
 			FROM = {
 				exists = yes
 			}
