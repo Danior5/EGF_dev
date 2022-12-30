@@ -5911,10 +5911,12 @@ offset = {
 				remove_ideas = WNG_outdated_army_3
 			}
 			add_ideas = WW_WNG_reorganizing_army_1
-			JER = {
-				country_event = {
-					id = ww_wng.1
-					days = 5
+			hidden_effect = {
+				JER = {
+					country_event = {
+						id = ww_wng.1
+						days = 5
+					}
 				}
 			}
 		}
@@ -5966,7 +5968,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = WNG_army_reorganization_category
+			unlock_decision_tooltip = WNG_army_reorganization_increase_decision
 		}
 	}
 	focus = {
@@ -5992,6 +5994,10 @@ offset = {
 				idea = WW_WNG_strengthening_military_research
 				days = 365
 			}
+			unlock_decision_tooltip = WNG_army_buff_1_decision
+			unlock_decision_tooltip = WNG_army_buff_2_decision
+			unlock_decision_tooltip = WNG_army_buff_3_decision
+			unlock_decision_tooltip = WNG_army_buff_4_decision
 		}
 	}
 	focus = {
@@ -6158,6 +6164,9 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {
+				magical_weapons1 = 1
+			}
 		}
 	}
 	focus = {

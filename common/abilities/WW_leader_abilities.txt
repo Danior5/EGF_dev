@@ -1,24 +1,33 @@
 ability = {
-	WNG_probing_attack = {
-		name = WNG_ABILITY_PROBING_ATTACK
-		desc = WNG_ABILITY_PROBING_ATTACK_DESC
+	WNG_pinning_attack = {
+		name = WNG_ABILITY_PINNING_ATTACK
+		desc = WNG_ABILITY_PINNING_ATTACK_DESC
+
+		sound_effect = command_power_ability_offensive
 		
 		type = army_leader
 		
 		allowed = {
-            OWNER = {
-                has_country_flag = WW_WNG_special_ability_enabled
-            }
+			OWNER = {
+				has_country_flag = WW_WNG_special_ability_enabled
+			}
 			is_border_war = no
 		}
 		
-		unit_modifiers = {
-			offence = -0.2
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				combat_offense = -1.0
+				org_damage_multiplier = -1.0
+				str_damage_multiplier = -0.9
+				cannot_retreat_while_attacking = 1.0
+				
+				days = 7
+				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+			}
 		}
 
-		cancelable = yes
-		cost = 0.1
-		duration = -1
+		cost = 0.12
+		duration = 168
 	}
 
 }

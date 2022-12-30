@@ -1,3 +1,41 @@
 ﻿l_english:
 tactic_WNG_attack:0 "Pinning Attack"
 tactic_WNG_defend:0 "Armored Counterstroke"
+
+warrior_of_fascism_WW:0 "Warrior of Fascism"
+protector_of_karthinia_WW:0 "Protector of Karthinia"
+
+WW_WNG_reorganizing_army_1:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_2:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_3:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_4:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_5:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_6:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_7:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_8:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_9:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_10:0 "Reorganizing Army"
+WW_WNG_reorganizing_army_11:0 "Reorganized Army"
+WW_WNG_reorganizing_army_fast:0 "Partially Reorganized Army"
+
+WW_WNG_strengthening_military_research:0 "Strengthening Military Research"
+
+WW_WNG_tarrin_plan:0 "Retake Tarrin"
+
+WNG_army_reorganization_category:0 "Military Development"
+WNG_army_reorganization_increase_decision:0 "Increase Army Reorganization"
+
+WW_WNG_tactic_technology:0 "Advanced Tactics"
+
+WNG_reorganize_the_army:0 "Reorganize the Army"
+WNG_immediate_preparation:0 "Immediate Preparation"
+WNG_finish_reorganization:0 "Finish Reorganization"
+WNG_strengthen_military_research:0 "Strengthen Military Research"
+WNG_southern_military_conference:0 "Southern Military Conference"
+WNG_advanced_weapons:0 "Advanced Weapons"
+WNG_advanced_tactics:0 "Advanced Tactics"
+
+WNG_fury_il_duce:0 "The Fury of Il Duce"
+WNG_warrior_of_fascism:0 "A Warrior of Fascism"
+WNG_protector_of_karthinia:0 "The Protector of Karthinia"
+WNG_tarrin_plan:0 "The Tarrin Plan"

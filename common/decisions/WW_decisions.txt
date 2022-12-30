@@ -1187,6 +1187,17 @@ WW_category = {
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
+				
+				if = {
+					limit = {
+						WNG = {
+							has_completed_focus = WNG_tarrin_plan
+						}
+					}
+					WNG = {
+						add_timed_idea = { idea = WW_tarrin_plan days = 60 }
+					}
+				}
 			}
 		}
 		
@@ -1240,6 +1251,17 @@ WW_category = {
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
 				WNG = { remove_ideas = WW_incompetent_tanks }
+
+				if = {
+					limit = {
+						WNG = {
+							has_completed_focus = WNG_tarrin_plan
+						}
+					}
+					WNG = {
+						add_timed_idea = { idea = WW_tarrin_plan days = 60 }
+					}
+				}
 			}
 		}
 	}
@@ -2049,6 +2071,10 @@ foreign_politics = {
 			NOT = {
 				has_idea = WW_equus_only_trading_1
 				has_idea = WW_equus_only_trading_2
+			}
+			has_game_rule = {
+				rule = ww_game_mode
+				option = EQS_ONLY
 			}
 			FROM = {
 				exists = yes
