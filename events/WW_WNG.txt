@@ -17,7 +17,7 @@ country_event = {
 			WNG = {
 				country_event = {
 					id = ww_wng.2
-					days = 3
+					days = 5
 				}
 			}
 		}

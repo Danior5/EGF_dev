@@ -5911,10 +5911,12 @@ offset = {
 				remove_ideas = WNG_outdated_army_3
 			}
 			add_ideas = WW_WNG_reorganizing_army_1
-			JER = {
-				country_event = {
-					id = ww_wng.1
-					days = 5
+			hidden_effect = {
+				JER = {
+					country_event = {
+						id = ww_wng.1
+						days = 5
+					}
 				}
 			}
 		}
