@@ -6164,8 +6164,11 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_technology = {
-				magical_weapons1 = 1
+			enable_equipments = {
+				magical_equipment_2
+			}
+			enable_equipment_modules = {
+				stabilizer
 			}
 		}
 	}
