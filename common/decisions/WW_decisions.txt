@@ -1195,7 +1195,7 @@ WW_category = {
 						}
 					}
 					WNG = {
-						add_timed_idea = { idea = WW_tarrin_offensive days = 60 }
+						add_timed_idea = { idea = WW_tarrin_plan days = 60 }
 					}
 				}
 			}
@@ -1259,7 +1259,7 @@ WW_category = {
 						}
 					}
 					WNG = {
-						add_timed_idea = { idea = WW_tarrin_offensive days = 60 }
+						add_timed_idea = { idea = WW_tarrin_plan days = 60 }
 					}
 				}
 			}
