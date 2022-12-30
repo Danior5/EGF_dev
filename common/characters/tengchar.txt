@@ -168,7 +168,7 @@ characters={
 		}
 	}
 	HLQ_WW_fieldmarshel = {
-		name = "Lalo Salamanca"
+		name = "Hans"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/lalo.tga"
