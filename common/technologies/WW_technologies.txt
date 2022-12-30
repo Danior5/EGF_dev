@@ -11,8 +11,6 @@ technologies = {
 		allow = {
 			always = no
 		}
-
-		enable_tactic = tactic_WNG_attack
 		enable_tactic = tactic_WNG_defend
 	}
 }
