@@ -6164,12 +6164,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			enable_equipments = {
-				magical_equipment_2
-			}
-			enable_equipment_modules = {
-				stabilizer
-			}
+			set_technology = { WW_WNG_advanced_weapons_technology = 1 }
 		}
 	}
 	focus = {

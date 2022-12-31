@@ -13,4 +13,35 @@ technologies = {
 		}
 		enable_tactic = tactic_WNG_defend
 	}
+	WW_WNG_advanced_weapons_technology = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			magical_equipment_2
+		}
+		enable_equipment_modules = {
+			stabilizer
+		}
+	}
+	WW_WNG_army_buff_1 = {
+		allow = {
+			always = no
+		}
+	}
+	WW_WNG_army_buff_2 = {
+		allow = {
+			always = no
+		}
+	}
+	WW_WNG_army_buff_3 = {
+		allow = {
+			always = no
+		}
+	}
+	WW_WNG_army_buff_4 = {
+		allow = {
+			always = no
+		}
+	}
 }
