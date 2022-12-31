@@ -65,6 +65,7 @@ technologies = {
 			wet_ammo_storage
 			smoke_launchers
 			expanded_fuel_tank
+			troop_compartment
 		}
 		enable_subunits = {
 			light_armor
