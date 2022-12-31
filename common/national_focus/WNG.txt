@@ -5924,7 +5924,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_immediate_preparation
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_focus_secret_rearmament
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 3
@@ -6006,7 +6006,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_southern_military_conference
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_generic_treaty
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4

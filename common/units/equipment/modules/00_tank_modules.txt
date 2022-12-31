@@ -2254,6 +2254,7 @@ equipment_modules = {
 		add_stats = {
 			defense = 12
 			entrenchment = 0.25
+			recon = 0.1
 		}
 		xp_cost = 0
 		multiply_stats = {

@@ -28,20 +28,30 @@ technologies = {
 		allow = {
 			always = no
 		}
+		category_all_armor = {
+			max_strength = 3
+		}
 	}
 	WW_WNG_army_buff_2 = {
 		allow = {
 			always = no
+		}
+		category_fighter = {
+			air_agility = 0.05
 		}
 	}
 	WW_WNG_army_buff_3 = {
 		allow = {
 			always = no
 		}
+		category_light_infantry = {
+			defense = 0.15
+		}
 	}
 	WW_WNG_army_buff_4 = {
 		allow = {
 			always = no
 		}
+		supply_consumption_factor = -0.075
 	}
 }

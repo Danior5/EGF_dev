@@ -248,8 +248,10 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
+		days_remove = 60
 		cost = 50
-		complete_effect = {
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_1 = 1 }
 		}
 	}
 	WNG_army_buff_2_decision = {
@@ -265,8 +267,10 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
+		days_remove = 60
 		cost = 50
-		complete_effect = {
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_2 = 1 }
 		}
 	}
 	WNG_army_buff_3_decision = {
@@ -282,8 +286,10 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
+		days_remove = 60
 		cost = 50
-		complete_effect = {
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_3 = 1 }
 		}
 	}
 	WNG_army_buff_4_decision = {
@@ -299,8 +305,10 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
+		days_remove = 60
 		cost = 50
-		complete_effect = {
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_4 = 1 }
 		}
 	}
 }
