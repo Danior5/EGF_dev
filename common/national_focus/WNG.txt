@@ -5876,6 +5876,7 @@ offset = {
 	###WORLD WAR TREELET START
 	focus = {
 		id = WNG_reorganize_the_army
+		icon = GFX_goal_rhineland
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
@@ -5923,6 +5924,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_immediate_preparation
+		icon = GFX_focus_focus_fra_maquis
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 3
@@ -5949,6 +5951,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_finish_reorganization
+		icon = GFX_focus_chi_army_reform
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 5
@@ -5973,6 +5976,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_strengthen_military_research
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
@@ -6002,6 +6006,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_southern_military_conference
+		icon = GFX_goal_generic_national_unity
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 4
@@ -6145,6 +6150,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_advanced_weapons
+		icon = GFX_focus_generic_combined_arms
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 3
@@ -6169,6 +6175,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_advanced_tactics
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 5
@@ -6194,6 +6201,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_fury_il_duce
+		icon = GFX_goal_generic_major_war
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 8
@@ -6220,6 +6228,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_warrior_of_fascism
+		icon = GFX_goal_support_fascism
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 7
@@ -6244,6 +6253,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_protector_of_karthinia
+		icon = GFX_focus_generic_fascist_propaganda
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 9
@@ -6268,6 +6278,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_tarrin_plan
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 5
 		relative_position_id = WNG_glory_to_wingbardy
 		x = 8
