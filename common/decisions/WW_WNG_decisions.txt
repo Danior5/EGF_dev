@@ -248,8 +248,12 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
-		days_remove = 60
+		days_remove = 120
 		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
 		remove_effect = {
 			set_technology = { WW_WNG_army_buff_1 = 1 }
 		}
@@ -267,8 +271,12 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
-		days_remove = 60
+		days_remove = 120
 		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
 		remove_effect = {
 			set_technology = { WW_WNG_army_buff_2 = 1 }
 		}
@@ -286,8 +294,12 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
-		days_remove = 60
+		days_remove = 120
 		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
 		remove_effect = {
 			set_technology = { WW_WNG_army_buff_3 = 1 }
 		}
@@ -305,8 +317,12 @@ WNG_army_reorganization_category = {
 				has_idea = WW_WNG_strengthening_military_research
 			}
 		}
-		days_remove = 60
+		days_remove = 120
 		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
 		remove_effect = {
 			set_technology = { WW_WNG_army_buff_4 = 1 }
 		}
