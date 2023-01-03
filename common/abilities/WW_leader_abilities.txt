@@ -1,7 +1,7 @@
 ability = {
-	WNG_pinning_attack = {
-		name = WNG_ABILITY_PINNING_ATTACK
-		desc = WNG_ABILITY_PINNING_ATTACK_DESC
+	WNG_chad_attack = {
+		name = WNG_ABILITY_CHAD_ATTACK
+		desc = WNG_ABILITY_CHAD_ATTACK_DESC
 
 		sound_effect = command_power_ability_offensive
 		
@@ -16,13 +16,12 @@ ability = {
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_offense = -1.0
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = -0.9
-				cannot_retreat_while_attacking = 1.0
+				combat_offense = 0.1
+				combat_breakthrough = 0.25
+				org_damage_multiplier = 0.25
+				str_damage_multiplier = -0.1
 				
 				days = 7
-				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
 		}
 

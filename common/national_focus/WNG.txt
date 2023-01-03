@@ -6146,6 +6146,9 @@ offset = {
 					days = -90
 				}
 			}
+			else = {
+				custom_effect_tooltip = WNG_conference_tt
+			}
 		}
 	}
 	focus = {
@@ -6195,8 +6198,15 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_country_flag = WW_WNG_special_ability_enabled
-			set_technology = { WW_WNG_tactic_technology = 1 }
+			custom_effect_tooltip = WNG_tactic_enabled_tt
+			custom_effect_tooltip = WNG_ability_enabled_tt
+			hidden_effect = {
+				set_country_flag = WW_WNG_special_ability_enabled
+				set_technology = { 
+					popup = no
+					WW_WNG_tactic_technology = 1 
+				}
+			}
 		}
 	}
 	focus = {
@@ -6296,6 +6306,7 @@ offset = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = WNG_tarrin_plan_tt
 		}
 	}
 	###WORLD WAR TREELET END
