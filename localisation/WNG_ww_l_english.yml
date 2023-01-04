@@ -24,6 +24,10 @@ WW_WNG_tarrin_plan:0 "Retake Tarrin"
 
 WNG_army_reorganization_category:0 "Military Development"
 WNG_army_reorganization_increase_decision:0 "Increase Army Reorganization"
+WNG_army_buff_1_decision:0 "Increase Survivability Training"
+WNG_army_buff_2_decision:0 "Adopt Ace Tactics"
+WNG_army_buff_3_decision:0 "Improve Infantry Drilling"
+WNG_army_buff_4_decision:0 "Enhance Logistical Train"
 
 WW_WNG_tactic_technology:0 "Advanced Tactics"
 
@@ -39,3 +43,10 @@ WNG_fury_il_duce:0 "The Fury of Il Duce"
 WNG_warrior_of_fascism:0 "A Warrior of Fascism"
 WNG_protector_of_karthinia:0 "The Protector of Karthinia"
 WNG_tarrin_plan:0 "The Tarrin Plan"
+
+WW_WNG_betrayal:0 "Betrayed by Aquileia"
+
+WNG_conference_tt:0 "Begins an event for southern nations to support us."
+WNG_tactic_enabled_tt:0 "Enables Tactic: §YArmored Counterstroke§!"
+WNG_ability_enabled_tt:0 "Enables unit leader ability: §YCareful Attack§!.\nCommand Power Cost:\n  - Base cost: §Y0.12§! (each for §Y1§! battalion)\nDuration: §Y7 days§!\nAdd following effects to the armies for §Y7§! days\n - Offense: §G10.0%§!\n - Breakthrough: §G25.0%§!\n - Organization Damage Taken: §R25.0%§!\n - Strength Damage Taken: §G-10.0%§!\n\n"
+WNG_tarrin_plan_tt:0 "Gains '§YRetake Tarrin§!' which grants (Division Speed: §G+10.00%§!, Division Attack: §G+10.00%§!, Supply Grace: §G+48.0§! Hour(s)) for §Y60§! days when Aquileia attacks us."
