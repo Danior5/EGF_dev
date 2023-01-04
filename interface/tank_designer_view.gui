@@ -172,7 +172,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "equipment_upgrade_0"
-				position = { x = 220 y = 297 }
+				position = { x = -85 y = 245 }
 				size = { width = 130 height = 50 } 
 			
 				buttonType = {
@@ -215,7 +215,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "equipment_upgrade_1"
-				position = { x = 380 y = 297 }
+				position = { x = 380 y = 245 }
 				size = { width = 130 height = 50 } 
 
 				buttonType = {
