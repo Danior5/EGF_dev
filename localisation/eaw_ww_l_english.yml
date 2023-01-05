@@ -176,3 +176,8 @@ l_english:
 
  troop_compartment:1 "Troop Compartment"
  troop_compartment_desc:0 "A large space inside the vehicle designed to house troops. These additional troops grant flexibility, but the cost of fitting this space within the vehicle is high."
+
+ EQ_MOD_SLOT_special_type_slot_5_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Special Features"
