@@ -269,13 +269,13 @@ guiTypes = {
 		iconType = {
 			name = "tag_icon_bg"
 			spriteType = "GFX_role_icon_bg"
-			position = { x = 465 y = 143 }
+			position = { x = 465 y = 193 }
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "niche_button"
-			position = { x = 474 y = 150 }
+			position = { x = 474 y = 200 }
 			spriteType = "GFX_niche_icon_strip"
 			clicksound = "ui_tank_designer_company_icon"
 			pdx_tooltip = "DESIGNER_SELECT_NICHE"
@@ -285,7 +285,7 @@ guiTypes = {
 		iconType = {
 			name = "design_company_icon"
 			spriteType = "GFX_idea_porsche"
-			position = { x = 461 y = 382 }
+			position = { x = 14 y = 196 }
 		}
 
 		# right hand side stats

@@ -1978,6 +1978,7 @@ equipment_modules = {
 			breakthrough = 2
 		}
 		xp_cost = 0
+	}
 
 	secondary_turret_close_support_gun = {
 		abbreviation = "tcs"
