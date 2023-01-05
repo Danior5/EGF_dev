@@ -571,6 +571,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
 				}
 			}
 			suspension_type_slot = {
@@ -681,6 +682,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
 				}
 			}
 			suspension_type_slot = {
@@ -1012,6 +1014,8 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
 				}
 			}
 			suspension_type_slot = {
@@ -1122,6 +1126,8 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
 				}
 			}
 			suspension_type_slot = {
@@ -1243,13 +1249,16 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
+					tank_modern_turret_type
+
 				}
 			}
 			suspension_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
-					tank_non_tracked_suspension_type
 				}
 			}
 
@@ -1467,13 +1476,15 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
+					tank_super_heavy_turret_type
 				}
 			}
 			suspension_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
-					tank_non_tracked_suspension_type
 				}
 			}
 
