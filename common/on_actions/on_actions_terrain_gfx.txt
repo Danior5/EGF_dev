@@ -22,6 +22,24 @@ on_actions = {
 					province = { id = 7192 }
 				}
 			}
+			382 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_griffenheim }
+					province = { id = 10537 }
+				}
+			}
+			68 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_cloudsdale }
+					province = { id = 11672 }
+				}
+			}
+			2 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_ponyville }
+					province = { id = 9741 }
+				}
+			}
 		}
 	}
 }

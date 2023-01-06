@@ -24,5 +24,22 @@ spriteTypes = {
 		name = "GFX_terrain_griffonstone"
 		textureFile = "gfx/interface/terrains/terrain_griffonstone.png"
 	}
+	
+	# GRIFFONIAN EMPIRE GRIFFENHEIM
+	spriteType = {
+		name = "GFX_terrain_griffenheim"
+		textureFile = "gfx/interface/terrains/terrain_griffenheim.png"
+	}
+	# EQUESTRIA CLOUDSDALE
+
+	spriteType = {
+		name = "GFX_terrain_cloudsdale"
+		textureFile = "gfx/interface/terrains/terrain_cloudsdale.png"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_ponyville"
+		textureFile = "gfx/interface/terrains/terrain_ponyville.png"
+	}
 }
 
