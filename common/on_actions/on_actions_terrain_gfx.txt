@@ -1,0 +1,28 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			3 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_canterlot }
+					province = { id = 179 }
+				}
+			}
+
+			153 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_stalliongrad }
+					province = { id = 488 }
+				}
+			}
+
+			389 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_griffonstone }
+					province = { id = 7192 }
+				}
+			}
+		}
+	}
+}
+

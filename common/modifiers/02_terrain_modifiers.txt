@@ -1,0 +1,4 @@
+# Modifiers for unique terrain GFX
+terrain_canterlot = { }
+terrain_stalliongrad = { }
+terrain_griffonstone = { }

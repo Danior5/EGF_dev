@@ -1,0 +1,28 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_city_bg_paris"
+	#	textureFile = "gfx/interface/city_bg_paris.png"
+	#}
+
+	# CITIES ----------------------------------------------------------------------------------------------------
+
+	# EQUESTRIA CANTERLOT
+
+	spriteType = {
+		name = "GFX_terrain_canterlot"
+		textureFile = "gfx/interface/terrains/terrain_canterlot.png"
+	}
+	# STALLIONGRAD STALLIONGRAD
+
+	spriteType = {
+		name = "GFX_terrain_stalliongrad"
+		textureFile = "gfx/interface/terrains/terrain_stalliongrad.png"
+	}
+	# GRIFFONSTONE GRIFFONSTONE
+
+	spriteType = {
+		name = "GFX_terrain_griffonstone"
+		textureFile = "gfx/interface/terrains/terrain_griffonstone.png"
+	}
+}
+
