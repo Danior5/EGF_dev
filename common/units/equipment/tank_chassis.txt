@@ -875,6 +875,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			category = tank_secondary_turret
+			count < 5
+		}
+
+		module_count_limit = {
 			module = amphibious_drive
 			count < 2
 		}
