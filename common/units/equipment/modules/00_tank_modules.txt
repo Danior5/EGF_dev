@@ -80,12 +80,27 @@ equipment_modules = {
 		add_stats = {
 			defense = 2
 			breakthrough = 2
-			reliability = -0.1
+			reliability = -0.15
 		}
 		xp_cost = 0
 		multiply_stats = {
-			build_cost_ic = -0.2
+			build_cost_ic = -0.1
 			hardness = -0.1
+		}
+	}
+
+	tank_welded_armor = {
+		abbreviation = "wel"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 0
+		add_stats = {
+			defense = 2
+			breakthrough = 2
+		}
+		dismantle_cost_ic = 1
+		multiply_stats = {
+			armor_value = 0.5
 		}
 	}
 
@@ -101,26 +116,27 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		multiply_stats = {
-			build_cost_ic = 0.05
-			armor_value = 0.5
+			build_cost_ic = 0.1
+			armor_value = 0.6
 			hardness = 0.1
 		}
 	}
 
-	tank_welded_armor = {
-		abbreviation = "wel"
+	tank_face_hardened_armor = {
+		abbreviation = "face"
 		category = tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
-		xp_cost = 0
+
 		add_stats = {
-			defense = 2
-			breakthrough = 2
+			defense = 6
+			breakthrough = 6
 		}
 		dismantle_cost_ic = 1
+		xp_cost = 0
 		multiply_stats = {
-			build_cost_ic = -0.1
-			armor_value = 0.25
-
+			build_cost_ic = 0.1
+			armor_value = 0.6
+			hardness = -0.3
 		}
 	}
 
@@ -175,6 +191,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 2
 			breakthrough = 4
+			reliability = -0.1
 		}
 		dismantle_cost_ic  = 2
 
@@ -216,6 +233,7 @@ equipment_modules = {
 
 		multiply_stats =  {
 			build_cost_ic = -0.1
+			hardness = -0.1
 			maximum_speed = 0.1
 		}
 
@@ -316,6 +334,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			breakthrough = -0.25
+			build_cost_ic = -0.1
 		}
 
 		can_convert_from = {
@@ -422,6 +441,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			breakthrough = -0.25
+			build_cost_ic = -0.1
 		}
 
 		can_convert_from = {
@@ -517,6 +537,7 @@ equipment_modules = {
 		multiply_stats = {
 			breakthrough = -0.25
 			hard_attack = 0.35
+			build_cost_ic = -0.1
 		}
 
 		can_convert_from = {
@@ -1067,63 +1088,6 @@ equipment_modules = {
 		}
 	}
 
-	tank_rocket_launcher = {
-		abbreviation = "rk1"
-		category = tank_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = artillery
-		forbid_equipment_type_exact_match = armor
-
-		add_stats = {
-			soft_attack = 25
-			hard_attack = 1
-			ap_attack = 2
-			build_cost_ic = 4
-			maximum_speed = -0.1
-			reliability = -0.1
-			breakthrough = -4
-		}
-		dismantle_cost_ic = 1
-		xp_cost = 0
-		can_convert_from = {
-			module_category = tank_medium_main_armament
-			convert_cost_ic = 4
-		}
-
-		build_cost_resources = {
-			tungsten = 2
-			steel = 1
-		}
-	}
-
-	tank_rocket_launcher_2 = {
-		abbreviation = "rk2"
-		category = tank_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = artillery
-		parent = tank_rocket_launcher
-		forbid_equipment_type_exact_match = armor
-		add_stats = {
-			soft_attack = 35
-			hard_attack = 1
-			ap_attack = 2
-			build_cost_ic = 5
-			maximum_speed = -0.2
-			reliability = -0.1
-			breakthrough = -4
-		}
-		dismantle_cost_ic = 1
-		xp_cost = 0
-		can_convert_from = {
-			module_category = tank_medium_main_armament
-			convert_cost_ic = 5
-		}
-		build_cost_resources = {
-			tungsten = 2
-			steel = 1
-		}
-	}
-
 	tank_high_velocity_cannon = {
 		abbreviation = "hv1"
 		category = tank_small_main_armament
@@ -1462,6 +1426,8 @@ equipment_modules = {
 			breakthrough = 2
 		}
 		xp_cost = 0
+		multiply_stats = {
+		}
 	}
 
 	secondary_turret_close_support_gun = {
@@ -1472,7 +1438,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 9
 			hard_attack = 4
-			build_cost_ic = 5
+			build_cost_ic = 6
 			reliability = -0.2
 			breakthrough = 2
 		}
@@ -1682,5 +1648,32 @@ equipment_modules = {
 			build_cost_ic = 0.2
 		}
 	}
-	
+
+	tank_rocket_launcher = {
+		abbreviation = "rk1"
+		category = tank_rocket_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 9
+			build_cost_ic = 1
+			breakthrough = -5
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 0
+	}
+
+	tank_rocket_launcher_2 = {
+		abbreviation = "rk2"
+		category = tank_rocket_module
+		sfx = sfx_ui_sd_module_turret
+		parent = tank_rocket_launcher
+		add_stats = {
+			soft_attack = 13
+			build_cost_ic = 2
+			breakthrough = -6
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 0
+	}
 }
