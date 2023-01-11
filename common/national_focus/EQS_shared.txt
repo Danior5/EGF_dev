@@ -1839,7 +1839,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus War_Plan"
 		if = {
-			limit = { has_war = yes }
+			limit = { has_war_with = CHN }
 			country_event = equestria.152
 			if = {
 				limit = {
