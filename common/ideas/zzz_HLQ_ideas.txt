@@ -381,6 +381,7 @@ ideas = {
 				MONTHLY_POPULATION = 0.35
 				political_power_gain = 0.10
 				stability_factor = 0.05
+				weekly_manpower = 2000
 			}
 		}
 	}

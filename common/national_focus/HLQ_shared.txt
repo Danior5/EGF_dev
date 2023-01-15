@@ -1806,7 +1806,7 @@
 	
 	shared_focus = {
 		id = HLQ_absorb_reformisten_remnants
-		icon = GFX_goal_offensive_army
+		icon = GFX_COS_Ferrer_Coup
 		x = 2
 		y = 1
 		relative_position_id = HLQ_affirm_oaths
