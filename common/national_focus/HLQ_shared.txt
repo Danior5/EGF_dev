@@ -1783,78 +1783,9 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_wholesale_education_reforms
-		icon = GFX_goal_double_research
-		x = -1
-		y = 1
-		relative_position_id = HLQ_status_quo
-		cost = 6.50
-		prerequisite = { focus = HLQ_status_quo }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_wholesale_education_reforms"
-			custom_effect_tooltip = HLQ_education_tp
-			if = {
-			    limit = {
-				    amount_research_slots < 5
-			    }
-			    add_research_slot = 1
-			    custom_effect_tooltip = CZE_war_college_effect_2_tt
-		    }
-			hidden_effect = {
-				if = {
-					limit = { 
-					    has_country_flag = HLQ_the_people 
-					}
-					country_event = { 
-					    days = 160 id = hellquill.20 
-					}
-				}
-				else = {
-					country_event = { 
-					    days = 240 
-					    id = hellquill.20
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	
-	shared_focus = {
-		id = HLQ_the_military_frontier
-		icon = GFX_COS_Ferrer_Coup
-		x = 0
-		y = 3
-		relative_position_id = HLQ_status_quo
-		cost = 6.50
-		prerequisite = { focus = HLQ_affirm_oaths }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_military_frontier"
-			add_ideas = HLQ_the_military_frontier_idea
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_ARMY_BONUS }
-	}
-	
-	shared_focus = {
 		id = HLQ_affirm_oaths
 		icon = GFX_goal_agency
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = HLQ_status_quo
 		cost = 6.50
@@ -1862,6 +1793,7 @@
 		available = {
 			has_government = neutrality
 		}
+		mutually_exclusive = { focus = HLQ_modern_knights }
 
 		ai_will_do = {
 			factor = 100
@@ -1894,39 +1826,13 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_centralising_the_order
-		icon = GFX_goal_national_arsenal
-		x = 1
+		id = HLQ_absorb_reformisten_remnants
+		icon = GFX_goal_offensive_army
+		x = 2
 		y = 1
 		relative_position_id = HLQ_affirm_oaths
 		cost = 6.50
-		prerequisite = { focus = HLQ_affirm_oaths }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_centralising_the_order"
-			swap_ideas = {
-			    remove_idea = HLQ_knights_1
-				add_idea = HLQ_knights_5
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
-	}
-	
-	shared_focus = {
-		id = HLQ_absorb_reformisten_remnants
-		icon = GFX_goal_offensive_army
-		x = -1
-		y = 2
-		relative_position_id = HLQ_centralising_the_order
-		cost = 6.50
-		prerequisite = { focus = HLQ_centralising_the_order }
+		prerequisite = { focus = HLQ_affirm_oaths focus = HLQ_modern_knights }
 		available = {
 			has_government = neutrality
 		}
@@ -1950,36 +1856,35 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_standardise_rectuirment_practices
-		icon = GFX_goal_authority
+		id = HLQ_honor_and_duty
+		icon = GFX_goal_agency
 		x = 0
 		y = 1
-		relative_position_id = HLQ_centralising_the_order
+		relative_position_id = HLQ_affirm_oaths
 		cost = 6.50
-		prerequisite = { focus = HLQ_centralising_the_order }
+		prerequisite = { focus = HLQ_affirm_oaths }
 		available = {
 			has_government = neutrality
 		}
+		mutually_exclusive = { focus = HLQ_affirm_oaths }
 
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_standardise_rectuirment_practices"
-			add_ideas = HLQ_standardise_rectuirment_practices_idea
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_honor_and_duty"
 		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 	}
 	
 	shared_focus = {
 		id = HLQ_pony_recruitment
 		icon = GFX_goal_derpy_conscription
 		x = 1
-		y = 2
-		relative_position_id = HLQ_centralising_the_order
+		y = 1
+		relative_position_id = HLQ_honor_and_duty
 		cost = 6.50
-		prerequisite = { focus = HLQ_standardise_rectuirment_practices }
+		prerequisite = { focus = HLQ_honor_and_duty }
 		available = {
 			has_government = neutrality
 		}
@@ -2006,14 +1911,63 @@
 	}
 	
 	shared_focus = {
+		id = HLQ_centralising_the_order
+		icon = GFX_goal_national_arsenal
+		x = -1
+		y = 1
+		relative_position_id = HLQ_honor_and_duty
+		cost = 6.50
+		prerequisite = { focus = HLQ_honor_and_duty }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_centralising_the_order"
+			swap_ideas = {
+			    remove_idea = HLQ_knights_1
+				add_idea = HLQ_knights_5
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
+	}
+	
+	shared_focus = {
+		id = HLQ_standardise_rectuirment_practices
+		icon = GFX_goal_authority
+		x = 1
+		y = 1
+		relative_position_id = HLQ_centralising_the_order
+		cost = 6.50
+		prerequisite = { focus = HLQ_centralising_the_order }
+		prerequisite = { focus = HLQ_pony_recruitment }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_standardise_rectuirment_practices"
+			add_ideas = HLQ_standardise_rectuirment_practices_idea
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+	
+	shared_focus = {
 		id = HLQ_segregated_military
 		icon = GFX_goal_military_academy
 		x = 0
-		y = 3
-		relative_position_id = HLQ_centralising_the_order
+		y = 1
+		relative_position_id = HLQ_standardise_rectuirment_practices
 		cost = 6.50
-		prerequisite = { focus = HLQ_absorb_reformisten_remnants }
-		prerequisite = { focus = HLQ_pony_recruitment }
+		prerequisite = { focus = HLQ_standardise_rectuirment_practices }
 		available = {
 			has_government = neutrality
 		}
@@ -2044,6 +1998,136 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+	}
+	
+	shared_focus = {
+		id = HLQ_modern_knights
+		icon = GFX_goal_agency
+		x = 2
+		y = 1
+		relative_position_id = HLQ_status_quo
+		cost = 6.50
+		prerequisite = { focus = HLQ_status_quo }
+		available = {
+			has_government = neutrality
+		}
+		mutually_exclusive = { focus = HLQ_affirm_oaths }
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_modern_knights"
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+	}
+	
+	shared_focus = {
+		id = HLQ_reform_class_system
+		icon = GFX_goal_agency
+		x = 0
+		y = 1
+		relative_position_id = HLQ_modern_knights
+		cost = 6.50
+		prerequisite = { focus = HLQ_modern_knights }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reform_class_system"
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+	}
+	
+	shared_focus = {
+		id = HLQ_steel_legion
+		icon = GFX_goal_agency
+		x = -1
+		y = 1
+		relative_position_id = HLQ_reform_class_system
+		cost = 6.50
+		prerequisite = { focus = HLQ_reform_class_system }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_steel_legion"
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY  }
+	}
+	
+	shared_focus = {
+		id = HLQ_banish_ponies
+		icon = GFX_goal_agency
+		x = 1
+		y = 1
+		relative_position_id = HLQ_reform_class_system
+		cost = 6.50
+		prerequisite = { focus = HLQ_reform_class_system }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_banish_ponies"
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY  }
+	}	
+	
+	shared_focus = {
+		id = HLQ_new_generation_of_landsknechts
+		icon = GFX_goal_agency
+		x = 1
+		y = 1
+		relative_position_id = HLQ_steel_legion
+		cost = 6.50
+		prerequisite = { focus = HLQ_steel_legion }
+		prerequisite = { focus = HLQ_banish_ponies }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_new_generation_of_landsknechts"
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY  }
+	}
+	
+	shared_focus = {
+		id = HLQ_the_military_frontier
+		icon = GFX_COS_Ferrer_Coup
+		x = 0
+		y = 4
+		relative_position_id = HLQ_status_quo
+		cost = 6.50
+		prerequisite = { focus = HLQ_affirm_oaths }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_military_frontier"
+			add_ideas = HLQ_the_military_frontier_idea
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 	
 	### Black Cloaks ###
@@ -3575,10 +3659,10 @@
 		id = HLQ_prepare_the_crusade
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -5
-		y = 2
+		y = 1
 		relative_position_id = HLQ_new_tactics
 		cost = 6.50
-		prerequisite = { focus = HLQ_new_tactics }
+		prerequisite = { focus = HLQ_new_tactics focus = HLQ_new_generation_of_landsknechts }
 		available = {
 		    has_government = fascism
 		}
@@ -3602,7 +3686,12 @@
 		y = 3
 		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
-		prerequisite = { focus = HLQ_the_moderates focus = HLQ_the_hardliners }
+		prerequisite = {
+			focus = HLQ_affirm_oaths
+			focus = HLQ_modern_knights
+			focus = HLQ_the_hardliners
+			focus = HLQ_the_moderates
+		}
 		available = {
 		    has_government = fascism
 		}
