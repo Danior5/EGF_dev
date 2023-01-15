@@ -1750,7 +1750,7 @@
 	shared_focus = {
 		id = HLQ_status_quo
 		icon = GFX_goal_ideology_authoritarian_democrat
-		x = -6
+		x = -7
 		y = 5
 		relative_position_id = HLQ_black_cloaks
 		cost = 5.00
@@ -1829,244 +1829,13 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_build_the_ostwall
-		icon = GFX_goal_nested_fortifications
-		x = 0
-		y = 2
-		relative_position_id = HLQ_status_quo
-		cost = 6.50
-		prerequisite = { focus = HLQ_wholesale_education_reforms }
-		prerequisite = { focus = HLQ_affirm_oaths }
-		available = {
-			has_government = neutrality
-			634 = { 
-			    is_owned_and_controlled_by = ROOT 
-			}
-			537 = { 
-			    is_owned_and_controlled_by = ROOT 
-			}
-			552 = { 
-			    is_owned_and_controlled_by = ROOT 
-			}
-		}
-	
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_build_the_ostwall"
-			if = {
-				limit = { 
-				    has_country_flag = HLQ_army_stuff 
-				}
-				634 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 1845
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10608
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 12694
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 8192
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 8251
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 2179
-						instant_build = yes
-					}
-				}
-				537 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10678
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 7421
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 12947
-						instant_build = yes
-					}
-				}
-				552 = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11828
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11775
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 978
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11770
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 10083
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 7070
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				634 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 1845
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10608
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12694
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 8192
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 8251
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 2179
-						instant_build = yes
-					}
-				}
-				537 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10678
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7421
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12947
-						instant_build = yes
-					}
-				}
-				552 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11828
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11775
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 978
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11770
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10083
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7070
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		search_filters = { FOCUS_FILTER_ARMY_BONUS }
-	}
-	
-	shared_focus = {
 		id = HLQ_the_military_frontier
 		icon = GFX_COS_Ferrer_Coup
 		x = 0
 		y = 3
 		relative_position_id = HLQ_status_quo
 		cost = 6.50
-		prerequisite = { focus = HLQ_build_the_ostwall }
+		prerequisite = { focus = HLQ_affirm_oaths }
 		available = {
 			has_government = neutrality
 		}
@@ -2275,42 +2044,6 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-	}
-	
-	shared_focus = {
-		id = HLQ_shield_of_griffonkind
-		icon = GFX_goal_ideology_national_populist
-		x = 0
-		y = 3
-		relative_position_id = HLQ_the_military_frontier
-		cost = 6.50
-		prerequisite = { focus = HLQ_the_military_frontier }
-		prerequisite = { focus = HLQ_segregated_military }
-		available = {
-			has_government = neutrality
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_segregated_military"
-			add_ideas = HLQ_shield_of_griffonkind_idea
-			create_faction = HLQ_neutrality_faction
-			hidden_effect = {
-			    if = {
-					limit = { 
-						has_war = no 
-					}
-					country_event = { 
-						id = hellquill.170 
-						days = 30 
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
 	}
 	
 	### Black Cloaks ###
@@ -3179,7 +2912,7 @@
 	shared_focus = {
 		id = HLQ_the_kingdom_of_hellquill
 		icon = GFX_goal_The_Reformisten_Supremacy
-		x = 6
+		x = 7
 		y = 5
 		relative_position_id = HLQ_black_cloaks
 		cost = 5.00
@@ -3219,7 +2952,7 @@
 	shared_focus = {
 		id = HLQ_the_moderates
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 5.00
@@ -3251,11 +2984,11 @@
 	shared_focus = {
 		id = HLQ_new_judicial_code
 		icon = GFX_goal_DOM_The_Trial
-		x = -1
-		y = 2
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = -2
+		y = 1
+		relative_position_id = HLQ_the_moderates
 		cost = 6.50
-		prerequisite = { focus = HLQ_the_moderates }
+		prerequisite = { focus = HLQ_the_moderates focus = HLQ_the_hardliners }
 		available = {
 			has_government = fascism
 		}
@@ -3275,84 +3008,13 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_curtail_the_SG
-		icon = GFX_goal_split_helmet
-		x = -1
-		y = 3
-		relative_position_id = HLQ_the_kingdom_of_hellquill
-		cost = 6.50
-		prerequisite = { focus = HLQ_new_judicial_code }
-		available = {
-			has_government = fascism
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_curtail_the_SG"
-			country_event = { 
-			    id = hellquill.52 
-			}
-		    hidden_effect = {
-		    	if = {
-					limit = { has_country_flag = HLQ_kreditor_gang }
-		    		country_event = { id = hellquill.236 days = 30 }
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	
-	shared_focus = {
-		id = HLQ_pony_collaborators
-		icon = GFX_goal_derpy_conscription
-		x = -1
-		y = 4
-		relative_position_id = HLQ_the_kingdom_of_hellquill
-		cost = 6.50
-		prerequisite = { focus = HLQ_curtail_the_SG }
-		available = {
-			has_government = fascism
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_pony_collaborators"
-			add_political_power = 50
-			swap_ideas = {
-			    remove_idea = HLQ_pony_minorities_2
-			    add_idea = HLQ_pony_minorities_3
-			}
-			if = {
-				limit = { 
-				    NOT = { 
-					    has_tech = tech_pegasi 
-					} 
-				}
-				set_technology = { 
-				    tech_pegasi = 1 
-				}
-				fix_weapon_techs = yes
-			}
-			set_technology = {
-				penal_infantry = 1
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
-	}
-	
-	shared_focus = {
 		id = HLQ_reform_the_neuland_act
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
-		x = -1
-		y = 5
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = 0
+		y = 2
+		relative_position_id = HLQ_new_judicial_code
 		cost = 6.50
-		prerequisite = { focus = HLQ_pony_collaborators }
+		prerequisite = { focus = HLQ_new_judicial_code }
 		available = {
 			537 = { is_owned_and_controlled_by = ROOT }
 			553 = { is_owned_and_controlled_by = ROOT }
@@ -3405,9 +3067,361 @@
 	}
 	
 	shared_focus = {
+		id = HLQ_pony_collaborators
+		icon = GFX_goal_derpy_conscription
+		x = 0
+		y = 1
+		relative_position_id = HLQ_the_moderates
+		cost = 6.50
+		prerequisite = { focus = HLQ_the_moderates }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_pony_collaborators"
+			add_political_power = 50
+			swap_ideas = {
+			    remove_idea = HLQ_pony_minorities_2
+			    add_idea = HLQ_pony_minorities_3
+			}
+			if = {
+				limit = { 
+				    NOT = { 
+					    has_tech = tech_pegasi 
+					} 
+				}
+				set_technology = { 
+				    tech_pegasi = 1 
+				}
+				fix_weapon_techs = yes
+			}
+			set_technology = {
+				penal_infantry = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
+	}
+	
+	shared_focus = {
+		id = HLQ_beasts_of_labour
+		icon = GFX_goal_industry_air
+		x = -1
+		y = 1
+		relative_position_id = HLQ_pony_collaborators
+		cost = 6.50
+		prerequisite = { focus = HLQ_pony_collaborators }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_beasts_of_labour"
+			swap_ideas = {
+			    remove_idea = HLQ_pony_minorities_2
+			    add_idea = HLQ_beasts_of_labour_idea
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	
+	shared_focus = {
+		id = HLQ_build_the_ostwall
+		icon = GFX_goal_nested_fortifications
+		x = 1
+		y = 1
+		relative_position_id = HLQ_pony_collaborators
+		cost = 6.50
+		prerequisite = { focus = HLQ_pony_collaborators }
+		available = {
+			has_government = neutrality
+			634 = { 
+			    is_owned_and_controlled_by = ROOT 
+			}
+			537 = { 
+			    is_owned_and_controlled_by = ROOT 
+			}
+			552 = { 
+			    is_owned_and_controlled_by = ROOT 
+			}
+		}
+	
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_build_the_ostwall"
+			if = {
+				limit = { 
+				    has_country_flag = HLQ_army_stuff 
+				}
+				634 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1845
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10608
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12694
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 8192
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 8251
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 2179
+						instant_build = yes
+					}
+				}
+				537 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10678
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7421
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12947
+						instant_build = yes
+					}
+				}
+				552 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11828
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11775
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 978
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11770
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10083
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7070
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				634 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 1845
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 10608
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 12694
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 8192
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 8251
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 2179
+						instant_build = yes
+					}
+				}
+				537 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 10678
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 7421
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 12947
+						instant_build = yes
+					}
+				}
+				552 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11828
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11775
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 978
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11770
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 10083
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 7070
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	
+	shared_focus = {
+		id = HLQ_every_griff_soldier
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 1
+		relative_position_id = HLQ_beasts_of_labour
+		cost = 5.00
+		prerequisite = { focus = HLQ_beasts_of_labour }
+		prerequisite = { focus = HLQ_build_the_ostwall }
+		mutually_exclusive = {
+		    focus = HLQ_the_moderates
+		}
+		available = {
+			always = no
+		}
+		allow_branch = {
+		    NOT = {
+				has_completed_focus = HLQ_reconciliation
+				has_completed_focus = HLQ_status_quo
+			    has_country_flag = HLQ_edler_in_control
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_every_griff_soldier"
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	
+	shared_focus = {
+		id = HLQ_shield_of_griffonkind
+		icon = GFX_goal_ideology_national_populist
+		x = 0
+		y = 1
+		relative_position_id = HLQ_every_griff_soldier
+		cost = 6.50
+		prerequisite = { focus = HLQ_every_griff_soldier }
+		available = {
+			has_government = neutrality
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_segregated_military"
+			add_ideas = HLQ_shield_of_griffonkind_idea
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
+	}
+	
+	shared_focus = {
 		id = HLQ_the_hardliners
 		icon = GFX_focus_ger_reichskommisariats
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 5.00
@@ -3439,9 +3453,9 @@
 	shared_focus = {
 		id = HLQ_total_control
 		icon = GFX_goal_purge_opposition
-		x = 1
-		y = 2
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = 0
+		y = 1
+		relative_position_id = HLQ_the_hardliners
 		cost = 6.50
 		prerequisite = { focus = HLQ_the_hardliners }
 		available = {
@@ -3478,9 +3492,9 @@
 	shared_focus = {
 		id = HLQ_reform_the_secret_police
 		icon = GFX_goal_generic_investigation
-		x = 1
-		y = 3
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = -1
+		y = 1
+		relative_position_id = HLQ_total_control
 		cost = 6.50
 		prerequisite = { focus = HLQ_total_control }
 		available = {
@@ -3513,39 +3527,36 @@
 	}
 	
 	shared_focus = {
-		id = HLQ_beasts_of_labour
-		icon = GFX_goal_industry_air
+		id = HLQ_support_the_push
+		icon = GFX_goal_artillery_factories
 		x = 1
-		y = 4
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 1
+		relative_position_id = HLQ_total_control
 		cost = 6.50
-		prerequisite = { focus = HLQ_reform_the_secret_police }
+		prerequisite = { focus = HLQ_total_control }
 		available = {
-		    has_government = fascism
+			has_government = fascism
 		}
 
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_beasts_of_labour"
-			swap_ideas = {
-			    remove_idea = HLQ_pony_minorities_2
-			    add_idea = HLQ_beasts_of_labour_idea
-			}
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_support_the_push"
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 	
 	shared_focus = {
-		id = HLQ_test_subjects
+		id = HLQ_new_tactics
 		icon = GFX_goal_generic_secret_documents
 		x = 1
-		y = 5
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		y = 1
+		relative_position_id = HLQ_reform_the_secret_police
 		cost = 6.50
-		prerequisite = { focus = HLQ_beasts_of_labour }
+		prerequisite = { focus = HLQ_reform_the_secret_police }
+		prerequisite = { focus = HLQ_support_the_push }
 		available = {
 		    has_government = fascism
 		}
@@ -3554,21 +3565,20 @@
 			factor = 100
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_test_subjects"
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_new_tactics"
 			add_ideas = HLQ_pony_test_subjects
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 	
 	shared_focus = {
 		id = HLQ_prepare_the_crusade
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 0
-		y = 6
-		relative_position_id = HLQ_the_kingdom_of_hellquill
+		x = -5
+		y = 2
+		relative_position_id = HLQ_new_tactics
 		cost = 6.50
-		prerequisite = { focus = HLQ_test_subjects focus = HLQ_reform_the_neuland_act }
+		prerequisite = { focus = HLQ_new_tactics }
 		available = {
 		    has_government = fascism
 		}
@@ -3887,7 +3897,7 @@
 	shared_focus = {
 		id = HLQ_proper_cadets
 		icon = GFX_focus_generic_military_mission
-		x = -1
+		x = -2
 		y = 5
 		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
@@ -3993,7 +4003,7 @@
 		id = HLQ_bring_settlers
 		icon = GFX_goal_agricultural_aid
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
 		prerequisite = { focus = HLQ_call_of_the_east }
@@ -4086,7 +4096,7 @@
 	shared_focus = {
 		id = HLQ_war_industry
 		icon = GFX_r56_goal_FRA_alliance_with_industrialists
-		x = 1
+		x = 2
 		y = 5
 		relative_position_id = HLQ_longsword_destroy
 		cost = 6.50
