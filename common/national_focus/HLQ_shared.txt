@@ -3,27 +3,6 @@
 		icon = GFX_goal_COS_Peace
 		x = 14
 		y = 0
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = HLQ_reconciliation
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = HLQ_status_quo
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = HLQ_black_cloaks
-			}
-		}
 		cost = 6.50
 		available = { always = no }
 
@@ -1847,8 +1826,8 @@
 				popularity = 0.05 
 			}
 			swap_ideas = {
-			    remove_idea = HLQ_reformists_5
-				add_idea = HLQ_reformists_6
+			    remove_idea = HLQ_reformists_2
+				add_idea = HLQ_reformists_3
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
@@ -2024,7 +2003,7 @@
 	
 	shared_focus = {
 		id = HLQ_reform_class_system
-		icon = GFX_goal_agency
+		icon = GFX_SG_camps
 		x = 0
 		y = 1
 		relative_position_id = HLQ_modern_knights
@@ -2045,7 +2024,7 @@
 	
 	shared_focus = {
 		id = HLQ_steel_legion
-		icon = GFX_goal_agency
+		icon = GFX_tank_H
 		x = -1
 		y = 1
 		relative_position_id = HLQ_reform_class_system
@@ -2066,7 +2045,7 @@
 	
 	shared_focus = {
 		id = HLQ_banish_ponies
-		icon = GFX_goal_agency
+		icon = GFX_goal_pony_passport	
 		x = 1
 		y = 1
 		relative_position_id = HLQ_reform_class_system
@@ -2087,7 +2066,7 @@
 	
 	shared_focus = {
 		id = HLQ_new_generation_of_landsknechts
-		icon = GFX_goal_agency
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 		x = 1
 		y = 1
 		relative_position_id = HLQ_steel_legion
@@ -4823,7 +4802,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
     }
 	
-		shared_focus = {
+	shared_focus = {
 		id = HLQ_tungsten_industry
 		icon = GFX_focus_generic_tungsten
 		x = -1
