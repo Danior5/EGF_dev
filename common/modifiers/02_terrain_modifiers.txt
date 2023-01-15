@@ -1,0 +1,9 @@
+# Modifiers for unique terrain GFX
+terrain_canterlot = { }
+terrain_stalliongrad = { }
+terrain_griffonstone = { }
+terrain_griffenheim = { }
+terrain_cloudsdale = { }
+terrain_ponyville = { }
+terrain_aquila = { }
+terrain_crystal_city = { }

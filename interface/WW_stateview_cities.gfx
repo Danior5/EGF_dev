@@ -1,0 +1,65 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_city_bg_paris"
+	#	textureFile = "gfx/interface/city_bg_paris.png"
+	#}
+
+	# CITIES ----------------------------------------------------------------------------------------------------
+
+	# EQUESTRIA CANTERLOT
+
+	spriteType = {
+		name = "GFX_terrain_canterlot"
+		textureFile = "gfx/interface/terrains/terrain_canterlot.png"
+	}
+	
+	# STALLIONGRAD STALLIONGRAD
+
+	spriteType = {
+		name = "GFX_terrain_stalliongrad"
+		textureFile = "gfx/interface/terrains/terrain_stalliongrad.png"
+	}
+	
+	# GRIFFONSTONE GRIFFONSTONE
+
+	spriteType = {
+		name = "GFX_terrain_griffonstone"
+		textureFile = "gfx/interface/terrains/terrain_griffonstone.png"
+	}
+
+	# GRIFFONIAN EMPIRE GRIFFENHEIM
+	
+	spriteType = {
+		name = "GFX_terrain_griffenheim"
+		textureFile = "gfx/interface/terrains/terrain_griffenheim.png"
+	}
+	
+	# EQUESTRIA CLOUDSDALE
+
+	spriteType = {
+		name = "GFX_terrain_cloudsdale"
+		textureFile = "gfx/interface/terrains/terrain_cloudsdale.png"
+	}
+	
+	# EQUESTRIA PONYVILLE
+	
+	spriteType = {
+		name = "GFX_terrain_ponyville"
+		textureFile = "gfx/interface/terrains/terrain_ponyville.png"
+	}
+
+	# AQUILEIA AQUILA
+	
+	spriteType = {
+		name = "GFX_terrain_aquila"
+		textureFile = "gfx/interface/terrains/terrain_aquila.png"
+	}
+	
+	# CRYSTAL EMPIRE CRYSTAL CITY 
+	
+	spriteType = {
+		name = "GFX_terrain_crystal_city"
+		textureFile = "gfx/interface/terrains/terrain_crystal_city.png"
+	}
+}
+

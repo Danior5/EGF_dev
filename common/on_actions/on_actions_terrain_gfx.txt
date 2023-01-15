@@ -1,0 +1,58 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			3 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_canterlot }
+					province = { id = 179 }
+				}
+			}
+
+			153 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_stalliongrad }
+					province = { id = 488 }
+				}
+			}
+
+			389 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_griffonstone }
+					province = { id = 7192 }
+				}
+			}
+			382 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_griffenheim }
+					province = { id = 10537 }
+				}
+			}
+			68 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_cloudsdale }
+					province = { id = 11672 }
+				}
+			}
+			2 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_ponyville }
+					province = { id = 9741 }
+				}
+			}
+			377 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_aquila }
+					province = { id = 3164 }
+				}
+			}
+			344 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_crystal_city }
+					province = { id = 489 }
+				}
+			}
+		}
+	}
+}
+

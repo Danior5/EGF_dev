@@ -24,8 +24,10 @@ ideas = {
 			picture = HLQ_knights
 			modifier = {
 				army_attack_factor = 0.1
-				army_speed_factor = 0.1
-				no_supply_grace	= 48.0
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.1
+				no_supply_grace	= 24.0
+				planning_speed = 0.5
 			}
 		}
 		WW_JER_counteroffensive = {
@@ -71,6 +73,19 @@ ideas = {
 				max_dig_in = 5
 			}
 		}
+		WW_citadel_fallen = {
+			allowed = { 
+				always = yes 
+			}
+
+			removal_cost = -1
+			picture = SOV_factionalism_modifier
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				custom_modifier_tooltip = WW_citadel_fallen_tt
+			}
+		}
 		WW_CHN_core_buff = {
 			allowed = {
 				always = no
@@ -89,9 +104,9 @@ ideas = {
 			removal_cost = -1
 			picture = generic_navy_bonus
 			modifier = {
-				naval_damage_factor = 0.3
-				naval_hit_chance = 0.2
-				naval_speed_factor = 0.2
+				naval_damage_factor = 0.15
+				naval_hit_chance = 0.05
+				naval_speed_factor = 0.05
 			}
 		}
 		WW_escaped_officers = {
@@ -234,5 +249,27 @@ ideas = {
 				fuel_gain_factor = 0.5
 			}
 		}
+        WW_equus_only_trading_1 = {
+            available = {
+				always = no
+            }
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.075
+                consumer_goods_factor = -0.04
+            }
+        }
+        WW_equus_only_trading_2 = {
+            available = {
+				always = no
+            }
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                consumer_goods_factor = -0.02
+            }
+        }
 	}	
 }

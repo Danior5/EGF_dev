@@ -864,53 +864,43 @@ WW_category = {
 		
 		timeout_effect = {
 			#set_global_flag = GRI_war_immenent
-			hidden_effect = {
-				every_country = {
-					set_country_flag = big_event_custom_island_war
-				}
-			}
 			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = EQS 
-				}
 				declare_war_on = { 
 					type = annex_everything 
 					target = EQS 
 				}
 			}
-			hidden_effect = {	
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+			hidden_effect = {
+				every_country = {
+					set_country_flag = big_event_custom_island_war
+				}
+	
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
 			}
 			custom_effect_tooltip = adding_toratoratora
 		}
 		
 		complete_effect = {
-			hidden_effect = {
-				every_country = {
-					set_country_flag = big_event_custom_island_war
-				}
-			}
 			#custom_effect_tooltip = rivco_upa_merge
 			GRI = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = EQS 
-				}
 				declare_war_on = { 
 					type = annex_everything 
 					target = EQS 
 				}
 			}
 			hidden_effect = {
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 60 }}
+				every_country = {
+					set_country_flag = big_event_custom_island_war
+				}
+
+				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
 			}	
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -936,29 +926,6 @@ WW_category = {
 		fire_only_once = yes
 		
 		timeout_effect = {
-			#every_country = {
-			#set_country_flag = big_event_custom_island_war
-			#}
-			BAT = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
-			CTH = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
 			
 			BAK = { add_to_faction = HIP }		
 			LCT = { add_to_faction = HIP }
@@ -966,33 +933,10 @@ WW_category = {
 			WIT = { add_to_faction = HIP }	
 			NIM = { add_to_faction = HIP }
 			
-			WNG = { add_ideas = WW_incompetent_tanks }
+			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
 		
 		complete_effect = {
-			#every_country = {
-			#set_country_flag = big_event_custom_island_war
-			#}
-			BAT = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
-			CTH = {
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
 
 			BAK = { add_to_faction = HIP }		
 			LCT = { add_to_faction = HIP }
@@ -1000,7 +944,7 @@ WW_category = {
 			WIT = { add_to_faction = HIP }		
 			NIM = { add_to_faction = HIP }
 				
-			WNG = { add_ideas = WW_incompetent_tanks }
+			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
 	}
 	
@@ -1009,26 +953,15 @@ WW_category = {
 		allowed = {
 				original_tag = CHN
 		}
-		available = {
-			AND = {
-				date > 1011.11.1
-				date < 1012.1.1
-			}
-		}
 		activation = {
 			date > 1006.11.1
 		}
 		is_good = no
-		selectable_mission = yes
-		days_mission_timeout = 1825
+		selectable_mission = no
+		days_mission_timeout = 1765
 		fire_only_once = yes
 		
 		timeout_effect = {
-			hidden_effect = {
-				every_country = {
-					set_country_flag = big_event_custom_great_war
-				}
-			}
 			CHN = {
 				if = {
 					limit = {
@@ -1041,68 +974,16 @@ WW_category = {
 					}
 					add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
 				}
-				create_wargoal = { 
-					type = annex_everything 
-					target = EQS 
-				}
 				declare_war_on = { 
 					type = annex_everything 
 					target = EQS 
 				}
 			}
-			hidden_effect = {	
-				if = {
-					limit = {
-						NOT = {
-							has_game_rule = {
-								rule = ww_game_mode
-								option = EQS_ONLY
-							}
-						}
-					}
-					CHN = { add_ideas = WW_CHN_core_buff }
-					OLE = { add_ideas = WW_OLE_surrender_limit }
-				}
-			}
-		}
-		
-		complete_effect = {
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_great_war
 				}
-			}
-			CHN = {
-				if = {
-					limit = {
-						NOT = {
-							has_game_rule = {
-								rule = ww_game_mode
-								option = EQS_ONLY
-							}
-						}
-					}
-					add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = ww_game_mode
-							option = EQS_ONLY
-						}
-					}
-					add_timed_idea = { idea = WW_CHN_plan_east_prep_equus_only days = 120 }
-				}
-				create_wargoal = { 
-					type = annex_everything 
-					target = EQS 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = EQS 
-				}
-			}
-			hidden_effect = {	
+	
 				if = {
 					limit = {
 						NOT = {
@@ -1124,38 +1005,23 @@ WW_category = {
 		allowed = {
 				original_tag = JER
 		}
-		available = {
-			AND = {
-				date > 1012.3.1
-				date < 1012.6.1
-			}
-		}
 		activation = {
 			date > 1006.11.1
 		}
 		is_good = no
-		selectable_mission = yes
-		days_mission_timeout = 1976
+		selectable_mission = no
+		days_mission_timeout = 1884
 		fire_only_once = yes
 		
 		timeout_effect = {
+			JER = {
+				add_timed_idea = { idea = WW_tarrin_offensive  days = 90 }
+			}
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_tarrin_war
 				}
-			}
-			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
-			hidden_effect = {
+
 				BAK = { add_to_faction = EQS }
 				BAK = { add_to_faction = CRY }		
 				BAK = { add_to_faction = STG }		
@@ -1186,60 +1052,18 @@ WW_category = {
 				
 				EQC = { remove_ideas = WW_last_AC }	
 				HIP = { remove_ideas = WW_last_AC }
-				WNG = { remove_ideas = WW_incompetent_tanks }
-			}
-		}
-		
-		complete_effect = {
-			hidden_effect = {
-				every_country = {
-					set_country_flag = big_event_custom_tarrin_war
-				}
-			}
-			
-			JER = {
-				add_timed_idea = { idea = WW_tarrin_offensive  days = 60 }
-				create_wargoal = { 
-					type = annex_everything 
-					target = WNG 
-				}
-				declare_war_on = { 
-					type = annex_everything 
-					target = WNG 
-				}
-			}
-		
-			hidden_effect = {
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
+				#WNG = { remove_ideas = WW_incompetent_tanks }
 				
-				
-				GRI = { add_to_faction = BAT }
-				GRI = { add_to_faction = CTH }
-				GRI = { add_to_faction = CHN }
-				GRI = { add_to_faction = GRF }
-				GRI = { add_to_faction = PNG }
-
-				EQC = { remove_ideas = WW_last_AC }	
-				HIP = { remove_ideas = WW_last_AC }
-				WNG = { remove_ideas = WW_incompetent_tanks }
+				if = {
+					limit = {
+						WNG = {
+							has_completed_focus = WNG_tarrin_plan
+						}
+					}
+					WNG = {
+						add_timed_idea = { idea = WW_tarrin_plan days = 90 }
+					}
+				}
 			}
 		}
 	}
@@ -2047,8 +1871,12 @@ foreign_politics = {
 		}
 		visible = {
 			NOT = {
-				has_idea = TRD_trading_with_skyfall_1
-				has_idea = TRD_trading_with_skyfall_2
+				has_idea = WW_equus_only_trading_1
+				has_idea = WW_equus_only_trading_2
+			}
+			has_game_rule = {
+				rule = ww_game_mode
+				option = EQS_ONLY
 			}
 			FROM = {
 				exists = yes
@@ -2065,10 +1893,10 @@ foreign_politics = {
 			    limit = {
 				    original_tag = CHN
 				}
-				 add_ideas = TRD_trading_with_skyfall_2
+				 add_ideas = WW_equus_only_trading_2
 			}
 			else = {
-				add_ideas = TRD_trading_with_skyfall_1
+				add_ideas = WW_equus_only_trading_1
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Wingbardy Events
 ###########################
 
@@ -694,20 +694,6 @@ country_event = {
 			type = alliance
 			id = "WNG"
 			value = 200
-		}
-
-		hidden_effect = {
-
-		}
-	}
-
-	option = {
-		name = wingbardy.120.b #No
-		ai_chance = {
-			factor = 0
-		}
-		WNG = {
-			country_event = { id = wingbardy.122 hours = 6 }
 		}
 
 		hidden_effect = {
@@ -7179,7 +7165,7 @@ news_event = {
 	id = news_wingbardy.17
 	title = news_wingbardy.17.t
 	desc = news_wingbardy.17.d
-	picture = GFX_news_griffon_diplomacy
+	picture = GFX_news_two_eagles
 
 	major = yes
 
@@ -7295,7 +7281,7 @@ news_event = {
 	id = news_wingbardy.20
 	title = news_wingbardy.20.t
 	desc = news_wingbardy.20.d
-	picture = GFX_news_griffon_diplomacy
+	picture = GFX_news_two_eagles
 
 	major = yes
 

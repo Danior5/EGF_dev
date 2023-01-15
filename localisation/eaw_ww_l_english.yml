@@ -120,6 +120,9 @@ l_english:
  STG_economic_policy_1:0 "Rapid Production Economy"
  STG_economic_policy_2:0 "Semi-Rapid Production Economy"
  WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law if completed after March 1st 1011.§!\n "
+ WW_citadel_fallen:0 "Citadel Fallen"
+ WW_citadel_fallen_desc:0 "The Citadel of Communism has been lost, if this mighty fortress has fallen then communism itself might be next."
+ WW_citadel_fallen_tt:0 "Skill: §R-100%§!"
  
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
@@ -170,3 +173,11 @@ l_english:
  
  WW_Nova_Old_Frontier_Buff:0 "Old Frontier's Self-Sufficiency"
  WW_Nova_New_Frontier_Buff:0 "New Frontier's Ingenuity"
+
+ troop_compartment:1 "Troop Compartment"
+ troop_compartment_desc:0 "A large space inside the vehicle designed to house troops. These additional troops grant flexibility, but the cost of fitting this space within the vehicle is high."
+
+ EQ_MOD_SLOT_special_type_slot_5_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"
+ EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Special Features"

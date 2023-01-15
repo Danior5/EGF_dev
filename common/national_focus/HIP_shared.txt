@@ -278,7 +278,7 @@
 				remove_idea = HIP_long_distance_friendship_idea
 				add_idea = HIP_leand_lease_idea
 			}
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 	}
 	shared_focus = {
@@ -1950,6 +1950,10 @@
 
 		completion_reward = {
 			add_ideas = HIP_industrial_mobilisation_plan_1
+			add_timed_idea = {
+				idea = HIP_industrial_buildup
+				days = 180
+			}
 		}
 	}
 	shared_focus = {
@@ -20577,9 +20581,6 @@ shared_focus = {
 
 		available = {
 			num_of_civilian_factories > 25
-			NOT = {
-				has_idea = isolation
-			}
 		}
 		
 		bypass = {

@@ -1,219 +1,111 @@
-military_training_category = {
-	WW_WNG_inundate_the_water_lines = {
-
-		icon = hol_inundate_water_lines
-
+WNG_army_reorganization_category = {
+	WNG_army_reorganization_increase_decision = {
+		icon = GFX_decision_generic_army_support
 		allowed = {
 			tag = WNG
 		}
-
-		available = {
-			487 = { is_fully_controlled_by = ROOT }
-			652 = { is_fully_controlled_by = ROOT }
-			521 = { is_fully_controlled_by = ROOT }
-		}
-
-		cost = 25
-
-		fire_only_once = no
-
-		days_remove = 14
-
-		highlight_states = {
-			highlight_state_targets = { 
-				state = 487 
-				state = 652 
-				state = 521 
-			}
-			highlight_state_targets = { 
-				state = 487 
-				state = 652 
-				state = 521 
-			}
-			highlight_provinces = {
-				7639
-				9605
-				12161
-				7924
-				10414
-				4482
-				4958
-				10476
-				1991
-				10817
-				4893
-				2000
-				7560
-				10357
-
-			}
-		}
-
-		modifier = {
-		}
-
 		visible = {
-			487 = { is_fully_controlled_by = ROOT }
-			652 = { is_fully_controlled_by = ROOT }
-			521 = { is_fully_controlled_by = ROOT }
-			NOT = { has_global_flag = WW_WNG_inundation_lines_flooded }
-		}
-
-		remove_effect = {
-			if = {
-				limit = {
-					487 = { is_fully_controlled_by = ROOT }
-					652 = { is_fully_controlled_by = ROOT }
-					521 = { is_fully_controlled_by = ROOT }
-				}
-				487 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 7639
-							id = 9605
-							id = 12161
-							id = 7924
-							id = 10414
-							id = 4482
-							id = 4958
-							id = 10476
-							id = 2000
-							id = 7560
-							id = 10357
-						}
-					}
-				}
-				652 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 10817
-							id = 4893
-						}
-					}
-				}
-				521 = {
-					add_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 1991
-						}
-					}
-				}
+			has_completed_focus = WNG_finish_reorganization
+			NOT = {
+				has_idea = WW_WNG_reorganizing_army_11
 			}
-			set_global_flag = WW_WNG_inundation_lines_flooded
 		}
-
-		complete_effect = {
+		days_remove = 120
+		cost = 50
+		remove_effect = {
+			WNG_army_reorganization_increase = yes
 		}
-
 	}
-
-	WW_WNG_drain_the_water_lines = {
-
-		icon = hol_drain_water_lines
-
+	WNG_army_buff_1_decision = {
+		icon = GFX_decision_generic_army_support
 		allowed = {
 			tag = WNG
 		}
-
-		available = {
-			487 = { is_fully_controlled_by = ROOT }
-			652 = { is_fully_controlled_by = ROOT }
-			521 = { is_fully_controlled_by = ROOT }
-		}
-
-		cost = 25
-
-		fire_only_once = no
-
-		days_remove = 14
-
-		highlight_states = {
-			highlight_state_targets = { 
-				state = 487 
-				state = 652 
-				state = 521 
-			}
-			highlight_provinces = {
-				7639
-				9605
-				12161
-				7924
-				10414
-				4482
-				4958
-				10476
-				1991
-				10817
-				4893
-				2000
-				7560
-				10357
-
-			}
-		}
-		
-		modifier = {
-		}
-
 		visible = {
-			487 = { is_fully_controlled_by = ROOT }
-			652 = { is_fully_controlled_by = ROOT }
-			521 = { is_fully_controlled_by = ROOT }
-			has_global_flag = WW_WNG_inundation_lines_flooded
+			has_completed_focus = WNG_strengthen_military_research
 		}
-
-		remove_effect = {
-			if = {
-				limit = {
-					487 = { is_fully_controlled_by = ROOT }
-					652 = { is_fully_controlled_by = ROOT }
-					521 = { is_fully_controlled_by = ROOT }
-				}
-				487 = {
-					remove_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 7639
-							id = 9605
-							id = 12161
-							id = 7924
-							id = 10414
-							id = 4482
-							id = 4958
-							id = 10476
-							id = 2000
-							id = 7560
-							id = 10357
-						}
-					}
-				}
-				652 = {
-					remove_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 10817
-							id = 4893
-						}
-					}
-				}
-				521 = {
-					remove_province_modifier = {
-						static_modifiers = { flooded }
-						province = {
-							id = 1991
-						}
-					}
-				}
+		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
 			}
-			clr_global_flag = WW_WNG_inundation_lines_flooded
 		}
-
-		complete_effect = {
+		days_remove = 120
+		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
 		}
-
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_1 = 1 }
+		}
 	}
-
+	WNG_army_buff_2_decision = {
+		icon = GFX_decision_generic_army_support
+		allowed = {
+			tag = WNG
+		}
+		visible = {
+			has_completed_focus = WNG_strengthen_military_research
+		}
+		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
+			}
+		}
+		days_remove = 120
+		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_2 = 1 }
+		}
+	}
+	WNG_army_buff_3_decision = {
+		icon = GFX_decision_generic_army_support
+		allowed = {
+			tag = WNG
+		}
+		visible = {
+			has_completed_focus = WNG_strengthen_military_research
+		}
+		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
+			}
+		}
+		days_remove = 120
+		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_3 = 1 }
+		}
+	}
+	WNG_army_buff_4_decision = {
+		icon = GFX_decision_generic_army_support
+		allowed = {
+			tag = WNG
+		}
+		visible = {
+			has_completed_focus = WNG_strengthen_military_research
+		}
+		available = {
+			NOT = {
+				has_idea = WW_WNG_strengthening_military_research
+			}
+		}
+		days_remove = 120
+		cost = 50
+		modifier = {
+			industrial_capacity_factory = -0.05
+			experience_gain_army_factor = -0.05
+		}
+		remove_effect = {
+			set_technology = { WW_WNG_army_buff_4 = 1 }
+		}
+	}
 }
