@@ -879,8 +879,8 @@ ideas = {
 			picture = generic_production_bonus
 			removal_cost = -1
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.10
-				equipment_conversion_speed = 0.05
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 	}
@@ -902,10 +902,8 @@ ideas = {
 			picture = generic_research_bonus
 			removal_cost = -1
 			modifier = {
-				research_speed_factor = 0.03
-			}
-			research_bonus = {
-				electronics = 0.10
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.1
 			}
 		}
 	}
