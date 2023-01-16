@@ -1016,7 +1016,7 @@ leader_traits = {
         gain_xp = {
             temperature > 27
         }
-        cost = 500
+        cost = 250
         modifier = {
             heat_attrition_factor = -0.5
         }
