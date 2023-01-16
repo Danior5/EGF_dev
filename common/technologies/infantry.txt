@@ -1671,7 +1671,7 @@ technologies = {
 	support_weapons = {
 
 		category_heavy_infantry = {
-			defense = 0.05
+			defense = 0.15
 			breakthrough = 0.05
 		}
 
@@ -1756,7 +1756,7 @@ technologies = {
 	support_weapons2 = {
 
 		category_heavy_infantry = {
-			defense = 0.05
+			defense = 0.15
 			breakthrough = 0.05
 		}
 
@@ -1845,7 +1845,7 @@ technologies = {
 	support_weapons3 = {
 
 		category_heavy_infantry = {
-			defense = 0.05
+			defense = 0.15
 			breakthrough = 0.05
 		}
 
@@ -1936,7 +1936,7 @@ technologies = {
 	support_weapons4 = {
 
 		category_heavy_infantry = {
-			defense = 0.05
+			defense = 0.15
 			breakthrough = 0.05
 		}
 

@@ -124,7 +124,7 @@ equipments = {
 		}
 
 		#Defensive Abilities
-		defense = 22
+		defense = 33
 		breakthrough = 3
 
 		#Offensive Abilities
@@ -151,7 +151,7 @@ equipments = {
 		}
 
 		#Defensive Abilities
-		defense = 28
+		defense = 42
 		breakthrough = 4
 
 		#Offensive Abilities
@@ -181,7 +181,7 @@ equipments = {
 		}
 
 		#Defensive Abilities
-		defense = 34
+		defense = 51
 		breakthrough = 5
 
 		#Offensive Abilities
