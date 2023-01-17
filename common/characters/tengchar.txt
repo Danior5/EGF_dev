@@ -84,7 +84,7 @@ characters={
 		}
 	}
 	EQS_WW_fieldmarshel = {
-		name = "Bernard Montgomery"
+		name = "VENON RANCH!!! Od czterech lat dowódca oddziałów specjalnych w służbie księżniczki Celestii. Odpowiedzialny za pacyfikację rebelii bizonów, łowca robali, morderca komunistów i nietoperzy. Dwukrotnie odznaczony za męstwo w boju."
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/monty.tga"
