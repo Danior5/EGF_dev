@@ -856,7 +856,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -865,10 +865,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1010
+		start_year = 1009
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1010 }
+			position = { x = 3 y = @1009 }
 		}
 
 		on_research_complete = {
@@ -893,6 +893,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -901,10 +902,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1013
+		start_year = 1011
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1013 }
+			position = { x = 3 y = @1011 }
 		}
 
 		on_research_complete = {
@@ -1003,7 +1004,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 		path = {
 			leads_to_tech = marines3
@@ -1018,10 +1019,10 @@ technologies = {
 
 
 		research_cost = 1.5
-		start_year = 1010
+		start_year = 1009
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1010 }
+			position = { x = 3 y = @1009 }
 		}
 
 		categories = {
@@ -1050,6 +1051,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -1064,10 +1066,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1013
+		start_year = 1011
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1013 }
+			position = { x = 3 y = @1011 }
 		}
 
 		categories = {
@@ -1168,7 +1170,7 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 		path = {
 			leads_to_tech = tech_mountaineers3
@@ -1182,10 +1184,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1010
+		start_year = 1009
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1010 }
+			position = { x = 3 y = @1009 }
 		}
 
 		categories = {
@@ -1205,6 +1207,7 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -1219,10 +1222,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1013
+		start_year = 1011
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1013 }
+			position = { x = 3 y = @1011 }
 		}
 
 		categories = {
