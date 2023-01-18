@@ -856,7 +856,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 
 		path = {
@@ -893,7 +893,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 
 		path = {
@@ -1004,7 +1004,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 		path = {
 			leads_to_tech = marines3
@@ -1051,7 +1051,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 
 		path = {
@@ -1170,7 +1170,7 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 		path = {
 			leads_to_tech = tech_mountaineers3
@@ -1207,7 +1207,7 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 
 		path = {
@@ -1674,7 +1674,7 @@ technologies = {
 	support_weapons = {
 
 		category_heavy_infantry = {
-			defense = 0.15
+			defense = 0.1
 			breakthrough = 0.05
 		}
 
@@ -1759,7 +1759,7 @@ technologies = {
 	support_weapons2 = {
 
 		category_heavy_infantry = {
-			defense = 0.15
+			defense = 0.1
 			breakthrough = 0.05
 		}
 
@@ -1848,7 +1848,7 @@ technologies = {
 	support_weapons3 = {
 
 		category_heavy_infantry = {
-			defense = 0.15
+			defense = 0.1
 			breakthrough = 0.05
 		}
 
@@ -1939,7 +1939,7 @@ technologies = {
 	support_weapons4 = {
 
 		category_heavy_infantry = {
-			defense = 0.15
+			defense = 0.1
 			breakthrough = 0.05
 		}
 
