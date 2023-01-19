@@ -870,16 +870,35 @@ WW_category = {
 					type = annex_everything 
 					target = EQS 
 				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = WNG 
+				}
 			}
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_island_war
 				}
 	
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				FAT = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				TRD = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				GRI = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				JER = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				HLQ = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
 			}
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -897,10 +916,25 @@ WW_category = {
 					set_country_flag = big_event_custom_island_war
 				}
 
-				FAT = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				TRD = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				GRI = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
-				JER = { add_timed_idea = { idea = WW_toratoratora days = 180 }}
+				FAT = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				TRD = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				GRI = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				JER = { 
+					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				HLQ = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
 			}	
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -1054,6 +1088,22 @@ WW_category = {
 				HIP = { remove_ideas = WW_last_AC }
 				#WNG = { remove_ideas = WW_incompetent_tanks }
 				
+				FAT = { 
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				TRD = { 
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				GRI = { 
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				JER = { 
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				HLQ = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+
 				if = {
 					limit = {
 						WNG = {
