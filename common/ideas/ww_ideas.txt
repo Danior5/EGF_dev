@@ -271,5 +271,11 @@ ideas = {
                 consumer_goods_factor = -0.02
             }
         }
+		WW_convoy_retreat = {
+			removal_cost = -1
+			modifier = {
+				convoy_retreat_speed = 0.3
+			}
+		}
 	}	
 }

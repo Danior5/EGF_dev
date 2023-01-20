@@ -1359,6 +1359,7 @@ WW_category = {
 		complete_effect = {
 			hidden_effect = {
 				load_oob = "WW_50w"
+				add_ideas =  WW_convoy_retreat 
 			}
 		}
 
