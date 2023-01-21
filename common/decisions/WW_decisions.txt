@@ -910,6 +910,10 @@ WW_category = {
 					type = annex_everything 
 					target = EQS 
 				}
+				declare_war_on = { 
+					type = annex_everything 
+					target = WNG 
+				}
 			}
 			hidden_effect = {
 				every_country = {
