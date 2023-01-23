@@ -995,7 +995,6 @@ WW_category = {
 			date > 1006.11.1
 		}
 		is_good = no
-		selectable_mission = no
 		days_mission_timeout = 1765
 		fire_only_once = yes
 		
@@ -1047,7 +1046,6 @@ WW_category = {
 			date > 1006.11.1
 		}
 		is_good = no
-		selectable_mission = no
 		days_mission_timeout = 1884
 		fire_only_once = yes
 		
