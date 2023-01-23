@@ -28,6 +28,9 @@ ideas = {
 				supply_consumption_factor = -0.1
 				no_supply_grace	= 24.0
 				planning_speed = 0.5
+
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
 			}
 		}
 		WW_JER_counteroffensive = {
