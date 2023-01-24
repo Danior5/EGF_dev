@@ -991,11 +991,11 @@ WW_category = {
 		allowed = {
 				original_tag = CHN
 		}
-		availible = {
-			always = no
-		}
 		activation = {
 			date > 1006.11.1
+		}
+		available = {
+			always = no
 		}
 		is_good = no
 		days_mission_timeout = 1765
@@ -1045,11 +1045,11 @@ WW_category = {
 		allowed = {
 				original_tag = JER
 		}
-		availible = {
-			always = no
-		}
 		activation = {
 			date > 1006.11.1
+		}
+		available = {
+			always = no
 		}
 		is_good = no
 		days_mission_timeout = 1884
