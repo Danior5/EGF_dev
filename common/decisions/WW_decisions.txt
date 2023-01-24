@@ -991,6 +991,9 @@ WW_category = {
 		allowed = {
 				original_tag = CHN
 		}
+		availible = {
+			always = no
+		}
 		activation = {
 			date > 1006.11.1
 		}
@@ -1041,6 +1044,9 @@ WW_category = {
 		icon = generic_ignite_civil_war
 		allowed = {
 				original_tag = JER
+		}
+		availible = {
+			always = no
 		}
 		activation = {
 			date > 1006.11.1
