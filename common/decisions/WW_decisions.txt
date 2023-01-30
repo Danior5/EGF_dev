@@ -899,6 +899,27 @@ WW_category = {
 				HLQ = {
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
+				EQS = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				STG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				CRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				EQC = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				WNG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				GRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				RCT = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
 			}
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -937,6 +958,27 @@ WW_category = {
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 				HLQ = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				EQS = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				STG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				CRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				EQC = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				WNG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				GRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 1 }
+				}
+				RCT = {
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 			}	
@@ -1109,6 +1151,27 @@ WW_category = {
 					set_technology = { WW_EQC_tank_amph_bonus = 0 }
 				}
 				HLQ = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				EQS = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				STG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				CRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				EQC = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				WNG = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				GRY = {
+					set_technology = { WW_EQC_tank_amph_bonus = 0 }
+				}
+				RCT = {
 					set_technology = { WW_EQC_tank_amph_bonus = 0 }
 				}
 
