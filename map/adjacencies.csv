@@ -33,7 +33,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9165;10138;sea;8340;-1;-1;-1;-1;;Haukland
 7673;98;sea;3195;-1;-1;-1;-1;;Haukland
 4446;98;sea;3195;-1;-1;-1;-1;;Haukland
-;;;;;;;;;
+
 4305;13115;sea;8565;-1;-1;-1;-1;;PinguinsCapital
 12929;4305;sea;8604;-1;-1;-1;-1;;Pinguins-Left-Island
 13215;12929;sea;8604;-1;-1;-1;-1;;Pinguins
@@ -72,7 +72,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10395;1479;sea;8442;-1;-1;-1;-1;;Someislands-EquestrianWest
 1479;10435;sea;8442;-1;-1;-1;-1;;Someislands-EquestrianWest
 1614;10435;sea;8865;-1;-1;-1;-1;;Someislands-EquestrianWest
-;;;;;;;;;
+
 1428;11963;sea;1050;-1;-1;-1;-1;;ZESIslands
 11963;12126;sea;6040;-1;-1;-1;-1;;ZESIslands
 12126;11990;sea;6040;-1;-1;-1;-1;;ZESIslands
@@ -80,11 +80,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11990;12269;sea;6040;-1;-1;-1;-1;;ZESIslands
 12253;4423;sea;6040;-1;-1;-1;-1;;ZESIslands
 4423;10001;sea;6040;-1;-1;-1;-1;;ZESIslands
-;;;;;;;;;
+
 7572;10398;sea;8334;-1;-1;-1;-1;;Sydia-SaltIsland
-;;;;;;;;;
+
 12710;5041;sea;2996;-1;-1;-1;-1;;Deerland-Nimbusia
-;;;;;;;;;
+
 12373;12388;sea;13220;-1;-1;-1;-1;;Cyanolisia-Minotauria
 12402;10266;sea;411;-1;-1;-1;-1;;Sicameon-Minotauria
 1252;10266;sea;411;-1;-1;-1;-1;;Sicameon-Minotauria
@@ -96,12 +96,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11932;10124;sea;3826;-1;-1;-1;-1;;Minotauria5
 10124;10269;sea;3826;-1;-1;-1;-1;;Minotauria5
 12196;12969;sea;411;-1;-1;-1;-1;;Minotauria6
-;;;;;;;;;
+
 12171;7387;sea;2864;-1;-1;-1;-1;;Minotauria7
 7387;10285;sea;2864;-1;-1;-1;-1;;Minotauria7
 8091;2117;sea;2864;-1;-1;-1;-1;;Minotauria7
-;;;;;;;;;
-;;;;;;;;;
+
+
 15789;15794;sea;1045;-1;-1;-1;-1;;Meowuak
 15822;15842;sea;20207;-1;-1;-1;-1;;Meowuak-Catorahe
 20301;15842;sea;20207;-1;-1;-1;-1;;Catorahe
@@ -139,39 +139,39 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 16142;16245;sea;9019;-1;-1;-1;-1;;Zohancapan
 16048;13376;sea;9019;-1;-1;-1;-1;;Zebxitec
 16041;16012;sea;9019;-1;-1;-1;-1;;Zebxitec
-;;;;;;;;;
+
 20271;18474;sea;20223;-1;-1;-1;-1;;Zjerba
-;;;;;;;;;
+
 18994;18985;sea;2932;-1;-1;-1;-1;;Mane'a Land Bridge
-;;;;;;;;;
+
 20080;10475;sea;5270;-1;-1;-1;-1;;Extremanedura
 16376;16378;sea;8296;-1;-1;-1;-1;;Tortrra Oscura
 16738;16381;sea;8296;-1;-1;-1;-1;;Marecuria
-;;;;;;;;;
+
 16742;16391;sea;2413;-1;-1;-1;-1;;Marecuria
 16747;16743;sea;2860;-1;-1;-1;-1;;Marecuria
-;;;;;;;;;
+
 16755;16753;sea;20079;-1;-1;-1;-1;;Sagre
 16754;16753;sea;20079;-1;-1;-1;-1;;Sagre
 16757;16761;sea;20195;-1;-1;-1;-1;;Sagre
-;;;;;;;;;
+
 16010;16030;sea;13406;-1;-1;-1;-1;;TheGoldenCity
-;;;;;;;;;
+
 20084;13371;sea;7484;-1;-1;-1;-1;;Ponava
 20296;20297;sea;7484;-1;-1;-1;-1;;Ponava
 20272;20297;sea;7484;-1;-1;-1;-1;;Ponava
 20088;20298;sea;7017;-1;-1;-1;-1;;Ponava
 20259;20261;sea;20197;-1;-1;-1;-1;;Ponava
-;;;;;;;;;
+
 20262;15951;sea;18238;-1;-1;-1;-1;;Mreida
-;;;;;;;;;
+
 16240;2639;sea;20204;-1;-1;-1;-1;;Zelsalampy
 16280;2465;sea;20205;-1;-1;-1;-1;;Zelsalampy
-;;;;;;;;;
+
 20698;20701;sea;8386;-1;-1;-1;-1;;PuertoCaballo
-;;;;;;;;;
+
 20707;20699;sea;5833;-1;-1;-1;-1;;SummerIslands
-;;;;;;;;;
+
 20691;20688;sea;6854;-1;-1;-1;-1;;Tropico
 20688;20689;sea;6854;-1;-1;-1;-1;;Tropico
 20689;20687;sea;6854;-1;-1;-1;-1;;Tropico
@@ -179,7 +179,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20682;20685;sea;6854;-1;-1;-1;-1;;Tropico
 20681;20683;sea;6854;-1;-1;-1;-1;;Tropico
 20711;20702;sea;5958;-1;-1;-1;-1;;Tropico
-;;;;;;;;;
+
 20671;20664;sea;5339;-1;-1;-1;-1;;Celestial Islands
 20676;20670;sea;8410;-1;-1;-1;-1;;Celestial Islands
 20670;20674;sea;8410;-1;-1;-1;-1;;Celestial Islands
@@ -190,33 +190,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20679;20677;sea;8410;-1;-1;-1;-1;;Celestial Islands
 20677;20678;sea;8410;-1;-1;-1;-1;;Celestial Islands
 20672;20667;sea;8410;-1;-1;-1;-1;;Celestial Islands
-;;;;;;;;;
+
 20665;20668;sea;8487;-1;-1;-1;-1;;Celestial Islands
-;;;;;;;;;
+
 20662;20661;sea;8384;-1;-1;-1;-1;;Celestial Islands
 20660;20661;sea;8459;-1;-1;-1;-1;;Celestial Islands
-;;;;;;;;;
+
 20659;20658;sea;8514;-1;-1;-1;-1;;Celestial Islands
-;;;;;;;;;
+
 20651;20657;sea;5508;-1;-1;-1;-1;;Celestial Islands
 20651;20653;sea;5508;-1;-1;-1;-1;;Celestial Islands
 20654;20653;sea;5508;-1;-1;-1;-1;;Celestial Islands
-;;;;;;;;;
+
 18738;18727;sea;7987;-1;-1;-1;-1;;Grand Alaudia
 18738;18746;sea;7987;-1;-1;-1;-1;;Grand Alaudia
-;;;;;;;;;
+
 4718;5195;sea;20211;-1;-1;-1;-1;;Neighile Delta Islands
 4718;19285;sea;20211;-1;-1;-1;-1;;Neighile Delta Islands
 4819;19285;sea;20211;-1;-1;-1;-1;;Neighile Delta Islands
-;;;;;;;;;
+
 14609;14619;sea;2741;-1;-1;-1;-1;;Koltbylia
-;;;;;;;;;
+
 13395;5917;sea;1889;-1;-1;-1;-1;;Parakeets
 7251;5917;sea;1889;-1;-1;-1;-1;;Parakeets
-;;;;;;;;;
+
 14791;3817;sea;20303;-1;-1;-1;-1;;GreatLakes
 4418;4180;sea;20309;-1;-1;-1;-1;;GreatLakes
-;;;;;;;;;
+
 16758;16759;sea;2884;-1;-1;-1;-1;;HyenaIsles
 ;;;;;;;;;
 17442;17425;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
@@ -255,11 +255,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17210;17222;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
 17232;17222;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
 17301;17333;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
-;;;;;;;;;
+
 17292;17303;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17292;17322;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17305;17322;impassable;-1;-1;-1;-1;-1;;GazelleMountains
-;;;;;;;;;
+
 13035;13042;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 13035;12222;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 10906;12222;impassable;-1;-1;-1;-1;-1;;GazelleMountains
@@ -293,7 +293,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17210;17172;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17210;17171;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17210;17204;impassable;-1;-1;-1;-1;-1;;GazelleMountains
-;;;;;;;;;
+
 17322;17336;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
 17322;17351;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
 17347;17351;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
@@ -312,19 +312,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17436;17412;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
 17426;17412;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
 17426;17405;impassable;-1;-1;-1;-1;-1;;TrotbetHindiaMountains
-;;;;;;;;;
+
 17336;17305;impassable;-1;-1;-1;-1;-1;;HindiaGazelleiaMountains
 17336;17317;impassable;-1;-1;-1;-1;-1;;HindiaGazelleiaMountains
 17348;17317;impassable;-1;-1;-1;-1;-1;;HindiaGazelleiaMountains
 17348;17329;impassable;-1;-1;-1;-1;-1;;HindiaGazelleiaMountains
 17358;17329;impassable;-1;-1;-1;-1;-1;;HindiaGazelleiaMountains
-;;;;;;;;;
+
 17358;17352;impassable;-1;-1;-1;-1;-1;;HindiaOryxiaMountains
 17358;17381;impassable;-1;-1;-1;-1;-1;;HindiaOryxiaMountains
 17387;17381;impassable;-1;-1;-1;-1;-1;;HindiaOryxiaMountains
 17387;17410;impassable;-1;-1;-1;-1;-1;;HindiaOryxiaMountains
 17410;17418;impassable;-1;-1;-1;-1;-1;;HindiaOryxiaMountains
-;;;;;;;;;
+
 17433;17418;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17441;17418;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17441;17429;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
@@ -340,7 +340,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17542;20618;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17557;20618;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17557;20616;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
-;;;;;;;;;
+
 17483;17503;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
 17483;17489;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
 17473;17489;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
@@ -355,19 +355,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17440;17407;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
 17435;17407;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
 17435;17400;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
-;;;;;;;;;
+
 18847;18865;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18847;18855;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18847;18841;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18835;18845;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18841;18845;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18835;18836;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
-;;;;;;;;;
+
 18840;18827;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18840;18853;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18852;18853;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18850;18853;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
-;;;;;;;;;
+
 18794;18803;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18809;18803;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18809;18798;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
@@ -392,19 +392,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 18839;18823;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18839;18838;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
 18839;18824;impassable;-1;-1;-1;-1;-1;;MacawiaMountains
-;;;;;;;;;
+
 18691;19906;impassable;-1;-1;-1;-1;-1;;MountAris
 19910;19906;impassable;-1;-1;-1;-1;-1;;MountAris
 19910;18696;impassable;-1;-1;-1;-1;-1;;MountAris
 5278;18696;impassable;-1;-1;-1;-1;-1;;MountAris
 5278;18699;impassable;-1;-1;-1;-1;-1;;MountAris
 5278;18724;impassable;-1;-1;-1;-1;-1;;MountAris
-;;;;;;;;;
+
 20505;20494;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20505;20484;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20505;20490;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20512;20490;impassable;-1;-1;-1;-1;-1;;KirinMountains
-;;;;;;;;;
+
 20458;20451;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20433;20451;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20433;20434;impassable;-1;-1;-1;-1;-1;;KirinMountains
@@ -413,24 +413,24 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20410;20384;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20395;20384;impassable;-1;-1;-1;-1;-1;;KirinMountains
 20395;20372;impassable;-1;-1;-1;-1;-1;;KirinMountains
-;;;;;;;;;
+
 9014;8966;impassable;-1;-1;-1;-1;-1;;KirinMountains
 9014;8990;impassable;-1;-1;-1;-1;-1;;KirinMountains
 10166;8990;impassable;-1;-1;-1;-1;-1;;KirinMountains
 10166;10234;impassable;-1;-1;-1;-1;-1;;KirinMountains
 11011;10234;impassable;-1;-1;-1;-1;-1;;KirinMountains
-;;;;;;;;;
+
 8986;9091;impassable;-1;-1;-1;-1;-1;;KirinMountains
-;;;;;;;;;
+
 17136;17143;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17133;17143;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17133;17142;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
-;;;;;;;;;
+
 17128;19961;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17128;17123;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17108;17123;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17108;19902;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
-;;;;;;;;;
+
 17088;17094;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17073;17087;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17073;17071;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
@@ -438,7 +438,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7729;17079;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 13357;17079;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
 17094;17079;impassable;-1;-1;-1;-1;-1;;TalonsvaalMountains
-;;;;;;;;;
+
 17036;17027;impassable;-1;-1;-1;-1;-1;;CamelMountains
 17036;17016;impassable;-1;-1;-1;-1;-1;;CamelMountains
 17030;17016;impassable;-1;-1;-1;-1;-1;;CamelMountains
@@ -461,7 +461,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 16992;19793;impassable;-1;-1;-1;-1;-1;;CamelMountains
 16992;20166;impassable;-1;-1;-1;-1;-1;;CamelMountains
 17002;20166;impassable;-1;-1;-1;-1;-1;;CamelMountains
-;;;;;;;;;
+
 15997;15983;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15974;15983;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15974;15964;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
@@ -475,7 +475,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15945;15926;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15945;15935;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15952;15935;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
-;;;;;;;;;
+
 15948;15931;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15948;15930;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15949;15930;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
@@ -486,7 +486,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15940;15939;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15940;15928;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
 15939;15966;impassable;-1;-1;-1;-1;-1;;SoutheastMountains
-;;;;;;;;;
+
 7409;7333;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 10954;7333;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 10974;7333;impassable;-1;-1;-1;-1;-1;;HyenaMountains
@@ -501,7 +501,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12931;15340;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15315;15340;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15315;15321;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-;;;;;;;;;
+
 15296;19343;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15288;19343;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15288;19335;impassable;-1;-1;-1;-1;-1;;HyenaMountains
@@ -519,7 +519,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15243;15268;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15243;15246;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15243;15232;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-;;;;;;;;;
+
 15296;15288;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15296;15263;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15272;15263;impassable;-1;-1;-1;-1;-1;;HyenaMountains
@@ -528,12 +528,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15252;15226;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15240;15226;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15240;15224;impassable;-1;-1;-1;-1;-1;;HyenaMountains
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
+
 15170;15195;impassable;-1;-1;-1;-1;-1;;StormMountains
 15170;15178;impassable;-1;-1;-1;-1;-1;;StormMountains
 15164;15178;impassable;-1;-1;-1;-1;-1;;StormMountains
@@ -552,7 +547,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15151;15158;impassable;-1;-1;-1;-1;-1;;StormMountains
 15151;15165;impassable;-1;-1;-1;-1;-1;;StormMountains
 15153;15165;impassable;-1;-1;-1;-1;-1;;StormMountains
-;;;;;;;;;
+
 20067;20057;impassable;-1;-1;-1;-1;-1;;StormMountains
 20062;20057;impassable;-1;-1;-1;-1;-1;;StormMountains
 20062;20051;impassable;-1;-1;-1;-1;-1;;StormMountains
@@ -563,7 +558,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20052;20046;impassable;-1;-1;-1;-1;-1;;StormMountains
 20307;20046;impassable;-1;-1;-1;-1;-1;;StormMountains
 20307;20043;impassable;-1;-1;-1;-1;-1;;StormMountains
-;;;;;;;;;
+
 13680;13704;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13678;13704;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13678;13707;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
@@ -573,7 +568,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13677;13700;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13688;13700;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13688;13703;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
-;;;;;;;;;
+
 13702;13698;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13702;13693;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13701;13693;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
@@ -601,7 +596,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13533;13537;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13520;13537;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13520;13528;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
-;;;;;;;;;
+
 13532;13619;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13532;13606;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13532;13598;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
@@ -614,11 +609,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13503;13501;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13503;13493;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13492;13493;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
-;;;;;;;;;
+
 13701;13713;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13701;13726;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
 13721;13726;impassable;-1;-1;-1;-1;-1;;HestrayaMountains
-;;;;;;;;;
+
 14351;14358;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
 14343;14358;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
 14343;14368;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
@@ -631,14 +626,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14348;14371;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
 14348;14365;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
 14347;14365;impassable;-1;-1;-1;-1;-1;;RiseiaMountains
-;;;;;;;;;
+
 15889;15894;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15889;15890;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15884;15890;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15884;15886;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15884;15878;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15880;15878;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
-;;;;;;;;;
+
 15727;15733;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15727;15742;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15734;15742;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
@@ -649,7 +644,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15775;15762;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15775;15779;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
 15775;15786;impassable;-1;-1;-1;-1;-1;;AbyssinianMountains
-;;;;;;;;;
+
 15081;15089;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 15067;15089;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 15067;15076;impassable;-1;-1;-1;-1;-1;;SaddleMountains
@@ -665,7 +660,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14982;14993;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14968;14993;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14968;14975;impassable;-1;-1;-1;-1;-1;;SaddleMountains
-;;;;;;;;;
+
 14872;14856;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14857;14856;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14857;14850;impassable;-1;-1;-1;-1;-1;;SaddleMountains
@@ -678,7 +673,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14789;14773;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14774;14773;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14748;14773;impassable;-1;-1;-1;-1;-1;;SaddleMountains
-;;;;;;;;;
+
 14655;14684;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14655;14677;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14655;14658;impassable;-1;-1;-1;-1;-1;;SaddleMountains
@@ -688,7 +683,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14650;14672;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14650;14667;impassable;-1;-1;-1;-1;-1;;SaddleMountains
 14650;14661;impassable;-1;-1;-1;-1;-1;;SaddleMountains
-;;;;;;;;;
+
 9455;4403;impassable;-1;-1;-1;-1;-1;;SkynaviaVedinaMountains
 9455;10903;impassable;-1;-1;-1;-1;-1;;SkynaviaVedinaMountains
 1135;10903;impassable;-1;-1;-1;-1;-1;;SkynaviaVedinaMountains
@@ -711,11 +706,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9615;7641;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 9615;12454;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 7860;12454;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
-;;;;;;;;;
+
 10624;1857;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 7541;1857;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 7541;10552;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
-;;;;;;;;;
+
 3328;10301;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 3328;3214;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 3328;11389;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
@@ -729,7 +724,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12172;3289;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 12172;9349;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 12172;6308;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
-;;;;;;;;;
+
 273;291;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 273;6285;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 7237;6285;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
@@ -744,7 +739,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11320;3294;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 3294;11365;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 6224;11365;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
-;;;;;;;;;
+
 3992;12349;impassable;-1;-1;-1;-1;-1;;BronzeMountains
 10981;12349;impassable;-1;-1;-1;-1;-1;;BronzeMountains
 1210;12321;impassable;-1;-1;-1;-1;-1;;BronzeMountains
@@ -754,18 +749,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4322;1210;impassable;-1;-1;-1;-1;-1;;BronzeMountains
 12298;1210;impassable;-1;-1;-1;-1;-1;;BronzeMountains
 12298;1378;impassable;-1;-1;-1;-1;-1;;BronzeMountains
-;;;;;;;;;
+
 13071;12087;impassable;-1;-1;-1;-1;-1;;DragonMountains
 13071;11675;impassable;-1;-1;-1;-1;-1;;DragonMountains
 13071;11840;impassable;-1;-1;-1;-1;-1;;DragonMountains
 13071;6921;impassable;-1;-1;-1;-1;-1;;DragonMountains
 13071;724;impassable;-1;-1;-1;-1;-1;;DragonMountains
 13071;889;impassable;-1;-1;-1;-1;-1;;DragonMountains
-;;;;;;;;;
+
 4199;9945;impassable;-1;-1;-1;-1;-1;;DragonMountains
 4199;10013;impassable;-1;-1;-1;-1;-1;;DragonMountains
 4199;7100;impassable;-1;-1;-1;-1;-1;;DragonMountains
-;;;;;;;;;
+
 13019;4696;impassable;-1;-1;-1;-1;-1;;GriffonstoneMountains
 4584;4696;impassable;-1;-1;-1;-1;-1;;GriffonstoneMountains
 12519;4696;impassable;-1;-1;-1;-1;-1;;GriffonstoneMountains
@@ -781,14 +776,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12266;1272;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 8029;1272;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 8029;10220;impassable;-1;-1;-1;-1;-1;;TalouseMountains
-;;;;;;;;;
+
 11984;4369;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 11984;4964;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 4303;4374;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 4227;4374;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 12820;4303;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 12820;11984;impassable;-1;-1;-1;-1;-1;;TalouseMountains
-;;;;;;;;;
+
 5026;13083;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 1937;13083;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 1937;5317;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
@@ -836,17 +831,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
 ;;;;;;;;;
 7103;4568;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
--1;-1;;-1;-1;-1;-1;-1;-1;
+
+8300;8404;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal West
+8300;2499;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal East
+20193;5698;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Inner Arabian Strait
+20193;4030;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Outer Arabian Strait
+20170;2421;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar West
+20170;2396;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar Middle
+20170;8576;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar East
+8551;13166;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza North
+8551;3222;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza South
+20202;8697;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Northeast
+20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
+20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
+
+
+-1;-1;;-1;-1;-1;-1;-1;-1
