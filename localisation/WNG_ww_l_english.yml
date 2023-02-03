@@ -50,3 +50,6 @@ WNG_conference_tt:0 "Begins an event for southern nations to support us."
 WNG_tactic_enabled_tt:0 "Enables Tactic: §YArmored Counterstroke§!"
 WNG_ability_enabled_tt:0 "Enables unit leader ability: §YCareful Attack§!.\nCommand Power Cost:\n  - Base cost: §Y0.12§! (each for §Y1§! battalion)\nDuration: §Y7 days§!\nAdd following effects to the armies for §Y7§! days\n - Offense: §G10.0%§!\n - Breakthrough: §G25.0%§!\n - Organization Damage Taken: §R25.0%§!\n - Strength Damage Taken: §G-10.0%§!\n\n"
 WNG_tarrin_plan_tt:0 "Gains '§YRetake Tarrin§!' which grants (Division Speed: §G+10.00%§!, Division Attack: §G+10.00%§!, Supply Grace: §G+48.0§! Hour(s)) for §Y60§! days when Aquileia attacks us."
+
+WNG_industrial_evac_category:0 "Industrial Evacuation"
+WNG_evacuate_industry_mission:0 "Evacuating Industry"
