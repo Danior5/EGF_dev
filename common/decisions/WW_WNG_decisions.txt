@@ -133,12 +133,15 @@ WNG_industrial_evac_category = {
 					controls_state = 526
 				}
 				check_variable = {
-					WNG.WNG_evac_count > 10
+					WNG.WNG_evac_count > 9
 				}
 			}
 		}
 		activation = {
 			date > 1012.03.01
+			check_variable = {
+				WNG.WNG_evac_count < 10
+			}
 		}
 
 		is_good = yes
