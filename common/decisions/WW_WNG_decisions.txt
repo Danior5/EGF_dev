@@ -129,7 +129,7 @@ WNG_industrial_evac_category = {
 				controls_state = 526
 			}
 			check_variable = {
-				WNG_evac_count < 11
+				WNG_evac_count > 10
 			}
 		}
 
