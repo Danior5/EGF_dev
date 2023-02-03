@@ -147,7 +147,7 @@ WNG_industrial_evac_category = {
 					var = WNG_evac_count
 					value = 1
 				}
-				activate_WNG_evacuate_industry_mission = yes
+				activate_mission = WNG_evacuate_industry_mission
 			}
 			487 = {
 				WNG_evacuate_industry = yes
