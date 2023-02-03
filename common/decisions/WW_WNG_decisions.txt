@@ -109,3 +109,70 @@ WNG_army_reorganization_category = {
 		}
 	}
 }
+WNG_industrial_evac_category = {
+	WNG_evacuate_industry_mission = {
+		icon = GFX_decision_ger_military_buildup
+		allowed = {
+			original_tag = WNG
+		}
+
+		available = {
+			NOT = {
+				controls_state = 487
+				controls_state = 408
+				controls_state = 652
+				controls_state = 521
+				controls_state = 481
+				controls_state = 410
+				controls_state = 388
+				controls_state = 515
+				controls_state = 526
+			}
+			check_variable = {
+				WNG_evac_count < 11
+			}
+		}
+
+		activation = {
+			date > 1012.03.01
+		}
+
+		is_good = yes
+
+		days_mission_timeout = 10
+
+		timeout_effect = {
+			add_to_variable = {
+				var = WNG_evac_count
+				value = 1
+			}
+			487 = {
+				WNG_evacuate_industry = yes
+			}
+			408 = {
+				WNG_evacuate_industry = yes
+			}
+			652 = {
+				WNG_evacuate_industry = yes
+			}
+			521 = {
+				WNG_evacuate_industry = yes
+			}
+			481 = {
+				WNG_evacuate_industry = yes
+			}
+			410 = {
+				WNG_evacuate_industry = yes
+			}
+			388 = {
+				WNG_evacuate_industry = yes
+			}
+			515 = {
+				WNG_evacuate_industry = yes
+			}
+			526 = {
+				WNG_evacuate_industry = yes
+			}
+		}
+	}
+}
