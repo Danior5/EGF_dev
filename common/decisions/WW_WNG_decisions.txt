@@ -117,22 +117,26 @@ WNG_industrial_evac_category = {
 		}
 
 		available = {
-			NOT = {
-				controls_state = 487
-				controls_state = 408
-				controls_state = 652
-				controls_state = 521
-				controls_state = 481
-				controls_state = 410
-				controls_state = 388
-				controls_state = 515
-				controls_state = 526
-			}
-			check_variable = {
-				WNG_evac_count > 10
+			always = no
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 487
+					controls_state = 408
+					controls_state = 652
+					controls_state = 521
+					controls_state = 481
+					controls_state = 410
+					controls_state = 388
+					controls_state = 515
+					controls_state = 526
+				}
+				check_variable = {
+					WNG.WNG_evac_count > 10
+				}
 			}
 		}
-
 		activation = {
 			date > 1012.03.01
 		}
@@ -144,7 +148,7 @@ WNG_industrial_evac_category = {
 		timeout_effect = {
 			hidden_effect = {
 				add_to_variable = {
-					var = WNG_evac_count
+					var = WNG.WNG_evac_count
 					value = 1
 				}
 				activate_mission = WNG_evacuate_industry_mission
