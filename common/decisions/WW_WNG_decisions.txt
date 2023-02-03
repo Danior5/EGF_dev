@@ -142,9 +142,12 @@ WNG_industrial_evac_category = {
 		days_mission_timeout = 10
 
 		timeout_effect = {
-			add_to_variable = {
-				var = WNG_evac_count
-				value = 1
+			hidden_effect = {
+				add_to_variable = {
+					var = WNG_evac_count
+					value = 1
+				}
+				activate_WNG_evacuate_industry_mission = yes
 			}
 			487 = {
 				WNG_evacuate_industry = yes
