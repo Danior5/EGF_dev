@@ -1,4 +1,4 @@
-on_actions = {
+#on_actions = {
 #	on_capitulation = {
 #		effect = {
 #			#EQS dying gives buffs to RCT, GRY and WNG
@@ -68,39 +68,39 @@ on_actions = {
 #			}
 #		}
 #	}
-
-	on_capitulation = {
-		effect = {
-			#HIP dying gives buffs to EQC
-			if = {
-				limit = {
-					ROOT = {
-						tag = HIP
-					}
-					date < 1012.03.01
-				}
-				EQC = {
-					add_ideas = WW_last_AC
-				}
+#
+#	on_capitulation = {
+#		effect = {
+#			#HIP dying gives buffs to EQC
+#			if = {
+#				limit = {
+#					ROOT = {
+#						tag = HIP
+#					}
+#					date < 1012.03.01
+#				}
+#				EQC = {
+#					add_ideas = WW_last_AC
+#				}
 #				every_country = {
 #					set_country_flag = big_event_custom_hip_dead
 #				}
-			}
-			#EQC dying gives buffs to HIP
-			if = {
-				limit = {
-					ROOT = {
-						tag = EQC
-					}
-					date < 1012.03.01
-				}
-				HIP = {
-					add_ideas = WW_last_AC
-				}
+#			}
+#			#EQC dying gives buffs to HIP
+#			if = {
+#				limit = {
+#					ROOT = {
+#						tag = EQC
+#					}
+#					date < 1012.03.01
+#				}
+#				HIP = {
+#					add_ideas = WW_last_AC
+#				}
 #				every_country = {
 #					set_country_flag = big_event_custom_eqc_dead
 #				}
-			}
-		}
-	}
-}
+#			}
+#		}
+#	}
+#}

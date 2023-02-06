@@ -1134,8 +1134,8 @@ WW_category = {
 				GRI = { add_to_faction = PNG }			
 				
 				
-				EQC = { remove_ideas = WW_last_AC }	
-				HIP = { remove_ideas = WW_last_AC }
+				#EQC = { remove_ideas = WW_last_AC }	
+				#HIP = { remove_ideas = WW_last_AC }
 				#WNG = { remove_ideas = WW_incompetent_tanks }
 				
 				FAT = { 
