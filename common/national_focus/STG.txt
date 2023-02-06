@@ -2828,7 +2828,7 @@ focus_tree = {
 				limit = {
 					AND = {
 						is_core_of = STG 
-						industrial_complex > 2
+						industrial_complex > 1
 					}
 				}
 				remove_building = {
@@ -2840,7 +2840,7 @@ focus_tree = {
 				limit = {
 					AND = {
 						is_core_of = STG 
-						industrial_complex > 2
+						industrial_complex > 1
 					}
 				}
 				remove_building = {
