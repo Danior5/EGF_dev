@@ -1613,8 +1613,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.075
-				production_speed_buildings_factor = 0.5 
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.3 
 				stability_weekly = 0.01
 			}
 		}
