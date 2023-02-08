@@ -1189,7 +1189,23 @@ WW_category = {
 		}
 	}
 
-	
+	WW_JER_summer_offensive_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			original_tag = JER
+		}
+		visible = {
+			date > 1012.3.1
+		}
+		available = {
+			date > 1013.3.1
+		}
+		fire_only_once = yes
+		complete_effect = {				
+			JER = { add_timed_idea = { idea = WW_tarrin_offensive_2  days = 90 }}
+		}
+	}
+
 	
 	
 	

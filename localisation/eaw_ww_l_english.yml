@@ -96,6 +96,9 @@ l_english:
  GRI_noble_management_decision_3:0 "Increase Noble Management"
  GRI_noble_management_tt:0 "Unlocks §YIncrease Noble Management§! decisions."
 
+ WW_JER_summer_offensive_decision:0 "Launch Operation Provençal Wind"
+ WW_tarrin_offensive_2:0 "Operation Provençal Wind"
+
  WW_strike_GRF:0 "Rapid Production Policy"
  WW_strike_GRF_desc:0 "Our relations with the Reichspakt have deteriorated faster than expected, we must rapidly shift our entire economy if we are to be prepared for their attack."
 
