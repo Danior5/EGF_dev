@@ -74,4 +74,39 @@ on_actions = {
 			}
 		}
 	}
+	#River Shield
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_in_faction_with = JER
+							tag = JER
+						}
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = WNG
+							tag = WNG
+						}
+					}
+					FROM.FROM = {
+						OR = {
+							state = 368
+							state = 515
+							state = 526
+							state = 409
+						}
+					}
+				}
+				WNG = {
+					country_event = {
+						id = ww_wng.5
+						days = 7
+					}
+				}
+			}
+		}
+	}
 }
