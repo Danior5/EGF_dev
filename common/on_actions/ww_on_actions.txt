@@ -81,14 +81,14 @@ on_actions = {
 				limit = {
 					FROM = {
 						OR = {
-							is_in_faction_with = JER
-							tag = JER
+							is_in_faction_with = WNG
+							tag = WNG
 						}
 					}
 					ROOT = {
 						OR = {
-							is_in_faction_with = WNG
-							tag = WNG
+							is_in_faction_with = JER
+							tag = JER
 						}
 					}
 					FROM.FROM = {
