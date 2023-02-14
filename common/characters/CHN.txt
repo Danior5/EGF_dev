@@ -1192,9 +1192,9 @@ characters={
 			has_government = fascism
 		}		
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_helvia
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1222,9 +1222,9 @@ characters={
 			has_government = fascism
 		}		
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_aurantia
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1252,9 +1252,9 @@ characters={
 			has_government = fascism
 		}
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_yaria
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1288,9 +1288,9 @@ characters={
 			has_government = fascism
 		}
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
