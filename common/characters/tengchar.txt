@@ -321,7 +321,7 @@ characters={
 			traits = {}
 		}
 	}
-	YAL_WW_fieldmarshel = {
+	MIT_WW_fieldmarshel = {
 		name = "Mike Ehrmantraut" ## Decringified ##
 		portraits = {
 			army = {

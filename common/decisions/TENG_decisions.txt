@@ -927,7 +927,7 @@ WW_category = {
 			factor = 0			
 		}
 	}
-	YAL_pregrinded_general= {
+	MIT_pregrinded_general= {
 		icon = GFX_decision_icon_default
 
 		available = {
@@ -945,12 +945,12 @@ WW_category = {
 		fire_only_once = yes
 
 		allowed = {
-				original_tag = YAL
+				original_tag = MIT
 		}
 		
 		complete_effect = {
 			add_field_marshal_role = {
-				Character = YAL_WW_fieldmarshel
+				Character = MIT_WW_fieldmarshel
 				traits = { organizer panzer_leader cavalry_leader infantry_leader  }
 				skill=4
 				attack_skill=4
