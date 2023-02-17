@@ -10,7 +10,6 @@ state={
 		add_core_of = HIP
 		set_state_flag = HIP_controls
 		buildings = {
-			dockyard = 1
 			infrastructure = 3
 			anti_air_building = 1
 			18736 = { naval_base = 2 }
