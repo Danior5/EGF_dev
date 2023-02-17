@@ -1,4 +1,64 @@
 on_actions = {
+	# faction forming and opinion modifiers
+	on_startup = {
+		effect = {
+			#### WW 1.5 factions ####
+			HLR = {
+				country_event = { id = ww.5 days = 1400 }
+				#country_event = { id = ww.6 days = 1764 }
+			}
+			### NORTH GUYS ###
+			add_to_array = { global.ww_grandpa_eros_wild_ride = GRI }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = HLQ }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = FAT }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = TRD }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = JER }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = CHN }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = GRF }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = BAT }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = CTH }
+			
+			### SOUTH GUYS ###
+			add_to_array = { global.ww_friendship_is_magic = RCT }
+			add_to_array = { global.ww_friendship_is_magic = LCT }
+			add_to_array = { global.ww_friendship_is_magic = WIT }
+			add_to_array = { global.ww_friendship_is_magic = NIM }
+			add_to_array = { global.ww_friendship_is_magic = BAK }
+			add_to_array = { global.ww_friendship_is_magic = GRY }
+			add_to_array = { global.ww_friendship_is_magic = WNG }
+			add_to_array = { global.ww_friendship_is_magic = MIT }
+			add_to_array = { global.ww_friendship_is_magic = EQC }
+			add_to_array = { global.ww_friendship_is_magic = STG }
+			add_to_array = { global.ww_friendship_is_magic = CRY }
+			add_to_array = { global.ww_friendship_is_magic = EQS }
+			add_to_array = { global.ww_friendship_is_magic = HIP }
+			add_to_array = { global.ww_friendship_is_magic = MIT }
+			
+			for_each_scope_loop = {
+			array = global.ww_grandpa_eros_wild_ride
+				for_each_scope_loop = {
+					array = global.ww_grandpa_eros_wild_ride
+						if = {
+							limit = { NOT = { tag = PREV } }
+							add_opinion_modifier = { target = PREV modifier = ww_besties }
+							add_reverse_opinion_modifier = { target = modifier = ww_besties }
+						}
+				}
+			}
+			
+			for_each_scope_loop = {
+			array = global.ww_friendship_is_magic
+				for_each_scope_loop = {
+					array = global.ww_friendship_is_magic
+						if = {
+							limit = { NOT = { tag = PREV } }
+							add_opinion_modifier = { target = PREV modifier = ww_besties }
+							add_reverse_opinion_modifier = { target = PREV modifier = ww_besties }
+						}
+				}
+			}		
+		}
+	}
 	#OLE dying removes CHN core buffs
 	on_capitulation = {
 		effect = {
