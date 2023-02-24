@@ -10894,8 +10894,8 @@ shared_focus = {
 				}
 			}
 			if = {
-				limit = { has_character = HIP_meteorum_blaze }
-				HIP_meteorum_blaze = {
+				limit = { has_character = HIP_sugar_coral }
+				HIP_sugar_coral = {
 					retire = yes
 				}
 			}

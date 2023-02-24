@@ -948,6 +948,9 @@ shared_focus = {
 	prerequisite = {
 		focus = GRI_eros
 	}
+	bypass = {
+		has_country_flag = STW_reinstall_archon
+	}
 	x = 12
 	y = 5
 	completion_reward = {
@@ -970,14 +973,14 @@ shared_focus = {
 				NOT = { has_idea = archon_proteus }
 				has_free_political_advisor_slot = yes
 			}
-			add_ideas = archon_proteus
+			activate_advisor = archon_proteus
 		}
 		if = {
 			limit = {
 				NOT = { has_idea = archon_erion }
 				has_free_political_advisor_slot = yes
 			}
-			add_ideas = archon_erion
+			activate_advisor = archon_erion
 		}
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
@@ -5776,8 +5779,10 @@ shared_focus = {
 				uses = 1
 				category = light_fighter
 			}
+			generic_early_fighter = yes
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe
+				variant_name = "Early Fighter"
 				amount = 50
 			}
 		}
@@ -5798,7 +5803,7 @@ shared_focus = {
 			}
 			else = {
 				set_technology = {
-					early_fighter  = 1
+					early_fighter = 1
 				}
 				add_equipment_to_stockpile = {
 					type = fighter_equipment_0
