@@ -65,14 +65,7 @@ recruit_character = CNT_recep_ak
 recruit_character = CNT_kemal_gumusok
 recruit_character = CNT_dovlet_ucay
 
-create_faction = old_partnership_faction
-add_to_faction = GAR
 
-add_ai_strategy = {
-	type = alliance
-	id = GAR
-	value = 200
-}
 
 set_rule = {
 	can_generate_female_aces = yes

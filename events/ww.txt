@@ -19,12 +19,6 @@ country_event = { #factions
 		BAK = { add_to_faction = WNG }		
 		WIT = { add_to_faction = WNG }
 		NIM = { add_to_faction = WNG }
-
-		RCT = { add_to_faction = MIT }
-		LCT = { add_to_faction = MIT }		
-		BAK = { add_to_faction = MIT }		
-		WIT = { add_to_faction = MIT }
-		NIM = { add_to_faction = MIT }
 		
 		RCT = { add_to_faction = GRY }
 		LCT = { add_to_faction = GRY }		

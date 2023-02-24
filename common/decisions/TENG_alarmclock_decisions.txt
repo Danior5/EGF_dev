@@ -10,7 +10,6 @@ alarm_clock_category = {
 				original_tag = NIM
 				original_tag = WIT
 				original_tag = LCT
-				original_tag = MIT
 				original_tag = HLQ
 				original_tag = GRI
 				#original_tag = ROU
@@ -79,7 +78,6 @@ alarm_clock_category = {
 				original_tag = NIM
 				original_tag = WIT
 				original_tag = LCT
-				original_tag = MIT
 				original_tag = FAT
 				original_tag = TRD
 				original_tag = ROU
@@ -140,6 +138,7 @@ alarm_clock_category = {
 					original_tag = BAT
 					original_tag = CTH
 					original_tag = HIP
+					original_tag = MIT
 			}
 		}
 		available = {

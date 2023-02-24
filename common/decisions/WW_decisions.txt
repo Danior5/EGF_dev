@@ -920,9 +920,6 @@ WW_category = {
 				RCT = {
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
-				MIT = {
-					set_technology = { WW_EQC_tank_amph_bonus = 1 }
-				}
 			}
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -984,9 +981,6 @@ WW_category = {
 				RCT = {
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
-				MIT = {
-					set_technology = { WW_EQC_tank_amph_bonus = 1 }
-				}
 			}	
 			custom_effect_tooltip = adding_toratoratora
 		}
@@ -1019,6 +1013,12 @@ WW_category = {
 			WIT = { add_to_faction = HIP }	
 			NIM = { add_to_faction = HIP }
 			
+			BAK = { add_to_faction = MIT }		
+			LCT = { add_to_faction = MIT }
+			RCT = { add_to_faction = MIT }		
+			WIT = { add_to_faction = MIT }	
+			NIM = { add_to_faction = MIT }
+			
 			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
 		
@@ -1029,6 +1029,12 @@ WW_category = {
 			RCT = { add_to_faction = HIP }		
 			WIT = { add_to_faction = HIP }		
 			NIM = { add_to_faction = HIP }
+			
+			BAK = { add_to_faction = MIT }		
+			LCT = { add_to_faction = MIT }
+			RCT = { add_to_faction = MIT }		
+			WIT = { add_to_faction = MIT }	
+			NIM = { add_to_faction = MIT }
 				
 			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
@@ -1178,9 +1184,6 @@ WW_category = {
 					set_technology = { WW_EQC_tank_amph_bonus = 0 }
 				}
 				RCT = {
-					set_technology = { WW_EQC_tank_amph_bonus = 0 }
-				}
-				MIT = {
 					set_technology = { WW_EQC_tank_amph_bonus = 0 }
 				}
 
@@ -1401,6 +1404,7 @@ WW_category = {
 			}
 		}
 	}
+	
 ### WW 3.0 end ###
 
 
@@ -1439,7 +1443,6 @@ WW_category = {
 				original_tag = CTH
 				original_tag = BAT
 				original_tag = HIP
-				original_tag = MIT
 			}
 		}
 		available = {
@@ -1494,7 +1497,6 @@ WW_category = {
 				original_tag = CTH
 				original_tag = BAT
 				original_tag = HIP
-				original_tag = MIT
 			}
 		}
 		available = {
