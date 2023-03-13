@@ -346,4 +346,111 @@ on_actions = {
 			}
 		}
 	}
+##HAU Island Control
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = TRD  
+							tag = TRD
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					FROM.FROM = {
+						state = 659
+					}
+				}
+				67 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				6 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				7 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				8 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				9 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				10 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				4 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1193 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1194 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1195 = {
+					add_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = TRD
+							tag = TRD
+						} 
+					}
+					FROM.FROM = {
+						state = 659
+					}
+				}
+				67 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				6 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				7 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				8 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				9 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				10 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				4 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1193 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1194 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+				1195 = {
+					remove_dynamic_modifier = { modifier = HAU_island_wall }
+				}
+			}
+		}
+	}
 }
