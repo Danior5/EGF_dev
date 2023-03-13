@@ -1155,7 +1155,7 @@ WW_category = {
 						}
 					}
 					CHN = { add_ideas = WW_CHN_core_buff }
-					OLE = { add_ideas = WW_OLE_surrender_limit }
+					#OLE = { add_ideas = WW_OLE_surrender_limit }
 
 					GRI = { add_to_faction = CHN }
 					GRI = { add_to_faction = GRF }
