@@ -879,6 +879,29 @@ WW_category = {
 				every_country = {
 					set_country_flag = big_event_custom_island_war
 				}
+
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
+
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
+
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }
+
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
 	
 				FAT = { 
 					add_timed_idea = { idea = WW_toratoratora days = 180 }
@@ -939,6 +962,36 @@ WW_category = {
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_island_war
+				}
+
+				BAK = { add_to_faction = EQS }
+				BAK = { add_to_faction = CRY }		
+				BAK = { add_to_faction = STG }		
+			
+				RCT = { add_to_faction = EQS }
+				RCT = { add_to_faction = CRY }		
+				RCT = { add_to_faction = STG }	
+
+				LCT = { add_to_faction = EQS }
+				LCT = { add_to_faction = CRY }		
+				LCT = { add_to_faction = STG }		
+
+				WIT = { add_to_faction = EQS }
+				WIT = { add_to_faction = CRY }		
+				WIT = { add_to_faction = STG }		
+					
+				NIM = { add_to_faction = EQS }
+				NIM = { add_to_faction = CRY }		
+				NIM = { add_to_faction = STG }
+
+				if = {
+					limit = {
+						WNG = {
+							has_war_with = BAT
+						}
+					}
+					GRI = { add_to_faction = BAT }
+					GRI = { add_to_faction = CTH }
 				}
 
 				FAT = { 
@@ -1018,6 +1071,9 @@ WW_category = {
 			RCT = { add_to_faction = MIT }		
 			WIT = { add_to_faction = MIT }	
 			NIM = { add_to_faction = MIT }
+
+			GRI = { add_to_faction = BAT }
+			GRI = { add_to_faction = CTH }
 			
 			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
@@ -1035,6 +1091,16 @@ WW_category = {
 			RCT = { add_to_faction = MIT }		
 			WIT = { add_to_faction = MIT }	
 			NIM = { add_to_faction = MIT }
+
+			if = {
+				limit = {
+					GRI = {
+						has_war_with = EQS
+					}
+				}
+				GRI = { add_to_faction = BAT }
+				GRI = { add_to_faction = CTH }
+			}
 				
 			#WNG = { add_ideas = WW_incompetent_tanks }
 		}
@@ -1073,6 +1139,7 @@ WW_category = {
 					target = EQS 
 				}
 			}
+
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_great_war
@@ -1089,6 +1156,10 @@ WW_category = {
 					}
 					CHN = { add_ideas = WW_CHN_core_buff }
 					OLE = { add_ideas = WW_OLE_surrender_limit }
+
+					GRI = { add_to_faction = CHN }
+					GRI = { add_to_faction = GRF }
+					GRI = { add_to_faction = PNG }
 				}
 			}
 		}
@@ -1116,36 +1187,7 @@ WW_category = {
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_tarrin_war
-				}
-
-				BAK = { add_to_faction = EQS }
-				BAK = { add_to_faction = CRY }		
-				BAK = { add_to_faction = STG }		
-			
-				RCT = { add_to_faction = EQS }
-				RCT = { add_to_faction = CRY }		
-				RCT = { add_to_faction = STG }	
-
-				LCT = { add_to_faction = EQS }
-				LCT = { add_to_faction = CRY }		
-				LCT = { add_to_faction = STG }		
-
-				WIT = { add_to_faction = EQS }
-				WIT = { add_to_faction = CRY }		
-				WIT = { add_to_faction = STG }		
-					
-				NIM = { add_to_faction = EQS }
-				NIM = { add_to_faction = CRY }		
-				NIM = { add_to_faction = STG }	
-				
-				
-				GRI = { add_to_faction = BAT }
-				GRI = { add_to_faction = CTH }
-				GRI = { add_to_faction = CHN }
-				GRI = { add_to_faction = GRF }
-				GRI = { add_to_faction = PNG }			
-				
-				
+				}		
 				#EQC = { remove_ideas = WW_last_AC }	
 				#HIP = { remove_ideas = WW_last_AC }
 				#WNG = { remove_ideas = WW_incompetent_tanks }
