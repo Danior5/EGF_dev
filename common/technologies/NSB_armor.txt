@@ -429,7 +429,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = @1012 }
+			position = { x = -4 y = @1012 }
 		}
 
 		ai_will_do = {
@@ -572,7 +572,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1009 }
+			position = { x = 2 y = @1008 }
 		}
 
 		ai_will_do = {
@@ -1267,10 +1267,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1005
+		start_year = 1007
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1005 }
+			position = { x = 2 y = @1007 }
 		}
 
 		ai_will_do = {
