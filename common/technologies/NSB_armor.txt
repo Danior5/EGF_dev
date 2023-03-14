@@ -209,7 +209,7 @@ technologies = {
 		start_year = 1005
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = @1007 }
+			position = { x = -1 y = @1005 }
 		}
 
 		ai_will_do = {
@@ -275,7 +275,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = @1009 }
+			position = { x = -1 y = @1007 }
 		}
 
 		ai_will_do = {
@@ -347,7 +347,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 5 }
+			position = { x = -4 y = @1009 }
 		}
 
 		on_research_complete_limit = {
@@ -572,7 +572,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1008 }
+			position = { x = 2 y = @1009 }
 		}
 
 		ai_will_do = {
@@ -860,7 +860,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @1007 }
+			position = { x = 5 y = @1005 }
 		}
 
 		ai_will_do = {
@@ -1049,7 +1049,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1006 }
+			position = { x = 3 y = @1007 }
 		}
 
 		ai_will_do = {
@@ -1270,7 +1270,7 @@ technologies = {
 		start_year = 1005
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1006 }
+			position = { x = 2 y = @1005 }
 		}
 
 		ai_will_do = {
