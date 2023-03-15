@@ -238,6 +238,24 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 		}
+		WW_CHN_GRI_attache_equus_only = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			research_bonus = { 
+				armor = 0.06
+			}
+
+			removal_cost = -1
+			picture = CHN_GRI_Attache_For_CHN
+			modifier = {			
+				land_doctrine_cost_factor = -0.03
+				max_command_power = -20
+				experience_gain_army = 0.03
+			}
+		}
 		WW_Nova_Old_Frontier_Buff = {
 			allowed = {
 				always = no
@@ -271,9 +289,10 @@ ideas = {
 			}
 		}
         WW_equus_only_trading_1 = {
-            available = {
+            allowed = {
 				always = no
             }
+			removal_cost = -1
             allowed_civil_war = { always = yes }
             picture = generic_foreign_capital
             modifier = {
@@ -282,9 +301,10 @@ ideas = {
             }
         }
         WW_equus_only_trading_2 = {
-            available = {
+            allowed = {
 				always = no
             }
+			removal_cost = -1
             allowed_civil_war = { always = yes }
             picture = generic_foreign_capital
             modifier = {

@@ -8,6 +8,9 @@ on_actions = {
 						option = EQS_ONLY
 					}
 				}
+				CHN = {
+					add_ideas = WW_CHN_GRI_attache_equus_only
+				}
 				HLR  = {
 					country_event = { id = ww_game_mode_event.2 days = 365 }
 					country_event = { id = ww_game_mode_event.3 days = 545 }

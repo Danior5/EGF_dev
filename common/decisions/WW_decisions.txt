@@ -1139,12 +1139,25 @@ WW_category = {
 					target = EQS 
 				}
 			}
-
+			
 			hidden_effect = {
 				every_country = {
 					set_country_flag = big_event_custom_great_war
 				}
-	
+				if = {
+					limit = {
+							has_game_rule = {
+								rule = ww_game_mode
+								option = EQS_ONLY
+							}
+					}
+					CHN = { remove_ideas = WW_CHN_GRI_attache_equus_only }
+					CHN = { add_to_faction = GRF }
+					CHN = { add_to_faction = TRD }
+					#CHN = { add_to_faction = PNG }
+					
+					EQS = { add_to_faction = STG }
+				}
 				if = {
 					limit = {
 						NOT = {
@@ -2070,9 +2083,9 @@ foreign_politics = {
 				rule = ww_game_mode
 				option = EQS_ONLY
 			}
-			FROM = {
-				exists = yes
-			}
+			#FROM = {
+			#	exists = yes
+			#}
 		}
 		
 		cost = 100

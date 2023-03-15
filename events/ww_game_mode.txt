@@ -1,6 +1,6 @@
 add_namespace = ww_game_mode_event
 
-country_event = { # Event for Bandits to join the Pryhwen Civil War
+country_event = { # Event for Equus only ACs choice
 	id = ww_game_mode_event.1
 	title = ww_game_mode_event.1.t
 	desc = ww_game_mode_event.1.d
