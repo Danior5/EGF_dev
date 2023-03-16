@@ -45,6 +45,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8101;11213;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia
 10815;3124;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia2
 1631;13123;sea;7226;-1;-1;-1;-1;;New Manehattan-Aquilia3
+901;7184;sea;5890;-1;-1;-1;-1;;New Manehattan-Aquilia4
 10882;7107;sea;5890;-1;-1;-1;-1;;New Manehattan-Talononte
 6275;8360;sea;8262;-1;-1;-1;-1;;Northern-Island
 9055;12142;sea;5838;-1;-1;-1;-1;;Southern-Islands-Mainland
