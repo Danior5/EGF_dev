@@ -8565,18 +8565,18 @@ on_actions = {
 			update_global_arrays = yes
 			adjust_research_modifier = yes
 			daily_fix_weapon_techs = yes
-			if = {
-				limit = {
-					NOT = { has_global_flag = river_federation_founded }
-					is_river_fed_member = yes
-					is_faction_leader = yes
-					any_allied_country = {
-						has_capitulated = no
-					}
-					NOT = { has_idea = RIV_leader_surrender_bonus }
-				}
-				add_ideas = RIV_leader_surrender_bonus
-			}
+			#if = {  ### REMOVED IN EGZF
+			#	limit = {
+			#		NOT = { has_global_flag = river_federation_founded }
+			#		is_river_fed_member = yes
+			#		is_faction_leader = yes
+			#		any_allied_country = {
+			#			has_capitulated = no
+			#		}
+			#		NOT = { has_idea = RIV_leader_surrender_bonus }
+			#	}
+			#	add_ideas = RIV_leader_surrender_bonus
+			#}
 			if = {
 				limit = { has_idea = GRF_got_mercs_delayed }
 				add_to_variable = { delayed_merc_payment_GRF = 1 }
