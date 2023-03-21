@@ -161,6 +161,15 @@ ideas = {
 				army_armor_attack_factor = -1
 			}
 		}
+		WW_overstrained_military_industry = {
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = -0.1
+				industrial_capacity_factory = -0.1 
+			}
+		}
 		WW_HIP_primo_victoria1 = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1

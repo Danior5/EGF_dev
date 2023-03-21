@@ -17,3 +17,10 @@ alarm_clock_category = {
 		always = yes
 	}
 }
+WW_overstrained_military_industry_category = {
+	priority = 9997
+	icon =  category_ger_mefo_bills
+	allowed = {
+		always = yes
+	}
+}

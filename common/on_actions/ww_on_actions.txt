@@ -181,4 +181,30 @@ on_actions = {
 			}
 		}
 	}
+	#Taking EQC solves JER and GRI military industry issues
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_in_faction_with = EQC
+							tag = EQC
+						}
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = GRI
+							tag = GRI
+						}
+					}
+					FROM.FROM = {
+						state = 362
+					}
+				}
+				GRI = { remove_ideas = WW_overstrained_military_industry }
+				JER = { remove_ideas = WW_overstrained_military_industry }
+			}
+		}
+	}
 }

@@ -1,0 +1,68 @@
+WW_overstrained_military_industry_category = {
+	WW_GRI_overstrained_military_industry_mission = {
+		icon = ger_mefo_bills
+		allowed = {
+				original_tag = GRI
+		}
+		available = {
+			any_country = {
+				is_in_faction_with = GRI
+				controls_state = 362
+			}
+		}
+		activation = {
+			date > 1011.01.01
+		}
+		days_mission_timeout = 304
+		fire_only_once = yes
+		
+		timeout_effect = {
+			if = {
+				limit = {
+					GRI = {
+						num_of_military_factories > 120
+					}
+				}
+				GRI = { 
+					add_timed_ideas = {
+						idea = WW_overstrained_military_industry
+						days = 120
+					}
+				}
+			}
+		}
+	}
+	WW_JER_overstrained_military_industry_mission = {
+		icon = ger_mefo_bills
+		allowed = {
+				original_tag = JER
+		}
+		available = {
+			any_country = {
+				is_in_faction_with = GRI
+				controls_state = 362
+			}
+		}
+		activation = {
+			date > 1011.01.01
+		}
+		days_mission_timeout = 304
+		fire_only_once = yes
+		
+		timeout_effect = {
+			if = {
+				limit = {
+					JER = {
+						num_of_military_factories > 100
+					}
+				}
+				JER = { 
+					add_timed_ideas = {
+						idea = WW_overstrained_military_industry
+						days = 120
+					}
+				}
+			}
+		}
+	}
+}
