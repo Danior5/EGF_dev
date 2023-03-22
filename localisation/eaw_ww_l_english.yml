@@ -126,6 +126,14 @@ l_english:
  WW_citadel_fallen:0 "Citadel Fallen"
  WW_citadel_fallen_desc:0 "The Citadel of Communism has been lost, if this mighty fortress has fallen then communism itself might be next."
  WW_citadel_fallen_tt:0 "Skill: §R-100%§!"
+
+ WW_overstrained_military_industry_category:0 "Wartime Economics"
+ WW_JER_overstrained_military_industry_mission:0 "Military Industrial Overexpansion"
+ WW_JER_overstrained_military_industry_mission_desc:0 "If we surpass 100 military factories, our civilian economic sector will no longer be able to sustain the rapid expansion of our military industry and we will face an economic disaster."
+ WW_GRI_overstrained_military_industry_mission:0 "Military Industrial Overexpansion"
+ WW_GRI_overstrained_military_industry_mission_desc:0 "If we surpass 120 military factories, our civilian economic sector will no longer be able to sustain the rapid expansion of our military industry and we will face an economic disaster."
+ WW_overstrained_military_industry:0 "Overstrained Military Industry"
+ WW_overstrained_military_industry_desc:0 "The rapid expansion of our military industry has caused an economic disaster at home. We may be able to stabilize the situation by seizing significant monetary reserves in New Manehatten, otherwise a longer term recovery is unavoidable."
  
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
