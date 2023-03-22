@@ -4,7 +4,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -16,7 +16,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -28,7 +28,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -40,7 +40,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -52,7 +52,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -64,7 +64,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -76,7 +76,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
@@ -88,7 +88,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
