@@ -1,9 +1,9 @@
 HIP_island_debuff_level_up = {	
 	if = {
-		limit = { has_idea = HIP_island_debuff1 }
+		limit = { has_idea = HIP_island_buff1 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff1
-			add_idea = HIP_island_debuff2
+			remove_idea = HIP_island_buff1
+			add_idea = HIP_island_buff2
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_1 }
@@ -35,10 +35,10 @@ HIP_island_debuff_level_up = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff2 }
+		limit = { has_idea = HIP_island_buff2 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff2
-			add_idea = HIP_island_debuff3
+			remove_idea = HIP_island_buff2
+			add_idea = HIP_island_buff3
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_2 }
@@ -70,10 +70,10 @@ HIP_island_debuff_level_up = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff3 }
+		limit = { has_idea = HIP_island_buff3 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff3
-			add_idea = HIP_island_debuff4
+			remove_idea = HIP_island_buff3
+			add_idea = HIP_island_buff4
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_3 }
@@ -105,10 +105,10 @@ HIP_island_debuff_level_up = {
 		}		
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff4 }
+		limit = { has_idea = HIP_island_buff4 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff4
-			add_idea = HIP_island_debuff5
+			remove_idea = HIP_island_buff4
+			add_idea = HIP_island_buff5
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_4 }
@@ -140,10 +140,10 @@ HIP_island_debuff_level_up = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff5 }
+		limit = { has_idea = HIP_island_buff5 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff5
-			add_idea = HIP_island_debuff6
+			remove_idea = HIP_island_buff5
+			add_idea = HIP_island_buff6
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_5 }
@@ -175,10 +175,10 @@ HIP_island_debuff_level_up = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff6 }
+		limit = { has_idea = HIP_island_buff6 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff6
-			add_idea = HIP_island_debuff7
+			remove_idea = HIP_island_buff6
+			add_idea = HIP_island_buff7
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_6 }
@@ -210,10 +210,10 @@ HIP_island_debuff_level_up = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff7 }
+		limit = { has_idea = HIP_island_buff7 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff7
-			add_idea = HIP_island_debuff8
+			remove_idea = HIP_island_buff7
+			add_idea = HIP_island_buff8
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_7 }
@@ -249,10 +249,10 @@ HIP_island_debuff_level_up = {
 # Like the level up effect except it runs in reverse
 HIP_island_debuff_level_down = {
 	if = {
-		limit = { has_idea = HIP_island_debuff8 }
+		limit = { has_idea = HIP_island_buff8 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff8
-			add_idea = HIP_island_debuff7
+			remove_idea = HIP_island_buff8
+			add_idea = HIP_island_buff7
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_8 }
@@ -285,10 +285,10 @@ HIP_island_debuff_level_down = {
 
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff7 }
+		limit = { has_idea = HIP_island_buff7 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff7
-			add_idea = HIP_island_debuff6
+			remove_idea = HIP_island_buff7
+			add_idea = HIP_island_buff6
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_7 }
@@ -320,10 +320,10 @@ HIP_island_debuff_level_down = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff6 }
+		limit = { has_idea = HIP_island_buff6 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff6
-			add_idea = HIP_island_debuff5
+			remove_idea = HIP_island_buff6
+			add_idea = HIP_island_buff5
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_6 }
@@ -355,10 +355,10 @@ HIP_island_debuff_level_down = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff5 }
+		limit = { has_idea = HIP_island_buff5 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff5
-			add_idea = HIP_island_debuff4
+			remove_idea = HIP_island_buff5
+			add_idea = HIP_island_buff4
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_5 }
@@ -390,10 +390,10 @@ HIP_island_debuff_level_down = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff4 }
+		limit = { has_idea = HIP_island_buff4 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff4
-			add_idea = HIP_island_debuff3
+			remove_idea = HIP_island_buff4
+			add_idea = HIP_island_buff3
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_4 }
@@ -425,10 +425,10 @@ HIP_island_debuff_level_down = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff3 }
+		limit = { has_idea = HIP_island_buff3 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff3
-			add_idea = HIP_island_debuff2
+			remove_idea = HIP_island_buff3
+			add_idea = HIP_island_buff2
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_3 }
@@ -460,10 +460,10 @@ HIP_island_debuff_level_down = {
 		}
 	}
 	else_if = {
-		limit = { has_idea = HIP_island_debuff2 }
+		limit = { has_idea = HIP_island_buff2 }
 		swap_ideas = {
-			remove_idea = HIP_island_debuff2
-			add_idea = HIP_island_debuff1
+			remove_idea = HIP_island_buff2
+			add_idea = HIP_island_buff1
 		}
 		686 = {
 			remove_dynamic_modifier = { modifier = HIP_island_wall_2 }

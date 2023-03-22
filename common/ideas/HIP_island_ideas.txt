@@ -1,6 +1,6 @@
 ideas = {
 	country = {	   
-		HIP_island_debuff1 = {
+		HIP_island_buff1 = {
 			allowed = {
 				always = no
 			}
@@ -8,9 +8,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.14
+				production_speed_dockyard_factor = 0.35
 			}
 		}
-		HIP_island_debuff2 = {
+		HIP_island_buff2 = {
 			allowed = {
 				always = no
 			}
@@ -18,9 +20,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.12
+				production_speed_dockyard_factor = 0.3
 			}
 		}
-		HIP_island_debuff3 = {
+		HIP_island_buff3 = {
 			allowed = {
 				always = no
 			}
@@ -28,9 +32,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.25
 			}
 		}
-		HIP_island_debuff4 = {
+		HIP_island_buff4 = {
 			allowed = {
 				always = no
 			}
@@ -38,9 +44,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.08
+				production_speed_dockyard_factor = 0.2
 			}
 		}
-		HIP_island_debuff5 = {
+		HIP_island_buff5 = {
 			allowed = {
 				always = no
 			}
@@ -48,9 +56,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.06
+				production_speed_dockyard_factor = 0.15
 			}
 		}
-		HIP_island_debuff6 = {
+		HIP_island_buff6 = {
 			allowed = {
 				always = no
 			}
@@ -58,9 +68,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.04
+				production_speed_dockyard_factor = 0.1
 			}
 		}
-		HIP_island_debuff7 = {
+		HIP_island_buff7 = {
 			allowed = {
 				always = no
 			}
@@ -68,9 +80,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.02
+				production_speed_dockyard_factor = 0.05
 			}
 		}
-		HIP_island_debuff8 = {
+		HIP_island_buff8 = {
 			allowed = {
 				always = no
 			}

@@ -26,25 +26,6 @@ on_actions = {
 			}
 		}
 	}
-	on_declare_war = {
-		effect = {
-			if = {
-				limit = {
-					FROM = {tag = HIP}
-					ROOT = {
-						OR = {
-							tag = CTH
-							tag = BAT
-						}
-					}
-				}
-				FROM = {
-					add_ideas = HIP_island_debuff1
-				}
-			}
-		}
-	}
-
 
 	##EQS Island Hopping
 	on_state_control_changed = {

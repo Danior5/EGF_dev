@@ -174,7 +174,7 @@
 			factor = 10
 		}
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}
 
 		prerequisite = {
@@ -13571,7 +13571,7 @@ shared_focus = {
 			focus = HIP_the_immortal_science_of_dialectical_materialism
 		}
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -20584,7 +20584,7 @@ shared_focus = {
 		}
 		
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}
 
 		cancel_if_invalid = yes
