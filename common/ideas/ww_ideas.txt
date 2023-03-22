@@ -170,7 +170,6 @@ ideas = {
 				industrial_capacity_factory = -0.1 
 			}
 		}
-		WW_
 		WW_HIP_primo_victoria1 = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
