@@ -173,10 +173,7 @@ on_actions = {
 					}
 				}
 				WNG = {
-					country_event = {
-						id = ww_wng.5
-						days = 7
-					}
+					country_event = ww_wng.5
 				}
 			}
 		}
