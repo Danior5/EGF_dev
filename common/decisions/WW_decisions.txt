@@ -1066,11 +1066,11 @@ WW_category = {
 			WIT = { add_to_faction = HIP }	
 			NIM = { add_to_faction = HIP }
 			
-			BAK = { add_to_faction = MIT }		
-			LCT = { add_to_faction = MIT }
-			RCT = { add_to_faction = MIT }		
-			WIT = { add_to_faction = MIT }	
-			NIM = { add_to_faction = MIT }
+			#BAK = { add_to_faction = MIT }		
+			#LCT = { add_to_faction = MIT }
+			#RCT = { add_to_faction = MIT }		
+			#WIT = { add_to_faction = MIT }	
+			#NIM = { add_to_faction = MIT }
 
 			GRI = { add_to_faction = BAT }
 			GRI = { add_to_faction = CTH }
@@ -1086,11 +1086,11 @@ WW_category = {
 			WIT = { add_to_faction = HIP }		
 			NIM = { add_to_faction = HIP }
 			
-			BAK = { add_to_faction = MIT }		
-			LCT = { add_to_faction = MIT }
-			RCT = { add_to_faction = MIT }		
-			WIT = { add_to_faction = MIT }	
-			NIM = { add_to_faction = MIT }
+			#BAK = { add_to_faction = MIT }		
+			#LCT = { add_to_faction = MIT }
+			#RCT = { add_to_faction = MIT }		
+			#WIT = { add_to_faction = MIT }	
+			#NIM = { add_to_faction = MIT }
 
 			if = {
 				limit = {
@@ -2060,7 +2060,7 @@ foreign_politics = {
 				original_tag = EQC
 				original_tag = CRY
 				original_tag = WNG
-				original_tag = MIT
+				#original_tag = MIT
 				original_tag = GRY
 				original_tag = STG
 				original_tag = HIP
