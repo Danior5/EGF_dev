@@ -26,13 +26,13 @@ on_actions = {
 			add_to_array = { global.ww_friendship_is_magic = BAK }
 			add_to_array = { global.ww_friendship_is_magic = GRY }
 			add_to_array = { global.ww_friendship_is_magic = WNG }
-			add_to_array = { global.ww_friendship_is_magic = MIT }
+			#add_to_array = { global.ww_friendship_is_magic = MIT }
 			add_to_array = { global.ww_friendship_is_magic = EQC }
 			add_to_array = { global.ww_friendship_is_magic = STG }
 			add_to_array = { global.ww_friendship_is_magic = CRY }
 			add_to_array = { global.ww_friendship_is_magic = EQS }
 			add_to_array = { global.ww_friendship_is_magic = HIP }
-			add_to_array = { global.ww_friendship_is_magic = MIT }
+			#add_to_array = { global.ww_friendship_is_magic = MIT }
 			
 			for_each_scope_loop = {
 			array = global.ww_grandpa_eros_wild_ride
