@@ -170,6 +170,15 @@ ideas = {
 				industrial_capacity_factory = -0.1 
 			}
 		}
+		WW_air_license = {
+			removal_cost = -1
+			picture = generic_air_payment
+			targeted_modifier = {
+				tag = TRD
+				license_tech_difference_speed = 0.5 
+				license_production_speed = 0.25 	
+			}
+		}
 		WW_HIP_primo_victoria1 = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
