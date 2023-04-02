@@ -50,7 +50,7 @@ ideas = {
 				planning_speed = 1.0
 			}
 		}
-		WW_JER_counteroffensive = {
+		WW_tarrin_offensive_2 = {
 			allowed = {
 				always = no
 			}
@@ -61,9 +61,45 @@ ideas = {
 			picture = FRA_la_deluge
 			modifier = {
 				army_attack_factor = 0.2
-				army_core_attack_factor = 0.2
-				army_speed_factor = 0.15
-				no_supply_grace	= 72.0
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
+			}
+		}
+		WW_CHN_winter_offensive_light = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_plan_east_prep
+			modifier = {
+				army_attack_factor = 0.2
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
+			}
+		}
+		WW_CHN_winter_offensive_heavy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_plan_east_prep
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.4
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
 			}
 		}
 		WW_crusaders = {

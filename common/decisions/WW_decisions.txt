@@ -1272,7 +1272,33 @@ WW_category = {
 			JER = { add_timed_idea = { idea = WW_tarrin_offensive_2  days = 90 }}
 		}
 	}
-
+	WW_CHN_winter_offensive_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			original_tag = CHN
+		}
+		visible = {
+			date > 1011.11.1
+		}
+		available = {
+			date > 1012.11.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					any_country = {
+						is_in_faction_with = CHN
+						controls_state = 14
+					}
+				}
+				CHN = { add_timed_idea = { idea = WW_CHN_winter_offensive_light days = 90 }}
+			}
+			else = {
+				CHN = { add_timed_idea = { idea = WW_CHN_winter_offensive_heavy days = 120 }}
+			}				
+		}
+	}
 	
 	
 	
