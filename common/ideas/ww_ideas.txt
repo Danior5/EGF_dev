@@ -179,6 +179,15 @@ ideas = {
 				license_production_speed = 0.25 	
 			}
 		}
+		WW_CHN_industrial_looting = {
+			removal_cost = -1
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.1
+				industrial_factory_donations = 10
+			}
+		}
 		WW_HIP_primo_victoria1 = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
