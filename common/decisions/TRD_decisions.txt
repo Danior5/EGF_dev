@@ -1850,7 +1850,6 @@ economy_decisions = {
 		}
 		available = {
 			hidden_trigger = { check_variable = { bank > 4 } }
-			has_war = no
 			NOT = {
 				has_idea = TRD_industrial_experts_idea
 			}
