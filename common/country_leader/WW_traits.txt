@@ -8,36 +8,39 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.25
 		experience_gain_navy = 0.3
 		navy_fuel_consumption_factor = -0.5
+		hidden_modifier = {
+			naval_damage_factor = 0.1
+			naval_defense_factor = 0.1
+		}
+		custom_modifier_tooltip = WW_HIP_primo_victoria2_tt
 		custom_modifier_tooltip = queen_helvia_admiral_tt
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_aurantia_WW = {
 		random = no
-		production_speed_industrial_complex_factor = 0.1
+		production_speed_industrial_complex_factor = 0.2
 		local_resources_factor = 0.15
 		production_lack_of_resource_penalty_factor = -0.2
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_yaria_WW = {
 		random = no
 		consumer_goods_factor = 0.07
-		political_power_gain = -0.15
-		research_speed_factor = 0.05
+		political_power_gain = -0.1
+		research_speed_factor = 0.07
 		custom_modifier_tooltip = queen_yaria_research_tt
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_argynnis_WW = {
 		random = no
 		production_factory_max_efficiency_factor = -0.1
+		army_attack_factor = 0.05
 		army_morale_factor = 0.1
 		custom_modifier_tooltip = queen_argynnis_research_tt	
 		ai_will_do = {

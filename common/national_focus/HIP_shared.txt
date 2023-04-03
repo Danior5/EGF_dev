@@ -2327,8 +2327,8 @@
 			has_war = yes
 			date > 1012.07.01
 			OR = {
-				has_idea = HIP_island_debuff1
-				has_idea = HIP_island_debuff2
+				has_idea = HIP_island_buff1
+				has_idea = HIP_island_buff2
 			}
 		}
 
