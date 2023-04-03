@@ -1633,7 +1633,7 @@ shared_focus = {
 	allow_branch = {
 		is_EQS_SOL = no
 	}
-	x = 29
+	x = 31
 	y = 1
 	available = {
 		if = {
@@ -1700,7 +1700,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 27
+	x = 29
 	y = 2
 	cancel_if_invalid = no
 	continue_if_invalid = yes
@@ -1720,7 +1720,7 @@ shared_focus = {
 	prerequisite = {
 		focus = Advisors
 	}
-	x = 27
+	x = 29
 	y = 3
 	available = {
 		OR = {
@@ -1868,7 +1868,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 25
+	x = 27
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Remove_Harmonic_Stagnation"
@@ -1916,7 +1916,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 27
+	x = 29
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus War_Plan"
@@ -2032,7 +2032,7 @@ shared_focus = {
 	bypass = {
 		NOT = { has_idea = friendly_harmony }
 	}
-	x = 27
+	x = 29
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Forget_magic_of_friendship"
@@ -2072,7 +2072,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 27
+	x = 29
 	y = 6
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQS_WMD"
@@ -2094,7 +2094,7 @@ shared_focus = {
 	icon = GFX_goal_derpy_conscription_eqs
 	cost = 2
 	ai_will_do = { factor = 6000 }
-	x = 29
+	x = 31
 	y = 2
 	cancel_if_invalid = no
 	continue_if_invalid = yes
@@ -2157,7 +2157,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 29
+	x = 31
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Support_aircraft_research"
@@ -2224,7 +2224,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 29
+	x = 31
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Bomber_research"
@@ -2282,7 +2282,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 29
+	x = 31
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Artillery_research"
@@ -2310,7 +2310,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 31
+	x = 33
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus All_ponies_front_f"
@@ -2367,7 +2367,7 @@ shared_focus = {
 	ai_will_do = { factor = 90 }
 	continue_if_invalid = no
 	cancel_if_invalid = yes
-	x = 31
+	x = 33
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Appeal_to_STG"
@@ -2395,7 +2395,7 @@ shared_focus = {
 	available = {
 		has_war_together_with = STG
 	}
-	x = 31
+	x = 33
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus faction_research"
@@ -2437,7 +2437,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 31
+	x = 33
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Tank_research"
@@ -2494,7 +2494,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 33
+	x = 35
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus military_coordination"
@@ -2534,7 +2534,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 33
+	x = 35
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Infantry_weapons"
@@ -2562,7 +2562,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 35
+	x = 37
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus STG_tank_projects"
@@ -2601,7 +2601,7 @@ shared_focus = {
 			}
 		}
 	}
-	x = 27
+	x = 29
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Nuclear_Power"
@@ -2667,7 +2667,7 @@ shared_focus = {
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }
 	}
-	x = 25
+	x = 27
 	y = 5
 
 	completion_reward = {
