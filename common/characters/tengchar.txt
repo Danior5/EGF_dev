@@ -1,6 +1,6 @@
 characters={
 	BAK_WW_fieldmarshel = {
-		name = "Soldier TF2"
+		name = "Soldier TF2" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/soldiertf2.tga"
@@ -168,7 +168,7 @@ characters={
 		}
 	}
 	HLQ_WW_fieldmarshel = {
-		name = "Hans"
+		name = "Hans" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/lalo.tga"
@@ -210,7 +210,7 @@ characters={
 		}
 	}
 	NIM_WW_fieldmarshel = {
-		name = "NImbussy" ## Decringified ##
+		name = "Nimbussy" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/rfk.tga"
@@ -294,7 +294,7 @@ characters={
 		}
 	}
 	WIT_WW_fieldmarshel = {
-		name = "Chuck McGill"
+		name = "Chuck McGill" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/chuck.tga"

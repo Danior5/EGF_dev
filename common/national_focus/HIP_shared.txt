@@ -2337,11 +2337,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+
 			add_ideas = WW_HIP_primo_victoria1
 			add_ideas = WW_HIP_primo_victoria2
 			add_ideas = WW_HIP_primo_victoria3
 			custom_effect_tooltip = WW_HIP_gates_of_hell_tt
 			hidden_effect = {
+				news_event = { hours = 1 id = ww.news.3 }
 				HIP = {
 					country_event = {
 						id = ww.13
