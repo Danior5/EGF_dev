@@ -108,6 +108,7 @@ WW_great_war_category = {
 		}
 		available = {
 			date > 1012.11.1
+			date < 1013.1.1
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -116,10 +117,14 @@ WW_great_war_category = {
 				limit = {
 					any_country = {
 						is_in_faction_with = CHN
-						controls_state = 14
+						OR = {
+							controls_state = 14 
+							controls_state = 133
+							controls_state = 138 
+						}
 					}
 				}
-				CHN = { add_timed_idea = { idea = WW_CHN_winter_offensive_light days = 90 }}
+				CHN = { add_timed_idea = { idea = WW_CHN_winter_offensive_light days = 120 }}
 			}
 			else = {
 				CHN = { add_timed_idea = { idea = WW_CHN_winter_offensive_heavy days = 120 }}
@@ -135,7 +140,7 @@ WW_great_war_category = {
 			date > 1011.11.1
 		}
 		available = {
-			date > 1011.11.1
+			has_completed_focus = WW_war_begins
 			controls_state = 132
 			controls_state = 169
 			controls_state = 131 
@@ -770,6 +775,717 @@ WW_great_war_category = {
 					}
 				}
 			}				
+		}
+	}
+	WW_EQS_cope_line_decision = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			date > 1011.11.1
+		}
+		available = {
+			has_completed_focus = WW_cope_line
+			controls_state = 70
+			controls_state = 179
+			controls_state = 105 
+		}
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				137 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				136 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				175 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				172 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				14 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				72 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				73 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				173 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				133 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				45 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				59 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				60 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				61 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				46 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				138 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				174 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				54 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				169 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				132 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				130 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				131 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				170 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				126 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				171 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+				129 = {
+					add_dynamic_modifier = {
+						modifier = EQS_abandoned_land
+						days = 120
+					}				
+				}
+
+
+				delete_unit_template_and_units = { division_template = "Hope Line Infantry Division" }
+				division_template = {
+					name = "Hope Line Infantry Division"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+			
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						anti_tank = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+					}
+				}
+
+				70 = {
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 476
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9481
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9887
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9799
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6550
+					}
+				}
+				178 = {
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11898
+					}
+				}
+				179 = {
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 389
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6402
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3380
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9327
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11312
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 530
+					}
+				}
+				105 = {
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 3833
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 6886
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 9068
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 11053
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+					create_unit = {
+						division = "name = \"Hope Line Infantry Division\" division_template = \"Hope Line Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+						prioritize_location = 10
+					}
+				}
+			}
 		}
 	}	
 }

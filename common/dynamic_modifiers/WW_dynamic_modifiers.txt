@@ -22,3 +22,13 @@ EQS_abandoned_land = {
 	army_core_attack_factor = -0.25
 	army_core_defence_factor = -0.25
 }
+EQS_fortress_city = { 
+	enable = { always = yes }
+	
+	icon = GFX_idea_FRA_fortification_focus
+
+	max_dig_in = 10
+	cas_damage_reduction = 0.5
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+}
