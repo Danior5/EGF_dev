@@ -138,7 +138,7 @@ alarm_clock_category = {
 					original_tag = BAT
 					original_tag = CTH
 					original_tag = HIP
-					original_tag = MIT
+					#original_tag = MIT
 			}
 		}
 		available = {
