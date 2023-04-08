@@ -81,6 +81,10 @@ l_english:
  WW_volunteer_tanks:0 "Queen's Guard Panzers"
  WW_volunteer_infantry:0 "Volksgrenadier Divisions"
  WW_CHN_warplan:0 "Continuous War Plan"
+ WW_CHN_hold_shire:0 "Fortify the Shire River"
+ WW_fall_rosa:0 "§0Fall Rosa§!"
+ WW_fall_hellgrun:0 "§7Fall Hellgrun§!"
+ WW_fall_dunklegrun:0 "§GFall Dunklegrun§!"
  
  ww.15.t:0 "The Continuous War Plan"
  ww.15.d:0 "Chairpig emergency loc because Tassen is a vanillatard (fuck hearts of oak btw)"

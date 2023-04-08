@@ -2037,7 +2037,7 @@ focus = {
 }
 focus = {
 	id = WW_CHN_hold_shire
-	icon = GFX_goal_chn_rifles
+	icon = GFX_goal_chn_man_bunker
 	cost = 5
 	prerequisite = {
 		focus = WW_CHN_warplan
@@ -2051,7 +2051,7 @@ focus = {
 }
 focus = {
 	id = WW_fall_rosa
-	icon = GFX_goal_chn_rifles
+	icon = GFX_goal_chn_crystal_city
 	cost = 5
 	prerequisite = {
 		focus = WW_CHN_hold_shire
@@ -2070,7 +2070,7 @@ focus = {
 }
 focus = {
 	id = WW_fall_hellgrun
-	icon = GFX_goal_chn_rifles
+	icon = GFX_goal_chn_forest_fire
 	cost = 5
 	prerequisite = {
 		focus = WW_CHN_hold_shire
@@ -2088,7 +2088,7 @@ focus = {
 }
 focus = {
 	id = WW_fall_dunklegrun
-	icon = GFX_goal_chn_rifles
+	icon = GFX_goal_chn_man_anchor
 	cost = 5
 	prerequisite = {
 		focus = WW_CHN_hold_shire
