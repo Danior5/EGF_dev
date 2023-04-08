@@ -1,0 +1,135 @@
+ideas = {
+	country = {
+		WW_CHN_winter_offensive_light = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_plan_east_prep
+			modifier = {
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
+			}
+			targeted_modifier = {
+				tag = EQS
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = CRY
+				attack_bonus_against = 0.2
+			}
+		}
+		WW_CHN_winter_offensive_heavy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_plan_east_prep
+			modifier = {
+				army_speed_factor = 0.2
+				supply_consumption_factor = -0.4
+				no_supply_grace	= 96.0
+				planning_speed = 2.0
+			}
+			targeted_modifier = {
+				tag = EQS
+				attack_bonus_against = 0.4
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.4
+			}
+			targeted_modifier = {
+				tag = CRY
+				attack_bonus_against = 0.4
+			}
+		}
+		WW_expensive_mech = {
+			removal_cost = -1
+			picture = FRA_motorized_focus
+			equipment_bonus = {
+				mechanized_equipment = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+			}
+		}
+		WW_expensive_tanks = {
+			removal_cost = -1
+			picture = man_five_year_plan_tank
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.5
+					instant = yes
+				}
+			}
+		}
+		WW_CHN_industrial_looting = {
+			removal_cost = -1
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.1
+				industrial_factory_donations = 10
+			}
+		}
+		WW_CHN_economy_0 = {
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.3
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		WW_CHN_economy_1 = {
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.075
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		WW_CHN_help_allies = {
+			removal_cost = -1
+			picture = CHN_unity
+			modifier = {
+				conscription = 0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+
+				stability_factor = 0.2	
+				war_support_factor = 0.2
+
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+			
+			}
+		}
+		WW_CHN_defensive_army = {
+			removal_cost = -1
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				max_dig_in = 5
+			}
+		}
+	}
+}
