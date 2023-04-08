@@ -77,6 +77,17 @@ l_english:
  WW_CHN_core_buff:0 "Olenian Front Secure"
  WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
 
+ ### Sunset update CHN focuses and events
+ WW_volunteer_tanks:0 "Queen's Guard Panzers"
+ WW_volunteer_infantry:0 "Volksgrenadier Divisions"
+ WW_CHN_warplan:0 "Continuous War Plan"
+ 
+ ww.15.t:0 "The Continuous War Plan"
+ ww.15.d:0 "Chairpig emergency loc because Tassen is a vanillatard (fuck hearts of oak btw)"
+ ww.15.a:0 "This buffs Nova and Olenia"
+ ww.15.b:0 "This will give you an industrial buff after 270 days"
+ ww.15.c:0 "This spawns a bunch of cope 40w infantry and gives you a defensive buff"
+ 
  WW_last_AC:0 "Our Finest Hour"
 
  WW_incompetent_tanks:0 "Inexperienced Armor Corps"

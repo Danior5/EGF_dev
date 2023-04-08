@@ -1604,7 +1604,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_we_are_losing
-	icon = GFX_goal_generic_major_war
+	icon = GFX_goal_generic_attack_allies
 	cost = 0
 	available = {
 		always = no
@@ -1763,7 +1763,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_cope_line
-	icon = WW_we_are_losing
+	icon = GFX_goal_nested_fortifications
 	cost = 5
 	available = {
 		has_decision = WW_EQS_shire_line_decision
@@ -1888,7 +1888,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_defend_canterlot
-	icon = WW_we_are_losing
+	icon = GFX_goal_eqs_canterlot
 	cost = 5
 	available = {
 		has_decision = WW_EQS_cope_line_decision
@@ -1912,7 +1912,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_first_wave
-	icon = GFX_focus_generic_manpower
+	icon = GFX_focus_generic_little_entente
 	cost = 1
 	available = {
 		CHN = {
@@ -1994,7 +1994,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_second_wave
-	icon = GFX_focus_generic_manpower
+	icon = GFX_focus_generic_little_entente
 	cost = 1
 	available = {
 		CHN = {
@@ -2080,7 +2080,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = WW_third_wave
-	icon = GFX_focus_generic_manpower
+	icon = GFX_focus_generic_little_entente
 	cost = 1
 	available = {
 		CHN = {

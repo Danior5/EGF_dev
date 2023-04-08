@@ -1865,7 +1865,7 @@ focus_tree = {
 
 focus = {
 	id = WW_volunteer_infantry
-	icon = GFX_goal_chn_pony
+	icon = GFX_goal_chn_96th
 	cost = 5
 	prerequisite = {
 		focus = CHN_force_ponies_to_work
@@ -1930,7 +1930,7 @@ focus = {
 }
 focus = {
 	id = WW_volunteer_tanks
-	icon = GFX_goal_chn_pony
+	icon = GFX_goal_chn_man_milice
 	cost = 5
 	prerequisite = {
 		focus = CHN_force_ponies_to_work
