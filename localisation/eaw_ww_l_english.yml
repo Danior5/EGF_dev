@@ -86,7 +86,8 @@ l_english:
  WW_fall_hellgrun:0 "§7Fall Hellgrun§!"
  WW_fall_dunklegrun:0 "§GFall Dunklegrun§!"
  
- WW_great_war_category:0 "Great War"
+ CHN_WW_great_war_category:0 "The Great War"
+ CHN_WW_great_war_category_desc:0 "Placeholder"
  WW_CHN_winter_offensive_decision:0 "Launch Operation Wintersturm"
  WW_CHN_winter_offensive_light:0 "Operation Wintersturm"
  WW_CHN_winter_offensive_heavy:0 "Operation Wintersturm"
@@ -108,6 +109,8 @@ l_english:
  ww.15.c:0 "This spawns a bunch of cope 40w infantry and gives you a defensive buff"
  
  ### Sunset update EQS focuses and events
+ EQS_WW_great_war_category:0 "The Great War"
+ EQS_WW_great_war_category_desc:0 "Placeholder"
  WW_war_begins:0 "The Great War"
  WW_we_are_losing:0 "Desperate Measures"
  WW_temporary_mech:0 "Improvised Mechanized Equipment"
@@ -128,7 +131,7 @@ l_english:
  WW_EQS_Retreat_Shire_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CShire River§!"
  WW_EQS_Retreat_Shire_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CShire River§! for §Y120 days§!"
  WW_EQS_Retreat_Cope_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CHope Hollow-Whinnyapolis Line§!"
- WW_EQS_Retreat_Cope_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CHope Hollow-Whinnyapolis Line§!"
+ WW_EQS_Retreat_Cope_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CHope Hollow-Whinnyapolis Line§! for §Y120 days§!"
  
  WW_EQS_emergency_tanks:0 "Create §Yseven§! 42 width §YMedium Tank Divisions§!"
  WW_EQS_first_wave_divs:0 "Create §Ythree§! 40 width §YInfantry Divisions§! in every controlled frontline state"

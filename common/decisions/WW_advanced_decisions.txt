@@ -66,7 +66,7 @@ WW_overstrained_military_industry_category = {
 		}
 	}
 }
-WW_great_war_category = {
+CHN_WW_great_war_category = {
 	WW_CHN_looting_mission = {
 		icon = generic_construction
 		allowed = {
@@ -131,6 +131,8 @@ WW_great_war_category = {
 			}				
 		}
 	}
+}
+EQS_WW_great_war_category = {
 	WW_EQS_shire_line_decision = {
 		icon = hol_draw_up_staff_plans
 		allowed = {
@@ -1491,5 +1493,5 @@ WW_great_war_category = {
 				}
 			}
 		}
-	}	
+	}
 }
