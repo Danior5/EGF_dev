@@ -65,6 +65,8 @@ WW_overstrained_military_industry_category = {
 			}
 		}
 	}
+}
+WW_great_war_category = {
 	WW_CHN_looting_mission = {
 		icon = generic_construction
 		allowed = {
@@ -96,8 +98,6 @@ WW_overstrained_military_industry_category = {
 			}
 		}
 	}
-}
-WW_great_war_category = {
 	WW_CHN_winter_offensive_decision = {
 		icon = generic_ignite_civil_war
 		allowed = {
