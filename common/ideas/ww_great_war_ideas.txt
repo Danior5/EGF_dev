@@ -85,7 +85,7 @@ ideas = {
 				industrial_factory_donations = 10
 			}
 		}
-		WW_CHN_economy_0 = {
+		WW_CHN_war_plan_economy_nerf = {
 			removal_cost = -1
 			picture = FRA_factory_strikes
 			modifier = {
@@ -95,7 +95,7 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 			}
 		}
-		WW_CHN_economy_1 = {
+		WW_CHN_war_plan_economy_buff = {
 			removal_cost = -1
 			picture = FRA_factory_strikes
 			modifier = {

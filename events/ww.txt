@@ -885,14 +885,14 @@ country_event = {
 		GRF = {
 			add_ideas = WW_CHN_help_allies
 		}
-		PLB = {
-			add_ideas = WW_CHN_help_allies
-		}
+		#PLB = {
+		#	add_ideas = WW_CHN_help_allies
+		#}
 	}
 	option = {
 		name = ww.15.b
 		add_timed_idea = {
-			idea = WW_CHN_economy_0
+			idea = WW_CHN_war_plan_economy_nerf
 			days = 270
 		}
 		hidden_effect = {
@@ -905,6 +905,8 @@ country_event = {
 	option = {
 		name = ww.15.c
 		add_ideas = WW_CHN_defensive_army
+		custom_effect_tooltip = WW_CHN_Defensive_War_Plan
+	hidden_effect =  { 
 		delete_unit_template_and_units = { division_template = "Defensive Infantry Division" }
 		division_template = {
 		name = "Defensive Infantry Division"
@@ -976,6 +978,7 @@ country_event = {
 			}
 		}
 	}
+	}
 }
 country_event = {
 	id = ww.16
@@ -983,6 +986,6 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		add_idea = WW_CHN_economy_1
+		add_ideas = WW_CHN_war_plan_economy_buff
 	}
 }

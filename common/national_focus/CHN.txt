@@ -1250,14 +1250,13 @@ focus_tree = {
 	focus = {
 		id = demand_equestria
 		icon = GFX_goal_chn_lead_the_army
-		cost = 14.4
+		cost = 0
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = prepare_for_war
 		}
 		available = {
-			has_government = fascism
-			is_subject = no
+			always = no
 		}
 		select_effect = {
 			hidden_effect = {
@@ -1877,9 +1876,10 @@ focus = {
 		date > 1012.07.01
 	}
 	completion_reward = {
-		delete_unit_template_and_units = { division_template = "Volunteer Infantry Division" }
+	custom_effect_tooltip = WW_CHN_Volksgrenadiers
+	hidden_effect = { delete_unit_template_and_units = { division_template = "Volksgrenadier Division" } 
 		division_template = {
-		name = "Volunteer Infantry Division"
+		name = "Volksgrenadier Division"
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -1906,26 +1906,27 @@ focus = {
 				}
 			}
 			create_unit = {
-				division = "name = \"Volunteer Infantry Division\" division_template = \"Volunteer Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
 				owner = CHN
 			}
 			create_unit = {
-				division = "name = \"Volunteer Infantry Division\" division_template = \"Volunteer Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
 				owner = CHN
 			}
 			create_unit = {
-				division = "name = \"Volunteer Infantry Division\" division_template = \"Volunteer Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
 				owner = CHN
 			}
 			create_unit = {
-				division = "name = \"Volunteer Infantry Division\" division_template = \"Volunteer Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
 				owner = CHN
 			}
 			create_unit = {
-				division = "name = \"Volunteer Infantry Division\" division_template = \"Defensive Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
 				owner = CHN
 			}
 		}
+	}
 	}
 }
 focus = {
@@ -1941,10 +1942,11 @@ focus = {
 		date > 1012.07.01
 	}
 	completion_reward = {
+		custom_effect_tooltip = WW_CHN_Guard_Panzers
+	hidden_effect =  { delete_unit_template_and_units = { division_template = "Queen's Guard Panzer Division" }
 		create_tank_designs = yes
-		delete_unit_template_and_units = { division_template = "Medium Tank Division" }
 		division_template = {
-			name = "Medium Tank Division"
+			name = "Queen's Guard Panzer Division"
 			regiments = {
 				magical_mechanized = { x = 0 y = 0 }
 				magical_mechanized = { x = 0 y = 1 }
@@ -1984,7 +1986,7 @@ focus = {
 			random_owned_controlled_state = {
 				prioritize = { 251 }
 				create_unit = {
-					division = "name = \"Medium Tank Division\" division_template = \"Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = CHN
 					force_equipment_variants = {
 						Basic Medium Tank
@@ -1992,7 +1994,7 @@ focus = {
 					}
 				}
 				create_unit = {
-					division = "name = \"Medium Tank Division\" division_template = \"Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = CHN
 					force_equipment_variants = {
 						Basic Medium Tank
@@ -2000,7 +2002,7 @@ focus = {
 					}
 				}
 				create_unit = {
-					division = "name = \"Medium Tank Division\" division_template = \"Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = CHN
 					force_equipment_variants = {
 						Basic Medium Tank
@@ -2008,7 +2010,7 @@ focus = {
 					}
 				}
 				create_unit = {
-					division = "name = \"Medium Tank Division\" division_template = \"Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = CHN
 					force_equipment_variants = {
 						Basic Medium Tank
@@ -2017,6 +2019,7 @@ focus = {
 				}
 			}
 		}
+	}
 	}
 }
 focus = {

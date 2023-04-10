@@ -1658,7 +1658,9 @@ shared_focus = {
 	x = 23
 	y = 9
 	completion_reward = {
+		custom_effect_tooltip = WW_EQS_emergency_tanks
 		add_ideas = WW_expensive_tanks
+	hidden_effect = {
 		create_tank_designs = yes
 		delete_unit_template_and_units = { division_template = "Medium Tank Division" }
 		division_template = {
@@ -1759,6 +1761,7 @@ shared_focus = {
 				}
 			}
 		}
+	}
 	}
 }
 shared_focus = {
@@ -1928,6 +1931,8 @@ shared_focus = {
 	x = 25
 	y = 7
 	completion_reward = {
+	custom_effect_tooltip = WW_EQS_first_wave_divs
+	hidden_effect = {
 		delete_unit_template_and_units = { division_template = "First Wave Infantry Division" }
 		division_template = {
 		name = "First Wave Infantry Division"
@@ -1991,6 +1996,7 @@ shared_focus = {
 			}
 		}
 	}
+	}
 }
 shared_focus = {
 	id = WW_second_wave
@@ -2010,6 +2016,8 @@ shared_focus = {
 	x = 25
 	y = 9
 	completion_reward = {
+	custom_effect_tooltip = WW_EQS_second_wave_divs
+	hidden_effect = {
 		delete_unit_template_and_units = { division_template = "Second Wave Infantry Division" }
 		division_template = {
 			name = "Second Wave Infantry Division"
@@ -2077,6 +2085,7 @@ shared_focus = {
 			}
 		}
 	}
+	}
 }
 shared_focus = {
 	id = WW_third_wave
@@ -2096,6 +2105,8 @@ shared_focus = {
 	x = 25
 	y = 11
 	completion_reward = {
+	custom_effect_tooltip = WW_EQS_third_wave_divs
+	hidden_effect = {
 		delete_unit_template_and_units = { division_template = "Third Wave Infantry Division" }
 		division_template = {
 			name = "Third Wave Infantry Division"
@@ -2166,6 +2177,7 @@ shared_focus = {
 				owner = EQS
 			}
 		}
+	}
 	}
 }
 #shared_focus = {
