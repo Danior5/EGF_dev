@@ -1925,6 +1925,11 @@ shared_focus = {
 			casualties > 1000000
 		}
 	}
+	bypass = {
+		CHN = {
+			casualties > 500000
+		}
+	}
 	prerequisite = {
 		focus = WW_we_are_losing
 	}
@@ -2008,6 +2013,11 @@ shared_focus = {
 		}
 		EQS = {
 			casualties > 1500000
+		}
+	}
+	bypass = {
+		CHN = {
+			casualties > 750000
 		}
 	}
 	prerequisite = {

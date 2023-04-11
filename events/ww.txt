@@ -524,6 +524,54 @@ news_event = {  ### Primo Victoria
 	}
 }
 
+news_event = {  ### Fall Rosa
+	id = ww.news.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.4"}
+	title = ww.news.4.t
+	desc = ww.news.4.d
+	picture = GFX_crystal_city_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww.news.4.a
+	}
+}
+
+news_event = {  ### Fall Hellgrun
+	id = ww.news.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.5"}
+	title = ww.news.5.t
+	desc = ww.news.5.d
+	picture = GFX_news_equestria_field
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww.news.5.a
+	}
+}
+
+news_event = {  ### Fall Dunklegrun
+	id = ww.news.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.6"}
+	title = ww.news.6.t
+	desc = ww.news.6.d
+	picture = GFX_news_event_los_pegasus
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww.news.6.a
+	}
+}
+
 
 
 country_event = {

@@ -41,6 +41,18 @@ l_english:
  ww.news.3.t:0 "Hippogriffs Strike Back!"
  ww.news.3.d:0 "[This.GetNewspaperHeader]"
  ww.news.3.a:0 "The war on Zebrica is far from over..."
+ 
+ ww.news.4.t:0 "Fall Rosa"
+ ww.news.4.d:0 "[This.GetNewspaperHeader]"
+ ww.news.4.a:0 "Cyrstal Ponies brace for the onslaught"
+ 
+ ww.news.5.t:0 "Fall Hellgrun"
+ ww.news.5.d:0 "[This.GetNewspaperHeader]"
+ ww.news.5.a:0 "Flames of war engulf the forests of western Equestria"
+ 
+ ww.news.6.t:0 "Fall Dunklegrun"
+ ww.news.6.d:0 "[This.GetNewspaperHeader]"
+ ww.news.6.a:0 "A strom is coming for Las Pegasus..."
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"

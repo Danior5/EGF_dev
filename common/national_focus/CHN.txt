@@ -2069,6 +2069,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
+		hidden_effect = { news_event = { id = ww.news.4 } }
 	}
 }
 focus = {
@@ -2087,6 +2088,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
+		hidden_effect = { news_event = { id = ww.news.5 } }
 	}
 }
 focus = {
@@ -2106,6 +2108,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
+		hidden_effect = { news_event = { id = ww.news.6 } }
 	}
 }
 
