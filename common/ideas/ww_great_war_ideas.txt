@@ -105,7 +105,16 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 			}
 		}
-		WW_CHN_help_allies = {
+		WW_CHN_help_allies_OLE = {
+			removal_cost = -1
+			picture = CHN_unity
+			modifier = {
+				conscription = 0.05
+				local_resources_factor = 0.1
+				global_building_slots_factor = 1
+			}
+		}
+		WW_CHN_help_allies_GRF = {
 			removal_cost = -1
 			picture = CHN_unity
 			modifier = {
@@ -114,18 +123,15 @@ ideas = {
 				army_defence_factor = 0.05
 				army_org_factor = 0.1
 
-				stability_factor = 0.2	
-				war_support_factor = 0.2
-
-				industrial_capacity_factory = 0.1
-				local_resources_factor = 0.1
-			
+				stability_factor = 0.1
+				war_support_factor = 0.1			
 			}
 		}
 		WW_CHN_defensive_army = {
 			removal_cost = -1
 			picture = ast_volunteer_defence_corps
 			modifier = {
+				army_strength_factor = 0.1
 				army_infantry_attack_factor = 0.1
 				army_infantry_defence_factor = 0.1
 				max_dig_in = 5

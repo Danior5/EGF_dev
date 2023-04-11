@@ -928,10 +928,10 @@ country_event = {
 	option = {
 		name = ww.15.a
 		OLE = {
-			add_ideas = WW_CHN_help_allies
+			add_ideas = WW_CHN_help_allies_OLE
 		}
 		GRF = {
-			add_ideas = WW_CHN_help_allies
+			add_ideas = WW_CHN_help_allies_GRF
 		}
 		#PLB = {
 		#	add_ideas = WW_CHN_help_allies
