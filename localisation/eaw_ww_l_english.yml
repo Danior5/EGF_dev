@@ -107,7 +107,8 @@ l_english:
  WW_CHN_industrial_looting:0 "Looting Vanhoover"
  WW_CHN_war_plan_economy_nerf:0 "Realigning the War Economy"
  WW_CHN_war_plan_economy_buff:0 "Realigned War Economy"
- WW_CHN_help_allies:0 "Changeling Assistance"
+ WW_CHN_help_allies_GRF:0 "Changeling Assistance"
+ WW_CHN_help_allies_OLE:0 "Changeling Assistance"
  WW_CHN_defensive_army:0 "Reinforced Infantry Units"
  
  WW_CHN_Volksgrenadiers:0 "Create §Yfive§! 14 width §YInfantry Divisions§! in every controlled frontline state"
