@@ -999,9 +999,6 @@ recruit_character = HIP_high_priests
 #pregrinded
 recruit_character = HIP_WW_fieldmarshel
 
-create_faction = "HIP_middle_sea_treaty"
-#add_to_faction = MIT
-
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders  = yes
