@@ -32,24 +32,3 @@ EQS_fortress_city = {
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 }
-CRY_disrupted_coms = { 
-	enable = { always = yes }
-	
-	icon = GFX_idea_CHN_equestria_chaos1
-	
-	EQS = {
-		targeted_modifier = {
-			tag = CRY
-			attack_bonus_against_cores = -1.0
-			defense_bonus_against_cores = -1.0
-		}
-	}
-	STG = {
-		targeted_modifier = {
-			tag = CRY
-			attack_bonus_against_cores = -1.0
-			defense_bonus_against_cores = -1.0
-		}
-	}
-}
-

@@ -2069,15 +2069,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-		hidden_effect = { 
-			146 = {
-				add_dynamic_modifier = {
-					modifier = CRY_disrupted_coms
-					days = 120
-				}				
-			}
-			news_event = { id = ww.news.4 } 
-		}
+		hidden_effect = { news_event = { id = ww.news.4 } }
 	}
 }
 focus = {
