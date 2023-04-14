@@ -140,6 +140,7 @@ l_english:
  EQS_fortress_city:0 "Fortress-city"
  WW_EQS_shire_line_decision:0 "Retreat to the Shire Line"
  WW_EQS_cope_line_decision:0 "Retreat to the Hope Line"
+ WW_shire_line_active:0 "Retreated to the Shire Line"
  
  WW_EQS_Retreat_Shire_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CShire River§!"
  WW_EQS_Retreat_Shire_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CShire River§! for §Y120 days§!"

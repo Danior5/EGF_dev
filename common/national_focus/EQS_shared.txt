@@ -1769,7 +1769,7 @@ shared_focus = {
 	icon = GFX_goal_nested_fortifications
 	cost = 5
 	available = {
-		has_decision = WW_EQS_shire_line_decision
+		has_country_flag = WW_shire_line_active
 	}
 	prerequisite = {
 		focus = WW_we_are_losing
