@@ -53,6 +53,10 @@ l_english:
  ww.news.6.t:0 "Fall Dunklegrun"
  ww.news.6.d:0 "[This.GetNewspaperHeader]"
  ww.news.6.a:0 "A strom is coming for Las Pegasus..."
+ 
+ ww.news.7.t:0 "Operation Provençal Wind"
+ ww.news.7.d:0 "[This.GetNewspaperHeader]The Second Tarrin Offensive"
+ ww.news.7.a:0 "Gods give the fields and hills of Tarrin no rest"
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"
