@@ -127,4 +127,56 @@ scripted_gui = {
 			}
 		}
 	}
+
+	#north win
+	
+	WW_big_event_north_win_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_north_win_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_north_win ### this global flag triggers the #superevent
+		}
+	}
+
+	WW_big_event_frame_north_win_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_frame_north_win_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_north_win
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_north_win ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+	
+	#south win
+	
+	WW_big_event_south_win_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_south_win_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_south_win ### this global flag triggers the #superevent
+		}
+	}
+
+	WW_big_event_frame_south_win_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "WW_big_event_frame_south_win_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_south_win
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_south_win ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }

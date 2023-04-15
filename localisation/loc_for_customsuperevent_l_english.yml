@@ -8,7 +8,7 @@
   GREAT_WAR_A:0 "1000 Years of Peace Shattered"    
     
   TARRIN_WAR_T:0 "THE WORLD WAR"
-  TARRIN_WAR_D:0 "All warfare is based...\n- Alexander Kemerkai"
+  TARRIN_WAR_D:0 "All warfare is based(...)\n- Alexander Kemerkai"
   TARRIN_WAR_A:0 "Eques on Fire"
   
   ZEBRA_WAR_T:0 "THE NORTH ZEBRICAN WAR"
@@ -18,3 +18,11 @@
   HIP_DEAD_T:0 "FALL OF HIPPOGRIFFIA"
   HIP_DEAD_D:0 "place holder\n- Alexander Kemerkai"
   HIP_DEAD_A:0 "place holder"
+  
+  NORTH_WIN_T:0 "REICHSPAKT VICTORY"
+  NORTH_WIN_D:0 "The Great Republican-Imperial Reconciliation of 1007\nwill come down as probably the most impactful event of the XI\ncentury. I feel nothing but pride knowing I contributed to it.\n- Alexander Kemerkai"
+  NORTH_WIN_A:0 "History is Being Written"
+  
+  SOUTH_WIN_T:0 "RIVER COALITION VICTORY"
+  SOUTH_WIN_D:0 "There is at least one thing worse than fighting with\nallies - And that is to fight without them.\n- Alexander Kemerkai"
+  SOUTH_WIN_A:0 "It's Finally Over"
