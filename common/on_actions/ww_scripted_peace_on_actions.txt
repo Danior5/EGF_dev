@@ -1,0 +1,196 @@
+on_actions = {
+#EQUESTRIA
+#Staliongrad
+	on_capitulation = { # STG Kills STL
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = STL
+					}
+					FROM = {
+						tag = STG
+					}
+				}
+				STG = {
+					save_global_event_target_as = winning_country
+				}
+				STL = {
+					save_global_event_target_as = losing_country
+				}
+				STG = {
+					annex_country = {
+						target = STL
+						transfer_troops = yes
+					}
+				}
+				#event = scriptpeace.1
+			}
+		}
+	}
+#Nova Griffonia
+	on_capitulation = { # Nova Kills frontier
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = GFF
+					}
+					FROM = {
+						tag = GRF
+					}
+				}
+				GRF = {
+					annex_country = {
+						target = GFF
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {# Nova Kills bears
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = PLB
+					}
+					FROM = {
+						tag = GRF
+					}
+				}
+				GRF = {
+					annex_country = {
+						target = PLB
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+#Changelings
+	on_capitulation = {# Changlin Kills deer
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = OLE
+					}
+					FROM = {
+						tag = CHN
+					}
+				}
+				CHN = {
+					annex_country = {
+						target = OLE
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+#Griffonia
+#Republic
+	on_capitulation = {# republic Kills sunstriker
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = MNC
+					}
+					FROM = {
+						tag = FAT
+					}
+				}
+				FAT = {
+					annex_country = {
+						target = MNC
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {# republic Kills vedina
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = VED
+					}
+					FROM = {
+						tag = FAT
+					}
+				}
+				FAT = {
+					annex_country = {
+						target = VED
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {# republic Kills skynavia
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = SRS
+					}
+					FROM = {
+						tag = FAT
+					}
+				}
+				FAT = {
+					annex_country = {
+						target = SRS
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {# republic Kills nortrun tribes
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = NTR
+					}
+					FROM = {
+						tag = FAT
+					}
+				}
+				FAT = {
+					annex_country = {
+						target = NTR
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+#Empire
+	on_capitulation = {# empire Kills strawbarry
+		effect = {
+			if = { 
+				limit = {
+					ROOT = {
+						tag = STW
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					annex_country = {
+						target = STW
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+}

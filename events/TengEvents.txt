@@ -1,3 +1,4 @@
+#alarm clock shit
 add_namespace = alarmover
 
 country_event = { #tarrin alarm over
@@ -65,5 +66,19 @@ country_event = { #teng fucks up event
 	is_triggered_only = yes
 	option = {
 		name = alarmover.99.a
+	}
+}
+
+#Scripted peace
+add_namespace = scriptpeace
+
+country_event = { #generic
+	id = scriptpeace.1
+	title = "Diplomatic Alert"
+	desc = TNO_PEACE_POPUP_WAR_CONTINUING_DEFAULT
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = close
 	}
 }

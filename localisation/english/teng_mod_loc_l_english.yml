@@ -84,3 +84,5 @@
  alarmover.99.a:0 "Bruh"
  
  WW_ALARM_OFF:0 "disabled alarms"
+ 
+ TNO_PEACE_POPUP_WAR_CONTINUING_DEFAULT: "§Y[winning_country.GetNameWithFlag]§! has defeated §Y[losing_country.GetNameWithFlag]§! in an ongoing conflict."
