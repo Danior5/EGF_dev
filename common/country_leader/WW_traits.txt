@@ -49,6 +49,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	WW_refinery_guy = {
+		random = no
+		
+		production_speed_synthetic_refinery_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	corporatist_industrialist_WW = {
 		random = no
 		
