@@ -184,7 +184,7 @@ recruit_character = FAT_duke_featherus_i
 #pregrinded generals
 recruit_character = FAT_WW_fieldmarshel
 #refinery dude
-recruit_character = FAT_WW_FAT_john_rubber
+recruit_character = WW_FAT_john_rubber
 
 
 set_rule = {
