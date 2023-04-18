@@ -31,7 +31,7 @@ characters={
 		name = "Skittlebug Psody" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/rommel.tga"
+				large = "gfx/leaders/WW/goodpsody.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -42,10 +42,10 @@ characters={
 		}
 	}
 	CRY_WW_fieldmarshel = {
-		name = "Based Cadence" ## Decringified ##
+		name = "Based Cadance" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/walter.tga"
+				large = "gfx/leaders/WW/basedcadance.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -73,7 +73,7 @@ characters={
 		name = "IT'S TIME" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/jesse.tga"
+				large = "gfx/leaders/WW/pixy.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -87,7 +87,7 @@ characters={
 		name = "VENON RANCH!!! Od czterech lat dowódca oddziałów specjalnych w służbie księżniczki Celestii. Odpowiedzialny za pacyfikację rebelii bizonów, łowca robali, morderca komunistów i nietoperzy. Dwukrotnie odznaczony za męstwo w boju."
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/monty.tga"
+				large = "gfx/leaders/WW/Venon.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -101,7 +101,7 @@ characters={
 		name = "Alexander Kemerkai" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/karensky.tga"
+				large = "gfx/leaders/WW/kemerkai.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -171,7 +171,7 @@ characters={
 		name = "Hans" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/lalo.tga"
+				large = "gfx/leaders/WW/krieger.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -213,7 +213,7 @@ characters={
 		name = "Nimbussy" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/rfk.tga"
+				large = "gfx/leaders/WW/nimbussy.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
