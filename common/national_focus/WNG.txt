@@ -4272,7 +4272,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_royal_acadamy_of_science
-		icon = GFX_focus_research
+		icon = GFX_goal_WNG_sciencefair
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_viva_il_re
@@ -4315,7 +4315,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_balance_the_books
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_WNG_balance
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_royal_acadamy_of_science
@@ -4342,7 +4342,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_aluminium
-		icon = GFX_focus_generic_aluminum
+		icon = GFX_goal_WNG_steel
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_royal_acadamy_of_science
@@ -4393,7 +4393,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_steel
-		icon = GFX_focus_generic_steel
+		icon = GFX_goal_WNG_steel1
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_balance_the_books
@@ -4443,7 +4443,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_economic_regeneration_act
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_WNG_industrial_project2
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_balance_the_books
@@ -4471,7 +4471,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_full_industralisation
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_WNG_industrial_project
 		cost = 8.00
 		prerequisite = {
 			focus = WNG_steel
@@ -4519,7 +4519,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_the_royal_intervention
-		icon = GFX_focus_generic_support_the_left_right_claw
+		icon = GFX_goal_WNG_DISMISSED
 		cost = 5
 		prerequisite = {
 			focus = WNG_declare_martial_law
@@ -4568,7 +4568,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_create_a_loyal_government
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_WNG_parliament
 		cost = 4
 		prerequisite = {
 			focus = WNG_the_royal_intervention
@@ -4593,7 +4593,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_reach_out_to_the_common_griffon
-		icon = GFX_goal_generic_national_unity_claws
+		icon = GFX_goal_WNG_commoners
 		cost = 4
 		prerequisite = {
 			focus = WNG_the_royal_intervention
@@ -4616,7 +4616,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_secure_army_loyalty
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_goal_WNG_royalarmy
 		cost = 4
 		prerequisite = {
 			focus = WNG_create_a_loyal_government
@@ -4640,7 +4640,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_placate_the_interlectuals
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_WNG_intellectuals
 		cost = 4
 		prerequisite = {
 			focus = WNG_reach_out_to_the_common_griffon
@@ -4664,7 +4664,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_viva_il_re
-		icon = GFX_goal_garibald
+		icon = GFX_goal_WNG_re
 		cost = 8
 		prerequisite = {
 			focus = WNG_create_a_loyal_government
@@ -4720,7 +4720,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_clamp_down_on_political_extreamists
-		icon = GFX_focus_generic_support_the_left_right_claw
+		icon = GFX_goal_WNG_antiextreme
 		cost = 8
 		prerequisite = {
 			focus = WNG_viva_il_re
@@ -4759,7 +4759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_absolute_rule
-		icon = GFX_focus_rom_royal_dictatorship
+		icon = GFX_goal_WNG_absolute
 		cost = 8
 		prerequisite = {
 			focus = WNG_clamp_down_on_political_extreamists
@@ -4797,7 +4797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_appease_the_moderates
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_WNG_moderate
 		cost = 8
 		prerequisite = {
 			focus = WNG_clamp_down_on_political_extreamists
@@ -4821,7 +4821,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_the_commoners_king
-		icon = GFX_goal_generic_national_unity_claws
+		icon = GFX_goal_WNG_gar1
 		cost = 8
 		prerequisite = {
 			focus = WNG_absolute_rule
@@ -4849,7 +4849,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_invest_in_the_future
-		icon = GFX_focus_research2
+		icon = GFX_goal_WNG_education
 		cost = 8
 		prerequisite = {
 			focus = WNG_viva_il_re
@@ -4870,7 +4870,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_royal_youth_awards
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_goal_WNG_awards
 		cost = 8
 		prerequisite = {
 			focus = WNG_invest_in_the_future
@@ -4893,7 +4893,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_expand_the_regia_marina
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_WNG_royalnavy
 		cost = 8
 		prerequisite = {
 			focus = WNG_invest_in_the_future
@@ -4914,7 +4914,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_one_night_in_griffenheim
-		icon = GFX_focus_castle_at_night
+		icon = GFX_goal_WNG_night
 		cost = 8
 		prerequisite = {
 			focus = WNG_viva_il_re
@@ -4955,7 +4955,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_bastion_of_the_south
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_WNG_wing_rise
 		cost = 8
 		prerequisite = {
 			focus = WNG_one_night_in_griffenheim
@@ -4991,7 +4991,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_royal_works
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_WNG_works
 		cost = 8
 		prerequisite = {
 			focus = WNG_bastion_of_the_south
@@ -5013,7 +5013,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_wingbardy_rises
-		icon = GFX_focus_wng_flag
+		icon = GFX_goal_WNG_eagle
 		cost = 8
 		prerequisite = {
 			focus = WNG_one_night_in_griffenheim
@@ -5071,7 +5071,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_fortify_the_boarder
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_WNG_fortify
 		cost = 8
 		prerequisite = {
 			focus = WNG_wingbardy_rises
@@ -5107,7 +5107,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_finish_the_fight
-		icon = GFX_goal_generic_attack_falcor
+		icon = GFX_goal_WNG_fal
 		cost = 8
 		prerequisite = {
 			focus = WNG_wingbardy_rises
@@ -5148,7 +5148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WNG_unite_the_kingdoms
-		icon = GFX_goal_griffon_crown
+		icon = GFX_goal_WNG_larp
 		cost = 8
 		prerequisite = {
 			focus = WNG_finish_the_fight
@@ -5229,7 +5229,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_secure_loyalty
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_goal_WNG_flock
 		cost = 8
 		prerequisite = {
 			focus = WNG_wingbardy_rises
@@ -5326,7 +5326,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_secure_griffonstone
-		icon = GFX_focus_strike_griffonstone
+		icon = GFX_goal_WNG_grf
 		cost = 8
 		prerequisite = {
 			focus = WNG_finish_the_fight
@@ -5410,7 +5410,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_secure_the_lakeside
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_WNG_lakeside
 		cost = 8
 		prerequisite = {
 			focus = WNG_secure_loyalty
@@ -5499,7 +5499,7 @@ focus_tree = {
 
 	focus = {
 		id = WNG_the_war_of_vengence
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_WNG_kilgri
 		cost = 8
 		prerequisite = {
 			focus = WNG_secure_griffonstone
@@ -5650,6 +5650,46 @@ offset = {
 		}
 		completion_reward = {
 			add_ideas = WNG_blackwings
+			custom_effect_tooltip = WNG_legitimise_the_blackwings_tt
+			hidden_effect = {
+				division_template = { #Blackwings
+					name = "Ali Nere" 
+					division_names_group = WNG_INF_02
+					template_counter = 68
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_cap = 12 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var ITA_militias_cap set in history file
+				
+					# Represents nearly all infantry divisions
+					# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+					# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+					regiments = { 
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+					}
+					support = { 
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_controlled_state = { #Create a few more Blackshirt Divs
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+					}
+					custom_effect_tooltip = WNG_legitimise_the_blackwings_spawn_tt
+					hidden_effect = {
+						create_unit = {
+							division = "division_template = \"Ali Nere\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 3
+						}
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -5673,6 +5713,9 @@ offset = {
 		available_if_capitulated = no
 
 		available = {
+			fascism > 0.24
+			communism < 0.25
+			democratic < 0.3
 			has_government = fascism
 		}
 		ai_will_do = {
@@ -5682,10 +5725,15 @@ offset = {
 			country_event = wingbardy.38
 		}
 		completion_reward = {
+			custom_effect_tooltip = WNG_the_gacerbo_law_tt
+			custom_effect_tooltip = on_selection_tt
 			effect_tooltip = {
 				country_event = wingbardy.38
 			}
+			custom_effect_tooltip = on_completion_tt
+			custom_effect_tooltip = WNG_the_gacerbo_law_tt_2
 			effect_tooltip = {
+				custom_effect_tooltip = WNG_fascists_in_power_election_tt
 				swap_ruler_traits = {
 					remove = aspiring_duce
 					add = duce
@@ -5697,10 +5745,25 @@ offset = {
 				}
 			}
 			hidden_effect = {
-				country_event = wingbardy.40
-				country_event = {
-					id = wingbardy.39
-					days = 30
+				if = {
+					limit = {
+						OR = {
+							is_ai = yes
+							WNG_has_majority_support = yes
+						}
+					}
+					country_event = wingbardy.40
+					country_event = {
+						id = wingbardy.39
+						days = 30
+					}
+				}
+				else = {
+					country_event = wingbardy.41
+					country_event = {
+						id = wingbardy.48
+						days = 2
+					}
 				}
 			}
 		}
@@ -5709,7 +5772,7 @@ offset = {
 	focus = {
 		id = WNG_accountable_only_to_the_king
 		icon = GFX_WNG_B_king
-		cost = 3
+		cost = 8
 		relative_position_id = WNG_the_gacerbo_law
 		x = -1
 		y = 1
@@ -5738,7 +5801,7 @@ offset = {
 	focus = {
 		id = WNG_the_grand_council_of_fascism
 		icon = GFX_WNG_B_council
-		cost = 3
+		cost = 8
 		relative_position_id = WNG_accountable_only_to_the_king
 		x = 0
 		y = 1
@@ -5770,7 +5833,7 @@ offset = {
 	focus = {
 		id = WNG_control_the_local_governments
 		icon = GFX_WNG_B_local
-		cost = 3
+		cost = 8
 		relative_position_id = WNG_the_gacerbo_law
 		x = 1
 		y = 1
@@ -5800,7 +5863,7 @@ offset = {
 	focus = {
 		id = WNG_only_fascism
 		icon = GFX_WNG_B_pnf
-		cost = 3
+		cost = 8
 		relative_position_id = WNG_control_the_local_governments
 		x = 0
 		y = 1
@@ -5873,444 +5936,6 @@ offset = {
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 
-	###WORLD WAR TREELET START
-	focus = {
-		id = WNG_reorganize_the_army
-		icon = GFX_goal_rhineland
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 4
-		y = 1
-		prerequisite = {
-			focus = WNG_glory_to_wingbardy
-		}
-
-		available = {
-			has_country_flag = is_wng_empire
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = WNG_outdated_army
-				}
-				remove_ideas = WNG_outdated_army
-			}
-			if = {
-				limit = {
-					has_idea = WNG_outdated_army_2
-				}
-				remove_ideas = WNG_outdated_army_2
-			}
-			if = {
-				limit = {
-					has_idea = WNG_outdated_army_3
-				}
-				remove_ideas = WNG_outdated_army_3
-			}
-			add_ideas = WW_WNG_reorganizing_army_1
-			hidden_effect = {
-				JER = {
-					country_event = {
-						id = ww_wng.1
-						days = 5
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = WNG_immediate_preparation
-		icon = GFX_focus_secret_rearmament
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 3
-		y = 2
-		prerequisite = {
-			focus = WNG_reorganize_the_army
-		}
-		mutually_exclusive = {
-			focus = WNG_finish_reorganization
-		}
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = WW_WNG_reorganizing_army_1
-				add_idea = WW_WNG_reorganizing_army_fast
-			}
-		}
-	}
-	focus = {
-		id = WNG_finish_reorganization
-		icon = GFX_focus_chi_army_reform
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 5
-		y = 2
-		prerequisite = {
-			focus = WNG_reorganize_the_army
-		}
-		mutually_exclusive = {
-			focus = WNG_immediate_preparation
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			unlock_decision_tooltip = WNG_army_reorganization_increase_decision
-		}
-	}
-	focus = {
-		id = WNG_strengthen_military_research
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 4
-		y = 3
-		prerequisite = {
-			focus = WNG_immediate_preparation
-			focus = WNG_finish_reorganization
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = WW_WNG_strengthening_military_research
-				days = 365
-			}
-			unlock_decision_tooltip = WNG_army_buff_1_decision
-			unlock_decision_tooltip = WNG_army_buff_2_decision
-			unlock_decision_tooltip = WNG_army_buff_3_decision
-			unlock_decision_tooltip = WNG_army_buff_4_decision
-		}
-	}
-	focus = {
-		id = WNG_southern_military_conference
-		icon = GFX_focus_generic_treaty
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 4
-		y = 4
-		prerequisite = {
-			focus = WNG_strengthen_military_research
-		}
-
-		available = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		select_effect = {
-			EQS = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			STG = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			CRY = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			EQC = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			GRY = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			RCT = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			HIP = {
-				country_event = {
-					id = ww_wng.4
-					days = 5
-				}
-			}
-			set_variable = {
-				var = global.WNG_military_aid
-				value = 0
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					check_variable = { global.WNG_military_aid > 6 }
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.6
-					uses = 2
-					category = land_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.6
-					uses = 2
-					category = air_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.6
-					uses = 2
-					category = naval_doctrine
-				}
-				modify_timed_idea = {
-					idea = WW_WNG_strengthening_military_research
-					days = -270
-				}
-			}
-			else_if = {
-				limit = {
-					check_variable = { global.WNG_military_aid > 3 }
-					check_variable = { global.WNG_military_aid < 7 }
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.4
-					uses = 2
-					category = land_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.4
-					uses = 2
-					category = air_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.4
-					uses = 2
-					category = naval_doctrine
-				}
-				modify_timed_idea = {
-					idea = WW_WNG_strengthening_military_research
-					days = -180
-				}
-			}
-			else_if = {
-				limit = {
-					check_variable = { global.WNG_military_aid > 0 }
-					check_variable = { global.WNG_military_aid < 4 }
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.2
-					uses = 2
-					category = land_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.2
-					uses = 2
-					category = air_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.2
-					uses = 2
-					category = naval_doctrine
-				}
-				modify_timed_idea = {
-					idea = WW_WNG_strengthening_military_research
-					days = -90
-				}
-			}
-			else = {
-				custom_effect_tooltip = WNG_conference_tt
-			}
-		}
-	}
-	focus = {
-		id = WNG_advanced_weapons
-		icon = GFX_focus_generic_combined_arms
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 3
-		y = 5
-		prerequisite = {
-			focus = WNG_southern_military_conference
-		}
-
-		available = {
-			NOT = {
-				has_idea = WW_WNG_strengthening_military_research
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			set_technology = { WW_WNG_advanced_weapons_technology = 1 }
-		}
-	}
-	focus = {
-		id = WNG_advanced_tactics
-		icon = GFX_goal_generic_army_doctrines
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 5
-		y = 5
-		prerequisite = {
-			focus = WNG_southern_military_conference
-		}
-
-		available = {
-			NOT = {
-				has_idea = WW_WNG_strengthening_military_research
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = WNG_tactic_enabled_tt
-			custom_effect_tooltip = WNG_ability_enabled_tt
-			hidden_effect = {
-				set_country_flag = WW_WNG_special_ability_enabled
-				set_technology = { 
-					popup = no
-					WW_WNG_tactic_technology = 1 
-				}
-			}
-		}
-	}
-	focus = {
-		id = WNG_fury_il_duce
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 8
-		y = 1
-		prerequisite = {
-			focus = WNG_glory_to_wingbardy
-		}
-
-		available = {
-			has_country_flag = WW_WNG_betrayal
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			WNG = {
-				country_event = {
-					id = ww_wng.3
-				}
-			}
-		}
-	}
-	focus = {
-		id = WNG_warrior_of_fascism
-		icon = GFX_goal_support_fascism
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 7
-		y = 2
-		prerequisite = {
-			focus = WNG_fury_il_duce
-		}
-		mutually_exclusive = {
-			focus = WNG_protector_of_karthinia
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_country_leader_trait = warrior_of_fascism_WW
-		}
-	}
-	focus = {
-		id = WNG_protector_of_karthinia
-		icon = GFX_focus_generic_fascist_propaganda
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 9
-		y = 2
-		prerequisite = {
-			focus = WNG_fury_il_duce
-		}
-		mutually_exclusive = {
-			focus = WNG_warrior_of_fascism
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_country_leader_trait = protector_of_karthinia_WW
-		}
-	}
-	focus = {
-		id = WNG_tarrin_plan
-		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 5
-		relative_position_id = WNG_glory_to_wingbardy
-		x = 8
-		y = 3
-		prerequisite = {
-			focus = WNG_warrior_of_fascism
-			focus = WNG_protector_of_karthinia
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = WNG_tarrin_plan_tt
-		}
-	}
-	###WORLD WAR TREELET END
-
 	focus = {
 		id = WNG_pressure_falcor
 		icon = GFX_WNG_B_fal
@@ -6370,10 +5995,260 @@ offset = {
 			}
 		}
 	}
+
+	focus = {
+		id = WNG_the_sicameon_question
+		icon = GFX_goal_generic_attack_sicameon
+		cost = 8
+
+		relative_position_id = WNG_pressure_falcor
+
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = WNG_pressure_falcor
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				strength_ratio = { tag = SIC ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				FAL = { exists = yes }
+				NOT = { 
+					is_in_faction_with = FAL 
+					FAL = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = SIC
+				has_war_with = SIC
+				has_wargoal_against = SIC
+				SIC = { exists = no }
+				SIC = { is_subject_of = WNG }
+			}
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		will_lead_to_war_with = SIC
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_the_sicameon_question"
+			if = {
+				limit ={
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = SIC
+					type = annex_everything
+				}
+			}
+			else_if = {
+				limit = {
+					is_in_faction_with = FAL
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SIC
+				}
+				hidden_effect = {
+					every_country_with_original_tag = {
+						original_tag_to_check = SIC
+						ROOT = {
+							create_wargoal = {
+								type = puppet_wargoal_focus
+								target = PREV
+							}
+						}
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = SIC
+				}
+				hidden_effect = {
+					every_country_with_original_tag = {
+						original_tag_to_check = SIC
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_war_with_asterion
+		icon = GFX_WNG_B_ast
+		cost = 8
+
+		relative_position_id = WNG_the_sicameon_question
+
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = WNG_the_sicameon_question
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				strength_ratio = { tag = MIT ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				SIC = { exists = yes }
+				NOT = { 
+					is_in_faction_with = SIC 
+					SIC = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = MIT
+			}
+			MIT = { 
+				exists = yes
+				NOT = {
+					is_subject_of = WNG
+				}
+				NOT = {
+					has_government = fascism
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = MIT
+				has_war_with = MIT
+				has_wargoal_against = MIT
+			}
+		}
+
+		will_lead_to_war_with = MIT
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_war_with_asterion"
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MIT
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_infulence_cyanolisia
+		icon = GFX_WNG_B_cya
+		cost = 8
+
+		relative_position_id = WNG_the_sicameon_question
+
+		x = 1
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_the_sicameon_question
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			CYA = { 
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+			}
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = CYA
+				has_war_with = CYA
+				has_wargoal_against = CYA
+				CYA = {
+					is_subject_of = WNG
+				}
+			}
+		}
+
+		will_lead_to_war_with = CYA
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_infulence_cyanolisia"
+			if = {
+				limit = {
+					CYA = {
+						has_government = communism
+					}
+				}
+				create_wargoal = {
+					target = CYA
+					type = puppet_wargoal_focus
+				}
+			}
+			else = {
+				CYA = {
+					country_event = wingbardy.141
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
 	focus = {
 		id = WNG_claim_griffonstone
 		icon = GFX_WNG_B_boi
-		cost = 0
+		cost = 8
 
 		relative_position_id = WNG_pressure_falcor
 
@@ -6546,7 +6421,7 @@ offset = {
 		cost = 8
 		relative_position_id = WNG_wingbard_empire
 
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = {
@@ -6571,6 +6446,581 @@ offset = {
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
+	focus = {
+		id = WNG_secure_tarrin
+		icon = GFX_WNG_B_tar
+		cost = 8
+
+		relative_position_id = WNG_wingbard_empire
+
+		x = 3
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_wingbard_empire
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				JES = {
+					exists = yes
+				}
+				strength_ratio = { tag = JES ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				FRN = { exists = yes }
+				NOT = { 
+					is_in_faction_with = FRN 
+					FRN = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+			modifier = {
+				487 = {
+					is_owned_by = JER
+				}
+				factor = 0
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = JES
+			}
+			OR = {
+				owns_state = 481
+				is_in_faction_with = FRN
+			}
+			NOT = {
+				owns_state = 487
+				owns_state = 652
+				owns_state = 521
+			}
+			FRN = {
+				NOT = {
+					owns_state = 487
+					owns_state = 652
+					owns_state = 521
+				}
+			}
+			is_subject = no
+		}
+
+		will_lead_to_war_with = JES
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_bring_FRN_back_under_heal"
+			if = {
+				limit = {
+					JES = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = JES
+				}
+			}
+			else = {
+				add_state_claim = 487
+				add_state_claim = 652
+				add_state_claim = 521
+				487 = {
+					owner = {
+						save_event_target_as = tarrin_owner
+					}
+				}
+				create_wargoal = {
+					target = event_target:tarrin_owner
+					type = take_claimed_state
+					generator = {
+						487
+						652
+						521
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_deal_with_the_bandits
+		icon = GFX_goal_generic_attack_bandits
+		cost = 8
+
+		relative_position_id = WNG_claim_griffonstone
+
+		x = -1
+		y = 1
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_completed_focus = WNG_declare_martial_law
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = WNG_claim_griffonstone
+			focus = WNG_the_chiazbeacle_pact
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				strength_ratio = { tag = BAN ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				BAN = {
+					owns_state = 389
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				BAN = { exists = yes }
+				NOT = { 
+					is_in_faction_with = BAN 
+					BAN = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = BAN
+			}
+			BAN = { 
+				exists = yes
+				NOT = {
+					is_subject_of = WNG
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = BAN
+				has_war_with = BAN
+				has_wargoal_against = BAN
+			}
+		}
+
+		will_lead_to_war_with = BAN
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_deal_with_the_bandits"
+			create_wargoal = {
+				type = annex_everything
+				target = BAN
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_strike_at_griffenheim
+		icon = GFX_WNG_B_empire
+		cost = 8
+		relative_position_id = WNG_wingbard_empire
+
+		x = -1
+		y = 1
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_completed_focus = WNG_declare_martial_law
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_formalise_the_pact
+			focus = WNG_wingbard_empire
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+
+		available = {
+			has_global_flag = GRI_empire_rising_flag
+			NOT = {
+				is_in_faction_with = GRD
+				GRD = { is_subject_of = WNG }
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = GRD
+				has_wargoal_against = GRD
+			}
+		}
+
+		will_lead_to_war_with = GRD # tag alias for event_target:griffonian_empire
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_wingbard_empire"
+			create_wargoal = {
+				target = GRD
+				type = annex_everything
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_bring_arantiga_back_under_heal
+		icon = GFX_goal_generic_attack_arantiga
+		cost = 8
+
+		relative_position_id = WNG_glory_to_wingbardy
+
+		x = 3
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_glory_to_wingbardy
+		}
+
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				strength_ratio = { tag = ARA ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				ARA = { exists = yes }
+				NOT = { 
+					is_in_faction_with = ARA 
+					ARA = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = ARA
+			}
+			ARA = { 
+				exists = yes
+				NOT = {
+					is_subject_of = WNG
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = ARA
+				has_wargoal_against = ARA
+			}
+		}
+
+		will_lead_to_war_with = ARA
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_bring_arantiga_back_under_heal"
+			create_wargoal = {
+				type = annex_everything
+				target = ARA
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = WNG_bring_FRN_back_under_heal
+		icon = GFX_goal_generic_attack_francistria
+		cost = 8
+
+		relative_position_id = WNG_glory_to_wingbardy
+
+		x = 7
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_glory_to_wingbardy
+		}
+
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				strength_ratio = { tag = FRN ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				FRN = { exists = yes }
+				NOT = { 
+					is_in_faction_with = FRN 
+					FRN = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = FRN
+			}
+			FRN = { 
+				exists = yes
+				NOT = {
+					is_subject_of = WNG
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = FRN
+				has_wargoal_against = FRN
+			}
+		}
+
+		will_lead_to_war_with = FRN
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_bring_FRN_back_under_heal"
+			create_wargoal = {
+				type = annex_everything
+				target = FRN
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = WNG_bring_TAL_back_under_heal
+		icon = GFX_goal_generic_attack_talouse
+		cost = 8
+
+		relative_position_id = WNG_glory_to_wingbardy
+
+		x = 5
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = {
+			focus = WNG_glory_to_wingbardy
+		}
+
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				strength_ratio = { tag = TAL ratio > 1.5 }
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				TAL = { exists = yes }
+				NOT = { 
+					is_in_faction_with = TAL 
+					TAL = { is_subject_of = WNG }
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1
+			}
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = TAL
+			}
+			TAL = { 
+				exists = yes
+				NOT = {
+					is_subject_of = WNG
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = TAL
+				has_wargoal_against = TAL
+			}
+		}
+
+		will_lead_to_war_with = TAL
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_bring_TAL_back_under_heal"
+			create_wargoal = {
+				type = annex_everything
+				target = TAL
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WNG_demand_the_colonies
+		icon = GFX_goal_attack_EQC
+		cost = 8
+		relative_position_id = WNG_pressure_falcor
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = WNG_pressure_falcor
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		will_lead_to_war_with = EQC
+
+		available = {
+			NOT = { is_in_faction_with = EQC }
+			EQC = { exists = yes }
+			NOT = {
+				EQC = {
+					is_subject_of = ROOT
+				}
+			}
+			is_subject = no
+		}
+
+		bypass = {
+			has_war_with = EQC
+			has_wargoal_against = EQC
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				EQS = {
+					has_war = yes
+					surrender_progress > 0.3
+				}
+				factor = 5
+			}
+			modifier = {
+				EQS = {
+					has_war = yes
+					surrender_progress > 0.5
+				}
+				factor = 10
+			}
+			modifier = {
+				EQS = {
+					has_war = yes
+					surrender_progress > 0.7
+				}
+				factor = 15
+			}
+			modifier = {
+				EQC = { is_subject = no }
+				factor = 15
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_war_with = GRI
+					has_war_with = JER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_demand_the_colonies"
+			if = {
+				limit = {
+					EQC = {
+						is_subject = yes
+					}
+				}
+				every_country = {
+					limit = { EQC = { is_subject_of = PREV } }
+					country_event = wingbardy.102
+				}
+			}
+			else_if = {
+				limit = { EQC = { has_civil_war = yes } }
+				country_event = wingbardy.103
+			}
+			else = {
+				EQC = { country_event = wingbardy.104 }
+			}
+
+			hidden_effect = {
+				add_ai_strategy = {
+					type = antagonize
+					id = "EQC"
+					value = 200
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = WNG_the_chiazbeacle_pact
 		icon = GFX_focus_wng_chiazbeacle_pact
@@ -7124,10 +7574,32 @@ offset = {
 		}
 
 		completion_reward = {
-			add_ideas = WW_WNG_STG_friendship
-			add_ideas = stalliongrad_tractor_factory
+			log = "[GetDateText]: [Root.GetName]: Focus WNG_wingbardian_stalliongrad_treaty"
 			STG = {
-				add_ideas = WW_WNG_STG_friendship
+				country_event = wingbardy.49
+			}
+			custom_effect_tooltip = if_they_accept
+			effect_tooltip = {
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
+				add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+				STG = {
+					army_experience = 25
+					navy_experience = 25
+					air_experience = 25
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
@@ -7381,7 +7853,6 @@ offset = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_national_recreational_club"
-			add_political_power = 200
 			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -7451,7 +7922,7 @@ offset = {
 
 	focus = {
 		id = WNG_the_ras_of_meowmeow
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_WNG_ras
 		cost = 5
 		prerequisite = {
 			focus = WNG_the_royal_intervention
@@ -7484,7 +7955,7 @@ offset = {
 
 	focus = {
 		id = WNG_strengthen_the_southern_military_territory
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_WNG_military_rule
 		cost = 5
 		prerequisite = {
 			focus = WNG_the_feline_association_of_the_lictor
@@ -7556,7 +8027,7 @@ offset = {
 
 	focus = {
 		id = WNG_expand_into_katkat
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_WNG_katkat
 		cost = 8
 		prerequisite = {
 			focus = WNG_the_ras_of_meowmeow
@@ -7614,7 +8085,7 @@ offset = {
 
 	focus = {
 		id = WNG_war_with_abyssinia
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_goal_WNG_aby_lion
 		cost = 8
 		prerequisite = {
 			focus = WNG_expand_into_katkat
@@ -7674,7 +8145,7 @@ offset = {
 
 	focus = {
 		id = WNG_triumph_in_zebrica
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_WNG_triumph_zebrica
 		prerequisite = {
 			focus = WNG_war_with_abyssinia
 		}
@@ -7709,7 +8180,7 @@ offset = {
 
 	focus = {
 		id = WNG_develop_our_island
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_WNG_truck
 		prerequisite = {
 			focus = WNG_the_ras_of_meowmeow
 			focus = WNG_strengthen_the_southern_military_territory
@@ -7757,7 +8228,7 @@ offset = {
 
 	focus = {
 		id = WNG_agwp_land_grants
-		icon = GFX_goal_oil
+		icon = GFX_goal_WNG_AGWP
 		prerequisite = {
 			focus = WNG_develop_our_island
 		}
@@ -7791,7 +8262,7 @@ offset = {
 
 	focus = {
 		id = WNG_colonial_troops
-		icon = GFX_goal_conscription_pony
+		icon = GFX_goal_WNG_col_troops
 		prerequisite = {
 			focus = WNG_develop_our_island
 		}
@@ -7819,7 +8290,7 @@ offset = {
 
 	focus = {
 		id = WNG_colonial_railways
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_WNG_rail
 		prerequisite = {
 			focus = WNG_war_with_abyssinia
 		}
@@ -7903,7 +8374,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_abyssinian_riches
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_WNG_riches
 		prerequisite = {
 			focus = WNG_war_with_abyssinia
 		}
@@ -7952,7 +8423,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_feline_assimilation
-		icon = GFX_focus_generic_support_the_left_right_claw
+		icon = GFX_goal_WNG_feline_assym
 		prerequisite = {
 			focus = WNG_colonial_railways
 		}
@@ -8002,7 +8473,7 @@ offset = {
 	}
 	focus = {
 		id = WNG_limited_self_rule
-		icon = GFX_goal_generic_national_unity_claws
+		icon = GFX_goal_WNG_selfrule
 		prerequisite = {
 			focus = WNG_colonial_railways
 		}
@@ -8095,7 +8566,7 @@ offset = {
 
 	focus = {
 		id = WNG_intervention_in_arabia
-		icon = GFX_goal_planning_bonus
+		icon = GFX_goal_WNG_arabia
 		prerequisite = {
 			focus = WNG_the_ras_of_meowmeow
 			focus = WNG_strengthen_the_southern_military_territory
@@ -10607,7 +11078,7 @@ offset = {
 		}
 
 		bypass = {
-			has_completed_focus = WNG_reorganize_the_army
+
 		}
 
 		cancel_if_invalid = yes
@@ -10642,7 +11113,7 @@ offset = {
 		}
 
 		bypass = {
-			has_completed_focus = WNG_reorganize_the_army
+
 		}
 
 		cancel_if_invalid = yes
