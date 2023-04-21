@@ -104,6 +104,226 @@ on_actions = {
 			}
 		}
 	}
+	### South Win superevent triggers - MONKE CODE
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = CHN
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+						}
+						AND = {
+							BAT = { has_capitulated = yes }
+							CTH = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = BAT
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+							CTH = { has_capitulated = yes }
+						}
+						AND = {
+							CHN = { has_capitulated = yes }
+							CTH = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = CTH
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+							BAT = { has_capitulated = yes }
+						}
+						AND = {
+							CHN = { has_capitulated = yes }
+							BAT = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = JER
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							CTH = { has_capitulated = yes }
+							BAT = { has_capitulated = yes }
+						}
+						AND = {
+							GRI = { has_capitulated = yes }
+							CHN = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = GRI
+					}
+					OR = {
+						AND = {
+							JER = { has_capitulated = yes }
+							CTH = { has_capitulated = yes }
+							BAT = { has_capitulated = yes }
+						}
+						AND = {
+							JER = { has_capitulated = yes }
+							CHN = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	### North Win superevent triggers - MONKE CODE
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = EQS
+					}
+					OR = {
+						HIP = { has_capitulated = yes }
+						AND = {
+							RCT = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = HIP
+					}
+					OR = {
+						EQS = { has_capitulated = yes }
+						AND = {
+							RCT = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = RCT
+					}
+					OR = {
+						AND = {
+							HIP = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+						AND = {
+							EQS = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = WNG
+					}
+					OR = {
+						AND = {
+							HIP = { has_capitulated = yes }
+							RCT = { has_capitulated = yes }
+						}
+						AND = {
+							EQS = { has_capitulated = yes }
+							RCT = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	
+	
+	
+	
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {

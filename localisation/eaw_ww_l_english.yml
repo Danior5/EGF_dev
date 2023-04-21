@@ -36,7 +36,7 @@ l_english:
  
  ww.news.2.t:0 "Operation Wintersturm"
  ww.news.2.d:0 "[This.GetNewspaperHeader]"
- ww.news.2.a:0 "The fate of Equus hangs in the balance"
+ ww.news.2.a:0 "Fate of Equus hangs in the balance"
  
  ww.news.3.t:0 "Hippogriffs Strike Back!"
  ww.news.3.d:0 "[This.GetNewspaperHeader]"

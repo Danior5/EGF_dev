@@ -20,6 +20,19 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_new_economy"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ww_game_mode
+						option = EQS_ONLY
+					}
+				}
+				add_resource = {
+					type = rubber
+					amount = 40
+					state = 288
+				}
+			}
 			swap_ideas = {
 				remove_idea = GRF_colonial_economy
 				add_idea = GRF_stagnated_economy
