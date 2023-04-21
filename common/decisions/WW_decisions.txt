@@ -1195,17 +1195,7 @@ WW_category = {
 		
 		timeout_effect = {
 			CHN = {
-				if = {
-					limit = {
-						NOT = {
-							has_game_rule = {
-								rule = ww_game_mode
-								option = EQS_ONLY
-								}
-							}
-					}
-					add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
-				}
+				add_timed_idea = { idea = CHN_plan_east_prep days = 120 }
 				declare_war_on = { 
 					type = annex_everything 
 					target = EQS 
@@ -1230,6 +1220,8 @@ WW_category = {
 					
 					EQS = { add_to_faction = STG }
 				}
+				CHN = { add_ideas = WW_CHN_core_buff }
+				#OLE = { add_ideas = WW_OLE_surrender_limit }
 				if = {
 					limit = {
 						NOT = {
@@ -1239,9 +1231,6 @@ WW_category = {
 							}
 						}
 					}
-					CHN = { add_ideas = WW_CHN_core_buff }
-					#OLE = { add_ideas = WW_OLE_surrender_limit }
-
 					GRI = { add_to_faction = CHN }
 					GRI = { add_to_faction = GRF }
 					GRI = { add_to_faction = PNG }
@@ -1637,6 +1626,44 @@ WW_category = {
 		complete_effect = {
 			hidden_effect = {
 				load_oob = "WW_heavy_tank"
+			}
+		}
+	}
+
+	WW_equusonly_no_navy_game = {		
+		icon = rifles
+		allowed = {
+			AND = {
+				original_tag = EQS
+				has_game_rule = {
+					rule = ww_game_mode
+					option = EQS_ONLY
+				}			
+			}
+		}
+		available = {
+			date > 1011.11.3
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		visible = {
+			date > 1006.11.1
+		}
+		complete_effect = {
+			CHN = { 
+				if = {
+					limit = { has_idea = WW_CHN_core_buff }
+					remove_ideas = WW_CHN_core_buff
+				}
+			}
+			EQS = {
+				if = {
+					limit = { has_idea = EQS_island_debuff1 }
+					remove_ideas = EQS_island_debuff1
+				}
 			}
 		}
 	}	

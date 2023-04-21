@@ -59,7 +59,26 @@ TRD_vaults = {
 					remove_from_array = { ROOT.trade_partners = v }
 				}
 				set_temp_variable = { add_to_bank = trade_partners^num }
-				multiply_temp_variable = { add_to_bank = 0.25 }
+				if = {
+					limit = {
+						NOT = {
+							has_game_rule = {
+								rule = ww_game_mode
+								option = EQS_ONLY
+							}
+						}
+					}
+					multiply_temp_variable = { add_to_bank = 0.25 }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ww_game_mode
+							option = EQS_ONLY
+						}
+					}
+					multiply_temp_variable = { add_to_bank = 0.75 }
+				}				
 				clear_array = trade_partners_to_remove
 			}
 

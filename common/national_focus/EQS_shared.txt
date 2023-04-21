@@ -2293,7 +2293,7 @@ shared_focus = {
 					option = EQS_ONLY
 				}
 			}
-			date > 1009.11.1
+			date > 1009.7.1
 		}
 	}
 	cancel_if_invalid = yes

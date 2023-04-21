@@ -157,9 +157,9 @@ on_actions = {
 					clear_global_event_target = losing_country
 				}
 			}
-			}
 		}
 	}
+	
 #Griffonia
 #Republic
 	on_capitulation = {# republic Kills sunstriker

@@ -100,103 +100,11 @@ on_actions = {
 					add_core_of = ZAI
 				}
 				EQS = { country_event = ww_game_mode_event.1 }
-				EQS = {
-					add_research_slot = -1
-					add_ideas = WW_equus_only_dockyard_rebalancer
-					remove_ideas = EQS_island_debuff1
-				}
-				EQS = {
-					4 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					46 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					99 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					96 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}	
-					95 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					74 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					70 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					48 = {
-						remove_building = {
-						type = industrial_complex
-						level = 2
-						}
-					}
-					170 = {
-						remove_building = {
-						type = industrial_complex
-						level = 2
-						}
-					}
-					179 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					181 = {
-						remove_building = {
-						type = industrial_complex
-						level = 2
-						}
-					}
-					129 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					132 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					1195 = {
-						remove_building = {
-						type = industrial_complex
-						level = 1
-						}
-					}
-					103 = {
-						remove_building = {
-						type = industrial_complex
-						level = 2
-						}
-					}
-				}
+				#EQS = {
+				#	add_research_slot = -1
+				#	add_ideas = WW_equus_only_dockyard_rebalancer
+				#	remove_ideas = EQS_island_debuff1
+				#}
 			}
 		}
 	}
