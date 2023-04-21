@@ -3,7 +3,7 @@ on_actions = {
 #Staliongrad
 	on_capitulation = { # STG Kills STL
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = STL
@@ -24,7 +24,19 @@ on_actions = {
 						transfer_troops = yes
 					}
 				}
+				STG = {
+					add_named_threat = {
+						threat = 1
+						name = "Scripted peace for [STL.GetName]"
+					}
+				}
 				#event = scriptpeace.1
+				STG = {
+					clear_global_event_target = winning_country
+				}
+				STL = {
+					clear_global_event_target = losing_country
+				}
 			}
 		}
 	}
@@ -41,10 +53,29 @@ on_actions = {
 					}
 				}
 				GRF = {
+					save_global_event_target_as = winning_country
+				}
+				GFF = {
+					save_global_event_target_as = losing_country
+				}
+				GRF = {
 					annex_country = {
 						target = GFF
 						transfer_troops = yes
 					}
+				}
+				GRF = {
+					add_named_threat = {
+						threat = 2
+						name = "Scripted peace for [GFF.GetName]"
+					}
+				}
+				#event = scriptpeace.1
+				GRF = {
+					clear_global_event_target = winning_country
+				}
+				GFF = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
@@ -61,16 +92,35 @@ on_actions = {
 					}
 				}
 				GRF = {
+					save_global_event_target_as = winning_country
+				}
+				PLB = {
+					save_global_event_target_as = losing_country
+				}
+				GRF = {
 					annex_country = {
 						target = PLB
 						transfer_troops = yes
 					}
 				}
+				GRF = {
+					add_named_threat = {
+						threat = 5
+						name = "Scripted peace for [PLB.GetName]"
+					}
+				}
+				#event = scriptpeace.1
+				GRF = {
+					clear_global_event_target = winning_country
+				}
+				PLB = {
+					clear_global_event_target = losing_country
+				}
 			}
 		}
 	}
 #Changelings
-	on_capitulation = {# Changlin Kills deer
+	on_capitulation = {# Changling Kills deer
 		effect = {
 			if = { 
 				limit = {
@@ -82,11 +132,31 @@ on_actions = {
 					}
 				}
 				CHN = {
+					save_global_event_target_as = winning_country
+				}
+				OLE = {
+					save_global_event_target_as = losing_country
+				}
+				CHN = {
 					annex_country = {
 						target = OLE
 						transfer_troops = yes
 					}
 				}
+				CHN = {
+					add_named_threat = {
+						threat = 22
+						name = "Scripted peace for [OLE.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRF = {
+					clear_global_event_target = winning_country
+				}
+				PLB = {
+					clear_global_event_target = losing_country
+				}
+			}
 			}
 		}
 	}
@@ -104,10 +174,29 @@ on_actions = {
 					}
 				}
 				FAT = {
+					save_global_event_target_as = winning_country
+				}
+				MNC = {
+					save_global_event_target_as = losing_country
+				}
+				FAT = {
 					annex_country = {
 						target = MNC
 						transfer_troops = yes
 					}
+				}
+				FAT = {
+					add_named_threat = {
+						threat = 3
+						name = "Scripted peace for [MNC.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				FAT = {
+					clear_global_event_target = winning_country
+				}
+				MNC = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
@@ -124,10 +213,29 @@ on_actions = {
 					}
 				}
 				FAT = {
+					save_global_event_target_as = winning_country
+				}
+				VED = {
+					save_global_event_target_as = losing_country
+				}
+				FAT = {
 					annex_country = {
 						target = VED
 						transfer_troops = yes
 					}
+				}
+				FAT = {
+					add_named_threat = {
+						threat = 6
+						name = "Scripted peace for [VED.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				FAT = {
+					clear_global_event_target = winning_country
+				}
+				VED = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
@@ -144,10 +252,47 @@ on_actions = {
 					}
 				}
 				FAT = {
+					save_global_event_target_as = winning_country
+				}
+				SRS = {
+					save_global_event_target_as = losing_country
+				}
+				FAT = {
 					annex_country = {
 						target = SRS
 						transfer_troops = yes
 					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							country_exists. = NTR
+						}
+					}
+					FAT = {
+						add_named_threat = {
+							threat = 6
+							name = "Scripted peace for [SRS.GetName]"
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						country_exists. = NTR
+					}
+					FAT = {
+						add_named_threat = {
+							threat = 2
+							name = "Scripted peace for [SRS.GetName]"
+						}
+					}
+				}
+				#event = scriptpeace.1
+				FAT = {
+					clear_global_event_target = winning_country
+				}
+				SRS = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
@@ -164,10 +309,47 @@ on_actions = {
 					}
 				}
 				FAT = {
+					save_global_event_target_as = winning_country
+				}
+				NTR = {
+					save_global_event_target_as = losing_country
+				}
+				FAT = {
 					annex_country = {
 						target = NTR
 						transfer_troops = yes
 					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							country_exists. = SRS
+						}
+					}
+					FAT = {
+						add_named_threat = {
+							threat = 6
+							name = "Scripted peace for [NTR.GetName]"
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						country_exists. = SRS
+					}
+					FAT = {
+						add_named_threat = {
+							threat = 3
+							name = "Scripted peace for [NTR.GetName]"
+						}
+					}
+				}
+				#event = scriptpeace.1
+				FAT = {
+					clear_global_event_target = winning_country
+				}
+				NTR = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
@@ -185,10 +367,29 @@ on_actions = {
 					}
 				}
 				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				STW = {
+					save_global_event_target_as = losing_country
+				}
+				GRI = {
 					annex_country = {
 						target = STW
 						transfer_troops = yes
 					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 3
+						name = "Scripted peace for [STW.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				STW = {
+					clear_global_event_target = losing_country
 				}
 			}
 		}
