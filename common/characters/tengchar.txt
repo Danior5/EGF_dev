@@ -283,7 +283,7 @@ characters={
 		name = "Mihaly Dumitru Margareta Corneliu Leopold Blanca Karol Aeon Ignatius Raphael Maria Niketas A. Shilage" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/vasa.tga"
+				large = "gfx/leaders/WW/Mihaly.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -380,9 +380,6 @@ characters={
 						tag = event_target:equestria
 					}
 				}
-				NOT = {
-					has_country_flag = EQS_HIP_elements_sent
-				}
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -407,10 +404,7 @@ characters={
 				original_tag = EQS
 			}
 			available = {
-				has_country_leader = { 
-					character = EQS_princess_celestia 
-					ruling_only = yes 
-				}
+				has_government = democratic
 			}
 			traits = { silent_workhorse }
 		}
