@@ -715,8 +715,19 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_equestrian_exchange"
 			#custom_effect_tooltip = RCT_equestrian_exchange_PROGRAM_fullfield
-			event_target:equestria = {
-				country_event = { id = rivercity.318 }
+			add_tech_bonus = {
+				name = RCT_EQS_Industry_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = RCT_EQS_infantry_weapons_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 1
+				category = cat_anti_tank
 			}
 		}
 	}
