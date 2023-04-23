@@ -2366,7 +2366,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				conscription = 0.03
+				conscription = 0.05
 			}
 		}
 	}
@@ -2386,7 +2386,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.03
 				production_speed_infrastructure_factor = 0.3
 				local_resources_factor = 0.1
 			}

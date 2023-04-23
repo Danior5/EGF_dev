@@ -723,6 +723,13 @@ focus_tree = {
 				category = industry
 			}
 			add_tech_bonus = {
+				name = RCT_EQS_electronics_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
 				name = RCT_EQS_infantry_weapons_bonus
 				bonus = 1.0
 				ahead_reduction = 1.0
