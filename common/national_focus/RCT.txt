@@ -560,7 +560,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_ready_the_storm
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 6
@@ -604,14 +604,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_river_games
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 6
-		}
-
-		bypass = {
-			amount_research_slots > 4
 		}
 		
 		cancel_if_invalid = yes
@@ -620,13 +616,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_scholarship_programme"
-			if = {
-				limit = { 
-				    amount_research_slots < 5 
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = CZE_war_college_effect_2_tt
-			}
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -639,7 +629,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_scholarship_programme
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -666,7 +656,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_united_joint_river_works
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -693,7 +683,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_united_joint_river_works
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -725,19 +715,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_equestrian_exchange"
 			#custom_effect_tooltip = RCT_equestrian_exchange_PROGRAM_fullfield
-			add_tech_bonus = {
-				name = RCT_EQS_Industry_bonus
-				bonus = 1.0
-				ahead_reduction = 1.0
-				uses = 1
-				category = industry
-			}
-			add_tech_bonus = {
-				name = RCT_EQS_infantry_weapons_bonus
-				bonus = 1.0
-				ahead_reduction = 1.0
-				uses = 1
-				category = cat_anti_tank
+			event_target:equestria = {
+				country_event = { id = rivercity.318 }
 			}
 		}
 	}
@@ -750,7 +729,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RCT_river_games
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -777,7 +756,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RCT_social_security_act
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -834,6 +813,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_equestria_of_the_east"
 			add_ideas = RCT_eastern_eqs
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 	}
@@ -966,6 +946,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_border_defence_fund"
+			add_war_support = 0.1
 			add_ideas = RCT_border_defence_fund_idea
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1250,23 +1231,13 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			amount_research_slots > 4
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_office_of_scientific_development"
-			if = {
-				limit = { 
-				    amount_research_slots < 5 
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = CZE_war_college_effect_2_tt
-			}
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2467,9 +2438,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 15
 		}
-		bypass = {
-			amount_research_slots > 4
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2477,13 +2445,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_reducation"
-			if = {
-				limit = { 
-				    amount_research_slots < 5 
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = CZE_war_college_effect_2_tt
-			}
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -6904,10 +6866,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
-		bypass = {
-			amount_research_slots > 4
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -6915,13 +6873,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RCT_industry_research_slot"
-			if = {
-				limit = { 
-				    amount_research_slots < 5 
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = CZE_war_college_effect_2_tt
-			}
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
