@@ -335,4 +335,85 @@ characters={
 			traits = {}
 		}
 	}
+	#comrade trolling
+	EQS_doctor_whooves = {
+		name = "Doctor Hooves" 
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/WW/EQS_doctor_whooves.dds"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = fluttershy
+			ledger = army
+			cost = 100
+			
+			allowed = {
+				original_tag = EQS
+			}
+			available = {
+				if = {
+					limit = { is_original_EQS = yes }
+					has_completed_focus = EQS_WMD
+				}
+				if = {
+					limit = { is_EQS_SOL = yes }
+					has_global_flag = EQS_completed_EQS_WMD
+				}
+				if = {
+					limit = { NOT = { tag = event_target:solar_empire } }
+					has_government = democratic
+				}
+				if = {
+					limit = { event_target:solar_empire = { exists = yes } }
+					OR = {
+						AND = {
+							tag = event_target:solar_empire
+							NOT = { country_exists = event_target:equestria }
+							NOT = {
+								has_country_flag = SOL_harmonic_commanders_leave
+								has_country_flag = SOL_purge_finished
+							}
+						}
+						tag = event_target:equestria
+					}
+				}
+				NOT = {
+					has_country_flag = EQS_HIP_elements_sent
+				}
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+
+			traits = { nuclear_scientist }
+		}
+		gender = male
+	}
+	EQS_fluttershy_imposter = {
+		name = "Fluttershy"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_EQS_fluttershy"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = raven
+			
+			allowed = {
+				original_tag = EQS
+			}
+			available = {
+				has_country_leader = { 
+					character = EQS_princess_celestia 
+					ruling_only = yes 
+				}
+			}
+			traits = { silent_workhorse }
+		}
+		gender = female
+	}
 }

@@ -27,3 +27,7 @@
  LOADING_MAIN_MENU:0 "Checking Post Game Save"
  EXITING_TO_FRONTEND:0 "Breaking the timeline"
  EXECUTE_HISTORY:0 "Reassigning Co-ops..."
+ 
+ #comrade's funny
+ raven_desc:0 "Fluttershy is the Element of Kindness and a caretaker of animals. She is known for her shyness, but also her beauty and hidden assertiveness that is revealed whenever her friends are threatened. Now however she has been moved from the mega-spell research department into the bureaucracy department of Equestria. This is due to an accident Raven Inkwell suffered with a flight of stairs, S.M.I.L.E has concluded that this was, in no part, related anyway to the individual named 'Comrade Soviet'."
+ fluttershy_desc:0 "Is four a lot? It depends on the context. Convoys? No. Nuclear Bombs? Yes!"
