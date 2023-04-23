@@ -1583,12 +1583,6 @@ WW_category = {
 			date > 1006.11.1
 		}
 		complete_effect = {
-			CHN = { 
-				if = {
-					limit = { has_idea = WW_CHN_core_buff }
-					remove_ideas = WW_CHN_core_buff
-				}
-			}
 			EQS = {
 				if = {
 					limit = { has_idea = EQS_island_debuff1 }
