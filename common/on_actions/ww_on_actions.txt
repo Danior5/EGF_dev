@@ -85,6 +85,31 @@ on_actions = {
 			 	}
 			}
 		}
+		effect = { ## Libertaion of fairflanks news event
+			if = {
+				limit = {
+					FROM = { 
+						AND = {
+							OR = { 
+								is_in_faction_with = CHN  
+								tag = CHN
+							} 
+							has_country_flag = BAT_chemical_warfare_corps_flag
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					FROM.FROM = {
+						state = 172
+					}
+				}
+				news_event = { id = ww.news.8 }
+			}
+		}
 	}
 	#GRI dying gives JER steroids
 	on_capitulation = {

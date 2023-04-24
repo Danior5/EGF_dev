@@ -56,6 +56,19 @@ ideas = {
 				attack_bonus_against = 0.4
 			}
 		}
+		WW_revenge_for_fairflanks = {
+			removal_cost = -1
+			picture = BAR_fire_and_sword
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				army_morale_factor = 0.1
+				war_support_factor = 0.20
+			}
+		}
 		WW_expensive_mech = {
 			removal_cost = -1
 			picture = FRA_motorized_focus

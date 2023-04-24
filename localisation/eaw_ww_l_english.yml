@@ -57,6 +57,12 @@ l_english:
  ww.news.7.t:0 "Operation Provençal Wind"
  ww.news.7.d:0 "[This.GetNewspaperHeader]The Second Tarrin Offensive"
  ww.news.7.a:0 "Gods give the fields and hills of Tarrin no rest"
+ 
+ ww.news.8.t:0 "Liberation of Fairflanks"
+ ww.news.8.d:0 "[This.GetNewspaperHeader] Today marks one of the darkest days since the start of the World War. UPA forces initially rejoiced as they reclaimed the small border town of Fairflanks, however everything changed when they discovered what had happened there during the Changeling occupation. The basement of the city's hospital had been home to horrific medical experiments on Equestrian prisoners of war. Recovered documents suggest these acts of sheer barbarity were done to help advance the development of Changeling chemical weapons.\nThe discovery brought worldwide condemnation from all members of the River Coalition alliance as well as a pledge to find and punish those responsible."
+ ww.news.8.a:0 "The horror..."
+ ww.news.8.b:0 "Those bastards... They will pay for this!"
+ ww.news.8.c:0 "It was the Queen's Guard! They did it!"
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"
@@ -112,6 +118,7 @@ l_english:
  WW_CHN_fairflanks_incident:0 "Project Todesengel"
  WW_CHN_fairflanks_incident_desc:0 "You DON'T want to know what's happening at Fairflanks..."
  WW_CHN_fairflanks_incident_tp:0 "Enables unit leader ability: §YGas Attack§!."
+ WW_revenge_for_fairflanks:0 "Vengeance for Fairflanks"
  WW_CHN_war_plan_economy_nerf:0 "Realigning the War Economy"
  WW_CHN_war_plan_economy_buff:0 "Realigned War Economy"
  WW_CHN_help_allies_GRF:0 "Changeling Assistance"
