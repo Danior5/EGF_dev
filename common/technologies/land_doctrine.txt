@@ -3454,9 +3454,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
-		army_speed_factor = 0.1
+		army_speed_factor = 0.05
 		
 		path = {
 			leads_to_tech = fluid_battlespace 
@@ -3549,10 +3549,10 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			breakthrough = 0.2
+			breakthrough = 0.05
 		}
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 1
 		}	
 		
 		doctrine = yes	
@@ -3587,8 +3587,8 @@ technologies = {
 		}
 		
 		category_tanks = {
-			max_organisation = 3
-			breakthrough = 0.2
+			max_organisation = 1
+			breakthrough = 0.05
 		}
 		
 		doctrine = yes	
@@ -3626,10 +3626,10 @@ technologies = {
 		}
 
 		category_tanks = {
-			max_organisation = 3
+			max_organisation = 1
 		}
 		category_all_armor = {
-			armor_value = 0.2
+			armor_value = 0.1
 		}
 		
 		doctrine = yes	
@@ -3665,8 +3665,8 @@ technologies = {
 		}
 			
 		category_all_infantry = {
-			max_organisation = 10
-			default_morale = 0.1
+			max_organisation = 2
+			default_morale = 0.05
 		}
 		
 					
@@ -3704,7 +3704,7 @@ technologies = {
 		}
 			
 		category_motmech = {
-			max_organisation = 15
+			max_organisation = 3
 		}
 		
 					
@@ -3739,12 +3739,12 @@ technologies = {
 		}
 			
 		category_motmech = {
-			maximum_speed = 0.1
-			default_morale = 0.1
+			maximum_speed = 0.05
+			default_morale = 0.05
 		}
 		category_all_armor = {
-			maximum_speed = 0.1
-			default_morale = 0.1
+			maximum_speed = 0.05
+			default_morale = 0.05
 		}
 		
 					
@@ -3779,9 +3779,9 @@ technologies = {
 		}
 
 		category_army = {
-			max_organisation = 5
+			max_organisation = 1
 		}
-		org_loss_when_moving = -0.15
+		org_loss_when_moving = -0.1
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -3809,7 +3809,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
 		category_all_armor = {
 			max_organisation = 1
