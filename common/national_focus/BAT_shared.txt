@@ -8525,7 +8525,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BAT_chemical_warfare_corps"
-		custom_effect_tooltip = BAT_chemical_warfare_corps_tp
+		custom_effect_tooltip = WW_CHN_fairflanks_incident_tp
 		one_random_arms_factory = yes
 		hidden_effect = {
 		    set_country_flag = BAT_chemical_warfare_corps_flag
