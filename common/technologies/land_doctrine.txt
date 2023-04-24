@@ -4231,7 +4231,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 				
-		max_planning = 0.10
+		max_planning = 0.05
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		dependencies = {
@@ -4323,7 +4323,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 			defense = 0.1
 		}
 		
@@ -4361,7 +4361,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 			default_morale = 0.1
 		}
 		path = {
@@ -4395,7 +4395,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_motmech = {
-			max_organisation = 5
+			max_organisation = 1
 			breakthrough = 0.1
 		}
 		
@@ -4431,7 +4431,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -4499,7 +4499,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 					
-		max_dig_in = 10
+		max_dig_in = 5
 		path = {
 			leads_to_tech = rapid_response 
 			research_cost_coeff = 1
@@ -4534,7 +4534,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		planning_speed = 1
+		planning_speed = 0.5
 		land_reinforce_rate = 0.05
 		
 		xor = { assymetric_warfare } 
@@ -4575,7 +4575,7 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 		
 		category_army = {
-			breakthrough = 0.1
+			breakthrough = 0.05
 		}
 		
 		doctrine = yes	
