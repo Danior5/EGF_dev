@@ -2069,7 +2069,29 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-		hidden_effect = { news_event = { id = ww.news.4 } }
+		hidden_effect = { 
+			news_event = { id = ww.news.4 }
+			CRY = {
+				transfer_units_fraction= {
+					target = CHN
+					size = 0
+					stockpile_ratio = 0.25
+					army_ratio = 0.25
+					keep_unit_leaders = {
+						always = yes
+					}
+				}
+				add_timed_idea = {
+					idea = WW_CRY_traitors
+					days = 120
+				}
+				country_event = {
+					id = ww.17
+					days = 120
+				}
+			} 
+
+		}
 	}
 }
 focus = {
