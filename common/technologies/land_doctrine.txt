@@ -3842,10 +3842,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_army = {
-			soft_attack = 0.1
-			hard_attack = 0.1
+			soft_attack = 0.025
 		}
-		shore_bombardment_bonus = 0.2
+		shore_bombardment_bonus = 0.05
 		
 		xor = { global_path berlin_path warsaw_path }
 		
@@ -3931,7 +3930,7 @@ technologies = {
 		
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
 		
 		
@@ -3971,8 +3970,8 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_army = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.025
+			ap_attack = 0.05
 		}		
 
 		path = {
@@ -4009,13 +4008,13 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_all_armor = {
-			soft_attack = 0.1
-			hard_attack = 0.1
+			soft_attack = 0.025
+			hard_attack = 0.025
 			air_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.05
 		}
 		category_tanks = {
-			max_organisation = 3
+			max_organisation = 1
 		}
 				
 		path = {
@@ -4050,11 +4049,11 @@ technologies = {
 		
 		
 		category_all_infantry = {
-			soft_attack = 0.1
-			max_organisation = 5
+			soft_attack = 0.025
+			max_organisation = 1
 		}
 		category_all_artillery = {
-			soft_attack = 0.1
+			soft_attack = 0.025
 		}
 
 		path = {
@@ -4091,13 +4090,13 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_artillery = {
-			default_morale = 0.15
+			default_morale = 0.05
 		}
 		category_all_aa = {
-			default_morale = 0.15
+			default_morale = 0.05
 		}
 		category_all_at = {
-			default_morale = 0.15
+			default_morale = 0.05
 		}
 
 		path = {
@@ -4136,9 +4135,9 @@ technologies = {
 		}
 		
 		category_support_battalions = {
-			soft_attack = 0.25
-			hard_attack = 0.25
-			max_organisation = 10
+			soft_attack = 0.05
+			hard_attack = 0.05
+			max_organisation = 5
 		}
 				
 		doctrine = yes	
@@ -4171,10 +4170,10 @@ technologies = {
 		}		
 
 		category_army = {
-			air_attack = 0.1
+			air_attack = 0.05
 		}
-		army_bonus_air_superiority_factor = 0.1
-		shore_bombardment_bonus = 0.1
+		army_bonus_air_superiority_factor = 0.05
+		shore_bombardment_bonus = 0.05
 				
 		doctrine = yes	
 		research_cost = 4.5
@@ -4202,9 +4201,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_support_battalions = {
-			soft_attack = 0.25
-			hard_attack = 0.25
-			max_organisation = 10
+			soft_attack = 0.05
+			hard_attack = 0.05
+			max_organisation = 5
 		}
 			
 		doctrine = yes	
