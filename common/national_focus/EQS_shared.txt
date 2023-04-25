@@ -1894,7 +1894,7 @@ shared_focus = {
 	icon = GFX_goal_eqs_canterlot
 	cost = 5
 	available = {
-		has_decision = WW_EQS_cope_line_decision
+		has_country_flag = WW_cope_line_active
 	}
 	prerequisite = {
 		focus = WW_cope_line

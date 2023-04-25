@@ -107,6 +107,21 @@ CHN_WW_great_war_category = {
 		available = {
 			date > 1012.11.1
 			date < 1013.1.1
+			OR = {
+				NOT = {
+					any_country = {
+						is_in_faction_with = CHN
+						OR = {
+							controls_state = 14 
+							controls_state = 133
+							controls_state = 138 
+						}
+					}
+				}
+				has_completed_focus = WW_fall_rosa
+				has_completed_focus = WW_fall_hellgrun
+				has_completed_focus = WW_fall_dunklegrun
+			}
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -825,6 +840,10 @@ EQS_WW_great_war_category = {
 			custom_effect_tooltip = WW_EQS_Retreat_Cope_divs
 			custom_effect_tooltip = WW_EQS_Retreat_Cope_land
 			hidden_effect = {
+				EQS = {
+					set_country_flag = WW_cope_line_active
+				}
+
 				137 = {
 					add_dynamic_modifier = {
 						modifier = EQS_abandoned_land

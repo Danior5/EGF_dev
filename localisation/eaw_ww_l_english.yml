@@ -52,11 +52,11 @@ l_english:
  
  ww.news.6.t:0 "Fall Dunklegrun"
  ww.news.6.d:0 "[This.GetNewspaperHeader]"
- ww.news.6.a:0 "A strom is coming for Las Pegasus..."
+ ww.news.6.a:0 "A storm is coming for Las Pegasus..."
  
  ww.news.7.t:0 "Operation Provençal Wind"
  ww.news.7.d:0 "[This.GetNewspaperHeader]The Second Tarrin Offensive"
- ww.news.7.a:0 "Gods give the fields and hills of Tarrin no rest"
+ ww.news.7.a:0 "The gods give the hills of Tarrin no rest"
  
  ww.news.8.t:0 "Liberation of Fairflanks"
  ww.news.8.d:0 "[This.GetNewspaperHeader]Today marks one of the darkest days since the start of the World War. UPA forces initially rejoiced as they reclaimed the small border town of Fairflanks, however everything changed when they discovered what had happened there during the Changeling occupation. The basement of the city's hospital had been home to horrific medical experiments on Equestrian prisoners of war. Recovered documents suggest these acts of sheer barbarity were done to help advance the development of Changeling chemical weapons.\nThe discovery brought worldwide condemnation from all members of the River Coalition alliance as well as a pledge to find and punish those responsible."
@@ -79,7 +79,7 @@ l_english:
  women_in_the_workforce:0 "All Adults Serve haters in the Workforce"
  women_in_the_workforce_desc:0 "Tassen is a pussy who doesn't have the balls to just go All Adults and cope with the industry penalty. -9999 tryhard credit"
  continuous_extra_fuel:0 "Fuel Production"
- continuous_reduced_resource_penalty:0 "Resource-Efficient Production"
+ continuous_reduced_resource_penalty:0 "Resource Efficient Production"
  continuous_faster_mobilization:0 "Rapid Mobilization"
  continuous_cheaper_infantry_equipment:0 "Infantry Equipment Production"
  neutral_idea:0 "Neutral Nation"
@@ -103,6 +103,7 @@ l_english:
  WW_volunteer_tanks:0 "Queen's Guard Panzers"
  WW_volunteer_infantry:0 "Volksgrenadier Divisions"
  WW_CHN_warplan:0 "Continuous War Plan"
+ WW_CHN_warplan_desc:0 "With Unternehmen Sonnenuntergang well underway, the time has come for us to decide how we will conduct this war."
  WW_CHN_hold_shire:0 "Fortify the Shire River"
  WW_fall_rosa:0 "§0Fall Rosa§!"
  WW_fall_rosa_desc:0 "What's often said about Equus is that all you need to do is wait and eventually some ancient fairly tale will come and get you. There may be some truth to this afterall..."
@@ -134,10 +135,10 @@ l_english:
  WW_CHN_Defensive_War_Plan:0 "Create §Yfive§! 40 width §YInfantry Divisions§! in every controlled frontline state"
  
  ww.15.t:0 "The Continuous War Plan"
- ww.15.d:0 "Chairpig emergency loc because Tassen is a vanillatard (fuck hearts of oak btw)"
- ww.15.a:0 "This buffs Nova and Olenia"
- ww.15.b:0 "This will give you an industrial buff after 270 days"
- ww.15.c:0 "This spawns a bunch of cope 40w infantry and gives you a defensive buff"
+ ww.15.d:0 "After extensive consulting with our generals, advisors and industrialists, three seperate plans have been proposed. However, we only have the resources to pursue one of them."
+ ww.15.a:0 "Support our allies."
+ ww.15.b:0 "Prepare our economy for a long war."
+ ww.15.c:0 "Reinforce our frontline."
  
  ### Sunset update EQS focuses and events
  EQS_WW_great_war_category:0 "The Great War"
@@ -159,6 +160,7 @@ l_english:
  WW_EQS_shire_line_decision:0 "Retreat to the Shire Line"
  WW_EQS_cope_line_decision:0 "Retreat to the Hope Line"
  WW_shire_line_active:0 "Retreated to the Shire Line"
+ WW_cope_line_active:0 "Retreated to the Hope` Line"
  
  WW_EQS_Retreat_Shire_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CShire River§!"
  WW_EQS_Retreat_Shire_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CShire River§! for §Y120 days§!"
