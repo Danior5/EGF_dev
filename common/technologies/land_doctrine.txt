@@ -3844,7 +3844,6 @@ technologies = {
 		category_army = {
 			soft_attack = 0.025
 		}
-		shore_bombardment_bonus = 0.05
 		
 		xor = { global_path berlin_path warsaw_path }
 		
@@ -4010,11 +4009,8 @@ technologies = {
 		category_all_armor = {
 			soft_attack = 0.025
 			hard_attack = 0.025
-			air_attack = 0.1
+			air_attack = 0.05
 			ap_attack = 0.05
-		}
-		category_tanks = {
-			max_organisation = 1
 		}
 				
 		path = {
@@ -4049,11 +4045,11 @@ technologies = {
 		
 		
 		category_all_infantry = {
-			soft_attack = 0.025
-			max_organisation = 1
+			soft_attack = 0.05
+			max_organisation = 2
 		}
 		category_all_artillery = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 
 		path = {
@@ -4090,13 +4086,13 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_artillery = {
-			default_morale = 0.05
+			default_morale = 0.1
 		}
 		category_all_aa = {
-			default_morale = 0.05
+			default_morale = 0.1
 		}
 		category_all_at = {
-			default_morale = 0.05
+			default_morale = 0.1
 		}
 
 		path = {
@@ -4173,7 +4169,8 @@ technologies = {
 			air_attack = 0.05
 		}
 		army_bonus_air_superiority_factor = 0.05
-		shore_bombardment_bonus = 0.05
+		air_cas_present_factor = 0.05
+
 				
 		doctrine = yes	
 		research_cost = 4.5
@@ -4201,8 +4198,8 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_support_battalions = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
 			max_organisation = 5
 		}
 			
@@ -4436,7 +4433,6 @@ technologies = {
 		category_tanks = {
 			max_organisation = 1
 		}
-		
 		path = {
 			leads_to_tech = emerging_power 
 			research_cost_coeff = 1
@@ -4908,29 +4904,34 @@ technologies = {
 		
 		motorized = {
 			need = {
-				infantry_equipment = -10
 				motorized_equipment = -5
 			}
 		}
 		mechanized = {
 			need = {
-			   	infantry_equipment = -10
 				mechanized_equipment = -5
 			}
 		}
 		magical_motorized = {
 			need = {
-			   	magical_equipment = -10
 				motorized_equipment = -5
 			}
 		}
 		magical_mechanized = {
 			need = {
-			   	magical_equipment = -10
 				mechanized_equipment = -5
 			}
 		}
+		amphibious_mechanized = {
+			need = {
+				amphibious_mechanized_equipment = -5
+			}
+		}
 		land_reinforce_rate = 0.05
+		
+		on_research_complete = {
+			custom_effect_tooltip = WW_red_orchestra_tt
+		}
 		
 		path = {
 			leads_to_tech = theater_operational_organisation 
