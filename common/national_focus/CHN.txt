@@ -2069,8 +2069,18 @@ focus = {
 	available = {
 	}
 	completion_reward = {
+		custom_effect_tooltip = WW_fall_rosa_tp
 		hidden_effect = { 
 			news_event = { id = ww.news.4 }
+			add_field_marshal_role = {
+				Character = CHN_Sombra
+				traits = { brilliant_strategist organizer king_of_monsters pony_race_trait }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 1
+				planning_skill = 5
+				logistics_skill = 5
+			} 
 			CRY = {
 				transfer_units_fraction= {
 					target = CHN

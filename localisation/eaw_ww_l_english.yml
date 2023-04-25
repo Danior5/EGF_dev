@@ -42,8 +42,8 @@ l_english:
  ww.news.3.d:0 "[This.GetNewspaperHeader]"
  ww.news.3.a:0 "The war on Zebrica is far from over..."
  
- ww.news.4.t:0 "Fall Rosa"
- ww.news.4.d:0 "[This.GetNewspaperHeader]"
+ ww.news.4.t:0 "Return of King Sombra"
+ ww.news.4.d:0 "[This.GetNewspaperHeader]All of Eques stands frozen in shock as news keep arriving from the frozen wastes of the Crystal Empire. The long thought to be dead King Sombra has just reeemerged and is actively working with the Changeling forces in their what they call 'Fall Rosa' - a coordinated offensive to conquer the Crystal Pony domain.\nWord spreads of large-scale defections within the Crystal Army as numerous soldiers seem to have succumbed to the King's forbidden dark magical spells."
  ww.news.4.a:0 "Cyrstal Ponies brace for the onslaught"
  
  ww.news.5.t:0 "Fall Hellgrun"
@@ -59,7 +59,7 @@ l_english:
  ww.news.7.a:0 "Gods give the fields and hills of Tarrin no rest"
  
  ww.news.8.t:0 "Liberation of Fairflanks"
- ww.news.8.d:0 "[This.GetNewspaperHeader] Today marks one of the darkest days since the start of the World War. UPA forces initially rejoiced as they reclaimed the small border town of Fairflanks, however everything changed when they discovered what had happened there during the Changeling occupation. The basement of the city's hospital had been home to horrific medical experiments on Equestrian prisoners of war. Recovered documents suggest these acts of sheer barbarity were done to help advance the development of Changeling chemical weapons.\nThe discovery brought worldwide condemnation from all members of the River Coalition alliance as well as a pledge to find and punish those responsible."
+ ww.news.8.d:0 "[This.GetNewspaperHeader]Today marks one of the darkest days since the start of the World War. UPA forces initially rejoiced as they reclaimed the small border town of Fairflanks, however everything changed when they discovered what had happened there during the Changeling occupation. The basement of the city's hospital had been home to horrific medical experiments on Equestrian prisoners of war. Recovered documents suggest these acts of sheer barbarity were done to help advance the development of Changeling chemical weapons.\nThe discovery brought worldwide condemnation from all members of the River Coalition alliance as well as a pledge to find and punish those responsible."
  ww.news.8.a:0 "The horror..."
  ww.news.8.b:0 "Those bastards... They will pay for this!"
  ww.news.8.c:0 "It was the Queen's Guard! They did it!"
@@ -105,6 +105,8 @@ l_english:
  WW_CHN_warplan:0 "Continuous War Plan"
  WW_CHN_hold_shire:0 "Fortify the Shire River"
  WW_fall_rosa:0 "§0Fall Rosa§!"
+ WW_fall_rosa_desc:0 "What's often said about Equus is that all you need to do is wait and eventually some ancient fairly tale will come and get you. There may be some truth to this afterall..."
+ WW_fall_rosa_tp:0 "We will cooperate with a certain §0influential figure§! to bring forth the downfall of the Crystal Empire."
  WW_fall_hellgrun:0 "§7Fall Hellgrun§!"
  WW_fall_dunklegrun:0 "§GFall Dunklegrun§!"
  
@@ -124,6 +126,8 @@ l_english:
  WW_CHN_help_allies_GRF:0 "Changeling Assistance"
  WW_CHN_help_allies_OLE:0 "Changeling Assistance"
  WW_CHN_defensive_army:0 "Reinforced Infantry Units"
+ WW_CRY_traitors:0 "Sombra's Dark Magic"
+ WW_CRY_traitors_purged:0 "Recovered from Darkness"
  
  WW_CHN_Volksgrenadiers:0 "Create §Yfive§! 14 width §YInfantry Divisions§! in every controlled frontline state"
  WW_CHN_Guard_Panzers:0 "Create §Yfour§! 42 width §YMedium Tank Divisions§!"

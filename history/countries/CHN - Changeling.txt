@@ -414,6 +414,7 @@ recruit_character = CHN_queen_argynnis
 recruit_character = CHN_spymaster
 #pregrinded generals
 recruit_character = CHN_WW_fieldmarshel
+recruit_character = CHN_Sombra
 
 
 create_faction = changeling_hegemony

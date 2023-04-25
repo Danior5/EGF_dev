@@ -410,4 +410,20 @@ characters={
 		}
 		gender = female
 	}
+	
+	CHN_Sombra = {
+		name = "King Sombra"
+		portraits = {
+			army = {
+				large = "GFX_SombraPortrait"
+				small = "GFX_idea_CRY_sombra"
+			}
+		}
+		
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
 }

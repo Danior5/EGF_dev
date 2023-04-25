@@ -529,9 +529,9 @@ news_event = {  ### Fall Rosa
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ww.news.4"}
 	title = ww.news.4.t
 	desc = ww.news.4.d
-	picture = GFX_crystal_city_news
+	picture = GFX_crystal_war_news
 
-	major = yes
+	#major = yes
 
 	is_triggered_only = yes
 
@@ -547,7 +547,7 @@ news_event = {  ### Fall Hellgrun
 	desc = ww.news.5.d
 	picture = GFX_news_equestria_field
 
-	major = yes
+	#major = yes
 
 	is_triggered_only = yes
 
@@ -563,7 +563,7 @@ news_event = {  ### Fall Dunklegrun
 	desc = ww.news.6.d
 	picture = GFX_news_event_los_pegasus
 
-	major = yes
+	#major = yes
 
 	is_triggered_only = yes
 
