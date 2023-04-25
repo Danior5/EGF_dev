@@ -2077,9 +2077,9 @@ focus = {
 					size = 0
 					stockpile_ratio = 0.25
 					army_ratio = 0.25
-					keep_unit_leaders = {
-						always = yes
-					}
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
 				}
 				add_timed_idea = {
 					idea = WW_CRY_traitors
