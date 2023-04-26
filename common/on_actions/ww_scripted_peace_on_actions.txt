@@ -43,7 +43,7 @@ on_actions = {
 #Nova Griffonia
 	on_capitulation = { # Nova Kills frontier
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = GFF
@@ -66,7 +66,7 @@ on_actions = {
 				}
 				GRF = {
 					add_named_threat = {
-						threat = 2
+						threat = 1.8
 						name = "Scripted peace for [GFF.GetName]"
 					}
 				}
@@ -82,7 +82,7 @@ on_actions = {
 	}
 	on_capitulation = {# Nova Kills bears
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = PLB
@@ -108,7 +108,7 @@ on_actions = {
 				}
 				GRF = {
 					add_named_threat = {
-						threat = 5
+						threat = 4.3
 						name = "Scripted peace for [PLB.GetName]"
 					}
 				}
@@ -125,7 +125,7 @@ on_actions = {
 #Changelings
 	on_capitulation = {# Changling Kills deer
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = OLE
@@ -151,7 +151,7 @@ on_actions = {
 				}
 				CHN = {
 					add_named_threat = {
-						threat = 22
+						threat = 21.1
 						name = "Scripted peace for [OLE.GetName]"
 					}
 				}	
@@ -170,7 +170,7 @@ on_actions = {
 #Republic
 	on_capitulation = {# republic Kills sunstriker
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = MNC
@@ -193,7 +193,7 @@ on_actions = {
 				}
 				FAT = {
 					add_named_threat = {
-						threat = 3
+						threat = 3.4
 						name = "Scripted peace for [MNC.GetName]"
 					}
 				}	
@@ -209,7 +209,7 @@ on_actions = {
 	}
 	on_capitulation = {# republic Kills vedina
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = VED
@@ -235,7 +235,7 @@ on_actions = {
 				}
 				FAT = {
 					add_named_threat = {
-						threat = 6
+						threat = 6.9
 						name = "Scripted peace for [VED.GetName]"
 					}
 				}	
@@ -251,7 +251,7 @@ on_actions = {
 	}
 	on_capitulation = {# republic Kills skynavia
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = SRS
@@ -283,7 +283,7 @@ on_actions = {
 					}
 					FAT = {
 						add_named_threat = {
-							threat = 6
+							threat = 6.5
 							name = "Scripted peace for [SRS.GetName]"
 						}
 					}
@@ -294,7 +294,7 @@ on_actions = {
 					}
 					FAT = {
 						add_named_threat = {
-							threat = 2
+							threat = 3
 							name = "Scripted peace for [SRS.GetName]"
 						}
 					}
@@ -311,7 +311,7 @@ on_actions = {
 	}
 	on_capitulation = {# republic Kills northern tribes
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = NTR
@@ -343,7 +343,7 @@ on_actions = {
 					}
 					FAT = {
 						add_named_threat = {
-							threat = 6
+							threat = 6.5
 							name = "Scripted peace for [NTR.GetName]"
 						}
 					}
@@ -354,7 +354,7 @@ on_actions = {
 					}
 					FAT = {
 						add_named_threat = {
-							threat = 3
+							threat = 3.5
 							name = "Scripted peace for [NTR.GetName]"
 						}
 					}
@@ -372,7 +372,7 @@ on_actions = {
 #Empire
 	on_capitulation = {# empire Kills strawberry
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = {
 						tag = STW
@@ -395,7 +395,7 @@ on_actions = {
 				}
 				GRI = {
 					add_named_threat = {
-						threat = 3
+						threat = 3.6
 						name = "Scripted peace for [STW.GetName]"
 					}
 				}	
@@ -409,4 +409,204 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {# empire Kills Feathisia
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = FEA
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				FEA = {
+					save_global_event_target_as = losing_country
+				}
+				transfer_navy = {
+					target = GRI
+				}
+				GRI = {
+					annex_country = {
+						target = FEA
+						transfer_troops = no
+					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 6.3
+						name = "Scripted peace for [FEA.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				FEA = {
+					clear_global_event_target = losing_country
+				}
+			}
+		}
+	}
+	on_capitulation = {# empire Kills yale
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = YAL
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				YAL = {
+					save_global_event_target_as = losing_country
+				}
+				GRI = {
+					annex_country = {
+						target = YAL
+						transfer_troops = no
+					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 2.7
+						name = "Scripted peace for [YAL.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				YAL = {
+					clear_global_event_target = losing_country
+				}
+			}
+		}
+	}
+	on_capitulation = {# empire Kills angriver
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = ANG
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				ANG = {
+					save_global_event_target_as = losing_country
+				}
+				GRI = {
+					annex_country = {
+						target = ANG
+						transfer_troops = no
+					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 2.1
+						name = "Scripted peace for [ANG.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				ANG = {
+					clear_global_event_target = losing_country
+				}
+			}
+		}
+	}
+	on_capitulation = {# empire Kills romau
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = ROU
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				ROU = {
+					save_global_event_target_as = losing_country
+				}
+				GRI = {
+					annex_country = {
+						target = ROU
+						transfer_troops = no
+					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 0.6
+						name = "Scripted peace for [ROU.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				ROU = {
+					clear_global_event_target = losing_country
+				}
+			}
+		}
+	}
+	on_capitulation = {# empire Kills Greifenmarschen
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = PYT
+					}
+					FROM = {
+						tag = GRI
+					}
+				}
+				GRI = {
+					save_global_event_target_as = winning_country
+				}
+				PYT = {
+					save_global_event_target_as = losing_country
+				}
+				GRI = {
+					annex_country = {
+						target = PYT
+						transfer_troops = no
+					}
+				}
+				GRI = {
+					add_named_threat = {
+						threat = 2
+						name = "Scripted peace for [PYT.GetName]"
+					}
+				}	
+				#event = scriptpeace.1
+				GRI = {
+					clear_global_event_target = winning_country
+				}
+				PYT = {
+					clear_global_event_target = losing_country
+				}
+			}
+		}
+	}
+#skyfall
+
 }
