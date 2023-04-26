@@ -2087,9 +2087,9 @@ focus = {
 					size = 0
 					stockpile_ratio = 0.25
 					army_ratio = 0.25
-						keep_unit_leaders_trigger = {
-							always = yes
-						}
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				add_timed_idea = {
 					idea = WW_CRY_traitors
@@ -2140,7 +2140,50 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-		hidden_effect = { news_event = { id = ww.news.6 } }
+		hidden_effect = { 
+			news_event = { id = ww.news.6 } 
+		}
+			66 = {
+				add_province_modifier = {
+					static_modifiers = { CHN_landing_grounds }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			100 = {
+				add_province_modifier = {
+					static_modifiers = { CHN_landing_grounds }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			94 = {
+				add_province_modifier = {
+					static_modifiers = { CHN_landing_grounds }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			49 = {
+				add_province_modifier = {
+					static_modifiers = { CHN_landing_grounds }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			47 = {
+				add_province_modifier = {
+					static_modifiers = { CHN_landing_grounds }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
 	}
 }
 

@@ -1,0 +1,4 @@
+CHN_landing_grounds = {
+	army_armor_attack_factor = -0.9
+	army_armor_defence_factor = -0.9
+}

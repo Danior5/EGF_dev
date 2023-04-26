@@ -96,6 +96,37 @@ CHN_WW_great_war_category = {
 			}
 		}
 	}
+	WW_CHN_fall_dunklegrun_mission = {
+		icon = generic_construction
+		allowed = {
+				original_tag = CHN
+		}
+		available = {
+			any_country = {
+				is_in_faction_with = CHN
+				controls_state = 66
+			}
+		}
+		activation = {
+			has_completed_focus = WW_fall_dunklegrun
+		}
+		days_mission_timeout = 120
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			CHN = {
+				add_offsite_building = { type = dockyard level = 10 }
+				add_offsite_building = { type = arms_factory level = 5 }
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+			EQS = {
+				add_timed_idea = {
+					idea = WW_split_front
+					days = 120
+				}
+			}
+		}
+	}
 	WW_CHN_winter_offensive_decision = {
 		icon = generic_ignite_civil_war
 		allowed = {
