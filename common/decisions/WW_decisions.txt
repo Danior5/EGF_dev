@@ -1560,37 +1560,37 @@ WW_category = {
 		}
 	}
 
-	WW_equusonly_no_navy_game = {		
-		icon = rifles
-		allowed = {
-			AND = {
-				original_tag = EQS
-				has_game_rule = {
-					rule = ww_game_mode
-					option = EQS_ONLY
-				}			
-			}
-		}
-		available = {
-			date > 1011.11.3
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		fire_only_once = yes
-		visible = {
-			date > 1006.11.1
-		}
-		complete_effect = {
-			EQS = {
-				if = {
-					limit = { has_idea = EQS_island_debuff1 }
-					remove_ideas = EQS_island_debuff1
-				}
-			}
-		}
-	}	
+	#WW_equusonly_no_navy_game = {		
+	#	icon = rifles
+	#	allowed = {
+	#		AND = {
+	#			original_tag = EQS
+	#			has_game_rule = {
+	#				rule = ww_game_mode
+	#				option = EQS_ONLY
+	#			}			
+	#		}
+	#	}
+	#	available = {
+	#		date > 1011.11.3
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	fire_only_once = yes
+	#	visible = {
+	#		date > 1006.11.1
+	#	}
+	#	complete_effect = {
+	#		EQS = {
+	#			if = {
+	#				limit = { has_idea = EQS_island_debuff1 }
+	#				remove_ideas = EQS_island_debuff1
+	#			}
+	#		}
+	#	}
+	#}	
 }
 
 war_measures = {

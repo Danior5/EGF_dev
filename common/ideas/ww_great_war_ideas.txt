@@ -152,7 +152,7 @@ ideas = {
 		}
 		WW_CRY_traitors = {
 			removal_cost = -1
-			picture = ast_volunteer_defence_corps
+			picture = CRY_sombra_threat
 			modifier = {
 				army_org_factor = -0.05
 				army_speed_factor = -0.05
@@ -161,7 +161,7 @@ ideas = {
 		}
 		WW_CRY_traitors_purged = {
 			removal_cost = -1
-			picture = ast_volunteer_defence_corps
+			picture = CRY_grand_festival
 			modifier = {
 				army_org_factor = 0.05
 				army_attack_factor = 0.05
