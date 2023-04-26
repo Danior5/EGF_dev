@@ -21,7 +21,7 @@ on_actions = {
 				STG = {
 					annex_country = {
 						target = STL
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				STG = {
@@ -61,7 +61,7 @@ on_actions = {
 				GRF = {
 					annex_country = {
 						target = GFF
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				GRF = {
@@ -97,10 +97,13 @@ on_actions = {
 				PLB = {
 					save_global_event_target_as = losing_country
 				}
+				transfer_navy = {
+					target = FAT
+				}
 				GRF = {
 					annex_country = {
 						target = PLB
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				GRF = {
@@ -137,10 +140,13 @@ on_actions = {
 				OLE = {
 					save_global_event_target_as = losing_country
 				}
+				transfer_navy = {
+					target = FAT
+				}
 				CHN = {
 					annex_country = {
 						target = OLE
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				CHN = {
@@ -182,7 +188,7 @@ on_actions = {
 				FAT = {
 					annex_country = {
 						target = MNC
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				FAT = {
@@ -218,10 +224,13 @@ on_actions = {
 				VED = {
 					save_global_event_target_as = losing_country
 				}
+				transfer_navy = {
+					target = FAT
+				}
 				FAT = {
 					annex_country = {
 						target = VED
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				FAT = {
@@ -257,10 +266,13 @@ on_actions = {
 				SRS = {
 					save_global_event_target_as = losing_country
 				}
+				transfer_navy = {
+					target = FAT
+				}
 				FAT = {
 					annex_country = {
 						target = SRS
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				if = {
@@ -297,7 +309,7 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation = {# republic Kills nortrun tribes
+	on_capitulation = {# republic Kills northern tribes
 		effect = {
 			if = { 
 				limit = {
@@ -314,10 +326,13 @@ on_actions = {
 				NTR = {
 					save_global_event_target_as = losing_country
 				}
+				transfer_navy = {
+					target = FAT
+				}
 				FAT = {
 					annex_country = {
 						target = NTR
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				if = {
@@ -355,7 +370,7 @@ on_actions = {
 		}
 	}
 #Empire
-	on_capitulation = {# empire Kills strawbarry
+	on_capitulation = {# empire Kills strawberry
 		effect = {
 			if = { 
 				limit = {
@@ -375,7 +390,7 @@ on_actions = {
 				GRI = {
 					annex_country = {
 						target = STW
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 				GRI = {
