@@ -137,7 +137,7 @@ ideas = {
 			removal_cost = -1
 			picture = RAZ_loyal_army
 			modifier = {
-				army_strength_factor = 1.0
+				army_strength_factor = 0.5
 				air_cas_present_factor = 0.4
 			}
 			targeted_modifier = {

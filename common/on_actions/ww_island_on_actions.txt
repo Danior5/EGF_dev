@@ -520,3 +520,52 @@ on_actions = {
 			}
 		}
 	}
+##Las Pegasus Control
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = CHN 
+							tag = CHN
+						} 
+					}
+					FROM.FROM = {
+						state = 66
+					}
+				}
+				EQS = { add_ideas = WW_las_pegasus_lost }
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = CHN 
+							tag = CHN
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS
+							tag = EQS
+						} 
+					}
+					FROM.FROM = {
+						state = 66
+					}
+				}
+				EQS = { remove_ideas = WW_las_pegasus_lost }
+			}
+		}
+	}
