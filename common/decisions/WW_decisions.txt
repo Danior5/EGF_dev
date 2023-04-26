@@ -915,10 +915,12 @@ WW_category = {
 				}
 				GRI = { 
 					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					add_timed_idea = { idea = WW_afrikakorps days = 180 }
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 				JER = { 
 					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					add_timed_idea = { idea = WW_afrikakorps days = 180 }
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 				HLQ = {
@@ -1006,10 +1008,12 @@ WW_category = {
 				}
 				GRI = { 
 					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					add_timed_idea = { idea = WW_afrikakorps days = 180 }
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 				JER = { 
 					add_timed_idea = { idea = WW_toratoratora days = 180 }
+					add_timed_idea = { idea = WW_afrikakorps days = 180 }
 					set_technology = { WW_EQC_tank_amph_bonus = 1 }
 				}
 				HLQ = {

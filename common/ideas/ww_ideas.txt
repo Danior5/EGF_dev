@@ -130,6 +130,22 @@ ideas = {
 				naval_speed_factor = 0.1
 			}
 		}
+		WW_afrikakorps = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = RAZ_loyal_army
+			modifier = {
+				army_strength_factor = 1.0
+				air_cas_present_factor = 0.4
+			}
+			targeted_modifier = {
+   				tag = EQC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
 		WW_escaped_officers = {
 			removal_cost = -1
 			picture = FRA_scw_intervention_nationalists_focus
