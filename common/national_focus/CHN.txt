@@ -2143,8 +2143,7 @@ focus = {
 		hidden_effect = { 
 			news_event = { id = ww.news.6 }
 		}
-		unlock_decision_tooltip = WW_CHN_fall_dunklegrun_mission
-		unlock_decision_tooltip = WW_CHN_fall_dunklegrun_bombardment_decision
+		custom_effect_tooltip = WW_fall_dunklegrun_tt
 	}
 }
 
