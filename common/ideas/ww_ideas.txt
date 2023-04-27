@@ -137,7 +137,7 @@ ideas = {
 			removal_cost = -1
 			picture = RAZ_loyal_army
 			modifier = {
-				army_strength_factor = 0.5
+				army_strength_factor = 0.8
 				air_cas_present_factor = 0.4
 			}
 			targeted_modifier = {
@@ -183,7 +183,8 @@ ideas = {
 			picture = ger_mefo_bills_payment
 			modifier = {
 				consumer_goods_factor = 0.05
-				production_speed_arms_factory_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05 
+				production_speed_arms_factory_factor = -0.15
 				industrial_capacity_factory = -0.1 
 			}
 		}

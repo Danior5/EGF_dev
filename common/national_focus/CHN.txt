@@ -2144,46 +2144,7 @@ focus = {
 			news_event = { id = ww.news.6 }
 		}
 		unlock_decision_tooltip = WW_CHN_fall_dunklegrun_mission
-		66 = {
-			add_province_modifier = {
-				static_modifiers = { CHN_landing_grounds }
-				province = {
-					all_provinces = yes
-				}
-			}
-		}
-		100 = {
-			add_province_modifier = {
-				static_modifiers = { CHN_landing_grounds }
-				province = {
-					all_provinces = yes
-				}
-			}
-		}
-		94 = {
-			add_province_modifier = {
-				static_modifiers = { CHN_landing_grounds }
-				province = {
-					all_provinces = yes
-				}
-			}
-		}
-		49 = {
-			add_province_modifier = {
-				static_modifiers = { CHN_landing_grounds }
-				province = {
-					all_provinces = yes
-				}
-			}
-		}
-		47 = {
-			add_province_modifier = {
-				static_modifiers = { CHN_landing_grounds }
-				province = {
-					all_provinces = yes
-				}
-			}
-		}
+		unlock_decision_tooltip = WW_CHN_fall_dunklegrun_bombardment_decision
 	}
 }
 

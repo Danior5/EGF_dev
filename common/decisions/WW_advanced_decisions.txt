@@ -127,6 +127,51 @@ CHN_WW_great_war_category = {
 			}
 		}
 	}
+	WW_CHN_fall_dunklegrun_bombardment_decision = {
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = WW_fall_dunklegrun
+		}
+		targets = { 66 100 94 49 47 }
+		on_map_mode = map_only
+		icon = generic_ignite_civil_war
+		custom_cost_trigger = {
+			command_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30
+		days_remove = 180
+		complete_effect = {
+			hidden_effects = {
+				add_command_power = -30
+			}
+			FROM = {
+				damage_units = {
+					state = THIS
+					limit = { tag = EQS }
+					org_damage = 0.9
+					str_damage = 0.5
+					ratio = yes
+					army = yes
+				}
+				damage_units = {
+					state = THIS
+					limit = { tag = STG }
+					org_damage = 0.9
+					str_damage = 0.5
+					ratio = yes
+					army = yes
+				}
+				damage_units = {
+					state = THIS
+					limit = { tag = CRY }
+					org_damage = 0.9
+					str_damage = 0.5
+					ratio = yes
+					army = yes
+				}
+			}
+		}
+	}
 	WW_CHN_winter_offensive_decision = {
 		icon = generic_ignite_civil_war
 		allowed = {

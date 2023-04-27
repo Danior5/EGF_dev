@@ -3662,10 +3662,10 @@ country_event = { ############### Equestria Support : Sience
 				category = electronics
 			}
 			add_tech_bonus = {
-				name = RCT_EQS_infantry_weapons_bonus
+				name = RCT_EQS_AT_weapons_bonus
 				bonus = 1.0
 				uses = 1
-				category = infantry_weapons
+				category = cat_anti_tank
 			}
 		}
 		add_opinion_modifier = { target = FROM modifier = RCT_EQS_Helped }
@@ -3698,10 +3698,10 @@ country_event = { ############### Equestria Support : Everything
 				category = electronics
 			}
 			add_tech_bonus = {
-				name = RCT_EQS_infantry_weapons_bonus
+				name = RCT_EQS_AT_weapons_bonus
 				bonus = 1.0
 				uses = 1
-				category = infantry_weapons
+				category = cat_anti_tank
 			}
 		}
 		add_opinion_modifier = { target = FROM modifier = RCT_EQS_Helped_a_Lot }
