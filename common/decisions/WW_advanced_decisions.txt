@@ -142,7 +142,9 @@ CHN_WW_great_war_category = {
 		days_remove = 180
 		complete_effect = {
 			hidden_effects = {
-				add_command_power = -30
+				CHN = {
+					add_command_power = -30
+				}
 			}
 			FROM = {
 				damage_units = {

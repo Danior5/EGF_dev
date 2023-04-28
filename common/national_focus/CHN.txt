@@ -2067,6 +2067,7 @@ focus = {
 	x = -2
 	y = 1
 	available = {
+		date > 1012.07.01
 	}
 	completion_reward = {
 		custom_effect_tooltip = WW_fall_rosa_tt
@@ -2118,6 +2119,7 @@ focus = {
 	relative_position_id = WW_CHN_hold_shire
 	y = 1
 	available = {
+		date > 1012.07.01
 	}
 	completion_reward = {
 		hidden_effect = { news_event = { id = ww.news.5 } }
@@ -2138,6 +2140,17 @@ focus = {
 	x = 2
 	y = 1
 	available = {
+		date > 1012.07.01
+		NOT = {
+			any_country = {
+				is_in_faction_with = CHN
+				OR = {
+					controls_state = 96 
+					controls_state = 41
+					controls_state = 66 
+				}
+			}
+		}
 	}
 	completion_reward = {
 		hidden_effect = { 
