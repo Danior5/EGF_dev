@@ -2069,7 +2069,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-		custom_effect_tooltip = WW_fall_rosa_tp
+		custom_effect_tooltip = WW_fall_rosa_tt
 		hidden_effect = { 
 			news_event = { id = ww.news.4 }
 			add_field_marshal_role = {
@@ -2142,6 +2142,21 @@ focus = {
 	completion_reward = {
 		hidden_effect = { 
 			news_event = { id = ww.news.6 }
+			66 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			100 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			94 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			49 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			47 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
 		}
 		custom_effect_tooltip = WW_fall_dunklegrun_tt
 	}

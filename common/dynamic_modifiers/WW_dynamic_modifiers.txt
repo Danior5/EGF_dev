@@ -32,3 +32,10 @@ EQS_fortress_city = {
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 }
+CHN_landing_grounds = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_eng_preparing_the_second_front
+
+	naval_invasion_penalty = -0.2
+}
