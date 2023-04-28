@@ -96,7 +96,7 @@ CHN_WW_great_war_category = {
 			}
 		}
 	}
-	WW_CHN_fall_dunklegrun_mission = {
+	WW_CHN_fall_dunkelgrun_mission = {
 		icon = generic_construction
 		allowed = {
 				original_tag = CHN
@@ -108,7 +108,7 @@ CHN_WW_great_war_category = {
 			}
 		}
 		activation = {
-			has_completed_focus = WW_fall_dunklegrun
+			has_completed_focus = WW_fall_dunkelgrun
 		}
 		days_mission_timeout = 120
 		fire_only_once = yes
@@ -127,10 +127,10 @@ CHN_WW_great_war_category = {
 			}
 		}
 	}
-	WW_CHN_fall_dunklegrun_bombardment_decision = {
+	WW_CHN_fall_dunkelgrun_bombardment_decision = {
 		state_target = yes
 		target_root_trigger = {
-			has_completed_focus = WW_fall_dunklegrun
+			has_completed_focus = WW_fall_dunkelgrun
 		}
 		targets = { 66 100 94 49 47 }
 		on_map_mode = map_only
@@ -198,7 +198,7 @@ CHN_WW_great_war_category = {
 				}
 				has_completed_focus = WW_fall_rosa
 				has_completed_focus = WW_fall_hellgrun
-				has_completed_focus = WW_fall_dunklegrun
+				has_completed_focus = WW_fall_dunkelgrun
 			}
 		}
 		fire_only_once = yes

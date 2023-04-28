@@ -2061,7 +2061,7 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = WW_fall_hellgrun
-		focus = WW_fall_dunklegrun
+		focus = WW_fall_dunkelgrun
 	}
 	relative_position_id = WW_CHN_hold_shire
 	x = -2
@@ -2114,7 +2114,7 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = WW_fall_rosa
-		focus = WW_fall_dunklegrun
+		focus = WW_fall_dunkelgrun
 	}
 	relative_position_id = WW_CHN_hold_shire
 	y = 1
@@ -2126,7 +2126,7 @@ focus = {
 	}
 }
 focus = {
-	id = WW_fall_dunklegrun
+	id = WW_fall_dunkelgrun
 	icon = GFX_goal_chn_man_anchor
 	cost = 5
 	prerequisite = {
@@ -2171,7 +2171,7 @@ focus = {
 				add_dynamic_modifier = { modifier = CHN_landing_grounds }
 			}
 		}
-		custom_effect_tooltip = WW_fall_dunklegrun_tt
+		custom_effect_tooltip = WW_fall_dunkelgrun_tt
 	}
 }
 
