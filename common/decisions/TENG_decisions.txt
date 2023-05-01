@@ -275,6 +275,7 @@ WW_category = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = EQS_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -355,6 +356,7 @@ WW_category = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = GRF_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
@@ -917,6 +919,7 @@ WW_category = {
 				defense_skill=4
 				planning_skill=4
 				logistics_skill=4
+				desc = WNG_char_desc
 			}	
 			custom_effect_tooltip = teng_ww_skill
 			hidden_effect = {
