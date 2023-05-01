@@ -14,7 +14,7 @@
  EQC_char_desc:0 "You and I are opposite sides of the same coin. When we face each other, we can finally see our true selves. There may be a resemblance, but we never face the same direction."
  HLQ_char_desc:0 "I've never experienced better mud than on the Longsword Gap, it's like walking through a literal liquid sea of cope!"
  RCT_char_desc:0 "Did you know there is a total of 46 minutes of kim feet time in better call saul"
- WNG_char_desc:0 "(...) ni----s are an inferior human race (...)"
+ WNG_char_desc:0 "Yeah we aren't doing this."
  GRF_char_desc:0 ""Bronies are my second favorite group of subhumans""
  EQS_char_desc:0 "VENON RANCH!!! Od czterech lat dowódca oddziałów specjalnych w służbie księżniczki Celestii. Odpowiedzialny za pacyfikację rebelii bizonów, łowca robali, morderca komunistów i nietoperzy. Dwukrotnie odznaczony za męstwo w boju."
  
@@ -67,7 +67,7 @@
  wng_able_declare:0 "Wingbardy Can Declare War"
  nzw_able_declare:0 "North Zebrican War Can Start"
  
- alarmover.1.t:0 "Aqulia is Able to Declare War"
+ alarmover.1.t:0 "Aquileia is Able to Declare War"
  alarmover.1.d:0 "Today is the first day that Aqulia is able to declare its war.\nThis will now start the land war in griffonia.\nThe eastern griffonain front will also be started by bringing in Hellquill and The Griffian Host."
  alarmover.1.a:0 "Incoming!"
  alarmover.2.t:0 "Changeling Lands is Able to Declare War "
