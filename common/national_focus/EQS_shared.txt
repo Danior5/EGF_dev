@@ -323,6 +323,12 @@ shared_focus = {
 				instant_build = yes
 				province = 829
 			}
+			add_building_construction = {
+				type = bunker
+				level = 6
+				instant_build = yes
+				province = 78
+			}
 		}
 		364 = {
 			add_building_construction = {
@@ -358,7 +364,7 @@ shared_focus = {
 				type = bunker
 				level = 6
 				instant_build = yes
-				province = 8123
+				province = 2089
 			}
 		}
 		365 = {
