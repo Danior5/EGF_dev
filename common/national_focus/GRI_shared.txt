@@ -1257,6 +1257,42 @@ shared_focus = {
 	will_lead_to_war_with = ANG
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_reward_loyalty"
+		hidden_effect = {
+			ROU = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = ROU
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = ROU transfer_troops = yes }
+			YAL = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = YAL
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = YAL transfer_troops = yes }
+		}
 		if = {
 			limit = { 
 			    ROU = { 
