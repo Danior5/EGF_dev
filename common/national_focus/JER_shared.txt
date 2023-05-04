@@ -6239,9 +6239,6 @@
 			focus = JER_limit_presidential_executive
 			focus = JER_presidential_powers_expansion_act
 		}
-		bypass = {
-		    is_in_faction_with = FAT
-		}
 		mutually_exclusive = {
 		    focus = JER_work_with_the_republicans
 		}
