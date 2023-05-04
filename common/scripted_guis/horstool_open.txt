@@ -14,9 +14,11 @@ scripted_gui = {
 				if = {
 					limit = { ROOT = { NOT = { has_country_flag = transfer_enabled } } }
 					ROOT = { set_country_flag = transfer_enabled }
+					news_event = ww.news.9
 				}
 				else = {
 					ROOT = { clr_country_flag = transfer_enabled }
+					news_event = ww.news.10
 				}
 			}
 		}

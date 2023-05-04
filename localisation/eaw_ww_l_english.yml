@@ -63,6 +63,9 @@ l_english:
  ww.news.8.a:0 "The horror..."
  ww.news.8.b:0 "Those bastards... They will pay for this!"
  ww.news.8.c:0 "It was the Queen's Guard! They did it!"
+
+ ww.news.9.t:0 "Host Tool Opened"
+ ww.news.10.t:0 "Host Tool Closed"
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"

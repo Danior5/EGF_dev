@@ -630,7 +630,17 @@ news_event = {  ### Liberation of Fairflanks
 	}	
 }
 
+news_event = {  ### Host Tool Open
+	id = ww.news.9
+	title = ww.news.9.t
+	is_triggered_only = yes
+}
 
+news_event = {  ### Host Tool Closed
+	id = ww.news.10
+	title = ww.news.10.t
+	is_triggered_only = yes
+}
 
 country_event = {
 	id = ww.12
