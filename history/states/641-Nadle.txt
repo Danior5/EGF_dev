@@ -11,5 +11,11 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
+		owner = WAT
+		add_core_of = WAT
+
+		buildings = {
+			infrastructure = 1
+		}
 	}
 }
