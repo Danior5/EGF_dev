@@ -1103,3 +1103,33 @@ country_event = {
 		add_ideas = WW_CRY_traitors_purged
 	}
 }
+country_event = {
+	id = ww.18
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		every_core_state = {
+			limit = {
+				has_state_flag = GRI_WAT_controls
+			}
+			WAT = {
+				give_resource_rights = {
+					receiver = FAT
+					state = PREV
+				}
+			}
+		}
+		every_core_state = {
+			limit = {
+				has_state_flag = RCT_WAT_controls
+			}
+			WAT = {
+				give_resource_rights = {
+					receiver = GRY
+					state = PREV
+				}
+			}
+		}
+	}
+}
