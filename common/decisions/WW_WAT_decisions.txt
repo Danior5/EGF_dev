@@ -1,14 +1,14 @@
 WW_category = {
-	WW_invade_WAT_decision = {
+	WW_GRI_invade_WAT_decision = {
 		icon = generic_ignite_civil_war
 		allowed = {
 			OR = {
 				original_tag = GRI
-				original_tag = RCT
 			}
 		}
 		visible = {
 			date > 1011.1.1
+			date < 1012.3.1
 		}
 		available = {
 			GRI = {
@@ -18,9 +18,38 @@ WW_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			declare_war_on = {
-				tag = WAT
-				type = annex_everything
+			GRI = {
+				declare_war_on = {
+					tag = WAT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	WW_RCT_invade_WAT_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				original_tag = RCT
+			}
+		}
+		visible = {
+			date > 1011.1.1
+			date < 1012.3.1
+		}
+		available = {
+			RCT = {
+				has_war_with = GRI
+			}
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			RCT = {
+				declare_war_on = {
+					tag = WAT
+					type = annex_everything
+				}
 			}
 		}
 	}
