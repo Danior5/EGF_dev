@@ -13,6 +13,13 @@ ideas = {
 				surrender_limit = -0.2
 			}
 		}
+		WW_WAT_surrender_limit = {
+			removal_cost = -1
+			picture = DED_magehold
+			modifier = {
+				surrender_limit = 2.0
+			}
+		}
 		WW_tarrin_offensive = {
 			allowed = {
 				always = no
