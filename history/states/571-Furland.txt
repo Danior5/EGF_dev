@@ -22,4 +22,9 @@ state={
 			}
 		}
 	}
+
+	resources = {
+		chromium = 6
+		aluminium = 8
+	}
 }

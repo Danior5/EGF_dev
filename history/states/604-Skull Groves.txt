@@ -14,4 +14,10 @@ state={
 		owner = WAT
 		add_core_of = WAT
 	}
+
+	resources = {
+		aluminium = 10
+		steel = 23
+		tungsten = 13
+	}
 }

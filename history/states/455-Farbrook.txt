@@ -27,4 +27,8 @@ state={
 			}
 		}
 	}
+	
+	resources = {
+		oil = 24
+	}
 }

@@ -5,9 +5,6 @@ state={
 	provinces={
 		4205 4570 10945
 	}
-	resources={
-		steel=4.000
-	}
 
 	manpower=456090
 	state_category = town
@@ -23,5 +20,8 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
+	}
+	resources = {
+		steel = 7
 	}
 }
