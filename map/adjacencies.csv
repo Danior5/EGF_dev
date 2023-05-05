@@ -860,27 +860,50 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
 20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 ;;;;;;;;;
+6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;11235;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;6243;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6411;6243;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6411;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9253;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3335;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3335;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6355;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6252;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6305;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;9261;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;6092;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9042;6092;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9042;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3069;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3069;6079;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 ;;;;;;;;;
+12336;10362;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1654;10362;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1654;12496;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1613;12496;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1613;10502;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12468;10502;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12468;12453;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;12453;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;10943;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;8187;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+8238;8187;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+8238;12964;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2173;12964;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2173;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+5191;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2179;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2179;12277;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
 ;;;;;;;;;
-6398;6279;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6398;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;11235;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6411;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6411;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9253;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3335;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3335;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6355;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6252;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6305;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;9261;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9042;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9042;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3069;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3069;6079;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+9528;1070;impassable;-1;-1;-1;-1;-1;;Magehold
+9528;12254;impassable;-1;-1;-1;-1;-1;;Magehold
+9528;4294;impassable;-1;-1;-1;-1;-1;;Magehold
+7438;4294;impassable;-1;-1;-1;-1;-1;;Magehold
+7438;1070;impassable;-1;-1;-1;-1;-1;;Magehold
+4351;1070;impassable;-1;-1;-1;-1;-1;;Magehold
 ;;;;;;;;;
 -1;-1;;-1;-1;-1;-1;-1;-1;

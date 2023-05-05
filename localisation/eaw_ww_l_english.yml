@@ -100,11 +100,14 @@ l_english:
  WW_OLE_surrender_limit:0 "Changeling Occupation"
  WW_OLE_surrender_limit_desc:0 "The Olenian populace holds no love for their Changeling oppressors. If a foreign power were to enter their country they would quickly join them."
 
+ WW_CHN_core_buff:0 "Olenian Front Secure"
+ WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
+
  WW_WAT_surrender_limit:0 "Watching from Magehold"
  WW_WAT_surrender_limit_desc:0 "Eathelin is crying right now."
 
- WW_CHN_core_buff:0 "Olenian Front Secure"
- WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
+ WW_GRI_invade_WAT_decision:0 "Attack Watertowns"
+ WW_RCT_invade_WAT_decision:0 "Attack Watertowns"
 
  ### Sunset update CHN focuses and events
  WW_volunteer_tanks:0 "Queen's Guard Panzers"

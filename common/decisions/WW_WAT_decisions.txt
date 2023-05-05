@@ -20,7 +20,7 @@ WW_category = {
 		complete_effect = {
 			GRI = {
 				declare_war_on = {
-					tag = WAT
+					target = WAT
 					type = annex_everything
 				}
 			}
@@ -47,7 +47,7 @@ WW_category = {
 		complete_effect = {
 			RCT = {
 				declare_war_on = {
-					tag = WAT
+					target = WAT
 					type = annex_everything
 				}
 			}
@@ -64,7 +64,7 @@ WW_category = {
 		available = {
 			always = no
 		}
-		days_mission_timeout = 20
+		days_mission_timeout = 1884
 		fire_only_once = yes
 		
 		timeout_effect = {
@@ -85,11 +85,10 @@ WW_category = {
 					set_state_flag = RCT_WAT_controls
 				}
 			}
-			white_peace = GRI
-			white_peace = RCT
+			every_enemy_country = { white_peace = PREV }
 			country_event = {
 				id = ww.18
-				days = 2
+				days = 1
 			}
 		}
 	}
