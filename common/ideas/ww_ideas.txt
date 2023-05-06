@@ -1,5 +1,20 @@
 ideas = {
 	country = {
+		WW_peace_in_our_time = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.2
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.7
+				industrial_capacity_dockyard = -0.7
+				production_speed_arms_factory_factor = -1.0 
+				production_speed_dockyard_factor = -1.0
+				war_support_weekly_factor = -0.01
+			}
+		}	
 		WW_WAT_surrender_limit = {
 			removal_cost = -1
 			picture = DED_magehold
