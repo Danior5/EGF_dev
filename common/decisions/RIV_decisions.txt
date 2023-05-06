@@ -1354,6 +1354,17 @@ foreign_politics = {
 				any_neighbor_country = {
 					is_river_fed_member = yes
 				}
+				AND = {
+					EQS = {
+						has_capitulated = yes
+					}
+					JER = {
+						has_capitulated = no
+					}
+					GRI = {
+						has_capitulated = no
+					}
+				}
 			}
 		}
 
