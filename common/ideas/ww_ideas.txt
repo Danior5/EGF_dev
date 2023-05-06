@@ -1,18 +1,5 @@
 ideas = {
 	country = {
-		WW_OLE_surrender_limit = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_secret_police
-			modifier = {
-				surrender_limit = -0.2
-			}
-		}
 		WW_WAT_surrender_limit = {
 			removal_cost = -1
 			picture = DED_magehold
@@ -58,46 +45,6 @@ ideas = {
 				planning_speed = 1.0
 			}
 		}
-		WW_crusaders = {
-			allowed = { 
-				always = yes 
-			}
-
-			removal_cost = -1
-			picture = STG_crusaders
-			modifier = {
-				war_support_factor = 0.15
-				land_reinforce_rate = 0.1
-				army_morale_factor = 0.1
-				army_org_factor = 0.1
-			}
-		}
-		WW_protect_eqc = {
-			allowed = { 
-				always = yes 
-			}
-
-			removal_cost = -1
-			picture = STG_crusaders
-			modifier = {
-				army_infantry_attack_factor = 0.1
-				army_infantry_defence_factor = 0.1
-				max_dig_in = 5
-			}
-		}
-		WW_citadel_fallen = {
-			allowed = { 
-				always = yes 
-			}
-
-			removal_cost = -1
-			picture = SOV_factionalism_modifier
-			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
-				custom_modifier_tooltip = WW_citadel_fallen_tt
-			}
-		}
 		WW_CHN_core_buff = {
 			allowed = {
 				always = no
@@ -137,38 +84,6 @@ ideas = {
 				defense_bonus_against = 0.2
 			}
 		}
-		WW_escaped_officers = {
-			removal_cost = -1
-			picture = FRA_scw_intervention_nationalists_focus
-			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-			}
-		}
-		WW_last_AC = {
-			removal_cost = -1
-			picture = generic_air_bonus
-			modifier = {
-				air_home_defence_factor = 0.2
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-			}
-		}
-		WW_incompetent_tanks = {
-			removal_cost = -1
-			picture = generic_army_problems
-			modifier = {
-				army_armor_attack_factor = -1
-			}
-		}
 		WW_overstrained_military_industry = {
 			removal_cost = -1
 			picture = ger_mefo_bills_payment
@@ -177,15 +92,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05 
 				production_speed_arms_factory_factor = -0.15
 				industrial_capacity_factory = -0.1 
-			}
-		}
-		WW_air_license = {
-			removal_cost = -1
-			picture = generic_air_payment
-			targeted_modifier = {
-				tag = TRD
-				license_tech_difference_speed = 0.5 
-				license_production_speed = 0.25 	
 			}
 		}
 		WW_HIP_primo_victoria1 = {
