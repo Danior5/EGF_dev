@@ -634,12 +634,16 @@ news_event = {  ### Host Tool Open
 	id = ww.news.9
 	title = ww.news.9.t
 	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
 }
 
 news_event = {  ### Host Tool Closed
 	id = ww.news.10
 	title = ww.news.10.t
 	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
 }
 
 country_event = {
