@@ -326,6 +326,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_secondary_turret_auto_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aaturret1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_smoke_launchers"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_smoke_launcher.dds"
 		legacy_lazy_load = no

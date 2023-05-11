@@ -1921,6 +1921,23 @@ equipment_modules = {
 		}
 	}
 
+	secondary_turret_auto_cannon = {
+		abbreviation = "tcs"
+		category = tank_secondary_turret
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 3
+			hard_attack = 3
+			air_attack = 1
+			build_cost_ic = 2
+			reliability = -0.1
+		}
+		xp_cost = 0
+		multiply_stats = {
+		}
+	}
+
 	sloped_armor = {
 		abbreviation = "slop"
 		category = tank_special_module

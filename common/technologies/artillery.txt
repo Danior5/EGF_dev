@@ -688,6 +688,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_anti_air_2
 			tank_auto_cannon
+			secondary_turret_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_cannon
 		}
