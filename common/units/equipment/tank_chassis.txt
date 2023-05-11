@@ -55,6 +55,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -64,6 +65,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -73,6 +75,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -82,6 +85,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -96,6 +100,10 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		module_count_limit = {
@@ -285,6 +293,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -294,6 +303,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -303,6 +313,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -312,6 +323,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -321,6 +333,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -330,6 +343,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -386,9 +400,10 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_radio_module
 					tank_special_module
+					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -396,8 +411,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -405,8 +421,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -414,8 +431,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -431,6 +449,10 @@ equipments = {
 		module_count_limit = {
 			category = tank_secondary_turret
 			count < 3 #two secondary turrets only
+		}
+		module_count_limit = {
+			category = tank_rocket_module
+			count < 2
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -601,6 +623,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -610,6 +633,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -619,6 +643,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -628,6 +653,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -637,6 +663,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -646,6 +673,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -711,6 +739,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -720,6 +749,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -729,6 +759,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -738,6 +769,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -747,6 +779,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -756,6 +789,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -765,6 +799,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -774,6 +809,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -834,6 +870,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -841,8 +878,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -850,8 +888,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -859,8 +898,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
+					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -878,7 +918,10 @@ equipments = {
 			category = tank_secondary_turret
 			count < 5
 		}
-
+		module_count_limit = {
+			category = tank_rocket_module
+			count < 2
+		}
 		module_count_limit = {
 			module = amphibious_drive
 			count < 2
@@ -1048,6 +1091,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1057,6 +1101,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1066,6 +1111,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1075,6 +1121,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1084,6 +1131,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1093,6 +1141,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -1159,6 +1208,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1168,6 +1218,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1177,6 +1228,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1186,6 +1238,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1195,6 +1248,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1204,6 +1258,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -1213,6 +1268,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1222,6 +1278,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -1283,6 +1340,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1292,6 +1350,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1301,6 +1360,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1310,6 +1370,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1319,6 +1380,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1328,6 +1390,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -1337,6 +1400,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1346,6 +1410,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -1355,6 +1420,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		module_count_limit = {
@@ -1509,6 +1578,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1518,6 +1588,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1527,6 +1598,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1536,6 +1608,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1545,6 +1618,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1554,6 +1628,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 			
@@ -1563,6 +1638,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 
@@ -1572,6 +1648,7 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_rocket_module
 				}
 			}
 		}
@@ -1581,6 +1658,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		module_count_limit = {
