@@ -182,6 +182,9 @@ l_english:
  WW_shire_line_active:0 "Retreated to the Shire Line"
  WW_cope_line_active:0 "Retreated to the Hope` Line"
  
+ WW_EQS_cope_surrender_decision:0 "Cope Surrender (click if you want to instantly cap to CHN)"
+ WW_EQS_cope_surrender:0 "Cope Surrender"
+ 
  WW_EQS_Retreat_Shire_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CShire River§!"
  WW_EQS_Retreat_Shire_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CShire River§! for §Y120 days§!"
  WW_EQS_Retreat_Cope_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CHope Hollow-Whinnyapolis Line§!"
