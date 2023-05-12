@@ -1192,7 +1192,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				war_support_factor = 0.05
-				army_core_defence_factor = 0.1
+				army_infantry_defence_factor = 0.1
 			}
 		}
 	}
@@ -2386,8 +2386,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_infrastructure_factor = 0.3
-				local_resources_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				local_resources_factor = 0.05
 			}
 		}
 	}

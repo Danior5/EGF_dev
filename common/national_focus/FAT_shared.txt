@@ -2147,7 +2147,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FAT_enforce_martial_law"
-		add_stability = -0.1
+		add_stability = -0.2
 		add_popularity = {
 			ideology = democratic
 			popularity = -0.05
