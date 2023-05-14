@@ -404,6 +404,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_special_ammunition"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcr.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_easy_maintenance"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_easy_maintenance_access.dds"
 		legacy_lazy_load = no
