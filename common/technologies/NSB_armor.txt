@@ -1162,10 +1162,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1012
+		start_year = 1011
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1012 }
+			position = { x = 3 y = @1011 }
 		}
 
 		ai_will_do = {
@@ -1204,10 +1204,10 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1015
+		start_year = 1013
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1015 }
+			position = { x = 3 y = @1013 }
 		}
 		path = {
 			leads_to_tech = armor_tech_5
@@ -1379,10 +1379,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1012
+		start_year = 1011
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1012 }
+			position = { x = 2 y = @1011 }
 		}
 
 		ai_will_do = {
@@ -1425,10 +1425,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
-		start_year = 1015
+		start_year = 1013
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1015 }
+			position = { x = 2 y = @1013 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
