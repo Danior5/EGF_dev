@@ -316,17 +316,3 @@ l_english:
  WW_Nova_New_Frontier_Buff:0 "New Frontier's Ingenuity"
 
  WW_red_orchestra_tt:0 "Motorized/Mechanized Infantry: \n Equipment Needed: §G-5§!"
-
- troop_compartment:0 "Troop Compartment"
- troop_compartment_desc:0 "A large space inside the vehicle designed to house troops. These additional troops grant flexibility, but the cost of fitting this space within the vehicle is high."
- secondary_turret_auto_cannon:0 "Automatic Cannon"
- secondary_turret_auto_cannon_desc:0 "An automatic cannon in a secondary turret. The placement of the turret limits its arc of fire, lowering the gun's overall effectiveness, but it does allow the tank to engage more targets. This is particularly useful when on the attack."
- special_ammunition:0 "Special Ammunition"
- special_ammunition_desc:0 "A limited amount of specialized armor piercing ammunition. These rounds have improved penetration performance but are expensive to produce, requiring rare dense metals."
-
- EQ_MOD_SLOT_special_type_slot_5_TITLE:0 "Special Features"
- EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
- EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"
- EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Special Features"
-
- EQ_MOD_CAT_tank_rocket_module_TITLE:0 "Rocket Launcher"

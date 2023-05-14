@@ -1041,7 +1041,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_1_tt
+			custom_effect_tooltip = WW_armor_tech_1_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1100,7 +1100,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_2_tt
+			custom_effect_tooltip = WW_armor_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1108,7 +1108,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1009 }
+			position = { x = 3 y = @1008 }
 		}
 
 		ai_will_do = {
@@ -1157,7 +1157,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_3_tt
+			custom_effect_tooltip = WW_armor_tech_3_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1215,7 +1215,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_4_tt
+			custom_effect_tooltip = WW_armor_tech_4_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1260,7 +1260,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_1_tt
+			custom_effect_tooltip = WW_engine_tech_1_tt
 		}
 		dependencies = {
 			infantry_weapons = 1
@@ -1319,7 +1319,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_2_tt
+			custom_effect_tooltip = WW_engine_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1327,7 +1327,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1009 }
+			position = { x = 2 y = @1008 }
 		}
 
 		ai_will_do = {
@@ -1375,7 +1375,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_3_tt
+			custom_effect_tooltip = WW_engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
@@ -1431,7 +1431,7 @@ technologies = {
 			position = { x = 2 y = @1013 }
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_4_tt
+			custom_effect_tooltip = WW_engine_tech_4_tt
 		}
 		show_effect_as_desc = yes
 		ai_will_do = {
