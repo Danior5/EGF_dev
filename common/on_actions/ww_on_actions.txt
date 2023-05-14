@@ -143,8 +143,18 @@ on_actions = {
 							JER = { has_capitulated = yes }
 						}
 						AND = {
-							BAT = { has_capitulated = yes }
-							CTH = { has_capitulated = yes }
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 					}
 				}
@@ -165,11 +175,21 @@ on_actions = {
 						AND = {
 							GRI = { has_capitulated = yes }
 							JER = { has_capitulated = yes }
-							CTH = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 						AND = {
 							CHN = { has_capitulated = yes }
-							CTH = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 					}
 				}
@@ -190,11 +210,21 @@ on_actions = {
 						AND = {
 							GRI = { has_capitulated = yes }
 							JER = { has_capitulated = yes }
-							BAT = { has_capitulated = yes }
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 						AND = {
 							CHN = { has_capitulated = yes }
-							BAT = { has_capitulated = yes }
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 					}
 				}
@@ -214,8 +244,18 @@ on_actions = {
 					OR = {
 						AND = {
 							GRI = { has_capitulated = yes }
-							CTH = { has_capitulated = yes }
-							BAT = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 						AND = {
 							GRI = { has_capitulated = yes }
@@ -239,8 +279,18 @@ on_actions = {
 					OR = {
 						AND = {
 							JER = { has_capitulated = yes }
-							CTH = { has_capitulated = yes }
-							BAT = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 						}
 						AND = {
 							JER = { has_capitulated = yes }
@@ -263,7 +313,12 @@ on_actions = {
 						tag = EQS
 					}
 					OR = {
-						HIP = { has_capitulated = yes }
+						HIP = { 
+							OR = {
+								has_capitulated = yes 
+								exists = no
+							}
+						}
 						AND = {
 							RCT = { has_capitulated = yes }
 							WNG = { has_capitulated = yes }
@@ -306,7 +361,12 @@ on_actions = {
 					}
 					OR = {
 						AND = {
-							HIP = { has_capitulated = yes }
+							HIP = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 							WNG = { has_capitulated = yes }
 						}
 						AND = {
@@ -330,7 +390,12 @@ on_actions = {
 					}
 					OR = {
 						AND = {
-							HIP = { has_capitulated = yes }
+							HIP = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
 							RCT = { has_capitulated = yes }
 						}
 						AND = {
