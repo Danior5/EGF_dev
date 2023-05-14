@@ -2040,6 +2040,24 @@ equipment_modules = {
 		xp_cost = 0
 		multiply_stats = {
 			ap_attack = 0.1
+			hard_attack = -0.05
+			build_cost_ic = 0.5
+		}
+
+	}
+
+	special_ammunition = {
+		abbreviation = "apcr"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			
+		}
+		xp_cost = 0
+		multiply_stats = {
+			ap_attack = 0.1
+			hard_attack = 0.05
 		}
 
 		build_cost_resources = {

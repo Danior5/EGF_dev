@@ -1339,6 +1339,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_2
+			special_ammunition
 		}
 		anti_tank = {
 			hard_attack = 0.1
