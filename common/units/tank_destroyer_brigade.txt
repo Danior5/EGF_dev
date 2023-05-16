@@ -37,6 +37,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		breakthrough = -0.42
+		soft_attack = -0.5
 
 		suppression = 1.0
 
@@ -106,6 +107,7 @@ sub_units = {
 		supply_consumption = 0.22
 
 		breakthrough = -0.25
+		soft_attack = -0.5
 
 		suppression = 1.25
 
@@ -178,6 +180,7 @@ sub_units = {
 		supply_consumption = 0.3
 
 		breakthrough = -0.25
+		soft_attack = -0.5
 
 		suppression = 1.25
 		
@@ -252,6 +255,7 @@ sub_units = {
 		supply_consumption = 0.4
 
 		breakthrough = -0.25
+		soft_attack = -0.5
 
 		suppression = 1.25
 
@@ -327,6 +331,7 @@ sub_units = {
 		supply_consumption = 0.25
 
 		breakthrough = -0.25
+		soft_attack = -0.5
 
 		suppression = 1.25
 		
