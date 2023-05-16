@@ -144,19 +144,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
@@ -491,19 +491,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
@@ -959,19 +959,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
@@ -1464,19 +1464,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
@@ -1701,19 +1701,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
@@ -1884,19 +1884,19 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
-			module = oscillating_turret
+			module = special_ammunition
 			count < 2
 		}
 		module_count_limit = {
-			module = gun_computer
+			module = tank_fire_control
 			count < 2
 		}
 		module_count_limit = {
-			module = anti_tank_guided_missiles
+			module = optical_rangefinder
 			count < 2
 		}
 		module_count_limit = {
-			module = surface_to_air_missiles
+			module = improved_periscopes
 			count < 2
 		}
 		module_count_limit = {
