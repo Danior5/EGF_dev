@@ -320,6 +320,24 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_tank_fire_control"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_fire_control.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_optical_rangefinder"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/optical_rangefinder.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_improved_periscopes"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/periscope.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_secondary_turret_close_support_gun"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_close_support_gun.dds"
 		legacy_lazy_load = no
