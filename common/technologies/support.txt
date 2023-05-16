@@ -1205,6 +1205,10 @@ technologies = {
 
 	tech_logistics_company = {
 
+		enable_equipment_modules = {
+			boiling_vessel
+			vents
+		}
 		enable_subunits = {
 			logistics_company
 		}

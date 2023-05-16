@@ -17,6 +17,15 @@ optical_rangefinder_desc:0 "A device that triangulates the distance of a target 
 improved_periscopes:0 "Improved Periscopes"
 improved_periscopes_desc:0 "Higher quality periscopes give the crew improved situational awareness, increasing their combat effectiveness."
 
+boiling_vessel:0 "Boiling Vessel"
+boiling_vessel_desc:0 "An electrically heated container that can be used to both boil water and prepare food."
+
+open_top:0 "Open Topped Design"
+open_top_desc:0 "By removing the top of the turret or superstructure we can improve the visibility of our crew and reduce the cost of construction. However, the loss of protection makes the vehicle vastly more vulnerable to small arms and explosions."
+
+vents:0 "Ventilation System"
+vents_desc:0 "A powered fan draws in fresh air from outside the vehicle and expels hot air from inside, increasing the comfort of the crew."
+
 cupola_1:0 "Basic Cupola"
 cupola_1_desc:0 "A simple dome structure with vision slits on the top of the tank, allowing the commander 360 degree vision while remaining protected."
 

@@ -350,7 +350,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_EMI_tank_magic_aps"
+		name = "GFX_EMI_magic_aps"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_magic_aps.dds"
 		legacy_lazy_load = no
 	}
@@ -364,6 +364,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_improved_periscopes"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/periscope.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_vents"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/vents.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_boiling_vessel"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/boiling_vessel.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_open_top"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_top.dds"
 		legacy_lazy_load = no
 	}
 

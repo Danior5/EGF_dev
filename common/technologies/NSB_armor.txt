@@ -69,6 +69,7 @@ technologies = {
 			smoke_launchers
 			expanded_fuel_tank
 			troop_compartment
+			open_top
 		}
 		enable_subunits = {
 			light_armor
