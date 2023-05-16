@@ -248,6 +248,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_tank_radio_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_radio_4.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_cupola_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cupola1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_cupola_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cupola2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_cupola_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cupola3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_tank_riveted_armor"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_riveted_armor.dds"
 		legacy_lazy_load = no
@@ -536,6 +560,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_radio_module"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_radio_module.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_cupola_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cupola.dds"
 		legacy_lazy_load = no
 	}
 

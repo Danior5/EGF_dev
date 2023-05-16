@@ -267,7 +267,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 0.5
-			breakthrough = 7
+			breakthrough = 4
 			
 		}
 		dismantle_cost_ic = 0.5
@@ -285,7 +285,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 0.75
-			breakthrough = 10
+			breakthrough = 5
 			
 		}
 		xp_cost = 0
@@ -304,7 +304,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1
 			maximum_speed = -0.25
-			breakthrough = 14
+			breakthrough = 7
 		}
 		dismantle_cost_ic = 0.5
 		xp_cost = 0
@@ -362,7 +362,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 1
-			breakthrough = 8
+			breakthrough = 4
 			
 		}
 		xp_cost = 0
@@ -387,7 +387,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 1.5
-			breakthrough = 16
+			breakthrough = 8
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -409,7 +409,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 2
 			maximum_speed = -0.25
-			breakthrough = 24
+			breakthrough = 12
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -476,7 +476,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 5
-			breakthrough = 18
+			breakthrough = 9
 		}
 
 		multiply_stats = {
@@ -503,7 +503,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 5.5
 			maximum_speed = -0.25
-			breakthrough = 22
+			breakthrough = 11
 		}
 
 		multiply_stats = {
@@ -565,7 +565,7 @@ equipment_modules = {
 			build_cost_ic = 10
 			reliability = -0.1
 			maximum_speed = -0.2
-			breakthrough = 24
+			breakthrough = 12
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -591,7 +591,7 @@ equipment_modules = {
 			build_cost_ic = 12
 			reliability = -0.25
 			maximum_speed = -0.5
-			breakthrough = 35
+			breakthrough = 18
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -614,7 +614,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 8
-			breakthrough = 24
+			breakthrough = 12
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -1354,8 +1354,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.20
-			breakthrough = 0.15
+			defense = 0.2
+			breakthrough = 0.3
 		}
 	}
 
@@ -1370,8 +1370,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.40
-			breakthrough = 0.25
+			defense = 0.4
+			breakthrough = 0.5
 		}
 	}
 
@@ -1386,8 +1386,26 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.65
-			breakthrough = 0.45
+			defense = 0.6
+			breakthrough = 0.8
+		}
+	}
+
+	tank_radio_4 = {
+		abbreviation = "rad4"
+		category = tank_radio_module
+		parent = tank_radio_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3
+		}
+		xp_cost = 0
+		multiply_stats = {
+			defense = 0.7
+			breakthrough = 0.9
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 	}
 
@@ -1743,5 +1761,49 @@ equipment_modules = {
 			build_cost_ic = 0.2
 		}
 	}
-	
+
+	cupola_1 = {
+		abbreviation = "cup1"
+		category = tank_cupola_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.5
+		}
+		xp_cost = 0
+		multiply_stats = {
+			defense = 0.2
+			breakthrough = 0.1
+		}
+	}
+
+	cupola_2 = {
+		abbreviation = "cup2"
+		category = tank_cupola_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.5
+		}
+		xp_cost = 0
+		multiply_stats = {
+			defense = 0.3
+			breakthrough = 0.15
+		}
+	}
+
+	cupola_3 = {
+		abbreviation = "cup3"
+		category = tank_cupola_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.5
+		}
+		xp_cost = 0
+		multiply_stats = {
+			defense = 0.4
+			breakthrough = 0.2
+		}
+	}
 }

@@ -296,6 +296,7 @@ technologies = {
 			ship_radar_4
 			air_ground_radar_2
 			air_air_radar_2
+			tank_radio_4
 		}
 
 		path = {

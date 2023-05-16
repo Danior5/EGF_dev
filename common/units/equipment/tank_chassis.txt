@@ -54,6 +54,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -64,6 +65,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -74,6 +76,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -84,6 +87,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -96,6 +100,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 		module_count_limit = {
@@ -292,6 +300,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -302,6 +311,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -312,6 +322,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -322,6 +333,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -332,6 +344,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -342,6 +355,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -402,6 +416,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -412,6 +427,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -422,6 +438,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -432,6 +449,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -444,6 +462,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 		module_count_limit = {
@@ -622,6 +644,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -632,6 +655,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -642,6 +666,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -652,6 +677,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -662,6 +688,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -672,6 +699,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -738,6 +766,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -748,6 +777,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -758,6 +788,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -768,6 +799,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -778,6 +810,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -788,6 +821,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -798,6 +832,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -808,6 +843,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -869,6 +905,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -879,6 +916,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -889,6 +927,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -899,6 +938,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -911,6 +951,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 
@@ -1090,6 +1134,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1100,6 +1145,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1110,6 +1156,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1120,6 +1167,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1130,6 +1178,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1140,6 +1189,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1207,6 +1257,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1217,6 +1268,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1227,6 +1279,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1237,6 +1290,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1247,6 +1301,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1257,6 +1312,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1267,6 +1323,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1277,6 +1334,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1339,6 +1397,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1349,6 +1408,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1359,6 +1419,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1369,6 +1430,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1379,6 +1441,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1389,6 +1452,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1399,6 +1463,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1409,6 +1474,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1420,6 +1486,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 		module_count_limit = {
@@ -1577,6 +1647,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1587,6 +1658,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1597,6 +1669,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1607,6 +1680,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1617,6 +1691,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1627,6 +1702,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1637,6 +1713,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1647,6 +1724,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 					tank_secondary_turret
 					tank_rocket_module
 				}
@@ -1658,6 +1736,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 		module_count_limit = {
@@ -1810,6 +1892,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 				}
 			}
 
@@ -1818,6 +1901,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 				}
 			}
 
@@ -1826,6 +1910,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 				}
 			}
 
@@ -1834,6 +1919,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_cupola_module
 				}
 			}
 
@@ -1844,6 +1930,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_cupola_module
 			count < 2
 		}
 
