@@ -350,6 +350,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_tank_magic_aps"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_magic_aps.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_optical_rangefinder"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/optical_rangefinder.dds"
 		legacy_lazy_load = no

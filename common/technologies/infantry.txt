@@ -326,6 +326,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_magic_auto_cannon
+			magic_aps
 		}
 
 		enable_subunits = {

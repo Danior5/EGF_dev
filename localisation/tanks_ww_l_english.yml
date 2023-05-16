@@ -26,6 +26,9 @@ cupola_2_desc:0 "Improvements upon pre-existing cupolas such as the additional o
 cupola_3:0 "Advanced Cupola"
 cupola_3_desc:0 "A further refinement of cupola technology allows multiple crew members to use the sights, as well as reducing the profile of the structure."
 
+magic_aps:0 "Magical Active Protection System"
+magic_aps_desc:0 "An experiemental system that uses crystal-stored magical spells as countermeasures to intercept incoming projectiles that pose a threat to the tank."
+
 EQ_MOD_SLOT_special_type_slot_5_TITLE:0 "Special Features"
 EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
 EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"

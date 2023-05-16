@@ -1806,4 +1806,20 @@ equipment_modules = {
 			breakthrough = 0.2
 		}
 	}
+	
+	magic_aps = {
+		abbreviation = "aps"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			defense = 3
+			armor_value = 12
+			build_cost_ic = 3
+		}
+		xp_cost = 0
+		build_cost_resources = {
+			crystals = 1
+		}
+	}
 }
