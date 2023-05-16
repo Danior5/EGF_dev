@@ -51,16 +51,16 @@ upgrades = {
 
 		level_requirements = {
 			1 = {
-				has_tech = engine_tech_1
+				has_tech = armor_tech_1
 			}
 			6 = {
-				has_tech = engine_tech_2
+				has_tech = armor_tech_2
 			}
 			11 = {
-				has_tech = engine_tech_3
+				has_tech = armor_tech_3
 			}
 			16 = { 
-				has_tech = engine_tech_4
+				has_tech = armor_tech_4
 			}
 		}
 
@@ -80,11 +80,9 @@ upgrades = {
 
 		maximum_speed = -0.05
 		reliability = -0.015
-		armor_value = 0.085
+		armor_value = 0.1
 		add_stats = {
-			breakthrough = 1.25
 			build_cost_ic = 0.2
-
 		}
 	}
 
