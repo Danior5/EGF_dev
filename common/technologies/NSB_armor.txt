@@ -74,6 +74,7 @@ technologies = {
 		enable_subunits = {
 			light_armor
 			medium_armor
+			heavy_armor
 		}
 		dependencies = {
 			infantry_weapons = 1
@@ -843,6 +844,7 @@ technologies = {
 		}
 
 		enable_subunits = {
+			heavy_armor
 		}
 
 		on_research_complete_limit = {
