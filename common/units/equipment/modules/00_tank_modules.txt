@@ -1851,7 +1851,7 @@ equipment_modules = {
 
 		add_stats = {
 			defense = 3
-			armor_value = 12
+			armor_value = 6
 			reliability = -0.10
 			build_cost_ic = 3
 		}
