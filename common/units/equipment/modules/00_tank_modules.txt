@@ -1716,7 +1716,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.05
+			breakthrough = -2
 		}
 		xp_cost = 100
 		multiply_stats = {
