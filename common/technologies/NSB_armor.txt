@@ -70,6 +70,7 @@ technologies = {
 			expanded_fuel_tank
 			troop_compartment
 			open_top
+			wartime_simplification
 		}
 		enable_subunits = {
 			light_armor

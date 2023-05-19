@@ -1704,9 +1704,23 @@ equipment_modules = {
 			reliability = 0.1
 		}
 		dismantle_cost_ic = 1
-		xp_cost = 00
+		xp_cost = 0
 		multiply_stats = {
 			build_cost_ic = -0.05
+		}
+	}
+
+	wartime_simplification = {
+		abbreviation = "simp"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 100
+		multiply_stats = {
+			build_cost_ic = -0.075
 		}
 	}
 

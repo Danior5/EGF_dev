@@ -482,6 +482,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_EMI_wartime_simplification"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/simplification.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_EMI_dozer_blade"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_dozer_blade.dds"
 		legacy_lazy_load = no
