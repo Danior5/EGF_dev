@@ -21,6 +21,7 @@ ideas = {
 			modifier = {
 				surrender_limit = 2.0
 				min_export = -1.0
+				ai_get_ally_desire_factor = -100
 			}
 		}
 		WW_tarrin_offensive = {
