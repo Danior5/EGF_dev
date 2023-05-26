@@ -1065,12 +1065,8 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 7
 			build_cost_ic = 2.5
-			maximum_speed = -0.2
-			reliability = -0.2
+			reliability = -0.15
 			breakthrough = 4
-		}
-		multiply_stats = {
-			hard_attack = -0.1
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
@@ -1082,14 +1078,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_rocket_launcher
 		add_stats = {
-			soft_attack = 10
-			build_cost_ic = 3
-			maximum_speed = -0.2
-			reliability = -0.15
+			soft_attack = 11
+			build_cost_ic = 3.5
+			reliability = -0.1
 			breakthrough = 6
-		}
-		multiply_stats = {
-			hard_attack = -0.1
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
