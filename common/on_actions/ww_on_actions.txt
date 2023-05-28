@@ -107,7 +107,7 @@ on_actions = {
 						state = 172
 					}
 				}
-				news_event = { id = ww.news.8 }
+				every_country = { news_event = { id = ww.news.8 } }
 			}
 		}
 	}

@@ -603,10 +603,10 @@ news_event = {  ### Liberation of Fairflanks
 		name = ww.news.8.a
 		trigger = {
 			NOT = {
-				original_tag = EQS
-				original_tag = CHN
-				original_tag = CRY
-				original_tag = STG
+				tag = EQS
+				tag = CHN
+				tag = CRY
+				tag = STG
 			}
 		}
 	}
@@ -614,9 +614,9 @@ news_event = {  ### Liberation of Fairflanks
 		name = ww.news.8.b
 		trigger = { 
 			OR = {
-				original_tag = EQS 
-				original_tag = CRY
-				original_tag = STG
+				tag = EQS 
+				tag = CRY
+				tag = STG
 			} 
 		}
 		add_timed_idea = {
@@ -626,7 +626,7 @@ news_event = {  ### Liberation of Fairflanks
 	}
 	option = {
 		name = ww.news.8.c
-		trigger = { original_tag = CHN }
+		trigger = { tag = CHN }
 	}	
 }
 
