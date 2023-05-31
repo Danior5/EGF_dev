@@ -416,7 +416,7 @@ focus_tree = {
 
 	focus = {
 		id = OLE_Urban_Reform
-		icon = GFX_goal_ITA_urban
+		icon =  GFX_goal_ITA_urban
 		prerequisite = { focus = OLE_Seize_The_Agricultural_Centers }
 		x = -3
 		y = 7

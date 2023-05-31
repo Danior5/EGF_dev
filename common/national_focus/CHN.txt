@@ -325,10 +325,39 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_roads"
-			two_random_infrastructure_and_slot = yes
-			two_random_infrastructure_and_slot = yes
-			two_random_infrastructure_and_slot = yes
-			two_random_infrastructure_and_slot = yes
+			#yes, this focus also gave 1 construction slot on those 4 states
+			323 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			248 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			308 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			262 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -1221,14 +1250,13 @@ focus_tree = {
 	focus = {
 		id = demand_equestria
 		icon = GFX_goal_chn_lead_the_army
-		cost = 14.4
+		cost = 0
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = prepare_for_war
 		}
 		available = {
-			has_government = fascism
-			is_subject = no
+			always = no
 		}
 		select_effect = {
 			hidden_effect = {
@@ -1379,7 +1407,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-
 	focus = {
 		id = prepare_for_war2
 		icon = GFX_goal_chn_man_tools
@@ -1481,7 +1508,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 
 	}
-
 	focus = {
 		id = prepare_for_war3
 		icon = GFX_goal_chn_factory
@@ -1567,7 +1593,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 
 	}
-
 	focus = {
 		id = prepare_for_war
 		icon = GFX_goal_chn_man_bombing
@@ -1687,363 +1712,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
-		id = send_spies_to_EQS
-		icon = GFX_goal_chn_infiltrate_eqs
-		cost = 10.00
-		prerequisite = {
-			focus = demand_equestria
-		}
-		available = {
-			has_government = fascism
-			is_subject = no
-		}
-		bypass = {
-			event_target:equestria = {
-				OR = {
-					exists = no
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-					is_EQS_SOL = yes
-				}
-			}
-		}
-		relative_position_id = demand_equestria
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				has_war_with = event_target:equestria
-				factor = 2
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus send_spies_to_EQS"
-			if = {
-				limit = {
-				has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = CHN_infiltrate_operations_tooltip
-			}
-			else = {
-				country_event = { id = changelings.16 days = 1 }
-				add_tech_bonus = {
-					name = race_bonus
-					bonus = 1.0
-					uses = 1
-					category = infiltrator_tech
-				}
-			}
-
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = steal_tech
-		icon = GFX_goal_chn_hat
-		cost = 10.00
-		prerequisite = {
-			focus = send_spies_to_EQS
-		}
-		bypass = {
-			EQS = {
-				exists = no
-				OR = {
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-					exists = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				EQS = {
-					has_political_power < -400
-				}
-				factor = 2
-			}
-		}
-		available = {
-			is_subject = no
-			EQS = {
-				has_idea = changeling_spies
-			}
-		}
-		relative_position_id = demand_equestria
-		x = 0
-		y = 2
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus steal_tech"
-			if = {
-				limit = {
-				has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = CHN_infiltrate_operations_tooltip
-			}
-			else = {
-				add_ideas = covert_agents
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = demand_stg
-		icon = GFX_goal_chn_strike_stg
-		cost = 10
-		will_lead_to_war_with = STG
-		will_lead_to_war_with = STL
-		prerequisite = {
-			focus = demand_equestria
-		}
-		bypass = {
-			STG = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = demand_equestria
-		x = 3
-		y = 1
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 150
-				has_war = no
-				is_neighbor_of = STG
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus demand_stg"
-			add_war_support = 0.1
-			create_wargoal = {
-				type = annex_everything
-				target = STG
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = STL
-			}
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = CHN_demand_yak
-		icon = GFX_goal_chn_strike_stg
-		cost = 10
-		will_lead_to_war_with = YAK
-		will_lead_to_war_with = JAK
-		prerequisite = {
-			focus = demand_stg
-		}
-		bypass = {
-			YAK = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-			JAK = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		available = {
-			has_government = fascism
-			EQS = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					is_subject_of = ROOT
-				}
-			}
-		}
-		relative_position_id = demand_equestria
-		x = 3
-		y = 3
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 150
-				has_war = no
-				is_neighbor_of = YAK
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_yak"
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = YAK
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = JAK
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = CHN_demand_png
-		icon = GFX_goal_chn_strike_stg
-		cost = 10
-		will_lead_to_war_with = PNG
-		prerequisite = {
-			focus = demand_GRF
-		}
-		bypass = {
-			PNG = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		available = {
-			has_government = fascism
-			EQS = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					is_subject_of = ROOT
-				}
-			}
-		}
-		relative_position_id = demand_equestria
-		x = -3
-		y = 3
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 150
-				has_war = no
-				is_neighbor_of = PNG
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_png"
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = PNG
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = demand_GRF
-		icon = GFX_goal_chn_strike_grf
-		cost = 10
-		will_lead_to_war_with = GRF
-		prerequisite = {
-			focus = demand_equestria
-		}
-		bypass = {
-			GRF = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		available = {
-			has_government = fascism
-		}
-		relative_position_id = demand_equestria
-		x = -3
-		y = 1
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 150
-				has_war = no
-				is_neighbor_of = GRF
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus demand_GRF"
-			add_war_support = 0.1
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = GRF
-			}
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-	}
-
-	focus = {
-		id = continuous_war_plan_CHN
-		icon = GFX_goal_chn_rifles
-		cost = 15
-		prerequisite = {
-			focus = demand_equestria
-		}
-		available = {
-			NOT = {
-				has_completed_focus = CHN_post_war_1_a
-			}
-			has_government = fascism
-			OR = {
-				has_war_with = EQS
-				has_war_with = NLR
-			}
-		}
-		relative_position_id = demand_equestria
-		x = 4
-		y = 2
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war_with = EQS
-				has_war_with = CRY
-				has_war_with = STG
-				factor = 90
-			}
-			modifier = {
-				EQS = {
-					OR = {
-						has_idea = eqs_ai_buff
-						has_idea = eqs_ai_buff2
-					}
-				}
-				factor = 100
-			}
-			modifier = {
-				surrender_progress > 0
-				factor = 100
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_stability < 0.5
-					has_war_support < 0.5
-				}
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus continuous_war_plan_CHN"
-			add_ideas = continous_war_plan_CHN
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
-
-	}
-	focus = {
 		id = CHN_force_ponies_to_repair
 		icon = GFX_goal_chn_enslave_pony_factory
 		cost = 5
@@ -2052,7 +1720,7 @@ focus_tree = {
 		}
 		relative_position_id = demand_equestria
 		x = -2
-		y = 2
+		y = 1
 		available = {
 			OR = {
 				EQS = { any_cores_controlled_by_ROOT = yes }
@@ -2072,11 +1740,11 @@ focus_tree = {
 		icon = GFX_goal_chn_enslave_pony
 		cost = 10.00
 		prerequisite = {
-			focus = demand_equestria
+			focus = CHN_force_ponies_to_repair
 		}
-		relative_position_id = demand_equestria
-		x = 2
-		y = 2
+		relative_position_id = CHN_force_ponies_to_repair
+		x = 0
+		y = 1
 		available = {
 			NOT = {
 				has_completed_focus = CHN_post_war_1_a
@@ -2163,10 +1831,10 @@ focus_tree = {
 		}
 		relative_position_id = demand_equestria
 		x = -4
-		y = 2
+		y = 1
 		available = {
 			has_government = fascism
-			casualties_k > 1000
+			casualties_k > 500
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -2192,66 +1860,324 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 	}
 
-	focus = {
-		id = CHN_canterlot_appropriation
-		icon = GFX_goal_chn_canterlot
-		cost = 10
-		prerequisite = {
-			focus = demand_equestria
-		}
-		available = {
-			has_government = fascism
-			3 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-		}
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		relative_position_id = demand_equestria
-		x = -1
-		y = 3
-		ai_will_do = { factor = 120 }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CHN_canterlot_appropriation"
-			swap_ideas = { remove_idea = canterlot_defeat add_idea = canterlot_victory }
-			3 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+###World War###
+
+focus = {
+	id = WW_volunteer_infantry
+	icon = GFX_goal_chn_96th
+	cost = 5
+	prerequisite = {
+		focus = CHN_force_ponies_to_work
 	}
-	focus = {
-		id = CHN_crystal_city_appropriation
-		icon = GFX_goal_chn_crystal_city
-		cost = 10
-		prerequisite = {
-			focus = demand_equestria
-		}
-		available = {
-			has_government = fascism
-			53 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-			344 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-			345 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-		}
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		relative_position_id = demand_equestria
-		x = 1
-		y = 3
-		ai_will_do = { factor = 120 }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CHN_crystal_city_appropriation"
-			add_ideas = CHN_crystal_city_research
-			53 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			344 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			345 = {
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+	relative_position_id = CHN_force_ponies_to_work
+	x = -1
+	y = 1
+	available = {
+		date > 1012.07.01
 	}
+	completion_reward = {
+	custom_effect_tooltip = WW_CHN_Volksgrenadiers
+	hidden_effect = { delete_unit_template_and_units = { division_template = "Volksgrenadier Division" } 
+		division_template = {
+		name = "Volksgrenadier Division"
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				anti_tank = { x = 0 y = 1 }
+				engineer = { x = 0 y = 2 }
+				anti_air = { x = 0 y = 3 }
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				any_neighbor_state = {
+					controller = {
+						has_war_with = CHN
+					}
+				}
+			}
+			create_unit = {
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = CHN
+			}
+			create_unit = {
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = CHN
+			}
+			create_unit = {
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = CHN
+			}
+			create_unit = {
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = CHN
+			}
+			create_unit = {
+				division = "name = \"Volksgrenadier Division\" division_template = \"Volksgrenadier Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = CHN
+			}
+		}
+	}
+	}
+}
+focus = {
+	id = WW_volunteer_tanks
+	icon = GFX_goal_chn_man_milice
+	cost = 5
+	prerequisite = {
+		focus = CHN_force_ponies_to_work
+	}
+	relative_position_id = CHN_force_ponies_to_work
+	y = 2
+	available = {
+		date > 1012.07.01
+	}
+	completion_reward = {
+		custom_effect_tooltip = WW_CHN_Guard_Panzers
+	hidden_effect =  { delete_unit_template_and_units = { division_template = "Queen's Guard Panzer Division" }
+		create_tank_designs = yes
+		division_template = {
+			name = "Queen's Guard Panzer Division"
+			regiments = {
+				magical_mechanized = { x = 0 y = 0 }
+				magical_mechanized = { x = 0 y = 1 }
+				magical_mechanized = { x = 0 y = 2 }
+				magical_mechanized = { x = 0 y = 3 }
+			
+				magical_mechanized = { x = 1 y = 0 }
+				magical_mechanized = { x = 1 y = 1 }
+				magical_mechanized = { x = 1 y = 2 }
+				magical_mechanized = { x = 1 y = 3 }
+		
+				medium_armor = { x = 2 y = 0 }
+				medium_armor = { x = 2 y = 1 }
+				medium_armor = { x = 2 y = 2 }
+				medium_armor = { x = 2 y = 3 }
+				medium_armor = { x = 2 y = 4 }
+		
+				medium_armor = { x = 3 y = 0 }
+				medium_tank_destroyer_brigade = { x = 3 y = 1 }
+				medium_tank_destroyer_brigade = { x = 3 y = 2 }
+				medium_tank_destroyer_brigade = { x = 3 y = 3 }
+		
+				medium_tank_destroyer_brigade = { x = 4 y = 0 }
+				medium_tank_destroyer_brigade = { x = 4 y = 1 }
+				medium_tank_destroyer_brigade = { x = 4 y = 2 }
+				medium_tank_destroyer_brigade = { x = 4 y = 3 }
+			}
+			support = {
+				anti_tank = { x = 0 y = 0 }
+				medium_flame_tank = { x = 0 y = 1 }
+				engineer = { x = 0 y = 2 }
+				anti_air = { x = 0 y = 3 }
+			}
+		}
+
+		CHN = {
+			random_owned_controlled_state = {
+				prioritize = { 251 }
+				create_unit = {
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CHN
+					force_equipment_variants = {
+						Basic Medium Tank
+						Basic Medium Tank Destroyer
+					}
+				}
+				create_unit = {
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CHN
+					force_equipment_variants = {
+						Basic Medium Tank
+						Basic Medium Tank Destroyer
+					}
+				}
+				create_unit = {
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CHN
+					force_equipment_variants = {
+						Basic Medium Tank
+						Basic Medium Tank Destroyer
+					}
+				}
+				create_unit = {
+					division = "name = \"Queen's Guard Panzer Division\" division_template = \"Queen's Guard Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CHN
+					force_equipment_variants = {
+						Basic Medium Tank
+						Basic Medium Tank Destroyer
+					}
+				}
+			}
+		}
+	}
+	}
+}
+focus = {
+	id = WW_CHN_warplan
+	icon = GFX_goal_chn_rifles
+	cost = 5
+	prerequisite = {
+		focus = demand_equestria
+	}
+	relative_position_id = demand_equestria
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		country_event = ww.15
+	}
+}
+focus = {
+	id = WW_CHN_hold_shire
+	icon = GFX_goal_chn_man_bunker
+	cost = 5
+	prerequisite = {
+		focus = WW_CHN_warplan
+	}
+	relative_position_id = WW_CHN_warplan
+	y = 1
+	available = {
+	}
+	completion_reward = {
+	}
+}
+focus = {
+	id = WW_fall_rosa
+	icon = GFX_goal_chn_crystal_city
+	cost = 5
+	prerequisite = {
+		focus = WW_CHN_hold_shire
+	}
+	mutually_exclusive = {
+		focus = WW_fall_hellgrun
+		focus = WW_fall_dunkelgrun
+	}
+	relative_position_id = WW_CHN_hold_shire
+	x = -2
+	y = 1
+	available = {
+		date > 1012.07.01
+	}
+	completion_reward = {
+		custom_effect_tooltip = WW_fall_rosa_tt
+		hidden_effect = { 
+			news_event = { id = ww.news.4 }
+			add_field_marshal_role = {
+				Character = CHN_Sombra
+				traits = { brilliant_strategist organizer king_of_monsters pony_race_trait }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 1
+				planning_skill = 5
+				logistics_skill = 5
+			} 
+			CRY = {
+				transfer_units_fraction= {
+					target = CHN
+					size = 0
+					stockpile_ratio = 0.25
+					army_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
+				add_timed_idea = {
+					idea = WW_CRY_traitors
+					days = 120
+				}
+				country_event = {
+					id = ww.17
+					days = 120
+				}
+			} 
+
+		}
+	}
+}
+focus = {
+	id = WW_fall_hellgrun
+	icon = GFX_goal_chn_forest_fire
+	cost = 5
+	prerequisite = {
+		focus = WW_CHN_hold_shire
+	}
+	mutually_exclusive = {
+		focus = WW_fall_rosa
+		focus = WW_fall_dunkelgrun
+	}
+	relative_position_id = WW_CHN_hold_shire
+	y = 1
+	available = {
+		date > 1012.07.01
+	}
+	completion_reward = {
+		hidden_effect = { news_event = { id = ww.news.5 } }
+	}
+}
+focus = {
+	id = WW_fall_dunkelgrun
+	icon = GFX_goal_chn_man_anchor
+	cost = 5
+	prerequisite = {
+		focus = WW_CHN_hold_shire
+	}
+	mutually_exclusive = {
+		focus = WW_fall_rosa
+		focus = WW_fall_hellgrun
+	}
+	relative_position_id = WW_CHN_hold_shire
+	x = 2
+	y = 1
+	available = {
+		date > 1012.07.01
+		NOT = {
+			any_country = {
+				is_in_faction_with = CHN
+				OR = {
+					controls_state = 96 
+					controls_state = 41
+					controls_state = 66 
+				}
+			}
+		}
+	}
+	completion_reward = {
+		hidden_effect = { 
+			news_event = { id = ww.news.6 }
+			66 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			100 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			94 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			49 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+			47 = {
+				add_dynamic_modifier = { modifier = CHN_landing_grounds }
+			}
+		}
+		custom_effect_tooltip = WW_fall_dunkelgrun_tt
+	}
+}
+
+
+###World War###
+
 #	focus = {
 #		id = CHN_invasion_of_griffonia
 #		icon = GFX_goal_chn_griffonia

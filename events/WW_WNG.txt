@@ -1,0 +1,396 @@
+add_namespace = ww_wng
+
+country_event = {
+	id = ww_wng.1
+	title = ww_wng.1.t
+	desc = ww_wng.1.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.1.a
+		transfer_state = 487
+		transfer_state = 652
+
+		hidden_effect = {
+			WNG = {
+				country_event = {
+					id = ww_wng.2
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ww_wng.2
+	title = ww_wng.2.t
+	desc = ww_wng.2.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.2.a
+		hidden_effect = {
+			set_country_flag = WW_WNG_betrayal
+		}
+	}
+}
+country_event = {
+	id = ww_wng.3
+	title = ww_wng.3.t
+	desc = ww_wng.3.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.3.a
+		add_timed_idea = {idea = WW_WNG_airforce_priority days = 90}
+	}
+	option = {
+		name = ww_wng.3.b
+		add_timed_idea = {idea = WW_WNG_army_priority days = 50}
+	}
+	option = {
+		name = ww_wng.3.c
+		add_timed_idea = {idea = WW_WNG_fortification_priority days = 180}
+	}
+}
+country_event = {
+	id = ww_wng.4
+	title = ww_wng.4.t
+	desc = ww_wng.4.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww_wng.4.a
+	}
+	option = {
+		name = ww_wng.4.b
+		trigger = {
+			has_army_experience > 15
+			any_owned_state = {
+				arms_factory > 0
+			}
+		}
+		random_owned_state = {
+			limit = { arms_factory > 0 }
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		army_experience = -15
+		hidden_effect = {
+			add_to_variable = {
+				var = global.WNG_military_aid
+				value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = ww_wng.5
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		delete_unit_template_and_units = { division_template = "Rivershield Infantry Division" }
+		division_template = {
+			name = "Rivershield Infantry Division"
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+	
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				anti_tank = { x = 0 y = 1 }
+				engineer = { x = 0 y = 2 }
+				anti_air = { x = 0 y = 3 }
+			}
+		}
+		375 = {
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4281
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4281
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4281
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 13218
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 13218
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 13218
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12115
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12115
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12115
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12618
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12618
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12618
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4876
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4876
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4876
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7743
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7743
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7743
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 3900
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 3900
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 3900
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1052
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1052
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1052
+			}
+		}
+		534 = {
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 11822
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 11822
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 11822
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 9843
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 9843
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 9843
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 6904
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 6904
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 6904
+			}
+		}
+		529 = {
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1590
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1590
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 1590
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7273
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7273
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7273
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 5042
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 5042
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 5042
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7158
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7158
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 7158
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12449
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12449
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12449
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12201
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12201
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 12201
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4293
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4293
+			}
+			create_unit = {
+				division = "name = \"Rivershield Infantry Division\" division_template = \"Rivershield Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = WNG
+				prioritize_location = 4293
+			}
+		}
+	}
+}

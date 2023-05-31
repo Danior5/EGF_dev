@@ -1241,20 +1241,20 @@ country_event = { ## Creation of Socialist Union Faction
 
 	is_triggered_only = yes
 
-	option = {
-		name = stalliongrad.45.a
-		add_political_power = 50
-		hidden_effect = { news_event = { id = news.24 days = 1 } }
-		create_faction = "Socialist_Union"
-		set_country_flag = has_faction
-		ai_chance = {
-			base = 50
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-	}
+	#option = { ## Teng has room temperature IQ. L ##
+	#	name = stalliongrad.45.a
+	#	add_political_power = 50
+	#	hidden_effect = { news_event = { id = news.24 days = 1 } }
+	#	create_faction = "Socialist_Union"
+	#	set_country_flag = has_faction
+	#	ai_chance = {
+	#		base = 50
+	#		modifier = {
+	#			factor = 100
+	#			is_historical_focus_on = yes
+	#		}
+	#	}
+	#}
 	option = {
 		name = stalliongrad.45.b
 		add_political_power = 56

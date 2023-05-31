@@ -26,7 +26,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 4
-		hard_attack = 30
+		hard_attack = 20
 		ap_attack = 60
 		air_attack = 0
 
@@ -61,7 +61,7 @@ equipments = {
 			anti_tank_equipment_1
 		}
 
-		hard_attack = 33
+		hard_attack = 25
 		ap_attack = 90
 		
 		build_cost_ic = 5
@@ -84,7 +84,7 @@ equipments = {
 			anti_tank_equipment_2
 		}
 
-		hard_attack = 45
+		hard_attack = 30
 		ap_attack = 125
 		
 		build_cost_ic = 6
@@ -95,57 +95,6 @@ equipments = {
 		}
 		is_convertable = yes
 	}
-
-	###------> New Anti-Tank <><> <><> <><> <><> <><>
-
-	anti_tank_equipment_x = {
-		year = 1020
-
-		archetype = anti_tank_equipment
-		parent = anti_tank_equipment_3
-		priority = 90
-		visual_level = 3
-
-		can_convert_from = {
-			anti_tank_equipment_3
-		}
-
-		hard_attack = 39
-		ap_attack = 150
-
-		build_cost_ic = 7
-		resources = {
-			tungsten = 3
-			chromium = 2
-			steel = 3
-		}
-	}
-
-	anti_tank_equipment_x_2 = {
-		year = 1026
-
-		archetype = anti_tank_equipment
-		parent = anti_tank_equipment_x
-		priority = 90
-		visual_level = 3
-
-		can_convert_from = {
-			anti_tank_equipment_x
-		}
-
-		hard_attack = 49
-		ap_attack = 175
-
-		build_cost_ic = 8
-		resources = {
-			tungsten = 3
-			chromium = 2
-			steel = 4
-		}
-	}
-
-	###------> X <><> <><> <><> <><> <><>
-
 }
 
 #####---------------------------------------------------------------------> End

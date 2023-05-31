@@ -1,0 +1,255 @@
+ideas = {
+	country = {
+		WW_WNG_STG_friendship = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			research_bonus = {
+				air_equipment = 0.1
+				armor = 0.1
+				artillery = 0.1
+			}
+		}
+		WW_WNG_strengthening_military_research = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.1
+			}
+		}
+		WW_WNG_airforce_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+			}
+		}
+		WW_WNG_army_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.3 
+					instant = yes
+				}
+			}
+
+		}
+		WW_WNG_fortification_priority = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				production_speed_air_base_factor = 0.5
+				production_speed_supply_node_factor = 0.5
+				production_speed_rail_way_factor = 0.5
+				production_speed_bunker_factor = 0.5
+				production_speed_anti_air_building_factor = 0.5
+				production_speed_radar_station_factor = 0.5 
+			}
+		}
+		WW_WNG_tarrin_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HLQ_knights
+			modifier = {
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				no_supply_grace	= 48.0
+			}
+		}
+		WW_WNG_reorganizing_army_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.5
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.45
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.4
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.35
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.3
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_6 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.25
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_7 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.2
+				army_attack_factor = 0.12
+				army_defence_factor = 0.12
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_8 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = 0.14
+				army_defence_factor = 0.14
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_9 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = 0.16
+				army_defence_factor = 0.16
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_10 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = 0.18
+				army_defence_factor = 0.18
+				experience_gain_army_factor = -0.1
+			}
+		}
+		WW_WNG_reorganizing_army_11 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+			}
+		}
+		WW_WNG_reorganizing_army_fast = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				army_org_factor = -0.2
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+	}
+}

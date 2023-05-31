@@ -1,6 +1,6 @@
 characters={
 	BAK_WW_fieldmarshel = {
-		name = "Soldier TF2"
+		name = "Soldier TF2" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/soldiertf2.tga"
@@ -28,10 +28,10 @@ characters={
 		}
 	}
 	CHN_WW_fieldmarshel = {
-		name = "Erwin Rommel"
+		name = "Skittlebug Psody" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/rommel.tga"
+				large = "gfx/leaders/WW/goodpsody.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -42,10 +42,10 @@ characters={
 		}
 	}
 	CRY_WW_fieldmarshel = {
-		name = "Walther White"
+		name = "Based Cadance" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/walter.tga"
+				large = "gfx/leaders/WW/basedcadance.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -70,10 +70,10 @@ characters={
 		}
 	}
 	EQC_WW_fieldmarshel= {
-		name = "Jesse Pinkman"
+		name = "IT'S TIME" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/jesse.tga"
+				large = "gfx/leaders/WW/pixy.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -84,10 +84,10 @@ characters={
 		}
 	}
 	EQS_WW_fieldmarshel = {
-		name = "Bernard Montgomery"
+		name = "Venon Ranch"
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/monty.tga"
+				large = "gfx/leaders/WW/Venon.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -98,10 +98,10 @@ characters={
 		}
 	}
 	FAT_WW_fieldmarshel = {
-		name = "Alexander Kerensky"
+		name = "Alexander Kemerkai" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/karensky.tga"
+				large = "gfx/leaders/WW/kemerkai.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -112,7 +112,7 @@ characters={
 		}
 	}
 	GRF_WW_fieldmarshel = {
-		name = "Chairman Danior"
+		name = "Tryhard Party Supreme Leader" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/danior.tga"
@@ -139,8 +139,8 @@ characters={
 			traits = {}
 		}
 	}
-	GRY_WW_fieldmarshel = {
-		name = "Volodymyr Zelenskyy"
+	GRY_WW_fieldmarshel = { 
+		name = "Schweiner" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/zalenskyy.tga"
@@ -168,10 +168,10 @@ characters={
 		}
 	}
 	HLQ_WW_fieldmarshel = {
-		name = "Lalo Salamanca"
+		name = "Hans" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/lalo.tga"
+				large = "gfx/leaders/WW/krieger.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -196,7 +196,7 @@ characters={
 		}
 	}
 	LCT_WW_fieldmarshel = {
-		name = "Howard Hamlin"
+		name = "Howard Hamlin" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/hamlin.tga"
@@ -210,10 +210,10 @@ characters={
 		}
 	}
 	NIM_WW_fieldmarshel = {
-		name = "Robert F. Kennedy"
+		name = "Nimbussy" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/rfk.tga"
+				large = "gfx/leaders/WW/nimbussy.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -223,8 +223,8 @@ characters={
 			traits = {}
 		}
 	}
-	PNG_WW_fieldmarshel = {
-		name = "Sheldon Cooper "
+	PNG_WW_fieldmarshel = { 
+		name = "Sheldon Cooper " ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/sheldon.tga"
@@ -251,8 +251,8 @@ characters={
 			traits = {}
 		}
 	}
-	ROU_WW_fieldmarshel = {
-		name = "Gus Fring"
+	ROU_WW_fieldmarshel = { 
+		name = "Gus Fring" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/gus.tga"
@@ -266,7 +266,7 @@ characters={
 		}
 	}
 	STG_WW_fieldmarshel = {
-		name = "Nikolai Buckharin "
+		name = "Nikolai Buckharin"
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/buckharin.tga"
@@ -280,10 +280,10 @@ characters={
 		}
 	}
 	TRD_WW_fieldmarshel = {
-		name = "Vasa's Oc"
+		name = "Mihaly Dumitru Margareta Corneliu Leopold Blanca Karol Aeon Ignatius Raphael Maria Niketas A. Shilage" ## Decringified ##
 		portraits = {
 			army = {
-				large = "gfx/leaders/WW/vasa.tga"
+				large = "gfx/leaders/WW/Mihaly.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
@@ -294,7 +294,7 @@ characters={
 		}
 	}
 	WIT_WW_fieldmarshel = {
-		name = "Chuck McGill"
+		name = "Chuck McGill" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/chuck.tga"
@@ -308,7 +308,7 @@ characters={
 		}
 	}
 	WNG_WW_fieldmarshel = {
-		name = "Tassen's OC"
+		name = "Tassen's OC" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/tassen.tga"
@@ -321,14 +321,105 @@ characters={
 			traits = {}
 		}
 	}
-	YAL_WW_fieldmarshel = {
-		name = "Mike Ehrmantraut"
+	MIT_WW_fieldmarshel = {
+		name = "Mike Ehrmantraut" ## Decringified ##
 		portraits = {
 			army = {
 				large = "gfx/leaders/WW/mike.tga"
 				small = "gfx/interface/ideas/Advisors/WW/WW_workaround.tga"
 			}
 		}
+		advisor={
+			slot = 
+			cost = 9999
+			traits = {}
+		}
+	}
+	#comrade trolling
+	EQS_doctor_whooves = {
+		name = "Doctor Hooves" 
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Advisors/WW/EQS_doctor_whooves.dds"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = fluttershy
+			ledger = army
+			cost = 100
+			
+			allowed = {
+				original_tag = EQS
+			}
+			available = {
+				if = {
+					limit = { is_original_EQS = yes }
+					has_completed_focus = EQS_WMD
+				}
+				if = {
+					limit = { is_EQS_SOL = yes }
+					has_global_flag = EQS_completed_EQS_WMD
+				}
+				if = {
+					limit = { NOT = { tag = event_target:solar_empire } }
+					has_government = democratic
+				}
+				if = {
+					limit = { event_target:solar_empire = { exists = yes } }
+					OR = {
+						AND = {
+							tag = event_target:solar_empire
+							NOT = { country_exists = event_target:equestria }
+							NOT = {
+								has_country_flag = SOL_harmonic_commanders_leave
+								has_country_flag = SOL_purge_finished
+							}
+						}
+						tag = event_target:equestria
+					}
+				}
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+
+			traits = { nuclear_scientist }
+		}
+		gender = male
+	}
+	EQS_fluttershy_imposter = {
+		name = "Fluttershy"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_EQS_fluttershy"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = raven
+			
+			allowed = {
+				original_tag = EQS
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { silent_workhorse }
+		}
+		gender = female
+	}
+	
+	CHN_Sombra = {
+		name = "King Sombra"
+		portraits = {
+			army = {
+				large = "GFX_SombraPortrait"
+				small = "GFX_idea_CRY_sombra"
+			}
+		}
+		
 		advisor={
 			slot = 
 			cost = 9999

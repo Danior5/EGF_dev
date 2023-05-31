@@ -2,7 +2,7 @@ upgrades = {
 
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
-		max_level = 25 #each level represents ~50HP
+		max_level = 20 #each level represents ~50HP
 		cost = land
 
 		linear_cost = {
@@ -11,23 +11,17 @@ upgrades = {
 		}
 
 		level_requirements = {
-			5 = {
+			1 = {
 				has_tech = engine_tech_1
 			}
-			10 = {
+			6 = {
 				has_tech = engine_tech_2
 			}
-			15 = {
+			11 = {
 				has_tech = engine_tech_3
 			}
-			18 = { 
+			16 = { 
 				has_tech = engine_tech_4
-			}
-			21 = { 
-				has_tech = engine_tech_5
-			}
-			24 = { 
-				has_tech = engine_tech_6
 			}
 		}
 
@@ -47,7 +41,7 @@ upgrades = {
 
 	tank_nsb_armor_upgrade = {
 		abbreviation = "arm"
-		max_level = 25 #each level represents ~10mm of armor 
+		max_level = 20 #each level represents ~10mm of armor 
 		cost = land
 
 		linear_cost = {
@@ -56,23 +50,17 @@ upgrades = {
 		}
 
 		level_requirements = {
-			5 = {
+			1 = {
 				has_tech = armor_tech_1
 			}
-			10 = {
+			6 = {
 				has_tech = armor_tech_2
 			}
-			15 = {
+			11 = {
 				has_tech = armor_tech_3
 			}
-			18 = {
+			16 = { 
 				has_tech = armor_tech_4
-			}
-			21 = {
-				has_tech = armor_tech_5
-			}
-			24 = {
-				has_tech = armor_tech_6
 			}
 		}
 
@@ -92,11 +80,9 @@ upgrades = {
 
 		maximum_speed = -0.05
 		reliability = -0.015
-		armor_value = 0.085
+		armor_value = 0.1
 		add_stats = {
-			breakthrough = 1.25
 			build_cost_ic = 0.2
-
 		}
 	}
 

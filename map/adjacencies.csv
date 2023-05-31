@@ -42,7 +42,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13094;4875;sea;8782;-1;-1;-1;-1;;Pinguins-Lospegasus
 11575;9604;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Islands
 11575;753;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Shore
-8101;11213;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia
+8101;11213;sea;422;-1;-1;-1;-1;;New Manehattan-Aquilia
+12413;12320;sea;422;-1;-1;-1;-1;;New Manehattan-Aquilia2
+901;7184;sea;422;-1;-1;-1;-1;;New Manehattan-Aquilia3
 10882;7107;sea;5890;-1;-1;-1;-1;;New Manehattan-Talononte
 6275;8360;sea;8262;-1;-1;-1;-1;;Northern-Island
 9055;12142;sea;5838;-1;-1;-1;-1;;Southern-Islands-Mainland
@@ -216,6 +218,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4418;4180;sea;20309;-1;-1;-1;-1;;GreatLakes
 ;;;;;;;;;
 16758;16759;sea;2884;-1;-1;-1;-1;;HyenaIsles
+;;;;;;;;;
+3048;3132;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+192;3034;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+3048;3034;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+3179;192;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+192;6168;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+9083;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+151;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+6168;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+9226;9083;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+67;9083;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+67;9038;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+67;11409;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
 ;;;;;;;;;
 17442;17425;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
 17403;17425;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
@@ -527,11 +542,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15240;15226;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 15240;15224;impassable;-1;-1;-1;-1;-1;;HyenaMountains
 ;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
 15170;15195;impassable;-1;-1;-1;-1;-1;;StormMountains
 15170;15178;impassable;-1;-1;-1;-1;-1;;StormMountains
 15164;15178;impassable;-1;-1;-1;-1;-1;;StormMountains
@@ -700,9 +710,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12593;10656;impassable;-1;-1;-1;-1;-1;;SkynaviaMountains
 10656;5016;impassable;-1;-1;-1;-1;-1;;SkynaviaMountains
 ;;;;;;;;;
-4863;11440;impassable;-1;-1;-1;-1;-1;;RepublicMountains
-6726;4863;impassable;-1;-1;-1;-1;-1;;RepublicMountains
-9669;4863;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+12603;3769;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+12603;12688;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+12663;12688;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+12663;10587;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+7883;10587;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+10587;7760;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+1848;7760;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+4863;7760;impassable;-1;-1;-1;-1;-1;;RepublicMountains
+4863;1788;impassable;-1;-1;-1;-1;-1;;RepublicMountains
 ;;;;;;;;;
 642;12383;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
 642;7641;impassable;-1;-1;-1;-1;-1;;SunstrikerMountains
@@ -771,6 +787,43 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12360;4696;impassable;-1;-1;-1;-1;-1;;GriffonstoneMountains
 4511;4696;impassable;-1;-1;-1;-1;-1;;GriffonstoneMountains
 ;;;;;;;;;
+8045;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10356;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+3995;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+1833;12516;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1833;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+4528;5231;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+4528;2171;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+2213;4610;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+2213;4839;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+10425;12433;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+10425;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+;;;;;;;;;
+1157;4119;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+1157;12197;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+1157;12267;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+10158;12267;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+10158;7254;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+1296;7254;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+1296;4275;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+;;;;;;;;;
+1502;4424;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+10313;4424;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+10313;7427;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+7399;7427;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+7399;4412;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+12271;4412;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+;;;;;;;;;
+1014;4555;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+1014;11836;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+10182;11836;impassable;-1;-1;-1;-1;-1;;SicameonMountains
+;;;;;;;;;
 7926;10918;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 7926;4900;impassable;-1;-1;-1;-1;-1;;TalouseMountains
 2014;4900;impassable;-1;-1;-1;-1;-1;;TalouseMountains
@@ -794,57 +847,63 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2007;8050;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 5026;10736;impassable;-1;-1;-1;-1;-1;;MinotaurMountains
 ;;;;;;;;;
-6398;6279;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6398;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;3346;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;11235;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3345;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6411;6243;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6411;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9253;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3335;11284;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3335;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6355;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6252;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-6305;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;3390;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;9261;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-11063;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9042;6092;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-9042;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3069;103;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
-3069;6079;impassable;-1;-1;-1;-1;-1;STG-GRF Front;
+8300;8404;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal West
+8300;2499;;-1;-1;-1;-1;-1;WETERVEDINA_STRAIT;Boreal East
+20193;5698;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Inner Arabian Strait
+20193;4030;;-1;-1;-1;-1;-1;ARABIAN_STRAIT;Outer Arabian Strait
+20170;2421;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar West
+20170;2396;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar Middle
+20170;8576;;-1;-1;-1;-1;-1;POLAR_STRAIT;Polar East
+8551;13166;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza North
+8551;3222;;-1;-1;-1;-1;-1;TOAMAZA_STRAIT;Toamaza South
+20202;8697;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Northeast
+20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
+20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 ;;;;;;;;;
-8045;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-10356;10668;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-10356;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-3995;8214;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;11235;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3345;6243;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6411;6243;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6411;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9253;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3335;11284;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3335;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6355;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6252;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+6305;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;3390;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;9261;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+11063;6092;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9042;6092;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+9042;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3069;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
+3069;6079;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 ;;;;;;;;;
-1833;12516;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-1833;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-4610;12023;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-4528;5231;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-4528;2171;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-2213;3995;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-2213;4610;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-2213;4839;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
+12336;10362;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1654;10362;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1654;12496;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1613;12496;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+1613;10502;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12468;10502;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12468;12453;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;12453;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;10943;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+12440;8187;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+8238;8187;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+8238;12964;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2173;12964;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2173;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+5191;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2179;7223;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
+2179;12277;impassable;-1;-1;-1;-1;-1;;HLQ-WAT Front
 ;;;;;;;;;
-10425;12433;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-10425;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-;;;;;;;;;
-7103;4568;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
+9528;1070;impassable;-1;-1;-1;-1;-1;;Magehold
+9528;12254;impassable;-1;-1;-1;-1;-1;;Magehold
+9528;4294;impassable;-1;-1;-1;-1;-1;;Magehold
+7438;4294;impassable;-1;-1;-1;-1;-1;;Magehold
+7438;1070;impassable;-1;-1;-1;-1;-1;;Magehold
+4351;1070;impassable;-1;-1;-1;-1;-1;;Magehold
 ;;;;;;;;;
 -1;-1;;-1;-1;-1;-1;-1;-1;

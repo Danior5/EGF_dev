@@ -174,7 +174,7 @@
 			factor = 10
 		}
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}
 
 		prerequisite = {
@@ -278,7 +278,7 @@
 				remove_idea = HIP_long_distance_friendship_idea
 				add_idea = HIP_leand_lease_idea
 			}
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 	}
 	shared_focus = {
@@ -1950,6 +1950,10 @@
 
 		completion_reward = {
 			add_ideas = HIP_industrial_mobilisation_plan_1
+			add_timed_idea = {
+				idea = HIP_industrial_buildup
+				days = 180
+			}
 		}
 	}
 	shared_focus = {
@@ -2323,8 +2327,8 @@
 			has_war = yes
 			date > 1012.07.01
 			OR = {
-				has_idea = HIP_island_debuff1
-				has_idea = HIP_island_debuff2
+				has_idea = HIP_island_buff1
+				has_idea = HIP_island_buff2
 			}
 		}
 
@@ -2333,11 +2337,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+
 			add_ideas = WW_HIP_primo_victoria1
 			add_ideas = WW_HIP_primo_victoria2
 			add_ideas = WW_HIP_primo_victoria3
 			custom_effect_tooltip = WW_HIP_gates_of_hell_tt
 			hidden_effect = {
+				news_event = { hours = 1 id = ww.news.3 }
 				HIP = {
 					country_event = {
 						id = ww.13
@@ -10890,8 +10896,8 @@ shared_focus = {
 				}
 			}
 			if = {
-				limit = { has_character = HIP_meteorum_blaze }
-				HIP_meteorum_blaze = {
+				limit = { has_character = HIP_sugar_coral }
+				HIP_sugar_coral = {
 					retire = yes
 				}
 			}
@@ -13567,7 +13573,7 @@ shared_focus = {
 			focus = HIP_the_immortal_science_of_dialectical_materialism
 		}
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -20577,13 +20583,10 @@ shared_focus = {
 
 		available = {
 			num_of_civilian_factories > 25
-			NOT = {
-				has_idea = isolation
-			}
 		}
 		
 		bypass = {
-			amount_research_slots > 4
+			amount_research_slots > 5
 		}
 
 		cancel_if_invalid = yes

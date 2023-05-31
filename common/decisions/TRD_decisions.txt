@@ -59,7 +59,26 @@ TRD_vaults = {
 					remove_from_array = { ROOT.trade_partners = v }
 				}
 				set_temp_variable = { add_to_bank = trade_partners^num }
-				multiply_temp_variable = { add_to_bank = 0.25 }
+				if = {
+					limit = {
+						NOT = {
+							has_game_rule = {
+								rule = ww_game_mode
+								option = EQS_ONLY
+							}
+						}
+					}
+					multiply_temp_variable = { add_to_bank = 0.25 }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ww_game_mode
+							option = EQS_ONLY
+						}
+					}
+					multiply_temp_variable = { add_to_bank = 0.75 }
+				}				
 				clear_array = trade_partners_to_remove
 			}
 
@@ -946,6 +965,10 @@ foreign_politics = {
 		}
 		visible = {
 			NOT = {
+				#has_game_rule = {
+				#	rule = ww_game_mode
+				#	option = EQS_ONLY
+				#}
 				has_government = communism
 				has_idea = detached_country
 				has_idea = communal_society
@@ -1846,7 +1869,6 @@ economy_decisions = {
 		}
 		available = {
 			hidden_trigger = { check_variable = { bank > 4 } }
-			has_war = no
 			NOT = {
 				has_idea = TRD_industrial_experts_idea
 			}
@@ -2666,6 +2688,8 @@ military_training_category = {
 				limit = {
 					has_dlc = "By Blood Alone"
 					has_tech = iw_small_airframe
+					has_tech = aa_lmg
+					has_tech = engines_1
 				}
 				generic_early_fighter = yes
 				add_equipment_to_stockpile = {
@@ -2677,12 +2701,11 @@ military_training_category = {
 			else_if = {
 				limit = {
 					has_dlc = "By Blood Alone"
-					NOT = {
-						has_tech = iw_small_airframe
-					}
 				}
 				set_technology = {
 					iw_small_airframe = 1
+					aa_lmg = 1
+					engines_1 = 1
 				}
 				generic_early_fighter = yes
 				add_equipment_to_stockpile = {
@@ -2799,6 +2822,10 @@ military_training_category = {
 					has_dlc = "By Blood Alone"
 					has_tech = iw_medium_airframe
 				}
+				set_technology = {
+					early_bombs = 1
+					engines_1 = 1
+				}
 				generic_early_tac_bomber = yes
 				add_equipment_to_stockpile = {
 					type = medium_plane_airframe_0
@@ -2815,6 +2842,8 @@ military_training_category = {
 				}
 				set_technology = {
 					iw_medium_airframe = 1
+					early_bombs = 1
+					engines_1 = 1
 				}
 				generic_early_tac_bomber = yes
 				add_equipment_to_stockpile = {

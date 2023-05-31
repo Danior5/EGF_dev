@@ -1,16 +1,27 @@
 ideas = {
 	country = {
-		WW_OLE_surrender_limit = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+		WW_peace_in_our_time = {
 			removal_cost = -1
-			picture = generic_secret_police
+			picture = generic_victors_of_ww1
 			modifier = {
-				surrender_limit = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.2
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.7
+				industrial_capacity_dockyard = -0.7
+				production_speed_arms_factory_factor = -1.0 
+				production_speed_dockyard_factor = -1.0
+				war_support_weekly_factor = -0.01
+			}
+		}	
+		WW_WAT_surrender_limit = {
+			removal_cost = -1
+			picture = DED_magehold
+			modifier = {
+				surrender_limit = 2.0
+				min_export = -1.0
+				ai_get_ally_desire_factor = -100
 			}
 		}
 		WW_tarrin_offensive = {
@@ -21,14 +32,19 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = HLQ_knights
+			picture = FRA_la_deluge
 			modifier = {
 				army_attack_factor = 0.1
-				army_speed_factor = 0.1
-				no_supply_grace	= 48.0
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.1
+				no_supply_grace	= 24.0
+				planning_speed = 0.5
+
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
 			}
 		}
-		WW_JER_counteroffensive = {
+		WW_tarrin_offensive_2 = {
 			allowed = {
 				always = no
 			}
@@ -39,37 +55,10 @@ ideas = {
 			picture = FRA_la_deluge
 			modifier = {
 				army_attack_factor = 0.2
-				army_core_attack_factor = 0.2
-				army_speed_factor = 0.15
-				no_supply_grace	= 72.0
-			}
-		}
-		WW_crusaders = {
-			allowed = { 
-				always = yes 
-			}
-
-			removal_cost = -1
-			picture = STG_crusaders
-			modifier = {
-				war_support_factor = 0.15
-				land_reinforce_rate = 0.1
-				army_morale_factor = 0.1
-				army_org_factor = 0.1
-				army_attack_factor = 0.05
-			}
-		}
-		WW_protect_eqc = {
-			allowed = { 
-				always = yes 
-			}
-
-			removal_cost = -1
-			picture = STG_crusaders
-			modifier = {
-				army_infantry_attack_factor = 0.1
-				army_infantry_defence_factor = 0.1
-				max_dig_in = 5
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
 			}
 		}
 		WW_CHN_core_buff = {
@@ -90,41 +79,34 @@ ideas = {
 			removal_cost = -1
 			picture = generic_navy_bonus
 			modifier = {
-				naval_damage_factor = 0.3
-				naval_hit_chance = 0.2
-				naval_speed_factor = 0.2
+				naval_damage_factor = 0.15
+				naval_hit_chance = 0.05
+				naval_speed_factor = 0.1
 			}
 		}
-		WW_escaped_officers = {
+		WW_afrikakorps = {
+			allowed = {
+				always = no
+			}
 			removal_cost = -1
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = RAZ_loyal_army
 			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				air_cas_present_factor = 0.4
+			}
+			targeted_modifier = {
+   				tag = EQC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 		}
-		WW_last_AC = {
+		WW_overstrained_military_industry = {
 			removal_cost = -1
-			picture = generic_air_bonus
+			picture = ger_mefo_bills_payment
 			modifier = {
-				air_home_defence_factor = 0.2
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.25
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.25
-				}
-			}
-		}
-		WW_incompetent_tanks = {
-			removal_cost = -1
-			picture = generic_army_problems
-			modifier = {
-				army_armor_attack_factor = -1
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05 
+				production_speed_arms_factory_factor = -0.15
+				industrial_capacity_factory = -0.1 
 			}
 		}
 		WW_HIP_primo_victoria1 = {
@@ -132,6 +114,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 			modifier = {
 				conscription = 0.03
+				industrial_capacity_dockyard = 0.5
 				industrial_capacity_factory = 0.2
 				production_speed_arms_factory_factor = 0.3 
 				production_speed_dockyard_factor = 0.3
@@ -184,8 +167,98 @@ ideas = {
 			removal_cost = -1
 			picture = air_support_focus
 			modifier = {
-				production_speed_dockyard_factor = 0.5
+				production_speed_dockyard_factor = 0.2
 			}
 		}
+		WW_CHN_plan_east_prep_equus_only = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.1
+				operative_slot = 1
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		WW_CHN_GRI_attache_equus_only = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			research_bonus = { 
+				armor = 0.06
+			}
+
+			removal_cost = -1
+			picture = CHN_GRI_Attache_For_CHN
+			modifier = {			
+				land_doctrine_cost_factor = -0.03
+				max_command_power = -20
+				experience_gain_army = 0.03
+			}
+		}
+		WW_Nova_Old_Frontier_Buff = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRE_medium_industry
+			modifier = {
+				stability_weekly = 0.002
+				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory	= 0.1
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+		WW_Nova_New_Frontier_Buff = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HIRA_trade
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_dockyard = 0.15
+				fuel_gain_factor = 0.5
+			}
+		}
+        WW_equus_only_trading_1 = {
+            allowed = {
+				always = no
+            }
+			removal_cost = -1
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.075
+                consumer_goods_factor = -0.04
+            }
+        }
+        WW_equus_only_trading_2 = {
+            allowed = {
+				always = no
+            }
+			removal_cost = -1
+            allowed_civil_war = { always = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                consumer_goods_factor = -0.02
+            }
+        }
 	}	
 }

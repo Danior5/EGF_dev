@@ -610,8 +610,8 @@ equipment_modules = {
 		}
 	}
 	ship_light_medium_battery_3 = {
-		category = ship_medium_battery
-		gui_category = ship_light_battery
+		category = ship_light_medium_battery
+		gui_category = ship_medium_battery
 		parent = ship_light_medium_battery_2
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -647,9 +647,9 @@ equipment_modules = {
 		}
 	}
 	ship_light_medium_battery_4 = {
-		category = ship_medium_battery
+		category = ship_light_medium_battery
+		gui_category = ship_medium_battery
 		sfx = sfx_ui_sd_module_turret
-		gui_category = ship_light_battery
 		parent = ship_light_medium_battery_3
 		add_stats = {
 			lg_attack = 7.5
@@ -929,7 +929,7 @@ equipment_modules = {
 			build_cost_ic = 110
 		}
 		multiply_stats = {
-			anti_air_attack = 0.1
+			naval_speed = -0.005
 		}
 		can_convert_from = {
 			module_category = ship_anti_air
@@ -1868,7 +1868,7 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_1
 		add_stats = {
 			surface_detection = 7
-			sub_detection = 2.5
+			sub_detection = 5
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -1880,7 +1880,7 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_2
 		add_stats = {
 			surface_detection = 10
-			sub_detection = 3.5
+			sub_detection = 7
 			build_cost_ic = 170
 		}
 		can_convert_from = {
@@ -1942,7 +1942,7 @@ equipment_modules = {
 		gfx = ship_sonar_1
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
-			sub_detection = 6
+			sub_detection = 10
 			build_cost_ic = 40
 		}
 	}
@@ -1951,7 +1951,7 @@ equipment_modules = {
 		gfx = ship_sonar_2
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
-			sub_detection = 10.0
+			sub_detection = 15
 			build_cost_ic = 60
 		}
 		can_convert_from = {
@@ -3193,7 +3193,7 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_3
 		add_stats = {
 			surface_detection = 13
-			sub_detection = 4.5
+			sub_detection = 9
 			build_cost_ic = 190
 		}
 		can_convert_from = {
@@ -3209,7 +3209,7 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_4
 		add_stats = {
 			surface_detection = 16
-			sub_detection = 5.5
+			sub_detection = 11
 			build_cost_ic = 210
 		}
 		can_convert_from = {
@@ -3300,7 +3300,7 @@ equipment_modules = {
 		sfx = ship_deck_space
 		add_equipment_type = capital_ship
 		add_stats = {
-			carrier_size = 10
+			carrier_size = 1
 			surface_detection = 13
 			sub_detection = 4.5
 			build_cost_ic = 1750
@@ -3324,7 +3324,7 @@ equipment_modules = {
 		sfx = ship_deck_space
 		add_equipment_type = capital_ship
 		add_stats = {
-			carrier_size = 10
+			carrier_size = 1
 			surface_detection = 16
 			sub_detection = 5.5
 			build_cost_ic = 1750
@@ -3396,7 +3396,7 @@ equipment_modules = {
 		gfx = ship_sonar_3
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
-			sub_detection = 12
+			sub_detection = 20
 			build_cost_ic = 80
 		}
 		multiply_stats = {
@@ -3413,7 +3413,7 @@ equipment_modules = {
 		gfx = ship_sonar_4
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
-			sub_detection = 21
+			sub_detection = 25
 			build_cost_ic = 100
 		}
 		multiply_stats = {

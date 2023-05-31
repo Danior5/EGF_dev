@@ -16,7 +16,7 @@ WW_category = {
 			}
 		}
 		on_map_mode = map_only
-		icon = hol_draw_up_staff_plans
+		icon = gre_paying_ifc_debt
 		cost = 25
 		days_remove = 60
 		remove_effect = {
@@ -38,7 +38,7 @@ WW_category = {
 			}
 		}
 		on_map_mode = map_only
-		icon = hol_draw_up_staff_plans
+		icon = gre_paying_ifc_debt
 		cost = 50
 		days_remove = 60
 		remove_effect = {
@@ -60,7 +60,7 @@ WW_category = {
 			}
 		}
 		on_map_mode = map_only
-		icon = hol_draw_up_staff_plans
+		icon = gre_paying_ifc_debt
 		cost = 75
 		days_remove = 60
 		remove_effect = {

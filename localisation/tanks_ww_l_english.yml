@@ -1,0 +1,60 @@
+﻿l_english:
+troop_compartment:0 "Troop Compartment"
+troop_compartment_desc:0 "A large space inside the vehicle designed to house troops. These additional troops grant flexibility, but the cost of fitting this space within the vehicle is high."
+
+secondary_turret_auto_cannon:0 "Automatic Cannon"
+secondary_turret_auto_cannon_desc:0 "An automatic cannon in a secondary turret. The placement of the turret limits its arc of fire, lowering the gun's overall effectiveness, but it does allow the tank to engage more targets. This is particularly useful when on the attack."
+
+special_ammunition:0 "Special Ammunition"
+special_ammunition_desc:0 "A limited amount of specialized armor piercing ammunition. These rounds have improved penetration performance but are expensive to produce, requiring rare dense metals."
+
+tank_fire_control:0 "Mechanical Fire Control System"
+tank_fire_control_desc:0 "An electromechanical device that synchronizes the information from the sights and rangefinding devices to the main gun. This allows the gunner to acquire targets faster and more accurately, significantly improving the firepower of the tank."
+
+optical_rangefinder:0 "Optical Rangefinder"
+optical_rangefinder_desc:0 "A device that triangulates the distance of a target based on images measured from the two ends of the rangefinder. The distance attained is far more accurate than estimates performed by the gunner."
+
+improved_periscopes:0 "Improved Periscopes"
+improved_periscopes_desc:0 "Higher quality periscopes give the crew improved situational awareness, increasing their combat effectiveness."
+
+boiling_vessel:0 "Boiling Vessel"
+boiling_vessel_desc:0 "An electrically heated container that can be used to both boil water and prepare food."
+
+open_top:0 "Open Topped Design"
+open_top_desc:0 "By removing the top of the turret or superstructure we can improve the visibility of our crew and reduce the cost of construction. However, the loss of protection makes the vehicle vastly more vulnerable to small arms and explosions."
+
+vents:0 "Ventilation System"
+vents_desc:0 "A powered fan draws in fresh air from outside the vehicle and expels hot air from inside, increasing the comfort of the crew."
+
+cupola_1:0 "Basic Cupola"
+cupola_1_desc:0 "A simple dome structure with vision slits on the top of the tank, allowing the commander 360 degree vision while remaining protected."
+
+cupola_2:0 "Improved Cupola"
+cupola_2_desc:0 "Improvements upon pre-existing cupolas such as the additional of multiple periscopes further increase the effectiveness of the structure."
+
+cupola_3:0 "Advanced Cupola"
+cupola_3_desc:0 "A further refinement of cupola technology allows multiple crew members to use the sights, as well as reducing the profile of the structure."
+
+magic_aps:0 "Magical Active Protection System"
+magic_aps_desc:0 "An experiemental system that uses crystal-stored magical spells as countermeasures to intercept incoming projectiles that pose a threat to the tank."
+
+wartime_simplification:0 "Wartime Simplification"
+wartime_simplification_desc:0 "By applying the lessons we have learned from the field, we can drastically simplify our designs."
+
+EQ_MOD_SLOT_special_type_slot_5_TITLE:0 "Special Features"
+EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
+EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"
+EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Special Features"
+
+EQ_MOD_CAT_tank_rocket_module_TITLE:0 "Rocket Launcher"
+EQ_MOD_CAT_tank_cupola_module_TITLE:0 "Cupola"
+
+WW_engine_tech_1_tt:0 "Enables engine upgrade values of 1 to 5."
+WW_engine_tech_2_tt:0 "Enables engine upgrade values of 6 to 10."
+WW_engine_tech_3_tt:0 "Enables engine upgrade values of 11 to 15."
+WW_engine_tech_4_tt:0 "Enables engine upgrade values of 16 to 20."
+
+WW_armor_tech_1_tt:0 "Enables armor upgrade values of 1 to 5."
+WW_armor_tech_2_tt:0 "Enables armor upgrade values of 6 to 10."
+WW_armor_tech_3_tt:0 "Enables armor upgrade values of 11 to 15."
+WW_armor_tech_4_tt:0 "Enables armor upgrade values of 16 to 20."

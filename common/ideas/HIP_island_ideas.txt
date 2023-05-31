@@ -1,107 +1,99 @@
 ideas = {
 	country = {	   
-		HIP_island_debuff1 = {
+		HIP_island_buff1 = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.2
+				production_speed_dockyard_factor = 0.4
+			}
+		}
+		HIP_island_buff2 = {
+			allowed = {
+				always = no
+			}
+			picture = undisturbed_isolation
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.175
+				production_speed_dockyard_factor = 0.35
+			}
+		}
+		HIP_island_buff3 = {
+			allowed = {
+				always = no
+			}
+			picture = undisturbed_isolation
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				production_speed_dockyard_factor = 0.3
+			}
+		}
+		HIP_island_buff4 = {
+			allowed = {
+				always = no
+			}
+			picture = undisturbed_isolation
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.125
+				production_speed_dockyard_factor = 0.25
+			}
+		}
+		HIP_island_buff5 = {
+			allowed = {
+				always = no
+			}
+			picture = undisturbed_isolation
+			removal_cost = -1
+
+			modifier = {
 				industrial_capacity_dockyard = 0.1
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
+				production_speed_dockyard_factor = 0.2
 			}
 		}
-		HIP_island_debuff2 = {
+		HIP_island_buff6 = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.075
+				production_speed_dockyard_factor = 0.15
 			}
 		}
-		HIP_island_debuff3 = {
+		HIP_island_buff7 = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.1
 			}
 		}
-		HIP_island_debuff4 = {
+		HIP_island_buff8 = {
 			allowed = {
 				always = no
 			}
-			picture = hol_prepare_the_inundation_lines
+			picture = undisturbed_isolation
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-			}
-		}
-		HIP_island_debuff5 = {
-			allowed = {
-				always = no
-			}
-			picture = hol_prepare_the_inundation_lines
-			removal_cost = -1
-
-			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-			}
-		}
-		HIP_island_debuff6 = {
-			allowed = {
-				always = no
-			}
-			picture = hol_prepare_the_inundation_lines
-			removal_cost = -1
-
-			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-			}
-		}
-		HIP_island_debuff7 = {
-			allowed = {
-				always = no
-			}
-			picture = hol_prepare_the_inundation_lines
-			removal_cost = -1
-
-			modifier = {
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
-			}
-		}
-		HIP_island_debuff8 = {
-			allowed = {
-				always = no
-			}
-			picture = hol_prepare_the_inundation_lines
-			removal_cost = -1
-
-			modifier = {
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
+				industrial_capacity_dockyard = 0.025
+				production_speed_dockyard_factor = 0.05
 			}
 		}
 	}

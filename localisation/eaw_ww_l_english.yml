@@ -33,6 +33,39 @@ l_english:
  ww.news.1.t:0 "Sunset Shimmer's Grand Counteroffensive"
  ww.news.1.d:0 "[This.GetNewspaperHeader]Confusing and shocking reports are coming in from the edges of the Everfree Forest. It seems that Sunset Shimmer - the late star pupil of Princess Celestia who mysteriously disappeared several years ago - has just come back. However she is not alone! The pathways of the Everfree are filled with hundreds, if not thousands of vechicles: tanks, trucks, motorcycles and much, much more.\nWhat's even more confusing however is the ponies operating this equipment. They are all very young and seem to be struggling with even basic body movements - they say they prefer walking only on their back hooves!\nNevertheless Sunset is claiming that this new army will deliever a crushing counterattack and win the war for Equestria."
  ww.news.1.a:0 "How in Tartarus do they know how to operate tanks?!"
+ 
+ ww.news.2.t:0 "Operation Wintersturm"
+ ww.news.2.d:0 "[This.GetNewspaperHeader]"
+ ww.news.2.a:0 "Fate of Equus hangs in the balance"
+ 
+ ww.news.3.t:0 "Hippogriffs Strike Back!"
+ ww.news.3.d:0 "[This.GetNewspaperHeader]"
+ ww.news.3.a:0 "The war on Zebrica is far from over..."
+ 
+ ww.news.4.t:0 "Return of King Sombra"
+ ww.news.4.d:0 "[This.GetNewspaperHeader]All of Eques stands frozen in shock as news keep arriving from the frozen wastes of the Crystal Empire. The long thought to be dead King Sombra has just reeemerged and is actively working with the Changeling forces in their what they call 'Fall Rosa' - a coordinated offensive to conquer the Crystal Pony domain.\nWord spreads of large-scale defections within the Crystal Army as numerous soldiers seem to have succumbed to the King's forbidden dark magical spells."
+ ww.news.4.a:0 "Cyrstal Ponies brace for the onslaught"
+ 
+ ww.news.5.t:0 "Fall Hellgrun"
+ ww.news.5.d:0 "[This.GetNewspaperHeader]"
+ ww.news.5.a:0 "Flames of war engulf the forests of western Equestria"
+ 
+ ww.news.6.t:0 "Fall Dunkelgrun"
+ ww.news.6.d:0 "[This.GetNewspaperHeader]"
+ ww.news.6.a:0 "A storm is coming for Las Pegasus..."
+ 
+ ww.news.7.t:0 "Operation Provençal Wind"
+ ww.news.7.d:0 "[This.GetNewspaperHeader]The Second Tarrin Offensive"
+ ww.news.7.a:0 "The gods give the hills of Tarrin no rest"
+ 
+ ww.news.8.t:0 "Liberation of Fairflanks"
+ ww.news.8.d:0 "[This.GetNewspaperHeader]Today marks one of the darkest days since the start of the World War. UPA forces initially rejoiced as they reclaimed the small border town of Fairflanks, however everything changed when they discovered what had happened there during the Changeling occupation. The basement of the city's hospital had been home to horrific medical experiments on Equestrian prisoners of war. Recovered documents suggest these acts of sheer barbarity were done to help advance the development of Changeling chemical weapons.\nThe discovery brought worldwide condemnation from all members of the River Coalition alliance as well as a pledge to find and punish those responsible."
+ ww.news.8.a:0 "The horror..."
+ ww.news.8.b:0 "Those bastards... They will pay for this!"
+ ww.news.8.c:0 "It was the Queen's Guard! They did it!"
+
+ ww.news.9.t:0 "Host Tool Opened"
+ ww.news.10.t:0 "Host Tool Closed"
   
  WW_GRIvsEQS_mission:0 "Declare war on the United Ponies Alliance"
  WW_CHNvsEQS_mission:0 "Declare war on the United Ponies Alliance"
@@ -49,7 +82,7 @@ l_english:
  women_in_the_workforce:0 "All Adults Serve haters in the Workforce"
  women_in_the_workforce_desc:0 "Tassen is a pussy who doesn't have the balls to just go All Adults and cope with the industry penalty. -9999 tryhard credit"
  continuous_extra_fuel:0 "Fuel Production"
- continuous_reduced_resource_penalty:0 "Resource-Efficient Production"
+ continuous_reduced_resource_penalty:0 "Resource Efficient Production"
  continuous_faster_mobilization:0 "Rapid Mobilization"
  continuous_cheaper_infantry_equipment:0 "Infantry Equipment Production"
  neutral_idea:0 "Neutral Nation"
@@ -62,6 +95,7 @@ l_english:
  WW_JER_counteroffensive:0 "The Hundred Days"
 
  WW_toratoratora:0 "Taifunkrieg"
+ WW_afrikakorps:0 "New Manehatten Campaign"
 
  WW_OLE_surrender_limit:0 "Changeling Occupation"
  WW_OLE_surrender_limit_desc:0 "The Olenian populace holds no love for their Changeling oppressors. If a foreign power were to enter their country they would quickly join them."
@@ -69,6 +103,99 @@ l_english:
  WW_CHN_core_buff:0 "Olenian Front Secure"
  WW_CHN_core_buff_desc:0 "With Olenia firmly in our possession, our western front is secure. So long as we maintain control of Olenia, all efforts can be concentrated to defend our homeland."
 
+ WW_WAT_surrender_limit:0 "Watching from Magehold"
+ WW_WAT_surrender_limit_desc:0 "Eathelin is crying right now."
+
+ WW_GRI_invade_WAT_decision:0 "Attack Watertowns"
+ WW_RCT_invade_WAT_decision:0 "Attack Watertowns"
+
+ ### Sunset update CHN focuses and events
+ WW_volunteer_tanks:0 "Queen's Guard Panzers"
+ WW_volunteer_infantry:0 "Volksgrenadier Divisions"
+ WW_CHN_warplan:0 "Continuous War Plan"
+ WW_CHN_warplan_desc:0 "With Unternehmen Sonnenuntergang well underway, the time has come for us to decide how we will conduct this war."
+ WW_CHN_hold_shire:0 "Fortify the Shire River"
+ WW_fall_rosa:0 "§0Fall Rosa§!"
+ WW_fall_rosa_desc:0 "What's often said about Equus is that all you need to do is wait and eventually some ancient fairly tale will come and get you. There may be some truth to this afterall..."
+ WW_fall_rosa_tt:0 "We will cooperate with a certain §0influential figure§! to bring forth the downfall of the Crystal Empire."
+ WW_fall_hellgrun:0 "§7Fall Hellgrun§!"
+ WW_fall_dunkelgrun:0 "§GFall Dunkelgrun§!"
+ WW_fall_dunkelgrun_desc:0 "The Equestrian coastline is vast and sparsely defended, yet their people feel safe as they consider themselves the masters of the sea. We will show them this assumption is false."
+ WW_fall_dunkelgrun_tt:0 "All necessary preparations will be made to §Rinvade§! the southeastern coast of §7Equestria§!."
+ WW_CHN_fall_dunkelgrun_mission:0 "Seize Las Pegasus"
+ WW_CHN_fall_dunkelgrun_bombardment_decision:0 "Launch Extensive Shore Bombardment."
+ CHN_landing_grounds:0 "Changeling Landing Grounds"
+ CHN_landing_grounds_desc:0 "§RWARNING:§! This area is subject to intense Changeling shore bombardment. UPA forces may suffer §Rmassive§! casualities if they fight here. Enter at your own risk."
+ WW_las_pegasus_lost:0 "Las Pegasus Lost"
+ WW_las_pegasus_lost_desc:0 "Las Pegasus is a vital logistical hub for the transfer of South Equestrian resources, with its loss we can no longer efficiently access a large amount of natural resources."
+ WW_split_front:0 "A War on Two Fronts"
+ WW_split_front_desc:0 "Changeling forces have taken Las Pegasus and opened up a second front in the south of nation. Our organizational capabilities are being strained."
+
+ CHN_WW_great_war_category:0 "The Great War"
+ CHN_WW_great_war_category_desc:0 "Placeholder"
+ WW_CHN_winter_offensive_decision:0 "Launch Operation Wintersturm"
+ WW_CHN_winter_offensive_light:0 "Operation Wintersturm"
+ WW_CHN_winter_offensive_heavy:0 "Operation Wintersturm"
+ WW_CHN_looting_mission:0 "Seize Vanhoover" 
+ WW_CHN_industrial_looting:0 "Looting Vanhoover"
+ WW_CHN_fairflanks_incident:0 "Project Todesengel"
+ WW_CHN_fairflanks_incident_desc:0 "You DON'T want to know what's happening at Fairflanks..."
+ WW_CHN_fairflanks_incident_tp:0 "Enables unit leader ability: §YGas Attack§!."
+ WW_revenge_for_fairflanks:0 "Vengeance for Fairflanks"
+ WW_CHN_war_plan_economy_nerf:0 "Realigning the War Economy"
+ WW_CHN_war_plan_economy_buff:0 "Realigned War Economy"
+ WW_CHN_help_allies_GRF:0 "Changeling Assistance"
+ WW_CHN_help_allies_OLE:0 "Changeling Assistance"
+ WW_CHN_defensive_army:0 "Reinforced Infantry Units"
+ WW_CRY_traitors:0 "Sombra's Dark Magic"
+ WW_CRY_traitors_purged:0 "Recovered from Darkness"
+ 
+ WW_CHN_Volksgrenadiers:0 "Create §Yfive§! 14 width §YInfantry Divisions§! in every controlled frontline state"
+ WW_CHN_Guard_Panzers:0 "Create §Yfour§! 42 width §YMedium Tank Divisions§!"
+ WW_CHN_Defensive_War_Plan:0 "Create §Yfive§! 40 width §YInfantry Divisions§! in every controlled frontline state"
+ 
+ ww.15.t:0 "The Continuous War Plan"
+ ww.15.d:0 "After extensive consulting with our generals, advisors and industrialists, three seperate plans have been proposed. However, we only have the resources to pursue one of them."
+ ww.15.a:0 "Support our allies."
+ ww.15.b:0 "Prepare our economy for a long war."
+ ww.15.c:0 "Reinforce our frontline."
+ 
+ ### Sunset update EQS focuses and events
+ EQS_WW_great_war_category:0 "The Great War"
+ EQS_WW_great_war_category_desc:0 "Placeholder"
+ WW_war_begins:0 "The Great War"
+ WW_we_are_losing:0 "Desperate Measures"
+ WW_temporary_mech:0 "Improvised Mechanized Equipment"
+ WW_temporary_tanks:0 "Improvised Tank Models"
+ WW_cope_line:0 "Hope Line Fortifications"
+ WW_defend_canterlot:0 "Defend Canterlot"
+ WW_first_wave:0 "First Mobilization Wave"
+ WW_second_wave:0 "Second Mobilization Wave"
+ WW_third_wave:0 "Third Mobilization Wave"
+ 
+ EQS_abandoned_land:0 "Abandoned Land"
+ WW_expensive_mech:0 "Disrupted Half-track Production"
+ WW_expensive_tanks:0 "Disrupted Tank Production"
+ EQS_fortress_city:0 "Fortress-city"
+ WW_EQS_shire_line_decision:0 "Retreat to the Shire Line"
+ WW_EQS_cope_line_decision:0 "Retreat to the Hope Line"
+ WW_shire_line_active:0 "Retreated to the Shire Line"
+ WW_cope_line_active:0 "Retreated to the Hope` Line"
+ 
+ WW_EQS_cope_surrender_decision:0 "Cope Surrender (click if you want to instantly cap to CHN)"
+ WW_EQS_cope_surrender:0 "Cope Surrender"
+ 
+ WW_EQS_Retreat_Shire_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CShire River§!"
+ WW_EQS_Retreat_Shire_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CShire River§! for §Y120 days§!"
+ WW_EQS_Retreat_Cope_divs:0 "Create 14 width §YInfantry Divisions§! behind the §CHope Hollow-Whinnyapolis Line§!"
+ WW_EQS_Retreat_Cope_land:0 "Add §RAbandoned Land§! modifier to all states §Ywest§! of the §CHope Hollow-Whinnyapolis Line§! for §Y120 days§!"
+ 
+ WW_EQS_emergency_tanks:0 "Create §Yseven§! 42 width §YMedium Tank Divisions§!"
+ WW_EQS_first_wave_divs:0 "Create §Ythree§! 40 width §YInfantry Divisions§! in every controlled frontline state"
+ WW_EQS_second_wave_divs:0 "Create §Yfour§! 40 width §YInfantry Divisions§! in every controlled frontline state"
+ WW_EQS_third_wave_divs:0 "Create §Yfive§! 40 width §YInfantry Divisions§! in every controlled frontline state"
+ 
+ 
  WW_last_AC:0 "Our Finest Hour"
 
  WW_incompetent_tanks:0 "Inexperienced Armor Corps"
@@ -87,6 +214,9 @@ l_english:
  queen_yaria_WW:0 "Queen of Soryth"
  queen_argynnis_WW:0 "Queen of Vraks"
 
+ WW_FAT_john_rubber:0 "John Rubber"
+ WW_refinery_guy:0 "Rubber Baron"
+
  bastion_of_the_east_tt:0 "Add §G6§! §YLand Fort§! and §G6§! §YCoastal Fort§! to every province with a §YNaval Base§!."
 
  GRI_dutchess_allow_trade_tt:0 "Unlocks Decision: §YTrade With Skyfall§!"
@@ -96,6 +226,9 @@ l_english:
  GRI_noble_management_decision_3:0 "Increase Noble Management"
  GRI_noble_management_tt:0 "Unlocks §YIncrease Noble Management§! decisions."
 
+ WW_JER_summer_offensive_decision:0 "Launch Operation Provençal Wind"
+ WW_tarrin_offensive_2:0 "Operation Provençal Wind"
+
  WW_strike_GRF:0 "Rapid Production Policy"
  WW_strike_GRF_desc:0 "Our relations with the Reichspakt have deteriorated faster than expected, we must rapidly shift our entire economy if we are to be prepared for their attack."
 
@@ -103,19 +236,34 @@ l_english:
  mareginot_line_desc:0 "The initial thrust of the Changeling attack will surely fall upon Fairflanks and head towards Vanhoover. With the permission of Equestria, our engineers are capable of constructing a fortified line here to halt their advance."
 
  WW_STG_attack_yaks:0 "The Vulnerable East"
- WW_STG_attack_yaks_desc:0 "With the Mareginot Line complete, our attention must fall back on defending the eastern front."
+ WW_STG_attack_yaks_desc:0 "We must ensure the eastern flank of Equestria is secure if we want to sucessfully defend against the Changelings. Control over the Celestial Sea islands seems an sufficient payment for our forces to take over their defence."
 
  WW_STG_attack_PNG:0 "Citadel of Communism"
  WW_STG_attack_PNG_desc:0 "As the new defenders of the Celestial Sea islands, we must construct an adequete headquarters to command our new assets. Given this oppertunity we shall show the superiority of communist engineering by creating the greatest fortress the world has ever seen."
  WW_communist_citadel_tt:0 "The Island of Azkaban will be turned into a symbol of the invincibility of communism."
  WW_communist_citadel:0 "Citadel of Communism"
 
+ WW_the_war_to_end_disorder:0 "Pierce the Shroud"
+ WW_the_war_to_end_disorder_desc:0 "Time and time again, we have saved Equestria on every front. Now we will ensure that we can support our Griffonian allies as well. Our scientists and mages have worked together to create an experimental device capable of sending entire divisions across the continent, all we need to do is active it."
+ STG_mass_teleport:0 "Emergency Temporal Shift"
+
  WW_protect_eqc:0 "Protector of the East"
  WW_protect_eqc_tt:0 "§RTransfers control of the Celestial Sea islands to us and fortifies them.§!\n "
  WW_crusaders:0 "Ideological Crusaders"
  STG_economic_policy_1:0 "Rapid Production Economy"
  STG_economic_policy_2:0 "Semi-Rapid Production Economy"
- WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law after March 1st 1011.§!\n "
+ WW_STG_delayed_focus_tt:0 "§RGrants a weaker economy law if completed after March 1st 1011.§!\n "
+ WW_citadel_fallen:0 "Citadel Fallen"
+ WW_citadel_fallen_desc:0 "The Citadel of Communism has been lost, if this mighty fortress has fallen then communism itself might be next."
+ WW_citadel_fallen_tt:0 "Skill: §R-100%§!"
+
+ WW_overstrained_military_industry_category:0 "Wartime Economics"
+ WW_JER_overstrained_military_industry_mission:0 "Military Industrial Overexpansion"
+ WW_JER_overstrained_military_industry_mission_desc:0 "If we surpass 100 military factories, our civilian economic sector will no longer be able to sustain the rapid expansion of our military industry and we will face an economic disaster."
+ WW_GRI_overstrained_military_industry_mission:0 "Military Industrial Overexpansion"
+ WW_GRI_overstrained_military_industry_mission_desc:0 "If we surpass 120 military factories, our civilian economic sector will no longer be able to sustain the rapid expansion of our military industry and we will face an economic disaster."
+ WW_overstrained_military_industry:0 "Overstrained Military Industry"
+ WW_overstrained_military_industry_desc:0 "The rapid expansion of our military industry has caused an economic disaster at home. We may be able to stabilize the situation by seizing significant monetary reserves in New Manehatten, otherwise a longer term recovery is unavoidable."
  
 
  EQS_island_debuff1:0 "Celestial Sea Islands: §GSafe§!" 
@@ -134,14 +282,14 @@ l_english:
  EQS_island_buff6:0 "Equestrian Island Campaign: §GDomination§!"
  EQS_island_buff6_desc:0 "Our alliance has total control over the former Equestrian islands within the Celestial Sea. Our merchant vessels can now travel freely, greatly boosting our industrial capacity."  
 
- HIP_island_debuff1:0 "Hippogriffian Islands: §GSafe§!" 
- HIP_island_debuff2:0 "Hippogriffian Islands: §GSlightly Threatened§!" 
- HIP_island_debuff3:0 "Hippogriffian Islands: §YHeavily Threatened§!" 
- HIP_island_debuff4:0 "Hippogriffian Islands: §YSlight Danger§!" 
- HIP_island_debuff5:0 "Hippogriffian Islands: §OIncreasingly Dangerous§!" 
- HIP_island_debuff6:0 "Hippogriffian Islands: §ODangerous§!"
- HIP_island_debuff7:0 "Hippogriffian Islands: §RVery Dangerous§!"
- HIP_island_debuff8:0 "Hippogriffian Islands: §RCatastrophe§!"
+ HIP_island_buff1:0 "Hippogriffian Islands: §GSafe§!" 
+ HIP_island_buff2:0 "Hippogriffian Islands: §GSlightly Threatened§!" 
+ HIP_island_buff3:0 "Hippogriffian Islands: §YHeavily Threatened§!" 
+ HIP_island_buff4:0 "Hippogriffian Islands: §YSlight Danger§!" 
+ HIP_island_buff5:0 "Hippogriffian Islands: §OIncreasingly Dangerous§!" 
+ HIP_island_buff6:0 "Hippogriffian Islands: §ODangerous§!"
+ HIP_island_buff7:0 "Hippogriffian Islands: §RVery Dangerous§!"
+ HIP_island_buff8:0 "Hippogriffian Islands: §RCatastrophe§!"
 
  GRF_intergrate_PLB:0 "Gain cores on the polarbears"
  GRF_intergrate_PNG:0 "Annex the Penguin AI"
@@ -163,3 +311,8 @@ l_english:
  CTH_annex_BAT:0 "Annex BAT"
  BAT_annex_CTH:0 "Annex CTH"
  WW_GRY_join_coltstream:0 "Join Coltstream"
+ 
+ WW_Nova_Old_Frontier_Buff:0 "Old Frontier's Self-Sufficiency"
+ WW_Nova_New_Frontier_Buff:0 "New Frontier's Ingenuity"
+
+ WW_red_orchestra_tt:0 "Motorized/Mechanized Infantry: \n Equipment Needed: §G-5§!"

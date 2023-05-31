@@ -457,7 +457,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_invite_erion"
 		add_stability = 0.05
 		add_popularity = { ideology = fascism popularity = 0.05 }
-		add_ideas = archon_hephaestus
+		activate_advisor = archon_hephaestus
 		hidden_effect = {
 			ROU = { country_event = { id = romau.19 days = 20 } }
 		}
@@ -504,6 +504,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_prepare_for_war"
 		add_ideas = war_economy
+		hidden_effect = {
+			set_country_flag = economic_laws_blocked
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 }
@@ -626,6 +629,7 @@ shared_focus = {
 		}
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
+			country_event = { id = ww.14 days = 1 }
 			every_state = {
 				limit = { 
 					OR = {
@@ -637,18 +641,7 @@ shared_focus = {
 				}
 				add_core_of = ROOT
 			}
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = ROU
-						is_core_of = YAL
-						is_core_of = KAT
-						is_core_of = ANG
-					}
-				}
-				set_compliance = 0
-			}
-		
+			add_threat = 25
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -955,6 +948,9 @@ shared_focus = {
 	prerequisite = {
 		focus = GRI_eros
 	}
+	bypass = {
+		has_country_flag = STW_reinstall_archon
+	}
 	x = 12
 	y = 5
 	completion_reward = {
@@ -977,14 +973,14 @@ shared_focus = {
 				NOT = { has_idea = archon_proteus }
 				has_free_political_advisor_slot = yes
 			}
-			add_ideas = archon_proteus
+			activate_advisor = archon_proteus
 		}
 		if = {
 			limit = {
 				NOT = { has_idea = archon_erion }
 				has_free_political_advisor_slot = yes
 			}
-			add_ideas = archon_erion
+			activate_advisor = archon_erion
 		}
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
@@ -1261,6 +1257,42 @@ shared_focus = {
 	will_lead_to_war_with = ANG
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_reward_loyalty"
+		hidden_effect = {
+			ROU = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = ROU
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = ROU transfer_troops = yes }
+			YAL = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes 
+						is_country_leader = no
+					}
+					set_nationality = GRI
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = YAL
+				}
+				add_core_of = GRI
+			}
+			annex_country = { target = YAL transfer_troops = yes }
+		}
 		if = {
 			limit = { 
 			    ROU = { 
@@ -5783,8 +5815,10 @@ shared_focus = {
 				uses = 1
 				category = light_fighter
 			}
+			generic_early_fighter = yes
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe
+				variant_name = "Early Fighter"
 				amount = 50
 			}
 		}
@@ -5805,7 +5839,7 @@ shared_focus = {
 			}
 			else = {
 				set_technology = {
-					early_fighter  = 1
+					early_fighter = 1
 				}
 				add_equipment_to_stockpile = {
 					type = fighter_equipment_0

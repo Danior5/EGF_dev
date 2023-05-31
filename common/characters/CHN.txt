@@ -1080,7 +1080,7 @@ characters={
 				nuclear_scientist 
 			}
 			research_bonus = {
-				nuclear = 0.150
+				nuclear = 0.15
 			}
 			ai_will_do = {
 				factor = 0.1
@@ -1107,7 +1107,7 @@ characters={
 				rocket_scientist 
 			}
 			research_bonus = {
-				rocketry = 0.150
+				rocketry = 0.15
 			}
 			ai_will_do = {
 				factor = 0.1
@@ -1192,9 +1192,9 @@ characters={
 			has_government = fascism
 		}		
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_helvia
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1222,9 +1222,9 @@ characters={
 			has_government = fascism
 		}		
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_aurantia
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1252,9 +1252,9 @@ characters={
 			has_government = fascism
 		}
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_yaria
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}
@@ -1288,9 +1288,9 @@ characters={
 			has_government = fascism
 		}
 		advisor={
-			removal_cost = -1
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
+			can_be_fired = no
 			allowed = {
 				original_tag = CHN
 			}

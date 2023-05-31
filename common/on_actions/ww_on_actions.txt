@@ -1,17 +1,113 @@
 on_actions = {
-
-	#OLE dying removes CHN core buffs
-	on_capitulation = {
+	# faction forming and opinion modifiers
+	on_startup = {
+		effect = {
+			#### WW 1.5 factions ####
+			HLR = {
+				country_event = { id = ww.5 days = 1400 }
+				#country_event = { id = ww.6 days = 1764 }
+			}
+			### NORTH GUYS ###
+			add_to_array = { global.ww_grandpa_eros_wild_ride = GRI }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = HLQ }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = FAT }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = TRD }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = JER }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = CHN }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = GRF }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = BAT }
+			add_to_array = { global.ww_grandpa_eros_wild_ride = CTH }
+			
+			### SOUTH GUYS ###
+			add_to_array = { global.ww_friendship_is_magic = RCT }
+			add_to_array = { global.ww_friendship_is_magic = LCT }
+			add_to_array = { global.ww_friendship_is_magic = WIT }
+			add_to_array = { global.ww_friendship_is_magic = NIM }
+			add_to_array = { global.ww_friendship_is_magic = BAK }
+			add_to_array = { global.ww_friendship_is_magic = GRY }
+			add_to_array = { global.ww_friendship_is_magic = WNG }
+			#add_to_array = { global.ww_friendship_is_magic = MIT }
+			add_to_array = { global.ww_friendship_is_magic = EQC }
+			add_to_array = { global.ww_friendship_is_magic = STG }
+			add_to_array = { global.ww_friendship_is_magic = CRY }
+			add_to_array = { global.ww_friendship_is_magic = EQS }
+			add_to_array = { global.ww_friendship_is_magic = HIP }
+			#add_to_array = { global.ww_friendship_is_magic = MIT }
+			
+			for_each_scope_loop = {
+			array = global.ww_grandpa_eros_wild_ride
+				for_each_scope_loop = {
+					array = global.ww_grandpa_eros_wild_ride
+						if = {
+							limit = { NOT = { tag = PREV } }
+							add_opinion_modifier = { target = PREV modifier = ww_besties }
+							add_reverse_opinion_modifier = { target = modifier = ww_besties }
+						}
+				}
+			}
+			
+			for_each_scope_loop = {
+			array = global.ww_friendship_is_magic
+				for_each_scope_loop = {
+					array = global.ww_friendship_is_magic
+						if = {
+							limit = { NOT = { tag = PREV } }
+							add_opinion_modifier = { target = PREV modifier = ww_besties }
+							add_reverse_opinion_modifier = { target = PREV modifier = ww_besties }
+						}
+				}
+			}		
+		}
+	}
+	#Losing Hjortland removes CHN core buffs
+	on_state_control_changed = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = {
-						tag = OLE
+					FROM = { 
+						OR = { 
+							is_in_faction_with = OLE  
+							tag = OLE
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					FROM.FROM = {
+						state = 76
 					}
 				}
-				CHN = {
-					remove_ideas = WW_CHN_core_buff
+			 	CHN = { 
+			 		remove_ideas = WW_CHN_core_buff
+			 	}
+			}
+		}
+		effect = { ## Libertaion of fairflanks news event
+			if = {
+				limit = {
+					FROM = { 
+						AND = {
+							OR = { 
+								is_in_faction_with = CHN  
+								tag = CHN
+							} 
+							has_country_flag = BAT_chemical_warfare_corps_flag
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS 
+							tag = EQS
+						} 
+					}
+					FROM.FROM = {
+						state = 172
+					}
 				}
+				every_country = { news_event = { id = ww.news.8 } }
 			}
 		}
 	}
@@ -33,6 +129,291 @@ on_actions = {
 			}
 		}
 	}
+	### South Win superevent triggers - MONKE CODE
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = CHN
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+						}
+						AND = {
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = BAT
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+						AND = {
+							CHN = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = CTH
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							JER = { has_capitulated = yes }
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+						AND = {
+							CHN = { has_capitulated = yes }
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = JER
+					}
+					OR = {
+						AND = {
+							GRI = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+						AND = {
+							GRI = { has_capitulated = yes }
+							CHN = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = GRI
+					}
+					OR = {
+						AND = {
+							JER = { has_capitulated = yes }
+							CTH = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							BAT = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+						}
+						AND = {
+							JER = { has_capitulated = yes }
+							CHN = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_south_win
+				}
+			}
+		}
+	}
+	### North Win superevent triggers - MONKE CODE
+	on_capitulation = { 
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = EQS
+					}
+					OR = {
+						HIP = { 
+							OR = {
+								has_capitulated = yes 
+								exists = no
+							}
+						}
+						AND = {
+							RCT = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = HIP
+					}
+					OR = {
+						EQS = { has_capitulated = yes }
+						AND = {
+							RCT = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = RCT
+					}
+					OR = {
+						AND = {
+							HIP = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							WNG = { has_capitulated = yes }
+						}
+						AND = {
+							EQS = { has_capitulated = yes }
+							WNG = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = WNG
+					}
+					OR = {
+						AND = {
+							HIP = { 
+								OR = {
+									has_capitulated = yes 
+									exists = no
+								}
+							}
+							RCT = { has_capitulated = yes }
+						}
+						AND = {
+							EQS = { has_capitulated = yes }
+							RCT = { has_capitulated = yes }
+						}
+					}
+				}
+				every_country = {
+					set_country_flag = big_event_custom_north_win
+				}
+			}
+		}
+	}
+	
+	
+	
+	
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {
@@ -72,6 +453,64 @@ on_actions = {
 						days = 7
 					}
 				}
+			}
+		}
+	}
+	#River Shield
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_in_faction_with = WNG
+							tag = WNG
+						}
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = JER
+							tag = JER
+						}
+					}
+					FROM.FROM = {
+						OR = {
+							state = 368
+							state = 515
+							state = 526
+							state = 409
+						}
+					}
+				}
+				WNG = {
+					country_event = ww_wng.5
+				}
+			}
+		}
+	}
+	#Taking EQC solves JER and GRI military industry issues
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_in_faction_with = EQC
+							tag = EQC
+						}
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = GRI
+							tag = GRI
+						}
+					}
+					FROM.FROM = {
+						state = 362
+					}
+				}
+				GRI = { remove_ideas = WW_overstrained_military_industry }
+				JER = { remove_ideas = WW_overstrained_military_industry }
 			}
 		}
 	}

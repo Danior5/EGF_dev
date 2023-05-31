@@ -8,12 +8,8 @@ WW_category = {
 		}
 		available = {
 			is_in_faction_with = WNG
-			STG = {
-				owns = 153
-			}
-			WNG = {
-				owns = 371
-			}
+			153 = { is_fully_controlled_by = STG }
+			371 = { is_fully_controlled_by = WNG }
 		}
 		icon = hol_draw_up_staff_plans
 		cost = 0
@@ -21,7 +17,10 @@ WW_category = {
 		remove_effect = {
 			153 = {
 				teleport_armies = {
-					to_state = 371
+					limit = {
+						tag = STG
+					}
+					to_state = 3144
 				}
 			}
 		}

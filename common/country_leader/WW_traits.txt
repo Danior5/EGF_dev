@@ -5,42 +5,86 @@
 leader_traits = {
 	queen_helvia_WW = {
 		random = no
-		consumer_goods_factor = 0.03
 		industrial_capacity_dockyard = 0.25
-		experience_gain_navy = 0.1
+		experience_gain_navy = 0.3
 		navy_fuel_consumption_factor = -0.5
+		modifier = {
+			hidden_modifier = {
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+		custom_modifier_tooltip = WW_HIP_primo_victoria2_tt
 		custom_modifier_tooltip = queen_helvia_admiral_tt
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_aurantia_WW = {
 		random = no
-		production_speed_industrial_complex_factor = 0.1
+		production_speed_industrial_complex_factor = 0.2
 		local_resources_factor = 0.15
 		production_lack_of_resource_penalty_factor = -0.2
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_yaria_WW = {
 		random = no
-		consumer_goods_factor = 0.09
-		political_power_gain = -0.15
-		research_speed_factor = 0.05
+		consumer_goods_factor = 0.07
+		political_power_gain = -0.1
+		research_speed_factor = 0.07
 		custom_modifier_tooltip = queen_yaria_research_tt
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	queen_argynnis_WW = {
 		random = no
 		production_factory_max_efficiency_factor = -0.1
+		army_attack_factor = 0.05
 		army_morale_factor = 0.1
 		custom_modifier_tooltip = queen_argynnis_research_tt	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	WW_refinery_guy = {
+		random = no
+		
+		production_speed_synthetic_refinery_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	corporatist_industrialist_WW = {
+		random = no
+		
+		consumer_goods_factor = -0.05
+		fascism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	warrior_of_fascism_WW = {
+		random = no
+		war_support_factor = 0.2
+		army_core_attack_factor = 0.075
+		org_loss_at_low_org_factor = -0.15
+		command_abilities_cost_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	protector_of_karthinia_WW = {
+		random = no
+		war_stability_factor = 0.2
+		army_core_defence_factor = 0.1
+		supply_combat_penalties_on_core_factor = -0.2
+		land_reinforce_rate = 0.05
+		max_dig_in = 5
 		ai_will_do = {
 			factor = 1
 		}

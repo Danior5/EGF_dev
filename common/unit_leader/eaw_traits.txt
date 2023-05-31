@@ -964,6 +964,27 @@ leader_traits = {
 		trait_xp_factor = {
 			artillery_specialist = 1	#+100%
 		}
+		
+		new_commander_weight = {
+			factor = 1
+			
+			modifier = {
+				FROM = { has_idea = superior_firepower_academy_spirit }
+				factor = 1.5
+			}
+			
+			modifier = {
+				FROM = { has_idea = best_of_the_best_spirit }
+				factor = 0
+			}
+			modifier = {
+				FROM = { has_idea = academy_scholarships_spirit }
+				factor = 0
+			}
+		}
+
+		defense_skill_factor = 1
+		logistics_skill_factor = 1
 	}
 
 	artillery_specialist = {
@@ -1378,8 +1399,8 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			army_attack_factor = 0.15
-			max_planning = -1
+			army_attack_factor = 0.05
+			max_planning_factor = -0.15
 		}
 
 		new_commander_weight = { factor = 0 }
@@ -2038,7 +2059,7 @@ leader_traits = {
 		trait_type = personality_trait
 
 		corps_commander_modifier = {
-			army_attack_factor = 0.50
+			army_attack_factor = 0.20
 			army_morale_factor = 0.50
 			attrition = -0.50
 			supply_consumption_factor = -0.50
@@ -2065,6 +2086,17 @@ leader_traits = {
 		modifier = {
 			boost_ideology_mission_factor = 0.25
 			operation_coup_government_outcome = 0.25
+		}
+	}
+	
+	operative_conmane = {
+		type = operative
+		trait_type = personality_trait
+
+		new_commander_weight = { factor = 0 }
+
+		modifier = {
+			own_operative_detection_chance_factor = -0.2 # so he overall has a -50% chance of being found
 		}
 	}
 

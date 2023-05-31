@@ -1,0 +1,97 @@
+WW_category = {
+	WW_GRI_invade_WAT_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				original_tag = GRI
+			}
+		}
+		visible = {
+			date > 1011.1.1
+			date < 1012.3.1
+		}
+		available = {
+			GRI = {
+				has_war_with = RCT
+			}
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			GRI = {
+				declare_war_on = {
+					target = WAT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	WW_RCT_invade_WAT_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				original_tag = RCT
+			}
+		}
+		visible = {
+			date > 1011.1.1
+			date < 1012.3.1
+		}
+		available = {
+			RCT = {
+				has_war_with = GRI
+			}
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			RCT = {
+				declare_war_on = {
+					target = WAT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	WW_WAT_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+				original_tag = WAT
+		}
+		activation = {
+			date > 1007.1.1
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 1874
+		fire_only_once = yes
+		
+		timeout_effect = {
+			every_core_state = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = GRI
+							is_controlled_by = FAT
+						}
+					}
+					set_state_flag = GRI_WAT_controls
+				}
+				else_if = {
+					limit = {
+						is_controlled_by = RCT
+					}
+					set_state_flag = RCT_WAT_controls
+				}
+			}
+			every_enemy_country = { white_peace = PREV }
+			country_event = {
+				id = ww.18
+				days = 1
+			}
+		}
+	}
+}
+	
+	

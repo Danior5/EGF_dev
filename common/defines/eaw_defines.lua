@@ -25,8 +25,8 @@ NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
 }
 
 NDefines.NResistance.GARRISON_MANPOWER_LOST_BY_ATTACK = 0.01 	-- Ratio of manpower lost by garrison at each attack on garrison (this number will be reduced by the hardness of garrison template)
-NDefines.NResistance.GARRISON_TEMPLATE_SCORE_IC_FACTOR = 0.7		-- ai uses these defines while calculating garrison template score of a template.
-NDefines.NResistance.GARRISON_TEMPLATE_SCORE_MANPOWER_FACTOR = 0.2  -- formula is (template_ic * ic_factor + template_manpower * manpower_factor ) / template_supression (lower is better)
+NDefines.NResistance.GARRISON_TEMPLATE_SCORE_IC_FACTOR = 1.4		-- ai uses these defines while calculating garrison template score of a template.
+NDefines.NResistance.GARRISON_TEMPLATE_SCORE_MANPOWER_FACTOR = 0.4  -- formula is (template_ic * ic_factor + template_manpower * manpower_factor ) / template_supression (lower is better)
 
 
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3.5 -- vanilla is 2.5
@@ -43,7 +43,7 @@ NDefines.NMilitary.BASE_FEMALE_DIVISIONAL_COMMANDER_CHANCE = 0.5 -- 50% of time 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3 -- Vanilla is 0.25
 NDefines.NNavy.SCREENS_TO_CAPITAL_RATIO = 3.0 -- Vanilla is 4.0, mostly AI stuff
 
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03 	-- Max planes that can join a combat comparing to the total strength of the ships, vanilla is 0.05
+--NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03 	-- Max planes that can join a combat comparing to the total strength of the ships, vanilla is 0.05
 
 
 NDefines.NAI.RESEARCH_LAND_DOCTRINE_NEED_GAIN_FACTOR = 0.12 -- Multiplies value based on relative military industry size / country size.
@@ -140,10 +140,18 @@ NDefines.NMilitary.TRAINING_ATTRITION = 0		  			   -- amount of extra attrition 
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01			-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 7	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 2.5					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.7		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
+NDefines.NAir.NAVAL_RECON_DETECTION_BALANCE_FACTOR = 0.7			-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam spotting.
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.5	-- damage reduction for incoming air attacks is clamped to this value at maximum.
+
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0			-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4
 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0							-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
@@ -151,6 +159,23 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment f
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3}		-- Experience needed to progress to the next level
 
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.050       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.50,
+		1.25,
+		1.00,
+		0.75,
+		0.50,
+		0.00, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.90,
+		0.80,
+		0.70,
+		0.60,
+		0.50,
+	}
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 -- Divs required to send volunteers
 NDefines.NDiplomacy.TENSION_DECAY = 0.1 -- default 0.1, changed from 0.25 in EaW vanilla

@@ -11,6 +11,20 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
+		owner = WAT
+		add_core_of = WAT
 
+		victory_points = { 3962 2 }
+
+		buildings = {
+			3962 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	resources = {
+		chromium = 6
+		aluminium = 8
 	}
 }

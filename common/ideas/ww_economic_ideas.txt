@@ -21,7 +21,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.5
 				production_speed_arms_factory_factor = -0.1
 				production_factory_efficiency_gain_factor = 0.5
-				industrial_capacity_factory = 0.2
+				industrial_capacity_factory = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -49,7 +49,6 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.3
 				production_speed_arms_factory_factor = -0.1
 				production_factory_efficiency_gain_factor = 0.3
-				industrial_capacity_factory = 0.1
 			}
 
 			cancel_if_invalid = no

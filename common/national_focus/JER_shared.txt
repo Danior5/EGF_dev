@@ -653,7 +653,7 @@
 		}
 		x = 4
 		y = 6
-		cost = 7.20
+		cost = 0
 		ai_will_do = {
 			factor = 10
 		}
@@ -858,6 +858,12 @@
 				legacy_id=-1
 			}
 			custom_effect_tooltip = JER_remi_stats_tp
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -879,8 +885,8 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_support_domestic_industries"
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
+			three_random_industrial_complex = yes
+			three_random_industrial_complex = yes
 		}
 	}
 	
@@ -985,7 +991,7 @@
 			is_subject = no
 		    has_government = neutrality
 		}
-		x = 3
+		x = 4
 		y = 9
 		cost = 5.80
 		ai_will_do = {
@@ -1123,80 +1129,79 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	
-	shared_focus = {
-		id = JER_reclaim_east
-		icon = GFX_goal_JER_reclaim_east
-		prerequisite = { focus = JER_old_glories }
-		available = {
-			has_war = no
-			is_subject = no
-		    has_government = neutrality
-		}
-		x = 5
-		y = 9
-		cost = 5.80
-		ai_will_do = {
-			factor = 11
-		}
-		will_lead_to_war_with = AVI
-		will_lead_to_war_with = ERI
-		
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JER_reclaim_east"
-			custom_effect_tooltip = JER_tarrin_decision_unlocked
-			if = {
-				limit = { 
-				    AVI = { 
-						exists = yes
-						NOT = {
-				           is_subject_of = ROOT 
-				           is_in_faction_with = ROOT 
-						   is_guaranteed_by = ROOT
-				        } 
-				    }
-				}
-				hidden_effect = {
-					create_wargoal = { 
-						type = annex_everything 
-						target = AVI 
-					}
-				}
-				create_wargoal = { 
-					type = annex_everything 
-					target = AVI 
-				}
-			}
-			if = {
-				limit = { 
-				    ERI = { 
-						exists = yes
-					    NOT = {
-				           is_subject_of = ROOT 
-				           is_in_faction_with = ROOT 
-						   is_guaranteed_by = ROOT
-				        }
-				    }
-				}
-				hidden_effect = {
-					create_wargoal = { 
-						type = annex_everything 
-						target = ERI 
-					}
-				}
-				create_wargoal = { 
-					type = annex_everything 
-					target = ERI 
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
+	#shared_focus = {
+	#	id = JER_reclaim_east
+	#	icon = GFX_goal_JER_reclaim_east
+	#	prerequisite = { focus = JER_old_glories }
+	#	available = {
+	#		has_war = no
+	#		is_subject = no
+	#	    has_government = neutrality
+	#	}
+	#	x = 5
+	#	y = 9
+	#	cost = 5.80
+	#	ai_will_do = {
+	#		factor = 11
+	#	}
+	#	will_lead_to_war_with = AVI
+	#	will_lead_to_war_with = ERI
+	#	
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus JER_reclaim_east"
+	#		custom_effect_tooltip = JER_tarrin_decision_unlocked
+	#		if = {
+	#			limit = { 
+	#			    AVI = { 
+	#					exists = yes
+	#					NOT = {
+	#			           is_subject_of = ROOT 
+	#			           is_in_faction_with = ROOT 
+	#					   is_guaranteed_by = ROOT
+	#			        } 
+	#			    }
+	#			}
+	#			hidden_effect = {
+	#				create_wargoal = { 
+	#					type = annex_everything 
+	#					target = AVI 
+	#				}
+	#			}
+	#			create_wargoal = { 
+	#				type = annex_everything 
+	#				target = AVI 
+	#			}
+	#		}
+	#		if = {
+	#			limit = { 
+	#			    ERI = { 
+	#					exists = yes
+	#				    NOT = {
+	#			           is_subject_of = ROOT 
+	#			           is_in_faction_with = ROOT 
+	#					   is_guaranteed_by = ROOT
+	#			        }
+	#			    }
+	#			}
+	#			hidden_effect = {
+	#				create_wargoal = { 
+	#					type = annex_everything 
+	#					target = ERI 
+	#				}
+	#			}
+	#			create_wargoal = { 
+	#				type = annex_everything 
+	#				target = ERI 
+	#			}
+	#		}
+	#	}
+	#	search_filters = { FOCUS_FILTER_ANNEXATION }
+	#}
 	
 	shared_focus = {
 		id = JER_reintegrate_old_lands
 		icon = GFX_goal_JER_reintegrate_old_lands
 		prerequisite = { focus = JER_reclaim_northwest }
-		prerequisite = { focus = JER_reclaim_east }
 		available = {
 		    has_government = neutrality
 			FEZ = {
@@ -3568,7 +3573,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_poach_support"
 			custom_effect_tooltip = JER_commie_5_democratic_10_fascism_10_tp
-            add_political_power = 50
+            add_political_power = 150
 			add_to_variable = { 
 			    var = JER.communist_support 
 				value = 5 
@@ -6234,9 +6239,6 @@
 			focus = JER_limit_presidential_executive
 			focus = JER_presidential_powers_expansion_act
 		}
-		bypass = {
-		    is_in_faction_with = FAT
-		}
 		mutually_exclusive = {
 		    focus = JER_work_with_the_republicans
 		}
@@ -8565,7 +8567,6 @@
 					}
 				}
 			}
-	
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}

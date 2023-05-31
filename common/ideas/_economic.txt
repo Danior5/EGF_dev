@@ -789,6 +789,30 @@ ideas = {
 						has_country_flag = ZES_pasarinha_economy_block
 					}
 				}
+				if = {
+					limit = {
+						original_tag = EQS
+					}
+					date > 1011.7.1
+				}
+				if = {
+					limit = {
+						original_tag = STG
+					}
+					date > 1011.7.1
+				}
+				if = {
+					limit = {
+						original_tag = CRY
+					}
+					date > 1011.7.1
+				}
+				if = {
+					limit = {
+						original_tag = RCT
+					}
+					date > 1011.7.1
+				}
 			}
 
 			ai_will_do = {
