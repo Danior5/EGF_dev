@@ -296,7 +296,7 @@ technologies = {
 			ship_radar_4
 			air_ground_radar_2
 			air_air_radar_2
-			#tank_radio_4
+			tank_radio_4
 		}
 
 		path = {
@@ -493,9 +493,9 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		#enable_equipment_modules = {
-			#tank_fire_control
-		#}
+		enable_equipment_modules = {
+			tank_fire_control
+		}
 
 		path = {
 			leads_to_tech = advanced_encryption

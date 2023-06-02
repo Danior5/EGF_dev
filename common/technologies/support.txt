@@ -405,9 +405,9 @@ technologies = {
 
 	tech_recon = {
 
-		#enable_equipment_modules = {
-		#	improved_periscopes
-		#}
+		enable_equipment_modules = {
+			improved_periscopes
+		}
 
 		enable_subunits = {
 			recon
@@ -471,9 +471,9 @@ technologies = {
 
 	tech_recon2 = {
 
-		#enable_equipment_modules = {
-		#	optical_rangefinder
-		#}
+		enable_equipment_modules = {
+			optical_rangefinder
+		}
 
 		category_recon = {
 			recon = 2
