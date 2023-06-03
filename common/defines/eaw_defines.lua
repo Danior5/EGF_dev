@@ -156,6 +156,8 @@ NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0							-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
 
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
+
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3}		-- Experience needed to progress to the next level
 
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.050       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -181,6 +183,8 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 -- Divs required to send v
 NDefines.NDiplomacy.TENSION_DECAY = 0.1 -- default 0.1, changed from 0.25 in EaW vanilla
 
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				-- Impact of being in defensive war
+
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05				-- Conversion scale for planes to air supply
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- HOLD
