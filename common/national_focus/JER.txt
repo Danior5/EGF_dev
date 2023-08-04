@@ -1,3 +1,128 @@
+focus_tree = {
+	id = aquileian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 3000 y = 1100 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+}
+
+focus_tree = {
+	id = aquileian_focus_fascist_victory
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2300 y = 1800 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+	shared_focus = JER_MPA_triumphant
+}
+
+focus_tree = {
+	id = aquileian_focus_democratic_victory
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 3200 y = 1600 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+	shared_focus = JER_the_aquila_concordant
+}
+
+focus_tree = {
+	id = aquileian_focus_communist_victory
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 3000 y = 1800 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+	shared_focus = JER_PAT_triumphant
+}
+
+focus_tree = {
+	id = aquileian_focus_monarchist_victory
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2300 y = 1800 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+	shared_focus = JER_viviene_triumphant
+}
+
+focus_tree = {
+	id = aquileian_pan_griffonian_victory
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = JER
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2300 y = 1800 }
+
+	shared_focus = JER_state_of_aquileia
+	shared_focus = JER_fight_for_freedom
+	shared_focus = JER_liberal_industry
+	shared_focus = JER_army_reforms
+	shared_focus = JER_the_griffonian_dream
+}
+
 ### Monarchism ###
 	shared_focus = {
 		id = JER_state_of_aquileia
@@ -18,7 +143,7 @@
 					}
 				}
 				NOT = {
-						has_completed_focus = JER_fight_for_freedom
+					has_completed_focus = JER_fight_for_freedom
 				}
 			}
 		}
@@ -64,8 +189,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 2
+		x = -2
 		y = 1
+		relative_position_id = JER_state_of_aquileia
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -91,8 +217,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 1
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = JER_help_rila
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -124,8 +251,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 1
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = JER_send_guns_to_rila
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -174,8 +302,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 1
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = JER_arrest_officers
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -208,8 +337,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 4
+		x = 0
 		y = 1
+		relative_position_id = JER_state_of_aquileia
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -232,8 +362,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 3
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = JER_expand_info_network
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -259,8 +390,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 5
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = JER_expand_info_network
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -308,8 +440,9 @@
 			    } 
 			}
 		}
-		x = 4
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = JER_help_westkeep
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -349,8 +482,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 3
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = JER_help_westkeep
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -384,8 +518,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 5
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = JER_help_vinovia
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -418,8 +553,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 6
+		x = 2
 		y = 1
+		relative_position_id = JER_state_of_aquileia
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -445,8 +581,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 7
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = JER_help_pridea
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -473,8 +610,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 7
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = JER_give_dennis_free_reign
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -521,8 +659,9 @@
 				has_global_flag = JER_revolution_ended
 			}
 		}
-		x = 7
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = JER_mass_crackdowns
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -569,8 +708,9 @@
 				}
 		    }
 	    }
-		x = 4
-		y = 5
+		x = 1
+		y = 1
+		relative_position_id = JER_deal_with_republican_MPA
 		cost = 4.40
 		ai_will_do = {
 			factor = 20
@@ -592,8 +732,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 2
-		y = 6
+		x = -2
+		y = 1
+		relative_position_id = JER_to_kill_an_idea
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -617,8 +758,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 1
-		y = 7
+		x = -1
+		y = 1
+		relative_position_id = JER_begin_reforming_education_system
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -651,9 +793,10 @@
 			JRR = { exists = no }
 			VIN = { exists = no }
 		}
-		x = 4
-		y = 6
-		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = JER_to_kill_an_idea
+		cost = 7.20
 		ai_will_do = {
 			factor = 10
 		}
@@ -766,8 +909,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 3
-		y = 7
+		x = -1
+		y = 2
+		relative_position_id = JER_to_kill_an_idea
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -787,8 +931,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 5
-		y = 7
+		x = 1
+		y = 2
+		relative_position_id = JER_to_kill_an_idea
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -808,8 +953,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 6
-		y = 6
+		x = 2
+		y = 1
+		relative_position_id = JER_to_kill_an_idea
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -828,8 +974,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 7
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = JER_initial_army_reforms
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -858,12 +1005,6 @@
 				legacy_id=-1
 			}
 			custom_effect_tooltip = JER_remi_stats_tp
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
 		}
 	}
 	
@@ -877,16 +1018,17 @@
 		available = {
 		    has_government = neutrality
 	    }
-		x = 0
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = JER_royal_academy
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_support_domestic_industries"
-			three_random_industrial_complex = yes
-			three_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
 		}
 	}
 	
@@ -898,7 +1040,8 @@
 		    has_government = neutrality
 	    }
 		x = 0
-		y = 9
+		y = 1
+		relative_position_id = JER_support_domestic_industries
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -921,8 +1064,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 2
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = JER_royal_academy
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -942,8 +1086,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 2
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = JER_new_law_code
 		cost = 7.20
 		ai_will_do = {
 			factor = 12
@@ -969,8 +1114,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 4
-		y = 8
+		x = 0
+		y = 2
+		relative_position_id = JER_integrate_the_loyal
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -991,8 +1137,9 @@
 			is_subject = no
 		    has_government = neutrality
 		}
-		x = 4
-		y = 9
+		x = -1
+		y = 1
+		relative_position_id = JER_old_glories
 		cost = 5.80
 		ai_will_do = {
 			factor = 11
@@ -1123,6 +1270,22 @@
 				create_wargoal = { 
 					type = annex_everything 
 					target = FLO 
+				}
+			}
+			hidden_effect = {
+				if = { 
+					limit = { 
+						HEL = { 
+							exists = yes 
+							is_subject = no
+						}
+					}
+					HEL = {
+					add_timed_idea = {
+						idea = HEL_desperate_defense
+						days = 300
+					}
+					}
 				}
 			}
 		}
@@ -1269,8 +1432,9 @@
 			    }
 		    }
 		}
-		x = 4
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = JER_reclaim_northwest
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -1310,8 +1474,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 6
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = JER_reward_the_ponies
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -1334,8 +1499,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 6
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = JER_pony_mage_regiments
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -1360,8 +1526,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 8
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = JER_new_officers
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -1373,28 +1540,38 @@
 			    ideology = democratic
 			    popularity = 0.05
 		    }
-			add_corps_commander_role = {
-	            character = JER_morning_star 
-	            traits = { infantry_leader pony_race_trait }
-	            skill = 2
-	            attack_skill = 1
-	            defense_skill = 2
-	            planning_skill = 2
-	            logistics_skill = 2
-				legacy_id=-1
-            }
-			custom_effect_tooltip = JER_agnes_stats_tp
-			add_corps_commander_role = {
-				character = JER_felix_murat
-				traits = { trickster griffon_race_trait }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 2
-				legacy_id=-1
+			if = {
+				limit = {
+					has_character = JER_morning_star
+				}
+				add_corps_commander_role = {
+					character = JER_morning_star 
+					traits = { infantry_leader pony_race_trait }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+					legacy_id=-1
+				}
+				custom_effect_tooltip = JER_agnes_stats_tp
 			}
-			custom_effect_tooltip = JER_felix_stats_tp
+			if = {
+				limit = {
+					has_character = JER_felix_murat
+				}
+				add_corps_commander_role = {
+					character = JER_felix_murat
+					traits = { trickster griffon_race_trait }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 2
+					legacy_id=-1
+				}
+				custom_effect_tooltip = JER_felix_stats_tp
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
@@ -1406,8 +1583,9 @@
 		available = {
 		    has_government = neutrality
 		}
-		x = 8
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = JER_pardon_republican_officers
 		cost = 7.20
 		ai_will_do = {
 			factor = 10
@@ -1493,10 +1671,14 @@
 			}
 		}
 		bypass = {
-			tag = GRD
+			OR = {
+				has_war_with = GRD
+				tag = GRD
+			}
 		}
-		x = 4
-		y = 11
+		x = 0
+		y = 1
+		relative_position_id = JER_reintegrate_old_lands
 		cost = 10.00
 		ai_will_do = {
 			factor = 12
@@ -1710,12 +1892,16 @@
 		id = JER_fight_for_freedom
 		icon = GFX_goal_JER_republicanism2
 		mutually_exclusive = { focus = JER_state_of_aquileia }
-		x = 20
+		x = 19
 		y = 0
 		offset = {
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
@@ -1732,7 +1918,7 @@
 					}
 				}
 				NOT = {
-						has_completed_focus = JER_state_of_aquileia
+					has_completed_focus = JER_state_of_aquileia
 				}
 			}
 		}
@@ -1788,15 +1974,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 18
+		x = -2
 		y = 1
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		relative_position_id = JER_fight_for_freedom
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -1822,15 +2002,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 17
-		y = 2
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_infiltrate_pridea
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -1857,15 +2031,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 17
-		y = 3
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_spread_leaflets
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -1912,15 +2080,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 18
-		y = 4
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_target_the_worst
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -1956,15 +2118,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 20
+		x = 0
 		y = 1
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		relative_position_id = JER_fight_for_freedom
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -1990,15 +2146,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 19
-		y = 2
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_infiltrate_aquila
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2048,15 +2198,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 19
-		y = 3
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_smuggle_the_weapons
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2101,15 +2245,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 21
-		y = 2
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_infiltrate_aquila
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2154,15 +2292,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 21
-		y = 3
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_ties_in_MPA
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2209,15 +2341,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 20
-		y = 4
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_prepare_the_diaspora
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2263,15 +2389,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 19
-		y = 5
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_infiltrate_the_palace
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2318,15 +2438,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 21
-		y = 5
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_infiltrate_the_palace
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -2352,15 +2466,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 22
+		x = 2
 		y = 1
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		relative_position_id = JER_fight_for_freedom
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2386,15 +2494,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 23
-		y = 2
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_infiltrate_vinovia
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2421,15 +2523,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 23
-		y = 3
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_encourage_extremeism
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2476,15 +2572,9 @@
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
-		x = 22
-		y = 4
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_political_slander
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2557,11 +2647,17 @@
 							    division_template = "Griffon Infantry Division" 
 							}
 		                }
-						JER_morning_star = {
-							set_nationality = JER
-						}
-						JEB_gerard_simon_de_berger = {
-							set_nationality = JER
+						#shes not in JEB
+						#JER_morning_star = {
+						#	set_nationality = JER
+						#}
+						if = {
+							limit = {
+								has_character = JEB_gerard_simon_de_berger
+							}
+							JEB_gerard_simon_de_berger = {
+								set_nationality = JER
+							}
 						}
 					    JER = { 
 					        annex_country = { 
@@ -2660,15 +2756,9 @@
 				}
 		    }
 	    }
-		x = 20
-		y = 6
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_convince_the_officers
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2709,15 +2799,9 @@
 		available = {
 			always = no
 		}
-		x = 14
-		y = 7
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -6
+		y = 1
+		relative_position_id = JER_the_triumph
 		cost = 4.40
 		ai_will_do = {
 			factor = 20
@@ -2738,15 +2822,9 @@
 		available = {
 			always = no
 		}
-		x = 18
-		y = 7
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -2
+		y = 1
+		relative_position_id = JER_the_triumph
 		cost = 4.40
 		ai_will_do = {
 			factor = 20
@@ -2767,15 +2845,9 @@
 		available = {
 			always = no
 		}
-		x = 22
-		y = 7
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 2
+		y = 1
+		relative_position_id = JER_the_triumph
 		cost = 4.40
 		ai_will_do = {
 			factor = 20
@@ -2796,15 +2868,9 @@
 		available = {
 			always = no
 		}
-		x = 26
-		y = 7
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 6
+		y = 1
+		relative_position_id = JER_the_triumph
 		cost = 4.40
 		ai_will_do = {
 			factor = 20
@@ -2829,15 +2895,9 @@
 				}
 		    }
 	    }
-		x = 15
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_PAT_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -2883,15 +2943,9 @@
 				}
 		    }
 	    }
-		x = 13
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_PAT_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -2944,15 +2998,9 @@
 				}
 		    }
 	    }
-		x = 14
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_attract_FJA_members
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3024,15 +3072,9 @@
 				}
 		    }
 	    }
-		x = 17
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_FJA_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3100,15 +3142,9 @@
 				}
 		    }
 	    }
-		x = 16
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_mend_the_divides
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3173,15 +3209,9 @@
 				}
 		    }
 	    }
-		x = 18
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_mend_the_divides
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3243,15 +3273,9 @@
 			focus = JER_MPA_victory
 		    focus = JER_national_party
 		}
-		x = 19
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_FJA_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 20
@@ -3277,15 +3301,9 @@
 			focus = JER_MPA_victory
 		    focus = JER_national_party
 		}
-		x = 21
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_MPA_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3297,7 +3315,46 @@
 			}
 		}
 	}
-	
+
+	shared_focus = {
+		id = JER_republican_national_academy
+		icon = GFX_goal_JER_republican_national_academy
+		prerequisite = { 
+		    focus = JER_educate_the_populace
+		}
+		prerequisite = { 
+		    focus = JER_delegalize_the_monarchy
+		}
+		available = {
+		    custom_trigger_tooltip = {
+			    tooltip = JER_reps_175_tp
+				check_variable = { 
+				    JER.parliament_max > 174 
+				}
+		    }
+	    }
+		x = 1
+		y = 1
+		relative_position_id = JER_educate_the_populace
+		cost = 5.80
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JER_republican_national_academy"
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+			else = {
+				add_political_power = 150
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
 	shared_focus = {
 		id = JER_social_security_for_all_aquileians
 		icon = GFX_goal_JER_social_security_for_all_aquileians
@@ -3312,15 +3369,9 @@
 				}
 		    }
 	    }
-		x = 20
-		y = 10
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_republican_national_academy
 		cost = 5.80
 		ai_will_do = {
 			factor = 12
@@ -3378,15 +3429,9 @@
 				}
 		    }
 	    }
-		x = 23
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_MPA_victory
 		cost = 5.80
 		ai_will_do = {
 			factor = 14
@@ -3427,15 +3472,9 @@
 				}
 		    }
 	    }
-		x = 22
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_wrangle_the_party
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3491,15 +3530,9 @@
 				}
 		    }
 	    }
-		x = 24
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_wrangle_the_party
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3557,15 +3590,9 @@
 				}
 		    }
 	    }
-		x = 25
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_national_party
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3573,7 +3600,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_poach_support"
 			custom_effect_tooltip = JER_commie_5_democratic_10_fascism_10_tp
-            add_political_power = 150
+            add_political_power = 50
 			add_to_variable = { 
 			    var = JER.communist_support 
 				value = 5 
@@ -3620,15 +3647,9 @@
 				}
 		    }
 	    }
-		x = 27
-		y = 8
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_national_party
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3681,15 +3702,9 @@
 				}
 		    }
 	    }
-		x = 26
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_poach_support
 		cost = 5.80
 		ai_will_do = {
 			factor = 11
@@ -3753,15 +3768,9 @@
 				}
 		    }
 	    }
-		x = 15
-		y = 10
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_union_representation_act
 		cost = 5.80
 		ai_will_do = {
 			factor = 11
@@ -3834,15 +3843,9 @@
 				}
 		    }
 	    }
-		x = 17
-		y = 10
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_tax_policy_revisions
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -3899,51 +3902,6 @@
 	}
 	
 	shared_focus = {
-		id = JER_republican_national_academy
-		icon = GFX_goal_JER_republican_national_academy
-		prerequisite = { 
-		    focus = JER_educate_the_populace
-		}
-		prerequisite = { 
-		    focus = JER_delegalize_the_monarchy
-		}
-		available = {
-		    custom_trigger_tooltip = {
-			    tooltip = JER_reps_175_tp
-				check_variable = { 
-				    JER.parliament_max > 174 
-				}
-		    }
-	    }
-		x = 20
-		y = 9
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 5.80
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JER_republican_national_academy"
-			if = {
-				limit = {
-					amount_research_slots < 5
-				}
-				add_research_slot = 1
-			}
-			else = {
-				add_political_power = 150
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	
-	shared_focus = {
 		id = JER_institute_of_cultural_preservation
 		icon = GFX_goal_JER_institute_of_cultural_preservation
 		prerequisite = { 
@@ -3960,15 +3918,9 @@
 				}
 		    }
 	    }
-		x = 23
-		y = 10
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_repatriation_act
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4038,15 +3990,9 @@
 				}
 		    }
 	    }
-		x = 25
-		y = 10
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_reform_the_national_bank_of_aquileia
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4100,7 +4046,7 @@
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 	}
-	
+
 	shared_focus = {
 		id = JER_unite_all_of_aquileia
 		icon = GFX_goal_JER_unite_all_of_aquileia
@@ -4123,15 +4069,9 @@
 				}
 		    }
 	    }
-		x = 20
-		y = 11
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_social_security_for_all_aquileians
 		cost = 5.80
 		ai_will_do = {
 			factor = 100
@@ -4279,15 +4219,9 @@
 		mutually_exclusive = { focus = JER_aquileia_reclaimed }
 		mutually_exclusive = { focus = JER_patriotic_fervour }
 		mutually_exclusive = { focus = JER_the_dream_aint_dead }
-		x = 15
-		y = 12
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -5
+		y = 1
+		relative_position_id = JER_unite_all_of_aquileia
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4317,15 +4251,9 @@
 		mutually_exclusive = { focus = JER_the_shining_star_of_socialism }
 		mutually_exclusive = { focus = JER_patriotic_fervour }
 		mutually_exclusive = { focus = JER_the_dream_aint_dead }
-		x = 18
-		y = 12
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -2
+		y = 1
+		relative_position_id = JER_unite_all_of_aquileia
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4355,15 +4283,9 @@
 		mutually_exclusive = { focus = JER_the_shining_star_of_socialism }
 		mutually_exclusive = { focus = JER_aquileia_reclaimed }
 		mutually_exclusive = { focus = JER_the_dream_aint_dead }
-		x = 22
-		y = 12
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 2
+		y = 1
+		relative_position_id = JER_unite_all_of_aquileia
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4393,15 +4315,9 @@
 		mutually_exclusive = { focus = JER_the_shining_star_of_socialism }
 		mutually_exclusive = { focus = JER_aquileia_reclaimed }
 		mutually_exclusive = { focus = JER_patriotic_fervour }
-		x = 25
-		y = 12
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 5
+		y = 1
+		relative_position_id = JER_unite_all_of_aquileia
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4438,15 +4354,9 @@
 				}
 			}
 	    }
-		x = 14
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_the_shining_star_of_socialism
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4523,15 +4433,9 @@
 				}
 		    }
 	    }
-		x = 13
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_bring_the_unions_into_politics
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4595,15 +4499,9 @@
 				}
 		    }
 	    }
-		x = 15
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_bring_the_unions_into_politics
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4670,15 +4568,9 @@
 				}
 		    }
 	    }
-		x = 14
-		y = 15
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_civil_nationalism
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4747,15 +4639,9 @@
 				}
 			}
 	    }
-		x = 16
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_the_shining_star_of_socialism
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4831,15 +4717,9 @@
 				}
 		    }
 	    }
-		x = 16
-		y = 16
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 3
+		relative_position_id = JER_invest_in_the_people
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4907,15 +4787,9 @@
 				}
 			}
 	    }
-		x = 18
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_aquileia_reclaimed
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -4992,15 +4866,9 @@
 				}
 		    }
 	    }
-		x = 17
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_anti_monopoly_laws
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5067,15 +4935,9 @@
 				}
 		    }
 	    }
-		x = 19
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_anti_monopoly_laws
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5142,15 +5004,9 @@
 				}
 		    }
 	    }
-		x = 18
-		y = 15
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_the_republican_gednermerie
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5213,15 +5069,9 @@
 			focus = JER_patriotic_fervour
 			focus = JER_the_dream_aint_dead
 		}
-		x = 20
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 2
+		y = 1
+		relative_position_id = JER_aquileia_reclaimed
 		cost = 5.80
 		ai_will_do = {
 			factor = 15
@@ -5311,15 +5161,9 @@
 				}
 			}
 	    }
-		x = 22
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_patriotic_fervour
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5399,15 +5243,9 @@
 				}
 		    }
 	    }
-		x = 21
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_establish_state_unions
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5471,15 +5309,9 @@
 				}
 		    }
 	    }
-		x = 23
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_establish_state_unions
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5549,15 +5381,9 @@
 				}
 		    }
 	    }
-		x = 22
-		y = 15
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_aquileiafication_campaign
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5632,15 +5458,9 @@
 				}
 			}
 	    }
-		x = 24
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 2
+		y = 1
+		relative_position_id = JER_patriotic_fervour
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5728,15 +5548,9 @@
 				}
 			}
 	    }
-		x = 26
-		y = 13
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_the_dream_aint_dead
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5813,15 +5627,9 @@
 				}
 		    }
 	    }
-		x = 25
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_support_military_industrial_complex
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5885,15 +5693,9 @@
 				}
 		    }
 	    }
-		x = 27
-		y = 14
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_support_military_industrial_complex
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -5963,15 +5765,9 @@
 				is_country_leader = yes
 			}
 	    }
-		x = 26
-		y = 15
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_griffonian_citizenship_act
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -6038,15 +5834,9 @@
 				}
 		    }
 	    }
-		x = 24
-		y = 16
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 3
+		relative_position_id = JER_army_expansion_act
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -6123,15 +5913,9 @@
 				is_core_of = ROOT
 			}
 		}
-		x = 20
-		y = 15
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_integrate_the_borderlands
 		cost = 4.40
 		ai_will_do = {
 			factor = 10
@@ -6159,15 +5943,9 @@
 				}
 		    }
 	    }
-		x = 20
-		y = 16
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = JER_the_tarrin_question
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -6239,18 +6017,15 @@
 			focus = JER_limit_presidential_executive
 			focus = JER_presidential_powers_expansion_act
 		}
+		bypass = {
+		    is_in_faction_with = FAT
+		}
 		mutually_exclusive = {
 		    focus = JER_work_with_the_republicans
 		}
-		x = 18
-		y = 17
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 2
+		y = 1
+		relative_position_id = JER_limit_presidential_executive
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -6303,15 +6078,9 @@
 		mutually_exclusive = {
 		    focus = JER_on_our_own
 		}
-		x = 22
-		y = 17
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -2
+		y = 1
+		relative_position_id = JER_presidential_powers_expansion_act
 		cost = 5.80
 		ai_will_do = {
 			factor = 10
@@ -6360,17 +6129,14 @@
 			}
 		}
 		bypass = {
-			has_war_with = GRD
-		}
-		x = 20
-		y = 18
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
+			OR = {
+				has_war_with = GRD
+				tag = GRD
 			}
 		}
+		x = 2
+		y = 1
+		relative_position_id = JER_on_our_own
 		cost = 8.60
 		ai_will_do = {
 			factor = 10
@@ -6599,6 +6365,10 @@
 			x = -14
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_state_of_aquileia
 			}
 		}
@@ -6606,6 +6376,10 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
@@ -7047,6 +6821,14 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_expand_the_shipyards"
 			377 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			376 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7054,19 +6836,11 @@
 					instant_build = yes
 				}
 			}
-			376 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
 			435 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7091,18 +6865,32 @@
 			custom_effect_tooltip = JER_periphery_projects_tp
 		}
 	}
-	
-	### Navy Tree ###
-	
+
+	### Military Trees ###
+
 	shared_focus = {
-		id = JER_reforming_the_admirality
-		icon = GFX_goal_JER_reforming_the_admirality
-		x = 35
-		y = 1
+		id = JER_army_reforms
+		icon = GFX_goal_JER_army_reform
+		available = {
+		    custom_trigger_tooltip = {
+			    tooltip = JER_political_issues_solved_tp
+				OR = {
+					has_global_flag = JER_revolution_begun
+					has_global_flag = JER_revolution_ended
+					has_global_flag = JER_revolution_ended_2
+				}
+		    }
+	    }
+		x = 41
+		y = 0
 		offset = {
 			x = -14
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_state_of_aquileia
 			}
 		}
@@ -7110,10 +6898,36 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
-		cost = 5.80
+		cost = 4.40
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JER_army_reforms"
+			custom_effect_tooltip = JER_army_reforms_tp
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+
+	### Navy Tree ###
+	
+	shared_focus = {
+		id = JER_reforming_the_admirality
+		icon = GFX_goal_JER_reforming_the_admirality
+		x = -6
+		y = 1
+		relative_position_id = JER_army_reforms
+		cost = 1
 		prerequisite = { 
 			focus = JER_army_reforms 
 		}
@@ -7125,29 +6939,17 @@
 			country_event = { 
 				id = aquileia.189
 			}
+			unlock_decision_tooltip = WW_JER_move_dockyards
 		}
 	}
 	
 	shared_focus = {
 		id = JER_destroyer_developments
 		icon = GFX_goal_JER_destroyer_developments
-		x = 34
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = -1
+		y = 1
+		relative_position_id = JER_reforming_the_admirality
+		cost = 1
 		prerequisite = { 
 			focus = JER_reforming_the_admirality 
 		}
@@ -7186,23 +6988,10 @@
 	shared_focus = {
 		id = JER_restart_battleship_developments
 		icon = GFX_goal_JER_restart_battleship_developments
-		x = 33
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = -1
+		y = 1
+		relative_position_id = JER_destroyer_developments
+		cost = 1
 		prerequisite = { 
 			focus = JER_expand_the_shipyards 
 		}
@@ -7240,23 +7029,10 @@
 	shared_focus = {
 		id = JER_cruisers
 		icon = GFX_goal_JER_cruisers
-		x = 34
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = 0
+		y = 2
+		relative_position_id = JER_destroyer_developments
+		cost = 1
 		prerequisite = { 
 			focus = JER_expand_the_shipyards 
 		}
@@ -7293,23 +7069,10 @@
 	shared_focus = {
 		id = JER_naval_bomber_dominance
 		icon = GFX_goal_JER_naval_bomber_dominance
-		x = 35
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = 1
+		y = 1
+		relative_position_id = JER_cruisers
+		cost = 1
 		prerequisite = { 
 			focus = JER_cruisers 
 		}
@@ -7345,23 +7108,10 @@
 	shared_focus = {
 		id = JER_submarine_development
 		icon = GFX_goal_JER_submarine_development
-		x = 35
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = 1
+		y = 1
+		relative_position_id = JER_destroyer_developments
+		cost = 1
 		prerequisite = { 
 			focus = JER_expand_the_shipyards 
 		}
@@ -7403,23 +7153,10 @@
 	shared_focus = {
 		id = JER_pridean_marine_traditions
 		icon = GFX_goal_JER_pridean_marine_traditions
-		x = 36
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = 1
+		y = 1
+		relative_position_id = JER_reforming_the_admirality
+		cost = 1
 		prerequisite = { 
 			focus = JER_reforming_the_admirality 
 		}
@@ -7441,23 +7178,10 @@
 	shared_focus = {
 		id = JER_naval_aviation_transport_department
 		icon = GFX_goal_JER_naval_aviation_transport_department
-		x = 36
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 7.20
+		x = 0
+		y = 2
+		relative_position_id = JER_pridean_marine_traditions
+		cost = 1
 		prerequisite = { 
 			focus = JER_pridean_marine_traditions 
 		}
@@ -7479,67 +7203,11 @@
     ### Army Tree ###
 	
 	shared_focus = {
-		id = JER_army_reforms
-		icon = GFX_goal_JER_army_reform
-		available = {
-		    custom_trigger_tooltip = {
-			    tooltip = JER_political_issues_solved_tp
-				OR = {
-					has_global_flag = JER_revolution_begun
-					has_global_flag = JER_revolution_ended
-					has_global_flag = JER_revolution_ended_2
-				}
-		    }
-	    }
-		x = 41
-		y = 0
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
-		cost = 4.40
-		ai_will_do = {
-			factor = 15
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JER_army_reforms"
-			custom_effect_tooltip = JER_army_reforms_tp
-			army_experience = 25
-			navy_experience = 25
-			air_experience = 25
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
-	}
-	
-	shared_focus = {
 		id = JER_adapting_new_stategies
 		icon = GFX_goal_JER_adapting_new_strategies
-		x = 41
+		x = 0
 		y = 1
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		relative_position_id = JER_army_reforms
 		cost = 5.80
 		prerequisite = { 
 			focus = JER_army_reforms 
@@ -7558,22 +7226,9 @@
 	shared_focus = {
 		id = JER_tank_modernisation
 		icon = GFX_goal_JER_tank_modernisation
-		x = 38
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -3
+		y = 1
+		relative_position_id = JER_adapting_new_stategies
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_adapting_new_stategies 
@@ -7597,22 +7252,9 @@
 	shared_focus = {
 		id = JER_medium_tanks
 		icon = GFX_goal_JER_medium_tanks
-		x = 37
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_tank_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_tank_modernisation 
@@ -7635,22 +7277,9 @@
 	shared_focus = {
 		id = JER_heavier_tanks
 		icon = GFX_goal_JER_heavier_tanks
-		x = 37
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_medium_tanks
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_medium_tanks 
@@ -7673,22 +7302,9 @@
 	shared_focus = {
 		id = JER_equipment_modernisation
 		icon = GFX_goal_JER_equipment_modernisation
-		x = 40
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_adapting_new_stategies
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_adapting_new_stategies 
@@ -7711,22 +7327,9 @@
 	shared_focus = {
 		id = JER_support_equipment_modernisation
 		icon = GFX_goal_JER_support_equipment_modernisation
-		x = 42
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_adapting_new_stategies
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_adapting_new_stategies 
@@ -7749,22 +7352,9 @@
 	shared_focus = {
 		id = JER_unit_mechanisation
 		icon = GFX_goal_JER_unit_mechanisation
-		x = 39
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_equipment_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_equipment_modernisation 
@@ -7790,22 +7380,9 @@
 	shared_focus = {
 		id = JER_mobile_logistics_corps
 		icon = GFX_goal_JER_mobile_logistics_corps
-		x = 38
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_unit_mechanisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_unit_mechanisation 
@@ -7832,22 +7409,9 @@
 	shared_focus = {
 		id = JER_assault_section_memes
 		icon = GFX_goal_JER_assault_section_memes
-		x = 41
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_equipment_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_equipment_modernisation 
@@ -7874,22 +7438,9 @@
 	shared_focus = {
 		id = JER_medical_service_corps
 		icon = GFX_goal_JER_medical_service_corps
-		x = 42
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_assault_section_memes
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_assault_section_memes 
@@ -7913,22 +7464,9 @@
 	shared_focus = {
 		id = JER_artillery_modernisation
 		icon = GFX_goal_JER_artillery_modernisation
-		x = 40
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_equipment_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_equipment_modernisation 
@@ -7951,22 +7489,9 @@
 	shared_focus = {
 		id = JER_anti_tank_advancements
 		icon = GFX_goal_JER_anti_tank_advancements
-		x = 39
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_artillery_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_artillery_modernisation 
@@ -7989,22 +7514,9 @@
 	shared_focus = {
 		id = JER_special_forces_department
 		icon = GFX_goal_JER_special_forces_department
-		x = 41
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_artillery_modernisation
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_artillery_modernisation 
@@ -8033,22 +7545,9 @@
 	shared_focus = {
 		id = JER_reforming_the_airforce
 		icon = GFX_goal_JER_reforming_the_airforce
-		x = 45
+		x = 4
 		y = 1
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		relative_position_id = JER_army_reforms
 		cost = 5.80
 		prerequisite = { 
 			focus = JER_army_reforms 
@@ -8067,22 +7566,9 @@
 	shared_focus = {
 		id = JER_develop_airplane_industry
 		icon = GFX_goal_JER_develop_airplane_industry
-		x = 44
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_reforming_the_airforce
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_reforming_the_airforce 
@@ -8184,22 +7670,9 @@
 	shared_focus = {
 		id = JER_domestic_rubber
 		icon = GFX_goal_JER_domestic_rubber
-		x = 43
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = JER_develop_airplane_industry
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_develop_airplane_industry 
@@ -8240,22 +7713,9 @@
 	shared_focus = {
 		id = JER_tactical_bomber_developments
 		icon = GFX_goal_JER_tactical_bomber_developments
-		x = 44
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_develop_airplane_industry
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_develop_airplane_industry 
@@ -8278,22 +7738,9 @@
 	shared_focus = {
 		id = JER_bomber_priority
 		icon = GFX_goal_JER_bomber_priority
-		x = 43
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_domestic_rubber
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_domestic_rubber 
@@ -8317,22 +7764,9 @@
 	shared_focus = {
 		id = JER_heavy_fighter_development
 		icon = GFX_goal_JER_heavy_fighter_development
-		x = 45
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_develop_airplane_industry
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_develop_airplane_industry 
@@ -8358,22 +7792,9 @@
 	shared_focus = {
 		id = JER_fighter_developments
 		icon = GFX_goal_JER_fighter_development
-		x = 46
-		y = 2
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_reforming_the_airforce
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_reforming_the_airforce 
@@ -8457,22 +7878,9 @@
 	shared_focus = {
 		id = JER_close_air_support_development
 		icon = GFX_goal_JER_close_air_support_development
-		x = 46
-		y = 4
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_fighter_developments
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_fighter_developments 
@@ -8574,28 +7982,15 @@
 	shared_focus = {
 		id = JER_infantry_support_priority
 		icon = GFX_goal_JER_infantry_support_priority
-		x = 45
-		y = 5
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 0
+		y = 2
+		relative_position_id = JER_heavy_fighter_development
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_close_air_support_development 
 		}
 		prerequisite = { 
-			focus = JER_fighter_developments 
+			focus = JER_heavy_fighter_development 
 		}
 		mutually_exclusive = {
 		    focus = JER_bomber_priority
@@ -8613,22 +8008,9 @@
 	shared_focus = {
 		id = JER_aquileian_ace_priority
 		icon = GFX_goal_JER_aquileian_ace_priority
-		x = 47
-		y = 3
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = JER_state_of_aquileia
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = JER_fight_for_freedom
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = JER_fighter_developments
 		cost = 7.20
 		prerequisite = { 
 			focus = JER_fighter_developments 
@@ -8654,6 +8036,10 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
@@ -10824,6 +10210,10 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
@@ -12362,6 +11752,10 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}
@@ -13391,6 +12785,10 @@
 			x = -17
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_state_of_aquileia
 			}
 		}
@@ -15903,6 +15301,10 @@
 			x = -10
 			y = 0
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				has_completed_focus = JER_fight_for_freedom
 			}
 		}

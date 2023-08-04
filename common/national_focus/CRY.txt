@@ -1,3 +1,49 @@
+focus_tree = {
+	id = crystalempire
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = CRY
+		}
+		modifier = {
+			factor = 0
+			has_government = fascism
+			OR = {
+				has_country_leader = { ruling_only = yes character = CRY_sombra }
+				has_country_flag = CRY_solar_governorship
+			}
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1200 y = 1500 }
+	shared_focus = CRY_wintersun
+	shared_focus = CRY_equestriagames
+	shared_focus = CRY_grandfestival
+	shared_focus = CRY_crystalfaire
+	shared_focus = CRY_wintersun
+	shared_focus = CRY_crystallinganniversary
+	shared_focus = CRY_military
+}
+focus_tree = {
+	id = crystalempire_sombra
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = CRY
+			has_government = fascism
+			CRY_sombra = { is_country_leader = yes }
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1200 y = 1500 }
+	shared_focus = CRY_military
+	shared_focus = CRY_oldking
+	shared_focus = CRY_royal_marriage_radiant
+}
+
+
 shared_focus = { #Military training (Manpower+, Discipline+)
 	id = CRY_military
 	icon = GFX_goal_cry_military
@@ -2724,6 +2770,7 @@ shared_focus = {
 			NOT = { has_war_with = ROOT }
 		}
 		NOT = { has_country_flag = sombra_is_married }
+		hidden_trigger = { NOT = { has_global_flag = sinister_sombra_marriage_in_progress } }
 	}
 	relative_position_id = CRY_conquest
 	x = -3
@@ -2755,6 +2802,7 @@ shared_focus = {
 		has_country_leader = { character = CRY_sombra ruling_only = yes }
 		has_completed_focus = CRY_oldking
 		NOT = { has_country_flag = sombra_is_married }
+		hidden_trigger = { NOT = { has_global_flag = sinister_sombra_marriage_in_progress } }
 	}
 	relative_position_id = CRY_conquest
 	x = 0
@@ -2789,6 +2837,7 @@ shared_focus = {
 		has_government = fascism
 		has_country_leader = { character = CRY_sombra ruling_only = yes }
 		NOT = { has_country_flag = sombra_is_married }
+		hidden_trigger = { NOT = { has_global_flag = sinister_sombra_marriage_in_progress } }
 		NLR = {
 			exists = yes
 			is_subject = no

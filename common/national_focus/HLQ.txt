@@ -1,3 +1,75 @@
+focus_tree = {
+	id = hellquill_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HLQ
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1600 }
+
+    shared_focus = HLQ_regular_economics
+    shared_focus = HLQ_fascist_economics
+    shared_focus = HLQ_siegfrieds_retirement
+    shared_focus = HLQ_wehrmacht
+}
+
+focus_tree = {
+	id = hellquill_focus_2
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HLQ
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1600 }
+
+    shared_focus = HLQ_groverist_takeover
+}
+
+focus_tree = {
+	id = hellquill_focus_3
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HLQ
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1600 }
+
+    shared_focus = HLQ_rebuild_the_economy
+    shared_focus = HLQ_the_coup_of_national_salvation
+    shared_focus = HLQ_wehrmacht
+}
+
+focus_tree = {
+	id = hellquill_focus_4
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HLQ
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1600 }
+
+    shared_focus = HLQ_regular_economics
+    shared_focus = HLQ_fascist_economics
+    shared_focus = HLQ_siegfrieds_retirement
+    shared_focus = HLQ_wehrmacht
+}
+
     shared_focus = {
 		id = HLQ_siegfrieds_retirement
 		icon = GFX_goal_COS_Peace
@@ -9336,9 +9408,8 @@
 					    exists = yes
 						is_subject = no
 					    OR = {
-						    has_government = democratic
-							has_government = neutrality
-							has_government = fascism
+							has_country_leader = { character = LUS_prince_elias_whitecrest ruling_only = yes }
+							has_country_leader = { character = LUS_prince_gerar_whitecrest ruling_only = yes }
 						}
 					}
 				}

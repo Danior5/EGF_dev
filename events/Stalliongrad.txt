@@ -1,4 +1,4 @@
-﻿add_namespace = stalliongrad
+add_namespace = stalliongrad
 country_event = {
 	id = stalliongrad.0
 	immediate = {log = "[GetDateText]: [Root.GetName]: event stalliongrad.0"}
@@ -4389,4 +4389,55 @@ country_event = {
 			target = FROM
 		}
 	}
+}
+
+country_event = {
+
+	id = stalliongrad.151
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event stalliongrad.151"}
+
+	hidden = yes
+
+	mean_time_to_happen = {
+
+		days = 2
+
+	}
+
+	fire_only_once = yes
+	trigger = {
+		tag = STG
+		has_war = no
+		OR = {
+			is_in_faction_with = EQS
+			is_in_faction = no
+		}
+		has_country_flag = was_in_STG_faction
+	}
+	immediate = {
+		STG_EQS_all_ponies_front_end = yes
+		country_event = stalliongrad.152
+
+	}
+
+}
+
+
+country_event = {
+
+	id = stalliongrad.152
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event stalliongrad.152"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		STG_EQS_all_ponies_front_end_2 = yes
+
+	}
+
 }

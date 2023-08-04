@@ -1,3 +1,515 @@
+focus_tree = {
+	id = HIP_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			original_tag = HIP
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 5750 y = 1000 }
+	shared_focus = HIP_plecate_the_isolationists
+	shared_focus = HIP_encourage_migration
+	shared_focus = HIP_continue_navy_modernisation
+	shared_focus = HIP_wingnot_accords
+	shared_focus = HIP_seapony_primacy
+	shared_focus = HIP_hippogriff_primacy
+	shared_focus = HIP_air_armament_committee
+	shared_focus = HIP_harmonist_defeat # will be moved to own tree once development done
+	shared_focus = HIP_harmonist_victory # will be moved to own tree once development done
+	shared_focus = HIP_aris_eternal
+	shared_focus = HIP_never_another_crack
+	shared_focus = WW_HIP_war_begins
+}
+
+focus_tree = {
+	id = HIP_sirens_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 2000 y = 4000 }
+	shared_focus = HIP_SIR_welcome_to_the_show
+}
+
+focus_tree = {
+	id = HIP_cultist_civil_war_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_CIV_rise_up
+}
+
+focus_tree = {
+	id = HIP_dummy_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = HIP_commie_crisis_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_catastrophic_failure
+}
+focus_tree = {
+	id = HIP_anarchist_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_anti_civilization_manifesto
+	shared_focus = HIP_our_own_anarchism
+	shared_focus = HIP_anti_hierarchy_movement
+}
+focus_tree = {
+	id = HIP_razorbeak_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_foundation_new_hippogriffia
+	shared_focus = HIP_foundation_new_state
+}
+focus_tree = {
+	id = HIP_SLPA_tree
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_enshrine_democracy
+	shared_focus = HIP_begin_reconstruction
+	shared_focus = HIP_open_up_foreign_policy
+}
+focus_tree = {
+	id = HIP_GNU_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HIP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1475 }
+	shared_focus = HIP_subject_of_a_foreign_power
+}
+
+###World War###
+	shared_focus = {
+		id = WW_HIP_war_begins
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = -10
+		y = 0
+		relative_position_id = HIP_plecate_the_isolationists
+
+		available = {
+			has_war = yes
+		}
+
+		completion_reward = {
+			two_random_industrial_complex = yes
+			two_random_industrial_complex = yes
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_situation_bad
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = WW_HIP_war_begins
+
+		mutually_exclusive = {
+			focus = WW_HIP_first_year
+		}
+
+		prerequisite = {
+			focus = WW_HIP_war_begins
+		}
+
+		available = {
+			OR = {
+				has_idea = HIP_island_buff6
+				has_idea = HIP_island_buff7
+				has_idea = HIP_island_buff8
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_prepare_worst
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = WW_HIP_situation_bad
+
+		prerequisite = {
+			focus = WW_HIP_situation_bad
+		}
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+			}
+			add_ideas = WW_HIP_armed_citizens
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_last_stand
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = WW_HIP_prepare_worst
+
+		prerequisite = {
+			focus = WW_HIP_prepare_worst
+		}
+
+		completion_reward = {
+			1165 = {
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 5278
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 19886
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 18691
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 1
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 2 
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 1
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 2 
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 1
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 2 
+					}
+				}  
+			}
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_first_year
+		icon = GFX_goal_support_democracy
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = WW_HIP_war_begins
+
+		mutually_exclusive = {
+			focus = WW_HIP_situation_bad
+		}
+
+		prerequisite = {
+			focus = WW_HIP_war_begins
+		}
+
+		available = {
+			date > 1012.01.01
+		}
+
+		completion_reward = {
+			add_stability = 0.2
+			add_ideas = WW_HIP_primo_victoria_initial
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_situation_stable
+		icon = GFX_goal_generic_defence
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = WW_HIP_first_year
+
+		mutually_exclusive = {
+			focus = WW_HIP_situation_good
+		}
+
+		prerequisite = {
+			focus = WW_HIP_first_year
+		}
+
+		available = {
+			OR = {
+				has_idea = HIP_island_buff3
+				has_idea = HIP_island_buff4
+				has_idea = HIP_island_buff5
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = WW_HIP_situation_stable_army
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_situation_good
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = WW_HIP_first_year
+
+		mutually_exclusive = {
+			focus = WW_HIP_situation_stable
+		}
+
+		prerequisite = {
+			focus = WW_HIP_first_year
+		}
+
+		available = {
+			OR = {
+				has_idea = HIP_island_buff1
+				has_idea = HIP_island_buff2
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = WW_HIP_situation_good_army
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_counter_attack
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = WW_HIP_situation_stable
+
+		prerequisite = {
+			focus = WW_HIP_situation_stable
+			focus = WW_HIP_situation_good
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = WW_HIP_counter_attack_tt
+			hidden_effect = {
+				HIP = {
+					country_event = ww.13
+				}
+				if = {
+					limit = {
+						has_completed_focus = WW_HIP_situation_good
+					}
+					HIP = {
+						country_event = ww.13
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_primo_victoria
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = WW_HIP_counter_attack
+
+		prerequisite = {
+			focus = WW_HIP_counter_attack
+		}
+
+		available = {
+			697 = {
+				is_controlled_by = HIP
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WW_HIP_primo_victoria_initial
+				add_idea = WW_HIP_primo_victoria_final
+			}
+		}
+	}
+	shared_focus = {
+		id = WW_HIP_naval_race
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = WW_HIP_war_begins
+
+		prerequisite = {
+			focus = WW_HIP_war_begins
+		}
+
+		available = {
+			num_of_naval_factories < 30
+			CTH = {
+				num_of_naval_factories > 50
+			}
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			add_timed_idea = {
+				idea = WW_HIP_naval_focused
+				days = 180
+			}
+		}
+	}
+
+
+###World War###
 
 	#######################
 	###	POLITICS TREE	###
@@ -2308,51 +2820,6 @@
 		}
 	}
 	shared_focus = {
-		id = HIP_gates_of_hell
-		icon = GFX_goal_generic_territory_or_war
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = HIP_hippogriff_colossus
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		prerequisite = {
-			focus = HIP_hippogriff_colossus
-		}
-
-		available = {
-			has_war = yes
-			date > 1012.07.01
-			OR = {
-				has_idea = HIP_island_buff1
-				has_idea = HIP_island_buff2
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_ideas = WW_HIP_primo_victoria1
-			add_ideas = WW_HIP_primo_victoria2
-			add_ideas = WW_HIP_primo_victoria3
-			custom_effect_tooltip = WW_HIP_gates_of_hell_tt
-			hidden_effect = {
-				news_event = { hours = 1 id = ww.news.3 }
-				HIP = {
-					country_event = {
-						id = ww.13
-					}
-				}
-			}
-		}
-	}
-	shared_focus = {
 		id = HIP_unity_propaganda
 		icon = GFX_goal_generic_national_unity_claws
 		cost = 5
@@ -3595,54 +4062,99 @@
 		}
 
 		bypass = {
+
 			OR = {
-				CTH = {
-					exists = yes
-					OR = {
-						is_subject = no
-						NOT = {
-							is_in_faction_with = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HIP_CTH_neutral_government_tt
+					AND = {
+						875 = {
+							owner = {
+								OR = {
+									original_tag = CTH
+									original_tag = TRO
+									original_tag = CVA
+									original_tag = HIE
+								}
+							}
+						}
+						699 = {
+							owner = {
+								OR = {
+									original_tag = CTH
+									original_tag = TRO
+									original_tag = CVA
+									original_tag = HIE
+								}
+							}
+						}
+						1093 = {
+							owner = {
+								OR = {
+									original_tag = CTH
+									original_tag = TRO
+									original_tag = CVA
+									original_tag = HIE
+								}
+							}
+						}
+						OR = {
+							has_completed_focus = HIP_peace_in_our_time_2
+							has_completed_focus = HIP_intervene_in_great_war
+							AND = {
+								has_completed_focus = HIP_strike_tyrants
+								NOT = {
+									has_wargoal_against = CTH
+									has_wargoal_against = CVA
+									has_wargoal_against = HIE
+									has_wargoal_against = TRO
+								}
+							}
 						}
 					}
 				}
-				CVA = {
-					exists = yes
+					
+				custom_trigger_tooltip = {
+					tooltip = HIP_CTH_allied_government_tt
 					OR = {
-						is_subject = no
-						NOT = {
-							is_in_faction_with = ROOT
+						CTH = {
+							AND = {
+								is_in_faction_with = ROOT
+								is_subject = no
+							}
+							
+						}
+						CVA = {
+							AND = {
+								is_in_faction_with = ROOT
+								is_subject = no
+							}
 						}
 					}
 				}
-				TRO = {
-					exists = yes
-					OR = {
-						is_subject = no
-						NOT = {
-							is_in_faction_with = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HIP_colthage_already_defeated_tt
+					all_of_scopes = {
+						array = CTH.core_states
+						owner = {
+							NOT = {
+								is_in_faction_with = ROOT
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+							OR = {
+								NOT = {
+									OR = {
+										original_tag = CTH
+										original_tag = HIE
+										original_tag = TRO
+										original_tag = CVA
+									}
+								}
+								AND = {
+									is_subject = yes
+								}
+							}
 						}
-					}
-				}
-				HIE = {
-					exists = yes
-					OR = {
-						is_subject = no
-						NOT = {
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-			}
-			OR = {
-				has_completed_focus = HIP_peace_in_our_time_2
-				has_completed_focus = HIP_intervene_in_great_war
-				AND = {
-					has_completed_focus = HIP_strike_tyrants
-					NOT = {
-						has_wargoal_against = CTH
-						has_wargoal_against = CVA
-						has_wargoal_against = HIE
-						has_wargoal_against = TRO
 					}
 				}
 			}
@@ -4163,6 +4675,7 @@
 					has_government = fascism
 					is_subject = no
 					exists = yes
+					has_civil_war = no
 				}
 				TRO = {
 					has_government = neutrality
@@ -4322,6 +4835,7 @@
 				OR = {
 					exists = no
 					is_subject = yes
+					has_civil_war = yes
 					NOT = {
 						has_government = fascism
 					}
@@ -4331,6 +4845,7 @@
 				OR = {
 					exists = no
 					is_subject = yes
+					has_civil_war = yes
 					NOT = {
 						has_government = fascism
 					}
@@ -5115,28 +5630,22 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
+
+			every_other_country = {
 				limit = {
-					is_faction_leader = yes
-				}
-				every_other_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						is_faction_leader = no
-					}
-					country_event = hippogriff.74
-				}
-			}
-			else = {
-				every_other_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						has_country_flag = HIP_alliance_member
-						NOT = {original_tag = HIP}
+					is_in_faction_with = ROOT
+					OR = {
+						original_tag = TBK
+						original_tag = CVA
+						original_tag = ZAR
+						original_tag = WAR
+						original_tag = BAT
+						original_tag = CTH
+						original_tag = CGI
 					}
 				}
 				country_event = hippogriff.74
-			}
+				}
 			hidden_effect = {
 				country_event = {
 					id = hippogriff.75
@@ -7906,6 +8415,7 @@ shared_focus = {
 					}
 				}
 				add_to_faction = WAR
+				add_opinion_modifier = { target = HIP modifier = AET_helped_us_out }
 			}
 			if = {
 				limit = {
@@ -9008,7 +9518,7 @@ shared_focus = {
 		bypass = {
 			WAR = {
 				OR = {
-					is_puppet_of = ROOT
+					is_subject_of = ROOT
 					exists = no
 				}
 			}
@@ -9044,7 +9554,7 @@ shared_focus = {
 				limit = {
 					NOT = {
 						WAR = {
-							is_puppet_of = ROOT
+							is_subject_of = ROOT
 						}
 					}
 				}				
@@ -9057,7 +9567,7 @@ shared_focus = {
 				limit = {
 					NOT = {
 						ZAR = {
-							is_puppet_of = ROOT
+							is_subject_of = ROOT
 						}
 					}
 				}				
@@ -9070,7 +9580,7 @@ shared_focus = {
 				limit = {
 					NOT = {
 						TBK = {
-							is_puppet_of = ROOT
+							is_subject_of = ROOT
 						}
 					}
 				}				
@@ -13000,6 +13510,7 @@ shared_focus = {
 
 		available = {
 			has_completed_focus = HIP_revolutionary_underwater_construction
+			has_tech = nuclear_reactor
 		}
 		prerequisite = {
 			focus = HIP_exotic_weapons
@@ -19410,6 +19921,7 @@ shared_focus = {
 		completion_reward = {
 			navy_experience = 25
 			two_random_dockyards = yes
+			two_random_dockyards = yes
 		}
 	}
 
@@ -22629,6 +23141,7 @@ shared_focus = {
 		set_variable = { HIP_MAGIC_consumer_goods_factor = 0 }
 		set_variable = { HIP_MAGIC_production_speed_buildings_factor = 0 }
 		set_variable = { HIP_MAGIC_conscription = 0 }
+		set_variable = { HIP_MAGIC_recruitable_seapony_pop = 0 }
 		set_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0 }
 		set_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0 }
 		set_variable = { HIP_MAGIC_industrial_capacity_factory = 0 }
@@ -22658,9 +23171,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_we_got_the_music }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22692,9 +23210,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_ready_the_masses }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22723,9 +23246,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_ready_the_masses }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22755,13 +23283,18 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_no_time_for_games }
 	
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = HIP_SIR_power_level_over_40_tt
-			check_variable = { HIP_siren_power > 40 }
-		}
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
+			custom_trigger_tooltip = {
+				tooltip = HIP_SIR_power_level_over_40_tt
+				check_variable = { HIP_siren_power > 40 }
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22834,13 +23367,18 @@ shared_focus = {
 	}
 	
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = HIP_SIR_power_level_over_40_tt
-			check_variable = { HIP_siren_power > 40 }
-		}
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
+			custom_trigger_tooltip = {
+				tooltip = HIP_SIR_power_level_over_40_tt
+				check_variable = { HIP_siren_power > 40 }
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22876,13 +23414,18 @@ shared_focus = {
 	}
 	
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = HIP_SIR_power_level_over_40_tt
-			check_variable = { HIP_siren_power > 40 }
-		}
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
+			custom_trigger_tooltip = {
+				tooltip = HIP_SIR_power_level_over_40_tt
+				check_variable = { HIP_siren_power > 40 }
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22915,9 +23458,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22947,9 +23495,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -22982,9 +23535,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23087,9 +23645,14 @@ shared_focus = {
 	}
 	
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = HIP_SIR_resistance_unity_none_tt
-			check_variable = { HIP_SIR_resistance_unity_level < 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = HIP_SIR_resistance_unity_none_tt
+				check_variable = { HIP_SIR_resistance_unity_level < 1 }
+			}
 		}
 	}
 
@@ -23117,6 +23680,12 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HIP_SIR_the_revolutionary"
 		custom_effect_tooltip = HIP_SIR_posada_decisions_tt
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_RESISTANCE_magic_drift = 1.00 }
+		}
 	}
 }
 
@@ -23135,6 +23704,13 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HIP_SIR_the_princess"
 		custom_effect_tooltip = HIP_SIR_skystar_decisions_tt
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_RESISTANCE_political_power_gain = 0.1 }
+			add_to_variable = { HIP_RESISTANCE_magic_drift = 1.00 }
+		}
 	}
 }
 
@@ -23153,6 +23729,14 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HIP_SIR_the_nationalist"
 		custom_effect_tooltip = HIP_SIR_aris_first_decisions_tt
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_RESISTANCE_stability_factor = 0.05 }
+			add_to_variable = { HIP_RESISTANCE_war_support_factor = 0.05 }
+			add_to_variable = { HIP_RESISTANCE_magic_drift = 1.00 }
+		}
 	}
 }
 
@@ -23168,7 +23752,12 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_flag = HIP_SIR_posada_defeated
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_flag = HIP_SIR_posada_defeated
+		}
 	}
 
 	ai_will_do = {
@@ -23198,7 +23787,12 @@ shared_focus = {
 	}
 	
 	available = { 
-		has_country_flag = HIP_SIR_crack_lightning_defeated
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_flag = HIP_SIR_crack_lightning_defeated
+		}
 	}
 	
 	ai_will_do = {
@@ -23234,7 +23828,12 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_flag = HIP_SIR_skystar_defeated
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_flag = HIP_SIR_skystar_defeated
+		}
 	}
 
 	ai_will_do = {
@@ -23266,9 +23865,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_we_got_the_music }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23294,9 +23898,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_the_sound_of_my_voice }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23322,9 +23931,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_the_siren_constant }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23356,9 +23970,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_the_sound_of_my_voice }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23384,9 +24003,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_the_web_of_my_song }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23426,9 +24050,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_a_city_of_melody }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23454,9 +24083,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_what_comes_after }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23488,9 +24122,14 @@ shared_focus = {
 	prerequisite = { focus = HIP_SIR_what_comes_after }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23593,9 +24232,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23614,6 +24258,24 @@ shared_focus = {
 		swap_ideas = {
 			remove_idea = HIP_SIR_magic_gain_1
 			add_idea = HIP_SIR_magic_gain_2
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.01 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.02 }
+			add_to_variable = { HIP_MAGIC_conscription = 0.01 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.01 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.005 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_magic_drift = -2 }
 		}
 	}
 }
@@ -23672,9 +24334,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 697
 		has_completed_focus = HIP_SIR_last_minute_preparations
@@ -23699,6 +24366,24 @@ shared_focus = {
 		swap_ideas = {
 			remove_idea = HIP_SIR_magic_gain_2
 			add_idea = HIP_SIR_magic_gain_3
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.01 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.02 }
+			add_to_variable = { HIP_MAGIC_conscription = 0.01 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.01 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.005 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = 0.01 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = 0.005 }
+			add_to_variable = { HIP_MAGIC_magic_drift = -2 }
 		}
 		if = {
 			limit= {
@@ -23737,9 +24422,14 @@ shared_focus = {
 	mutually_exclusive = { focus = HIP_SIR_ignore_the_distraction }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23863,9 +24553,14 @@ shared_focus = {
 	mutually_exclusive = { focus = HIP_SIR_strike_the_colthaginians }
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -23958,9 +24653,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 875
 		NOT = {
@@ -23989,9 +24689,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24086,9 +24791,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24131,9 +24841,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24174,9 +24889,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		has_war_with = BAT
 		NOT = {
@@ -24217,9 +24937,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24262,9 +24987,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24306,9 +25036,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 747
 		owns_state = 730
@@ -24347,9 +25082,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 743
 		owns_state = 712
@@ -24367,6 +25107,24 @@ shared_focus = {
 		swap_ideas = {
 			remove_idea = HIP_SIR_magic_gain_3
 			add_idea = HIP_SIR_magic_gain_4
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.025 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { HIP_MAGIC_conscription = 0.025 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.0125 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_magic_drift = -5 }
 		}
 	}
 }
@@ -24402,6 +25160,24 @@ shared_focus = {
 				}
 			}
 			swap_ruler_traits = { remove = siren_charismatic_manipulator add = siren_charismatic_manipulator_2 }
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.015 }
+				add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.03 }
+				add_to_variable = { HIP_MAGIC_conscription = 0.015 }
+				add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.015 }
+				add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.015 }
+				add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.015 }
+				add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.0075 }
+				add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.0075 }
+				add_to_variable = { HIP_MAGIC_army_org_factor = 0.015 }
+				add_to_variable = { HIP_MAGIC_army_morale_factor = 0.0075 }
+				add_to_variable = { HIP_MAGIC_army_attack_factor = 0.0075 }
+				add_to_variable = { HIP_MAGIC_army_defence_factor = 0.0075 }
+				add_to_variable = { HIP_MAGIC_magic_drift = -3 }
+			}
 		}
 		else_if = {
 			limit = {
@@ -24436,9 +25212,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24498,9 +25279,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 733
 		NOT = {
@@ -24541,9 +25327,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		owns_state = 733
 		NOT = {
@@ -24580,9 +25371,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24708,6 +25504,24 @@ shared_focus = {
 			add_idea = HIP_SIR_magic_gain_5
 		}
 		add_country_leader_trait = siren_leader_of_the_three
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.03 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.06 }
+			add_to_variable = { HIP_MAGIC_conscription = 0.03 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.03 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.03 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.03 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.015 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.015 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = 0.03 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = 0.015 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = 0.015 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = 0.015 }
+			add_to_variable = { HIP_MAGIC_magic_drift = -6 }
+		}
 		country_event = hippogriff_abyss.43
 	}
 }
@@ -24724,9 +25538,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24758,9 +25577,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		CHN = {
 			exists = yes
@@ -24805,9 +25629,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24822,6 +25651,24 @@ shared_focus = {
 		add_war_support = 0.1
 		create_faction = "HIP_SIR_siren_hegemony"
 		add_ideas = HIP_SIR_the_war_of_vengeance
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.025 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { HIP_MAGIC_conscription = 0.025 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = 0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = 0.0125 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = 0.0125 }
+			add_to_variable = { HIP_MAGIC_magic_drift = -5 }
+		}
 	}
 }
 
@@ -24837,9 +25684,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24881,9 +25733,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -24972,9 +25829,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = EQS
+				type = annex_everything
 			}
 		}
 		if = {
@@ -24983,9 +25840,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = NLR
+				type = annex_everything
 			}
 		}
 		if = {
@@ -24994,9 +25851,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = ELF
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25005,9 +25862,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = VAN
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25016,9 +25873,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = LSP
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25030,9 +25887,9 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = SCS
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25041,9 +25898,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = CES
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25052,9 +25909,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = NMS
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25063,9 +25920,9 @@ shared_focus = {
 					exists = yes
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = JUN
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25077,9 +25934,9 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = BAL
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25091,9 +25948,9 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = MAN
+				type = annex_everything
 			}
 		}
 		if = {
@@ -25138,10 +25995,9 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = 3.owner
-				generator = { 3 }
+				type = annex_everything
 			}
 		}
 	}
@@ -25159,9 +26015,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		is_in_faction_with = CHN
 		has_war = no
@@ -25217,9 +26078,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		has_country_flag = HIP_SIR_negotiations_finished
 		NOT = {
@@ -25248,9 +26114,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		has_war = no
 		NOT = {
@@ -25418,9 +26289,14 @@ shared_focus = {
 		focus = HIP_SIR_sweep_the_remainder
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25484,9 +26360,14 @@ shared_focus = {
 		focus = HIP_SIR_revenge
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_adagio
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_adagio
+			}
 		}
 		OR = {
 			has_country_flag = HIP_SIR_negotiations_finished
@@ -25550,6 +26431,25 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HIP_SIR_nothing_can_stop_us_now"
 		country_event = hippogriff_abyss.77
+		if = {
+			limit = {
+				is_ai = yes
+				has_completed_focus = HIP_SIR_all_we_need_is_us
+			}
+			add_to_variable = { HIP_MAGIC_consumer_goods_factor = 0.025 }
+			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = -0.05 }
+			add_to_variable = { HIP_MAGIC_conscription = -0.025 }
+			add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = -0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = -0.025 }
+			add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = -0.025 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_factory = -0.0125 }
+			add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = -0.0125 }
+			add_to_variable = { HIP_MAGIC_army_org_factor = -0.025 }
+			add_to_variable = { HIP_MAGIC_army_morale_factor = -0.0125 }
+			add_to_variable = { HIP_MAGIC_army_attack_factor = -0.0125 }
+			add_to_variable = { HIP_MAGIC_army_defence_factor = -0.0125 }
+			add_to_variable = { HIP_MAGIC_magic_drift = 5 }
+		}
 	}
 }
 
@@ -25564,9 +26464,14 @@ shared_focus = {
 		focus = HIP_SIR_crescendo
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25593,9 +26498,14 @@ shared_focus = {
 		focus = HIP_SIR_learn_from_our_mistakes
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25622,9 +26532,14 @@ shared_focus = {
 		focus = HIP_SIR_learn_from_our_mistakes
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25700,9 +26615,14 @@ shared_focus = {
 		focus = HIP_SIR_the_spoils_of_zumidia
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25737,9 +26657,14 @@ shared_focus = {
 		focus = HIP_SIR_secure_the_mainland
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		697 = { is_owned_and_controlled_by = ROOT }
 		NOT = {
@@ -25779,9 +26704,14 @@ shared_focus = {
 		focus = HIP_SIR_secure_the_mainland
 	}
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25826,9 +26756,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25859,9 +26794,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -25889,9 +26829,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		has_completed_focus = HIP_SIR_the_zonician_excuse
 		owns_state = 875
@@ -25938,9 +26883,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		699 = { is_owned_and_controlled_by = ROOT }
 		NOT = {
@@ -25986,9 +26936,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		1093 = { is_owned_and_controlled_by = ROOT }
 		933 = { is_owned_and_controlled_by = ROOT }
@@ -26035,9 +26990,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26079,9 +27039,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26109,9 +27074,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26182,9 +27152,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26223,9 +27198,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26272,9 +27252,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26313,9 +27298,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26343,9 +27333,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26373,9 +27368,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26415,9 +27415,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26502,9 +27507,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26547,9 +27557,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26693,9 +27708,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26776,9 +27796,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26828,9 +27853,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -26927,9 +27957,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		OR = {
 			has_war_with = EQS
@@ -26975,9 +28010,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		OR = {
 			has_war_with = EQS
@@ -27023,9 +28063,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_aria
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_aria
+			}
 		}
 		OR = {
 			owns_state = 13
@@ -27059,9 +28104,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27089,9 +28139,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = HIP_SIR_power_level_over_5_tt
@@ -27131,9 +28186,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27165,9 +28225,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27199,9 +28264,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27234,9 +28304,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27265,9 +28340,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27298,9 +28378,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27328,9 +28413,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_control_the_cities
 		NOT = {
@@ -27371,9 +28461,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27407,9 +28502,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_shatter_the_chiropterrans
 		NOT = {
@@ -27438,9 +28538,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27473,9 +28578,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27506,9 +28616,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_beneath_the_sand
 		NOT = {
@@ -27545,9 +28660,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_idea = HIP_SIR_rooting_out_lunarism
@@ -27583,9 +28703,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_order_in_colthage
 		NOT = {
@@ -27619,9 +28744,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27649,9 +28779,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27679,9 +28814,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27712,9 +28852,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27742,9 +28887,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27775,9 +28925,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27815,6 +28970,24 @@ shared_focus = {
 				remove_idea = HIP_SIR_siren_healthcare_high
 				add_idea = HIP_SIR_siren_healthcare_high_2
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_to_variable = { HIP_MAGIC_consumer_goods_factor = 0.01 }
+				add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = -0.02 }
+				add_to_variable = { HIP_MAGIC_conscription = -0.01 }
+				add_to_variable = { HIP_MAGIC_recruitable_seapony_pop = -0.01 }
+				add_to_variable = { HIP_MAGIC_production_factory_max_efficiency_factor = -0.01 }
+				add_to_variable = { HIP_MAGIC_production_factory_efficiency_gain_factor = -0.01 }
+				add_to_variable = { HIP_MAGIC_industrial_capacity_factory = -0.005 }
+				add_to_variable = { HIP_MAGIC_industrial_capacity_dockyard = -0.005 }
+				add_to_variable = { HIP_MAGIC_army_org_factor = -0.01 }
+				add_to_variable = { HIP_MAGIC_army_morale_factor = -0.005 }
+				add_to_variable = { HIP_MAGIC_army_attack_factor = -0.005 }
+				add_to_variable = { HIP_MAGIC_army_defence_factor = -0.005 }
+				add_to_variable = { HIP_MAGIC_magic_drift = 2 }
+			}
 		}
 	}
 }
@@ -27834,9 +29007,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27864,9 +29042,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_press_the_maregyptians
 		NOT = {
@@ -27896,9 +29079,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -27932,9 +29120,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		owns_state = 1208
 		NOT = {
@@ -27971,9 +29164,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		has_completed_focus = HIP_SIR_fate_of_the_pillars
 		NOT = {
@@ -28002,9 +29200,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit
@@ -28033,9 +29236,14 @@ shared_focus = {
 	}
 	
 	available = {
-		has_country_leader = {
-			ruling_only = yes
-			character = HIP_SIR_sonata
+		if = {
+			limit = {
+				is_ai = no
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = HIP_SIR_sonata
+			}
 		}
 		NOT = {
 			has_country_flag = HIP_SIR_has_deficit

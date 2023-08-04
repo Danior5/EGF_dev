@@ -2963,9 +2963,25 @@ country_event = { ## Bringing Back Cadence
 		}
 		drop_cosmetic_tag = yes
 		hidden_effect = {
-			retire_country_leader = yes
+			CRY_sombra = {
+				remove_unit_leader_role = yes
+				retire = yes
+			}
 		}
-		CRY_princess_mi_amore_cadenza = { set_nationality = ROOT }
+		every_possible_country = {
+			limit = {
+				has_character = CRY_princess_mi_amore_cadenza
+			}
+			CRY_princess_mi_amore_cadenza = {
+				set_nationality = ROOT
+			}
+		}
+		CRY_princess_mi_amore_cadenza = {
+			promote_character = alicornrule
+			hidden_effect = {
+				remove_advisor_role = { slot = political_advisor }
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = { has_completed_focus = CRY_miamore_forever }
@@ -2977,7 +2993,24 @@ country_event = { ## Bringing Back Cadence
 			remove_ideas = sombra_dark_magic2
 			clr_global_flag = continue_imprisonment
 		}
-		event_target:CRY_Shining_Armor = { set_nationality = ROOT }
+		every_possible_country = {
+			limit = {
+				has_character = CRY_shining_armour
+			}
+			CRY_shining_armour = {
+				set_nationality = ROOT
+			}
+		}
+		hidden_effect = {
+			every_possible_country = {
+				every_character = {
+					limit = {
+						has_character_flag = CRY_escapee
+					}
+					set_nationality = ROOT
+				}
+			}
+		}
 		if = {
 			limit = { NOT = { has_focus_tree = crystalempire } }
 			load_focus_tree = crystalempire
@@ -3024,7 +3057,10 @@ country_event = { ## Bringing Back Cadence
 		}
 		drop_cosmetic_tag = yes
 		hidden_effect = {
-			retire_country_leader = yes
+			CRY_sombra = {
+				remove_unit_leader_role = yes
+				retire = yes
+			}
 		}
 		event_target:EQS_twilight_sparkle_target = { set_nationality = ROOT }
 		hidden_effect = {
@@ -3040,6 +3076,16 @@ country_event = { ## Bringing Back Cadence
 		if = {
 			limit = { NOT = { has_completed_focus = CRY_oldorder } }
 			complete_national_focus = CRY_oldorder
+		}
+		hidden_effect = {
+			every_possible_country = {
+				every_character = {
+					limit = {
+						has_character_flag = CRY_escapee
+					}
+					set_nationality = ROOT
+				}
+			}
 		}
 	}
 }
@@ -5021,6 +5067,32 @@ country_event = { ## Convincing the royal family
 			set_country_flag = CRY_NLR_figurehead_royalty
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = nlr_cadance
+			hidden_effect = {
+				CRY_princess_mi_amore_cadenza = {
+					add_advisor_role = {
+						advisor = {
+							slot = political_advisor
+							idea_token = nlr_cadance
+							#allowed = {
+							#	original_tag = CRY
+							#}
+							#visible = {
+							#	is_subject = yes
+							#	has_country_flag = CRY_NLR_figurehead_royalty
+							#}
+							#available = {
+							#	is_subject = yes
+							#	has_country_flag = CRY_NLR_figurehead_royalty
+							#}
+							traits = { popular_figurehead }
+
+							ai_will_do = {
+								factor = 1
+							}
+						}
+					}
+				}
+			}
 		}
 		if = {
 			limit = {

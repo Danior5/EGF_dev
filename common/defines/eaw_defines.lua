@@ -202,6 +202,6 @@ NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1 -- this screen 
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.05 -- this capital ratio to num convoys is needed for full screening beyond screen line
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- Chances one ship get damage each hour while on training
 
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2	-- Base year ahead penalty. Vanilla is 2. Changed back to 2 from 2.5 in vanilla EaW
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2	-- Base year ahead penalty. Vanilla is 2. Changed back to 2 from 2.25 in vanilla EaW
 
 NDefines.NCountry.WAR_SUPPORT_TENSION_IMPACT = 0.3				-- Total impact of world tension vanilla is 0.4
