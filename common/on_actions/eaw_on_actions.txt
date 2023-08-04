@@ -166,6 +166,13 @@ on_actions = {
 					}
 					else = { set_country_flag = STG_darkwing_natbol }
 				}
+				country_event = { id = starting_warning_event.3 }
+			}
+			STL = {
+				country_event = { id = starting_warning_event.1 }
+			}
+			PNG = {
+				country_event = { id = starting_warning_event.1 }
 			}
 			SOL = { save_global_event_target_as = solar_empire }
 			GRI = {
@@ -175,12 +182,19 @@ on_actions = {
 				country_event = { id = imperial.60 days = 186 random = 480 }#days to hours applied
 			}
 			DED = {
+				country_event = { id = starting_warning_event.1 }
 				add_dynamic_modifier = {
 					modifier = DED_crystal_cost
 				}
 				every_owned_state = {
 					add_claim_by = HLR
 				}
+			}
+			HLR = {
+				country_event = { id = starting_warning_event.1 }
+			}
+			NCH = {
+				country_event = { id = starting_warning_event.1 }
 			}
 			CHN = {
 				add_opinion_modifier = { target = EQS modifier = distrustful_relations }
@@ -223,7 +237,7 @@ on_actions = {
 				country_event = { id = griffonRepublic.63 days = 12 random = 28800 }#days to hours applied
 				country_event = { id = griffonRepublic.64 days = 13 random = 22080 }#days to hours applied
 				country_event = { id = griffonRepublic.65 days = 14 random = 48000 }#days to hours applied
-				country_event = { id = griffonRepublic.266 days = 400 }
+				country_event = { id = griffonRepublic.266 days = 400 }	
 			}
 			KAT = {
 				country_event = { id = katerin.1 days = 1 } #the Ball, was set this in history files
@@ -235,6 +249,9 @@ on_actions = {
 			}
 			BRF = {
 				country_event = { id = prywhen.6 days = 1 }
+			}
+			GRW = {
+				country_event = { id = starting_warning_event.1 }
 			}
 			JER = {
 				country_event = { id = aquileia.30 days = 157 random = 480 }#days to hours applied
@@ -424,7 +441,7 @@ on_actions = {
 						}
 						traits = { 
 							operative_agentbio_conmane
-							operative_commando   operative_seducer  operative_tough  operative_linguist  operative_safe_cracker  operative_well_groomed  operative_natural_orator  operative_escape_artist
+							operative_commando   operative_seducer  operative_tough  operative_linguist  operative_safe_cracker  operative_well_groomed  operative_natural_orator  operative_escape_artist operative_conmane
 							pony_race_trait
 						}
 					}
@@ -457,7 +474,7 @@ on_actions = {
 						}
 						traits = { 
 							operative_agentbio_conmane_elf
-							operative_commando   operative_seducer  operative_tough  operative_linguist  operative_safe_cracker  operative_well_groomed  operative_natural_orator  operative_escape_artist
+							operative_commando   operative_seducer  operative_tough  operative_linguist  operative_safe_cracker  operative_well_groomed  operative_natural_orator  operative_escape_artist operative_conmane
 							pony_race_trait
 						}
 					}
@@ -955,6 +972,7 @@ on_actions = {
 			BUF = {
 				add_ideas = poor_science_base
 				adjust_research_modifier = yes
+				country_event = { id = starting_warning_event.1 }
 			}
 			PLB = {
 				add_ideas = better_science_base
@@ -984,12 +1002,10 @@ on_actions = {
 				add_ideas = better_science_base
 				adjust_research_modifier = yes
 			}
-
-			#MQA = {
+			MQA = {
 			#	country_event = { id = sambovato.1 days = 120 }
-			#}
-			
-			
+			}
+
 			547 = {
 				add_province_modifier = {
 					static_modifiers = { scheisswald_forest }
@@ -1065,6 +1081,7 @@ on_actions = {
 						id = 7888
 						id = 3750
 						id = 4871 
+						id = 4723
 					}
 				}
 			}
@@ -1633,6 +1650,39 @@ on_actions = {
 					ROOT = {
 						add_ideas = HIP_sunset_atoll_terror
 					}
+				}
+				if = {
+					limit = {
+						original_tag = PLB
+						has_completed_focus = PLB_reach_out_to_the_eccentric
+					}
+					FROM = {
+						add_ideas = PLB_biological_warfare
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							original_tag = PLB
+							has_completed_focus = PLB_reach_out_to_the_eccentric
+						}
+					}
+					ROOT = {
+						add_ideas = PLB_biological_warfare
+					}
+				}
+				if = {
+					limit = {
+						original_tag = CHN
+						NOT = {
+							has_government = democratic
+						}
+						PLB = {
+							has_defensive_war_with = CHN
+						}
+					}
+					set_global_flag = CHN_great_northern_war
+					news_event = { id = plb_news.1 days = 1 }
 				}
 			}
 		}
@@ -2235,6 +2285,7 @@ on_actions = {
 						save_global_event_target_as = LCT_pact_war_starter
 					}
 				}
+				
 
 
 				if = {#If someone goes to war with Nova Whirl while they're infiltrated with her partisans
@@ -2299,6 +2350,7 @@ on_actions = {
 						set_country_flag = FRE_Scotts_arrived_already
 					}
 				}
+				
 
 
 				#Civil war transfer society/science ideas
@@ -2416,6 +2468,22 @@ on_actions = {
 						set_rule = {
 							can_generate_female_aces = yes
 						}
+					}
+				}
+				if = {
+					limit = {
+						tag = FAT
+						has_country_leader = {
+							ruling_only = yes
+							character = FAT_warmaster_dawnclaw
+						}
+						FROM = { original_tag = VED }
+					}
+
+					country_event = {
+						id = chaos.27
+						days = 7
+						random_days = 7
 					}
 				}
 			}
@@ -3070,6 +3138,17 @@ on_actions = {
 					}
 					FROM = {
 						country_event = { id = news.2101 days = 1 }
+						if = {
+							limit = {
+								is_ai = yes
+							}
+							every_owned_state = {
+								limit = {
+									is_core_of = CHN
+								}
+								transfer_state_to = CHN
+							}
+						}
 					}
 					CHN = {
 						drop_cosmetic_tag = yes
@@ -3186,7 +3265,7 @@ on_actions = {
 				set_stability = 0.3
 				set_war_support = 0.3
 				load_focus_tree = crystal_empire_lunar_focus
-				set_party_name = { ideology = fascism name = NLR_fascism_party long_name = NLR_fascism_party }
+				set_party_name = { ideology = fascism name = NLR_fascism_party long_name = NLR_fascism_party_long }
 				add_country_leader_role = {
 					character = CRY_nightmare_moon
 					promote_leader = yes
@@ -3284,6 +3363,11 @@ on_actions = {
 				}
 				YAL_emperor_grover_ii = {
 					remove_unit_leader_role = yes
+					if = {
+						limit = { is_advisor = yes }
+
+						remove_advisor_role = { slot = army_chief }
+					}
 				}
 				remove_opinion_modifier = {
 					target = NIM
@@ -3472,6 +3556,47 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					original_tag = FRN
+					FROM = {
+						original_tag = WNG
+					}
+				}
+				FROM = {
+					every_owned_state = {
+						limit = {
+							is_core_of = JES
+						}
+						transfer_state_to = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { 
+					ROOT = { 
+						OR = {
+							original_tag = JER
+							original_tag = JEB
+							original_tag = JFT
+							original_tag = JRR
+							original_tag = VIN
+						}
+					}
+					FROM = {
+						original_tag = JES
+						NOT = {
+							has_government = fascism
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
 
 			FROM = { ROOT = { apply_cosmetic_tags_on_puppet_PREV_is_overlord = yes } }
 		}
@@ -3519,6 +3644,11 @@ on_actions = {
 				}
 				YAL_emperor_grover_ii = {
 					remove_unit_leader_role = yes
+					if = {
+						limit = { is_advisor = yes }
+
+						remove_advisor_role = { slot = army_chief }
+					}
 				}
 				remove_opinion_modifier = {
 					target = NIM
@@ -3908,6 +4038,22 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					original_tag = FRN
+					FROM = {
+						original_tag = WNG
+					}
+				}
+				FROM = {
+					every_owned_state = {
+						limit = {
+							is_core_of = JES
+						}
+						transfer_state_to = ROOT
+					}
+				}
+			}
 
 			FROM = { ROOT = { apply_cosmetic_tags_on_puppet_PREV_is_overlord = yes } }
 
@@ -3923,7 +4069,6 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
-						FROM = { tag = SOL }
 						has_country_flag = bypass_annex_compliance
 						FROM = { has_country_flag = bypass_annex_compliance }
 						is_in_array = {
@@ -4000,6 +4145,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						FROM = { tag = SOL }
 						has_country_flag = bypass_annex_compliance
 						FROM = { has_country_flag = bypass_annex_compliance }
 						is_in_array = {
@@ -4432,6 +4578,49 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					tag = FAT
+					has_country_leader = {
+						ruling_only = yes
+						character = FAT_warmaster_dawnclaw
+					}
+					NTR = {
+						OR = {
+							FROM = { tag = NTR }
+							exists = no
+							is_subject_of = FAT
+						}
+					}
+					SRS = {
+						OR = {
+							FROM = { tag = SRS }
+							exists = no
+							is_subject_of = FAT
+						}
+					}
+					VED = {
+						OR = {
+							FROM = { tag = VED }
+							exists = no
+							is_subject_of = FAT
+						}
+					}
+					MNC = {
+						OR = {
+							FROM = { tag = MNC }
+							exists = no
+							is_subject_of = FAT
+						}
+					}
+				}
+
+				country_event = {
+					id = chaos.28
+					days = 7
+					random_days = 7
+				}
+			}
 
 			actually_fix_weapon_techs = yes
 		}
@@ -4445,6 +4634,29 @@ on_actions = {
 				transfer_navy = { target = ROOT }
 			}
 			if = {
+				limit = {
+					FROM = {
+						original_tag = CRY
+						OR = {
+							has_character = CRY_princess_mi_amore_cadenza
+							has_character = CRY_shining_armour
+							has_character = CRY_flurry_heart
+							has_character = CRY_flash_sentry
+						}
+					}
+				}
+				FROM = {
+					CRY_princess_mi_amore_cadenza = {
+						set_nationality = SOL
+					}
+					CRY_shining_armour = { set_nationality = SOL }
+					every_character = {
+						set_character_flag = CRY_escapee
+						set_nationality = SOL
+					}
+				}
+			}
+			else_if = {
 				limit = {
 					OR = {
 						original_tag = WNG
@@ -5307,6 +5519,44 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					FROM = {tag = BAT}
+					ROOT = {
+						AND = {
+							tag = TBK
+							is_in_faction = no
+						}
+					}
+					728 = {
+						is_controlled_by = BAT
+					}
+				}
+				BAT = {
+					annex_country = {
+						target = TBK
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {tag = BAT}
+					ROOT = {
+						AND = {
+							tag = ZAR
+							is_in_faction = no
+						}
+					}
+					747 = {
+						is_controlled_by = BAT
+					}
+				}
+				BAT = {
+					annex_country = {
+						target = ZAR
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = JES
 					FROM = {
 						tag = FRN
@@ -5369,6 +5619,16 @@ on_actions = {
 					country_event = { id = tobuck_baragzen.12 }
 				}
 			}
+			IF = {
+				limit = {
+					has_global_flag = CHN_great_northern_war
+					OR = {
+						tag = CHN
+						tag = PLB
+					}
+				}
+				PLB_end_the_great_northern_war = yes
+			}
 		}
 	}
 	#ROOT is free nation FROM is releaser
@@ -5402,6 +5662,11 @@ on_actions = {
 				}
 				YAL_emperor_grover_ii = {
 					remove_unit_leader_role = yes
+					if = {
+						limit = { is_advisor = yes }
+
+						remove_advisor_role = { slot = army_chief }
+					}
 				}
 				remove_opinion_modifier = {
 					target = NIM
@@ -5664,6 +5929,22 @@ on_actions = {
 					ROOT = { original_tag = JES }
 				}
 				FROM = { annex_country = { target = ROOT } }
+			}
+			if = {
+				limit = {
+					original_tag = FRN
+					FROM = {
+						original_tag = WNG
+					}
+				}
+				FROM = {
+					every_owned_state = {
+						limit = {
+							is_core_of = JES
+						}
+						transfer_state_to = ROOT
+					}
+				}
 			}
 
 			BRF_load_mason_focus = yes
@@ -6379,6 +6660,23 @@ on_actions = {
 						if = {
 							limit = { NOT = { country_exists = OLE } }
 							release_puppet = OLE
+							OLE = {
+								if = {
+									limit = {
+										ROOT = {
+											original_tag = EQS
+											is_in_tech_sharing_group = equestrian_research
+										}
+									}
+									add_to_tech_sharing_group = equestrian_research
+								}
+								if = {
+									limit = {
+										has_country_flag = OLE_CHN_puppet
+									}
+									country_event = olenia.720
+								}
+							}
 						}
 						if = {
 							limit = { OLE = { OR = { is_in_faction_with = ROOT is_subject_of = ROOT } } }
@@ -6739,6 +7037,11 @@ on_actions = {
 					FROM = {
 						YAL_emperor_grover_ii = {
 							remove_unit_leader_role = yes
+							if = {
+								limit = { is_advisor = yes }
+
+								remove_advisor_role = { slot = army_chief }
+							}
 						}
 						remove_opinion_modifier = {
 							target = NIM
@@ -7459,7 +7762,7 @@ on_actions = {
 							limit = {
 								BAT = {
 									exists = yes
-									is_puppet_of = ZAR
+									is_subject_of = ZAR
 								}
 							}
 							TBK = { 
@@ -7495,7 +7798,7 @@ on_actions = {
 							limit = {
 								BAT = {
 									exists = yes
-									is_puppet_of = ZAR
+									is_subject_of = ZAR
 								}
 							}
 							ZAR = { 
@@ -7662,6 +7965,25 @@ on_actions = {
 						}
 						add_core_of = EQS
 						clr_state_flag = eqs_bat_state
+					}
+				}
+				if = {
+					limit = {
+						original_tag = WNG
+						FROM = {
+							original_tag = FRN
+							exists = yes
+							OR = {
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					every_owned_state = {
+						limit = {
+							is_core_of = JES
+						}
+						transfer_state_to = FROM
 					}
 				}
 				every_owned_state = {
@@ -8067,7 +8389,28 @@ on_actions = {
 						FROM.FROM = { state = 382 }
 						NOT = { has_global_flag = fall_of_griffenheim }
 					}
-					news_event = cityfall.29
+					if = {
+						limit = {
+							ROOT = {
+								tag = FAT
+								has_country_leader = {
+									ruling_only = yes
+									character = FAT_warmaster_dawnclaw
+								}
+							}
+							FROM = {
+								tag = GRI
+								has_country_leader = {
+									ruling_only = yes
+									character = GRI_the_emperor
+								}
+							}
+						}
+
+						news_event = imperium_news.3
+					} else = {
+						news_event = cityfall.29
+					}
 				}
 				else_if = {#Griffonstone
 					limit = {
@@ -8119,7 +8462,28 @@ on_actions = {
 						FROM.FROM = { state = 485 }
 						NOT = { has_global_flag = fall_of_cloudbury }
 					}
-					news_event = cityfall.36
+					if = {
+						limit = {
+							ROOT = {
+								tag = GRI
+								has_country_leader = {
+									ruling_only = yes
+									character = GRI_the_emperor
+								}
+							}
+							FROM = {
+								tag = FAT
+								has_country_leader = {
+									ruling_only = yes
+									character = FAT_warmaster_dawnclaw
+								}
+							}
+						}
+
+						news_event = imperium_news.2
+					} else = {
+						news_event = cityfall.36
+					}
 				}
 				else_if = {#Bronzecross
 					limit = {
@@ -8464,6 +8828,19 @@ on_actions = {
 						TBK_apply_hazrumenia_family_modifier_values = yes
 						TBK_apply_hazrumenia_economic_cooperation_modifier_values = yes
     				}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = GRI_AF_sc_assert_our_control
+				}
+
+				# Automaticly set the occupation laws for GRI APF
+				FROM.FROM = {
+					set_occupation_law_where_available = GRI_AF_inquisition
+					set_occupation_law_where_available = GRI_AF_integration
+					set_occupation_law_where_available = GRI_AF_protectorate
+					set_occupation_law_where_available = GRI_AF_colony
 				}
 			}
 			FROM = { update_global_arrays = yes }
@@ -10353,6 +10730,12 @@ on_actions = {
 			set_AI_strategies_on_every_possible_country_delayed = yes
 			if = {
 				limit = {
+					tag = STG
+				}
+				country_event = { id = stalliongrad.151 hours = 1 }
+			}
+			if = {
+				limit = {
 					is_river_fed_member = yes
 				}
 				RIV_leave_fed_no_ally = yes
@@ -10629,6 +11012,7 @@ on_actions = {
 		effect = {
 			log = "[GetDateText]: ROOT: [Root.GetName] on_ruling_party_change"
 			ZES_oppressive_countries_calculate = yes
+			CRY_restore_establishment = yes
 			if = {
 				limit = {
 					original_tag = YAL
@@ -10733,8 +11117,24 @@ on_actions = {
 	}
 
 	on_peace = {
-		effect = {
+		effect = {		
 			log = "[GetDateText]: ROOT: [Root.GetName] on_peace"
+			if = {
+				limit = {
+					tag = STG
+				}
+				country_event = { id = stalliongrad.151 hours = 1 }
+			}
+			IF = {
+				limit = {
+					has_global_flag = CHN_great_northern_war
+					OR = {
+						tag = CHN
+						tag = PLB
+					}
+				}
+				PLB_end_the_great_northern_war = yes
+			}
 			if = {
 				limit = {
 					has_variable = inflicted_casualties
