@@ -326,7 +326,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_magic_auto_cannon
-			magic_aps
 		}
 
 		enable_subunits = {
@@ -2499,10 +2498,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1011
+		start_year = 1012
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1011 }
+			position = { x = 2 y = @1012 }
 		}
 		
 		categories = {
@@ -2565,10 +2564,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1013
+		start_year = 1014
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1013 }
+			position = { x = 2 y = @1014 }
 		}
 		
 		categories = {

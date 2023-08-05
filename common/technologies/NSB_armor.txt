@@ -69,13 +69,10 @@ technologies = {
 			smoke_launchers
 			expanded_fuel_tank
 			troop_compartment
-			open_top
-			wartime_simplification
 		}
 		enable_subunits = {
 			light_armor
 			medium_armor
-			heavy_armor
 		}
 		dependencies = {
 			infantry_weapons = 1
@@ -165,9 +162,6 @@ technologies = {
 
 	basic_light_tank_chassis = { #Panzer I
 
-		enable_equipment_modules = {
-			cupola_1
-		}
 		enable_equipments = {
 			light_tank_chassis_1
 			light_tank_destroyer_chassis_1
@@ -259,9 +253,6 @@ technologies = {
 
 	improved_light_tank_chassis = { #Panzer II
 
-		enable_equipment_modules = {
-			cupola_2
-		}
 		enable_equipments = {
 			light_tank_chassis_2
 			light_tank_destroyer_chassis_2
@@ -413,6 +404,7 @@ technologies = {
 
 	amphibious_drive = { #SchwimmPanzer II
 
+
 		enable_equipment_modules = {
 			amphibious_drive
 		}
@@ -479,9 +471,6 @@ technologies = {
 
 	advanced_light_tank_chassis = { #Leopard
 
-		enable_equipment_modules = {
-			cupola_3
-		}
 		enable_equipments = {
 			light_tank_chassis_3
 			light_tank_destroyer_chassis_3
@@ -538,9 +527,6 @@ technologies = {
 
 	basic_medium_tank_chassis = { #Panzer III
 
-		enable_equipment_modules = {
-			cupola_1
-		}
 		enable_equipments = {
 			medium_tank_chassis_1
 			medium_tank_destroyer_chassis_1
@@ -632,9 +618,6 @@ technologies = {
 
 	improved_medium_tank_chassis = { #Panzer IV
 
-		enable_equipment_modules = {
-			cupola_2
-		}
 		enable_equipments = {
 			medium_tank_chassis_2
 			medium_tank_destroyer_chassis_2
@@ -706,9 +689,6 @@ technologies = {
 
 	advanced_medium_tank_chassis = { #Panther
 
-		enable_equipment_modules = {
-			cupola_3
-		}
 		enable_equipments = {
 			medium_tank_chassis_3
 			medium_tank_destroyer_chassis_3
@@ -834,9 +814,6 @@ technologies = {
 
 	basic_heavy_tank_chassis = { #Grosstraktor
 
-		enable_equipment_modules = {
-			cupola_1
-		}
 		enable_equipments = {
 			heavy_tank_chassis_1
 			heavy_tank_destroyer_chassis_1
@@ -845,7 +822,6 @@ technologies = {
 		}
 
 		enable_subunits = {
-			heavy_armor
 		}
 
 		on_research_complete_limit = {
@@ -914,9 +890,6 @@ technologies = {
 
 	improved_heavy_tank_chassis = { #Tiger
 
-		enable_equipment_modules = {
-			cupola_2
-		}
 		enable_equipments = {
 			heavy_tank_chassis_2
 			heavy_tank_destroyer_chassis_2
@@ -970,9 +943,6 @@ technologies = {
 
 	advanced_heavy_tank_chassis = { #King Tiger
 
-		enable_equipment_modules = {
-			cupola_3
-		}
 		enable_equipments = {
 			heavy_tank_chassis_3
 			heavy_tank_destroyer_chassis_3
@@ -1071,15 +1041,15 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = WW_armor_tech_1_tt
+			custom_effect_tooltip = armor_tech_1_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1006
+		start_year = 1007
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1006 }
+			position = { x = 3 y = @1007 }
 		}
 
 		ai_will_do = {
@@ -1130,7 +1100,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = WW_armor_tech_2_tt
+			custom_effect_tooltip = armor_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1138,7 +1108,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1008 }
+			position = { x = 3 y = @1009 }
 		}
 
 		ai_will_do = {
@@ -1187,15 +1157,15 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = WW_armor_tech_3_tt
+			custom_effect_tooltip = armor_tech_3_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1011
+		start_year = 1012
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1011 }
+			position = { x = 3 y = @1012 }
 		}
 
 		ai_will_do = {
@@ -1234,10 +1204,10 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1013
+		start_year = 1015
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1013 }
+			position = { x = 3 y = @1015 }
 		}
 		path = {
 			leads_to_tech = armor_tech_5
@@ -1245,7 +1215,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = WW_armor_tech_4_tt
+			custom_effect_tooltip = armor_tech_4_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1290,17 +1260,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = WW_engine_tech_1_tt
+			custom_effect_tooltip = engine_tech_1_tt
 		}
 		dependencies = {
 			infantry_weapons = 1
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1006
+		start_year = 1007
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1006 }
+			position = { x = 2 y = @1007 }
 		}
 
 		ai_will_do = {
@@ -1349,7 +1319,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = WW_engine_tech_2_tt
+			custom_effect_tooltip = engine_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
@@ -1357,7 +1327,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1008 }
+			position = { x = 2 y = @1009 }
 		}
 
 		ai_will_do = {
@@ -1405,14 +1375,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = WW_engine_tech_3_tt
+			custom_effect_tooltip = engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1011
+		start_year = 1012
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1011 }
+			position = { x = 2 y = @1012 }
 		}
 
 		ai_will_do = {
@@ -1455,13 +1425,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
-		start_year = 1013
+		start_year = 1015
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1013 }
+			position = { x = 2 y = @1015 }
 		}
 		on_research_complete = {
-			custom_effect_tooltip = WW_engine_tech_4_tt
+			custom_effect_tooltip = engine_tech_4_tt
 		}
 		show_effect_as_desc = yes
 		ai_will_do = {

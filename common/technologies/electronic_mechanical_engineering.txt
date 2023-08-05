@@ -46,6 +46,7 @@ technologies = {
 
 		categories = {
 			electronics
+			ai_basic_start
 		}
 
 
@@ -295,7 +296,6 @@ technologies = {
 			ship_radar_4
 			air_ground_radar_2
 			air_air_radar_2
-			tank_radio_4
 		}
 
 		path = {
@@ -358,14 +358,11 @@ technologies = {
 		categories = {
 			electronics
 			computing_tech
+			ai_continued_start
 		}
 	}
 
 	computing_machine = {
-
-		enable_equipment_modules = {
-			stabilizer
-		}
 
 		# small boost to research speed
 		research_speed_factor = 0.05
@@ -429,6 +426,7 @@ technologies = {
 		# small boost to research speed
 		research_speed_factor = 0.08
 		enable_equipment_modules = {
+			stabilizer
 			bomb_sights_2
 		}
 		path = {
@@ -491,10 +489,6 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		enable_equipment_modules = {
-			tank_fire_control
-		}
-
 		path = {
 			leads_to_tech = advanced_encryption
 			research_cost_coeff = 1
@@ -760,7 +754,7 @@ technologies = {
 			ship_fire_control_system_1
 			ship_torpedo_data_computer_1
 		}
-		
+
 		dependencies = {
 			infantry_weapons = 1
 		}
@@ -768,12 +762,12 @@ technologies = {
 		start_year = 1007
 
 		research_cost = 1
-		
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 4 }
 		}
-		
+
 		ai_will_do = {
 			factor = 0.75
 			modifier = {
@@ -788,7 +782,7 @@ technologies = {
 				factor = 0
 			}
 		}
-		
+
 		categories = {
 			electronics
 			computing_tech
@@ -812,7 +806,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 8 }
 		}
-		
+
 		ai_will_do = {
 			factor = 0.75
 			modifier = {
@@ -827,7 +821,7 @@ technologies = {
 				factor = 0
 			}
 		}
-		
+
 		categories = {
 			electronics
 			computing_tech
@@ -845,23 +839,23 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-		
+
 		research_cost = 1
 		start_year = 1011
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 12 }
 		}
-		
+
 		ai_will_do = {
 			factor = 0.75
 			modifier = {
 				OR = { is_major = yes num_of_military_factories > 39 }
 				factor = 1.5
 			}
-			
+
 		}
-		
+
 		categories = {
 			electronics
 			computing_tech
@@ -1007,7 +1001,7 @@ technologies = {
 				factor = 2
 				date > "1018.1.1"
 			}
-			
+
 			modifier = {
 				factor = 2
 				date > "1015.1.1"
@@ -1213,7 +1207,7 @@ technologies = {
 			jet_technology
 		}
 	}
-	
+
 	experimental_helicopter = {
 
 		no_supply_grace = 12
@@ -1525,10 +1519,10 @@ technologies = {
 	}
 
 	nukes_3 = {
-	
+
 		start_year = 1026
 		research_cost = 7
-		
+
 		research_speed_factor = 0.04
 		killed_pop_by_nuclear_attack_factor = 10
 		nuclear_production_factor = 0.05
@@ -1545,7 +1539,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 14 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 
@@ -1554,7 +1548,7 @@ technologies = {
 				OR = { is_major = yes num_of_military_factories > 69 }
 			}
 		}
-		
+
 		categories = {
 			nuclear
 		}
@@ -1682,7 +1676,7 @@ technologies = {
 	###------> X <><> <><> <><> <><> <><>
 
 	lar_decryption_bonus_tech = {
-				
+
 		research_cost = 1.5 #Carrier Variant
 		start_year = 1007
 
@@ -1692,7 +1686,7 @@ technologies = {
 		}
 		decryption_power = 10
 
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -1708,12 +1702,12 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1009
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
 		}
-	
+
 		ai_will_do = {
 			factor = 1.75
 			modifier = {
@@ -1725,15 +1719,15 @@ technologies = {
 				factor = 1.5 # not a major
 			}
 		}
-	
+
 		categories = {
 			electronics
 			encryption_tech
 		}
 	}
-	
+
 	improved_encryption_lar = {
-	
+
 		# encryption 2
 		crypto_strength = 2
 		allow_branch = {
@@ -1741,12 +1735,12 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1011
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 10 }
 		}
-	
+
 		ai_will_do = {
 			factor = 1.75
 			modifier = {
@@ -1758,15 +1752,15 @@ technologies = {
 				factor = 1.5 # not a major
 			}
 		}
-	
+
 		categories = {
 			electronics
 			encryption_tech
 		}
 	}
-	
+
 	advanced_encryption_lar = {
-	
+
 		# encryption 3
 		crypto_strength = 2
 		allow_branch = {
@@ -1774,12 +1768,12 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1013
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 14 }
 		}
-	
+
 		ai_will_do = {
 			factor = 1.75
 			modifier = {
@@ -1791,15 +1785,15 @@ technologies = {
 				factor = 1.5 # not a major
 			}
 		}
-	
+
 		categories = {
 			electronics
 			encryption_tech
 		}
 	}
-	
+
 	basic_decryption_lar = {
-	
+
 		# decryption 1
 		decryption_power = 25
 		allow_branch = {
@@ -1807,12 +1801,12 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1009
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 6 }
 		}
-	
+
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -1828,15 +1822,15 @@ technologies = {
 				factor = 0
 			}
 		}
-	
+
 		categories = {
 			electronics
 			decryption_tech
 		}
 	}
-	
+
 	improved_decryption_lar = {
-	
+
 		# decryption 2
 		decryption_power = 20
 		allow_branch = {
@@ -1844,12 +1838,12 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1011
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 10 }
 		}
-	
+
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -1865,15 +1859,15 @@ technologies = {
 				factor = 0
 			}
 		}
-	
+
 		categories = {
 			electronics
 			decryption_tech
 		}
 	}
-	
+
 	advanced_decryption_lar = {
-	
+
 		# decryption 3
 		decryption_power = 15
 		allow_branch = {
@@ -1881,12 +1875,12 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1013
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 14 }
 		}
-	
+
 		ai_will_do = {
 				factor = 1.5
 			modifier = {
@@ -1902,7 +1896,7 @@ technologies = {
 				factor = 0
 			}
 		}
-	
+
 		categories = {
 			electronics
 			decryption_tech
