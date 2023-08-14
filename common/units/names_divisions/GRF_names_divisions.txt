@@ -1,0 +1,360 @@
+﻿GRF_INF_01 = { 
+	name = "Army Infantry"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Rifle Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dst 'Weter' Rifle Brigade" }
+		2 = { "%dnd 'New World' Rifle Brigade" }
+		3 = { "%drd 'Big Stick' Rifle Brigade" }
+		4 = { "%dth 'Hotshot' Rifle Brigade" }
+		5 = { "%dth 'Darkcrest' Rifle Brigade" }
+		6 = { "%dth 'Gunray' Rifle Brigade" }
+		7 = { "%dth 'Skullcrusher' Rifle Brigade" }
+		8 = { "%dth 'Turncoat' Rifle Brigade" }
+		9 = { "%dth 'Goldbeak' Rifle Brigade" }
+		10 = { "%dth 'Metalbeak' Rifle Brigade" }
+		11 = { "%dth 'Featherhead' Rifle Brigade" }
+		12 = { "%dth 'Goy' Rifle Brigade" }
+		13 = { "%dth 'Nester' Rifle Brigade" }
+		14 = { "%dth 'Hawk' Rifle Brigade" }
+		15 = { "%dth 'Rosetalon' Rifle Brigade" }
+		16 = { "%dth 'Bloodborn' Rifle Brigade" }
+		17 = { "%dth 'Ravager' Rifle Brigade" }
+		18 = { "%dth 'Raider' Rifle Brigade" }
+		19 = { "%dth 'Lowland' Rifle Brigade" }
+		20 = { "%dth 'Highlander' Rifle Brigade" }
+		21 = { "%dst 'Tallyho' Rifle Brigade" }
+		22 = { "%dnd 'Westwind' Rifle Brigade" }
+		23 = { "%drd 'Pigun' Rifle Brigade" }
+		24 = { "%dth 'Longshot' Rifle Brigade" }
+		25 = { "%dth 'Murray' Rifle Brigade" }
+		26 = { "%dth 'Feathertail' Rifle Brigade" }
+		27 = { "%dth 'Featherus' Rifle Brigade" }
+		28 = { "%dth 'Westkeep' Rifle Brigade" }
+		29 = { "%dth 'Moneyhorde' Rifle Brigade" }
+		30 = { "%dth 'Poker' Rifle Brigade" }
+		31 = { "%dst 'Blackjack' Rifle Brigade" }
+		32 = { "%dnd 'Goose' Rifle Brigade" }
+		33 = { "%drd 'Ratchet' Rifle Brigade" }
+		34 = { "%dth 'Ice Axe' Rifle Brigade" }
+		35 = { "%dth 'Goldclaw' Rifle Brigade" }
+		36 = { "%dth 'Bronzehead' Rifle Brigade" }
+		37 = { "%dth 'Dodger' Rifle Brigade" }
+		38 = { "%dth 'Rambo' Rifle Brigade" }
+		39 = { "%dth 'Wild West' Rifle Brigade" }
+		40 = { "%dth 'Peashooter' Rifle Brigade" }
+		41 = { "%dst 'Hotflow' Rifle Brigade" }
+		42 = { "%dnd 'Coldheart' Rifle Brigade" }
+		43 = { "%drd 'Hardhead' Rifle Brigade" }
+		44 = { "%dth 'Winterclaw' Rifle Brigade" }
+		45 = { "%dth 'Nova' Rifle Brigade" }
+		46 = { "%dth 'Fetermyst' Rifle Brigade"}
+		47 = { "%dth 'Skullcrushers' Rifle Brigade"}
+	}
+}
+
+GRF_MAG_01 = { 
+	name = "Army Magical Infantry"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "magical_infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Magical Rifle Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		400 = { "Grand Caster Magical Rifle Brigade" }
+		1 = { "%dst 'Wizard' Magical Rifle Brigade" }
+		2 = { "%dnd 'Stormcloud' Magical Rifle Brigade" }
+		3 = { "%drd 'Moonfire' Magical Rifle Brigade" }
+		4 = { "%dth 'Thunder'  Magical Rifle Brigade" }
+		5 = { "%dth 'Holy Fire' Magical Rifle Brigade" }
+		6 = { "%dth 'Crystal' Magical Rifle Brigade" }
+		7 = { "%dth 'Sparking' Magical Rifle Brigade" }
+		8 = { "%dth 'Magician' Magical Rifle Brigade" }
+		9 = { "%dth 'Wonderflare' Magical Rifle Brigade" }
+		10 = { "%dth 'Bird Spell' Magical Rifle Brigade" }
+		11 = { "Pso-Pso Wizard Magical Rifle Brigade" }
+	}
+}
+
+GRF_MOT_01 = { 
+	name = "Army Motorized Infantry"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Motorized Rifle Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dst 'Hellrider' Rifle Brigade" }
+		2 = { "%dnd 'Fullspeed' Rifle Brigade" }
+		3 = { "%drd 'Strider' Rifle Brigade" }
+		4 = { "%dth 'Speeder' Rifle Brigade" }
+		5 = { "%dth 'Blazers' Rifle Brigade" }
+		6 = { "%dth 'Hyper' Rifle Brigade" }
+		7 = { "%dth 'Lightning' Rifle Brigade" }
+		8 = { "%dth 'Ticketer' Rifle Brigade" }
+		9 = { "%dth 'Ravager' Rifle Brigade" }
+		10 = { "%dth 'Field Trip' Rifle Brigade" }
+		11 = { "%dth 'Gas Pedal' Rifle Brigade" }
+		12 = { "%dth 'Raider' Rifle Brigade" }
+		13 = { "%dth 'Wing Clipper' Rifle Brigade" }
+		14 = { "%dth 'Profiteers' Rifle Brigade" }
+		15 = { "%dth 'Spoiled' Rifle Brigade" }
+	}
+}
+
+GRF_MEC_01 = { 
+	name = "Army Mechanized Infantry"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Mechanized Rifle Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dst 'Metal Gear' Mechanized Rifle Brigade" }
+		2 = { "%dnd 'Castaway' Mechanized Rifle Brigade" }
+		3 = { "%drd 'Lowborn' Mechanized Rifle Brigade" }
+		4 = { "%dth 'Rambo' Mechanized Rifle Brigade" }
+		5 = { "%dth 'Archon' Mechanized Rifle Brigade" }
+		6 = { "%dth 'Kettengear' Mechanized Rifle Brigade" }
+		7 = { "%dth 'Mower' Mechanized Rifle Brigade" }
+		8 = { "%dth 'Collector' Mechanized Rifle Brigade" }
+		9 = { "%dth 'Thief' Mechanized Rifle Brigade" }
+		10 = { "%dth 'Eversteam' Mechanized Rifle Brigade" }
+		11 = { "%dth 'Chopper' Mechanized Rifle Brigade" }
+		12 = { "%dth 'Greeders' Mechanized Rifle Brigade" }
+		13 = { "%dth 'Northern Watch' Mechanized Rifle Brigade" }
+		14 = { "%dth 'Southern Patrol' Mechanized Rifle Brigade" }
+		15 = { "%dth 'Heartland' Mechanized Rifle Brigade" }
+	}
+}
+
+GRF_ARM_01 = { 
+	name = "Armoured Brigades"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Armoured Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		31 = { "Guards Armoured Brigade" }
+		1 = { "%dst 'Rolling Thunder' Armoured Brigade" }
+		2 = { "%dnd 'Metal Box' Armoured Brigade" }
+		6 = { "%dth 'Bamboozle' Armoured Brigade" }
+		7 = { "%dth 'Top Gun' Armoured Brigade" }
+		8 = { "%dth 'Foxbane' Armoured Brigade" }
+		9 = { "%dth 'Big Gun' Armoured Brigade" }
+		10 = { "%dth 'Big Bang' Armoured Brigade" }
+		11 = { "%dth 'Kablamo' Armoured Brigade" }
+		42 = { "%dnd 'Iron Bird' Armoured Brigade" }
+		79 = { "%dth 'Heavy Hitter' Armoured Brigade" }
+		5 = { "%dth 'Gunbuster' Armoured Brigade" }
+		3 = { "%drd 'Roll out' Armoured Brigade" }
+		4 = { "%dth 'Spearhead' Armoured Brigade" }
+		12 = { "%dth 'Hammer' Armoured Brigade" }
+		13 = { "%dth 'Anvil' Armoured Brigade" }
+	}
+}
+
+GRF_PAR_01 = { 
+	name = "Airmobile Brigades"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Airmobile Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		6 = { "%dth 'Bandito' Airmobile Brigade" }
+		2 = { "%dnd 'Rock n' Roll' Airmobile Brigade" }
+		4 = { "%dth 'Breeze' Airmobile Brigade" }
+		5 = { "%dth 'Screaming Devils' Airmobile Brigade" }
+		7 = { "%dth 'Thunderbird' Airmobile Brigade" }
+		8 = { "%dth 'Dagger' Airmobile Brigade" }
+		3 = { "%drd 'Longsword' Airmobile Brigade" }
+		9 = { "%dth 'Skyrise' Airmobile Brigade" }
+		10 = { "%dth 'Dropshot' Airmobile Brigade" }
+		11 = { "%dth 'Flanker' Airmobile Brigade" }
+		12 = { "%dth 'Freefall' Airmobile Brigade" }
+		13 = { "%dth 'Sweeper' Airmobile Brigade" }
+		14 = { "%dth 'Bombers' Airmobile Brigade" }
+		15 = { "%dth 'Airdevils' Airmobile Brigade" }
+	}
+}
+
+GRF_MAR_01 = { 
+	name = "Marine Corps Brigades"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "marine" "amphibious_armor" "amphibious_mechanized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Marine Corps Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%dst 'Deep Dive' Marine Corps Brigade" }
+		2 = { "%dnd 'Tidal' Marine Corps Brigade" }
+		4 = { "%dth 'Tides' Marine Corps Brigade" }
+		5 = { "%dth 'Sharks' Marine Corps Brigade" }
+	}
+}
+
+GRF_MNT_01 = { 
+	name = "Nova Griffonian Rangers"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Ranger Brigade"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		4 = { "%dth 'Highland' Ranger Brigade" }
+		1 = { "%dst 'Lowland' Ranger Brigade" }
+		2 = { "%dnd 'Cavern' Ranger Brigade" }
+		3 = { "%drd 'Campfire' Ranger Brigade" }
+		5 = { "%dth 'Highrise' Ranger Brigade" }
+		6 = { "%dth 'Rockefeller' Ranger Brigade" }
+		7 = { "%dth 'Climber' Ranger Brigade" }
+		8 = { "%dth 'Top of the World' Ranger Brigade" }
+		9 = { "%dth 'High Sky' Ranger Brigade" }
+		10 = { "%dth 'Rock' Ranger Brigade" }
+		11 = { "%dth 'Lookout' Ranger Brigade" }
+		12 = { "%dth 'Mountain Pass' Ranger Brigade" }
+		13 = { "%dth 'Keeper' Ranger Brigade" }
+		14 = { "%dth 'Bright' Ranger Brigade" }
+		15 = { "%dth 'Toki Ranger Brigade" }
+	}
+}
+
+GRF_GRD_01 = { 
+	name = "Griffonian Knights"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "knights" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Griffonian Knights"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "Weter Griffonian Knights" }
+		2 = { "The Hellcreek Order" }
+		3 = { "Order of the West" }
+		4 = { "Order of Fetermyst" }
+		5 = { "Steelbeak Order" }
+		6 = { "The Southern Knights" }
+		7 = { "The Iron Birds" }
+		8 = { "Valiant Order of Feter" }
+		9 = { "Eyes of Eyr" }
+	}
+}
+
+GRF_GAR_01 = { 
+	name = "Self-Defense Forces Infantry"
+
+	for_countries = { GRF }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRF_INF_01 }
+
+	fallback_name = "%d Self-Defense Force"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		300 = { "Weter Self-Defense Force" }
+		301 = { "Kingsmere State Self-Defense Force" }
+		302 = { "Nouveau Aquila Self-Defense Force" }
+		303 = { "Nieuw Mirabelle Self-Defense Force" }
+		304 = { "Kluv State Self-Defense Force" }
+		305 = { "Schnabelland State Self-Defense Force" }
+		306 = { "Ny Winghagen Self-Defense Force" }
+		307 = { "Nordgolf State Self-Defense Force" }
+		308 = { "New Aquileia State Self-Defense Force" }
+		309 = { "New Feathisia State Self-Defense Force" }
+		310 = { "Boreasfjord Self-Defense Force" }
+		311 = { "Frosthügel State Self-Defense Force" }
+		312 = { "Amdral State Self-Defense Force" }
+		314 = { "Zerkshed Skäll Self-Defense Force" }
+	}
+}
