@@ -1,0 +1,200 @@
+﻿division_template = {
+	name = "Rifle Brigade"			#Infantry Division -
+	division_names_group = GRF_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Ranger Brigade"			#Infantry Division
+	division_names_group = GRF_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Self-Defense Forces Detachment"
+	division_names_group = GRF_GAR_01
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Falcons of Griffonstone Detachment"
+	division_names_group = GRF_GAR_01
+	template_counter = 33
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Talon Division Battlegroup"
+	division_names_group = GRF_GRD_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Presidential Rifle Brigade"
+		location = 85
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd New Aquileian Rifle Brigade"
+		location = 22
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th New Feathisian Rifle Brigade"
+		location = 11169
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7th Schneetal Rifle Brigade"
+		location = 9301
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "13th Frontier Rifle Brigade"
+		location = 9531
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "8th Nordgolf Ranger Brigade"
+		location = 6210
+		division_template = "Ranger Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10th Kluv Ranger Assault Brigade"
+		location = 9411
+		division_template = "Ranger Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "28th Frosthill Ranger Brigade"
+		location = 3133
+		division_template = "Ranger Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "1st Talon Industries PSD Battlegroup"
+		location = 6015
+		division_template = "Talon Division Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Kluv State Self-Defense Force"
+		location = 212
+		division_template = "Self-Defense Forces Detachment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Kingsmere State Self-Defense Force"
+		location = 11541
+		division_template = "Self-Defense Forces Detachment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "New Herzlander Volunteer Corps"
+		location = 13337
+		division_template = "Falcons of Griffonstone Detachment"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "Old Falcon Regiment"
+		location = 13337
+		division_template = "Falcons of Griffonstone Detachment"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GRF"
+		}
+		requested_factories = 3
+		progress = 0.86
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRF"
+		}
+		requested_factories = 2
+		progress = 0.67
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRF"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 50
+	}
+}
