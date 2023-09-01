@@ -1,8 +1,0 @@
-ai_historical_focus_list_PNG = {
-	ai_national_focuses = {
-		PNG_summit_at_dachaigh
-		PNG_king_aberg
-		PNG_lessen_kings_power
-		PNG_infrastructure
-	}
-}
