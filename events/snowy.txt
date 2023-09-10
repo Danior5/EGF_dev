@@ -1,0 +1,37 @@
+add_namespace = snowy
+
+country_event = {
+	id = snowy.2
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		STG = {
+			white_peace = GRF
+		}
+	}
+}
+
+country_event = {
+	id = snowy.3
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		STG = {
+			white_peace = GRF
+		}
+	}
+}
+
+country_event = {
+	id = snowy.4
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		STG = {
+			white_peace = GRF
+		}
+	}
+}

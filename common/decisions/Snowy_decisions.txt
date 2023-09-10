@@ -1,0 +1,70 @@
+foreign_politics = {
+	Snowy_mission = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			OR = {
+				#original_tag = STG
+				original_tag = GRF
+			}
+		}
+		activation = {
+			date > 1006.1.1
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 90
+		fire_only_once = yes
+		
+		timeout_effect = {
+			if = {
+				NOT = {
+					58 = {
+						is_controlled_by = STG
+					}
+				}
+				57 = {
+					is_controlled_by = GRF
+				}
+				678 = {
+					is_controlled_by = GRF
+				}
+				GRF = {
+					country_event = {
+						id = snowy.2
+						#days = 1
+					}
+				}
+			}
+			if = {
+				58 = {
+					is_controlled_by = STG
+				}
+				NOT = {
+					57 = {
+						is_controlled_by = GRF
+					}
+					678 = {
+						is_controlled_by = GRF
+					}
+				}
+				GRF = {
+					country_event = {
+						id = snowy.3
+						#days = 1
+					}
+				}
+			}					
+			else_if = {
+				GRF = {
+					country_event = {
+						id = snowy.4
+						#days = 1
+					}
+				}
+			}
+		}
+	}
+}
+	
+	

@@ -196,6 +196,7 @@ recruit_character = GRF_cronos_beamquill
 recruit_character = GRF_arnaud_cuvillier
 recruit_character = GRF_felix_cloudtalon
 recruit_character = GRF_lord_protector_trubach
+recruit_character = GRF_eilhard_azurblau
 
 
 set_rule = {
