@@ -6,8 +6,6 @@ state={
 		chromium=8.000
 	}
 	history={
-		owner = KIR
-		add_core_of = KIR
 		buildings = {
 			infrastructure = 1
 

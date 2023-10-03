@@ -7,8 +7,6 @@ state={
 	}
 
 	history={
-		owner = CNT
-		add_core_of = CNT
 		buildings = {
 			infrastructure = 1
 

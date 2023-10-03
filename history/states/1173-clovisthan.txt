@@ -6,8 +6,6 @@ state={
 		oil = 7
 	}
 	history={
-		owner = KIR
-		add_core_of = KIR
 		buildings = {
 			infrastructure = 1
 

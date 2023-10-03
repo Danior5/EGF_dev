@@ -6,8 +6,6 @@ state={
 		rubber=3.000
 	}
 	history={
-		owner = KIR
-		add_core_of = KIR
 		victory_points = {
 			17714 10
 		}
