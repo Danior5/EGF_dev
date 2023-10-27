@@ -6,6 +6,8 @@ set_research_slots = 3
 
 set_technology = {
 	griffon_race = 1
+	tech_knights = 1
+	special_forces_mountaineers = 1
 	tech_griffon_army = 1
 	melee_weapons = 1
 	melee_weapons1 = 1

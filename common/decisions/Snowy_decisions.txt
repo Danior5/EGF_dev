@@ -8,7 +8,7 @@ foreign_politics = {
 			}
 		}
 		activation = {
-			date > 1006.1.1
+			date > 1060.1.1
 		}
 		available = {
 			always = no

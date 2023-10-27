@@ -10,5 +10,5 @@ dependencies={
 }
 name="Equus and Griffonia on Fire"
 picture="thumbnail.png"
-supported_version="1.12.*"
+supported_version="1.13.*"
 remote_file_id="2694179069"

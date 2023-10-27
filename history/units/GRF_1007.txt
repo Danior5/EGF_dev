@@ -27,7 +27,7 @@ division_template = {
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		rangers_support = { x = 0 y = 1 }
 	}
 	priority = 2
 }
@@ -132,7 +132,7 @@ units = {
 		start_equipment_factor = 0.35
 	}
 	division = {
-		name = "1st Talon Industries PSD Battlegroup"
+		name = "TI-PSD Operational Battlegroup 'Homeland'"
 		location = 6015
 		division_template = "Talon Division Battlegroup"
 		start_experience_factor = 0.6

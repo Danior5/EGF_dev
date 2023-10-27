@@ -256,7 +256,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ griffon_race_trait inflexible_strategist career_officer trait_reckless }
+			traits={ griffon_race_trait inflexible_strategist urban_assault_specialist trait_reckless }
 			skill=3
 			attack_skill=3
 			defense_skill=2
